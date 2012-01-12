@@ -1,0 +1,100 @@
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+body {
+  background: #c8c8c8;
+  font-family: "helvetica neue", helvetica, arial, sans-serif; }
+
+.sample {
+  padding: 150px 0; }
+  .sample.carson-poem {
+    background: #fcfaff; }
+    .sample.carson-poem .text {
+      margin: 0 0 0 150px;
+      width: 500px; }
+      .sample.carson-poem .text h1 {
+        color: #070707;
+        font: 400 16px/16px Vollkorn;
+        margin: 0 0 18px 0; }
+      .sample.carson-poem .text p.poem {
+        color: #272727;
+        font: 400 16px/24px Vollkorn;
+        font-style: italic; }
+      .sample.carson-poem .text p.byline {
+        color: #555;
+        font: 400 12px/24px Vollkorn;
+        font-style: normal;
+        margin: 6px 0 0 0; }
+  .sample.slogan {
+    background: #c00;
+    text-align: center; }
+    .sample.slogan .text {
+      margin: 0 auto;
+      width: 700px; }
+    .sample.slogan h1 {
+      border-bottom: 6px solid #090909;
+      color: #090909;
+      display: inline-block;
+      font: 400 64px/56px "Gravitas One";
+      letter-spacing: -4px;
+      margin: 0 0 20px 0;
+      padding: 0 4px;
+      text-transform: uppercase; }

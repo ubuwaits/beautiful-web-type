@@ -1,0 +1,60 @@
+@import 'reset';
+@import 'bourbon/bourbon';
+
+body {
+  background: #c8c8c8;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+.sample {
+  padding: 150px 0;
+
+  &.carson-poem {
+    background: #fcfaff;
+
+    .text {
+      margin: 0 0 0 150px;
+      width: 500px;
+
+      h1 {
+        color: #070707;
+        font: 400 16px/16px Vollkorn;
+        margin: 0 0 18px 0;
+      }
+
+      p.poem {
+        color: #272727;
+        font: 400 16px/24px Vollkorn;
+        font-style: italic;
+      }
+
+      p.byline {
+        color: #555;
+        font: 400 12px/24px Vollkorn;
+        font-style: normal;
+        margin: 6px 0 0 0;
+      }
+    }
+  }
+
+  &.slogan {
+    background: #c00;
+    text-align: center;
+
+    .text {
+      margin: 0 auto;
+      width: 700px;
+    }
+
+    h1 {
+      border-bottom: 6px solid #090909;
+      color: #090909;
+      display: inline-block;
+      font: 400 64px/56px 'Gravitas One';
+      letter-spacing: -4px;
+      margin: 0 0 20px 0;
+      padding: 0 4px;
+      text-transform: uppercase;
+    }
+  }
+}
