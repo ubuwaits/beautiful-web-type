@@ -7,7 +7,36 @@ body {
 }
 
 .sample {
-  padding: 150px 0;
+  padding: 175px 0;
+
+  &.structure {
+    padding-top: 50px;
+
+    .text {
+      padding: 0 50px;
+      width: 880px;
+    }
+
+    .blocks {
+      @extend .clearfix;
+    }
+
+    .block {
+      float: left;
+      margin: 0 20px 0 0;
+      width: 200px;
+
+      p {
+        color: #333;
+        font: 400 12px/18px 'open sans';
+      }
+    }
+
+    h1 {
+      font: 400 114px/98px Abril Fatface;
+      margin: 80px 0 0 440px;
+    }
+  }
 
   &.carson-poem {
     background: #fcfaff;
@@ -17,7 +46,7 @@ body {
       width: 500px;
 
       h1 {
-        color: #070707;
+        color: #000;
         font: 400 18px/18px Vollkorn;
         margin: 0 0 18px 0;
       }
@@ -39,6 +68,7 @@ body {
 
   &.slogan {
     background: #c00;
+    padding: 250px 0;
     text-align: center;
 
     .text {
