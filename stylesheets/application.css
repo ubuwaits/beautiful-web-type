@@ -72,15 +72,15 @@ body {
       width: 500px; }
       .sample.carson-poem .text h1 {
         color: #070707;
-        font: 400 16px/16px Vollkorn;
+        font: 400 18px/18px Vollkorn;
         margin: 0 0 18px 0; }
       .sample.carson-poem .text p.poem {
         color: #272727;
-        font: 400 16px/24px Vollkorn;
+        font: 400 18px/28px Vollkorn;
         font-style: italic; }
       .sample.carson-poem .text p.byline {
         color: #555;
-        font: 400 12px/24px Vollkorn;
+        font: 400 14px/14px Vollkorn;
         font-style: normal;
         margin: 6px 0 0 0; }
   .sample.slogan {
@@ -93,7 +93,7 @@ body {
       border-bottom: 6px solid #090909;
       color: #090909;
       display: inline-block;
-      font: 400 64px/56px "Gravitas One";
+      font: 400 76px/64px "Gravitas One";
       letter-spacing: -4px;
       margin: 0 0 20px 0;
       padding: 0 4px;
