@@ -10,31 +10,24 @@ body {
   padding: 175px 0;
 
   &.structure {
-    padding-top: 50px;
+    background: #2384c6;
 
     .text {
       padding: 0 50px;
-      width: 880px;
-    }
-
-    .blocks {
-      @extend .clearfix;
-    }
-
-    .block {
-      float: left;
-      margin: 0 20px 0 0;
-      width: 200px;
-
-      p {
-        color: #333;
-        font: 400 12px/18px 'open sans';
-      }
+      text-align: center;
     }
 
     h1 {
-      font: 400 114px/98px Abril Fatface;
-      margin: 80px 0 0 440px;
+      color: #ffe292;
+      font: 400 84px/72px Abril Fatface;
+      margin: 0 0 36px 0;
+      letter-spacing: -1px;
+    }
+
+    p {
+      color: #f7f0d7;
+      font: 700 13px/18px 'open sans';
+      text-transform: uppercase;
     }
   }
 
