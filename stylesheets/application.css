@@ -49,7 +49,7 @@ table {
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after {
+.clearfix:after, .sample.beautiful:after {
   clear: both;
   content: ' ';
   display: block;
@@ -66,6 +66,33 @@ body {
 .sample {
   padding: 175px 0;
   position: relative; }
+  .sample.beautiful {
+    background: #d0d0d0;
+    padding: 0 0 50px 0; }
+    .sample.beautiful .text {
+      padding: 25px;
+      position: relative;
+      width: 700px; }
+    .sample.beautiful h1 {
+      color: #fff;
+      display: inline-block;
+      font: 900 84px/76px "lato";
+      letter-spacing: -2px;
+      margin: 0 0 12px 0;
+      padding: 0 0 24px 0; }
+    .sample.beautiful blockquote {
+      color: #666;
+      font: 700 11px/23px "lato";
+      position: absolute;
+      right: 50px;
+      width: 180px; }
+    .sample.beautiful p {
+      color: #888;
+      font: 400 14px/23px "lato";
+      margin: 0 250px 20px 0px; }
+      .sample.beautiful p em {
+        font-weight: 700;
+        font-style: italic; }
   .sample.nietzsche {
     background: #ef4723;
     padding: 50px 0 100px 0; }
@@ -105,17 +132,20 @@ body {
     .sample.nietzsche p {
       color: #222;
       font: 400 16px/24px "gentium book basic";
-      margin: 0 0 14px 0;
+      margin: 0 0 0 0;
+      text-indent: 16px;
       z-index: 1; }
+      .sample.nietzsche p:first-child {
+        text-indent: 0; }
   .sample.emptiness {
     background: #fcfaf2;
-    padding: 350px 0 150px 0; }
+    padding: 450px 0 100px 0; }
     .sample.emptiness .text {
-      padding: 0 50px;
+      padding: 0 100px;
       width: 500px; }
     .sample.emptiness h1 {
-      color: #444;
-      font: 400 20px/32px "pt serif";
+      color: #333;
+      font: 400 20px/30px "pt serif";
       font-style: italic;
       margin: 0 0 12px 0;
       letter-spacing: -1px;
@@ -127,15 +157,13 @@ body {
       text-transform: uppercase;
       text-indent: -10px; }
   .sample.structure {
-    background: #2384c6; }
+    background: #000; }
     .sample.structure .text {
-      padding: 0 50px;
-      text-align: center; }
+      padding: 0 50px; }
     .sample.structure h1 {
-      color: #ffe292;
-      font: 400 84px/72px Abril Fatface;
-      margin: 0 0 36px 0;
-      letter-spacing: -1px; }
+      color: #fff;
+      font: 400 92px/84px Abril Fatface;
+      margin: 0 0 36px 0; }
     .sample.structure p {
       color: #f7f0d7;
       font: 700 13px/18px "open sans";
