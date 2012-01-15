@@ -8,6 +8,93 @@ body {
 
 .sample {
   padding: 175px 0;
+  position: relative;
+
+  &.nietzsche {
+    background: #ef4723;
+    padding: 50px 0 100px 0;
+
+    .text {
+      margin: 0 auto;
+      padding: 0 50px;
+      width: 800px;
+    }
+
+    .inner-text {
+      -webkit-column-count: 2;
+      -webkit-column-gap: 50px;
+    }
+
+    h1 {
+      color: #222;
+      font: 800 64px/64px 'open sans';
+      margin: 0 0 32px 0;
+      text-align: center;
+      text-transform: uppercase;
+      width: 800px;
+      z-index: 0;
+
+      span {
+        font: 400 60px/60px 'gentium book basic';
+        font-style: italic;
+        text-transform: none;
+
+        &.nudge {
+          margin: 0 0 0 -10px;
+        }
+      }
+    }
+
+    h2 {
+      border-top: 1px solid #222;
+      color: #222;
+      font: 800 20px/20px 'open sans';
+      margin: 0 0 20px 0;
+      text-align: center;
+      text-transform: uppercase;
+
+      span {
+        background: #ef4723;
+        padding: 0 20px;
+        position: relative;
+        top: -10px;
+      }
+    }
+
+    p {
+      color: #222;
+      font: 400 16px/24px 'gentium book basic';
+      margin: 0 0 14px 0;
+      z-index: 1;
+    }
+  }
+
+  &.emptiness {
+    background: #fcfaf2;
+    padding: 350px 0 150px 0;
+
+    .text {
+      padding: 0 50px;
+      width: 500px;
+    }
+
+    h1 {
+      color: #444;
+      font: 400 20px/32px 'pt serif';
+      font-style: italic;
+      margin: 0 0 12px 0;
+      letter-spacing: -1px;
+      text-indent: -6px;
+    }
+
+    p {
+      color: #c90707;
+      font: 400 11px/18px 'pt serif';
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-indent: -10px;
+    }
+  }
 
   &.structure {
     background: #2384c6;
