@@ -1,12 +1,14 @@
 # Beautiful web type
 
-Suggestions for type on the web.
+There are currently 404 typefaces in the Google web fonts directory. Many of them are awful. But there are also high-quality typefaces that deserve a closer look. Here are examples of these typefaces in action.
 
-Install Jekyll and then start the server with:
+## View the samples: http://hellohappy.org/beautiful-web-type
+
+Start the Jekyll server with:
 
     jekyll --server
 
-Install Sass and Bourbon and watch the directory with:
+Watch the Sass directory with:
 
-    sass --watch stylesheets/scss:stylesheets -r ./stylesheets/scss/bourbon/lib/bourbon.rb
+    sass --watch stylesheets/scss:stylesheets
 
