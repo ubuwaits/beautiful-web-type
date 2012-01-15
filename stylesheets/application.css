@@ -49,7 +49,7 @@ table {
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .sample.beautiful:after {
+.clearfix:after {
   clear: both;
   content: ' ';
   display: block;
@@ -63,44 +63,64 @@ body {
   background: #c8c8c8;
   font-family: "helvetica neue", helvetica, arial, sans-serif; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 .sample {
   padding: 175px 0;
   position: relative; }
-  .sample.beautiful {
-    background: #d0d0d0;
-    padding: 0 0 50px 0; }
-    .sample.beautiful .text {
-      padding: 25px;
-      position: relative;
-      width: 700px; }
-    .sample.beautiful h1 {
-      color: #fff;
-      display: inline-block;
-      font: 900 84px/76px "lato";
-      letter-spacing: -2px;
-      margin: 0 0 12px 0;
-      padding: 0 0 24px 0; }
-    .sample.beautiful blockquote {
+  .sample.title {
+    background: #fff;
+    padding: 125px 0 250px 0; }
+    .sample.title .text {
+      margin: 0 auto;
+      padding: 0;
+      width: 800px; }
+    .sample.title h1 {
+      color: #000;
+      font: 400 87px/84px Abril Fatface; }
+    .sample.title h2 {
+      color: #222;
+      font: 300 18px/24px "open sans";
+      margin: 0 0 36px 0;
+      width: 650px; }
+      .sample.title h2 a:hover {
+        font-weight: 700; }
+    .sample.title p, .sample.title ul {
       color: #666;
-      font: 700 11px/23px "lato";
-      position: absolute;
-      right: 50px;
-      width: 180px; }
-    .sample.beautiful p {
-      color: #888;
-      font: 400 14px/23px "lato";
-      margin: 0 250px 20px 0px; }
-      .sample.beautiful p em {
-        font-weight: 700;
-        font-style: italic; }
+      float: left;
+      font: 400 13px/21px "open sans";
+      margin: 0 50px 0 0;
+      width: 450px; }
+    .sample.title ul {
+      margin: 0;
+      position: relative;
+      top: -2px;
+      width: 300px; }
+      .sample.title ul li {
+        font-size: 11px;
+        text-transform: uppercase; }
+        .sample.title ul li:before {
+          content: "\00d7";
+          font-size: 15px;
+          font-weight: 700;
+          left: -2px;
+          position: relative;
+          top: 2px; }
+        .sample.title ul li a:hover {
+          color: #222;
+          font-weight: 700; }
   .sample.nietzsche {
     background: #ef4723;
-    padding: 50px 0 100px 0; }
+    padding: 100px 0; }
     .sample.nietzsche .text {
       margin: 0 auto;
       padding: 0 50px;
       width: 800px; }
-    .sample.nietzsche .inner-text {
+    .sample.nietzsche .excerpt {
+      -moz-column-count: 2;
+      -moz-column-gap: 50px;
       -webkit-column-count: 2;
       -webkit-column-gap: 50px; }
     .sample.nietzsche h1 {
@@ -109,8 +129,7 @@ body {
       margin: 0 0 32px 0;
       text-align: center;
       text-transform: uppercase;
-      width: 800px;
-      z-index: 0; }
+      width: 800px; }
       .sample.nietzsche h1 span {
         font: 400 60px/60px "gentium book basic";
         font-style: italic;
@@ -132,60 +151,26 @@ body {
     .sample.nietzsche p {
       color: #222;
       font: 400 16px/24px "gentium book basic";
-      margin: 0 0 0 0;
-      text-indent: 16px;
-      z-index: 1; }
-      .sample.nietzsche p:first-child {
-        text-indent: 0; }
-  .sample.emptiness {
+      margin: 0; }
+  .sample.bringhurst {
     background: #fcfaf2;
-    padding: 450px 0 100px 0; }
-    .sample.emptiness .text {
+    padding: 350px 0 350px 0; }
+    .sample.bringhurst .text {
+      margin: 0 auto;
       padding: 0 100px;
-      width: 500px; }
-    .sample.emptiness h1 {
+      width: 410px; }
+    .sample.bringhurst h1 {
       color: #333;
-      font: 400 20px/30px "pt serif";
+      font: 400 20px/30px "vollkorn";
       font-style: italic;
-      margin: 0 0 12px 0;
-      letter-spacing: -1px;
+      margin: 0 0 10px 0;
       text-indent: -6px; }
-    .sample.emptiness p {
+    .sample.bringhurst p {
       color: #c90707;
-      font: 400 11px/18px "pt serif";
+      font: 400 12px/18px "vollkorn";
       letter-spacing: 1px;
       text-transform: uppercase;
-      text-indent: -10px; }
-  .sample.structure {
-    background: #000; }
-    .sample.structure .text {
-      padding: 0 50px; }
-    .sample.structure h1 {
-      color: #fff;
-      font: 400 92px/84px Abril Fatface;
-      margin: 0 0 36px 0; }
-    .sample.structure p {
-      color: #f7f0d7;
-      font: 700 13px/18px "open sans";
-      text-transform: uppercase; }
-  .sample.carson-poem {
-    background: #fcfaff; }
-    .sample.carson-poem .text {
-      margin: 0 0 0 150px;
-      width: 500px; }
-      .sample.carson-poem .text h1 {
-        color: #000;
-        font: 400 18px/18px Vollkorn;
-        margin: 0 0 18px 0; }
-      .sample.carson-poem .text p.poem {
-        color: #272727;
-        font: 400 18px/28px Vollkorn;
-        font-style: italic; }
-      .sample.carson-poem .text p.byline {
-        color: #555;
-        font: 400 14px/14px Vollkorn;
-        font-style: normal;
-        margin: 6px 0 0 0; }
+      text-indent: -13px; }
   .sample.slogan {
     background: #c00;
     padding: 250px 0;
@@ -202,3 +187,40 @@ body {
       margin: 0 0 20px 0;
       padding: 0 4px;
       text-transform: uppercase; }
+  .sample.experience {
+    background: #d0d0d0;
+    padding: 150px 0; }
+    .sample.experience .text {
+      margin: 0 auto;
+      width: 680px; }
+    .sample.experience h1 {
+      color: #fff;
+      font: 900 80px/76px "lato";
+      letter-spacing: -2px;
+      margin: 0 auto 12px;
+      padding: 0 0 24px 0;
+      text-align: center; }
+    .sample.experience ul {
+      margin: 25px 35px 0; }
+      .sample.experience ul li {
+        border-top: 2px solid #aaa;
+        color: #666;
+        font: 700 14px/14px "lato";
+        margin: 0 0 14px 0; }
+        .sample.experience ul li span {
+          background: #d0d0d0;
+          padding: 0 6px 0 0;
+          position: relative;
+          top: -10px; }
+        .sample.experience ul li span + span {
+          float: right;
+          padding: 0 0 0 6px; }
+  .sample.headline {
+    background: #000;
+    padding: 200px 0; }
+    .sample.headline .text {
+      margin: 0 auto;
+      width: 470px; }
+    .sample.headline h1 {
+      color: #fff;
+      font: 400 92px/84px Abril Fatface; }

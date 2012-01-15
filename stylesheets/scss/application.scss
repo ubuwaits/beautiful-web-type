@@ -6,53 +6,82 @@ body {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
-.sample {
-  padding: 175px 0;
-  position: relative;
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  &.beautiful {
-    @extend .clearfix;
-    background: #d0d0d0;
-    padding: 0 0 50px 0;
+.sample {
+
+  // Project heading
+  // ***************************************************************************
+  &.title {
+    background: #fff;
+    padding: 125px 0 250px 0;
 
     .text {
-      padding: 25px;
-      position: relative;
-      width: 700px;
+      margin: 0 auto;
+      width: 800px;
     }
 
     h1 {
-      color: #fff;
-      display: inline-block;
-      font: 900 84px/76px 'lato';
-      letter-spacing: -2px;
-      margin: 0 0 12px 0;
-      padding: 0 0 24px 0;
+      color: #000;
+      font: 400 87px/84px Abril Fatface;
     }
 
-    blockquote {
-      color: #666;
-      font: 700 11px/23px 'lato';
-      position: absolute;
-      right: 50px;
-      width: 180px;
-    }
+    h2 {
+      color: #222;
+      font: 300 18px/24px 'open sans';
+      margin: 0 0 36px 0;
+      width: 650px;
 
-    p {
-      color: #888;
-      font: 400 14px/23px 'lato';
-      margin: 0 250px 20px 0px;
-
-      em {
+      a:hover {
         font-weight: 700;
-        font-style: italic;
+      }
+    }
+
+    p, ul {
+      color: #666;
+      float: left;
+      font: 400 13px/21px 'open sans';
+      margin: 0 50px 0 0;
+      width: 450px;
+    }
+
+    ul {
+      margin: 0;
+      position: relative;
+      top: -2px;
+      width: 300px;
+
+      li {
+        font-size: 11px;
+        text-transform: uppercase;
+
+        &:before {
+          content: "\00d7";
+          font-size: 15px;
+          font-weight: 700;
+          left: -2px;
+          position: relative;
+          top: 2px;
+        }
+
+        a {
+          &:hover {
+            color: #222;
+            font-weight: 700;
+          }
+        }
       }
     }
   }
 
+  // Nietzsche quote
+  // ***************************************************************************
   &.nietzsche {
     background: #ef4723;
-    padding: 50px 0 100px 0;
+    padding: 100px 0;
 
     .text {
       margin: 0 auto;
@@ -60,7 +89,9 @@ body {
       width: 800px;
     }
 
-    .inner-text {
+    .excerpt {
+      -moz-column-count: 2;
+      -moz-column-gap: 50px;
       -webkit-column-count: 2;
       -webkit-column-gap: 50px;
     }
@@ -72,7 +103,6 @@ body {
       text-align: center;
       text-transform: uppercase;
       width: 800px;
-      z-index: 0;
 
       span {
         font: 400 60px/60px 'gentium book basic';
@@ -104,91 +134,41 @@ body {
     p {
       color: #222;
       font: 400 16px/24px 'gentium book basic';
-      margin: 0 0 0 0;
-      text-indent: 16px;
-      z-index: 1;
-
-      &:first-child {
-        text-indent: 0;
-      }
+      margin: 0;
     }
   }
 
-  &.emptiness {
+  // Bringhurst quote
+  // ***************************************************************************
+  &.bringhurst {
     background: #fcfaf2;
-    padding: 450px 0 100px 0;
+    padding: 350px 0 350px 0;
 
     .text {
+      margin: 0 auto;
       padding: 0 100px;
-      width: 500px;
+      width: 410px;
     }
 
     h1 {
       color: #333;
-      font: 400 20px/30px 'pt serif';
+      font: 400 20px/30px 'vollkorn';
       font-style: italic;
-      margin: 0 0 12px 0;
-      letter-spacing: -1px;
+      margin: 0 0 10px 0;
       text-indent: -6px;
     }
 
     p {
       color: #c90707;
-      font: 400 11px/18px 'pt serif';
+      font: 400 12px/18px 'vollkorn';
       letter-spacing: 1px;
       text-transform: uppercase;
-      text-indent: -10px;
+      text-indent: -13px;
     }
   }
 
-  &.structure {
-    background: #000;
-
-    .text {
-      padding: 0 50px;
-    }
-
-    h1 {
-      color: #fff;
-      font: 400 92px/84px Abril Fatface;
-      margin: 0 0 36px 0;
-    }
-
-    p {
-      color: #f7f0d7;
-      font: 700 13px/18px 'open sans';
-      text-transform: uppercase;
-    }
-  }
-
-  &.carson-poem {
-    background: #fcfaff;
-
-    .text {
-      margin: 0 0 0 150px;
-      width: 500px;
-
-      h1 {
-        color: #000;
-        font: 400 18px/18px Vollkorn;
-        margin: 0 0 18px 0;
-      }
-
-      p.poem {
-        color: #272727;
-        font: 400 18px/28px Vollkorn;
-        font-style: italic;
-      }
-
-      p.byline {
-        color: #555;
-        font: 400 14px/14px Vollkorn;
-        font-style: normal;
-        margin: 6px 0 0 0;
-      }
-    }
-  }
-
+  // "Don't Die Wondering"
+  // ***************************************************************************
   &.slogan {
     background: #c00;
     padding: 250px 0;
@@ -210,4 +190,66 @@ body {
       text-transform: uppercase;
     }
   }
+
+  // "The Future of Experience Design"
+  // ***************************************************************************
+  &.experience {
+    background: #d0d0d0;
+    padding: 150px 0;
+
+    .text {
+      margin: 0 auto;
+      width: 680px;
+    }
+
+    h1 {
+      color: #fff;
+      font: 900 80px/76px 'lato';
+      letter-spacing: -2px;
+      margin: 0 auto 12px;
+      padding: 0 0 24px 0;
+      text-align: center;
+    }
+
+    ul {
+      margin: 25px 35px 0;
+
+      li {
+        border-top: 2px solid #aaa;
+        color: #666;
+        font: 700 14px/14px 'lato';
+        margin: 0 0 14px 0;
+
+        span {
+          background: #d0d0d0;
+          padding: 0 6px 0 0;
+          position: relative;
+          top: -10px;
+        }
+
+        span + span {
+          float: right;
+          padding: 0 0 0 6px;
+        }
+      }
+    }
+  }
+
+  // "Meaning & Structure in Design"
+  // ***************************************************************************
+  &.headline {
+    background: #000;
+    padding: 200px 0;
+
+    .text {
+      margin: 0 auto;
+      width: 470px;
+    }
+
+    h1 {
+      color: #fff;
+      font: 400 92px/84px Abril Fatface;
+    }
+  }
 }
+
