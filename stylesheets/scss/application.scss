@@ -11,8 +11,26 @@ a {
   text-decoration: none;
 }
 
-.sample {
+footer {
+  padding: 75px;
+  text-align: center;
 
+  p {
+    color: #555;
+    font: 400 13px/13px 'open sans';
+
+    a {
+      color: #555;
+      font-weight: 700;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+.sample {
   // Project heading
   // ***************************************************************************
   &.title {
