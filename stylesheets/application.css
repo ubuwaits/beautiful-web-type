@@ -88,6 +88,8 @@ footer {
   .sample.title h1 {
     color: #000;
     font: 400 87px/84px Abril Fatface; }
+    .sample.title h1 span.kern {
+      margin: 0 0 0 -10px; }
   .sample.title h2 {
     color: #222;
     font: 300 18px/24px "open sans";
@@ -142,7 +144,7 @@ footer {
       font: 400 60px/60px "gentium book basic";
       font-style: italic;
       text-transform: none; }
-      .sample.nietzsche h1 span.nudge {
+      .sample.nietzsche h1 span.kern {
         margin: 0 0 0 -10px; }
   .sample.nietzsche h2 {
     border-top: 1px solid #222;

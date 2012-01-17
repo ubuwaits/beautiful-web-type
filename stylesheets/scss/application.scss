@@ -44,6 +44,10 @@ footer {
     h1 {
       color: #000;
       font: 400 87px/84px Abril Fatface;
+
+      span.kern {
+        margin: 0 0 0 -10px;
+      }
     }
 
     h2 {
@@ -126,7 +130,7 @@ footer {
         font-style: italic;
         text-transform: none;
 
-        &.nudge {
+        &.kern {
           margin: 0 0 0 -10px;
         }
       }
