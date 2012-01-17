@@ -188,27 +188,28 @@ footer {
     }
   }
 
-  // "Don't Die Wondering"
+  // Very thin, all caps
   // ***************************************************************************
-  &.slogan {
-    background: #c00;
-    padding: 250px 0;
-    text-align: center;
+  &.thin {
+    background: #0ac5f4;
+    padding: 350px 0 350px 0;
 
     .text {
       margin: 0 auto;
-      width: 700px;
+      padding: 0 100px;
+      text-align: center;
+      width: 800;
     }
 
     h1 {
-      border-bottom: 6px solid #090909;
-      color: #090909;
-      display: inline-block;
-      font: 400 76px/64px 'Gravitas One';
-      letter-spacing: -4px;
-      margin: 0 0 20px 0;
-      padding: 0 4px;
+      color: #fff;
+      font: 100 72px/72px 'lato';
+      letter-spacing: -2px;
       text-transform: uppercase;
+
+      .kern {
+        margin: 0 0 0 8px;
+      }
     }
   }
 
@@ -253,6 +254,30 @@ footer {
           padding: 0 0 0 6px;
         }
       }
+    }
+  }
+
+  // "Don't Die Wondering"
+  // ***************************************************************************
+  &.slogan {
+    background: #c00;
+    padding: 250px 0;
+    text-align: center;
+
+    .text {
+      margin: 0 auto;
+      width: 700px;
+    }
+
+    h1 {
+      border-bottom: 6px solid #090909;
+      color: #090909;
+      display: inline-block;
+      font: 400 76px/64px 'Gravitas One';
+      letter-spacing: -4px;
+      margin: 0 0 20px 0;
+      padding: 0 4px;
+      text-transform: uppercase;
     }
   }
 

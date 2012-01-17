@@ -181,22 +181,21 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase;
     text-indent: -13px; }
-.sample.slogan {
-  background: #c00;
-  padding: 250px 0;
-  text-align: center; }
-  .sample.slogan .text {
+.sample.thin {
+  background: #0ac5f4;
+  padding: 350px 0 350px 0; }
+  .sample.thin .text {
     margin: 0 auto;
-    width: 700px; }
-  .sample.slogan h1 {
-    border-bottom: 6px solid #090909;
-    color: #090909;
-    display: inline-block;
-    font: 400 76px/64px "Gravitas One";
-    letter-spacing: -4px;
-    margin: 0 0 20px 0;
-    padding: 0 4px;
+    padding: 0 100px;
+    text-align: center;
+    width: 800; }
+  .sample.thin h1 {
+    color: #fff;
+    font: 100 72px/72px "lato";
+    letter-spacing: -2px;
     text-transform: uppercase; }
+    .sample.thin h1 .kern {
+      margin: 0 0 0 8px; }
 .sample.experience {
   background: #d0d0d0;
   padding: 150px 0; }
@@ -225,6 +224,22 @@ footer {
       .sample.experience ul li span + span {
         float: right;
         padding: 0 0 0 6px; }
+.sample.slogan {
+  background: #c00;
+  padding: 250px 0;
+  text-align: center; }
+  .sample.slogan .text {
+    margin: 0 auto;
+    width: 700px; }
+  .sample.slogan h1 {
+    border-bottom: 6px solid #090909;
+    color: #090909;
+    display: inline-block;
+    font: 400 76px/64px "Gravitas One";
+    letter-spacing: -4px;
+    margin: 0 0 20px 0;
+    padding: 0 4px;
+    text-transform: uppercase; }
 .sample.headline {
   background: #000;
   padding: 200px 0; }
