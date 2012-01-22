@@ -196,34 +196,6 @@ footer {
     text-transform: uppercase; }
     .sample.thin h1 .kern {
       margin: 0 0 0 8px; }
-.sample.experience {
-  background: #d0d0d0;
-  padding: 150px 0; }
-  .sample.experience .text {
-    margin: 0 auto;
-    width: 680px; }
-  .sample.experience h1 {
-    color: #fff;
-    font: 900 80px/76px "lato";
-    letter-spacing: -2px;
-    margin: 0 auto 12px;
-    padding: 0 0 24px 0;
-    text-align: center; }
-  .sample.experience ul {
-    margin: 25px 35px 0; }
-    .sample.experience ul li {
-      border-top: 2px solid #aaa;
-      color: #666;
-      font: 700 14px/14px "lato";
-      margin: 0 0 14px 0; }
-      .sample.experience ul li span {
-        background: #d0d0d0;
-        padding: 0 6px 0 0;
-        position: relative;
-        top: -10px; }
-      .sample.experience ul li span + span {
-        float: right;
-        padding: 0 0 0 6px; }
 .sample.slogan {
   background: #c00;
   padding: 250px 0;
