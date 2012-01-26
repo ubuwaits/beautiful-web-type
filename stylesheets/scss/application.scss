@@ -32,7 +32,7 @@ footer {
 .sample {
   // Project heading
   // ***************************************************************************
-  &.title {
+  &#title {
     background: #fff;
     padding: 125px 0 250px 0;
 
@@ -100,7 +100,7 @@ footer {
 
   // Nietzsche quote
   // ***************************************************************************
-  &.nietzsche {
+  &#nietzsche {
     background: #ef4723;
     padding: 100px 0;
 
@@ -161,7 +161,7 @@ footer {
 
   // Bringhurst quote
   // ***************************************************************************
-  &.bringhurst {
+  &#bringhurst {
     background: #fcfaf2;
     padding: 350px 0 350px 0;
 
@@ -190,7 +190,7 @@ footer {
 
   // Very thin, all caps
   // ***************************************************************************
-  &.thin {
+  &#thin {
     background: #0ac5f4;
     padding: 350px 0 350px 0;
 
@@ -215,7 +215,7 @@ footer {
 
   // Tufte tribute, using grid
   // ***************************************************************************
-  &.tufte {
+  &#tufte {
     background: #b4b3af;
     padding: 250px 0 250px 0;
 
@@ -286,7 +286,7 @@ footer {
 
   // "Don't Die Wondering"
   // ***************************************************************************
-  &.slogan {
+  &#slogan {
     background: #c00;
     padding: 250px 0;
     text-align: center;
@@ -310,7 +310,7 @@ footer {
 
   // "Meaning & Structure in Design"
   // ***************************************************************************
-  &.headline {
+  &#headline {
     background: #000;
     padding: 200px 0;
 

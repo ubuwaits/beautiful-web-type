@@ -49,7 +49,7 @@ table {
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .sample.tufte .books:after {
+.clearfix:after, .sample#tufte .books:after {
   clear: both;
   content: ' ';
   display: block;
@@ -79,132 +79,132 @@ footer {
       footer p a:hover {
         color: #000; }
 
-.sample.title {
+.sample#title {
   background: #fff;
   padding: 125px 0 250px 0; }
-  .sample.title .text {
+  .sample#title .text {
     margin: 0 auto;
     width: 800px; }
-  .sample.title h1 {
+  .sample#title h1 {
     color: #000;
     font: 400 87px/84px Abril Fatface; }
-    .sample.title h1 span.kern {
+    .sample#title h1 span.kern {
       margin: 0 0 0 -10px; }
-  .sample.title h2 {
+  .sample#title h2 {
     color: #222;
     font: 300 18px/24px "open sans";
     margin: 0 0 36px 0;
     width: 650px; }
-    .sample.title h2 a:hover {
+    .sample#title h2 a:hover {
       font-weight: 700; }
-  .sample.title p, .sample.title ul {
+  .sample#title p, .sample#title ul {
     color: #666;
     float: left;
     font: 400 13px/21px "open sans";
     margin: 0 50px 0 0;
     width: 450px; }
-  .sample.title ul {
+  .sample#title ul {
     margin: 0;
     position: relative;
     top: -2px;
     width: 300px; }
-    .sample.title ul li {
+    .sample#title ul li {
       font-size: 11px;
       text-transform: uppercase; }
-      .sample.title ul li:before {
+      .sample#title ul li:before {
         content: "\00d7";
         font-size: 15px;
         font-weight: 700;
         left: -2px;
         position: relative;
         top: 2px; }
-      .sample.title ul li a:hover {
+      .sample#title ul li a:hover {
         color: #222;
         font-weight: 700; }
-.sample.nietzsche {
+.sample#nietzsche {
   background: #ef4723;
   padding: 100px 0; }
-  .sample.nietzsche .text {
+  .sample#nietzsche .text {
     margin: 0 auto;
     padding: 0 50px;
     width: 800px; }
-  .sample.nietzsche .excerpt {
+  .sample#nietzsche .excerpt {
     -moz-column-count: 2;
     -moz-column-gap: 50px;
     -webkit-column-count: 2;
     -webkit-column-gap: 50px; }
-  .sample.nietzsche h1 {
+  .sample#nietzsche h1 {
     color: #222;
     font: 800 64px/64px "open sans";
     margin: 0 0 32px 0;
     text-align: center;
     text-transform: uppercase;
     width: 800px; }
-    .sample.nietzsche h1 span {
+    .sample#nietzsche h1 span {
       font: 400 60px/60px "gentium book basic";
       font-style: italic;
       text-transform: none; }
-      .sample.nietzsche h1 span.kern {
+      .sample#nietzsche h1 span.kern {
         margin: 0 0 0 -10px; }
-  .sample.nietzsche h2 {
+  .sample#nietzsche h2 {
     border-top: 1px solid #222;
     color: #222;
     font: 800 20px/20px "open sans";
     margin: 0 0 20px 0;
     text-align: center;
     text-transform: uppercase; }
-    .sample.nietzsche h2 span {
+    .sample#nietzsche h2 span {
       background: #ef4723;
       padding: 0 20px;
       position: relative;
       top: -10px; }
-  .sample.nietzsche p {
+  .sample#nietzsche p {
     color: #222;
     font: 400 16px/24px "gentium book basic";
     margin: 0; }
-.sample.bringhurst {
+.sample#bringhurst {
   background: #fcfaf2;
   padding: 350px 0 350px 0; }
-  .sample.bringhurst .text {
+  .sample#bringhurst .text {
     margin: 0 auto;
     padding: 0 100px;
     width: 410px; }
-  .sample.bringhurst h1 {
+  .sample#bringhurst h1 {
     color: #333;
     font: 400 20px/30px "vollkorn";
     font-style: italic;
     margin: 0 0 10px 0;
     text-indent: -6px; }
-  .sample.bringhurst p {
+  .sample#bringhurst p {
     color: #c90707;
     font: 400 12px/18px "vollkorn";
     letter-spacing: 1px;
     text-transform: uppercase;
     text-indent: -13px; }
-.sample.thin {
+.sample#thin {
   background: #0ac5f4;
   padding: 350px 0 350px 0; }
-  .sample.thin .text {
+  .sample#thin .text {
     margin: 0 auto;
     padding: 0 100px;
     text-align: center;
     width: 800; }
-  .sample.thin h1 {
+  .sample#thin h1 {
     color: #fff;
     font: 100 72px/72px "lato";
     letter-spacing: -2px;
     text-transform: uppercase; }
-    .sample.thin h1 .kern {
+    .sample#thin h1 .kern {
       margin: 0 0 0 8px; }
-.sample.tufte {
+.sample#tufte {
   background: #b4b3af;
   padding: 250px 0 250px 0; }
-  .sample.tufte .text {
+  .sample#tufte .text {
     margin: 0 auto;
     width: 980px; }
-  .sample.tufte .books {
+  .sample#tufte .books {
     margin: 0 0 90px 0; }
-    .sample.tufte .books ol li {
+    .sample#tufte .books ol li {
       border-top: 2px solid #1b1c17;
       color: #1b1c17;
       float: left;
@@ -212,44 +212,44 @@ footer {
       margin: 0 20px 0 0;
       padding: 4px 0 0 0;
       width: 180px; }
-      .sample.tufte .books ol li:last-child {
+      .sample#tufte .books ol li:last-child {
         margin: 0; }
-  .sample.tufte h1 {
+  .sample#tufte h1 {
     border-top: 5px solid #fff;
     color: #1b1c17;
     font: 300 102px/102px "open sans";
     letter-spacing: -1px;
     margin: 0 0 0 -8px; }
-    .sample.tufte h1 span {
+    .sample#tufte h1 span {
       background: #b4b3af;
       padding: 0 19px 0 0;
       position: relative;
       top: -62px; }
-      .sample.tufte h1 span.kern {
+      .sample#tufte h1 span.kern {
         background: transparent;
         margin: 0 0 0 -7px;
         padding: 0;
         top: 0; }
-  .sample.tufte p {
+  .sample#tufte p {
     color: #1b1c17;
     font: 400 20px/30px "open sans";
     margin: -30px 0 0 400px;
     text-indent: -16px; }
-    .sample.tufte p span {
+    .sample#tufte p span {
       font-size: 28px;
       font-family: 'gentium book basic';
       font-weight: 400;
       margin: 0 2px 0 0;
       position: relative;
       top: 5px; }
-.sample.slogan {
+.sample#slogan {
   background: #c00;
   padding: 250px 0;
   text-align: center; }
-  .sample.slogan .text {
+  .sample#slogan .text {
     margin: 0 auto;
     width: 700px; }
-  .sample.slogan h1 {
+  .sample#slogan h1 {
     border-bottom: 6px solid #090909;
     color: #090909;
     display: inline-block;
@@ -258,12 +258,12 @@ footer {
     margin: 0 0 20px 0;
     padding: 0 4px;
     text-transform: uppercase; }
-.sample.headline {
+.sample#headline {
   background: #000;
   padding: 200px 0; }
-  .sample.headline .text {
+  .sample#headline .text {
     margin: 0 auto;
     width: 470px; }
-  .sample.headline h1 {
+  .sample#headline h1 {
     color: #fff;
     font: 400 92px/84px Abril Fatface; }
