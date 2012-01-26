@@ -213,6 +213,77 @@ footer {
     }
   }
 
+  // Tufte tribute, using grid
+  // ***************************************************************************
+  &.tufte {
+    background: #b4b3af;
+    padding: 250px 0 250px 0;
+
+    .text {
+      margin: 0 auto;
+      width: 980px;
+    }
+
+    .books {
+      @extend .clearfix;
+      margin: 0 0 90px 0;
+
+      ol {
+        li {
+          border-top: 2px solid #1b1c17;
+          color: #1b1c17;
+          float: left;
+          font: 700 12px/16px 'open sans';
+          margin: 0 20px 0 0;
+          padding: 4px 0 0 0;
+          width: 180px;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    h1 {
+      border-top: 5px solid #fff;
+      color: #1b1c17;
+      font: 300 102px/102px 'open sans';
+      letter-spacing: -1px;
+      margin: 0 0 0 -8px;
+
+      span {
+        background: #b4b3af;
+        padding: 0 19px 0 0;
+        position: relative;
+        top: -62px;
+
+        &.kern {
+          background: transparent;
+          margin: 0 0 0 -7px;
+          padding: 0;
+          top: 0;
+        }
+      }
+    }
+
+    p {
+      color: #1b1c17;
+      font: 400 20px/30px 'open sans';
+      margin: -30px 0 0 400px;
+      text-indent: -16px;
+
+      span {
+        font-size: 28px;
+        font-family: 'gentium book basic';
+        font-weight: 400;
+        margin: 0 2px 0 0;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+
   // "Don't Die Wondering"
   // ***************************************************************************
   &.slogan {
