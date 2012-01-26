@@ -217,7 +217,7 @@ footer {
   .sample#tufte h1 {
     border-top: 5px solid #fff;
     color: #1b1c17;
-    font: 300 102px/102px "open sans";
+    font: 300 101px/101px "open sans";
     letter-spacing: -1px;
     margin: 0 0 0 -8px; }
     .sample#tufte h1 span {
@@ -230,6 +230,8 @@ footer {
         margin: 0 0 0 -7px;
         padding: 0;
         top: 0; }
+        .sample#tufte h1 span.kern.push {
+          margin: 0 0 0 7px; }
   .sample#tufte p {
     color: #1b1c17;
     font: 400 20px/30px "open sans";
