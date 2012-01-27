@@ -49,7 +49,7 @@ table {
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .sample#tufte .books:after {
+.clearfix:after {
   clear: both;
   content: ' ';
   display: block;
@@ -197,45 +197,34 @@ footer {
     .sample#thin h1 .kern {
       margin: 0 0 0 8px; }
 .sample#tufte {
-  background: #b4b3af;
-  padding: 250px 0 250px 0; }
+  background: #f8f5ef;
+  padding: 300px 0 300px 0; }
   .sample#tufte .text {
     margin: 0 auto;
     width: 980px; }
-  .sample#tufte .books {
-    margin: 0 0 90px 0; }
-    .sample#tufte .books ol li {
-      border-top: 2px solid #1b1c17;
-      color: #1b1c17;
-      float: left;
-      font: 700 12px/16px "open sans";
-      margin: 0 20px 0 0;
-      padding: 4px 0 0 0;
-      width: 180px; }
-      .sample#tufte .books ol li:last-child {
-        margin: 0; }
   .sample#tufte h1 {
-    border-top: 5px solid #fff;
-    color: #1b1c17;
-    font: 300 101px/101px "open sans";
+    border-top: 5px solid #172bae;
+    color: #172bae;
+    font: 300 101px/101px "vollkorn";
     letter-spacing: -1px;
     margin: 0 0 0 -8px; }
     .sample#tufte h1 span {
-      background: #b4b3af;
+      background: #f8f5ef;
       padding: 0 19px 0 0;
       position: relative;
-      top: -62px; }
+      top: -52px; }
       .sample#tufte h1 span.kern {
         background: transparent;
-        margin: 0 0 0 -7px;
+        margin: 0 0 0 -5px;
         padding: 0;
         top: 0; }
         .sample#tufte h1 span.kern.push {
           margin: 0 0 0 7px; }
   .sample#tufte p {
-    color: #1b1c17;
-    font: 400 20px/30px "open sans";
-    margin: -30px 0 0 400px;
+    color: #172bae;
+    font: 400 20px/30px "vollkorn";
+    font-style: italic;
+    margin: -40px 0 0 400px;
     text-indent: -16px; }
     .sample#tufte p span {
       font-size: 28px;
