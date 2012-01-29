@@ -13,6 +13,7 @@ Start the Jekyll server and watch the Sass files with:
 * [Vollkorn](http://www.google.com/webfonts/specimen/Vollkorn)
 * [Lato](http://www.google.com/webfonts/specimen/Lato)
 * [Gravitas One](http://www.google.com/webfonts/specimen/Gravitas+One)
+* [Old Standard TT](http://www.google.com/webfonts/specimen/Old+Standard+TT)
 * [Abril Fatface](http://www.google.com/webfonts/specimen/Abril+Fatface)
 
 ## View the samples: http://hellohappy.org/beautiful-web-type
