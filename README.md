@@ -2,10 +2,6 @@
 
 There are currently 404 typefaces in the Google web fonts directory. Many of them are awful. But there are also high-quality typefaces that deserve a closer look. Here are examples of these typefaces in action.
 
-Start the Jekyll server and watch the Sass files with:
-
-    rake server
-
 ## Featured typefaces
 
 * [Open Sans](http://www.google.com/webfonts/specimen/Open+Sans)
@@ -20,3 +16,8 @@ Start the Jekyll server and watch the Sass files with:
 * [PT Serif](http://www.google.com/webfonts/specimen/PT+Serif)
 
 ## View the samples: http://hellohappy.org/beautiful-web-type
+
+To view and update the repo locally, start the Jekyll server and watch the Sass files with:
+
+    rake server
+
