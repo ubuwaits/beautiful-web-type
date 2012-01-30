@@ -68,7 +68,7 @@ a {
   text-decoration: none; }
 
 footer {
-  padding: 75px;
+  padding: 50px;
   text-align: center; }
   footer p {
     color: #555;
@@ -287,3 +287,33 @@ footer {
   .sample#headline h1 {
     color: #fff;
     font: 400 92px/84px Abril Fatface; }
+.sample#camus {
+  background: #fff;
+  padding: 200px 0; }
+  .sample#camus .text {
+    margin: 0 auto;
+    width: 205px; }
+  .sample#camus h1 {
+    color: #222;
+    font: 700 24px/24px "pt sans narrow";
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .sample#camus hr {
+    background: #333;
+    border: 0;
+    height: 2px;
+    margin: 12px auto 8px;
+    width: 60px; }
+    .sample#camus hr.bottom {
+      margin: 10px auto; }
+  .sample#camus h2 {
+    color: #222;
+    font: 700 16px/20px "pt sans";
+    margin: 0;
+    text-align: center; }
+  .sample#camus p {
+    color: #222;
+    font: 400 14px/18px "pt serif";
+    text-align: justify;
+    text-indent: 14px; }

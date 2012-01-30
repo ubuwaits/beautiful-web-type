@@ -11,7 +11,7 @@ a {
 }
 
 footer {
-  padding: 75px;
+  padding: 50px;
   text-align: center;
 
   p {
@@ -351,6 +351,52 @@ footer {
     h1 {
       color: #fff;
       font: 400 92px/84px Abril Fatface;
+    }
+  }
+
+  // Camus obit
+  // ***************************************************************************
+  &#camus {
+    background: #fff;
+    padding: 200px 0;
+
+    .text {
+      margin: 0 auto;
+      width: 205px;
+    }
+
+    h1 {
+      color: #222;
+      font: 700 24px/24px 'pt sans narrow';
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    hr {
+      background: #333;
+      border: 0;
+      height: 2px;
+      margin: 12px auto 8px;
+      width: 60px;
+
+      &.bottom {
+        margin: 10px auto;
+      }
+    }
+
+    h2 {
+      color: #222;
+      font: 700 16px/20px 'pt sans';
+      margin: 0;
+      text-align: center;
+    }
+
+    p {
+      color: #222;
+      font: 400 14px/18px 'pt serif';
+      text-align: justify;
+      text-indent: 14px;
     }
   }
 }
