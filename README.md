@@ -1,6 +1,6 @@
 # Beautiful web type
 
-There are currently 404 typefaces in the Google web fonts directory. Many of them are awful. But there are also high-quality typefaces that deserve a closer look. Here are examples of these typefaces in action.
+There are over 400 typefaces in the Google web fonts directory. Many of them are awful. But there are also high-quality typefaces that deserve a closer look. Here are examples of these typefaces in action.
 
 ## Featured typefaces
 
@@ -14,6 +14,7 @@ There are currently 404 typefaces in the Google web fonts directory. Many of the
 * [PT Sans](http://www.google.com/webfonts/specimen/PT+Sans)
 * [PT Sans Narrow](http://www.google.com/webfonts/specimen/PT+Sans+Narrow)
 * [PT Serif](http://www.google.com/webfonts/specimen/PT+Serif)
+* [Merriweather](http://www.google.com/webfonts/specimen/Merriweather)
 
 ## View the samples: http://hellohappy.org/beautiful-web-type
 
