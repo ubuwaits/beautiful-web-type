@@ -10,6 +10,16 @@ a {
   text-decoration: none;
 }
 
+[draggable='true'] {
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+}
+
 footer {
   padding: 50px;
   text-align: center;
