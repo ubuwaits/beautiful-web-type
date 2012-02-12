@@ -196,6 +196,39 @@ footer {
     text-transform: uppercase; }
     .sample#thin h1 .kern {
       margin: 0 0 0 8px; }
+.sample#seneca {
+  background: #caccc9;
+  padding: 150px 0 150px 0; }
+  .sample#seneca .text {
+    margin: 0 auto;
+    padding: 0 100px;
+    text-align: left;
+    width: 960px; }
+  .sample#seneca .body {
+    -moz-column-count: 3;
+    -moz-column-gap: 30px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 30px; }
+  .sample#seneca h1 {
+    color: #222;
+    font: 900 54px/66px "merriweather";
+    letter-spacing: -1px;
+    margin: 44px 0 0 0; }
+  .sample#seneca hr {
+    background: #333;
+    border: 0;
+    height: 3px;
+    margin: 19px 0 22px 0;
+    width: 100px; }
+  .sample#seneca h2 {
+    color: #333;
+    font: 900 14px/22px "merriweather"; }
+  .sample#seneca p.title {
+    color: #c3322f;
+    font: 900 14px/22px "lato"; }
+  .sample#seneca p {
+    color: #333;
+    font: 400 14px/22px "merriweather"; }
 .sample#tufte {
   background: #f8f5ef;
   padding: 300px 0 300px 0; }
