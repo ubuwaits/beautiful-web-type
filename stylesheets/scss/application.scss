@@ -213,6 +213,58 @@ footer {
     }
   }
 
+  // Seneca exerpt
+  // ***************************************************************************
+  &#seneca {
+    background: #caccc9;
+    padding: 150px 0 150px 0;
+
+    .text {
+      margin: 0 auto;
+      padding: 0 100px;
+      text-align: left;
+      width: 960px;
+    }
+
+    .body {
+      -moz-column-count: 3;
+      -moz-column-gap: 30px;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 30px;
+    }
+
+    h1 {
+      color: #222;
+      font: 900 54px/66px 'merriweather';
+      letter-spacing: -1px;
+      margin: 44px 0 0 0;
+    }
+
+    hr {
+      background: #333;
+      border: 0;
+      height: 3px;
+      margin: 19px 0 22px 0;
+      width: 100px;
+    }
+
+    h2 {
+      color: #333;
+      font: 900 14px/22px 'merriweather';
+    }
+
+    p.title {
+      color: #c3322f;
+      font: 900 14px/22px 'lato';
+    }
+
+    p {
+      color: #333;
+      font: 400 14px/22px 'merriweather';
+    }
+  }
+
+
   // Tufte tribute
   // ***************************************************************************
   &#tufte {
