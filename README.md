@@ -4,17 +4,18 @@ There are over 400 typefaces in the Google web fonts directory. Many of them are
 
 ## Featured typefaces
 
-* [Open Sans](http://www.google.com/webfonts/specimen/Open+Sans)
-* [Gentium Book Basic](http://www.google.com/webfonts/specimen/Gentium+Book+Basic)
-* [Vollkorn](http://www.google.com/webfonts/specimen/Vollkorn)
-* [Lato](http://www.google.com/webfonts/specimen/Lato)
-* [Gravitas One](http://www.google.com/webfonts/specimen/Gravitas+One)
-* [Old Standard TT](http://www.google.com/webfonts/specimen/Old+Standard+TT)
 * [Abril Fatface](http://www.google.com/webfonts/specimen/Abril+Fatface)
+* [Gentium Book Basic](http://www.google.com/webfonts/specimen/Gentium+Book+Basic)
+* [Gravitas One](http://www.google.com/webfonts/specimen/Gravitas+One)
+* [Lato](http://www.google.com/webfonts/specimen/Lato)
+* [Merriweather](http://www.google.com/webfonts/specimen/Merriweather)
+* [Old Standard TT](http://www.google.com/webfonts/specimen/Old+Standard+TT)
+* [Open Sans](http://www.google.com/webfonts/specimen/Open+Sans)
+* [Playfair Display](http://www.google.com/webfonts/specimen/Playfair+Display)
 * [PT Sans](http://www.google.com/webfonts/specimen/PT+Sans)
 * [PT Sans Narrow](http://www.google.com/webfonts/specimen/PT+Sans+Narrow)
 * [PT Serif](http://www.google.com/webfonts/specimen/PT+Serif)
-* [Merriweather](http://www.google.com/webfonts/specimen/Merriweather)
+* [Vollkorn](http://www.google.com/webfonts/specimen/Vollkorn)
 
 ## View the samples: http://hellohappy.org/beautiful-web-type
 

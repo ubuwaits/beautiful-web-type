@@ -188,7 +188,7 @@ footer {
     margin: 0 auto;
     padding: 0 100px;
     text-align: center;
-    width: 800; }
+    width: 800px; }
   .sample#thin h1 {
     color: #fff;
     font: 100 72px/72px "lato";
@@ -196,6 +196,39 @@ footer {
     text-transform: uppercase; }
     .sample#thin h1 .kern {
       margin: 0 0 0 8px; }
+.sample#nabokov {
+  background: #85878d;
+  padding: 0 0 350px 0; }
+  .sample#nabokov .text {
+    margin: 0 auto;
+    padding: 0 100px;
+    text-align: left;
+    width: 800px; }
+  .sample#nabokov h1 {
+    color: #242526;
+    font: italic 700 84px/1.2 "playfair display"; }
+    .sample#nabokov h1.first {
+      float: left;
+      padding: 200px 0 0 0;
+      margin: 0 0 -6px 0;
+      width: 142px; }
+    .sample#nabokov h1.second {
+      border-left: 8px solid #242526;
+      float: left;
+      margin: 0 0 -6px 0;
+      padding: 200px 0 0 25px;
+      width: auto; }
+    .sample#nabokov h1.third {
+      clear: both;
+      font-style: normal;
+      font-weight: 900;
+      margin: 0 0 0 172px; }
+  .sample#nabokov p {
+    color: #2e2f31;
+    font: 400 14px/1 "playfair display";
+    letter-spacing: 1px;
+    margin: 18px 0 0 175px;
+    text-transform: uppercase; }
 .sample#seneca {
   background: #caccc9;
   padding: 150px 0 150px 0; }
