@@ -106,7 +106,7 @@ footer {
 
     .text {
       margin: 0 auto;
-      padding: 0 50px;
+      padding: 0 20px;
       width: 800px;
     }
 
@@ -163,11 +163,11 @@ footer {
   // ***************************************************************************
   &#bringhurst {
     background: #fcfaf2;
-    padding: 350px 0 350px 0;
+    padding: 350px 0;
 
     .text {
       margin: 0 auto;
-      padding: 0 100px;
+      padding: 0 20px;
       width: 410px;
     }
 
@@ -192,11 +192,11 @@ footer {
   // ***************************************************************************
   &#thin {
     background: #0ac5f4;
-    padding: 350px 0 350px 0;
+    padding: 350px 0;
 
     .text {
       margin: 0 auto;
-      padding: 0 100px;
+      padding: 0 20px;
       text-align: center;
       width: 800px;
     }
@@ -217,13 +217,13 @@ footer {
   // ***************************************************************************
   &#nabokov {
     background: #85878d;
-    padding: 0 0 350px 0;
+    padding: 0 0 300px 0;
 
     .text {
       margin: 0 auto;
-      padding: 0 100px;
+      padding: 0 20px;
       text-align: left;
-      width: 800px;
+      width: 700px;
     }
 
     h1 {
@@ -233,14 +233,14 @@ footer {
       &.first {
         float: left;
         padding: 200px 0 0 0;
-        margin: 0 0 -6px 0;
+        margin: 0 0 -10px 0;
         width: 142px;
       }
 
       &.second {
         border-left: 8px solid #242526;
         float: left;
-        margin: 0 0 -6px 0;
+        margin: 0 0 -10px 0;
         padding: 200px 0 0 25px;
         width: auto;
       }
@@ -266,13 +266,13 @@ footer {
   // ***************************************************************************
   &#seneca {
     background: #caccc9;
-    padding: 150px 0 150px 0;
+    padding: 150px 0;
 
     .text {
       margin: 0 auto;
-      padding: 0 100px;
+      padding: 0 20px;
       text-align: left;
-      width: 960px;
+      width: 820px;
     }
 
     .body {
@@ -284,7 +284,7 @@ footer {
 
     h1 {
       color: #222;
-      font: 900 54px/66px 'merriweather';
+      font: 900 48px/1.1 'merriweather';
       letter-spacing: -1px;
       margin: 44px 0 0 0;
     }
@@ -318,17 +318,18 @@ footer {
   // ***************************************************************************
   &#tufte {
     background: #f8f5ef;
-    padding: 300px 0 300px 0;
+    padding: 300px 0;
 
     .text {
       margin: 0 auto;
-      width: 980px;
+      padding: 20px;
+      width: 860px;
     }
 
     h1 {
       border-top: 5px solid #172bae;
       color: #172bae;
-      font: 300 101px/101px 'vollkorn';
+      font: 300 92px/1 'vollkorn';
       letter-spacing: -1px;
       margin: 0 0 0 -8px;
 
@@ -355,7 +356,7 @@ footer {
       color: #172bae;
       font: 400 20px/30px 'vollkorn';
       font-style: italic;
-      margin: -40px 0 0 400px;
+      margin: -40px 0 0 300px;
       text-indent: -16px;
 
       span {
@@ -378,6 +379,7 @@ footer {
 
     .text {
       margin: 0 auto;
+      padding: 0 20px;
       width: 700px;
     }
 
@@ -402,6 +404,7 @@ footer {
 
     .text {
       margin: 0 auto;
+      padding: 0 20px;
       width: 750px;
     }
 
@@ -446,6 +449,7 @@ footer {
 
     .text {
       margin: 0 auto;
+      padding: 0 20px;
       width: 470px;
     }
 
@@ -463,6 +467,7 @@ footer {
 
     .text {
       margin: 0 auto;
+      padding: 0 20px;
       width: 205px;
     }
 

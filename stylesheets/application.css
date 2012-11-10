@@ -126,7 +126,7 @@ footer {
   padding: 100px 0; }
   .sample#nietzsche .text {
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 20px;
     width: 800px; }
   .sample#nietzsche .excerpt {
     -moz-column-count: 2;
@@ -164,10 +164,10 @@ footer {
     margin: 0; }
 .sample#bringhurst {
   background: #fcfaf2;
-  padding: 350px 0 350px 0; }
+  padding: 350px 0; }
   .sample#bringhurst .text {
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 20px;
     width: 410px; }
   .sample#bringhurst h1 {
     color: #333;
@@ -183,10 +183,10 @@ footer {
     text-indent: -13px; }
 .sample#thin {
   background: #0ac5f4;
-  padding: 350px 0 350px 0; }
+  padding: 350px 0; }
   .sample#thin .text {
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 20px;
     text-align: center;
     width: 800px; }
   .sample#thin h1 {
@@ -198,24 +198,24 @@ footer {
       margin: 0 0 0 8px; }
 .sample#nabokov {
   background: #85878d;
-  padding: 0 0 350px 0; }
+  padding: 0 0 300px 0; }
   .sample#nabokov .text {
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 20px;
     text-align: left;
-    width: 800px; }
+    width: 700px; }
   .sample#nabokov h1 {
     color: #242526;
     font: italic 700 84px/1.2 "playfair display"; }
     .sample#nabokov h1.first {
       float: left;
       padding: 200px 0 0 0;
-      margin: 0 0 -6px 0;
+      margin: 0 0 -10px 0;
       width: 142px; }
     .sample#nabokov h1.second {
       border-left: 8px solid #242526;
       float: left;
-      margin: 0 0 -6px 0;
+      margin: 0 0 -10px 0;
       padding: 200px 0 0 25px;
       width: auto; }
     .sample#nabokov h1.third {
@@ -231,12 +231,12 @@ footer {
     text-transform: uppercase; }
 .sample#seneca {
   background: #caccc9;
-  padding: 150px 0 150px 0; }
+  padding: 150px 0; }
   .sample#seneca .text {
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 20px;
     text-align: left;
-    width: 960px; }
+    width: 820px; }
   .sample#seneca .body {
     -moz-column-count: 3;
     -moz-column-gap: 30px;
@@ -244,7 +244,7 @@ footer {
     -webkit-column-gap: 30px; }
   .sample#seneca h1 {
     color: #222;
-    font: 900 54px/66px "merriweather";
+    font: 900 48px/1.1 "merriweather";
     letter-spacing: -1px;
     margin: 44px 0 0 0; }
   .sample#seneca hr {
@@ -264,14 +264,15 @@ footer {
     font: 400 14px/22px "merriweather"; }
 .sample#tufte {
   background: #f8f5ef;
-  padding: 300px 0 300px 0; }
+  padding: 300px 0; }
   .sample#tufte .text {
     margin: 0 auto;
-    width: 980px; }
+    padding: 20px;
+    width: 860px; }
   .sample#tufte h1 {
     border-top: 5px solid #172bae;
     color: #172bae;
-    font: 300 101px/101px "vollkorn";
+    font: 300 92px/1 "vollkorn";
     letter-spacing: -1px;
     margin: 0 0 0 -8px; }
     .sample#tufte h1 span {
@@ -290,7 +291,7 @@ footer {
     color: #172bae;
     font: 400 20px/30px "vollkorn";
     font-style: italic;
-    margin: -40px 0 0 400px;
+    margin: -40px 0 0 300px;
     text-indent: -16px; }
     .sample#tufte p span {
       font-size: 28px;
@@ -305,6 +306,7 @@ footer {
   text-align: center; }
   .sample#slogan .text {
     margin: 0 auto;
+    padding: 0 20px;
     width: 700px; }
   .sample#slogan h1 {
     border-bottom: 6px solid #090909;
@@ -321,6 +323,7 @@ footer {
   text-align: center; }
   .sample#darwin .text {
     margin: 0 auto;
+    padding: 0 20px;
     width: 750px; }
   .sample#darwin h1 {
     color: #161616;
@@ -349,6 +352,7 @@ footer {
   padding: 200px 0; }
   .sample#headline .text {
     margin: 0 auto;
+    padding: 0 20px;
     width: 470px; }
   .sample#headline h1 {
     color: #fff;
@@ -358,6 +362,7 @@ footer {
   padding: 200px 0; }
   .sample#camus .text {
     margin: 0 auto;
+    padding: 0 20px;
     width: 205px; }
   .sample#camus h1 {
     color: #222;
