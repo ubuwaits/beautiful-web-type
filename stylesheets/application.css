@@ -244,7 +244,7 @@ footer {
     -webkit-column-gap: 30px; }
   .sample#seneca h1 {
     color: #222;
-    font: 900 48px/1.1 "merriweather";
+    font: 900 42px/44px "merriweather";
     letter-spacing: -1px;
     margin: 44px 0 0 0; }
   .sample#seneca hr {
