@@ -62,7 +62,7 @@ table {
 body {
   background: #c8c8c8;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: 100%; }
 
 a {
   color: inherit;
