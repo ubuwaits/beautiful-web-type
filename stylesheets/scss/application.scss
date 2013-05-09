@@ -370,6 +370,74 @@ footer {
     }
   }
 
+  // Post-normal
+  // ***************************************************************************
+  &#postnormal {
+    background: #fff;
+    padding: 150px 0;
+
+    .text {
+      @extend .clearfix;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      width: 860px;
+    }
+
+    .source {
+      clear: both;
+      font: normal 10px/16px 'pt mono';
+      opacity: 0.3;
+      padding: 28px 0 0 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: #FFF700;
+      font: bold 164px/1 'oswald';
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+
+      &:nth-child(1) {
+        left: 0px;
+      }
+
+      &:nth-child(2) {
+        top: 160px;
+        text-align: center;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+        top: 318px;
+      }
+    }
+
+    ol {
+      float: left;
+      position: relative;
+      width: auto;
+      z-index: 2;
+
+      li {
+        color: #222;
+        font: normal 13px/54px 'pt mono';
+        letter-spacing: 5px;
+      }
+
+      &.normal {
+        opacity: 0.3;
+      }
+
+      &.forward {
+        margin: 0 60px;
+      }
+    }
+  }
+
   // "Don't Die Wondering"
   // ***************************************************************************
   &#slogan {

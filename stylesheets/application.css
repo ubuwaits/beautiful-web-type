@@ -49,7 +49,7 @@ table {
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after {
+.clearfix:after, .sample#postnormal .text:after {
   clear: both;
   content: ' ';
   display: block;
@@ -147,7 +147,7 @@ footer {
       .sample#nietzsche h1 span.kern {
         margin: 0 4px 0 -10px; }
   .sample#nietzsche h2 {
-    border-top: 1px solid #222;
+    border-top: 1px solid #222222;
     color: #222;
     font: 800 20px/20px "open sans";
     margin: 0 0 20px 0;
@@ -300,6 +300,49 @@ footer {
       margin: 0 2px 0 0;
       position: relative;
       top: 5px; }
+.sample#postnormal {
+  background: #fff;
+  padding: 150px 0; }
+  .sample#postnormal .text {
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    width: 860px; }
+  .sample#postnormal .source {
+    clear: both;
+    font: normal 10px/16px "pt mono";
+    opacity: 0.3;
+    padding: 28px 0 0 0;
+    text-transform: uppercase; }
+  .sample#postnormal h2 {
+    color: #FFF700;
+    font: bold 164px/1 "oswald";
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+    .sample#postnormal h2:nth-child(1) {
+      left: 0px; }
+    .sample#postnormal h2:nth-child(2) {
+      top: 160px;
+      text-align: center; }
+    .sample#postnormal h2:nth-child(3) {
+      text-align: right;
+      top: 318px; }
+  .sample#postnormal ol {
+    float: left;
+    position: relative;
+    width: auto;
+    z-index: 2; }
+    .sample#postnormal ol li {
+      color: #222;
+      font: normal 13px/54px "pt mono";
+      letter-spacing: 5px; }
+    .sample#postnormal ol.normal {
+      opacity: 0.3; }
+    .sample#postnormal ol.forward {
+      margin: 0 60px; }
 .sample#slogan {
   background: #c00;
   padding: 250px 0;
