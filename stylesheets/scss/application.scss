@@ -1,7 +1,7 @@
 @import 'reset';
 
 body {
-  background: #c8c8c8;
+  background: #d8d8d8;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -17,7 +17,7 @@ footer {
 
   p {
     color: #555;
-    font: 400 13px/13px 'open sans';
+    font: 400 16px/1 'open sans';
 
     a {
       color: #555;
@@ -53,12 +53,13 @@ footer {
     }
 
     h2 {
-      color: #222;
+      color: #666;
       font: 300 18px/24px 'open sans';
       margin: 0 0 36px 0;
       width: 650px;
 
       a:hover {
+        color: #222;
         font-weight: 700;
       }
     }
@@ -228,23 +229,46 @@ footer {
   // ***************************************************************************
   &#thin {
     background: #0ac5f4;
-    padding: 350px 0;
+    padding: 200px 0;
 
     .text {
       margin: 0 auto;
       padding: 0 20px;
-      text-align: center;
+      text-align: left;
       width: 800px;
     }
 
-    h1 {
+    li {
       color: #fff;
-      font: 100 72px/72px 'lato';
-      letter-spacing: -2px;
+      font: 100 92px/1 'lato';
       text-transform: uppercase;
 
       .kern {
-        margin: 0 0 0 8px;
+        margin: 0 0 0 6px;
+      }
+
+      &:nth-child(1) {
+        opacity: 0.3;
+      }
+
+      &:nth-child(2) {
+        opacity: 0.4;
+      }
+
+      &:nth-child(3) {
+        opacity: 0.5;
+      }
+
+      &:nth-child(4) {
+        opacity: 0.6;
+      }
+
+      &:nth-child(5) {
+        opacity: 0.7;
+      }
+
+      &:nth-child(6) {
+        opacity: 0.8;
       }
     }
   }
