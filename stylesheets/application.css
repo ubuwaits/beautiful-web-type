@@ -232,7 +232,7 @@ footer {
     .sample#thin li:nth-child(6) {
       opacity: 0.8; }
 .sample#nabokov {
-  background: #85878d;
+  background: rgba(133, 135, 141, 0.7);
   padding: 0 0 300px 0; }
   .sample#nabokov .text {
     margin: 0 auto;
