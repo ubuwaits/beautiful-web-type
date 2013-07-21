@@ -5,6 +5,7 @@ There are over 600 typefaces in the Google web fonts directory. Many of them are
 ## Featured typefaces
 
 * [Abril Fatface](http://www.google.com/webfonts/specimen/Abril+Fatface)
+* [Cardo](http://www.google.com/webfonts/specimen/Cardo)
 * [Gentium Book Basic](http://www.google.com/webfonts/specimen/Gentium+Book+Basic)
 * [Gravitas One](http://www.google.com/webfonts/specimen/Gravitas+One)
 * [Lato](http://www.google.com/webfonts/specimen/Lato)
@@ -19,9 +20,9 @@ There are over 600 typefaces in the Google web fonts directory. Many of them are
 * [PT Serif](http://www.google.com/webfonts/specimen/PT+Serif)
 * [Vollkorn](http://www.google.com/webfonts/specimen/Vollkorn)
 
-## View the samples: http://hellohappy.org/beautiful-web-type
+### View the samples: http://hellohappy.org/beautiful-web-type
 
 To view and update the repo locally, start the Jekyll server and watch the Sass files with:
 
-    rake server
+    rake serve
 

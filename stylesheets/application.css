@@ -122,6 +122,28 @@ footer {
       .sample#title ul li a:hover {
         color: #222;
         font-weight: 700; }
+.sample#herzog {
+  background: #2A2C39;
+  padding: 250px 0; }
+  .sample#herzog .text {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 800px; }
+  .sample#herzog h2 {
+    color: #E9E9EB;
+    font: 400 36px/1.4 "cardo";
+    font-style: italic;
+    margin: 0 0 20px 0;
+    text-align: left;
+    text-indent: -10px; }
+  .sample#herzog h3 {
+    color: #fff;
+    font: 400 36px/1.4 "cardo";
+    margin: 0 0 20px 0;
+    text-align: left;
+    text-indent: -32px; }
+    .sample#herzog h3 em {
+      font-style: italic; }
 .sample#nietzsche {
   background: #ef4723;
   padding: 100px 0; }

@@ -31,6 +31,7 @@ footer {
 }
 
 .sample {
+
   // Project heading
   // ***************************************************************************
   &#title {
@@ -95,6 +96,40 @@ footer {
             font-weight: 700;
           }
         }
+      }
+    }
+  }
+
+  // Herzog quote
+  // ***************************************************************************
+  &#herzog {
+    background: #2A2C39;
+    padding: 250px 0;
+
+    .text {
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 800px;
+    }
+
+    h2 {
+      color: #E9E9EB;
+      font: 400 36px/1.4 'cardo';
+      font-style: italic;
+      margin: 0 0 20px 0;
+      text-align: left;
+      text-indent: -10px;
+    }
+
+    h3 {
+      color: #fff;
+      font: 400 36px/1.4 'cardo';
+      margin: 0 0 20px 0;
+      text-align: left;
+      text-indent: -32px;
+
+      em {
+        font-style: italic;
       }
     }
   }
