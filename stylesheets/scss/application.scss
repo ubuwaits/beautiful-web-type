@@ -81,6 +81,7 @@ footer {
 
       li {
         font-size: 11px;
+        position: relative;
         text-transform: uppercase;
 
         &:before {
@@ -90,6 +91,14 @@ footer {
           left: -2px;
           position: relative;
           top: 2px;
+        }
+
+        &.donation {
+          padding: 1em 0 0 0.5em;
+
+          &:before {
+            content: "";
+          }
         }
 
         a {
