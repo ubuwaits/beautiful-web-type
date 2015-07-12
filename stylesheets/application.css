@@ -123,7 +123,7 @@ footer {
         position: relative;
         top: 2px; }
       .sample#title ul li.donation {
-        padding: 1em 0 0 0.5em; }
+        padding: 1em 0 0 0.75em; }
         .sample#title ul li.donation:before {
           content: ""; }
       .sample#title ul li a:hover {
