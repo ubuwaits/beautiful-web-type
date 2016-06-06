@@ -4,21 +4,21 @@ There are over 600 typefaces in the Google web fonts directory. Many of them are
 
 ## Featured typefaces
 
-* [Abril Fatface](http://www.google.com/fonts/specimen/Abril+Fatface)
-* [Cardo](http://www.google.com/fonts/specimen/Cardo)
-* [Gentium Book Basic](http://www.google.com/fonts/specimen/Gentium+Book+Basic)
-* [Gravitas One](http://www.google.com/fonts/specimen/Gravitas+One)
-* [Lato](http://www.google.com/fonts/specimen/Lato)
-* [Merriweather](http://www.google.com/fonts/specimen/Merriweather)
-* [Old Standard TT](http://www.google.com/fonts/specimen/Old+Standard+TT)
-* [Open Sans](http://www.google.com/fonts/specimen/Open+Sans)
-* [Oswald](http://www.google.com/fonts/specimen/Oswald)
-* [Playfair Display](http://www.google.com/fonts/specimen/Playfair+Display)
-* [PT Mono](http://www.google.com/fonts/specimen/PT+Mono)
-* [PT Sans](http://www.google.com/fonts/specimen/PT+Sans)
-* [PT Sans Narrow](http://www.google.com/fonts/specimen/PT+Sans+Narrow)
-* [PT Serif](http://www.google.com/fonts/specimen/PT+Serif)
-* [Vollkorn](http://www.google.com/fonts/specimen/Vollkorn)
+* [Abril Fatface](https://www.google.com/fonts/specimen/Abril+Fatface)
+* [Cardo](https://www.google.com/fonts/specimen/Cardo)
+* [Gentium Book Basic](https://www.google.com/fonts/specimen/Gentium+Book+Basic)
+* [Gravitas One](https://www.google.com/fonts/specimen/Gravitas+One)
+* [Lato](https://www.google.com/fonts/specimen/Lato)
+* [Merriweather](https://www.google.com/fonts/specimen/Merriweather)
+* [Old Standard TT](https://www.google.com/fonts/specimen/Old+Standard+TT)
+* [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
+* [Oswald](https://www.google.com/fonts/specimen/Oswald)
+* [Playfair Display](https://www.google.com/fonts/specimen/Playfair+Display)
+* [PT Mono](https://www.google.com/fonts/specimen/PT+Mono)
+* [PT Sans](https://www.google.com/fonts/specimen/PT+Sans)
+* [PT Sans Narrow](https://www.google.com/fonts/specimen/PT+Sans+Narrow)
+* [PT Serif](https://www.google.com/fonts/specimen/PT+Serif)
+* [Vollkorn](https://www.google.com/fonts/specimen/Vollkorn)
 
 ### View the samples: http://hellohappy.org/beautiful-web-type
 
