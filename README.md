@@ -20,7 +20,7 @@ There are over 600 typefaces in the Google web fonts directory. Many of them are
 * [PT Serif](https://www.google.com/fonts/specimen/PT+Serif)
 * [Vollkorn](https://www.google.com/fonts/specimen/Vollkorn)
 
-### View the samples: http://hellohappy.org/beautiful-web-type
+### View the samples: http://chad.is/beautiful-web-type
 
 To view and update the repo locally, start the Jekyll server and watch the Sass files with:
 
