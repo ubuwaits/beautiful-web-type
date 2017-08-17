@@ -92,7 +92,7 @@ footer {
     padding: 100px 20px;
     position: relative;
     text-align: left;
-    width: 800px; }
+    width: 820px; }
 
 #title {
   background: #fff;
@@ -100,7 +100,8 @@ footer {
   padding: 100px 0; }
   #title h1 {
     color: #000;
-    font: 400 86px/84px Abril Fatface; }
+    font: 400 86px/84px Abril Fatface;
+    letter-spacing: 1px; }
     #title h1 span.kern {
       margin: 0 0 0 -10px; }
   #title h2 {
@@ -232,7 +233,6 @@ footer {
 #nabokov {
   background: rgba(133, 135, 141, 0.7); }
   #nabokov .text {
-    text-align: left;
     width: 700px; }
   #nabokov h1 {
     color: #242526;
@@ -262,8 +262,6 @@ footer {
 
 #seneca {
   background: #caccc9; }
-  #seneca .text {
-    width: 820px; }
   #seneca .body {
     -moz-column-count: 3;
     -moz-column-gap: 30px;
