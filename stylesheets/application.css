@@ -49,7 +49,7 @@ table {
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .sample#postnormal .text:after {
+.clearfix:after, .sample .text:after, #postnormal .source:after {
   clear: both;
   content: ' ';
   display: block;
@@ -61,6 +61,7 @@ table {
 
 body {
   background: #eaeaea;
+  box-sizing: border-box;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   -webkit-text-size-adjust: 100%; }
 
@@ -74,288 +75,267 @@ footer {
   footer p {
     color: #555;
     font: 400 16px/1 'open sans';
-    margin: 0 0 2em 0; }
+    margin: 0; }
     footer p a {
       color: #555;
       font-weight: 700; }
       footer p a:hover {
         color: #000; }
 
-.sample#title {
-  background: #fff;
-  padding: 125px 0 250px 0; }
-  .sample#title .text {
+.sample {
+  min-height: 106vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .sample .text {
     margin: 0 auto;
+    padding: 100px 20px;
+    position: relative;
+    text-align: left;
     width: 800px; }
-  .sample#title h1 {
+
+#title {
+  background: #fff;
+  min-height: auto;
+  padding: 100px 0; }
+  #title h1 {
     color: #000;
-    font: 400 87px/84px Abril Fatface; }
-    .sample#title h1 span.kern {
+    font: 400 86px/84px Abril Fatface; }
+    #title h1 span.kern {
       margin: 0 0 0 -10px; }
-  .sample#title h2 {
+  #title h2 {
     color: #666;
     font: 300 18px/24px 'open sans';
     margin: 0 0 36px 0;
     width: 650px; }
-    .sample#title h2 a:hover {
-      color: #222;
-      font-weight: 700; }
-  .sample#title p, .sample#title ul {
+    #title h2 a:hover {
+      color: #222; }
+  #title p, #title ul {
     color: #666;
     float: left;
     font: 400 13px/21px 'open sans';
     margin: 0 50px 0 0;
     width: 450px; }
-  .sample#title ul {
+  #title ul {
     margin: 0;
     position: relative;
     top: -2px;
     width: 300px; }
-    .sample#title ul li {
+    #title ul li {
       font-size: 11px;
       position: relative;
       text-transform: uppercase; }
-      .sample#title ul li:before {
+      #title ul li:before {
         content: "\00d7";
         font-size: 15px;
         font-weight: 700;
         left: -2px;
         position: relative;
         top: 2px; }
-      .sample#title ul li.donation {
-        padding: 1em 0 0 0.75em; }
-        .sample#title ul li.donation:before {
-          content: ""; }
-      .sample#title ul li a:hover {
+      #title ul li a:hover {
         color: #222;
         font-weight: 700; }
-.sample#herzog {
-  background: #2A2C39;
-  padding: 250px 0; }
-  .sample#herzog .text {
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 800px; }
-  .sample#herzog h2 {
+
+#herzog {
+  background: #2A2C39; }
+  #herzog h2 {
     color: #E9E9EB;
     font: 400 36px/1.4 'cardo';
     font-style: italic;
     margin: 0 0 20px 0;
     text-align: left;
     text-indent: -10px; }
-  .sample#herzog h3 {
+  #herzog h3 {
     color: #fff;
     font: 400 36px/1.4 'cardo';
     margin: 0 0 20px 0;
     text-align: left;
     text-indent: -32px; }
-    .sample#herzog h3 em {
+    #herzog h3 em {
       font-style: italic; }
-.sample#nietzsche {
-  background: #ef4723;
-  padding: 100px 0; }
-  .sample#nietzsche .text {
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 800px; }
-  .sample#nietzsche .excerpt {
+
+#nietzsche {
+  background: #ef4723; }
+  #nietzsche .excerpt {
     -moz-column-count: 2;
     -moz-column-gap: 50px;
     -webkit-column-count: 2;
     -webkit-column-gap: 50px; }
-  .sample#nietzsche h1 {
+  #nietzsche h1 {
     color: #222;
     font: 800 64px/64px 'open sans';
     margin: 0 0 32px 0;
     text-align: center;
     text-transform: uppercase;
     width: 800px; }
-    .sample#nietzsche h1 span {
+    #nietzsche h1 span {
       font: 400 60px/60px 'gentium book basic';
       font-style: italic;
       text-transform: none; }
-      .sample#nietzsche h1 span.kern {
+      #nietzsche h1 span.kern {
         margin: 0 4px 0 -10px; }
-  .sample#nietzsche h2 {
+  #nietzsche h2 {
     border-top: 1px solid #222;
     color: #222;
     font: 800 20px/20px 'open sans';
     margin: 0 0 20px 0;
     text-align: center;
     text-transform: uppercase; }
-    .sample#nietzsche h2 span {
+    #nietzsche h2 span {
       background: #ef4723;
       padding: 0 20px;
       position: relative;
       top: -10px; }
-  .sample#nietzsche p {
+  #nietzsche p {
     color: #222;
     font: 400 16px/24px 'gentium book basic';
     margin: 0; }
-.sample#bringhurst {
-  background: #fcfaf2;
-  padding: 350px 0; }
-  .sample#bringhurst .text {
-    margin: 0 auto;
-    padding: 0 20px;
+
+#bringhurst {
+  background: #fcfaf2; }
+  #bringhurst .text {
     width: 410px; }
-  .sample#bringhurst h1 {
+  #bringhurst h1 {
     color: #333;
     font: 400 20px/30px 'vollkorn';
     font-style: italic;
     margin: 0 0 10px 0;
     text-indent: -6px; }
-  .sample#bringhurst p {
+  #bringhurst p {
     color: #c90707;
     font: 400 12px/18px 'vollkorn';
     letter-spacing: 1px;
     text-transform: uppercase;
     text-indent: -13px; }
-.sample#thin {
-  background: #0ac5f4;
-  padding: 200px 0; }
-  .sample#thin .text {
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: left;
-    width: 800px; }
-  .sample#thin li {
+
+#thin {
+  background: #0ac5f4; }
+  #thin li {
     color: #fff;
     font: 100 92px/1 'lato';
     text-transform: uppercase; }
-    .sample#thin li .kern {
+    #thin li .kern {
       margin: 0 0 0 6px; }
-    .sample#thin li:nth-child(1) {
+    #thin li:nth-child(1) {
       opacity: 0.3; }
-    .sample#thin li:nth-child(2) {
+    #thin li:nth-child(2) {
       opacity: 0.4; }
-    .sample#thin li:nth-child(3) {
+    #thin li:nth-child(3) {
       opacity: 0.5; }
-    .sample#thin li:nth-child(4) {
+    #thin li:nth-child(4) {
       opacity: 0.6; }
-    .sample#thin li:nth-child(5) {
+    #thin li:nth-child(5) {
       opacity: 0.7; }
-    .sample#thin li:nth-child(6) {
+    #thin li:nth-child(6) {
       opacity: 0.8; }
-.sample#nabokov {
-  background: rgba(133, 135, 141, 0.7);
-  padding: 0 0 300px 0; }
-  .sample#nabokov .text {
-    margin: 0 auto;
-    padding: 0 20px;
+
+#nabokov {
+  background: rgba(133, 135, 141, 0.7); }
+  #nabokov .text {
     text-align: left;
     width: 700px; }
-  .sample#nabokov h1 {
+  #nabokov h1 {
     color: #242526;
     font: italic 700 84px/1.2 'playfair display'; }
-    .sample#nabokov h1.first {
+    #nabokov h1.first {
       float: left;
       padding: 200px 0 0 0;
       margin: 0 0 -10px 0;
       width: 142px; }
-    .sample#nabokov h1.second {
+    #nabokov h1.second {
       border-left: 8px solid #242526;
       float: left;
       margin: 0 0 -10px 0;
       padding: 200px 0 0 25px;
       width: auto; }
-    .sample#nabokov h1.third {
+    #nabokov h1.third {
       clear: both;
       font-style: normal;
       font-weight: 900;
       margin: 0 0 0 172px; }
-  .sample#nabokov p {
+  #nabokov p {
     color: #2e2f31;
     font: 400 14px/1 'playfair display';
     letter-spacing: 1px;
     margin: 18px 0 0 175px;
     text-transform: uppercase; }
-.sample#seneca {
-  background: #caccc9;
-  padding: 150px 0; }
-  .sample#seneca .text {
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: left;
+
+#seneca {
+  background: #caccc9; }
+  #seneca .text {
     width: 820px; }
-  .sample#seneca .body {
+  #seneca .body {
     -moz-column-count: 3;
     -moz-column-gap: 30px;
     -webkit-column-count: 3;
     -webkit-column-gap: 30px; }
-  .sample#seneca h1 {
+  #seneca h1 {
     color: #222;
     font: 900 42px/44px 'merriweather';
     letter-spacing: -1px;
     margin: 44px 0 0 0; }
-  .sample#seneca hr {
+  #seneca hr {
     background: #333;
     border: 0;
     height: 3px;
     margin: 19px 0 22px 0;
     width: 100px; }
-  .sample#seneca h2 {
+  #seneca h2 {
     color: #333;
     font: 900 14px/22px 'merriweather'; }
-  .sample#seneca p.title {
+  #seneca p.title {
     color: #c3322f;
     font: 900 14px/22px 'lato'; }
-  .sample#seneca p {
+  #seneca p {
     color: #333;
     font: 400 14px/22px 'merriweather'; }
-.sample#tufte {
-  background: #f8f5ef;
-  padding: 300px 0; }
-  .sample#tufte .text {
-    margin: 0 auto;
-    padding: 20px;
+
+#tufte {
+  background: #f8f5ef; }
+  #tufte .text {
     width: 860px; }
-  .sample#tufte h1 {
+  #tufte h1 {
     border-top: 5px solid #172bae;
     color: #172bae;
     font: 300 92px/1 'vollkorn';
     letter-spacing: -1px;
     margin: 0 0 0 -8px; }
-    .sample#tufte h1 span {
+    #tufte h1 span {
       background: #f8f5ef;
       padding: 0 19px 0 0;
       position: relative;
       top: -52px; }
-      .sample#tufte h1 span.kern {
+      #tufte h1 span.kern {
         background: transparent;
         margin: 0 0 0 -5px;
         padding: 0;
         top: 0; }
-        .sample#tufte h1 span.kern.push {
+        #tufte h1 span.kern.push {
           margin: 0 0 0 7px; }
-  .sample#tufte p {
+  #tufte p {
     color: #172bae;
     font: 400 20px/30px 'vollkorn';
     font-style: italic;
-    margin: -40px 0 0 300px;
+    margin: -40px 0 0 280px;
     text-indent: -16px; }
-    .sample#tufte p span {
+    #tufte p span {
       font-size: 28px;
       font-family: 'gentium book basic';
       font-weight: 400;
       margin: 0 2px 0 0;
       position: relative;
       top: 5px; }
-.sample#postnormal {
-  background: #fff;
-  padding: 150px 0; }
-  .sample#postnormal .text {
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
+
+#postnormal {
+  background: #fff; }
+  #postnormal .text {
     width: 860px; }
-  .sample#postnormal .source {
-    clear: both;
+  #postnormal .source {
     font: normal 10px/16px 'pt mono';
     opacity: 0.3;
     padding: 28px 0 0 0;
     text-transform: uppercase; }
-  .sample#postnormal h2 {
+  #postnormal h2 {
     color: #FFF700;
     font: bold 164px/1 'oswald';
     position: absolute;
@@ -363,36 +343,34 @@ footer {
     top: 0;
     width: 100%;
     z-index: 1; }
-    .sample#postnormal h2:nth-child(1) {
+    #postnormal h2:nth-child(1) {
       left: 0px; }
-    .sample#postnormal h2:nth-child(2) {
+    #postnormal h2:nth-child(2) {
       top: 160px;
       text-align: center; }
-    .sample#postnormal h2:nth-child(3) {
+    #postnormal h2:nth-child(3) {
       text-align: right;
       top: 318px; }
-  .sample#postnormal ol {
+  #postnormal ol {
     float: left;
     position: relative;
     width: auto;
     z-index: 2; }
-    .sample#postnormal ol li {
+    #postnormal ol li {
       color: #222;
       font: normal 13px/54px 'pt mono';
       letter-spacing: 5px; }
-    .sample#postnormal ol.normal {
+    #postnormal ol.normal {
       opacity: 0.3; }
-    .sample#postnormal ol.forward {
+    #postnormal ol.forward {
       margin: 0 60px; }
-.sample#slogan {
-  background: #c00;
-  padding: 325px 0;
-  text-align: center; }
-  .sample#slogan .text {
-    margin: 0 auto;
-    padding: 0 20px;
+
+#slogan {
+  background: #c00; }
+  #slogan .text {
+    text-align: center;
     width: 700px; }
-  .sample#slogan h1 {
+  #slogan h1 {
     border-bottom: 6px solid #090909;
     color: #090909;
     display: inline-block;
@@ -401,74 +379,70 @@ footer {
     margin: 0 0 20px 0;
     padding: 0 4px;
     text-transform: uppercase; }
-.sample#darwin {
-  background: #ede0ce;
-  padding: 150px 0;
-  text-align: center; }
-  .sample#darwin .text {
-    margin: 0 auto;
-    padding: 0 20px;
+
+#darwin {
+  background: #ede0ce; }
+  #darwin .text {
+    text-align: center;
     width: 750px; }
-  .sample#darwin h1 {
+  #darwin h1 {
     color: #161616;
     font: 400 58px/58px 'old standard tt';
     margin: 0 0 32px 0;
     text-transform: uppercase; }
-    .sample#darwin h1.small {
+    #darwin h1.small {
       font-size: 18px; }
-  .sample#darwin h2 {
+  #darwin h2 {
     color: #161616;
     font: 400 28px/28px 'old standard tt';
     margin: 160px 0 14px 0;
     text-transform: uppercase; }
-  .sample#darwin h3 {
+  #darwin h3 {
     color: #161616;
     font: 400 14px/21px 'old standard tt';
     margin: 0 0 80px 0;
     text-transform: uppercase; }
-  .sample#darwin h4 {
+  #darwin h4 {
     color: #161616;
     font: 400 14px/21px 'old standard tt';
     font-style: italic;
     margin: 0; }
-.sample#headline {
-  background: #000;
-  padding: 300px 0; }
-  .sample#headline .text {
-    margin: 0 auto;
-    padding: 0 20px;
+
+#headline {
+  background: #000; }
+  #headline .text {
     width: 470px; }
-  .sample#headline h1 {
+  #headline h1 {
     color: #fff;
     font: 400 92px/84px Abril Fatface; }
-.sample#camus {
-  background: #fff;
-  padding: 225px 0; }
-  .sample#camus .text {
-    margin: 0 auto;
-    padding: 0 20px;
+
+#camus {
+  background: #fff; }
+  #camus .text {
     width: 205px; }
-  .sample#camus h1 {
+  #camus h1 {
     color: #222;
     font: 700 24px/24px 'pt sans narrow';
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
-  .sample#camus hr {
+  #camus hr {
     background: #333;
     border: 0;
     height: 2px;
     margin: 12px auto 8px;
     width: 60px; }
-    .sample#camus hr.bottom {
+    #camus hr.bottom {
       margin: 10px auto; }
-  .sample#camus h2 {
+  #camus h2 {
     color: #222;
     font: 700 16px/20px 'pt sans';
     margin: 0;
     text-align: center; }
-  .sample#camus p {
+  #camus p {
     color: #222;
     font: 400 14px/18px 'pt serif';
     text-align: justify;
     text-indent: 14px; }
+
+/*# sourceMappingURL=application.css.map */

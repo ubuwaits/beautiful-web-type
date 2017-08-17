@@ -2,6 +2,7 @@
 
 body {
   background: #eaeaea;
+  box-sizing: border-box;
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -18,7 +19,7 @@ footer {
   p {
     color: #555;
     font: 400 16px/1 'open sans';
-    margin: 0 0 2em 0;
+    margin: 0;
 
     a {
       color: #555;
@@ -32,616 +33,563 @@ footer {
 }
 
 .sample {
+  min-height: 106vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  // Project heading
-  // ***************************************************************************
-  &#title {
-    background: #fff;
-    padding: 125px 0 250px 0;
+  .text {
+    @extend .clearfix;
+    margin: 0 auto;
+    padding: 100px 20px;
+    position: relative;
+    text-align: left;
+    width: 800px;
+  }
+}
 
-    .text {
-      margin: 0 auto;
-      width: 800px;
-    }
+// Project heading
+// ***************************************************************************
+#title {
+  background: #fff;
+  min-height: auto;
+  padding: 100px 0;
 
-    h1 {
-      color: #000;
-      font: 400 87px/84px Abril Fatface;
+  h1 {
+    color: #000;
+    font: 400 86px/84px Abril Fatface;
 
-      span.kern {
-        margin: 0 0 0 -10px;
-      }
-    }
-
-    h2 {
-      color: #666;
-      font: 300 18px/24px 'open sans';
-      margin: 0 0 36px 0;
-      width: 650px;
-
-      a:hover {
-        color: #222;
-        font-weight: 700;
-      }
-    }
-
-    p, ul {
-      color: #666;
-      float: left;
-      font: 400 13px/21px 'open sans';
-      margin: 0 50px 0 0;
-      width: 450px;
-    }
-
-    ul {
-      margin: 0;
-      position: relative;
-      top: -2px;
-      width: 300px;
-
-      li {
-        font-size: 11px;
-        position: relative;
-        text-transform: uppercase;
-
-        &:before {
-          content: "\00d7";
-          font-size: 15px;
-          font-weight: 700;
-          left: -2px;
-          position: relative;
-          top: 2px;
-        }
-
-        &.donation {
-          padding: 1em 0 0 0.75em;
-
-          &:before {
-            content: "";
-          }
-        }
-
-        a {
-          &:hover {
-            color: #222;
-            font-weight: 700;
-          }
-        }
-      }
+    span.kern {
+      margin: 0 0 0 -10px;
     }
   }
 
-  // Herzog quote
-  // ***************************************************************************
-  &#herzog {
-    background: #2A2C39;
-    padding: 250px 0;
+  h2 {
+    color: #666;
+    font: 300 18px/24px 'open sans';
+    margin: 0 0 36px 0;
+    width: 650px;
 
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 800px;
-    }
-
-    h2 {
-      color: #E9E9EB;
-      font: 400 36px/1.4 'cardo';
-      font-style: italic;
-      margin: 0 0 20px 0;
-      text-align: left;
-      text-indent: -10px;
-    }
-
-    h3 {
-      color: #fff;
-      font: 400 36px/1.4 'cardo';
-      margin: 0 0 20px 0;
-      text-align: left;
-      text-indent: -32px;
-
-      em {
-        font-style: italic;
-      }
-    }
-  }
-
-  // Nietzsche quote
-  // ***************************************************************************
-  &#nietzsche {
-    background: #ef4723;
-    padding: 100px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 800px;
-    }
-
-    .excerpt {
-      -moz-column-count: 2;
-      -moz-column-gap: 50px;
-      -webkit-column-count: 2;
-      -webkit-column-gap: 50px;
-    }
-
-    h1 {
+    a:hover {
       color: #222;
-      font: 800 64px/64px 'open sans';
-      margin: 0 0 32px 0;
-      text-align: center;
-      text-transform: uppercase;
-      width: 800px;
-
-      span {
-        font: 400 60px/60px 'gentium book basic';
-        font-style: italic;
-        text-transform: none;
-
-        &.kern {
-          margin: 0 4px 0 -10px;
-        }
-      }
-    }
-
-    h2 {
-      border-top: 1px solid #222;
-      color: #222;
-      font: 800 20px/20px 'open sans';
-      margin: 0 0 20px 0;
-      text-align: center;
-      text-transform: uppercase;
-
-      span {
-        background: #ef4723;
-        padding: 0 20px;
-        position: relative;
-        top: -10px;
-      }
-    }
-
-    p {
-      color: #222;
-      font: 400 16px/24px 'gentium book basic';
-      margin: 0;
     }
   }
 
-  // Bringhurst quote
-  // ***************************************************************************
-  &#bringhurst {
-    background: #fcfaf2;
-    padding: 350px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 410px;
-    }
-
-    h1 {
-      color: #333;
-      font: 400 20px/30px 'vollkorn';
-      font-style: italic;
-      margin: 0 0 10px 0;
-      text-indent: -6px;
-    }
-
-    p {
-      color: #c90707;
-      font: 400 12px/18px 'vollkorn';
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-indent: -13px;
-    }
+  p, ul {
+    color: #666;
+    float: left;
+    font: 400 13px/21px 'open sans';
+    margin: 0 50px 0 0;
+    width: 450px;
   }
 
-  // Very thin, all caps
-  // ***************************************************************************
-  &#thin {
-    background: #0ac5f4;
-    padding: 200px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: left;
-      width: 800px;
-    }
+  ul {
+    margin: 0;
+    position: relative;
+    top: -2px;
+    width: 300px;
 
     li {
-      color: #fff;
-      font: 100 92px/1 'lato';
+      font-size: 11px;
+      position: relative;
       text-transform: uppercase;
 
-      .kern {
-        margin: 0 0 0 6px;
-      }
-
-      &:nth-child(1) {
-        opacity: 0.3;
-      }
-
-      &:nth-child(2) {
-        opacity: 0.4;
-      }
-
-      &:nth-child(3) {
-        opacity: 0.5;
-      }
-
-      &:nth-child(4) {
-        opacity: 0.6;
-      }
-
-      &:nth-child(5) {
-        opacity: 0.7;
-      }
-
-      &:nth-child(6) {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  // Fat display face
-  // ***************************************************************************
-  &#nabokov {
-    background: rgba(#85878d, 0.7);
-    padding: 0 0 300px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: left;
-      width: 700px;
-    }
-
-    h1 {
-      color: #242526;
-      font: italic 700 84px/1.2 'playfair display';
-
-      &.first {
-        float: left;
-        padding: 200px 0 0 0;
-        margin: 0 0 -10px 0;
-        width: 142px;
-      }
-
-      &.second {
-        border-left: 8px solid #242526;
-        float: left;
-        margin: 0 0 -10px 0;
-        padding: 200px 0 0 25px;
-        width: auto;
-      }
-
-      &.third {
-        clear: both;
-        font-style: normal;
-        font-weight: 900;
-        margin: 0 0 0 172px;
-      }
-    }
-
-    p {
-      color: #2e2f31;
-      font: 400 14px/1 'playfair display';
-      letter-spacing: 1px;
-      margin: 18px 0 0 175px;
-      text-transform: uppercase;
-    }
-  }
-
-  // Seneca exerpt
-  // ***************************************************************************
-  &#seneca {
-    background: #caccc9;
-    padding: 150px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      text-align: left;
-      width: 820px;
-    }
-
-    .body {
-      -moz-column-count: 3;
-      -moz-column-gap: 30px;
-      -webkit-column-count: 3;
-      -webkit-column-gap: 30px;
-    }
-
-    h1 {
-      color: #222;
-      font: 900 42px/44px 'merriweather';
-      letter-spacing: -1px;
-      margin: 44px 0 0 0;
-    }
-
-    hr {
-      background: #333;
-      border: 0;
-      height: 3px;
-      margin: 19px 0 22px 0;
-      width: 100px;
-    }
-
-    h2 {
-      color: #333;
-      font: 900 14px/22px 'merriweather';
-    }
-
-    p.title {
-      color: #c3322f;
-      font: 900 14px/22px 'lato';
-    }
-
-    p {
-      color: #333;
-      font: 400 14px/22px 'merriweather';
-    }
-  }
-
-
-  // Tufte tribute
-  // ***************************************************************************
-  &#tufte {
-    background: #f8f5ef;
-    padding: 300px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 20px;
-      width: 860px;
-    }
-
-    h1 {
-      border-top: 5px solid #172bae;
-      color: #172bae;
-      font: 300 92px/1 'vollkorn';
-      letter-spacing: -1px;
-      margin: 0 0 0 -8px;
-
-      span {
-        background: #f8f5ef;
-        padding: 0 19px 0 0;
+      &:before {
+        content: "\00d7";
+        font-size: 15px;
+        font-weight: 700;
+        left: -2px;
         position: relative;
-        top: -52px;
+        top: 2px;
+      }
 
-        &.kern {
-          background: transparent;
-          margin: 0 0 0 -5px;
-          padding: 0;
-          top: 0;
-
-          &.push {
-            margin: 0 0 0 7px;
-          }
+      a {
+        &:hover {
+          color: #222;
+          font-weight: 700;
         }
       }
-    }
-
-    p {
-      color: #172bae;
-      font: 400 20px/30px 'vollkorn';
-      font-style: italic;
-      margin: -40px 0 0 300px;
-      text-indent: -16px;
-
-      span {
-        font-size: 28px;
-        font-family: 'gentium book basic';
-        font-weight: 400;
-        margin: 0 2px 0 0;
-        position: relative;
-        top: 5px;
-      }
-    }
-  }
-
-  // Post-normal
-  // ***************************************************************************
-  &#postnormal {
-    background: #fff;
-    padding: 150px 0;
-
-    .text {
-      @extend .clearfix;
-      margin: 0 auto;
-      padding: 0 20px;
-      position: relative;
-      width: 860px;
-    }
-
-    .source {
-      clear: both;
-      font: normal 10px/16px 'pt mono';
-      opacity: 0.3;
-      padding: 28px 0 0 0;
-      text-transform: uppercase;
-    }
-
-    h2 {
-      color: #FFF700;
-      font: bold 164px/1 'oswald';
-      position: absolute;
-      text-transform: uppercase;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-
-      &:nth-child(1) {
-        left: 0px;
-      }
-
-      &:nth-child(2) {
-        top: 160px;
-        text-align: center;
-      }
-
-      &:nth-child(3) {
-        text-align: right;
-        top: 318px;
-      }
-    }
-
-    ol {
-      float: left;
-      position: relative;
-      width: auto;
-      z-index: 2;
-
-      li {
-        color: #222;
-        font: normal 13px/54px 'pt mono';
-        letter-spacing: 5px;
-      }
-
-      &.normal {
-        opacity: 0.3;
-      }
-
-      &.forward {
-        margin: 0 60px;
-      }
-    }
-  }
-
-  // "Don't Die Wondering"
-  // ***************************************************************************
-  &#slogan {
-    background: #c00;
-    padding: 325px 0;
-    text-align: center;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 700px;
-    }
-
-    h1 {
-      border-bottom: 6px solid #090909;
-      color: #090909;
-      display: inline-block;
-      font: 400 76px/64px 'Gravitas One';
-      letter-spacing: -4px;
-      margin: 0 0 20px 0;
-      padding: 0 4px;
-      text-transform: uppercase;
-    }
-  }
-
-  // On the Origin of Species
-  // ***************************************************************************
-  &#darwin {
-    background: #ede0ce;
-    padding: 150px 0;
-    text-align: center;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 750px;
-    }
-
-    h1 {
-      color: #161616;
-      font: 400 58px/58px 'old standard tt';
-      margin: 0 0 32px 0;
-      text-transform: uppercase;
-
-      &.small {
-        font-size: 18px;
-      }
-    }
-
-    h2 {
-      color: #161616;
-      font: 400 28px/28px 'old standard tt';
-      margin: 160px 0 14px 0;
-      text-transform: uppercase;
-    }
-
-    h3 {
-      color: #161616;
-      font: 400 14px/21px 'old standard tt';
-      margin: 0 0 80px 0;
-      text-transform: uppercase;
-    }
-
-    h4 {
-      color: #161616;
-      font: 400 14px/21px 'old standard tt';
-      font-style: italic;
-      margin: 0;
-    }
-  }
-
-  // "Meaning & Structure in Design"
-  // ***************************************************************************
-  &#headline {
-    background: #000;
-    padding: 300px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 470px;
-    }
-
-    h1 {
-      color: #fff;
-      font: 400 92px/84px Abril Fatface;
-    }
-  }
-
-  // Camus obit
-  // ***************************************************************************
-  &#camus {
-    background: #fff;
-    padding: 225px 0;
-
-    .text {
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 205px;
-    }
-
-    h1 {
-      color: #222;
-      font: 700 24px/24px 'pt sans narrow';
-      margin: 0;
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    hr {
-      background: #333;
-      border: 0;
-      height: 2px;
-      margin: 12px auto 8px;
-      width: 60px;
-
-      &.bottom {
-        margin: 10px auto;
-      }
-    }
-
-    h2 {
-      color: #222;
-      font: 700 16px/20px 'pt sans';
-      margin: 0;
-      text-align: center;
-    }
-
-    p {
-      color: #222;
-      font: 400 14px/18px 'pt serif';
-      text-align: justify;
-      text-indent: 14px;
     }
   }
 }
 
+// Herzog quote
+// ***************************************************************************
+#herzog {
+  background: #2A2C39;
+
+  h2 {
+    color: #E9E9EB;
+    font: 400 36px/1.4 'cardo';
+    font-style: italic;
+    margin: 0 0 20px 0;
+    text-align: left;
+    text-indent: -10px;
+  }
+
+  h3 {
+    color: #fff;
+    font: 400 36px/1.4 'cardo';
+    margin: 0 0 20px 0;
+    text-align: left;
+    text-indent: -32px;
+
+    em {
+      font-style: italic;
+    }
+  }
+}
+
+// Nietzsche quote
+// ***************************************************************************
+#nietzsche {
+  background: #ef4723;
+
+  .excerpt {
+    -moz-column-count: 2;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50px;
+  }
+
+  h1 {
+    color: #222;
+    font: 800 64px/64px 'open sans';
+    margin: 0 0 32px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 800px;
+
+    span {
+      font: 400 60px/60px 'gentium book basic';
+      font-style: italic;
+      text-transform: none;
+
+      &.kern {
+        margin: 0 4px 0 -10px;
+      }
+    }
+  }
+
+  h2 {
+    border-top: 1px solid #222;
+    color: #222;
+    font: 800 20px/20px 'open sans';
+    margin: 0 0 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      background: #ef4723;
+      padding: 0 20px;
+      position: relative;
+      top: -10px;
+    }
+  }
+
+  p {
+    color: #222;
+    font: 400 16px/24px 'gentium book basic';
+    margin: 0;
+  }
+}
+
+// Bringhurst quote
+// ***************************************************************************
+#bringhurst {
+  background: #fcfaf2;
+
+  .text {
+    width: 410px;
+  }
+
+  h1 {
+    color: #333;
+    font: 400 20px/30px 'vollkorn';
+    font-style: italic;
+    margin: 0 0 10px 0;
+    text-indent: -6px;
+  }
+
+  p {
+    color: #c90707;
+    font: 400 12px/18px 'vollkorn';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-indent: -13px;
+  }
+}
+
+// Very thin, all caps
+// ***************************************************************************
+#thin {
+  background: #0ac5f4;
+
+  li {
+    color: #fff;
+    font: 100 92px/1 'lato';
+    text-transform: uppercase;
+
+    .kern {
+      margin: 0 0 0 6px;
+    }
+
+    &:nth-child(1) {
+      opacity: 0.3;
+    }
+
+    &:nth-child(2) {
+      opacity: 0.4;
+    }
+
+    &:nth-child(3) {
+      opacity: 0.5;
+    }
+
+    &:nth-child(4) {
+      opacity: 0.6;
+    }
+
+    &:nth-child(5) {
+      opacity: 0.7;
+    }
+
+    &:nth-child(6) {
+      opacity: 0.8;
+    }
+  }
+}
+
+// Fat display face
+// ***************************************************************************
+#nabokov {
+  background: rgba(#85878d, 0.7);
+
+  .text {
+    text-align: left;
+    width: 700px;
+  }
+
+  h1 {
+    color: #242526;
+    font: italic 700 84px/1.2 'playfair display';
+
+    &.first {
+      float: left;
+      padding: 200px 0 0 0;
+      margin: 0 0 -10px 0;
+      width: 142px;
+    }
+
+    &.second {
+      border-left: 8px solid #242526;
+      float: left;
+      margin: 0 0 -10px 0;
+      padding: 200px 0 0 25px;
+      width: auto;
+    }
+
+    &.third {
+      clear: both;
+      font-style: normal;
+      font-weight: 900;
+      margin: 0 0 0 172px;
+    }
+  }
+
+  p {
+    color: #2e2f31;
+    font: 400 14px/1 'playfair display';
+    letter-spacing: 1px;
+    margin: 18px 0 0 175px;
+    text-transform: uppercase;
+  }
+}
+
+// Seneca exerpt
+// ***************************************************************************
+#seneca {
+  background: #caccc9;
+
+  .text {
+    width: 820px;
+  }
+
+  .body {
+    -moz-column-count: 3;
+    -moz-column-gap: 30px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 30px;
+  }
+
+  h1 {
+    color: #222;
+    font: 900 42px/44px 'merriweather';
+    letter-spacing: -1px;
+    margin: 44px 0 0 0;
+  }
+
+  hr {
+    background: #333;
+    border: 0;
+    height: 3px;
+    margin: 19px 0 22px 0;
+    width: 100px;
+  }
+
+  h2 {
+    color: #333;
+    font: 900 14px/22px 'merriweather';
+  }
+
+  p.title {
+    color: #c3322f;
+    font: 900 14px/22px 'lato';
+  }
+
+  p {
+    color: #333;
+    font: 400 14px/22px 'merriweather';
+  }
+}
+
+
+// Tufte tribute
+// ***************************************************************************
+#tufte {
+  background: #f8f5ef;
+
+  .text {
+    width: 860px;
+  }
+
+  h1 {
+    border-top: 5px solid #172bae;
+    color: #172bae;
+    font: 300 92px/1 'vollkorn';
+    letter-spacing: -1px;
+    margin: 0 0 0 -8px;
+
+    span {
+      background: #f8f5ef;
+      padding: 0 19px 0 0;
+      position: relative;
+      top: -52px;
+
+      &.kern {
+        background: transparent;
+        margin: 0 0 0 -5px;
+        padding: 0;
+        top: 0;
+
+        &.push {
+          margin: 0 0 0 7px;
+        }
+      }
+    }
+  }
+
+  p {
+    color: #172bae;
+    font: 400 20px/30px 'vollkorn';
+    font-style: italic;
+    margin: -40px 0 0 280px;
+    text-indent: -16px;
+
+    span {
+      font-size: 28px;
+      font-family: 'gentium book basic';
+      font-weight: 400;
+      margin: 0 2px 0 0;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
+
+// Post-normal
+// ***************************************************************************
+#postnormal {
+  background: #fff;
+
+  .text {
+    width: 860px;
+  }
+
+  .source {
+    @extend .clearfix;
+    font: normal 10px/16px 'pt mono';
+    opacity: 0.3;
+    padding: 28px 0 0 0;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: #FFF700;
+    font: bold 164px/1 'oswald';
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    &:nth-child(1) {
+      left: 0px;
+    }
+
+    &:nth-child(2) {
+      top: 160px;
+      text-align: center;
+    }
+
+    &:nth-child(3) {
+      text-align: right;
+      top: 318px;
+    }
+  }
+
+  ol {
+    float: left;
+    position: relative;
+    width: auto;
+    z-index: 2;
+
+    li {
+      color: #222;
+      font: normal 13px/54px 'pt mono';
+      letter-spacing: 5px;
+    }
+
+    &.normal {
+      opacity: 0.3;
+    }
+
+    &.forward {
+      margin: 0 60px;
+    }
+  }
+}
+
+// "Don't Die Wondering"
+// ***************************************************************************
+#slogan {
+  background: #c00;
+
+  .text {
+    text-align: center;
+    width: 700px;
+  }
+
+  h1 {
+    border-bottom: 6px solid #090909;
+    color: #090909;
+    display: inline-block;
+    font: 400 76px/64px 'Gravitas One';
+    letter-spacing: -4px;
+    margin: 0 0 20px 0;
+    padding: 0 4px;
+    text-transform: uppercase;
+  }
+}
+
+// On the Origin of Species
+// ***************************************************************************
+#darwin {
+  background: #ede0ce;
+
+  .text {
+    text-align: center;
+    width: 750px;
+  }
+
+  h1 {
+    color: #161616;
+    font: 400 58px/58px 'old standard tt';
+    margin: 0 0 32px 0;
+    text-transform: uppercase;
+
+    &.small {
+      font-size: 18px;
+    }
+  }
+
+  h2 {
+    color: #161616;
+    font: 400 28px/28px 'old standard tt';
+    margin: 160px 0 14px 0;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: #161616;
+    font: 400 14px/21px 'old standard tt';
+    margin: 0 0 80px 0;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    color: #161616;
+    font: 400 14px/21px 'old standard tt';
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+// "Meaning & Structure in Design"
+// ***************************************************************************
+#headline {
+  background: #000;
+
+  .text {
+    width: 470px;
+  }
+
+  h1 {
+    color: #fff;
+    font: 400 92px/84px Abril Fatface;
+  }
+}
+
+// Camus obit
+// ***************************************************************************
+#camus {
+  background: #fff;
+
+  .text {
+    width: 205px;
+  }
+
+  h1 {
+    color: #222;
+    font: 700 24px/24px 'pt sans narrow';
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  hr {
+    background: #333;
+    border: 0;
+    height: 2px;
+    margin: 12px auto 8px;
+    width: 60px;
+
+    &.bottom {
+      margin: 10px auto;
+    }
+  }
+
+  h2 {
+    color: #222;
+    font: 700 16px/20px 'pt sans';
+    margin: 0;
+    text-align: center;
+  }
+
+  p {
+    color: #222;
+    font: 400 14px/18px 'pt serif';
+    text-align: justify;
+    text-indent: 14px;
+  }
+}
