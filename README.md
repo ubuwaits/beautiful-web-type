@@ -10,6 +10,7 @@ Please note: the above URL is the only correct URL for this project. There are c
 
 * [Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface)
 * [Cardo](https://fonts.google.com/specimen/Cardo)
+* [Fira Mono](https://fonts.google.com/specimen/Fira+Mono)
 * [Gentium Book Basic](https://fonts.google.com/specimen/Gentium+Book+Basic)
 * [Gravitas One](https://fonts.google.com/specimen/Gravitas+One)
 * [Lato](https://fonts.google.com/specimen/Lato)
@@ -22,6 +23,7 @@ Please note: the above URL is the only correct URL for this project. There are c
 * [PT Sans](https://fonts.google.com/specimen/PT+Sans)
 * [PT Sans Narrow](https://fonts.google.com/specimen/PT+Sans+Narrow)
 * [PT Serif](https://fonts.google.com/specimen/PT+Serif)
+* [Vidaloka](https://fonts.google.com/specimen/Vidaloka)
 * [Vollkorn](https://fonts.google.com/specimen/Vollkorn)
 
 ## Local development
