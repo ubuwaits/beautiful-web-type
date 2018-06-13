@@ -2,7 +2,7 @@
 
 There are over 600 typefaces in the Google web fonts directory. Many of them are awful. But there are also high-quality typefaces that deserve a closer look. Here are examples of these typefaces in action.
 
-## View the samples: http://beautifulwebtype.com
+## View the samples: https://beautifulwebtype.com
 
 Please note: the above URL is the only correct URL for this project. There are copies being hosted on other domains that I do not control.
 
