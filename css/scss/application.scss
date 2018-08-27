@@ -1,4 +1,63 @@
-@import 'reset';
+@import 'normalize';
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+
+:root {
+  --body-margin: 3em;
+  --wrapper: calc(100vw - 6em);
+  --gutter: 2em;
+  --rh: calc((var(--wrapper) - (11 * var(--gutter))) / 12);
+}
+
+// Main grid layout
+// --------------------------------------------------------------------------
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: var(--rh);
+  grid-auto-flow: row dense;
+  grid-gap: var(--gutter) var(--gutter);
+  margin: 3em auto;
+  max-width: var(--wrapper);
+}
+
+// Re-usable grid sizes
+// --------------------------------------------------------------------------
+.gr1 { grid-row: span 1; }
+.gr2 { grid-row: span 2; }
+.gr3 { grid-row: span 3; }
+.gr4 { grid-row: span 4; }
+.gr5 { grid-row: span 5; }
+.gr6 { grid-row: span 6; }
+.gr7 { grid-row: span 7; }
+.gr8 { grid-row: span 8; }
+.gc2 { grid-column: span 2;}
+.gc3 { grid-column: span 3;}
+.gc4 { grid-column: span 4;}
+.gc6 { grid-column: span 6;}
+.gc8 { grid-column: span 8;}
+.ase { align-self: end; }
+
+
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
 
 body {
   background: #eaeaea;
@@ -32,87 +91,25 @@ footer {
   }
 }
 
-.sample {
-  min-height: 106vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  .text {
-    @extend .clearfix;
-    margin: 0 auto;
-    padding: 100px 20px;
-    position: relative;
-    text-align: left;
-    width: 820px;
-  }
-}
+// .sample {
+//   min-height: 106vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//
+//   .text {
+//     @extend .clearfix;
+//     margin: 0 auto;
+//     padding: 100px 20px;
+//     position: relative;
+//     text-align: left;
+//     width: 820px;
+//   }
+// }
 
 // Project heading
 // ***************************************************************************
-#title {
-  background: #fff;
-  min-height: auto;
-  padding: 100px 0;
 
-  h1 {
-    color: #000;
-    font: 400 86px/84px Abril Fatface;
-    letter-spacing: 1px;
-
-    span.kern {
-      margin: 0 0 0 -10px;
-    }
-  }
-
-  h2 {
-    color: #666;
-    font: 300 18px/24px 'open sans';
-    margin: 0 0 36px 0;
-    width: 650px;
-
-    a:hover {
-      color: #222;
-    }
-  }
-
-  p, ul {
-    color: #666;
-    float: left;
-    font: 400 13px/21px 'open sans';
-    margin: 0 50px 0 0;
-    width: 450px;
-  }
-
-  ul {
-    margin: 0;
-    position: relative;
-    top: -2px;
-    width: 300px;
-
-    li {
-      font-size: 11px;
-      position: relative;
-      text-transform: uppercase;
-
-      &:before {
-        content: "\00d7";
-        font-size: 15px;
-        font-weight: 700;
-        left: -2px;
-        position: relative;
-        top: 2px;
-      }
-
-      a {
-        &:hover {
-          color: #222;
-          font-weight: 700;
-        }
-      }
-    }
-  }
-}
 
 // Herzog quote
 // ***************************************************************************
@@ -660,3 +657,5 @@ footer {
     }
   }
 }
+
+@import 'index';
