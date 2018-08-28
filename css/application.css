@@ -372,6 +372,15 @@ cite {
   width: 0;
   height: 0; }
 
+html {
+  font-size: 8px; }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(8px + 8 * ((100vw - 320px) / 1120)); } }
+  @media screen and (min-width: 1440px) {
+    html {
+      font-size: 16px; } }
+
 body {
   background: #eaeaea;
   box-sizing: border-box;
@@ -760,13 +769,13 @@ footer {
 
 .text,
 table {
-  margin-top: -48px; }
+  margin-top: -3em; }
 
 .meta {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   bottom: 0;
   color: #fff;
-  font: 400 14px/1.4 'fira mono';
+  font: 400 0.875em/1.4 'fira mono';
   position: absolute;
   left: 0;
   text-align: left;
@@ -782,11 +791,11 @@ table {
   color: #fff;
   padding: 0 4em; }
   .cardo h2 {
-    font: italic 400 32px/1.4 'cardo';
-    margin-bottom: 20px;
-    text-indent: -10px; }
+    font: italic 400 1.875em/1.4 'cardo';
+    margin-bottom: 0.5em;
+    text-indent: -0.25em; }
   .cardo .text p {
-    font: 400 32px/1.4 'cardo'; }
+    font: 400 1.875em/1.4 'cardo'; }
 
 .vollkorn {
   background: #f8f5ef;
@@ -796,36 +805,31 @@ table {
     margin-top: 0; }
   .vollkorn h1 {
     border-top: 5px solid #172bae;
-    font: 300 84px/1 'vollkorn';
+    font: 300 4.5em/1 'vollkorn';
     letter-spacing: -1px; }
     .vollkorn h1 span {
       background: #f8f5ef;
-      padding: 0 20px 0 0;
+      padding: 0 0.25em 0 0;
       position: relative;
-      top: -52px; }
+      top: -0.60em; }
       .vollkorn h1 span.kern {
         background: transparent;
-        margin: 0 0 0 -5px;
+        margin: 0 0 0 -0.05em;
         padding: 0;
         top: 0; }
         .vollkorn h1 span.kern.push {
-          margin: 0 0 0 7px; }
+          margin: 0 0 0 0.05em; }
   .vollkorn .text p {
-    font: italic 400 20px/30px 'vollkorn';
-    margin: -54px 0 0 226px;
+    font: italic 400 1.25em/1.4 'vollkorn';
+    margin: -2.25em 0 0 25%;
     position: relative;
-    text-indent: -14px;
+    text-indent: -0.4em;
     z-index: 1; }
-    .vollkorn .text p span {
-      font: 400 28px/1 'vollkorn';
-      margin: 0 2px 0 0;
-      position: relative;
-      top: 5px; }
 
 .gentium-basic {
   padding: 0 3em; }
   .gentium-basic .text p {
-    font: italic 400 18px/1.4 'gentium basic'; }
+    font: italic 400 1.125em/1.4 'gentium basic'; }
   .gentium-basic .text .source {
     font-style: normal; }
 
@@ -834,62 +838,60 @@ table {
   padding: 0 3em; }
   .merriweather .text {
     -moz-column-count: 2;
-    -moz-column-gap: 30px;
+    -moz-column-gap: 2em;
     -webkit-column-count: 2;
-    -webkit-column-gap: 30px; }
+    -webkit-column-gap: 2em; }
   .merriweather h1 {
     color: #222;
-    font: 900 42px/44px 'merriweather';
-    letter-spacing: -1px;
-    margin: 44px 0 0 0; }
+    font: 900 2.625em/1 'merriweather';
+    margin: 0.5em 0 1em 0; }
   .merriweather hr {
     background: #333;
     border: 0;
-    height: 3px;
-    margin: 19px 0 22px 0;
-    width: 100px; }
+    height: 0.1875em;
+    margin: 1em 0;
+    width: 40%; }
   .merriweather h2 {
     color: #333;
-    font: 900 14px/22px 'merriweather'; }
+    font: 900 0.875em/1.5 'merriweather'; }
   .merriweather .text .title {
     color: #c3322f;
-    font: 900 14px/22px 'merriweather'; }
+    font: 900 0.875em/1.5 'merriweather'; }
   .merriweather .text p {
     color: #333;
-    font: 400 14px/22px 'merriweather';
+    font: 400 0.875em/1.5 'merriweather';
     margin: 0; }
 
 .playfair-display {
   background: rgba(133, 135, 141, 0.7); }
   .playfair-display h1 {
     color: #242526;
-    font: italic 700 84px/1.2 'playfair display'; }
+    font: italic 700 4em/1.2 'playfair display'; }
     .playfair-display h1.first {
       float: left;
-      padding: 60px 0 0 0;
-      margin: 0 0 -10px 0;
-      width: 142px; }
+      margin: 0.5em 0 -0.15em 0;
+      width: auto; }
     .playfair-display h1.second {
-      border-left: 8px solid #242526;
+      border-left: 0.12em solid #242526;
       float: left;
-      margin: 0 0 -10px 0;
-      padding: 60px 0 0 25px;
+      margin: 0 0 -0.15em 0;
+      padding: 0.5em 0 0 0.3em;
       width: auto; }
     .playfair-display h1.third {
       clear: both;
       font-style: normal;
       font-weight: 900;
-      margin: 0 0 0 172px; }
+      margin: 0 0 0 2em; }
   .playfair-display .text p {
     color: #2e2f31;
-    font: 400 16px/1 'playfair display';
+    font: 400 1em/1 'playfair display';
     letter-spacing: 1px;
-    margin: 18px 0 0 175px;
+    margin: 1.2em 0 0 8em;
     text-transform: uppercase; }
 
 .oswald h2 {
   color: #FFF700;
-  font: bold 124px/1.1 'oswald';
+  font: bold 7.75em/1.1 'oswald';
   text-transform: uppercase; }
   .oswald h2:nth-child(2) {
     text-align: center; }
@@ -901,10 +903,8 @@ table {
   .fira-mono table {
     border: 1px solid #f6f6f6;
     border-collapse: collapse;
-    font: 400 16px/1 'fira mono';
+    font: 400 1em/1 'fira mono';
     width: 100%; }
-    .fira-mono table caption {
-      padding: 0 0 1em 0; }
     .fira-mono table thead {
       background-color: #f9f9f9; }
     .fira-mono table th {
@@ -923,15 +923,15 @@ table {
   background: #c00;
   text-align: center; }
   .gravitas-one .text {
-    margin-top: -28px; }
+    margin-top: -1.75em; }
   .gravitas-one h1 {
-    border-bottom: 6px solid #090909;
+    border-bottom: 0.09375em solid #090909;
     color: #090909;
     display: inline-block;
-    font: 400 64px/50px 'Gravitas One';
-    letter-spacing: -4px;
-    margin: 0 0 20px 0;
-    padding: 0 4px;
+    font: 400 4em/0.8 'Gravitas One';
+    letter-spacing: -0.0625em;
+    margin: 0 0 0.315em 0;
+    padding: 0 0.0625em;
     text-transform: uppercase; }
 
 .old-standard-tt {
@@ -941,45 +941,55 @@ table {
     text-align: center; }
   .old-standard-tt h1 {
     color: #161616;
-    font: 400 54px/54px 'old standard tt';
+    font: 400 3.375em/1 'old standard tt';
     margin: 0 0 12px 0;
     text-transform: uppercase; }
     .old-standard-tt h1.small {
-      font-size: 18px; }
+      font-size: 1.125em; }
   .old-standard-tt h2 {
     color: #161616;
-    font: 400 28px/28px 'old standard tt';
+    font: 400 1.75em/1 'old standard tt';
     margin: 32px 0 8px 0;
     text-transform: uppercase; }
   .old-standard-tt h3 {
     color: #161616;
-    font: 400 14px/21px 'old standard tt';
+    font: 400 0.875em/1.5 'old standard tt';
     margin: 0 0 30px 0;
     text-transform: uppercase; }
   .old-standard-tt h4 {
     color: #161616;
-    font: 400 16px/21px 'old standard tt';
+    font: 400 1em/1 'old standard tt';
     font-style: italic; }
 
 .abril-fatface {
   background: #000; }
   .abril-fatface h1 {
     color: #fff;
-    font: 400 84px/72px Abril Fatface; }
+    font: 400 5em/0.8 Abril Fatface; }
 
-.pt-serif {
-  background-color: #fff; }
-  .pt-serif .text {
-    max-width: 320px; }
-  .pt-serif h1 {
+.karla {
+  background-color: #fff;
+  padding: 0 3em; }
+  .karla h2 {
+    color: #787878;
+    font: 700 1em/1.4 'karla';
+    margin: 0;
+    text-transform: uppercase; }
+  .karla .text p {
     color: #222;
-    font: 700 24px/1 'pt serif';
+    font: 400 2em/1.2 'karla';
     margin: 0 0 6px 0; }
-  .pt-serif .text p {
-    color: #222;
-    font: 400 16px/20px 'pt serif';
-    margin: 0; }
-  .pt-serif .text p + p {
+  .karla .text p + p {
     text-indent: 16px; }
+
+@media screen and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto; }
+
+  .sample {
+    grid-row: span 1;
+    grid-column: span 4;
+    padding: 6em 3em; } }
 
 /*# sourceMappingURL=application.css.map */

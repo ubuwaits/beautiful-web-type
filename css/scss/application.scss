@@ -1,4 +1,9 @@
 @import 'normalize';
+@import 'functions';
+
+$mobile: 540px;
+$tablet: 1120px;
+$large: 1500px;
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -7,7 +12,6 @@ h1, h2, h3, h4, h5, h6, p {
 cite {
   font-style: normal;
 }
-
 
 :root {
   --body-margin: 3em;
@@ -57,6 +61,15 @@ cite {
 	visibility: hidden;
 	width: 0;
 	height: 0;
+}
+
+$min_width: 320px;
+$max_width: 1440px;
+$min_font: 8px;
+$max_font: 16px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 
 body {
