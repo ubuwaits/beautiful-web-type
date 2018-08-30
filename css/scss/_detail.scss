@@ -1,0 +1,39 @@
+header {
+  h2 {
+    font: 400 4.3em/1 'merriweather';
+    margin-bottom: 0.5em;
+  }
+}
+
+.type-info {
+  h3 {
+    font: 700 1em/1 'karla';
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font: 400 1em/1.2 'fira mono';
+    margin-bottom: 2em;
+  }
+}
+
+.get-font {
+  text-align: right;
+  
+  a {
+    background: red;
+    color: #fff;
+    display: inline-block;
+    font: 400 1em/1 'fira mono';
+    padding: 1em 2em;
+    text-transform: uppercase;
+  }
+}
+
+.type-styles {
+  p {
+    font-size: 2.488em;
+    margin-bottom: 0.25em;
+  }
+}

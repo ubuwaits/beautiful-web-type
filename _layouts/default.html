@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>{{ page.title }}</title>
     <meta name="description" content="A showcase of the best typefaces from the Google web fonts directory.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@ubuwaits">
     <meta property="og:url" content="https://beautifulwebtype.com">
-    <link rel="canonical" href="https://beautifulwebtype.com">
     <meta property="og:title" content="Beautiful Web Type &mdash; the best typefaces from Google Fonts">
     <meta property="og:image" content="https://beautifulwebtype.com/images/beautiful-web-type.png">
-    <title>{{ page.title }}</title>
+    <link rel="canonical" href="https://beautifulwebtype.com">
     <link href="/css/application.css" rel='stylesheet' type="text/css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Gentium+Basic:400,400i,700|Vollkorn:400italic,400' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Gravitas+One|Old+Standard+TT:400,400italic' rel='stylesheet'>
@@ -17,16 +17,13 @@
     <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family={{ page.webfonts }}" rel="stylesheet">
   </head>
 
   <body class="{{ page.keyword }}">
 
     <section id="container">
       {{ content }}
-
-      <footer>
-        <p>You can <a href="https://github.com/ubuwaits/beautiful-web-type">watch this repo on Github</a> or <a href="https://twitter.com/ubuwaits">follow me on Twitter</a>.</p>
-      </footer>
     </section>
 
   </body>

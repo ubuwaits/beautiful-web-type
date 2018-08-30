@@ -1,0 +1,53 @@
+$mobile: 540px;
+$tablet: 1120px;
+$large: 1500px;
+
+:root {
+  --body-margin: 3em;
+  --wrapper: calc(100vw - (2 * var(--body-margin)));
+  --gutter: 2em;
+  --rh: calc((var(--wrapper) - (11 * var(--gutter))) / 12);
+}
+
+// Main grid layout
+// ----------------------------------------------------------------------------
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: var(--rh);
+  grid-auto-flow: row dense;
+  grid-gap: var(--gutter);
+  margin: 0 auto;
+  max-width: var(--wrapper);
+}
+
+// Responsive styles
+// ----------------------------------------------------------------------------
+@media screen and (max-width: $mobile) {
+  :root {
+    --body-margin: 1.5em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+  }
+}
+
+// Re-usable grid sizes
+// ----------------------------------------------------------------------------
+.gr1 { grid-row: span 1; }
+.gr2 { grid-row: span 2; }
+.gr3 { grid-row: span 3; }
+.gr4 { grid-row: span 4; }
+.gr5 { grid-row: span 5; }
+.gr6 { grid-row: span 6; }
+.gr7 { grid-row: span 7; }
+.gr8 { grid-row: span 8; }
+.gc2 { grid-column: span 2;}
+.gc3 { grid-column: span 3;}
+.gc4 { grid-column: span 4;}
+.gc6 { grid-column: span 6;}
+.gc8 { grid-column: span 8;}
+.gc12 { grid-column: span 12;}
+.ase { align-self: end; }

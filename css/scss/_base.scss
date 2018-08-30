@@ -1,0 +1,25 @@
+$min_width: 320px;
+$max_width: 1440px;
+$min_font: 8px;
+$max_font: 16px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ededed;
+  margin: var(--body-margin);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, li { margin: 0; line-height: 1; }
+cite { font-style: normal; }

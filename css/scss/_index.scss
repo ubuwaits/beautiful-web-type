@@ -1,28 +1,75 @@
 .sample {
   align-items: center;
-  background-color: #fff;
   display: flex;
   justify-content: center;
+  padding: 0 4em;
   position: relative;
 }
 
+.sample a {
+  display: block;
+}
+
+// Responsive styles
+// ----------------------------------------------------------------------------
+@media screen and (max-width: $mobile) {
+  .sample {
+    grid-row: span 1;
+    grid-column: span 4;
+    padding: 6em 3em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .sample {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .sample {
+    grid-column: span 3;
+  }
+}
+
+// Move the text up to compensate for the footer
+// ----------------------------------------------------------------------------
 .text,
 table {
   margin-top: -3em;
 }
 
+// Sample footer
+// ----------------------------------------------------------------------------
 .meta {
   border-top: 1px solid rgba(#fff, 0.3);
   bottom: 0;
   color: #fff;
-  font: 400 0.875em/1.4 'fira mono';
+  font: 400 0.833em/1 'fira mono';
   position: absolute;
   left: 0;
   text-align: left;
   width: 100%;
 
   p {
-    padding: 1em;
+    float: left;
+    padding: 1.2em;
+
+    &.name {
+      width: 70%;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+
+    &.direct-link {
+      font-size: 0.833em;
+      padding: 1.5em;
+      text-align: right;
+      text-transform: uppercase;
+      width: 30%;
+    }
   }
 
   &.dark {
@@ -31,34 +78,36 @@ table {
   }
 }
 
+// Cardo
+// ----------------------------------------------------------------------------
 .cardo {
   background: #2A2C39;
   color: #fff;
-  padding: 0 4em;
 
   h2 {
-    font: italic 400 1.875em/1.4 'cardo';
+    font: italic 400 1.728em/1.4 'cardo';
     margin-bottom: 0.5em;
     text-indent: -0.25em;
   }
 
   .text p {
-    font: 400 1.875em/1.4 'cardo';
+    font: 400 1.728em/1.4 'cardo';
   }
 }
 
+// Vollkorn
+// ----------------------------------------------------------------------------
 .vollkorn {
   background: #f8f5ef;
   color: #172bae;
-  padding: 0 3em;
 
   .text {
     margin-top: 0;
   }
 
   h1 {
-    border-top: 5px solid #172bae;
-    font: 300 4.5em/1 'vollkorn';
+    border-top: 0.1em solid #172bae;
+    font: 300 4.3em/1 'vollkorn';
     letter-spacing: -1px;
 
     span {
@@ -81,41 +130,48 @@ table {
   }
 
   .text p {
-    font: italic 400 1.25em/1.4 'vollkorn';
-    margin: -2.25em 0 0 25%;
+    font: italic 400 1.2em/1.4 'vollkorn';
+    margin: -2.074em 0 0 25%;
     position: relative;
     text-indent: -0.4em;
     z-index: 1;
   }
 }
 
+// Gentium Basic
+// ----------------------------------------------------------------------------
 .gentium-basic {
-  padding: 0 3em;
+  background-color: #e8e6d9;
+  color: rgba(#000, 0.75);
+
+  h1 {
+    font: 400 2.074em/1 'gentium basic';
+    margin-bottom: 0.5em;
+  }
 
   .text p {
-    font: italic 400 1.125em/1.4 'gentium basic';
+    font: italic 400 1.2em/1.4 'gentium basic';
+    margin-bottom: 1em;
   }
 
   .text .source {
+    font-size: 1em;
     font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
   }
 }
 
-.merriweather {
+// Merriweather
+// ----------------------------------------------------------------------------
+.merriweather-sample {
   background: #caccc9;
-  padding: 0 3em;
-
-  .text {
-    -moz-column-count: 2;
-    -moz-column-gap: 2em;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 2em;
-  }
 
   h1 {
     color: #222;
-    font: 900 2.625em/1 'merriweather';
-    margin: 0.5em 0 1em 0;
+    font: 900 2.986em/1 'merriweather';
+    margin: 0.25em 0 1em 0;
   }
 
   hr {
@@ -128,27 +184,31 @@ table {
 
   h2 {
     color: #333;
-    font: 900 0.875em/1.5 'merriweather';
+    font: 900 0.833em/1.5 'merriweather';
   }
 
   .text .title {
     color: #c3322f;
-    font: 900 0.875em/1.5 'merriweather';
+    font: 900 0.833em/1.5 'merriweather';
   }
 
   .text p {
     color: #333;
-    font: 400 0.875em/1.5 'merriweather';
+    column-count: 2;
+    column-gap: 2em;
+    font: 400 0.833em/1.5 'merriweather';
     margin: 0;
   }
 }
 
+// Playfair Display
+// ----------------------------------------------------------------------------
 .playfair-display {
   background: rgba(#85878d, 0.7);
 
   h1 {
     color: #242526;
-    font: italic 700 4em/1.2 'playfair display';
+    font: italic 700 3.583em/1.2 'playfair display';
 
     &.first {
       float: left;
@@ -176,15 +236,17 @@ table {
     color: #2e2f31;
     font: 400 1em/1 'playfair display';
     letter-spacing: 1px;
-    margin: 1.2em 0 0 8em;
+    margin: 1.2em 0 0 7.166em;
     text-transform: uppercase;
   }
 }
 
+// Oswald
+// ----------------------------------------------------------------------------
 .oswald {
   h2 {
     color: #FFF700;
-    font: bold 7.75em/1.1 'oswald';
+    font: bold 7.43em/1.1 'oswald';
     text-transform: uppercase;
 
     &:nth-child(2) {
@@ -197,17 +259,19 @@ table {
   }
 }
 
+// Fira Mono
+// ----------------------------------------------------------------------------
 .fira-mono {
-  padding: 0 3em;
+  background-color: #e7e7e7;
 
   table {
-    border: 1px solid #f6f6f6;
+    border: 1px solid #fff;
     border-collapse: collapse;
     font: 400 1em/1 'fira mono';
     width: 100%;
 
     thead {
-      background-color: #f9f9f9;
+      background-color: rgba(#fff, 0.5);
     }
 
     th {
@@ -216,21 +280,30 @@ table {
     }
 
     tr {
-      border-bottom: 1px solid #f6f6f6;
+      border-bottom: 1px solid #fff;
     }
 
     td, th {
-      padding: 0.75em;
+      padding: 0.75em 0.5em;
+    }
+
+    td {
+      background-color: rgba(#fff, 0.9);
+    }
+
+    tfoot {
+      background-color: rgba(#fff, 0.8);
     }
 
     tfoot,
     tfoot th {
-      background-color: #f9f9f9;
       font-weight: 700;
     }
   }
 }
 
+// Gravitas One
+// ----------------------------------------------------------------------------
 .gravitas-one {
   background: #c00;
   text-align: center;
@@ -243,7 +316,7 @@ table {
     border-bottom: 0.09375em solid #090909;
     color: #090909;
     display: inline-block;
-    font: 400 4em/0.8 'Gravitas One';
+    font: 400 3.583em/0.8 'Gravitas One';
     letter-spacing: -0.0625em;
     margin: 0 0 0.315em 0;
     padding: 0 0.0625em;
@@ -251,9 +324,10 @@ table {
   }
 }
 
+// Old Standard TT
+// ----------------------------------------------------------------------------
 .old-standard-tt {
   background: #ede0ce;
-  padding: 0 3em;
 
   .text {
     text-align: center;
@@ -261,26 +335,26 @@ table {
 
   h1 {
     color: #161616;
-    font: 400 3.375em/1 'old standard tt';
-    margin: 0 0 12px 0;
+    font: 400 3.583em/1 'old standard tt';
+    margin: 0.5em 0;
     text-transform: uppercase;
 
     &.small {
-      font-size: 1.125em;
+      font-size: 1.2em;
     }
   }
 
   h2 {
     color: #161616;
-    font: 400 1.75em/1 'old standard tt';
-    margin: 32px 0 8px 0;
+    font: 400 1.728em/1 'old standard tt';
+    margin: 3em 0 0.5em 0;
     text-transform: uppercase;
   }
 
   h3 {
     color: #161616;
-    font: 400 0.875em/1.5 'old standard tt';
-    margin: 0 0 30px 0;
+    font: 400 0.833em/1.5 'old standard tt';
+    margin: 0 0 2em 0;
     text-transform: uppercase;
   }
 
@@ -291,18 +365,21 @@ table {
   }
 }
 
+// Abril Fatface
+// ----------------------------------------------------------------------------
 .abril-fatface {
   background: #000;
 
   h1 {
     color: #fff;
-    font: 400 5em/0.8 Abril Fatface;
+    font: 400 5.16em/0.8 Abril Fatface;
   }
 }
 
+// Karla
+// ----------------------------------------------------------------------------
 .karla {
   background-color: #fff;
-  padding: 0 3em;
 
   h2 {
     color: #787878;
@@ -319,23 +396,5 @@ table {
 
   .text p + p {
     text-indent: 16px;
-  }
-}
-
-@media screen and (max-width: $tablet) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-  }
-
-  .text,
-  table {
-    //margin-top: 0;
-  }
-
-  .sample {
-    grid-row: span 1;
-    grid-column: span 4;
-    padding: 6em 3em;
   }
 }
