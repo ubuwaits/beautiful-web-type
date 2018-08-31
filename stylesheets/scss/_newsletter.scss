@@ -1,0 +1,81 @@
+%reset-button {
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+
+  /* Remove excess padding and border in Firefox 4+ */
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.newsletter {
+  background-color: #FFF700;
+  padding: 10em 0;
+
+  form {
+    margin: 1em auto 0.5em auto;
+    max-width: 600px;
+  }
+
+  h2 {
+    font: 900 20px/1.6 'merriweather';
+    margin: 0 0 1em 0;
+  }
+
+  p {
+    font: 400 20px/1.6 'merriweather';
+    margin: 0 0 1em 0;
+  }
+
+  input[type='text'] {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font: 400 20px 'merriweather';
+    margin: 0 0 0.5em 0;
+    outline: none;
+    padding: 1em 0.5em;
+    width: 100%;
+  }
+
+  input[type='submit'] {
+    @extend %reset-button;
+    background: #373737;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline;
+    font: 400 20px/1 'merriweather';
+    padding: 0.75em 1.75em;
+    width: auto;
+  }
+}
+
+.tinyletter {
+  font: 400 12px/1 'merriweather';
+  margin-left: 1em;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
