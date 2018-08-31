@@ -20,7 +20,7 @@ header {
 
 .get-font {
   text-align: right;
-  
+
   a {
     background: red;
     color: #fff;
@@ -35,5 +35,23 @@ header {
   p {
     font-size: 2.488em;
     margin-bottom: 0.25em;
+  }
+}
+
+.external-sample {
+  margin-bottom: 2em;
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    font: 400 0.833em/1.2 'fira mono';
+    margin: 0.5em 0 1em 0;
+  }
+
+  a {
+    font-weight: 500;
+    text-decoration: underline;
   }
 }
