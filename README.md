@@ -1,3 +1,9 @@
+# A completely new version of Beautiful Web Type will launch this fall.
+
+It will take the initial idea much further, with significantly more detail on each typeface. It will also include typefaces from outside the Google fonts collection.
+
+Get notified when it launches: https://tinyletter.com/beautifulwebtype
+
 # Beautiful web type
 
 There are over 600 typefaces in the Google web fonts directory. Many of them are awful. But there are also high-quality typefaces that deserve a closer look. Here are examples of these typefaces in action.
