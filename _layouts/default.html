@@ -7,22 +7,16 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@ubuwaits">
     <meta property="og:url" content="https://beautifulwebtype.com">
-    <meta property="og:title" content="Beautiful Web Type &mdash; the best typefaces from Google Fonts">
+    <meta property="og:title" content="High-Quality Free Typefaces &bull; Beautiful Web Type">
     <meta property="og:image" content="https://beautifulwebtype.com/images/beautiful-web-type.png">
-    <link rel="canonical" href="https://beautifulwebtype.com">
     <link href="/css/application.css" rel='stylesheet' type="text/css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Gentium+Basic:400,400i,700|Vollkorn:400italic,400' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Gravitas+One|Old+Standard+TT:400,400italic' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:700|Merriweather:400,900|Playfair+Display:400,900,700italic|Oswald:400,700' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family={{ page.webfonts }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://indestructibletype-fonthosting.github.io/jost.css" type="text/css" charset="utf-8" />
   </head>
 
-  <body class="{{ page.keyword }}">
+  <body class="{{ page.body }}" spellcheck="false">
+    {% include header.html %}
 
-    <section id="container">
+    <section class="container">
       {{ content }}
     </section>
 

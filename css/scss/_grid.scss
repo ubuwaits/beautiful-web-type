@@ -44,7 +44,11 @@ $large: 1500px;
 .gr6 { grid-row: span 6; }
 .gr7 { grid-row: span 7; }
 .gr8 { grid-row: span 8; }
+.gr9 { grid-row: span 9; }
+.gr10 { grid-row: span 10; }
+.gr11 { grid-row: span 11; }
 .gr12 { grid-row: span 12; }
+.gr13 { grid-row: span 13; }
 .gc2 { grid-column: span 2;}
 .gc3 { grid-column: span 3;}
 .gc4 { grid-column: span 4;}
@@ -52,3 +56,19 @@ $large: 1500px;
 .gc8 { grid-column: span 8;}
 .gc12 { grid-column: span 12;}
 .ase { align-self: end; }
+.asc { align-self: center; }
+
+.justify-center { justify-content: center; }
+.justify-start { justify-content: flex-start; }
+
+.flow-center {
+  align-items: center;
+  text-align: center;
+}
+
+.text-center { text-align: center; }
+
+.col-2 {
+  column-count: 2;
+  column-gap: 2em;
+}

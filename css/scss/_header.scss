@@ -1,0 +1,57 @@
+.site-header {
+  -webkit-backdrop-filter: blur(2px);
+  align-items: center;
+  background: rgba(255, 255, 255, 0.975);
+  display: flex;  
+  margin: 0 -3rem 0 -3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  h1 {
+    flex-basis: 275px;
+    font: italic 700 var(--ms1)/1 'Alegreya Sans';
+    padding: 0 3rem 0 1.5rem;
+    text-transform: uppercase;
+  }
+
+  ol {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    font: 700 var(--ms0)/1 'Alegreya Sans';
+    justify-content: center;
+    text-transform: uppercase;
+
+    a {
+      border-bottom: 2px solid transparent;
+      display: block;
+      padding: 1.5em 1.5em 1.2em 1.5em;
+
+      &:hover {
+        border-bottom-color: red;
+        color: red;
+      }
+    }
+  }
+
+  .support {
+    flex-basis: 275px;
+    margin-right: 1.5rem;
+    text-align: right;
+
+    a {
+      color: red;
+      font: 500 var(--ms0)/1 'Alegreya Sans';
+    }
+  }
+}
+
+body.serif ol li.nav-serif a,
+body.sans-serif ol li.nav-sans-serif a,
+body.display ol li.nav-display a,
+body.monospaced ol li.nav-monospaced a {
+  border-bottom-color: red;
+  color: red;
+}

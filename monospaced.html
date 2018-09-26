@@ -1,0 +1,14 @@
+---
+layout: default
+body: monospaced index
+title: Free Monospaced Fonts &bull; Beautiful Web Type
+permalink: monospaced/
+---
+
+{% assign typefaces = site.data.typefaces | where: 'category', 'Monospaced'  %}
+
+<div class="samples grid">
+  {% for typeface in typefaces %}
+    {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+  {% endfor %}
+</div>

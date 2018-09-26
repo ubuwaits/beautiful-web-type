@@ -1,13 +1,15 @@
 .sample {
-  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 0 4em;
-  position: relative;
-}
 
-.sample a {
-  display: block;
+  .text {
+    align-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column;
+    justify-content: center;
+  }
 }
 
 // Responsive styles
@@ -32,55 +34,51 @@
   }
 }
 
-// Move the text up to compensate for the footer
-// ----------------------------------------------------------------------------
-.text,
-table {
-  margin-top: -3em;
-}
-
 // Sample footer
 // ----------------------------------------------------------------------------
 .meta {
   border-top: 1px solid rgba(#fff, 0.3);
-  bottom: 0;
+  border-bottom: 0;
   color: #fff;
-  font: 400 0.833em/1 'fira mono';
-  position: absolute;
-  left: 0;
+  font: 700 var(--ms0)/1 'Alegreya Sans';
+  padding: 0.8rem 1rem;
   text-align: left;
-  width: 100%;
 
   p {
-    float: left;
-    padding: 1.2em;
-
     &.name {
-      width: 70%;
-
       strong {
-        font-weight: 500;
+        font-weight: 700;
       }
     }
 
+    &.code {
+      color: #a7a7a7;
+      font-weight: 400;
+    }
+
     &.direct-link {
-      font-size: 0.833em;
-      padding: 1.5em;
+      font-size: 0.833rem;
+      padding: 1.5rem;
       text-align: right;
       text-transform: uppercase;
       width: 30%;
     }
   }
 
+  &.top {
+    border-bottom: 1px solid rgba(#fff, 0.3);
+    border-top: 0;
+  }
+
   &.dark {
-    border-top: 1px solid rgba(#000, 0.05);
+    border-color: rgba(#000, 0.05);
     color: #333;
   }
 }
 
 // Cardo
 // ----------------------------------------------------------------------------
-.cardo {
+.cardo-example {
   background: #2A2C39;
   color: #fff;
 
@@ -92,49 +90,6 @@ table {
 
   .text p {
     font: 400 1.728em/1.4 'cardo';
-  }
-}
-
-// Vollkorn
-// ----------------------------------------------------------------------------
-.vollkorn {
-  background: #f8f5ef;
-  color: #172bae;
-
-  .text {
-    margin-top: 0;
-  }
-
-  h1 {
-    border-top: 0.1em solid #172bae;
-    font: 300 4.3em/1 'vollkorn';
-    letter-spacing: -1px;
-
-    span {
-      background: #f8f5ef;
-      padding: 0 0.25em 0 0;
-      position: relative;
-      top: -0.60em;
-
-      &.kern {
-        background: transparent;
-        margin: 0 0 0 -0.05em;
-        padding: 0;
-        top: 0;
-
-        &.push {
-          margin: 0 0 0 0.05em;
-        }
-      }
-    }
-  }
-
-  .text p {
-    font: italic 400 1.2em/1.4 'vollkorn';
-    margin: -2.074em 0 0 25%;
-    position: relative;
-    text-indent: -0.4em;
-    z-index: 1;
   }
 }
 
@@ -168,42 +123,39 @@ table {
 .merriweather-sample {
   background: #caccc9;
 
-  h1 {
-    color: #222;
-    font: 900 2.986em/1 'merriweather';
-    margin: 0.25em 0 1em 0;
+  .text {
+    padding: 0 3em;
   }
 
-  hr {
-    background: #333;
-    border: 0;
-    height: 0.1875em;
-    margin: 1em 0;
-    width: 40%;
+  h1 {
+    color: #222;
+    font: 900 var(--ms5)/1 'merriweather';
+    margin: 0 0 0.25rem 0;
   }
 
   h2 {
     color: #333;
-    font: 900 0.833em/1.5 'merriweather';
+    font: 900 var(--ms-1)/1.5 'merriweather';
   }
 
   .text .title {
     color: #c3322f;
-    font: 900 0.833em/1.5 'merriweather';
+    font: italic 400 var(--ms1)/1.5 'merriweather';
+    margin: 0 0 1.5rem 0;
   }
 
   .text p {
     color: #333;
     column-count: 2;
-    column-gap: 2em;
-    font: 400 0.833em/1.5 'merriweather';
+    column-gap: 2rem;
+    font: 400 var(--ms0)/1.5 'merriweather';
     margin: 0;
   }
 }
 
 // Playfair Display
 // ----------------------------------------------------------------------------
-.playfair-display {
+.playfair-display-sample {
   background: rgba(#85878d, 0.7);
 
   h1 {
@@ -243,10 +195,18 @@ table {
 
 // Oswald
 // ----------------------------------------------------------------------------
-.oswald {
+.oswald-sample {
+  background-color: #fff;
+
+  .text {
+    margin: 0 3em;
+  }
+
   h2 {
     color: #FFF700;
-    font: bold 7.43em/1.1 'oswald';
+    font-size: var(--ms11);
+    font-weight: 700;
+    line-height: 1.1;
     text-transform: uppercase;
 
     &:nth-child(2) {
@@ -257,6 +217,29 @@ table {
       text-align: right;
     }
   }
+}
+
+// Oswald 02
+// ----------------------------------------------------------------------------
+.oswald-sample-02 {
+  background-color: #fff;
+
+  .text {
+    hyphens: none;
+    margin: 0 1.7em;
+    overflow-wrap: break-word;
+  }
+
+  h1 {
+    font-size: var(--ms8);
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: justify;
+  }
+
+  .color-01 { color: #FF8BB8; }
+  .color-02 { color: #945B9F; }
+  .color-03 { color: #70D7A0; }
 }
 
 // Fira Mono
@@ -304,13 +287,9 @@ table {
 
 // Gravitas One
 // ----------------------------------------------------------------------------
-.gravitas-one {
+.gravitas-one-sample {
   background: #c00;
   text-align: center;
-
-  .text {
-    margin-top: -1.75em;
-  }
 
   h1 {
     border-bottom: 0.09375em solid #090909;
@@ -324,57 +303,6 @@ table {
   }
 }
 
-// Old Standard TT
-// ----------------------------------------------------------------------------
-.old-standard-tt {
-  background: #ede0ce;
-
-  .text {
-    text-align: center;
-  }
-
-  h1 {
-    color: #161616;
-    font: 400 3.583em/1 'old standard tt';
-    margin: 0.5em 0;
-    text-transform: uppercase;
-
-    &.small {
-      font-size: 1.2em;
-    }
-  }
-
-  h2 {
-    color: #161616;
-    font: 400 1.728em/1 'old standard tt';
-    margin: 3em 0 0.5em 0;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    color: #161616;
-    font: 400 0.833em/1.5 'old standard tt';
-    margin: 0 0 2em 0;
-    text-transform: uppercase;
-  }
-
-  h4 {
-    color: #161616;
-    font: 400 1em/1 'old standard tt';
-    font-style: italic;
-  }
-}
-
-// Abril Fatface
-// ----------------------------------------------------------------------------
-.abril-fatface {
-  background: #000;
-
-  h1 {
-    color: #fff;
-    font: 400 5.16em/0.8 Abril Fatface;
-  }
-}
 
 // Karla
 // ----------------------------------------------------------------------------
@@ -396,5 +324,79 @@ table {
 
   .text p + p {
     text-indent: 16px;
+  }
+}
+
+// Vollkorn
+// ----------------------------------------------------------------------------
+.vollkorn-sample {
+  background: #26473C;
+  color: #FA9F6A;
+
+  .text {
+    margin: 2.15em 3em 0;
+  }
+
+  h1 {
+    border-top: 0.075em solid #FA9F6A;
+    font-weight: 400;
+    font-size: var(--ms8);
+    line-height: 1;
+
+    span {
+      background: #26473C;
+      padding: 0 0.25em 0 0;
+      position: relative;
+      top: -0.60em;
+    }
+  }
+
+  .text p {
+    font-size: var(--ms2);
+    font-style: italic;
+    line-height: 1.4;
+    margin: calc(-1 * var(--ms2)) 20% 0 0;
+    text-indent: -0.4em;
+    z-index: 1;
+  }
+}
+
+// Vollkorn 2
+// ----------------------------------------------------------------------------
+.vollkorn-sample-02 {
+  background: #092D5F;
+  color: #F8F0E3;
+
+  .text {
+    align-items: stretch;
+    display: grid;
+    flex-grow: unset;
+    grid: 1fr / 1fr 4fr;
+    grid-gap: 1.5rem;
+    margin: 0 4rem;
+  }
+
+  h1, h2, p {
+    font-size: var(--ms1);
+    line-height: 1.5;
+    font-feature-settings: 'dlig' off;
+  }
+
+  h1 {
+    font-feature-settings: 'smcp', 'dlig' off;
+    grid-area: 1 / 1;
+    text-align: right;
+  }
+
+  h2 {
+    font-size: var(--ms0);
+    grid-area: 1 / 1;
+    line-height: 1.35;
+    margin-bottom: 0.125em;
+    text-align: right;
+  }
+
+  p {
+    grid-area: 1 / 2;
   }
 }

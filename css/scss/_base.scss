@@ -1,7 +1,9 @@
-$min_width: 320px;
+$min_width: 920px;
 $max_width: 1440px;
-$min_font: 8px;
+$min_font: 10px;
 $max_font: 16px;
+
+$body-bg: #f2f2f2;
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -12,8 +14,11 @@ html {
 }
 
 body {
-  background: #ededed;
-  margin: var(--body-margin);
+  background: $body-bg;
+  font-family: 'courier';
+  margin: 6.5em var(--body-margin) var(--body-margin);
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga", "clig", "dlig";
 }
 
 a {
@@ -22,4 +27,16 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, li { margin: 0; line-height: 1; }
+ol { list-style: none; padding: 0; }
 cite { font-style: normal; }
+
+.left-align { text-align: left !important; }
+.flex-start { justify-content: flex-start !important; }
+.center { text-align: center; }
+.block { display: block; }
+
+[contenteditable]:focus {
+  background: rgba(orange, 0.1);
+  caret-color: red;
+  outline: 0 solid transparent;
+}

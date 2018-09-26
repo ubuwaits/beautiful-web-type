@@ -1,0 +1,14 @@
+---
+layout: default
+body: serif index
+title: Free Serif Fonts &bull; Beautiful Web Type
+permalink: serif/
+---
+
+{% assign typefaces = site.data.typefaces | where: 'category', 'Serif'  %}
+
+<div class="samples grid">
+  {% for typeface in typefaces %}
+    {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+  {% endfor %}
+</div>

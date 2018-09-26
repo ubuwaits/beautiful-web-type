@@ -1,31 +1,29 @@
-header {
-  h2 {
-    font: 400 4.3em/1 'merriweather';
-    margin-bottom: 0.5em;
-  }
-}
-
 .type-info {
   h3 {
-    font: 700 1em/1 'karla';
-    margin-bottom: 0.2em;
+    font: 700 var(--ms0)/1 'Alegreya Sans';
+    //margin-bottom: 0.25em;
     text-transform: uppercase;
   }
 
   h4 {
-    font: 400 1em/1.2 'fira mono';
-    margin-bottom: 2em;
+    font: 400 var(--ms1)/1.3 'Alegreya';
+    margin-bottom: 1em;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 
 .get-font {
+  display: none;
   text-align: right;
 
   a {
-    background: red;
+    background: black;
     color: #fff;
     display: inline-block;
-    font: 400 1em/1 'fira mono';
+    font: 500 var(--ms0)/1 'IBM Plex Mono';
     padding: 1em 2em;
     text-transform: uppercase;
   }
@@ -33,21 +31,115 @@ header {
 
 .type-styles {
   p {
-    font-size: 2.488em;
+    font-size: var(--ms5);
     margin-bottom: 0.25em;
+  }
+
+  .weight {
+    font-size: var(--ms3);
+    color: #878787;
   }
 }
 
+.detail {
+  .sample .meta {
+    display: none;
+  }
+
+  .sample a {
+    pointer-events: none;
+  }
+}
+
+// Type detail table
+// ----------------------------------------------------------------------------
+.type-detail-table {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.examples {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+  padding: 0 2rem;
+
+  &.flow-row {
+    align-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  &.flow-column {
+    flex-flow: column;
+  }
+}
+
+.examples > div {
+  padding: 1rem;
+}
+
+.character-examples > div {
+  padding: 0.4em 0.4em;
+}
+
+.word-examples > div {
+  margin-bottom: 0.8em;
+  padding: 0;
+}
+
+.examples h1 {
+  font-size: var(--ms4);
+  line-height: 1.2;
+}
+
+.examples p {
+  line-height: 1.5;
+}
+
+.examples span {
+  font-size: var(--ms6);
+}
+
+.character-label,
+.code {
+  color: #a7a7a7;
+  font: normal 500 var(--ms-1)/1 'IBM Plex Mono';
+  font-feature-settings: 'liga' off;
+  font-variant: normal;
+  line-height: 1;
+  margin-top: 0.25em;
+  padding: 0;
+  text-transform: none;
+}
+
+.character-label + .code {
+  margin-top: 0;
+}
+
+.section-header {
+  margin: 4rem 0 1rem 0;
+}
+
 .external-sample {
-  margin-bottom: 2em;
+  overflow: hidden;
+  position: relative;
 
   img {
     max-width: 100%;
   }
 
   p {
-    font: 400 0.833em/1.2 'fira mono';
-    margin: 0.5em 0 1em 0;
+    background: #fff;
+    font: 400 var(--ms-1)/1.2 'IBM Plex Mono';
+    padding: 0.5rem 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   a {

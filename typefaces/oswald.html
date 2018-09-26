@@ -1,0 +1,160 @@
+---
+layout: detail
+body: display detail
+permalink: oswald/
+title: Oswald
+description:
+---
+
+{% assign typeface = site.data.typefaces | where: "name", page.title | first %}
+{% assign text = site.data.text %}
+
+<div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
+  <header class="gr1 gc8">
+    <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
+  </header>
+
+  {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+
+  <div class="sample oswald-sample-02 gr5 gc6">
+    <div class="text">
+      <h1><span class="w900 color-03">NEW&nbsp;ORDER</span>&nbsp;&nbsp;<span class="color-01">‘81MOVEMENT</span>&nbsp;<span class="color-02">‘83POWER,&nbsp;CORRUPTION&nbsp;&amp;&nbsp;LIES</span>&nbsp;<span class="color-01">‘85LOWLIFE</span>&nbsp;<span class="color-02">‘86BROTHERHOOD</span>&nbsp;<span class="color-01">‘87SUBSTANCE</span>&nbsp;<span class="color-02">‘89TECHNIQUE</span>&nbsp;<span class="color-01">‘93REPUBLIC</span></h1>
+    </div>
+  </div>
+
+  <div class="type-styles gr4 gc6">
+    <h1 class="w200 ms6">Extra-Light <span class="weight">200</span></h1>
+    <h1 class="w300 ms6">Light <span class="weight">300</span></h1>
+    <h1 class="w400 ms6">Regular <span class="weight">400</span></h1>
+    <h1 class="w500 ms6">Medium <span class="weight">500</span></h1>
+    <h1 class="w600 ms6">Semi-Bold <span class="weight">600</span></h1>
+    <h1 class="w700 ms6">Bold <span class="weight">700</span></h1>
+    <h1 class="w900 ms6">Heavy <span class="weight">900</span></h1>
+  </div>
+
+  <div class="type-info gr4 gc3">
+    <h3>Designed by</h3>
+    <h4><a href="{{ typeface.creator-url }}" target="_blank">{{ typeface.creator }}</a></h4>
+
+    <h3>Category</h3>
+    <h4>{{ typeface.category }}</h4>
+
+    <h3>No. of styles</h3>
+    <h4>{{ typeface.styles }}</h4>
+  </div>
+
+  <div class="type-info gr4 gc3">
+    <h3>Download latest Release</h3>
+    <h4><a href="{{ typeface.project-url }}" target="_blank">{{ typeface.latest-version }}</a> ({{ typeface.release-date }})</h4>
+  </div>
+
+  <div class="type-detail-table gr6 gc6">
+    <div class="meta dark top">
+      <p class="name">Characters</p>
+    </div>
+    <div class="examples character-examples flow-row">
+      {% include characters.html %}
+    </div>
+  </div>
+
+  <div class="type-detail-table gr6 gc6">
+    <div class="meta dark top">
+      <p class="name">Words</p>
+    </div>
+    <div class="examples word-examples flow-column flow-center">
+      <div><h1 class="ms7 w200" contenteditable="true">{{ text.word-01 }}</h1></div>
+      <div><h1 class="ms6 w300 upper" contenteditable="true">{{ text.word-02 }}</h1></div>
+      <div><h1 class="ms6 w400" contenteditable="true">{{ text.word-03 }}</h1></div>
+      <div><h1 class="ms6 w500" contenteditable="true">{{ text.word-04 }}</h1></div>
+      <div><h1 class="ms5 w600" contenteditable="true">{{ text.word-05 }}</h1></div>
+      <div><h1 class="ms6 w700" contenteditable="true">{{ text.word-06 }}</h1></div>
+      <div><h1 class="ms6 w900" contenteditable="true">{{ text.word-07 }}</h1></div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr9 gc6">
+    <div class="meta dark top">
+      <p class="name">Headlines</p>
+    </div>
+    <div class="examples flow-column">
+      <div>
+        <h1 class="w200 upper" contenteditable="true">{{ text.headline-01 }}</h1>
+        <p class="character-label">200</p>
+      </div>
+
+      <div>
+        <h1 class="w300" contenteditable="true">{{ text.headline-02 }}</h1>
+        <p class="character-label">300</p>
+      </div>
+
+      <div>
+        <h1 class="w400 upper" contenteditable="true">{{ text.headline-03 }}</h1>
+        <p class="character-label">400</p>
+      </div>
+
+      <div>
+        <h1 class="w500" contenteditable="true">{{ text.headline-04 }}</h1>
+        <p class="character-label">500</p>
+      </div>
+
+      <div>
+        <h1 class="w600 upper" contenteditable="true">{{ text.headline-05 }}</h1>
+        <p class="character-label">600</p>
+      </div>
+
+      <div>
+        <h1 class="w700" contenteditable="true">{{ text.headline-06 }}</h1>
+        <p class="character-label">700</p>
+      </div>
+
+      <div>
+        <h1 class="w900 upper" contenteditable="true">{{ text.headline-07 }}</h1>
+        <p class="character-label">900</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr2 gc6">
+    <div class="meta dark top">
+      <p class="name">Standard Ligatures</p>
+      <p class="code">font-feature-settings: 'liga', 'clig';</p>
+    </div>
+    <div class="examples flow-row">
+      <div><span>ff</span> <p class="character-label">ff</p></div>
+      <div><span>ffi</span> <p class="character-label">ffi</p></div>
+      <div><span>fi</span> <p class="character-label">fi</p></div>
+      <div><span>fl</span> <p class="character-label">fl</p></div>
+      <div><span>ffl</span> <p class="character-label">ffl</p></div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr3 gc6">
+    <div class="meta dark top">
+      <p class="name">Figures</p>
+    </div>
+    <div class="examples flow-column flow-center">
+      <div>
+        <h1 class="fractions">1/2 3/4</h1>
+        <p class="character-label">Fractions</p>
+        <p class="code">font-feature-settings: 'frac';</p>
+      </div>
+
+      <div>
+        <h1 class="superscript">A123</h1>
+        <p class="character-label">Superscripts</p>
+        <p class="code">font-feature-settings: 'sups';</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr2 gc6">
+    <div class="meta dark top">
+      <p class="name">Ordinals</p>
+      <p class="code">font-feature-settings: 'ordn';</p>
+    </div>
+    <div class="examples ordinals flow-row">
+      <div><span>1a</span> <p class="character-label">1a</p></div>
+      <div><span>8o</span> <p class="character-label">8o</p></div>
+    </div>
+  </div>
+</div>

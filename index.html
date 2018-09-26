@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Beautiful Web Type &mdash; the best free typefaces
-keyword: index
+body: index
+title: The Best Free Fonts &bull Beautiful Web Type
 ---
 
 <div class="samples grid">
-  {% for sample in site.data.samples %}
-    {% include {{sample.partial}} %}
+  {% for typeface in site.data.typefaces %}
+    {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
   {% endfor %}
 </div>
