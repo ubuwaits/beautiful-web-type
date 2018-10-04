@@ -10,15 +10,21 @@ description:
 {% assign text = site.data.text %}
 
 <div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
-  <header class="gr1 gc8">
+  <header class="gr1 gc6">
     <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
   </header>
+
+  <div class="font-download gr1 gc6">
+    <a href="{{ typeface.g-fonts-url }}" target="_blank">Use version on<br> Google Fonts</a>
+
+    <a href="{{ typeface.project-url }}" target="_blank">Download latest <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+  </div>
 
   {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
 
   <div class="sample oswald-sample-02 gr5 gc6">
     <div class="text">
-      <h1><span class="w900 color-03">NEW&nbsp;ORDER</span>&nbsp;&nbsp;<span class="color-01">‘81MOVEMENT</span>&nbsp;<span class="color-02">‘83POWER,&nbsp;CORRUPTION&nbsp;&amp;&nbsp;LIES</span>&nbsp;<span class="color-01">‘85LOWLIFE</span>&nbsp;<span class="color-02">‘86BROTHERHOOD</span>&nbsp;<span class="color-01">‘87SUBSTANCE</span>&nbsp;<span class="color-02">‘89TECHNIQUE</span>&nbsp;<span class="color-01">‘93REPUBLIC</span></h1>
+      <h1><span class="color-01">81MOVEMENT</span>&nbsp;<span class="color-02">83POWER,&nbsp;CORRUPTION&nbsp;&amp;&nbsp;LIES</span>&nbsp;<span class="color-01">85LOWLIFE</span>&nbsp;<span class="color-02">86BROTHERHOOD</span>&nbsp;<span class="color-01">87SUBSTANCE</span>&nbsp;<span class="color-02">89TECHNIQUE</span>&nbsp;<span class="color-01">93REPUBLIC</span>&nbsp;<span class="w700 color-03">NEW&nbsp;ORDER</span></h1>
     </div>
   </div>
 
@@ -44,8 +50,6 @@ description:
   </div>
 
   <div class="type-info gr4 gc3">
-    <h3>Download latest Release</h3>
-    <h4><a href="{{ typeface.project-url }}" target="_blank">{{ typeface.latest-version }}</a> ({{ typeface.release-date }})</h4>
   </div>
 
   <div class="type-detail-table gr6 gc6">
@@ -120,11 +124,10 @@ description:
       <p class="code">font-feature-settings: 'liga', 'clig';</p>
     </div>
     <div class="examples flow-row">
-      <div><span>ff</span> <p class="character-label">ff</p></div>
-      <div><span>ffi</span> <p class="character-label">ffi</p></div>
-      <div><span>fi</span> <p class="character-label">fi</p></div>
-      <div><span>fl</span> <p class="character-label">fl</p></div>
-      <div><span>ffl</span> <p class="character-label">ffl</p></div>
+      <div><span class='fade'>ffi</span> <span class='liga'>ffi</span></div>
+      <div><span class='fade'>ffl</span> <span class='liga'>ffl</span></div>
+      <div><span class='fade'>fi</span> <span class='liga'>fi</span></div>
+      <div><span class='fade'>fl</span> <span class='liga'>fl</span></div>
     </div>
   </div>
 
@@ -135,14 +138,12 @@ description:
     <div class="examples flow-column flow-center">
       <div>
         <h1 class="fractions">1/2 3/4</h1>
-        <p class="character-label">Fractions</p>
-        <p class="code">font-feature-settings: 'frac';</p>
+        <p class="character-label">Fractions: 'frac'</p>
       </div>
 
       <div>
-        <h1 class="superscript">A123</h1>
-        <p class="character-label">Superscripts</p>
-        <p class="code">font-feature-settings: 'sups';</p>
+        <h1><span class='fade'>A</span><span class='superscript'>123</span></h1>
+        <p class="character-label">Superscripts: 'sups'</p>
       </div>
     </div>
   </div>
@@ -152,9 +153,25 @@ description:
       <p class="name">Ordinals</p>
       <p class="code">font-feature-settings: 'ordn';</p>
     </div>
-    <div class="examples ordinals flow-row">
-      <div><span>1a</span> <p class="character-label">1a</p></div>
-      <div><span>8o</span> <p class="character-label">8o</p></div>
+    <div class="examples flow-row">
+      <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
+      <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr3 gc6">
+    <div class="meta dark top">
+      <p class="name">Special Characters and Symbols</p>
+    </div>
+    <div class="examples flow-row">
+      <div><span>&#9650;</span> <p class="code">&amp;#9650;</p></div>
+      <div><span>&#9654;</span> <p class="code">&amp;#9654;</p></div>
+      <div><span>&#9660;</span> <p class="code">&amp;#9660;</p></div>
+      <div><span>&#9664;</span> <p class="code">&amp;#9664;</p></div>
+      <div><span>&para;</span> <p class="code">&amp;para;</p></div>
+      <div><span>&sect;</span> <p class="code">&amp;sect;</p></div>
+      <div><span>&dagger;</span> <p class="code">&amp;dagger;</p></div>
+      <div><span>&Dagger;</span> <p class="code">&amp;Dagger;</p></div>
     </div>
   </div>
 </div>

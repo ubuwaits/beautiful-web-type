@@ -45,7 +45,7 @@
 .w900 { font-weight: 900; }
 
 .italic { font-style: italic; }
-.upper  { text-transform: uppercase; }
+.upper  { text-transform: uppercase; font-feature-settings: 'cpsp'; }
 
 .lh1 { line-height: 1 !important; }
 .lh1-1 { line-height: 1.1 !important; }
@@ -59,26 +59,47 @@
 .m2 { margin-bottom: 2em; }
 
 .highlight { color: red; }
+.fade { color: #c9c9c9; font-feature-settings: 'calt' off, 'liga' off, 'clig' off, 'dlig' off, 'subs' off, 'sups' off; }
 
 .jost { font-family: 'Jost*'; }
 
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i');
+.test { font-family: 'Arsenal'; }
+
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,500i,600,600i,700,700i');
 
-.eb-garamond { font-family: 'EB Garamond'; }
+.alegreya-sans { font-family: 'Alegreya Sans', serif; }
+
+@font-face {
+  font-family: 'Young Serif';
+  src:  url('/assets/fonts/young-serif/YoungSerif-Regular.woff2') format('woff2'),
+	      url('/assets/fonts/young-serif/YoungSerif-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 // OpenType features
 // ----------------------------------------------------------------------------
+.liga { font-feature-settings: "liga", "clig"; }
+.dlig { font-feature-settings: "dlig"; }
 .oldstyle-proportional { font-feature-settings: 'onum', 'pnum'; }
 .oldstyle-tabular { font-feature-settings: 'onum', 'tnum'; }
 .lining-proportional { font-feature-settings: 'lnum', 'pnum'; }
 .lining-tabular { font-feature-settings: 'lnum', 'tnum'; }
 .subscript { font-feature-settings: 'subs'; }
 .superscript { font-feature-settings: 'sups'; }
-.titl { font-feature-settings: 'titl'; @extend .highlight; }
-.calt { font-feature-settings: 'calt'; @extend .highlight; }
-.ss01 { font-feature-settings: 'ss01'; @extend .highlight; }
+.swsh { font-feature-settings: 'swsh'; }
+.titl { font-feature-settings: 'titl'; }
+.calt { font-feature-settings: 'calt'; }
+.ss01 { font-feature-settings: 'ss01'; }
+.ss02 { font-feature-settings: 'ss02'; }
+.ss03 { font-feature-settings: 'ss03'; }
+.ss04 { font-feature-settings: 'ss04'; }
+.ss05 { font-feature-settings: 'ss05'; }
+.ss06 { font-feature-settings: 'ss06'; }
+.ss07 { font-feature-settings: 'ss07'; }
+.ss08 { font-feature-settings: 'ss08'; }
 .small-caps { font-feature-settings: 'smcp'; }
 .fractions { font-feature-settings: 'frac'; }
 .ordinals { font-feature-settings: 'ordn'; }
+.zero { font-feature-settings: 'zero'; }

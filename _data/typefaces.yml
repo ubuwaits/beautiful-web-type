@@ -3,18 +3,59 @@
   creator-url: https://huertatipografica.com/en
   category: Serif
   styles: 10
-  project-url: https://huertatipografica.com/en/fonts/alegreya-ht-pro
+  project-url: https://github.com/huertatipografica/Alegreya
   latest-version: 2.007
   release-date: 13 Mar 2018
+  g-fonts-url: https://fonts.google.com/specimen/Alegreya
 
 - name: Alegreya Sans
   creator: Huerta Tipográfica
   creator-url: https://huertatipografica.com/en
   category: Sans-Serif
   styles: 14
-  project-url: https://huertatipografica.com/en/fonts/alegreya-sans-ht
+  project-url: https://github.com/huertatipografica/Alegreya-Sans
   latest-version: 2.008
   release-date: 13 Mar 2018
+  g-fonts-url: https://fonts.google.com/specimen/Alegreya+Sans
+
+- name: Archivo
+  creator: Omnibus-Type
+  creator-url: https://www.omnibus-type.com
+  category: Sans-Serif
+  styles: 8
+  project-url: https://github.com/Omnibus-Type/Archivo
+  latest-version: 1.002
+  release-date: 12 Aug 2018
+  g-fonts-url: https://fonts.google.com/specimen/Archivo
+
+- name: Arsenal
+  creator: Andrij Shevchenko
+  creator-url: https://www.myfonts.com/newsletters/cc/201202.html
+  category: Sans-Serif
+  styles: 4
+  project-url: http://www.ukrainian-type.com/fontarsenal/
+  latest-version: Unknown Version
+  release-date: 2011
+  g-fonts-url: https://fonts.google.com/specimen/Arsenal
+
+- name: BioRhyme
+  creator: Aoife Mooney
+  creator-url: http://www.aoifemooney.org
+  category: Serif
+  styles: 5
+  project-url: https://github.com/aoifemooney/makingbiorhyme
+  latest-version: 1.600
+  release-date: 9 Mar 2016
+  g-fonts-url: https://fonts.google.com/specimen/BioRhyme
+
+- name: Cooper Hewitt
+  creator: Chester Jenkins
+  creator-url: https://vllg.com/constellation
+  category: Sans-Serif
+  styles: 14
+  project-url: https://github.com/cooperhewitt/cooperhewitt-typeface
+  latest-version: 1.0
+  release-date: 16 Jun 2014
 
 - name: Jost
   creator: Owen Earl
@@ -24,6 +65,26 @@
   project-url: http://indestructibletype.com/Jost
   latest-version: 3.3
   release-date: 21 Sep 2018
+
+- name: Libre Franklin
+  creator: Impallari Type
+  creator-url: https://github.com/impallari
+  category: Sans-Serif
+  styles: 18
+  project-url: https://github.com/impallari/Libre-Franklin
+  latest-version: 1.045
+  release-date: 15 Nov 2016
+  g-fonts-url: https://fonts.google.com/specimen/Libre+Franklin
+
+- name: Lora
+  creator: Cyreal
+  creator-url: http://www.cyreal.org
+  category: Serif
+  styles: 4
+  project-url: https://github.com/cyrealtype/Lora-Cyrillic
+  latest-version: 2.202
+  release-date: 18 Jan 2018
+  g-fonts-url: https://fonts.google.com/specimen/Lora
 
 - name: Merriweather
   creator: Sorkin Type
@@ -35,6 +96,7 @@
   release-date: 18 Apr 2018
   features: Very large x-height, slightly condensed letterforms, a mild diagonal stress, sturdy serifs and open forms.
   usage: Long texts for books or articles, headlines and captions.
+  g-fonts-url: https://fonts.google.com/specimen/Merriweather
 
 - name: Oswald
   creator: Vernon Adams
@@ -44,6 +106,7 @@
   project-url: https://github.com/googlefonts/OswaldFont
   latest-version: 4.004
   release-date: 22 Sep 2017
+  g-fonts-url: https://fonts.google.com/specimen/Oswald
 
 - name: Playfair Display
   creator: Claus Eggers Sørensen
@@ -53,6 +116,7 @@
   project-url: https://github.com/clauseggers/Playfair-Display
   latest-version: 1.202
   release-date: 5 Nov 2017
+  g-fonts-url: https://fonts.google.com/specimen/Playfair+Display
 
 - name: Source Serif Pro
   creator: Frank Grießhammer
@@ -60,14 +124,26 @@
   category: Serif
   styles: 12
   project-url: https://github.com/adobe-fonts/source-serif-pro
-  latest-version: 2.007 (Roman) & 1.007 (Italic)
+  latest-version: 2.007
   release-date: 17 Aug 2018
+  g-fonts-url: https://fonts.google.com/specimen/Source+Serif+Pro
 
 - name: Vollkorn
   creator: Friedrich Althausen
   creator-url: https://friedrichalthausen.de/
   category: Serif
   styles: 12
-  project-url: http://vollkorn-typeface.com/
+  project-url: http://vollkorn-typeface.com/#download
   latest-version: 4.105
   release-date: 09 May 2018
+  g-fonts-url: https://fonts.google.com/specimen/Vollkorn
+
+- name: Zilla Slab
+  creator: Typotheque
+  creator-url: https://www.typotheque.com
+  category: Slab Serif
+  styles: 10
+  project-url: https://github.com/mozilla/zilla-slab
+  latest-version: 1.002
+  release-date: 23 Aug 2017
+  g-fonts-url: https://fonts.google.com/specimen/Zilla+Slab

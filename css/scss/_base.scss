@@ -1,4 +1,4 @@
-$min_width: 920px;
+$min_width: 900px;
 $max_width: 1440px;
 $min_font: 10px;
 $max_font: 16px;
@@ -18,7 +18,7 @@ body {
   font-family: 'courier';
   margin: 6.5em var(--body-margin) var(--body-margin);
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern", "liga", "clig", "dlig";
+  font-feature-settings: 'liga' on, 'clig' on, "dlig" off;
 }
 
 a {

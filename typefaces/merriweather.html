@@ -10,9 +10,15 @@ description:
 {% assign text = site.data.text %}
 
 <div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
-  <header class="gr1 gc8">
-    <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by <em>{{ typeface.creator }}</em></h2>
+  <header class="gr1 gc6">
+    <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
   </header>
+
+  <div class="font-download gr1 gc6">
+    <a href="{{ typeface.g-fonts-url }}" target="_blank">Use version on<br> Google Fonts</a>
+
+    <a href="{{ typeface.project-url }}" target="_blank">Download latest <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+  </div>
 
   {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
 
@@ -41,9 +47,6 @@ description:
 
     <h3>No. of styles</h3>
     <h4>{{ typeface.styles }}</h4>
-
-    <h3>Latest Release</h3>
-    <h4><a href="{{ page.project-url }}" target="_blank">{{ typeface.latest-version }}</a> ({{ typeface.release-date }})</h4>
   </div>
 
   <div class="type-info gr3 gc3">
@@ -111,22 +114,22 @@ description:
     </div>
     <div class="examples flow-column">
       <div>
-        <h1 class="w300 italic" contenteditable="true">{{ text.headline-05 }}</h1>
+        <h1 class="w300 italic" contenteditable="true">{{ text.headline-01 }}</h1>
         <p class="character-label">300</p>
       </div>
 
       <div>
-        <h1 class="w400 italic" contenteditable="true">{{ text.headline-06 }}</h1>
+        <h1 class="w400 italic" contenteditable="true">{{ text.headline-02 }}</h1>
         <p class="character-label">400</p>
       </div>
 
       <div>
-        <h1 class="w700 italic" contenteditable="true">{{ text.headline-07 }}</h1>
+        <h1 class="w700 italic" contenteditable="true">{{ text.headline-03 }}</h1>
         <p class="character-label">700</p>
       </div>
 
       <div>
-        <h1 class="w900 italic" contenteditable="true">{{ text.headline-08 }}</h1>
+        <h1 class="w900 italic" contenteditable="true">{{ text.headline-04 }}</h1>
         <p class="character-label">900</p>
       </div>
     </div>
@@ -166,10 +169,21 @@ description:
     </div>
     <div class="examples flow-row flow-center">
       <div>
-        <h1 class="superscript">A123</h1>
-        <p class="character-label">Superscripts</p>
-        <p class="code">font-feature-settings: 'sups';</p>
+        <h1><span class='fade'>A</span><span class='superscript'>123</span></h1>
+        <p class="character-label">Superscripts: 'sups'</p>
       </div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr2 gc6">
+    <div class="meta dark top">
+      <p class="name">Special Characters and Symbols</p>
+    </div>
+    <div class="examples flow-row">
+      <div><span>&para;</span> <p class="code">&amp;para;</p></div>
+      <div><span>&sect;</span> <p class="code">&amp;sect;</p></div>
+      <div><span>&dagger;</span> <p class="code">&amp;dagger;</p></div>
+      <div><span>&Dagger;</span> <p class="code">&amp;Dagger;</p></div>
     </div>
   </div>
 </div>

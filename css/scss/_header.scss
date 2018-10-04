@@ -2,7 +2,7 @@
   -webkit-backdrop-filter: blur(2px);
   align-items: center;
   background: rgba(255, 255, 255, 0.975);
-  display: flex;  
+  display: flex;
   margin: 0 -3rem 0 -3rem;
   position: fixed;
   top: 0;
@@ -11,7 +11,8 @@
 
   h1 {
     flex-basis: 275px;
-    font: italic 700 var(--ms1)/1 'Alegreya Sans';
+    font: italic 900 var(--ms1)/1 'Alegreya Sans';
+    font-feature-settings: 'cpsp';
     padding: 0 3rem 0 1.5rem;
     text-transform: uppercase;
   }
@@ -21,6 +22,7 @@
     display: flex;
     flex-grow: 1;
     font: 700 var(--ms0)/1 'Alegreya Sans';
+    font-feature-settings: 'cpsp';
     justify-content: center;
     text-transform: uppercase;
 

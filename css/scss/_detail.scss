@@ -1,6 +1,6 @@
 .type-info {
   h3 {
-    font: 700 var(--ms0)/1 'Alegreya Sans';
+    font: 700 var(--ms0)/1 'Alegreya Sans';    
     //margin-bottom: 0.25em;
     text-transform: uppercase;
   }
@@ -15,17 +15,32 @@
   }
 }
 
-.get-font {
-  display: none;
-  text-align: right;
+.font-download {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
   a {
-    background: black;
+    background: #070707;
+    border-radius: 1px;
     color: #fff;
-    display: inline-block;
-    font: 500 var(--ms0)/1 'IBM Plex Mono';
-    padding: 1em 2em;
+    font: 700 var(--ms0)/1 'Alegreya Sans';
+    padding: 0.7em 1.5em;
+    text-align: center;
     text-transform: uppercase;
+
+    &:hover {
+      background: red;
+    }
+
+    &:last-child {
+      margin-left: 1em;
+    }
+
+    .font-version {
+      display: block;
+      font-weight: 500;
+    }
   }
 }
 
@@ -64,7 +79,7 @@
   display: flex;
   flex-grow: 2;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 2rem;
 
   &.flow-row {
     align-content: center;
@@ -107,7 +122,7 @@
 .character-label,
 .code {
   color: #a7a7a7;
-  font: normal 500 var(--ms-1)/1 'IBM Plex Mono';
+  font: normal 600 var(--ms-1)/1 'IBM Plex Mono';
   font-feature-settings: 'liga' off;
   font-variant: normal;
   line-height: 1;

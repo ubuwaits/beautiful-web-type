@@ -10,11 +10,15 @@ description:
 {% assign text = site.data.text %}
 
 <div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
-  <header class="gr1 gc8">
-    <h2 class="ms5 w400 lh1-1">{{ typeface.name | append: '*' }}<br> by <em>{{ typeface.creator }}</em></h2>
+  <header class="gr1 gc6">
+    <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by <em>{{ typeface.creator }}</em></h2>
   </header>
 
-  <div class="gr1 gc12"></div>
+  <div class="font-download gr1 gc6">
+    <a href="{{ typeface.g-fonts-url }}" target="_blank">Use version on<br> Google Fonts</a>
+
+    <a href="{{ typeface.project-url }}" target="_blank">Download latest <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+  </div>
 
   <div class="type-styles gr4 gc6">
     <p class="w100">Hairline <em>Italic</em> <span class="weight">100</span></p>
@@ -40,8 +44,6 @@ description:
   </div>
 
   <div class="type-info gr4 gc3">
-    <h3>Download latest Release</h3>
-    <h4><a href="{{ typeface.project-url }}" target="_blank">{{ typeface.latest-version }}</a> ({{ typeface.release-date }})</h4>
   </div>
 
   <div class="type-detail-table gr6 gc6">
@@ -214,34 +216,43 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr6 gc6">
+  <div class="type-detail-table gr3 gc6">
     <div class="meta dark top">
       <p class="name">Figures</p>
     </div>
     <div class="examples flow-column flow-center">
       <div>
-        <h1 class="oldstyle-proportional">1234567890</h1>
-        <p class="character-label">Proportional Oldstyle (default)</p>
-        <p class="code">font-feature-settings: 'pnum', 'onum';</p>
-      </div>
-
-      <div>
-        <h1 class="oldstyle-tabular">1234567890</h1>
-        <p class="character-label">Tabular Oldstyle</p>
-        <p class="code">font-feature-settings: 'tnum', 'onum';</p>
-      </div>
-
-      <div>
         <h1 class="lining-proportional">1234567890</h1>
-        <p class="character-label">Proportional Lining</p>
-        <p class="code">font-feature-settings: 'pnum', 'lnum';</p>
+        <p class="character-label">Proportional Lining (default): 'pnum', 'lnum'</p>
       </div>
 
       <div>
         <h1 class="lining-tabular">1234567890</h1>
-        <p class="character-label">Tabular Lining</p>
-        <p class="code">font-feature-settings: 'tnum', 'lnum';</p>
+        <p class="character-label">Tabular Lining: 'tnum', 'lnum'</p>
       </div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr2 gc6">
+    <div class="meta dark top">
+      <p class="name">Alternate Glyph Forms</p>
+      <p class="code">font-feature-settings: 'ss01';</p>
+    </div>
+    <div class="examples flow-row">
+      <div><span class='fade'>a</span> <span class='ss01'>a</a></div>
+      <div><span class='fade italic'>a</span> <span class='ss01 italic'>a</a></div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr2 gc6">
+    <div class="meta dark top">
+      <p class="name">Special Characters and Symbols</p>
+    </div>
+    <div class="examples flow-row">
+      <div><span>&para;</span> <p class="code">&amp;para;</p></div>
+      <div><span>&sect;</span> <p class="code">&amp;sect;</p></div>
+      <div><span>&dagger;</span> <p class="code">&amp;dagger;</p></div>
+      <div><span>&Dagger;</span> <p class="code">&amp;Dagger;</p></div>
     </div>
   </div>
 </div>

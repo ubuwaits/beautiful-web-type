@@ -14,13 +14,22 @@
 
 // Responsive styles
 // ----------------------------------------------------------------------------
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
   .sample {
     grid-row: span 1;
-    grid-column: span 4;
+    grid-column: span 12;
     padding: 6em 3em;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .sample {
+    grid-row: span 1;
+    grid-column: span 6;
+    padding: 3em 2em;
+  }
+}
+
 
 @media screen and (min-width: 1920px) {
   .sample {
@@ -41,7 +50,7 @@
   border-bottom: 0;
   color: #fff;
   font: 700 var(--ms0)/1 'Alegreya Sans';
-  padding: 0.8rem 1rem;
+  padding: 1.1em 1em 0.9em 1em;
   text-align: left;
 
   p {
@@ -53,7 +62,7 @@
 
     &.code {
       color: #a7a7a7;
-      font-weight: 400;
+      font-weight: 500;
     }
 
     &.direct-link {
@@ -196,14 +205,14 @@
 // Oswald
 // ----------------------------------------------------------------------------
 .oswald-sample {
-  background-color: #fff;
+  background-color: #FFF700;
 
   .text {
     margin: 0 3em;
   }
 
   h2 {
-    color: #FFF700;
+    color: #fff;
     font-size: var(--ms11);
     font-weight: 700;
     line-height: 1.1;
@@ -226,8 +235,10 @@
 
   .text {
     hyphens: none;
-    margin: 0 1.7em;
+    margin: 0 2.5em;
+    min-width: 0;
     overflow-wrap: break-word;
+    word-break: break-all;
   }
 
   h1 {
@@ -372,12 +383,13 @@
     display: grid;
     flex-grow: unset;
     grid: 1fr / 1fr 4fr;
-    grid-gap: 1.5rem;
-    margin: 0 4rem;
+    grid-gap: 1.5em;
+    margin: 0 4em;
+    max-width: 760px;
   }
 
   h1, h2, p {
-    font-size: var(--ms1);
+    font-size: var(--ms2);
     line-height: 1.5;
     font-feature-settings: 'dlig' off;
   }
@@ -389,10 +401,10 @@
   }
 
   h2 {
-    font-size: var(--ms0);
+    font-size: var(--ms1);
     grid-area: 1 / 1;
     line-height: 1.35;
-    margin-bottom: 0.125em;
+    margin-bottom: 0.2em;
     text-align: right;
   }
 

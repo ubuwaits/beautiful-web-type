@@ -1,5 +1,5 @@
-$mobile: 540px;
-$tablet: 1120px;
+$mobile: 700px;
+$tablet: 900px;
 $large: 1500px;
 
 :root {
@@ -9,30 +9,35 @@ $large: 1500px;
   --rh: calc((var(--wrapper) - (11 * var(--gutter))) / 12);
 }
 
+@media screen and (min-width: $large)  { :root { --wrapper: 1344px; } }
+//@media screen and (max-width: $tablet) { :root { --wrapper: 540px; } }
+@media screen and (max-width: $mobile) { :root { --body-margin: 1.5em; } }
+
+
 // Main grid layout
 // ----------------------------------------------------------------------------
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: var(--rh);
+  grid-auto-rows: minmax(var(--rh), auto);
   grid-auto-flow: row dense;
   grid-gap: var(--gutter);
   margin: 0 auto;
   max-width: var(--wrapper);
 }
 
-// Responsive styles
-// ----------------------------------------------------------------------------
-@media screen and (max-width: $mobile) {
-  :root {
-    --body-margin: 1.5em;
-  }
-
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-  }
-}
+// // Responsive styles
+// // ----------------------------------------------------------------------------
+// @media screen and (max-width: $mobile) {
+//   :root {
+//     --body-margin: 1.5em;
+//   }
+//
+//   .grid {
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-auto-rows: auto;
+//   }
+// }
 
 // Re-usable grid sizes
 // ----------------------------------------------------------------------------
@@ -62,7 +67,7 @@ $large: 1500px;
 .justify-start { justify-content: flex-start; }
 
 .flow-center {
-  align-items: center;
+  //align-items: center;
   text-align: center;
 }
 
@@ -71,4 +76,26 @@ $large: 1500px;
 .col-2 {
   column-count: 2;
   column-gap: 2em;
+}
+
+
+// Responsive grid styles
+// --------------------------------------------------------------------------
+@media screen and (max-width: $tablet) {
+  .sample {
+    //grid-column: span 12;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    //grid-auto-rows: minmax(var(--rh), auto);
+    grid-auto-rows: auto;
+  }
+
+  .grid > header,
+  .grid > div {
+    grid-area: span 1 / span 6;
+  }
 }
