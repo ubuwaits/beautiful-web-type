@@ -1,7 +1,7 @@
 ---
 layout: default
-body: sans-serif index
-title: Free Sans-Serif Fonts &bull; Beautiful Web Type
+body: sans-serif
+title: Open-Source Sans-Serif Typefaces
 permalink: sans-serif/
 ---
 
@@ -9,6 +9,6 @@ permalink: sans-serif/
 
 <div class="samples grid">
   {% for typeface in typefaces %}
-    {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+    {% include sample.html %}
   {% endfor %}
 </div>

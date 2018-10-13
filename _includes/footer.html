@@ -1,0 +1,40 @@
+<footer class='grid'>
+  {% assign typefaces = site.data.typefaces | where: 'category', 'Serif'  %}
+  <div class='gr1 gc3'>
+    <h3><a href='/serif/'>Serif Typefaces</a></h3>
+    <ol>
+    {% for typeface in typefaces %}
+      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+    {% endfor %}
+    </ol>
+  </div>
+
+  {% assign typefaces = site.data.typefaces | where: 'category', 'Sans-Serif'  %}
+  <div class='gr1 gc3'>
+    <h3><a href='/sans-serif/'>Sans-Serif Typefaces</a></h3>
+    <ol>
+    {% for typeface in typefaces %}
+      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+    {% endfor %}
+    </ol>
+  </div>
+
+  {% assign typefaces = site.data.typefaces | where: 'category', 'Display'  %}
+  <div class='gr1 gc3'>
+    <h3><a href='/display/'>Display Typefaces</a></h3>
+    <ol>
+    {% for typeface in typefaces %}
+      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+    {% endfor %}
+    </ol>
+  </div>
+
+  <div class='gr1 gc3'>
+    <h3>Additional Info</h3>
+    <ol>
+      <li><a href='https://www.patreon.com/ubuwaits'>Support this project</a></li>
+      <li><a href='https://github.com/ubuwaits/beautiful-web-type'>Source on GitHub</a></li>
+      <li><a href='/v1/'>v1.0 of site</a></li>
+    </ol>
+  </div>
+</footer>

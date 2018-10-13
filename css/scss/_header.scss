@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
 
   h1 {
     flex-basis: 275px;
@@ -17,7 +17,7 @@
     text-transform: uppercase;
   }
 
-  ol {
+  & > ol {
     align-items: center;
     display: flex;
     flex-grow: 1;
@@ -38,22 +38,138 @@
     }
   }
 
-  .support {
+  & > .support {
     flex-basis: 275px;
     margin-right: 1.5rem;
     text-align: right;
 
     a {
       color: red;
-      font: 500 var(--ms0)/1 'Alegreya Sans';
+      font: 700 var(--ms0)/1 'Alegreya Sans';
     }
   }
 }
 
+.mobile-menu {
+  height: 46px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  visibility: hidden;
+  width: 46px;
+}
+
+.menu-circle {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-link {
+  background: transparent;
+  border: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1002;
+}
+
+.menu-icon {
+  bottom: 1px;
+  height: 14px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+.menu-line {
+  background-color: rgba(#000, 0.87);
+  border-radius: 2px;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+}
+
+.menu-line-1 { top: 0; }
+.menu-line-2 { top: 0; bottom: 0; margin: auto; }
+.menu-line-3 { bottom: 0; }
+
+.mobile-menu.open .menu-line-1 { transform: translateY(7px) translateY(-50%) rotate(-135deg); }
+.mobile-menu.open .menu-line-2 { opacity: 0; }
+.mobile-menu.open .menu-line-3 { transform: translateY(-7px) translateY(50%) rotate(135deg); }
+
+.menu-overlay {
+  -webkit-backdrop-filter: blur(2px);
+  align-items: center;
+  background-color: rgba(#fff, 0.98);
+  color: #000;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.2s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1001;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.03s;
+  }
+
+  li,
+  p {
+    font: 700 var(--ms2)/1 'Alegreya Sans';
+    margin: 0.25em;
+    padding: 0.5em;
+    text-align: center;
+  }
+}
+
+
+
+// Nav highlights
+// ----------------------------------------------------------------------------
+body.index ol li.nav-index a,
 body.serif ol li.nav-serif a,
 body.sans-serif ol li.nav-sans-serif a,
 body.display ol li.nav-display a,
 body.monospaced ol li.nav-monospaced a {
   border-bottom-color: red;
   color: red;
+}
+
+// Responsive styles
+// ----------------------------------------------------------------------------
+@media screen and (max-width: $tablet) {
+  .site-header {
+    justify-content: flex-start;
+    margin: 0 -1rem 0 -1rem;
+    padding: 1rem;
+
+    .mobile-menu {
+      visibility: visible;
+    }
+
+    & > ol,
+    & > .support {
+      display: none;
+    }
+
+    h1 {
+      flex-basis: auto;
+      padding: 0;
+    }
+  }
 }

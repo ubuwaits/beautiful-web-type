@@ -1,7 +1,7 @@
 ---
 layout: default
-body: serif index
-title: Free Serif Fonts &bull; Beautiful Web Type
+body: serif
+title: Open-Source Serif Typefaces
 permalink: serif/
 ---
 
@@ -9,6 +9,6 @@ permalink: serif/
 
 <div class="samples grid">
   {% for typeface in typefaces %}
-    {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+    {% include sample.html %}
   {% endfor %}
 </div>

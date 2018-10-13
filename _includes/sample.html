@@ -1,0 +1,10 @@
+{% assign clean-name = typeface.name | downcase | replace: ' ', '-' %}
+
+<div class="sample {{ clean-name }} {{ clean-name }}-sample gr6 gc12">
+  <a href="/{{ clean-name }}/">
+    <div class="text">{{ typeface.sample-html }}</div>
+  </a>
+  <div class="meta">
+    <p class="name"><a href="/{{ clean-name }}/"><strong>{{ typeface.name }}</strong> by {{ typeface.creator }}</a></p>
+  </div>
+</div>

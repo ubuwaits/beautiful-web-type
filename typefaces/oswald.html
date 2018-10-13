@@ -10,25 +10,19 @@ description:
 {% assign text = site.data.text %}
 
 <div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
-  <header class="gr1 gc6">
-    <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
+  <header class="type-detail-header gr1 gc6">
+    <h2>{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
   </header>
 
   <div class="font-download gr1 gc6">
-    <a href="{{ typeface.g-fonts-url }}" target="_blank">Use version on<br> Google Fonts</a>
+    <a href="{{ typeface.g-fonts-url }}" target="_blank">Embed using<br> Google Fonts</a>
 
-    <a href="{{ typeface.project-url }}" target="_blank">Download latest <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+    <a href="{{ typeface.project-url }}" target="_blank">Download <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
   </div>
 
-  {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+  {% include sample.html %}
 
-  <div class="sample oswald-sample-02 gr5 gc6">
-    <div class="text">
-      <h1><span class="color-01">81MOVEMENT</span>&nbsp;<span class="color-02">83POWER,&nbsp;CORRUPTION&nbsp;&amp;&nbsp;LIES</span>&nbsp;<span class="color-01">85LOWLIFE</span>&nbsp;<span class="color-02">86BROTHERHOOD</span>&nbsp;<span class="color-01">87SUBSTANCE</span>&nbsp;<span class="color-02">89TECHNIQUE</span>&nbsp;<span class="color-01">93REPUBLIC</span>&nbsp;<span class="w700 color-03">NEW&nbsp;ORDER</span></h1>
-    </div>
-  </div>
-
-  <div class="type-styles gr4 gc6">
+  <div class="type-styles gr1 gc6">
     <h1 class="w200 ms6">Extra-Light <span class="weight">200</span></h1>
     <h1 class="w300 ms6">Light <span class="weight">300</span></h1>
     <h1 class="w400 ms6">Regular <span class="weight">400</span></h1>
@@ -38,7 +32,7 @@ description:
     <h1 class="w900 ms6">Heavy <span class="weight">900</span></h1>
   </div>
 
-  <div class="type-info gr4 gc3">
+  <div class="type-info gr1 gc6">
     <h3>Designed by</h3>
     <h4><a href="{{ typeface.creator-url }}" target="_blank">{{ typeface.creator }}</a></h4>
 
@@ -49,10 +43,7 @@ description:
     <h4>{{ typeface.styles }}</h4>
   </div>
 
-  <div class="type-info gr4 gc3">
-  </div>
-
-  <div class="type-detail-table gr6 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Characters</p>
     </div>
@@ -61,7 +52,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr6 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Words</p>
     </div>
@@ -76,13 +67,13 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr9 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Headlines</p>
     </div>
     <div class="examples flow-column">
       <div>
-        <h1 class="w200 upper" contenteditable="true">{{ text.headline-01 }}</h1>
+        <h1 class="w200" contenteditable="true">{{ text.headline-01 }}</h1>
         <p class="character-label">200</p>
       </div>
 
@@ -92,7 +83,7 @@ description:
       </div>
 
       <div>
-        <h1 class="w400 upper" contenteditable="true">{{ text.headline-03 }}</h1>
+        <h1 class="w400" contenteditable="true">{{ text.headline-03 }}</h1>
         <p class="character-label">400</p>
       </div>
 
@@ -102,12 +93,54 @@ description:
       </div>
 
       <div>
-        <h1 class="w600 upper" contenteditable="true">{{ text.headline-05 }}</h1>
+        <h1 class="w600" contenteditable="true">{{ text.headline-05 }}</h1>
         <p class="character-label">600</p>
       </div>
 
       <div>
         <h1 class="w700" contenteditable="true">{{ text.headline-06 }}</h1>
+        <p class="character-label">700</p>
+      </div>
+
+      <div>
+        <h1 class="w900" contenteditable="true">{{ text.headline-07 }}</h1>
+        <p class="character-label">900</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="type-detail-table gr1 gc6">
+    <div class="meta dark top">
+      <p class="name">Uppercase Headlines</p>
+    </div>
+    <div class="examples flow-column">
+      <div>
+        <h1 class="w200 upper" contenteditable="true">{{ text.headline-01 }}</h1>
+        <p class="character-label">200</p>
+      </div>
+
+      <div>
+        <h1 class="w300 upper" contenteditable="true">{{ text.headline-02 }}</h1>
+        <p class="character-label">300</p>
+      </div>
+
+      <div>
+        <h1 class="w400 upper" contenteditable="true">{{ text.headline-03 }}</h1>
+        <p class="character-label">400</p>
+      </div>
+
+      <div>
+        <h1 class="w500 upper" contenteditable="true">{{ text.headline-04 }}</h1>
+        <p class="character-label">500</p>
+      </div>
+
+      <div>
+        <h1 class="w600 upper" contenteditable="true">{{ text.headline-05 }}</h1>
+        <p class="character-label">600</p>
+      </div>
+
+      <div>
+        <h1 class="w700 upper" contenteditable="true">{{ text.headline-06 }}</h1>
         <p class="character-label">700</p>
       </div>
 
@@ -131,11 +164,11 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr3 gc6">
+  <div class="type-detail-table gr2 gc6">
     <div class="meta dark top">
       <p class="name">Figures</p>
     </div>
-    <div class="examples flow-column flow-center">
+    <div class="examples flow-row">
       <div>
         <h1 class="fractions">1/2 3/4</h1>
         <p class="character-label">Fractions: 'frac'</p>

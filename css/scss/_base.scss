@@ -1,12 +1,15 @@
-$min_width: 900px;
+$min_width: 940px;
 $max_width: 1440px;
-$min_font: 10px;
+$min_font: 12px;
 $max_font: 16px;
-
 $body-bg: #f2f2f2;
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+@media screen and (max-width: $tablet) {
+  html { font-size: 16px; }
 }
 
 * {
@@ -21,6 +24,12 @@ body {
   font-feature-settings: 'liga' on, 'clig' on, "dlig" off;
 }
 
+@media screen and (max-width: $mobile) {
+  body {
+    margin-top: 4.5em;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -29,11 +38,6 @@ a {
 h1, h2, h3, h4, h5, h6, p, ol, li { margin: 0; line-height: 1; }
 ol { list-style: none; padding: 0; }
 cite { font-style: normal; }
-
-.left-align { text-align: left !important; }
-.flex-start { justify-content: flex-start !important; }
-.center { text-align: center; }
-.block { display: block; }
 
 [contenteditable]:focus {
   background: rgba(orange, 0.1);

@@ -4,9 +4,10 @@
   category: Serif
   styles: 10
   project-url: https://github.com/huertatipografica/Alegreya
-  latest-version: 2.007
+  latest-version: v2.007
   release-date: 13 Mar 2018
   g-fonts-url: https://fonts.google.com/specimen/Alegreya
+  sample-html: '<h1>like the generations of leaves, the lives of mortal men. Now the wind scatters the old leaves across the earth, now the living timber bursts with the new buds and spring comes round again. And so with men: as one generation comes to life, another dies away.</h1><p>Homer, <em>The Iliad</em></p>'
 
 - name: Alegreya Sans
   creator: Huerta Tipográfica
@@ -14,9 +15,10 @@
   category: Sans-Serif
   styles: 14
   project-url: https://github.com/huertatipografica/Alegreya-Sans
-  latest-version: 2.008
+  latest-version: v2.008
   release-date: 13 Mar 2018
   g-fonts-url: https://fonts.google.com/specimen/Alegreya+Sans
+  sample-html: '<h1>Helvítis fokking fokk!</h1>'
 
 - name: Archivo
   creator: Omnibus-Type
@@ -24,19 +26,10 @@
   category: Sans-Serif
   styles: 8
   project-url: https://github.com/Omnibus-Type/Archivo
-  latest-version: 1.002
+  latest-version: v1.002
   release-date: 12 Aug 2018
   g-fonts-url: https://fonts.google.com/specimen/Archivo
-
-- name: Arsenal
-  creator: Andrij Shevchenko
-  creator-url: https://www.myfonts.com/newsletters/cc/201202.html
-  category: Sans-Serif
-  styles: 4
-  project-url: http://www.ukrainian-type.com/fontarsenal/
-  latest-version: Unknown Version
-  release-date: 2011
-  g-fonts-url: https://fonts.google.com/specimen/Arsenal
+  sample-html: '<h1>Dieter Rams<br>Bauhaus-Archiv<br>Museum für<br> Gestaltung<br>Retrospective</h1> <h1 class="oldstyle-proportional">02.10.2015<br>24.11.2015</h1>'
 
 - name: BioRhyme
   creator: Aoife Mooney
@@ -44,9 +37,10 @@
   category: Serif
   styles: 5
   project-url: https://github.com/aoifemooney/makingbiorhyme
-  latest-version: 1.600
+  latest-version: v1.600
   release-date: 9 Mar 2016
   g-fonts-url: https://fonts.google.com/specimen/BioRhyme
+  sample-html: '<h1>är d<span class="ss08">u</span> ny<span class="ss01">f</span>iken?</h1>'
 
 - name: Cooper Hewitt
   creator: Chester Jenkins
@@ -54,8 +48,9 @@
   category: Sans-Serif
   styles: 14
   project-url: https://github.com/cooperhewitt/cooperhewitt-typeface
-  latest-version: 1.0
+  latest-version: v1.0
   release-date: 16 Jun 2014
+  sample-html: '<h1>Cinémathèque Suisse</h1><h2>Jean-Luc Godard<br>12 Nov.84 Au 12 JAN.85<br>Casino de Montbenon<br>Lausanne</h2>'
 
 - name: Jost
   creator: Owen Earl
@@ -63,8 +58,9 @@
   category: Sans-Serif
   styles: 18
   project-url: http://indestructibletype.com/Jost
-  latest-version: 3.3
+  latest-version: v3.3
   release-date: 21 Sep 2018
+  sample-html: '<h1>Vivre Sa Vie</h1><h2>Film En Douze Tableaux</h2>'
 
 - name: Libre Franklin
   creator: Impallari Type
@@ -72,9 +68,10 @@
   category: Sans-Serif
   styles: 18
   project-url: https://github.com/impallari/Libre-Franklin
-  latest-version: 1.045
+  latest-version: v1.045
   release-date: 15 Nov 2016
   g-fonts-url: https://fonts.google.com/specimen/Libre+Franklin
+  sample-html: '<h1>Compendium<br> for Literates</h1><h2>A System of Writing<br> by Karl Gerstner</h2><p>MIT Press</p>'
 
 - name: Lora
   creator: Cyreal
@@ -82,9 +79,10 @@
   category: Serif
   styles: 4
   project-url: https://github.com/cyrealtype/Lora-Cyrillic
-  latest-version: 2.202
+  latest-version: v2.202
   release-date: 18 Jan 2018
   g-fonts-url: https://fonts.google.com/specimen/Lora
+  sample-html: '<h1>Superintelligence</h1><h2>Nick Bostrom</h2>'
 
 - name: Merriweather
   creator: Sorkin Type
@@ -92,11 +90,12 @@
   category: Serif
   styles: 8
   project-url: https://github.com/EbenSorkin/Merriweather
-  latest-version: 2.003
+  latest-version: v2.003
   release-date: 18 Apr 2018
   features: Very large x-height, slightly condensed letterforms, a mild diagonal stress, sturdy serifs and open forms.
   usage: Long texts for books or articles, headlines and captions.
   g-fonts-url: https://fonts.google.com/specimen/Merriweather
+  sample-html: '<p>Never have I trusted Fortune, even when she seemed to offer peace. All those blessings which she kindly bestowed on me&mdash;money, public office, influence&mdash;I relegated to a place whence she could claim them back without bothering me.<h1>Lucius Annaeus Seneca (c. 4 BC&ndash;AD 65)</h1></p>'
 
 - name: Oswald
   creator: Vernon Adams
@@ -104,9 +103,10 @@
   category: Display
   styles: 7
   project-url: https://github.com/googlefonts/OswaldFont
-  latest-version: 4.004
+  latest-version: v4.004
   release-date: 22 Sep 2017
   g-fonts-url: https://fonts.google.com/specimen/Oswald
+  sample-html: '<h1>1968</h1>'
 
 - name: Playfair Display
   creator: Claus Eggers Sørensen
@@ -114,9 +114,10 @@
   category: Display
   styles: 6
   project-url: https://github.com/clauseggers/Playfair-Display
-  latest-version: 1.202
+  latest-version: v1.202
   release-date: 5 Nov 2017
   g-fonts-url: https://fonts.google.com/specimen/Playfair+Display
+  sample-html: '<h1>the <strong>isms</strong> go</h1><h1>the <strong>ist</strong> dies</h1><h1>art remains.</h1><p>Vladimir Nabokov</p>'
 
 - name: Source Serif Pro
   creator: Frank Grießhammer
@@ -124,9 +125,10 @@
   category: Serif
   styles: 12
   project-url: https://github.com/adobe-fonts/source-serif-pro
-  latest-version: 2.007
+  latest-version: v2.007
   release-date: 17 Aug 2018
   g-fonts-url: https://fonts.google.com/specimen/Source+Serif+Pro
+  sample-html: '<h1>Philip Glass</h1><h1>Dances</h1><h1>No.2&mdash;No.4</h1>'
 
 - name: Vollkorn
   creator: Friedrich Althausen
@@ -134,16 +136,18 @@
   category: Serif
   styles: 12
   project-url: http://vollkorn-typeface.com/#download
-  latest-version: 4.105
+  latest-version: v4.105
   release-date: 09 May 2018
   g-fonts-url: https://fonts.google.com/specimen/Vollkorn
+  sample-html: '<h1 class="w500">shinichi<br> nakazawa</h1><h2 class="w400 italic ase">Beyond<br> Development:<br> Rediscovering<br> Nature’s<br> Wisdom</h2><p>Technology was not given so humankind could ride roughshod over nature and wreak irreparable changes. Rather, technology is to draw out the hidden essence of all nature so that it can sparkle with new purpose. Technology is not to enslave and command life but to draw forth the infinite possibilities locked within all life and to open new realms of significance. <span class="ms-1">&#9670;</span></p>'
 
 - name: Zilla Slab
   creator: Typotheque
   creator-url: https://www.typotheque.com
-  category: Slab Serif
+  category: Serif
   styles: 10
   project-url: https://github.com/mozilla/zilla-slab
-  latest-version: 1.002
+  latest-version: v1.002
   release-date: 23 Aug 2017
   g-fonts-url: https://fonts.google.com/specimen/Zilla+Slab
+  sample-html: '<h1>Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone.</h1>'

@@ -1,6 +1,11 @@
 // Modular scale
 // ----------------------------------------------------------------------------
 :root {
+  --ms16: 18.488rem;
+  --ms15: 15.407rem;
+  --ms14: 12.839rem;
+  --ms13: 10.699rem;
+  --ms12: 8.916rem;
   --ms11: 7.43rem;
   --ms10: 6.192rem;
   --ms9: 5.16rem;
@@ -32,7 +37,7 @@
 .ms-1 { font-size: 0.833rem; }
 .ms-2 { font-size: 0.694rem; }
 
-// Weight
+// Weights
 // ----------------------------------------------------------------------------
 .w100 { font-weight: 100; }
 .w200 { font-weight: 200; }
@@ -44,38 +49,37 @@
 .w800 { font-weight: 800; }
 .w900 { font-weight: 900; }
 
-.italic { font-style: italic; }
-.upper  { text-transform: uppercase; font-feature-settings: 'cpsp'; }
-
+// Line-heights
+// ----------------------------------------------------------------------------
 .lh1 { line-height: 1 !important; }
 .lh1-1 { line-height: 1.1 !important; }
 .lh1-2 { line-height: 1.2 !important; }
 .lh1-3 { line-height: 1.3 !important; }
 
-.m025 { margin-bottom: 0.25em; }
-.m05 { margin-bottom: 0.5em; }
-.m075 { margin-bottom: 0.75em; }
-.m1 { margin-bottom: 1em; }
+// Margins
+// ----------------------------------------------------------------------------
 .m2 { margin-bottom: 2em; }
+.m1 { margin-bottom: 1em; }
+.m075 { margin-bottom: 0.75em; }
+.m05 { margin-bottom: 0.5em; }
+.m025 { margin-bottom: 0.25em; }
+
+.italic { font-style: italic; }
+.upper  { text-transform: uppercase; }
 
 .highlight { color: red; }
 .fade { color: #c9c9c9; font-feature-settings: 'calt' off, 'liga' off, 'clig' off, 'dlig' off, 'subs' off, 'sups' off; }
 
 .jost { font-family: 'Jost*'; }
 
-.test { font-family: 'Arsenal'; }
+.page-header {
+  margin-bottom: 2rem;
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,500,500i,600,600i,700,700i');
-
-.alegreya-sans { font-family: 'Alegreya Sans', serif; }
-
-@font-face {
-  font-family: 'Young Serif';
-  src:  url('/assets/fonts/young-serif/YoungSerif-Regular.woff2') format('woff2'),
-	      url('/assets/fonts/young-serif/YoungSerif-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+  h1 {
+    font: italic 400 var(--ms8)/1 'Alegreya Sans';
+  }
 }
+
 
 
 // OpenType features
@@ -101,5 +105,6 @@
 .ss08 { font-feature-settings: 'ss08'; }
 .small-caps { font-feature-settings: 'smcp'; }
 .fractions { font-feature-settings: 'frac'; }
-.ordinals { font-feature-settings: 'ordn'; }
+.ordinals { font-feature-settings: 'ordn' !important; }
 .zero { font-feature-settings: 'zero'; }
+.cpsp { font-feature-settings: 'cpsp'; }

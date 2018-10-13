@@ -1,11 +1,20 @@
-<header class="site-header">
-  <h1><a href="/">Beautiful Web Type</a></h1>
+<header class='site-header'>
+  <h1><a href='/'>Beautiful Web Type</a></h1>
 
-  <ol>
-    <li class="nav-serif"><a href="/serif/">Serif</a></li>
-    <li class="nav-sans-serif"><a href="/sans-serif/">Sans-Serif</a></li>
-    <li class="nav-display"><a href="/display/">Display</a></li>
-  </ol>
+  {% include nav.html %}
 
-  <p class="support"><a href="">Support this site</a></p>
+  <div class='mobile-menu'>
+    <span class='menu-circle'></span>
+    <a href='#' class='menu-link'>
+      <span class='menu-icon'>
+        <span class='menu-line menu-line-1'></span>
+        <span class='menu-line menu-line-2'></span>
+        <span class='menu-line menu-line-3'></span>
+      </span>
+    </a>
+  </div>
+
+  <div class="menu-overlay">
+    {% include nav.html %}
+  </div>
 </header>

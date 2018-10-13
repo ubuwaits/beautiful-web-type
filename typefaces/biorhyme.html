@@ -10,17 +10,19 @@ description:
 {% assign text = site.data.text %}
 
 <div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
-  <header class="gr1 gc6">
-    <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
+  <header class="type-detail-header gr1 gc6">
+    <h2>{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
   </header>
 
   <div class="font-download gr1 gc6">
-    <a href="{{ typeface.g-fonts-url }}" target="_blank">Use version on<br> Google Fonts</a>
+    <a href="{{ typeface.g-fonts-url }}" target="_blank">Embed using<br> Google Fonts</a>
 
-    <a href="{{ typeface.project-url }}" target="_blank">Download latest <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+    <a href="{{ typeface.project-url }}" target="_blank">Download <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
   </div>
 
-  <div class="type-styles gr3 gc6">
+  {% include sample.html %}
+
+  <div class="type-styles gr1 gc6">
     <p class="w200">Extra-Light <span class="weight">200</span></p>
     <p class="w300">Light <span class="weight">300</span></p>
     <p class="w400">Regular <span class="weight">400</span></p>
@@ -28,7 +30,7 @@ description:
     <p class="w800">Extra-Bold <span class="weight">800</span></p>
   </div>
 
-  <div class="type-info gr3 gc3">
+  <div class="type-info gr1 gc6">
     <h3>Designed by</h3>
     <h4><a href="{{ typeface.creator-url }}" target="_blank">{{ typeface.creator }}</a></h4>
 
@@ -39,12 +41,7 @@ description:
     <h4>{{ typeface.styles }}</h4>
   </div>
 
-  <div class="type-info gr3 gc3">
-    <h3>OpenType Features</h3>
-    <h4></h4>
-  </div>
-
-  <div class="type-detail-table gr5 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Characters</p>
     </div>
@@ -53,7 +50,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr5 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Words</p>
     </div>
@@ -68,7 +65,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr10 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Paragraphs</p>
       <p class="code">font-weight: 300</p>
@@ -79,7 +76,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr10 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Paragraphs</p>
       <p class="code">font-weight: 400</p>

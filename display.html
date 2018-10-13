@@ -1,14 +1,14 @@
 ---
 layout: default
-body: display index
-title: Free Headline and Display Fonts &bull; Beautiful Web Type
-permalink: Display/
+body: display
+title: Open-Source Headline and Display Typefaces
+permalink: display/
 ---
 
 {% assign typefaces = site.data.typefaces | where: 'category', 'Display'  %}
 
 <div class="samples grid">
   {% for typeface in typefaces %}
-    {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+    {% include sample.html %}
   {% endfor %}
 </div>

@@ -1,11 +1,15 @@
 ---
 layout: default
 body: index
-title: The Best Free Fonts &bull; Beautiful Web Type
+title: The Definitive Guide to Open-Source Typefaces
 ---
 
-<div class="samples grid">
+<div class='samples grid'>
+  <div class='gr1 gc8 page-header'>
+    <h1>I am building the Definitive Guide to Open-Source Typefaces</h1>
+  </div>
+
   {% for typeface in site.data.typefaces %}
-    {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+    {% include sample.html %}
   {% endfor %}
 </div>

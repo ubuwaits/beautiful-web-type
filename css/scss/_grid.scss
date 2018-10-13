@@ -1,5 +1,5 @@
 $mobile: 700px;
-$tablet: 900px;
+$tablet: 940px;
 $large: 1500px;
 
 :root {
@@ -10,8 +10,15 @@ $large: 1500px;
 }
 
 @media screen and (min-width: $large)  { :root { --wrapper: 1344px; } }
-//@media screen and (max-width: $tablet) { :root { --wrapper: 540px; } }
-@media screen and (max-width: $mobile) { :root { --body-margin: 1.5em; } }
+
+@media screen and (max-width: $tablet) {
+  :root {
+    --body-margin: 1em;
+    --gutter: 1em;
+  }
+}
+
+@media screen and (max-width: $mobile) { :root { --body-margin: 1em; } }
 
 
 // Main grid layout
@@ -71,27 +78,31 @@ $large: 1500px;
   text-align: center;
 }
 
-.text-center { text-align: center; }
-
 .col-2 {
   column-count: 2;
   column-gap: 2em;
 }
 
-
 // Responsive grid styles
 // --------------------------------------------------------------------------
 @media screen and (max-width: $tablet) {
-  .sample {
-    //grid-column: span 12;
+  .type-detail-table {
+    grid-area: span 1 / span 12;
   }
 }
 
 @media screen and (max-width: $mobile) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
-    //grid-auto-rows: minmax(var(--rh), auto);
     grid-auto-rows: auto;
+  }
+
+  .type-detail-table {
+    grid-area: span 1 / span 6;
+  }
+
+  .examples {
+    padding: 1rem !important;
   }
 
   .grid > header,

@@ -1,17 +1,14 @@
-.type-info {
-  h3 {
-    font: 700 var(--ms0)/1 'Alegreya Sans';    
-    //margin-bottom: 0.25em;
-    text-transform: uppercase;
+.type-detail-header {
+  h2 {
+    font-size: var(--ms5);
+    font-weight: 400;
+    line-height: 1.1;
   }
+}
 
-  h4 {
-    font: 400 var(--ms1)/1.3 'Alegreya';
-    margin-bottom: 1em;
-  }
-
-  a {
-    text-decoration: underline;
+@media screen and (max-width: $mobile) {
+  .type-detail-header h2 {
+    font-size: var(--ms3);
   }
 }
 
@@ -21,26 +18,55 @@
   justify-content: flex-end;
 
   a {
-    background: #070707;
-    border-radius: 1px;
-    color: #fff;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    color: #373737;
     font: 700 var(--ms0)/1 'Alegreya Sans';
-    padding: 0.7em 1.5em;
+    padding: 0.9em 1.8em;
     text-align: center;
     text-transform: uppercase;
 
     &:hover {
-      background: red;
-    }
-
-    &:last-child {
-      margin-left: 1em;
+      border-color: red;
+      color: red;
     }
 
     .font-version {
       display: block;
       font-weight: 500;
+      text-transform: none;
     }
+  }
+
+  a + a {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .font-download {
+    margin-top: 1rem;
+
+    a {
+      flex-basis: 100%;
+      padding: 0.8em 1em;
+    }
+  }
+}
+
+.type-info {
+  h3 {
+    font: 700 var(--ms0)/1 'Alegreya Sans';
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font: 400 var(--ms1)/1.3 'Alegreya Sans';
+    margin-bottom: 1em;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -56,13 +82,9 @@
   }
 }
 
-.detail {
-  .sample .meta {
-    display: none;
-  }
-
-  .sample a {
-    pointer-events: none;
+@media screen and (max-width: $mobile) {
+  .type-styles p {
+    font-size: var(--ms4);
   }
 }
 
@@ -95,6 +117,7 @@
 
 .examples > div {
   padding: 1rem;
+  overflow-wrap: break-word;
 }
 
 .character-examples > div {
@@ -104,6 +127,16 @@
 .word-examples > div {
   margin-bottom: 0.8em;
   padding: 0;
+}
+
+@media screen and (max-width: $mobile) {
+  .word-examples > div h1 {
+    font-size: var(--ms3) !important;
+  }
+
+  .word-examples > div:nth-child(6) h1 {
+    font-size: var(--ms2) !important;
+  }
 }
 
 .examples h1 {
@@ -133,32 +166,4 @@
 
 .character-label + .code {
   margin-top: 0;
-}
-
-.section-header {
-  margin: 4rem 0 1rem 0;
-}
-
-.external-sample {
-  overflow: hidden;
-  position: relative;
-
-  img {
-    max-width: 100%;
-  }
-
-  p {
-    background: #fff;
-    font: 400 var(--ms-1)/1.2 'IBM Plex Mono';
-    padding: 0.5rem 0.5rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  a {
-    font-weight: 500;
-    text-decoration: underline;
-  }
 }

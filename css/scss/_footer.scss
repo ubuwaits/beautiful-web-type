@@ -1,0 +1,18 @@
+footer {
+  border-top: 1px solid rgba(#d7d7d7, 0.4);
+  margin-top: 4em !important;
+  padding-top: 2em;
+
+  h3 {
+    color: #797979;
+    font: 700 var(--ms0)/1 'Alegreya Sans';
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+
+  li {
+    font: 500 var(--ms0)/1 'Alegreya Sans';
+    margin-bottom: 0.25em;
+    padding: 0.25em 0;
+  }
+}

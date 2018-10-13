@@ -10,35 +10,26 @@ description:
 {% assign text = site.data.text %}
 
 <div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
-  <header class="gr1 gc6">
-    <h2 class="ms5 w400 lh1-1">{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
+  <header class="type-detail-header gr1 gc6">
+    <h2>{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
   </header>
 
   <div class="font-download gr1 gc6">
-    <a href="{{ typeface.g-fonts-url }}" target="_blank">Use version on<br> Google Fonts</a>
+    <a href="{{ typeface.g-fonts-url }}" target="_blank">Embed using<br> Google Fonts</a>
 
-    <a href="{{ typeface.project-url }}" target="_blank">Download latest <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+    <a href="{{ typeface.project-url }}" target="_blank">Download <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
   </div>
 
-  {% include {{ typeface.name | downcase | replace: ' ', '-' | append: '.html' }} %}
+  {% include sample.html %}
 
-  <div class="sample merriweather-sample v-align gr5 gc6">
-    <div class="text">
-      <h1>De Beneficiis</h1>
-      <h3 class="title">Lucius Annaeus Seneca</h3>
-      <h2>Book I.</h2>
-      <p>Among the numerous faults of those who pass their lives recklessly and without due reflexion, my good friend Liberalis, I should say that there is hardly any one so hurtful to society as this, that we neither know how to bestow or how to receive a benefit. It follows from this that benefits are badly invested, and become bad debts: in these cases it is too late to complain of their not being returned, for they were thrown away when we bestowed them. Nor need we wonder that while the greatest vices are common, none is more common than ingratitude: for this I see is brought about by various causes.</p>
-    </div>
-  </div>
-
-  <div class="type-styles gr3 gc6">
+  <div class="type-styles gr1 gc6">
     <p class="w300">Light <em>Italic</em> <span class="weight">300</span></p>
     <p class="w400">Regular <em>Italic</em> <span class="weight">400</span></p>
     <p class="w700">Bold <em>Italic</em> <span class="weight">700</span></p>
     <p class="w900">Black <em>Italic</em> <span class="weight">900</span></p>
   </div>
 
-  <div class="type-info gr3 gc3">
+  <div class="type-info gr1 gc6">
     <h3>Designed by</h3>
     <h4><a href="{{ typeface.creator-url }}" target="_blank">{{ typeface.creator }}</a></h4>
 
@@ -49,15 +40,7 @@ description:
     <h4>{{ typeface.styles }}</h4>
   </div>
 
-  <div class="type-info gr3 gc3">
-    <h3>Type Features</h3>
-    <h4>{{ typeface.features }}</h4>
-
-    <h3>Recommmended usage</h3>
-    <h4>{{ typeface.usage }}</h4>
-  </div>
-
-  <div class="type-detail-table gr6 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Characters</p>
     </div>
@@ -66,7 +49,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr6 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Words</p>
     </div>
@@ -81,7 +64,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr6 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Headlines</p>
     </div>
@@ -108,7 +91,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr6 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Italic headlines</p>
     </div>
@@ -135,7 +118,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr11 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Paragraphs</p>
       <p class="code">font-weight: 300</p>
@@ -149,7 +132,7 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr11 gc6">
+  <div class="type-detail-table gr1 gc6">
     <div class="meta dark top">
       <p class="name">Paragraphs</p>
       <p class="code">font-weight: 400</p>
