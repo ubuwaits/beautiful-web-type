@@ -22,6 +22,11 @@
   --ms-2: 0.694rem;
 }
 
+.ms16 { font-size: 18.488rem; }
+.ms15 { font-size: 15.407rem; }
+.ms14 { font-size: 12.839rem; }
+.ms13 { font-size: 10.699rem; }
+.ms12 { font-size: 8.916rem; }
 .ms11 { font-size: 7.43rem; }
 .ms10 { font-size: 6.192rem !important;; }
 .ms9  { font-size: 5.16rem !important;; }
@@ -37,7 +42,7 @@
 .ms-1 { font-size: 0.833rem; }
 .ms-2 { font-size: 0.694rem; }
 
-// Weights
+// Font weights
 // ----------------------------------------------------------------------------
 .w100 { font-weight: 100; }
 .w200 { font-weight: 200; }
@@ -64,23 +69,10 @@
 .m05 { margin-bottom: 0.5em; }
 .m025 { margin-bottom: 0.25em; }
 
+// Type styles
+// ----------------------------------------------------------------------------
 .italic { font-style: italic; }
 .upper  { text-transform: uppercase; }
-
-.highlight { color: red; }
-.fade { color: #c9c9c9; font-feature-settings: 'calt' off, 'liga' off, 'clig' off, 'dlig' off, 'subs' off, 'sups' off; }
-
-.jost { font-family: 'Jost*'; }
-
-.page-header {
-  margin-bottom: 2rem;
-
-  h1 {
-    font: italic 400 var(--ms8)/1 'Alegreya Sans';
-  }
-}
-
-
 
 // OpenType features
 // ----------------------------------------------------------------------------
@@ -108,3 +100,51 @@
 .ordinals { font-feature-settings: 'ordn' !important; }
 .zero { font-feature-settings: 'zero'; }
 .cpsp { font-feature-settings: 'cpsp'; }
+
+// Other styles
+// ----------------------------------------------------------------------------
+.highlight { color: red; }
+
+.fade {
+  color: #c9c9c9;
+  font-feature-settings: 'calt' off, 'liga' off, 'clig' off, 'dlig' off, 'subs' off, 'sups' off;
+}
+
+.jost { font-family: 'Jost*'; }
+
+.page-header {
+  margin: 3em 0 6em 0;
+  text-align: center;
+
+  h1 {
+    font: italic 400 var(--ms8)/1 'Alegreya Sans';
+  }
+
+  p {
+    font: italic 300 var(--ms3)/1.3 'Alegreya Sans';
+    margin: 0 1em;
+  }
+
+  a {
+    color: red;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .page-header {
+    margin: 1em 0 0 0;
+
+    h1 {
+      font-size: var(--ms5);
+    }
+
+    p {
+      font-size: var(--ms2);
+    }
+  }
+
+  .page-header + .page-header {
+    margin: 0 0 1em 0;
+  }
+}

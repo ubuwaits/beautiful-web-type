@@ -31,6 +31,12 @@
       color: red;
     }
 
+    span {
+      display: block;
+      font-weight: 500;
+      text-transform: none;
+    }
+
     .font-version {
       display: block;
       font-weight: 500;
@@ -101,7 +107,7 @@
   display: flex;
   flex-grow: 2;
   justify-content: center;
-  padding: 2rem;
+  padding: 2em;
 
   &.flow-row {
     align-content: center;
