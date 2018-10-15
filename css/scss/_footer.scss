@@ -11,13 +11,13 @@ footer.grid {
   }
 
   li {
-    font: 500 var(--ms0)/1 'Alegreya Sans';
+    font: 500 var(--ms1)/1 'Alegreya Sans';
     margin-bottom: 0.25em;
     padding: 0.25em 0;
   }
 
   p {
-    font: 400 var(--ms0)/1.2 'Alegreya Sans';
+    font: 400 var(--ms1)/1.3 'Alegreya Sans';
 
     a {
       color: red;
@@ -27,7 +27,7 @@ footer.grid {
   .subscribe-form {
     form {
       display: flex;
-      font: var(--ms0) 'Alegreya Sans';
+      font: var(--ms1) 'Alegreya Sans';
       margin-top: 0.5em;
     }
 

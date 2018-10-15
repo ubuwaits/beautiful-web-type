@@ -15,6 +15,12 @@
   }
 }
 
+@media screen and (max-width: $tablet) {
+  .sample > a {
+    padding: 4em 3em;
+  }
+}
+
 @media screen and (max-width: $mobile) {
   .sample > a {
     padding: 2em 1.5em;
@@ -32,12 +38,6 @@
   text-align: left;
 
   p {
-    &.name {
-      strong {
-        font-weight: 700;
-      }
-    }
-
     &.code {
       color: #a7a7a7;
       font-weight: 500;
@@ -201,16 +201,28 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
   .cooper-hewitt-sample .text {
     h1 {
-      font-size: var(--ms5);
+      font-size: var(--ms8);
       line-height: 1.1;
     }
 
     h2 {
-      font-size: var(--ms1);
+      font-size: var(--ms2);
       margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .cooper-hewitt-sample .text {
+    h1 {
+      font-size: var(--ms5);
+    }
+
+    h2 {
+      font-size: var(--ms1);      
     }
   }
 }
@@ -326,12 +338,18 @@
   }
 }
 
+@media screen and (max-width: $tablet) {
+  .lora-sample .text {
+    h1,
+    h2 {
+      font-size: var(--ms7);
+    }
+  }
+}
+
 @media screen and (max-width: $mobile) {
   .lora-sample .text {
-    h1 {
-      font-size: var(--ms2);
-    }
-
+    h1,
     h2 {
       font-size: var(--ms2);
     }

@@ -1,7 +1,12 @@
 <footer class='grid'>
   <div class='gr1 gc6'>
+    <h3>Support this site on Patreon</h3>
+    <p>I’m committed to keeping this site open to everyone. Your support ensures that I’m able to grow this project into a definitive resource, with new typefaces and new features. <br><a href='https://www.patreon.com/ubuwaits' target='_blank'>Become a supporter</a>.</p>
+  </div>
+
+  <div class='gr1 gc6'>
     <h3>Sign up for the Beautiful Web Type newsletter</h3>
-    <p>Get occasional updates on the latest featured typefaces and new features.</p>
+    <p>Get occasional updates on the latest typefaces and new site features.</p>
     <div class='subscribe-form'>
       <form action='https://tinyletter.com/beautifulwebtype' method='post' target='popupwindow' onsubmit='window.open('https://tinyletter.com/beautifulwebtype', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true'>
         <input type='hidden' value='1' name='embed'>
@@ -9,11 +14,6 @@
         <input type='submit' value='Subscribe'>
       </form>
     </div>
-  </div>
-
-  <div class='gr1 gc4'>
-    <h3>Support this site on Patreon</h3>
-    <p>I’m committed to keeping all the content on this site open to everyone. Your support ensures that I’m able to continue to dedicate my time to this site, adding new typefaces and new features. <a href='https://www.patreon.com/ubuwaits'>Support this site today</a>.</p>
   </div>
 
   {% assign typefaces = site.data.typefaces | where: 'category', 'Serif'  %}

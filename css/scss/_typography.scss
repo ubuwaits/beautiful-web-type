@@ -63,14 +63,15 @@
 
 // Margins
 // ----------------------------------------------------------------------------
-.m2 { margin-bottom: 2em; }
-.m1 { margin-bottom: 1em; }
+.m2 { margin-bottom: 2em !important; }
+.m1 { margin-bottom: 1em !important; }
 .m075 { margin-bottom: 0.75em; }
 .m05 { margin-bottom: 0.5em; }
 .m025 { margin-bottom: 0.25em; }
 
 // Type styles
 // ----------------------------------------------------------------------------
+.center { text-align: center; }
 .italic { font-style: italic; }
 .upper  { text-transform: uppercase; }
 
@@ -113,8 +114,7 @@
 .jost { font-family: 'Jost*'; }
 
 .page-header {
-  margin: 3em 0 6em 0;
-  text-align: center;
+  margin: 3em 0 5em 0;
 
   h1 {
     font: italic 400 var(--ms8)/1 'Alegreya Sans';
@@ -131,12 +131,12 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $tablet) {
   .page-header {
     margin: 1em 0 0 0;
 
     h1 {
-      font-size: var(--ms5);
+      font-size: var(--ms4);
     }
 
     p {
