@@ -18,10 +18,9 @@ html {
 
 body {
   background: $body-bg;
-  font-family: 'courier';
   margin: 6.5em var(--body-margin) var(--body-margin);
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'liga' on, 'clig' on, "dlig" off;
+  font-feature-settings: 'liga' on, 'clig' on, 'dlig' off;
 }
 
 @media screen and (max-width: $mobile) {
