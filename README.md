@@ -1,5 +1,4 @@
-# Beautiful web type
-## https://beautifulwebtype.com
+# [Beautiful web type](https://beautifulwebtype.com)
 
 In October 2018 I released a completely re-thought and re-designed version of Beautiful Web Type. The first version of the project (and many subsequent projects following in its footsteps) put an emphasis on stylized examples of the typeface in use. This often served to hide the flaws and limitations of the various typefaces.
 
@@ -9,10 +8,10 @@ I have spent a great deal of time sorting through the growing number of open-sou
 
 I plan on growing this site to be the definitive resource for open-source typefaces. Please consider supporting the project via [Patreon](https://www.patreon.com/ubuwaits).
 
-Patreon: https://www.patreon.com/ubuwaits
-Newsletter: https://tinyletter.com/beautifulwebtype
-Personal site: https://chad.is
-Twitter: https://twitter.com/ubuwaits
+* Patreon: https://www.patreon.com/ubuwaits
+* Newsletter: https://tinyletter.com/beautifulwebtype
+* Personal site: https://chad.is
+* Twitter: https://twitter.com/ubuwaits
 
 ## Featured typefaces
 I will be adding new typefaces continuously. Get notified when new typefaces are added by signing up for [the newsletter](https://tinyletter.com/beautifulwebtype).
