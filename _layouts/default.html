@@ -24,7 +24,12 @@
 
     {% include footer.html %}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script>
+      document.getElementsByClassName('menu-link')[0].addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementsByClassName('mobile-menu')[0].classList.toggle('open');
+        document.getElementsByClassName('menu-overlay')[0].classList.toggle('open');
+      }, false);
+    </script>
   </body>
 </html>
