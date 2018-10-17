@@ -1,3 +1,145 @@
+// Re-usable grid sizes
+// ----------------------------------------------------------------------------
+.gr1  { grid-row: span 1; }
+.gr2  { grid-row: span 2; }
+.gr3  { grid-row: span 3; }
+.gr4  { grid-row: span 4; }
+.gr5  { grid-row: span 5; }
+.gr6  { grid-row: span 6; }
+.gr7  { grid-row: span 7; }
+.gr8  { grid-row: span 8; }
+.gr9  { grid-row: span 9; }
+.gr10 { grid-row: span 10; }
+.gr11 { grid-row: span 11; }
+.gr12 { grid-row: span 12; }
+.gr13 { grid-row: span 13; }
+.gc2  { grid-column: span 2; }
+.gc3  { grid-column: span 3; }
+.gc4  { grid-column: span 4; }
+.gc5  { grid-column: span 5; }
+.gc6  { grid-column: span 6; }
+.gc8  { grid-column: span 8; }
+.gc12 { grid-column: span 12; }
+
+.ase { align-self: end; }
+.asc { align-self: center; }
+.justify-center { justify-content: center; }
+.justify-start  { justify-content: flex-start; }
+.flow-center { text-align: center; }
+
+// Modular scale
+// ----------------------------------------------------------------------------
+:root {
+  --ms16: 18.488rem;
+  --ms15: 15.407rem;
+  --ms14: 12.839rem;
+  --ms13: 10.699rem;
+  --ms12: 8.916rem;
+  --ms11: 7.43rem;
+  --ms10: 6.192rem;
+  --ms9: 5.16rem;
+  --ms8: 4.3rem;
+  --ms7: 3.583rem;
+  --ms6: 2.986rem;
+  --ms5: 2.488rem;
+  --ms4: 2.074rem;
+  --ms3: 1.728rem;
+  --ms2: 1.44rem;
+  --ms1: 1.2rem;
+  --ms0: 1rem;
+  --ms-1: 0.833rem;
+  --ms-2: 0.694rem;
+}
+
+.ms16 { font-size: 18.488rem; }
+.ms15 { font-size: 15.407rem; }
+.ms14 { font-size: 12.839rem; }
+.ms13 { font-size: 10.699rem; }
+.ms12 { font-size: 8.916rem; }
+.ms11 { font-size: 7.43rem; }
+.ms10 { font-size: 6.192rem !important;; }
+.ms9  { font-size: 5.16rem !important;; }
+.ms8  { font-size: 4.3rem !important;; }
+.ms7  { font-size: 3.583rem !important;; }
+.ms6  { font-size: 2.986rem !important; }
+.ms5  { font-size: 2.488rem !important; }
+.ms4  { font-size: 2.074rem; }
+.ms3  { font-size: 1.728rem; }
+.ms2  { font-size: 1.44rem; }
+.ms1  { font-size: 1.2rem; }
+.ms0  { font-size: 1rem; }
+.ms-1 { font-size: 0.833rem; }
+.ms-2 { font-size: 0.694rem; }
+
+// Font weights
+// ----------------------------------------------------------------------------
+.w100 { font-weight: 100; }
+.w200 { font-weight: 200; }
+.w300 { font-weight: 300; }
+.w400 { font-weight: 400; }
+.w500 { font-weight: 500; }
+.w600 { font-weight: 600; }
+.w700 { font-weight: 700; }
+.w800 { font-weight: 800; }
+.w900 { font-weight: 900; }
+
+// Line-heights
+// ----------------------------------------------------------------------------
+.lh1 { line-height: 1 !important; }
+.lh1-1 { line-height: 1.1 !important; }
+.lh1-2 { line-height: 1.2 !important; }
+.lh1-3 { line-height: 1.3 !important; }
+
+// Margins
+// ----------------------------------------------------------------------------
+.m2 { margin-bottom: 2em !important; }
+.m1 { margin-bottom: 1em !important; }
+.m075 { margin-bottom: 0.75em; }
+.m05 { margin-bottom: 0.5em; }
+.m025 { margin-bottom: 0.25em; }
+
+// Alignment
+// ----------------------------------------------------------------------------
+.center { text-align: center; }
+
+// Type styles
+// ----------------------------------------------------------------------------
+.italic { font-style: italic; }
+.upper  { text-transform: uppercase; }
+
+// OpenType features
+// ----------------------------------------------------------------------------
+.calt { font-feature-settings: 'calt'; }
+.cpsp { font-feature-settings: 'cpsp'; }
+.dlig { font-feature-settings: 'dlig'; }
+.fractions { font-feature-settings: 'frac'; }
+.oldstyle-proportional { font-feature-settings: 'onum', 'pnum'; }
+.oldstyle-tabular { font-feature-settings: 'onum', 'tnum'; }
+.ordinals { font-feature-settings: 'ordn' !important; }
+.liga { font-feature-settings: 'liga', 'clig'; }
+.lining-proportional { font-feature-settings: 'lnum', 'pnum'; }
+.lining-tabular { font-feature-settings: 'lnum', 'tnum'; }
+.small-caps { font-feature-settings: 'smcp'; }
+.ss01 { font-feature-settings: 'ss01'; }
+.ss02 { font-feature-settings: 'ss02'; }
+.ss03 { font-feature-settings: 'ss03'; }
+.ss04 { font-feature-settings: 'ss04'; }
+.ss05 { font-feature-settings: 'ss05'; }
+.ss06 { font-feature-settings: 'ss06'; }
+.ss07 { font-feature-settings: 'ss07'; }
+.ss08 { font-feature-settings: 'ss08'; }
+.subscript { font-feature-settings: 'subs'; }
+.superscript { font-feature-settings: 'sups'; }
+.swsh { font-feature-settings: 'swsh'; }
+.titl { font-feature-settings: 'titl'; }
+.zero { font-feature-settings: 'zero'; }
+
+// Resets
+// ---------------------------------------------------------------------------
+* { box-sizing: border-box; }
+h1, h2, h3, h4, h5, h6, p, ol, li { margin: 0; line-height: 1; }
+ol { list-style: none; padding: 0; }
+
 $min_width: 940px;
 $max_width: 1440px;
 $min_font: 12px;
@@ -10,10 +152,6 @@ html {
 
 @media screen and (max-width: $tablet) {
   html { font-size: 16px; }
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -33,10 +171,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-h1, h2, h3, h4, h5, h6, p, ol, li { margin: 0; line-height: 1; }
-ol { list-style: none; padding: 0; }
-cite { font-style: normal; }
 
 [contenteditable]:focus {
   background: rgba(orange, 0.1);

@@ -11,7 +11,7 @@
 
   h1 {
     flex-basis: 275px;
-    font: italic 900 var(--ms1)/1 'Alegreya Sans';
+    font: italic 900 var(--ms1)/1 var(--alegreya-sans);
     font-feature-settings: 'cpsp';
     padding: 0 3rem 0 1.5rem;
     text-transform: uppercase;
@@ -21,7 +21,7 @@
     align-items: center;
     display: flex;
     flex-grow: 1;
-    font: 700 var(--ms0)/1 'Alegreya Sans';
+    font: 700 var(--ms0)/1 var(--alegreya-sans);
     font-feature-settings: 'cpsp';
     justify-content: center;
     text-transform: uppercase;
@@ -45,7 +45,7 @@
 
     a {
       color: red;
-      font: 700 var(--ms0)/1 'Alegreya Sans';
+      font: 700 var(--ms0)/1 var(--alegreya-sans);
     }
   }
 }
@@ -57,43 +57,43 @@
   top: 4px;
   visibility: hidden;
   width: 46px;
-}
 
-.menu-circle {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 1000;
-}
+  .menu-circle {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
 
-.menu-link {
-  background: transparent;
-  border: 0;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 1002;
-}
+  .menu-link {
+    background: transparent;
+    border: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1002;
+  }
 
-.menu-icon {
-  bottom: 1px;
-  height: 14px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-}
+  .menu-icon {
+    bottom: 1px;
+    height: 14px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+  }
 
-.menu-line {
-  background-color: rgba(#000, 0.87);
-  border-radius: 2px;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  width: 100%;
+  .menu-line {
+    background-color: rgba(#000, 0.87);
+    border-radius: 2px;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 100%;
+  }
 }
 
 .menu-line-1 { top: 0; }
@@ -130,7 +130,7 @@
 
   li,
   p {
-    font: 700 var(--ms2)/1 'Alegreya Sans';
+    font: 700 var(--ms2)/1 var(--alegreya-sans);
     margin: 0.25em;
     padding: 0.5em;
     text-align: center;

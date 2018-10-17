@@ -1,11 +1,11 @@
-.type-detail-header {
-  h2 {
-    font-size: var(--ms5);
-    font-weight: 400;
-    line-height: 1.1;
-  }
+.type-detail-header h2 {
+  font-size: var(--ms5);
+  font-weight: 400;
+  line-height: 1.1;
 }
 
+// Responsive styles
+// --------------------------------------------------------------------------
 @media screen and (max-width: $mobile) {
   .type-detail-header h2 {
     font-size: var(--ms3);
@@ -21,7 +21,7 @@
     background-color: #fff;
     border: 1px solid #e7e7e7;
     color: #373737;
-    font: 700 var(--ms0)/1 'Alegreya Sans';
+    font: 700 var(--ms0)/1 var(--alegreya-sans);
     padding: 0.9em 1.8em;
     text-align: center;
     text-transform: uppercase;
@@ -36,12 +36,6 @@
       font-weight: 500;
       text-transform: none;
     }
-
-    .font-version {
-      display: block;
-      font-weight: 500;
-      text-transform: none;
-    }
   }
 
   a + a {
@@ -49,6 +43,8 @@
   }
 }
 
+// Responsive styles
+// --------------------------------------------------------------------------
 @media screen and (max-width: $mobile) {
   .font-download {
     margin-top: 1rem;
@@ -62,12 +58,12 @@
 
 .type-info {
   h3 {
-    font: 700 var(--ms0)/1 'Alegreya Sans';
+    font: 700 var(--ms0)/1 var(--alegreya-sans);
     text-transform: uppercase;
   }
 
   h4 {
-    font: 400 var(--ms1)/1.3 'Alegreya Sans';
+    font: 400 var(--ms1)/1.3 var(--alegreya-sans);
     margin-bottom: 1em;
   }
 
@@ -88,6 +84,8 @@
   }
 }
 
+// Responsive styles
+// --------------------------------------------------------------------------
 @media screen and (max-width: $mobile) {
   .type-styles p {
     font-size: var(--ms4);
@@ -127,7 +125,7 @@
 }
 
 .character-examples > div {
-  padding: 0.4em 0.4em;
+  padding: 0.4em;
 }
 
 .word-examples > div {
@@ -135,6 +133,8 @@
   padding: 0;
 }
 
+// Responsive styles
+// --------------------------------------------------------------------------
 @media screen and (max-width: $mobile) {
   .word-examples > div h1 {
     font-size: var(--ms3) !important;

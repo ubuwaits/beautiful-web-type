@@ -5,19 +5,20 @@ footer.grid {
 
   h3 {
     color: #797979;
-    font: 700 var(--ms0)/1 'Alegreya Sans';
+    font: 700 var(--ms0)/1 var(--alegreya-sans);
+    font-feature-settings: 'cpsp';
     margin-bottom: 0.25em;
     text-transform: uppercase;
   }
 
   li {
-    font: 400 var(--ms1)/1 'Alegreya Sans';
+    font: 400 var(--ms1)/1 var(--alegreya-sans);
     margin-bottom: 0.25em;
     padding: 0.25em 0;
   }
 
   p {
-    font: 400 var(--ms1)/1.3 'Alegreya Sans';
+    font: 400 var(--ms1)/1.3 var(--alegreya-sans);
 
     a {
       color: red;
@@ -27,8 +28,7 @@ footer.grid {
   .subscribe-form {
     form {
       display: flex;
-      font: var(--ms1) 'Alegreya Sans';
-      margin-top: 0.5em;
+      font: var(--ms1) var(--alegreya-sans);
     }
 
     input[type='text'] {
@@ -45,12 +45,14 @@ footer.grid {
     input[type='submit'] {
       @extend %reset-button;
       background: #000;
-      color: #fff;
+      color: #FFF;
       padding: 0.75em 1.5em;
     }
   }
 }
 
+// Responsive styles
+// ----------------------------------------------------------------------------
 @media screen and (max-width: $mobile) {
   footer.grid {
     grid-gap: 1.5em;

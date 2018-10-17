@@ -27,21 +27,19 @@
   }
 }
 
-// Sample footer
+// Header for type tables and samples
 // ----------------------------------------------------------------------------
 .meta {
   border-top: 1px solid rgba(#fff, 0.3);
   border-bottom: 0;
   color: #fff;
-  font: 700 var(--ms0)/1 'Alegreya Sans';
+  font: 700 var(--ms0)/1 var(--alegreya-sans);
   padding: 1.1em 1em 0.9em 1em;
   text-align: left;
 
-  p {
-    &.code {
-      color: #a7a7a7;
-      font-weight: 500;
-    }
+  &.code {
+    color: #a7a7a7;
+    font-weight: 500;
   }
 
   &.top {
@@ -55,6 +53,8 @@
   }
 }
 
+// Hide sample label and remove anchor events when used on detail pages
+// ----------------------------------------------------------------------------
 .detail {
   .sample .meta {
     display: none;

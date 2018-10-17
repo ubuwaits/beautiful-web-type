@@ -1,9 +1,10 @@
+:root { --alegreya-sans: 'Alegreya Sans', serif; }
 .alegreya-sans { font-family: 'Alegreya Sans', serif; }
 
 @font-face {
   font-family: 'Alegreya Sans';
-  src:  url('/assets/fonts/alegreya-sans/AlegreyaSans-Thin.woff2') format('woff2'),
-	      url('/assets/fonts/alegreya-sans/AlegreyaSans-Thin.woff') format('woff');
+  src: url('/assets/fonts/alegreya-sans/AlegreyaSans-Thin.woff2') format('woff2'),
+	     url('/assets/fonts/alegreya-sans/AlegreyaSans-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
 }
