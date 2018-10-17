@@ -6,34 +6,34 @@ title: Vollkorn
 description:
 ---
 
-{% assign typeface = site.data.typefaces | where: "name", page.title | first %}
+{% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
 {% assign text = site.data.text %}
 
-<div class="grid {{ typeface.name | downcase | replace: ' ', '-' }}">
-  <header class="type-detail-header gr1 gc6">
+<div class='grid {{ typeface.name | downcase | replace: ' ', '-' }}'>
+  <header class='type-detail-header gr1 gc6'>
     <h2>{{ typeface.name }}<br> by <em>{{ typeface.creator }}</em></h2>
   </header>
 
-  <div class="font-download gr1 gc6">
-    <a href="{{ typeface.g-fonts-url }}" target="_blank">Embed <span>using Google Fonts</span></a>
+  <div class='font-download gr1 gc6'>
+    <a href='{{ typeface.g-fonts-url }}' target='_blank'>Embed <span>using Google Fonts</span></a>
 
-    <a href="{{ typeface.project-url }}" target="_blank">Download <span class="font-version">{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+    <a href='{{ typeface.project-url }}' target='_blank'>Download <span class='font-version'>{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
   </div>
 
   {% include sample.html %}
 
-  <div class="type-styles gr1 gc6">
-    <p class="w400">Regular <em>Italic</em> <span class="weight">400</span></p>
-    <p class="w500">Medium <em>Italic</em> <span class="weight">500</span></p>
-    <p class="w600">SemiBold <em>Italic</em> <span class="weight">600</span></p>
-    <p class="w700">Bold <em>Italic</em> <span class="weight">700</span></p>
-    <p class="w800">ExtraBold <em>Italic</em> <span class="weight">800</span></p>
-    <p class="w900">Black <em>Italic</em> <span class="weight">900</span></p>
+  <div class='type-styles gr1 gc6'>
+    <p class='w400'>Regular <em>Italic</em> <span class='weight'>400</span></p>
+    <p class='w500'>Medium <em>Italic</em> <span class='weight'>500</span></p>
+    <p class='w600'>SemiBold <em>Italic</em> <span class='weight'>600</span></p>
+    <p class='w700'>Bold <em>Italic</em> <span class='weight'>700</span></p>
+    <p class='w800'>ExtraBold <em>Italic</em> <span class='weight'>800</span></p>
+    <p class='w900'>Black <em>Italic</em> <span class='weight'>900</span></p>
   </div>
 
-  <div class="type-info gr1 gc6">
+  <div class='type-info gr1 gc6'>
     <h3>Designed by</h3>
-    <h4><a href="{{ typeface.creator-url }}" target="_blank">{{ typeface.creator }}</a></h4>
+    <h4><a href='{{ typeface.creator-url }}' target='_blank'>{{ typeface.creator }}</a></h4>
 
     <h3>Category</h3>
     <h4>{{ typeface.category }}</h4>
@@ -42,176 +42,176 @@ description:
     <h4>{{ typeface.styles }}</h4>
   </div>
 
-  <div class="type-detail-table gr1 gc6">
-    <div class="meta dark top">
-      <p class="name">Characters</p>
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Characters</p>
     </div>
-    <div class="examples character-examples flow-row">
+    <div class='examples character-examples flow-row'>
       {% include characters.html %}
     </div>
   </div>
 
-  <div class="type-detail-table gr1 gc6">
-    <div class="meta dark top">
-      <p class="name">Words</p>
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Words</p>
     </div>
-    <div class="examples word-examples flow-column flow-center">
-      <div><h1 class="ms6 w400" contenteditable="true">{{ text.word-01 }}</h1></div>
-      <div><h1 class="ms6 w400 upper" contenteditable="true">{{ text.word-02 }}</h1></div>
-      <div><h1 class="ms6 w500 italic" contenteditable="true">{{ text.word-03 }}</h1></div>
-      <div><h1 class="ms6 w600" contenteditable="true">{{ text.word-04 }}</h1></div>
-      <div><h1 class="ms6 w700" contenteditable="true">{{ text.word-05 }}</h1></div>
-      <div><h1 class="w800" contenteditable="true">{{ text.word-06 }}</h1></div>
-      <div><h1 class="ms6 w900" contenteditable="true">{{ text.word-07 }}</h1></div>
-    </div>
-  </div>
-
-  <div class="type-detail-table gr1 gc6">
-    <div class="meta dark top">
-      <p class="name">Headlines</p>
-    </div>
-    <div class="examples flow-column">
-      <div>
-        <h1 class="w400" contenteditable="true">{{ text.headline-01 }}</h1>
-        <p class="character-label">400</p>
-      </div>
-
-      <div>
-        <h1 class="w500" contenteditable="true">{{ text.headline-02 }}</h1>
-        <p class="character-label">500</p>
-      </div>
-
-      <div>
-        <h1 class="w600" contenteditable="true">{{ text.headline-03 }}</h1>
-        <p class="character-label">600</p>
-      </div>
-
-      <div>
-        <h1 class="w700" contenteditable="true">{{ text.headline-04 }}</h1>
-        <p class="character-label">700</p>
-      </div>
-
-      <div>
-        <h1 class="w800" contenteditable="true">{{ text.headline-05 }}</h1>
-        <p class="character-label">800</p>
-      </div>
-
-      <div>
-        <h1 class="w900" contenteditable="true">{{ text.headline-06 }}</h1>
-        <p class="character-label">900</p>
-      </div>
+    <div class='examples word-examples flow-column flow-center'>
+      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.word-01 }}</h1></div>
+      <div><h1 class='ms6 w400 upper' contenteditable='true'>{{ text.word-02 }}</h1></div>
+      <div><h1 class='ms6 w500 italic' contenteditable='true'>{{ text.word-03 }}</h1></div>
+      <div><h1 class='ms6 w600' contenteditable='true'>{{ text.word-04 }}</h1></div>
+      <div><h1 class='ms6 w700' contenteditable='true'>{{ text.word-05 }}</h1></div>
+      <div><h1 class='w800' contenteditable='true'>{{ text.word-06 }}</h1></div>
+      <div><h1 class='ms6 w900' contenteditable='true'>{{ text.word-07 }}</h1></div>
     </div>
   </div>
 
-  <div class="type-detail-table gr1 gc6">
-    <div class="meta dark top">
-      <p class="name">Italic headlines</p>
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Headlines</p>
     </div>
-    <div class="examples flow-column">
+    <div class='examples flow-column'>
       <div>
-        <h1 class="w400 italic" contenteditable="true">{{ text.headline-01 }}</h1>
-        <p class="character-label">400</p>
+        <h1 class='w400' contenteditable='true'>{{ text.headline-01 }}</h1>
+        <p class='character-label'>400</p>
       </div>
 
       <div>
-        <h1 class="w500 italic" contenteditable="true">{{ text.headline-02 }}</h1>
-        <p class="character-label">500</p>
+        <h1 class='w500' contenteditable='true'>{{ text.headline-02 }}</h1>
+        <p class='character-label'>500</p>
       </div>
 
       <div>
-        <h1 class="w600 italic" contenteditable="true">{{ text.headline-03 }}</h1>
-        <p class="character-label">600</p>
+        <h1 class='w600' contenteditable='true'>{{ text.headline-03 }}</h1>
+        <p class='character-label'>600</p>
       </div>
 
       <div>
-        <h1 class="w700 italic" contenteditable="true">{{ text.headline-04 }}</h1>
-        <p class="character-label">700</p>
+        <h1 class='w700' contenteditable='true'>{{ text.headline-04 }}</h1>
+        <p class='character-label'>700</p>
       </div>
 
       <div>
-        <h1 class="w800 italic" contenteditable="true">{{ text.headline-05 }}</h1>
-        <p class="character-label">800</p>
+        <h1 class='w800' contenteditable='true'>{{ text.headline-05 }}</h1>
+        <p class='character-label'>800</p>
       </div>
 
       <div>
-        <h1 class="w900 italic" contenteditable="true">{{ text.headline-06 }}</h1>
-        <p class="character-label">900</p>
+        <h1 class='w900' contenteditable='true'>{{ text.headline-06 }}</h1>
+        <p class='character-label'>900</p>
       </div>
     </div>
   </div>
 
-  <div class="type-detail-table gr1 gc6">
-    <div class="meta dark top">
-      <p class="name">Paragraphs</p>
-      <p class="code">font-weight: 400</p>
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Italic headlines</p>
     </div>
-    <div class="examples flow-column">
-      <div><p class="ms2" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms1" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms0" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms-1" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms-2 col-2" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-    </div>
-  </div>
-
-  <div class="type-detail-table gr1 gc6">
-    <div class="meta dark top">
-      <p class="name">Paragraphs</p>
-      <p class="code">font-weight: 500</p>
-    </div>
-    <div class="examples flow-column">
-      <div><p class="ms2 w500" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms1 w500" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms0 w500" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms-1 w500" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-      <div><p class="ms-2 w500 col-2" contenteditable="true">{{ text.paragraph-01 }}</p></div>
-    </div>
-  </div>
-
-  <div class="type-detail-table gr8 gc6">
-    <div class="meta dark top">
-      <p class="name">Smallcap headlines</p>
-      <p class="code">font-feature-settings: 'smcp';</p>
-    </div>
-    <div class="examples flow-column small-caps">
+    <div class='examples flow-column'>
       <div>
-        <h1 class="w400" contenteditable="true">{{ text.headline-01 }}</h1>
-        <p class="character-label">400</p>
+        <h1 class='w400 italic' contenteditable='true'>{{ text.headline-01 }}</h1>
+        <p class='character-label'>400</p>
       </div>
 
       <div>
-        <h1 class="w500" contenteditable="true">{{ text.headline-02 }}</h1>
-        <p class="character-label">500</p>
+        <h1 class='w500 italic' contenteditable='true'>{{ text.headline-02 }}</h1>
+        <p class='character-label'>500</p>
       </div>
 
       <div>
-        <h1 class="w600" contenteditable="true">{{ text.headline-03 }}</h1>
-        <p class="character-label">600</p>
+        <h1 class='w600 italic' contenteditable='true'>{{ text.headline-03 }}</h1>
+        <p class='character-label'>600</p>
       </div>
 
       <div>
-        <h1 class="w700" contenteditable="true">{{ text.headline-04 }}</h1>
-        <p class="character-label">700</p>
+        <h1 class='w700 italic' contenteditable='true'>{{ text.headline-04 }}</h1>
+        <p class='character-label'>700</p>
       </div>
 
       <div>
-        <h1 class="w800" contenteditable="true">{{ text.headline-05 }}</h1>
-        <p class="character-label">800</p>
+        <h1 class='w800 italic' contenteditable='true'>{{ text.headline-05 }}</h1>
+        <p class='character-label'>800</p>
       </div>
 
       <div>
-        <h1 class="w900" contenteditable="true">{{ text.headline-06 }}</h1>
-        <p class="character-label">900</p>
+        <h1 class='w900 italic' contenteditable='true'>{{ text.headline-06 }}</h1>
+        <p class='character-label'>900</p>
       </div>
     </div>
   </div>
 
-  <div class="type-detail-table gr4 gc6">
-    <div class="meta dark top">
-      <p class="name">Standard Ligatures</p>
-      <p class="code">font-feature-settings: 'liga', 'clig';</p>
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Paragraphs</p>
+      <p class='code'>font-weight: 400</p>
     </div>
-    <div class="examples flow-row">
+    <div class='examples flow-column'>
+      <div><p class='ms2' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms1' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms0' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms-1' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms-2 col-2' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Paragraphs</p>
+      <p class='code'>font-weight: 500</p>
+    </div>
+    <div class='examples flow-column'>
+      <div><p class='ms2 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms1 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms0 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms-1 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+      <div><p class='ms-2 w500 col-2' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr8 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Smallcap headlines</p>
+      <p class='code'>font-feature-settings: 'smcp';</p>
+    </div>
+    <div class='examples flow-column small-caps'>
+      <div>
+        <h1 class='w400' contenteditable='true'>{{ text.headline-01 }}</h1>
+        <p class='character-label'>400</p>
+      </div>
+
+      <div>
+        <h1 class='w500' contenteditable='true'>{{ text.headline-02 }}</h1>
+        <p class='character-label'>500</p>
+      </div>
+
+      <div>
+        <h1 class='w600' contenteditable='true'>{{ text.headline-03 }}</h1>
+        <p class='character-label'>600</p>
+      </div>
+
+      <div>
+        <h1 class='w700' contenteditable='true'>{{ text.headline-04 }}</h1>
+        <p class='character-label'>700</p>
+      </div>
+
+      <div>
+        <h1 class='w800' contenteditable='true'>{{ text.headline-05 }}</h1>
+        <p class='character-label'>800</p>
+      </div>
+
+      <div>
+        <h1 class='w900' contenteditable='true'>{{ text.headline-06 }}</h1>
+        <p class='character-label'>900</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr4 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Standard Ligatures</p>
+      <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+    </div>
+    <div class='examples flow-row'>
       <div><span class='fade'>ff</span> <span class='liga'>ff</span></div>
       <div><span class='fade italic'>ff</span> <span class='liga italic'>ff</span></div>
 
@@ -241,12 +241,12 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr6 gc6">
-    <div class="meta dark top">
-      <p class="name">Discretionary Ligatures</p>
-      <p class="code">font-feature-settings: 'dlig';</p>
+  <div class='type-detail-table gr6 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Discretionary Ligatures</p>
+      <p class='code'>font-feature-settings: 'dlig';</p>
     </div>
-    <div class="examples flow-row">
+    <div class='examples flow-row'>
       <div><span class='fade'>ch</span> <span class='dlig'>ch</span></div>
       <div><span class='fade'><em>ch</em></span> <span class='dlig italic'>ch</span></div>
 
@@ -290,134 +290,134 @@ description:
     </div>
   </div>
 
-  <div class="type-detail-table gr2 gc6">
-    <div class="meta dark top">
-      <p class="name">Contextual Alternates</p>
-      <p class="code">font-feature-settings: 'calt';</p>
+  <div class='type-detail-table gr2 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Contextual Alternates</p>
+      <p class='code'>font-feature-settings: 'calt';</p>
     </div>
-    <div class="examples flow-row">
-      <div><span class='fade w600'>fä</span> <span class="w600 calt">fä</span></div>
-      <div><span class='fade'>RT</span> <span class="calt">RT</span></div>
-    </div>
-  </div>
-
-  <div class="type-detail-table gr2 gc6">
-    <div class="meta dark top">
-      <p class="name">Titling Alternates</p>
-      <p class="code">font-feature-settings: 'titl';</p>
-    </div>
-    <div class="examples flow-row">
-      <div><span class='fade'>Å</span> <span class="titl">Å</span></div>
-      <div><span class='fade'>Ä</span> <span class="titl">Ä</span></div>
-      <div><span class='fade'>Ö</span> <span class="titl">Ö</span></div>
-      <div><span class='fade'>Ü</span> <span class="titl">Ü</span></div>
-      <div><span class='fade'>J</span> <span class="titl">J</span></div>
-      <div><span class='fade'>Q</span> <span class="titl">Q</span></div>
+    <div class='examples flow-row'>
+      <div><span class='fade w600'>fä</span> <span class='w600 calt'>fä</span></div>
+      <div><span class='fade'>RT</span> <span class='calt'>RT</span></div>
     </div>
   </div>
 
-  <div class="type-detail-table gr8 gc6">
-    <div class="meta dark top">
-      <p class="name">Figures</p>
+  <div class='type-detail-table gr2 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Titling Alternates</p>
+      <p class='code'>font-feature-settings: 'titl';</p>
     </div>
-    <div class="examples flow-column flow-center">
+    <div class='examples flow-row'>
+      <div><span class='fade'>Å</span> <span class='titl'>Å</span></div>
+      <div><span class='fade'>Ä</span> <span class='titl'>Ä</span></div>
+      <div><span class='fade'>Ö</span> <span class='titl'>Ö</span></div>
+      <div><span class='fade'>Ü</span> <span class='titl'>Ü</span></div>
+      <div><span class='fade'>J</span> <span class='titl'>J</span></div>
+      <div><span class='fade'>Q</span> <span class='titl'>Q</span></div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr8 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Figures</p>
+    </div>
+    <div class='examples flow-column flow-center'>
       <div>
-        <h1 class="oldstyle-proportional">1234567890</h1>
-        <p class="character-label">Proportional Oldstyle (default): 'pnum', 'onum'</p>
+        <h1 class='oldstyle-proportional'>1234567890</h1>
+        <p class='character-label'>Proportional Oldstyle (default): 'pnum', 'onum'</p>
       </div>
 
       <div>
-        <h1 class="oldstyle-tabular">1234567890</h1>
-        <p class="character-label">Tabular Oldstyle: 'tnum', 'onum'</p>
+        <h1 class='oldstyle-tabular'>1234567890</h1>
+        <p class='character-label'>Tabular Oldstyle: 'tnum', 'onum'</p>
       </div>
 
       <div>
-        <h1 class="lining-proportional">1234567890</h1>
-        <p class="character-label">Proportional Lining: 'pnum', 'lnum'</p>
+        <h1 class='lining-proportional'>1234567890</h1>
+        <p class='character-label'>Proportional Lining: 'pnum', 'lnum'</p>
       </div>
 
       <div>
-        <h1 class="lining-tabular">1234567890</h1>
-        <p class="character-label">Tabular Lining: 'tnum', 'lnum';</p>
+        <h1 class='lining-tabular'>1234567890</h1>
+        <p class='character-label'>Tabular Lining: 'tnum', 'lnum';</p>
       </div>
 
       <div>
-        <h1 class="small-caps">1234567890</h1>
-        <p class="character-label">Small Caps: 'smcp';</p>
+        <h1 class='small-caps'>1234567890</h1>
+        <p class='character-label'>Small Caps: 'smcp';</p>
       </div>
 
       <div>
-        <h1><span class='fade'>0</span> <span class="zero">0</a></h1>
-        <p class="character-label">Slashed Zero: 'zero'</p>
+        <h1><span class='fade'>0</span> <span class='zero'>0</a></h1>
+        <p class='character-label'>Slashed Zero: 'zero'</p>
       </div>
 
       <div>
-        <h1 class="fractions">1/2 3/4 5/6 7/8 90/123</h1>
-        <p class="character-label">Fractions: 'frac';</p>
+        <h1 class='fractions'>1/2 3/4 5/6 7/8 90/123</h1>
+        <p class='character-label'>Fractions: 'frac';</p>
       </div>
 
       <div>
         <h1><span class='fade'>A</span><span class='subscript'>1234567890</a></h1>
-        <p class="character-label">Subscripts: 'subs'</p>
+        <p class='character-label'>Subscripts: 'subs'</p>
       </div>
 
       <div>
         <h1><span class='fade'>A</span><span class='superscript'>1234567890</span></h1>
-        <p class="character-label">Superscripts: 'sups'</p>
+        <p class='character-label'>Superscripts: 'sups'</p>
       </div>
     </div>
   </div>
 
-  <div class="type-detail-table gr2 gc6">
-    <div class="meta dark top">
-      <p class="name">Ordinals</p>
-      <p class="code">font-feature-settings: 'ordn';</p>
+  <div class='type-detail-table gr2 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Ordinals</p>
+      <p class='code'>font-feature-settings: 'ordn';</p>
     </div>
-    <div class="examples flow-row">
+    <div class='examples flow-row'>
       <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
       <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
       <div><span class='fade'>No.</span> <span class='ordinals'>No.</span></div>
     </div>
   </div>
 
-  <div class="type-detail-table gr4 gc6">
-    <div class="meta dark top">
-      <p class="name">Alternate Glyph Forms</p>
-      <p class="code">font-feature-settings: 'ss01';</p>
+  <div class='type-detail-table gr4 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Alternate Glyph Forms</p>
+      <p class='code'>font-feature-settings: 'ss01';</p>
     </div>
-    <div class="examples flow-row">
-      <div><span class='fade italic'>A</span> <span class="ss01 italic">A</a></div>
-      <div><span class='fade'>a</span> <span class="ss01">a</a></div>
-      <div><span class='fade italic'>E</span> <span class="ss01 italic">E</a></div>
-      <div><span class='fade'>g</span> <span class="ss01">g</a></div>
-      <div><span class='fade italic'>g</span> <span class="ss01 italic">g</a></div>
-      <div><span class='fade'>j</span> <span class="ss01">j</a></div>
-      <div><span class='fade italic'>j</span> <span class="ss01 italic">j</a></div>
-      <div><span class='fade'>M</span> <span class="ss01">M</a></div>
-      <div><span class='fade italic'>M</span> <span class="ss01 italic">M</a></div>
-      <div><span class='fade'>N</span> <span class="ss01">N</a></div>
-      <div><span class='fade italic'>N</span> <span class="ss01 italic">N</a></div>
-      <div><span class='fade'>Q</span> <span class="ss01">Q</a></div>
-      <div><span class='fade italic'>Q</span> <span class="ss01 italic">Q</a></div>
-      <div><span class='fade'>y</span> <span class="ss01">y</a></div>
-      <div><span class='fade italic'>x</span> <span class="ss01 italic">x</a></div>
-      <div><span class='fade italic'>y</span> <span class="ss01 italic">y</a></div>
-      <div><span class='fade italic'>z</span> <span class="ss01 italic">z</a></div>
-      <div><span class='fade'>ẞ</span> <span class="ss01">ẞ</a></div>
-      <div><span class='fade italic'>ẞ</span> <span class="ss01 italic">ẞ</a></div>
-      <div><span class='fade'>&</span> <span class="ss01">&</a></div>
+    <div class='examples flow-row'>
+      <div><span class='fade italic'>A</span> <span class='ss01 italic'>A</a></div>
+      <div><span class='fade'>a</span> <span class='ss01'>a</a></div>
+      <div><span class='fade italic'>E</span> <span class='ss01 italic'>E</a></div>
+      <div><span class='fade'>g</span> <span class='ss01'>g</a></div>
+      <div><span class='fade italic'>g</span> <span class='ss01 italic'>g</a></div>
+      <div><span class='fade'>j</span> <span class='ss01'>j</a></div>
+      <div><span class='fade italic'>j</span> <span class='ss01 italic'>j</a></div>
+      <div><span class='fade'>M</span> <span class='ss01'>M</a></div>
+      <div><span class='fade italic'>M</span> <span class='ss01 italic'>M</a></div>
+      <div><span class='fade'>N</span> <span class='ss01'>N</a></div>
+      <div><span class='fade italic'>N</span> <span class='ss01 italic'>N</a></div>
+      <div><span class='fade'>Q</span> <span class='ss01'>Q</a></div>
+      <div><span class='fade italic'>Q</span> <span class='ss01 italic'>Q</a></div>
+      <div><span class='fade'>y</span> <span class='ss01'>y</a></div>
+      <div><span class='fade italic'>x</span> <span class='ss01 italic'>x</a></div>
+      <div><span class='fade italic'>y</span> <span class='ss01 italic'>y</a></div>
+      <div><span class='fade italic'>z</span> <span class='ss01 italic'>z</a></div>
+      <div><span class='fade'>ẞ</span> <span class='ss01'>ẞ</a></div>
+      <div><span class='fade italic'>ẞ</span> <span class='ss01 italic'>ẞ</a></div>
+      <div><span class='fade'>&</span> <span class='ss01'>&</a></div>
     </div>
   </div>
 
-  <div class="type-detail-table gr2 gc6">
-    <div class="meta dark top">
-      <p class="name">Special Characters and Symbols</p>
+  <div class='type-detail-table gr2 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Special Characters and Symbols</p>
     </div>
-    <div class="examples flow-row">
-      <div><span>&para;</span> <p class="code">&amp;para;</p></div>
-      <div><span>&sect;</span> <p class="code">&amp;sect;</p></div>
-      <div><span>&dagger;</span> <p class="code">&amp;dagger;</p></div>
-      <div><span>&Dagger;</span> <p class="code">&amp;Dagger;</p></div>
+    <div class='examples flow-row'>
+      <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
+      <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
+      <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
+      <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
     </div>
   </div>
 </div>

@@ -77,8 +77,8 @@
 
 // OpenType features
 // ----------------------------------------------------------------------------
-.liga { font-feature-settings: "liga", "clig"; }
-.dlig { font-feature-settings: "dlig"; }
+.liga { font-feature-settings: 'liga', 'clig'; }
+.dlig { font-feature-settings: 'dlig'; }
 .oldstyle-proportional { font-feature-settings: 'onum', 'pnum'; }
 .oldstyle-tabular { font-feature-settings: 'onum', 'tnum'; }
 .lining-proportional { font-feature-settings: 'lnum', 'pnum'; }
