@@ -391,44 +391,7 @@
     }
 
     h2 {
-      font-size: var(--ms-1);      
-    }
-  }
-}
-
-// Merriweather
-// ----------------------------------------------------------------------------
-.merriweather-sample {
-  .text {
-    margin: 0 auto;
-    max-width: 640px;
-
-    h1 {
-      font-size: var(--ms3);
-      font-style: italic;
-      font-weight: 700;
-      line-height: 1;
-      margin-top: 0.5em;
-    }
-
-    p {
-      font-size: var(--ms3);
-      font-weight: 300;
-      line-height: 1.5;
-    }
-  }
-}
-
-@media screen and (max-width: $mobile) {
-  .merriweather-sample .text {
-    h1 {
-      font-size: var(--ms0);
-      line-height: 1.2;
-    }
-
-    p {
-      font-size: var(--ms1);
-      line-height: 1.4;
+      font-size: var(--ms-1);
     }
   }
 }

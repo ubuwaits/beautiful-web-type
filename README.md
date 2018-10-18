@@ -25,7 +25,6 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Jost](https://beautifulwebtype.com/jost/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
 * [Lora](https://beautifulwebtype.com/lora/)
-* [Merriweather](https://beautifulwebtype.com/merriweather/)
 * [Oswald](https://beautifulwebtype.com/oswald/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)

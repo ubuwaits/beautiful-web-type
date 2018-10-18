@@ -97,19 +97,6 @@
   g-fonts-url: https://fonts.google.com/specimen/Lora
   sample-html: '<p>Far off in the bending sky was the pearly light; and she felt the largeness of the world and the manifold wakings of men to labor and endurance. She was a part of that involuntary, palpitating life, and could neither look out on it from her luxurious shelter as a mere spectator, nor hide her eyes in selfish complaining.</p><h2>George Eliot, <em>Middlemarch</em></h2>'
 
-- name: Merriweather
-  creator: Sorkin Type
-  creator-url: http://sorkintype.com/
-  category: Serif
-  styles: 8
-  project-url: https://github.com/EbenSorkin/Merriweather
-  latest-version: v2.003
-  release-date: 18 Apr 2018
-  features: Very large x-height, slightly condensed letterforms, a mild diagonal stress, sturdy serifs and open forms.
-  usage: Long texts for books or articles, headlines and captions.
-  g-fonts-url: https://fonts.google.com/specimen/Merriweather
-  sample-html: '<p>Never have I trusted Fortune, even when she seemed to offer peace. All those blessings which she kindly bestowed on me&mdash;money, public office, influence&mdash;I relegated to a place whence she could claim them back without bothering me.<h1>Lucius Annaeus Seneca</h1></p>'
-
 - name: Oswald
   creator: Vernon Adams
   creator-url: https://fonts.google.com/?query=Vernon+Adams
