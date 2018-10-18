@@ -8,6 +8,7 @@
   release-date: 13 Mar 2018
   g-fonts-url: https://fonts.google.com/specimen/Alegreya
   sample-html: '<h1>like the generations of leaves, the lives of mortal men. Now the wind scatters the old leaves across the earth, now the living timber bursts with the new buds and spring comes round again. And so with men: as one generation comes to life, another dies away.</h1><p>Homer, <em>The Iliad</em></p>'
+  sample-shade: light
 
 - name: Alegreya Sans
   creator: Huerta Tipográfica
@@ -29,7 +30,7 @@
   latest-version: v1.002
   release-date: 12 Aug 2018
   g-fonts-url: https://fonts.google.com/specimen/Archivo
-  sample-html: '<h1>Dieter Rams<br>Bauhaus-Archiv<br>Museum für<br> Gestaltung<br>Retrospective</h1> <h1 class="oldstyle-proportional">02.10.2015<br>24.11.2015</h1>'
+  sample-html: '<h1>Dieter Rams<br>Bauhaus-Archiv<br>Museum für<br> Gestaltung<br>Retrospective <span class="oldstyle-proportional">02.10.2015<br>24.11.2015</span></h1> '
 
 - name: Archivo Black
   creator: Omnibus-Type
@@ -40,7 +41,8 @@
   latest-version: v1.006
   release-date: 12 Aug 2018
   g-fonts-url: https://fonts.google.com/specimen/Archivo+Black
-  sample-html: '<h1>Die<br>Neue<br>Gesell<br>schaft<br>8</h1>'
+  sample-html: '<h1>Die<br>Neue<br>Gesell<br>schaft</h1><h2>August 1974</h2>'
+  sample-shade: light
 
 - name: BioRhyme
   creator: Aoife Mooney
@@ -82,7 +84,7 @@
   latest-version: v1.045
   release-date: 15 Nov 2016
   g-fonts-url: https://fonts.google.com/specimen/Libre+Franklin
-  sample-html: '<h1>Compendium<br> for Literates</h1><h2>A System of Writing<br> by Karl Gerstner</h2><p>MIT Press</p>'
+  sample-html: '<h1>Ornette</h1><h1>On</h1><h1>Tenor</h1>'
 
 - name: Lora
   creator: Cyreal
@@ -93,7 +95,7 @@
   latest-version: v2.202
   release-date: 18 Jan 2018
   g-fonts-url: https://fonts.google.com/specimen/Lora
-  sample-html: '<h1>Superintelligence</h1><h2>Nick Bostrom</h2>'
+  sample-html: '<p>Far off in the bending sky was the pearly light; and she felt the largeness of the world and the manifold wakings of men to labor and endurance. She was a part of that involuntary, palpitating life, and could neither look out on it from her luxurious shelter as a mere spectator, nor hide her eyes in selfish complaining.</p><h2>George Eliot, <em>Middlemarch</em></h2>'
 
 - name: Merriweather
   creator: Sorkin Type
@@ -106,7 +108,7 @@
   features: Very large x-height, slightly condensed letterforms, a mild diagonal stress, sturdy serifs and open forms.
   usage: Long texts for books or articles, headlines and captions.
   g-fonts-url: https://fonts.google.com/specimen/Merriweather
-  sample-html: '<p>Never have I trusted Fortune, even when she seemed to offer peace. All those blessings which she kindly bestowed on me&mdash;money, public office, influence&mdash;I relegated to a place whence she could claim them back without bothering me.<h1>Lucius Annaeus Seneca (c. 4 BC&ndash;AD 65)</h1></p>'
+  sample-html: '<p>Never have I trusted Fortune, even when she seemed to offer peace. All those blessings which she kindly bestowed on me&mdash;money, public office, influence&mdash;I relegated to a place whence she could claim them back without bothering me.<h1>Lucius Annaeus Seneca</h1></p>'
 
 - name: Oswald
   creator: Vernon Adams
@@ -140,6 +142,7 @@
   release-date: 17 Aug 2018
   g-fonts-url: https://fonts.google.com/specimen/Source+Serif+Pro
   sample-html: '<h1>Philip Glass</h1><h1>Dances</h1><h1>No.2&mdash;No.4</h1>'
+  sample-shade: light
 
 - name: Vollkorn
   creator: Friedrich Althausen
@@ -162,3 +165,4 @@
   release-date: 23 Aug 2017
   g-fonts-url: https://fonts.google.com/specimen/Zilla+Slab
   sample-html: '<h1>Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone.</h1>'
+  sample-shade: light

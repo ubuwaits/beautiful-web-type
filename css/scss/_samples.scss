@@ -68,20 +68,23 @@
 // Alegreya
 // ----------------------------------------------------------------------------
 .alegreya-sample {
+  background-color: #DFD7C9;
+
   .text {
+    color: rgba(#02040F, 0.75);
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 760px;
 
     h1,
     p {
+      font-size: var(--ms5);
       font-weight: 400;
-      font-size: var(--ms6);
       line-height: 1.1;
     }
 
     h1::first-line {
       font-feature-settings: 'smcp';
-      font-weight: 800;
+      font-weight: 700;
     }
 
     p {
@@ -102,6 +105,8 @@
 // Alegreya Sans
 // ----------------------------------------------------------------------------
 .alegreya-sans-sample {
+  background-color: #EC3B3B;
+
   .text {
     margin: 0 auto;
     max-width: 1020px;
@@ -128,17 +133,24 @@
 // Archivo
 // ----------------------------------------------------------------------------
 .archivo-sample {
+  background-color: #000;
+
   .text {
     margin: 0 auto;
     max-width: 900px;
 
     h1 {
+      background-color: #FFF;
+      border: 1px solid #000;
+      color: #000;
       font-size: var(--ms7);
       font-weight: 700;
       line-height: 1.05;
+      padding: 0.5em;
 
-      &:first-child {
-        margin-bottom: 0.5em;
+      span {
+        display: block;
+        margin-top: 0.5em;
       }
     }
   }
@@ -155,15 +167,27 @@
 // Archivo Black
 // ----------------------------------------------------------------------------
 .archivo-black-sample {
+  background-color: #F5C827;
+
   .text {
+    color: #0B0A08;
     margin: 0 auto;
     max-width: 1000px;
 
     h1 {
-      font-size: var(--ms10);
+      font-size: var(--ms11);
       font-weight: 400;
       letter-spacing: -0.05em;
-      line-height: 0.8;      
+      line-height: 0.75;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      border-top: 0.2em solid #0B0A08;
+      font-size: var(--ms3);
+      padding-top: 0.75em;
+      text-align: right;
+      text-transform: uppercase;
     }
   }
 }
@@ -179,7 +203,10 @@
 // BioRhyme
 // ----------------------------------------------------------------------------
 .biorhyme-sample {
+  background-color: #F1592A;
+
   .text {
+    color: #FFF;
     margin: 0 auto;
     max-width: 940px;
     text-align: center;
@@ -203,14 +230,18 @@
 // Cooper Hewitt
 // ----------------------------------------------------------------------------
 .cooper-hewitt-sample {
+  background-color: #E98788;
+
   .text {
+    color: #FFF;
     margin: 0 auto;
     text-align: center;
 
     h1 {
       font-size: var(--ms10);
-      font-weight: 400;
+      font-weight: 700;
       line-height: 1;
+      margin-bottom: 1em;
       text-transform: uppercase;
     }
 
@@ -218,7 +249,6 @@
       font-size: var(--ms4);
       font-weight: 300;
       line-height: 1.3;
-      margin-top: 3em;
       text-transform: uppercase;
     }
   }
@@ -270,7 +300,8 @@
       font-size: var(--ms6);
       font-weight: 400;
       line-height: 1;
-      letter-spacing: 0.095em;
+      letter-spacing: 0.0975em;
+      opacity: 0.25;
       margin-top: 0.5em;
       text-transform: uppercase;
     }
@@ -292,27 +323,26 @@
 // Libre Franklin
 // ----------------------------------------------------------------------------
 .libre-franklin-sample {
+  background-color: #000;
+
   .text {
     margin: 0 auto;
     max-width: 960px;
 
     h1 {
+      color: #EE4128;
       font-size: var(--ms10);
-      font-weight: 800;
+      font-weight: 900;
       line-height: 1;
-      margin-bottom: 2.5rem;
-    }
+      text-transform: uppercase;
 
-    h2 {
-      font-size: var(--ms7);
-      font-weight: 500;
-      line-height: 1;
-    }
+      &:nth-child(2) {
+        color: #FDC00D;
+      }
 
-    p {
-      font-size: var(--ms3);
-      font-weight: 300;
-      margin-top: 3rem;
+      &:nth-child(3) {
+        color: #56B557;
+      }
     }
   }
 }
@@ -320,18 +350,7 @@
 @media screen and (max-width: $mobile) {
   .libre-franklin-sample .text {
     h1 {
-      font-size: var(--ms5);
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      font-size: var(--ms3);
-      line-height: 1.1;
-    }
-
-    p {
-      font-size: var(--ms1);
-      margin-top: 1.5rem;
+      font-size: var(--ms6);
     }
   }
 }
@@ -339,42 +358,40 @@
 // Lora
 // ----------------------------------------------------------------------------
 .lora-sample {
-  .text {
-    margin: 0 auto;
-    max-width: 940px;
-    text-align: center;
+  background-color: #86B496;
 
-    h1 {
-      font-size: var(--ms9);
+  .text {
+    color: #FFF5E1;
+    margin: 0 auto;
+    max-width: 600px;
+
+    p {
+      font-size: var(--ms3);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.4;
+      margin-bottom: 0.5em;
+    }
+
+    h2 {
+      font-size: var(--ms1);
       font-weight: 700;
+      letter-spacing: 0.1em;
       line-height: 1;
       text-transform: uppercase;
-    }
-
-    h2 {
-      font-size: var(--ms9);
-      font-weight: 400;
-      font-style: italic;
-      line-height: 1;
-      margin-top: 0.25em;
-    }
-  }
-}
-
-@media screen and (max-width: $tablet) {
-  .lora-sample .text {
-    h1,
-    h2 {
-      font-size: var(--ms7);
     }
   }
 }
 
 @media screen and (max-width: $mobile) {
   .lora-sample .text {
-    h1,
+    p {
+      font-size: var(--ms1);
+      line-height: 1.3;
+    }
+
     h2 {
-      font-size: var(--ms2);
+      font-size: var(--ms-1);      
     }
   }
 }
@@ -388,15 +405,15 @@
 
     h1 {
       font-size: var(--ms3);
-      font-weight: 900;
+      font-style: italic;
+      font-weight: 700;
       line-height: 1;
       margin-top: 0.5em;
     }
 
     p {
       font-size: var(--ms3);
-      font-style: italic;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.5;
     }
   }
@@ -419,7 +436,10 @@
 // Oswald
 // ----------------------------------------------------------------------------
 .oswald-sample {
+  background-color: #25408F;
+
   .text {
+    color: #EC1C23;
     margin: 0 auto;
     max-width: 960px;
 
@@ -442,11 +462,14 @@
 // Playfair Display
 // ----------------------------------------------------------------------------
 .playfair-display-sample {
+  background-color: #55AF8C;
+
   .text {
     margin: 0 auto;
     text-align: center;
 
     h1 {
+      color: #F6F3CF;
       font-feature-settings: 'smcp', 'dlig';
       font-size: var(--ms11);
       font-style: italic;
@@ -464,6 +487,7 @@
     }
 
     p {
+      color: #272727;
       font-size: var(--ms4);
       font-style: italic;
       font-weight: 400;
@@ -487,7 +511,10 @@
 // Source Serif Pro
 // ----------------------------------------------------------------------------
 .source-serif-pro-sample {
+  background-color: #FFF;
+
   .text {
+    color: #272727;
     margin: 0 auto;
 
     h1 {
@@ -514,7 +541,10 @@
 // Vollkorn
 // ----------------------------------------------------------------------------
 .vollkorn-sample {
+  background-color: #00237D;
+
   .text {
+    color: #FFF;
     display: grid;
     flex-grow: unset;
     grid: 1fr / 1fr 4fr;
@@ -540,8 +570,8 @@
     h2 {
       font-size: var(--ms2);
       grid-area: 1 / 1;
-      line-height: 1.265;
-      margin-bottom: 0.1em;
+      line-height: 1.3;
+      margin-bottom: 0.2em;
       text-align: right;
     }
 
@@ -567,7 +597,10 @@
 // Zilla Slab
 // ----------------------------------------------------------------------------
 .zilla-slab-sample {
+  background-image: linear-gradient(-90deg,#2f86d7,#1cf5ba);
+
   .text {
+    color: #FFF;
     margin: 0 auto;
     max-width: 820px;
 

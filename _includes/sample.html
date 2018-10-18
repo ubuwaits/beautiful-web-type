@@ -4,7 +4,7 @@
   <a href='/{{ clean-name }}/'>
     <div class='text'>{{ typeface.sample-html }}</div>
   </a>
-  <div class='meta'>
+  <div class='meta {% if typeface.sample-shade == 'light' %}dark{% endif %}'>
     <p class='name'><a href='/{{ clean-name }}/'>{{ typeface.name }} by {{ typeface.creator }}</a></p>
   </div>
 </div>
