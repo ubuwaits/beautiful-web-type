@@ -1,3 +1,5 @@
+// Page header
+// --------------------------------------------------------------------------
 .type-detail-header h2 {
   font-size: var(--ms5);
   font-weight: 400;
@@ -12,6 +14,8 @@
   }
 }
 
+// Download buttons
+// --------------------------------------------------------------------------
 .font-download {
   align-items: flex-end;
   display: flex;
@@ -56,6 +60,8 @@
   }
 }
 
+// Typeface details
+// --------------------------------------------------------------------------
 .type-info {
   h3 {
     font: 700 var(--ms0)/1 var(--alegreya-sans);
@@ -72,6 +78,8 @@
   }
 }
 
+// List of weights and styles
+// --------------------------------------------------------------------------
 .type-styles {
   p {
     font-size: var(--ms5);
@@ -119,6 +127,8 @@
   }
 }
 
+// Container for each example
+// ----------------------------------------------------------------------------
 .examples > div {
   padding: 1rem;
   overflow-wrap: break-word;
@@ -145,6 +155,8 @@
   }
 }
 
+// Markup for individual characters/words/paragraphs
+// ----------------------------------------------------------------------------
 .examples h1 {
   font-size: var(--ms4);
   line-height: 1.2;
@@ -158,6 +170,8 @@
   font-size: var(--ms6);
 }
 
+// Labels used in meta header and beneath individual examples
+// ----------------------------------------------------------------------------
 .character-label,
 .code {
   color: #a7a7a7;
