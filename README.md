@@ -19,6 +19,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Alegreya](https://beautifulwebtype.com/alegreya/)
 * [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/)
 * [Archivo](https://beautifulwebtype.com/archivo/)
+* [Archivo Black](https://beautifulwebtype.com/archivo-black/)
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [Jost](https://beautifulwebtype.com/jost/)

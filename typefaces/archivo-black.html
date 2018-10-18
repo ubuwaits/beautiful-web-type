@@ -1,9 +1,9 @@
 ---
 layout: default
 body: serif detail
-permalink: archivo/
-title: Archivo
-description: The complete guide to the free font Archivo. See in-use examples, OpenType features, special characters, and more.
+permalink: archivo-black/
+title: Archivo Black
+description: The complete guide to the free font Archivo Black. See in-use examples, OpenType features, special characters, and more.
 ---
 
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
@@ -23,9 +23,6 @@ description: The complete guide to the free font Archivo. See in-use examples, O
 
   <div class='type-styles gr1 gc6'>
     <p class='w400'>Regular <em>Italic</em> <span class='weight'>400</span></p>
-    <p class='w500'>Medium <em>Italic</em> <span class='weight'>500</span></p>
-    <p class='w600'>Semi-Bold <em>Italic</em> <span class='weight'>600</span></p>
-    <p class='w700'>Bold <em>Italic</em> <span class='weight'>700</span></p>
   </div>
 
   <div class='type-info gr1 gc3'>
@@ -41,7 +38,7 @@ description: The complete guide to the free font Archivo. See in-use examples, O
 
   <div class='type-info gr1 gc3'>
     <h3>Other faces in family</h3>
-    <h4><a href='/archivo-black/'>Archivo Black</a></h4>
+    <h4><a href='/archivo/'>Archivo</a></h4>
   </div>
 
   <div class='type-detail-table gr1 gc6'>
@@ -61,10 +58,10 @@ description: The complete guide to the free font Archivo. See in-use examples, O
       <div><h1 class='ms6 w400' contenteditable='true'>{{ text.word-01 }}</h1></div>
       <div><h1 class='ms6 w400 upper' contenteditable='true'>{{ text.word-02 }}</h1></div>
       <div><h1 class='ms6 w400 italic' contenteditable='true'>{{ text.word-03 }}</h1></div>
-      <div><h1 class='ms6 w500' contenteditable='true'>{{ text.word-04 }}</h1></div>
-      <div><h1 class='ms6 w500' contenteditable='true'>{{ text.word-05 }}</h1></div>
-      <div><h1 class='w600' contenteditable='true'>{{ text.word-06 }}</h1></div>
-      <div><h1 class='ms6 w700' contenteditable='true'>{{ text.word-07 }}</h1></div>
+      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.word-04 }}</h1></div>
+      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.word-05 }}</h1></div>
+      <div><h1 class='w400' contenteditable='true'>{{ text.word-06 }}</h1></div>
+      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.word-07 }}</h1></div>
     </div>
   </div>
 
@@ -76,21 +73,6 @@ description: The complete guide to the free font Archivo. See in-use examples, O
       <div>
         <h1 class='w400' contenteditable='true'>{{ text.headline-01 }}</h1>
         <p class='character-label'>400</p>
-      </div>
-
-      <div>
-        <h1 class='w500' contenteditable='true'>{{ text.headline-02 }}</h1>
-        <p class='character-label'>500</p>
-      </div>
-
-      <div>
-        <h1 class='w600' contenteditable='true'>{{ text.headline-03 }}</h1>
-        <p class='character-label'>600</p>
-      </div>
-
-      <div>
-        <h1 class='w700' contenteditable='true'>{{ text.headline-04 }}</h1>
-        <p class='character-label'>700</p>
       </div>
     </div>
   </div>
@@ -104,49 +86,19 @@ description: The complete guide to the free font Archivo. See in-use examples, O
         <h1 class='w400 italic' contenteditable='true'>{{ text.headline-01 }}</h1>
         <p class='character-label'>400</p>
       </div>
-
-      <div>
-        <h1 class='w500 italic' contenteditable='true'>{{ text.headline-02 }}</h1>
-        <p class='character-label'>500</p>
-      </div>
-
-      <div>
-        <h1 class='w600 italic' contenteditable='true'>{{ text.headline-03 }}</h1>
-        <p class='character-label'>600</p>
-      </div>
-
-      <div>
-        <h1 class='w700 italic' contenteditable='true'>{{ text.headline-04 }}</h1>
-        <p class='character-label'>700</p>
-      </div>
     </div>
   </div>
 
-  <div class='type-detail-table gr1 gc6'>
+  <div class='type-detail-table gr12 gc6'>
     <div class='meta dark top'>
       <p class='name'>Paragraphs</p>
       <p class='code'>font-weight: 400</p>
     </div>
     <div class='examples flow-column'>
+      <div><p class='ms3 lh1-4' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
       <div><p class='ms2' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
       <div><p class='ms1' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
       <div><p class='ms0' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
-      <div><p class='ms-1' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
-      <div><p class='ms-2 col-2' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
-    </div>
-  </div>
-
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Paragraphs</p>
-      <p class='code'>font-weight: 500</p>
-    </div>
-    <div class='examples flow-column'>
-      <div><p class='ms2 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
-      <div><p class='ms1 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
-      <div><p class='ms0 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
-      <div><p class='ms-1 w500' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
-      <div><p class='ms-2 w500 col-2' contenteditable='true'>{{ text.paragraph-01 }}</p></div>
     </div>
   </div>
 

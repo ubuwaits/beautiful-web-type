@@ -31,6 +31,17 @@
   g-fonts-url: https://fonts.google.com/specimen/Archivo
   sample-html: '<h1>Dieter Rams<br>Bauhaus-Archiv<br>Museum für<br> Gestaltung<br>Retrospective</h1> <h1 class="oldstyle-proportional">02.10.2015<br>24.11.2015</h1>'
 
+- name: Archivo Black
+  creator: Omnibus-Type
+  creator-url: https://www.omnibus-type.com
+  category: Sans-Serif
+  styles: 2
+  project-url: https://github.com/Omnibus-Type/ArchivoBlack
+  latest-version: v1.006
+  release-date: 12 Aug 2018
+  g-fonts-url: https://fonts.google.com/specimen/Archivo+Black
+  sample-html: '<h1>Die<br>Neue<br>Gesell<br>schaft<br>8</h1>'
+
 - name: BioRhyme
   creator: Aoife Mooney
   creator-url: http://www.aoifemooney.org

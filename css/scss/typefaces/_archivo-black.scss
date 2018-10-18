@@ -1,0 +1,17 @@
+.archivo-black { font-family: 'Archivo Black', sans-serif; }
+
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2') format('woff2'),
+	     url('/assets/fonts/archivo-black/ArchivoBlack-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('/assets/fonts/archivo-black/ArchivoBlack-Italic.woff2') format('woff2'),
+	     url('/assets/fonts/archivo-black/ArchivoBlack-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}

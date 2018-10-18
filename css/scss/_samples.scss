@@ -152,6 +152,30 @@
   }
 }
 
+// Archivo Black
+// ----------------------------------------------------------------------------
+.archivo-black-sample {
+  .text {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    h1 {
+      font-size: var(--ms10);
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      line-height: 0.8;      
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .archivo-black-sample .text {
+    h1 {
+      font-size: var(--ms8);
+    }
+  }
+}
+
 // BioRhyme
 // ----------------------------------------------------------------------------
 .biorhyme-sample {
