@@ -140,9 +140,7 @@
     max-width: 900px;
 
     h1 {
-      background-color: #FFF;
-      border: 1px solid #000;
-      color: #000;
+      color: #FFF;
       font-size: var(--ms7);
       font-weight: 700;
       line-height: 1.05;
@@ -230,7 +228,7 @@
 // Cooper Hewitt
 // ----------------------------------------------------------------------------
 .cooper-hewitt-sample {
-  background-color: #E98788;
+  background-color: #3A274E;
 
   .text {
     color: #FFF;
@@ -239,7 +237,7 @@
 
     h1 {
       font-size: var(--ms10);
-      font-weight: 700;
+      font-weight: 400;
       line-height: 1;
       margin-bottom: 1em;
       text-transform: uppercase;
@@ -258,7 +256,7 @@
   .cooper-hewitt-sample .text {
     h1 {
       font-size: var(--ms8);
-      line-height: 1.1;
+      margin-top: 0.2em;
     }
 
     h2 {
@@ -301,7 +299,7 @@
       font-weight: 400;
       line-height: 1;
       letter-spacing: 0.0975em;
-      opacity: 0.25;
+      opacity: 0.5;
       margin-top: 0.5em;
       text-transform: uppercase;
     }
@@ -323,7 +321,7 @@
 // Libre Franklin
 // ----------------------------------------------------------------------------
 .libre-franklin-sample {
-  background-color: #000;
+  background-color: #EBDDC5;
 
   .text {
     margin: 0 auto;
@@ -331,18 +329,32 @@
 
     h1 {
       color: #EE4128;
-      font-size: var(--ms10);
+      font-size: var(--ms11);
       font-weight: 900;
-      line-height: 1;
+      line-height: 0.9;
       text-transform: uppercase;
 
       &:nth-child(2) {
-        color: #FDC00D;
+        margin-bottom: 0.05em;
       }
+    }
 
-      &:nth-child(3) {
-        color: #56B557;
-      }
+    .yellow {
+      color: #FDC00D;
+    }
+
+    .green {
+      color: #56B557;
+    }
+
+    h2 {
+      color: #373737;
+      display: flex;
+      font-size: var(--ms2);
+      font-weight: 700;
+      justify-content: space-between;
+      margin: 0 0.075em 0 0.35em;
+      text-transform: uppercase;
     }
   }
 }
@@ -352,16 +364,21 @@
     h1 {
       font-size: var(--ms6);
     }
+
+    h2 {
+      flex-direction: column;
+      margin: 0.5em 0 0 0.2em;
+    }
   }
 }
 
 // Lora
 // ----------------------------------------------------------------------------
 .lora-sample {
-  background-color: #86B496;
+  background-color: #77918D;
 
   .text {
-    color: #FFF5E1;
+    color: #FFF;
     margin: 0 auto;
     max-width: 600px;
 
@@ -474,7 +491,7 @@
 // Source Serif Pro
 // ----------------------------------------------------------------------------
 .source-serif-pro-sample {
-  background-color: #FFF;
+  background-color: #FCDEE0;
 
   .text {
     color: #272727;
@@ -507,7 +524,7 @@
   background-color: #00237D;
 
   .text {
-    color: #FFF;
+    color: #FFFCFB;
     display: grid;
     flex-grow: unset;
     grid: 1fr / 1fr 4fr;

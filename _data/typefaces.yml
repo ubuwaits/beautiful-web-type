@@ -84,7 +84,8 @@
   latest-version: v1.045
   release-date: 15 Nov 2016
   g-fonts-url: https://fonts.google.com/specimen/Libre+Franklin
-  sample-html: '<h1>Ornette</h1><h1>On</h1><h1>Tenor</h1>'
+  sample-html: '<h1>Ornette</h1><h1><span class="yellow">On</span><span class="green">Tenor</span></h1><h2><span>Don Cherry</span><span>Jimmy Garrison</span><span>Ed Blackwell</span></h2>'
+  sample-shade: light
 
 - name: Lora
   creator: Cyreal
@@ -152,4 +153,3 @@
   release-date: 23 Aug 2017
   g-fonts-url: https://fonts.google.com/specimen/Zilla+Slab
   sample-html: '<h1>Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of Mind. On behalf of the future, I ask you of the past to leave us alone.</h1>'
-  sample-shade: light
