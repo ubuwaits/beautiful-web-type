@@ -16,6 +16,7 @@ I plan on growing this site to be the definitive resource for open-source type. 
 ## Changelog
 
 ### 2018 Oct 19
+* **Add [Archivo Black](https://beautifulwebtype.com/archivo-black/)**.
 * **Update the visual design of all typeface samples**. My original intention was to keep all the samples black and white in order to focus attention on the typeface rather than the design. However, I came to feel that the black backgrounds when viewed together became too monotonous. Additionally, the color helps to suggest a usage context for each typeface.
 * **Remove Merriweather**. I could no longer ignore the feeling that Merriweather was not a top-quality open-source typeface. It's missing ligatures and other OpenType features and aesthetically I feel it has flaws.
 
