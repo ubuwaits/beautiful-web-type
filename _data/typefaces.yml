@@ -120,6 +120,18 @@
   g-fonts-url: https://fonts.google.com/specimen/Playfair+Display
   sample-html: '<h1>the <strong>isms</strong> go</h1><h1>the <strong>ist</strong> dies</h1><h1>art remains.</h1><p>Vladimir Nabokov</p>'
 
+- name: Rakkas
+  creator: Zeynep Akay
+  creator-url: http://theruqahproject.com
+  category: Display
+  styles: 1
+  project-url: https://github.com/zeynepakay/Rakkas
+  latest-version: v1.0
+  release-date: Jun 2016
+  g-fonts-url: https://fonts.google.com/specimen/Rakkas
+  sample-html: '<h1>Seneca</h1><h2><span>On</span><span class="bullet">&bull;</span><span>The</span></h2><h3>Shortness</h3><h4><span>of</span><span class="bullet">&bull;</span><span>life</span></h4>'
+  sample-shade: light
+
 - name: Source Serif Pro
   creator: Frank Grießhammer
   creator-url: http://www.frgr.de

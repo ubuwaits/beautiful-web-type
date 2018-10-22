@@ -488,6 +488,70 @@
   }
 }
 
+// Rakkas
+// ----------------------------------------------------------------------------
+.rakkas-sample {
+  background-color: #FFF;
+
+  .text {
+    color: #272727;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    text-transform: uppercase;
+
+    h1 {
+      font-size: var(--ms12);
+      font-weight: 400;
+      line-height: 0.8;
+    }
+
+    h2,
+    h4 {
+      display: flex;
+      font-size: var(--ms12);
+      line-height: 0.8;
+      justify-content: space-between;
+      margin: 0 0.06em 0 0.05em;
+    }
+
+    h3 {
+      color: #F00E31;
+      font-size: var(--ms9);
+      letter-spacing: 0.085em;
+      line-height: 0.8;
+      margin: 0 0.04em 0.05em 0.15em;
+    }
+
+    .bullet {
+      align-self: center;
+      font-size: var(--ms10) !important;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .rakkas-sample .text {
+    h1 {
+      font-size: var(--ms8);
+    }
+
+    h2, h4 {
+      font-size: var(--ms8);
+      margin: 0 0.11em 0 0.07em;
+    }
+
+    h3 {
+      font-size: var(--ms5);
+      margin: 0 0.08em 0.05em 0.2em;
+    }
+
+    .bullet {
+      font-size: var(--ms6) !important;
+    }
+  }
+}
+
 // Source Serif Pro
 // ----------------------------------------------------------------------------
 .source-serif-pro-sample {
