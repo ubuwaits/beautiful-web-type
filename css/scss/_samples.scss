@@ -535,12 +535,13 @@
 
     h2, h4 {
       font-size: var(--ms8);
-      margin: 0 0.11em 0 0.07em;
+      margin: 0 0.04em 0 0.07em;
     }
 
     h3 {
       font-size: var(--ms5);
-      margin: 0 0.08em 0.05em 0.2em;
+      letter-spacing: 0.07em;
+      margin: 0 0 0.05em 0.2em;
     }
 
     .bullet {
