@@ -25,7 +25,21 @@ footer.grid {
     }
   }
 
+  .footer-patreon-content {
+    display: flex;
+
+    .patreon-logo {
+      margin: 0.25em 1em 0 0;
+
+      img {
+        height: 3.375rem;
+      }
+    }
+  }
+
   .subscribe-form {
+    margin: 0.5em 0;
+
     form {
       display: flex;
       font: var(--ms1) var(--alegreya-sans);
@@ -55,6 +69,10 @@ footer.grid {
 // ----------------------------------------------------------------------------
 @media screen and (max-width: $mobile) {
   footer.grid {
-    grid-gap: 1.5em;    
+    grid-gap: 1.5em;
+  }
+
+  .footer-patreon-content {
+    flex-direction: column;
   }
 }
