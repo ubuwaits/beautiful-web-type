@@ -454,14 +454,11 @@
       font-size: var(--ms11);
       font-style: italic;
       font-weight: 400;
-      line-height: 0.6;
-
-      strong {
-        font-weight: 900;
-      }
+      line-height: 0.7;
 
       &:nth-child(3) {
         font-weight: 900;
+        line-height: 0.55;
         margin-bottom: 0.5em;
       }
     }

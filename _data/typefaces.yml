@@ -118,7 +118,7 @@
   latest-version: v1.202
   release-date: 5 Nov 2017
   g-fonts-url: https://fonts.google.com/specimen/Playfair+Display
-  sample-html: '<h1>the <strong>isms</strong> go</h1><h1>the <strong>ist</strong> dies</h1><h1>art remains.</h1><p>Vladimir Nabokov</p>'
+  sample-html: '<h1>the isms go</h1><h1>the ist dies</h1><h1>art remains</h1><p>Vladimir Nabokov</p>'
 
 - name: Rakkas
   creator: Zeynep Akay
