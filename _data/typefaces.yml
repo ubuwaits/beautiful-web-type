@@ -126,8 +126,8 @@
   category: Display
   styles: 1
   project-url: https://github.com/zeynepakay/Rakkas
-  latest-version: v1.0
-  release-date: Jun 2016
+  latest-version: v1.001
+  release-date: 10 Apr 2016
   g-fonts-url: https://fonts.google.com/specimen/Rakkas
   sample-html: '<h2><span>On</span><span class="bullet">&bull;</span><span>The</span></h2><h3>Shortness</h3><h4><span>of</span><span class="bullet">&bull;</span><span>life</span></h4>'
   sample-shade: light
