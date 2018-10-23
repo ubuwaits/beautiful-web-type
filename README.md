@@ -15,6 +15,9 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Oct 23
+* **Add [FiraGo](https://beautifulwebtype.com/firago/)**
+
 ### 2018 Oct 22
 * **Add [Rakkas](https://beautifulwebtype.com/rakkas/)**
 
@@ -35,6 +38,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Archivo Black](https://beautifulwebtype.com/archivo-black/)
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
+* [FiraGo](https://beautifulwebtype.com/firago/)
 * [Jost](https://beautifulwebtype.com/jost/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
 * [Lora](https://beautifulwebtype.com/lora/)

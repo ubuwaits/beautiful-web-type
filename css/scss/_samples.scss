@@ -278,6 +278,63 @@
   }
 }
 
+// FiraGO
+// ----------------------------------------------------------------------------
+.firago-sample {
+  background-color: #BCBBB8;
+
+  .text {
+    margin: 0 auto;
+    text-align: center;
+
+    h2, h3, h4, h5, h6 {
+      background-color: #BCBBB8;
+      color: #272727;
+      font-size: var(--ms11);
+      line-height: 1;
+      letter-spacing: 0.05em;
+      margin-top: -0.375em;
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-weight: 350;
+      margin-top: 0;
+      z-index: 2;
+    }
+
+    h3 {
+      font-weight: 400;
+      z-index: 3;
+    }
+
+    h4 {
+      font-weight: 500;
+      z-index: 4;
+    }
+
+    h5 {
+      font-weight: 700;
+      z-index: 5;
+    }
+
+    h6 {
+      color: #DE2C29;
+      font-weight: 900;
+      z-index: 6;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .firago-sample .text {
+    h2, h3, h4, h5, h6 {
+      font-size: var(--ms7);
+    }
+  }
+}
+
 // Jost*
 // ----------------------------------------------------------------------------
 .jost-sample {

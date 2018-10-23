@@ -65,6 +65,17 @@
   release-date: 16 Jun 2014
   sample-html: '<h1>Cinémathèque Suisse</h1><h2>Jean-Luc Godard<br>12 Nov.84 Au 12 JAN.85<br>Casino de Montbenon<br>Lausanne</h2>'
 
+- name: FiraGO
+  creator: bBox Type
+  creator-url: https://bboxtype.com
+  category: Sans-Serif
+  styles: 22
+  project-url: https://github.com/bBoxType/FiraGO
+  latest-version: v1.000
+  release-date: 14 Mar 2018
+  sample-html: '<h2>Minimum</h2><h3>Minimum</h3><h4>Minimum</h4><h5>Minimum</h5><h6>Minimum</h6>'
+  sample-shade: light
+
 - name: Jost
   creator: Owen Earl
   creator-url: https://ewonrael.github.io

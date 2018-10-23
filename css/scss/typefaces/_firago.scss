@@ -1,0 +1,177 @@
+.firago { font-family: 'FiraGO', serif; }
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Thin.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-ThinItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-UltraLight.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-UltraLightItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-UltraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-ExtraLight.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-ExtraLight.woff') format('woff');
+  font-weight: 250;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-ExtraLightItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-ExtraLightItalic.woff') format('woff');
+  font-weight: 250;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Light.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-LightItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Book.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Book.woff') format('woff');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-BookItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-BookItalic.woff') format('woff');
+  font-weight: 350;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Regular.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Italic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Medium.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-MediumItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-SemiBold.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-SemiBoldItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Bold.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-BoldItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-ExtraBold.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-ExtraBoldItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-Heavy.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraGo';
+  src:  url('/assets/fonts/firago/FiraGO-HeavyItalic.woff2') format('woff2'),
+	      url('/assets/fonts/firago/FiraGO-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
