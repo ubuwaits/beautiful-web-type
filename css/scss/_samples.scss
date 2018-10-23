@@ -109,14 +109,14 @@
 
   .text {
     margin: 0 auto;
-    max-width: 1020px;
+    max-width: 920px;
     text-align: center;
 
     h1 {
       font-feature-settings: 'cpsp';
       font-size: var(--ms12);
       font-weight: 900;
-      line-height: 1;
+      line-height: 0.85;
       text-transform: uppercase;
     }
   }
