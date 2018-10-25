@@ -15,6 +15,9 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Oct 25
+* **Preload some fonts to improve rendering on page load**. It's going to be a constant challenge with page load times and font rendering, given the number of assets I'm loading. As a first step, I'm preloading fonts that appear in the site header and index page headers.
+
 ### 2018 Oct 23
 * **Add [FiraGo](https://beautifulwebtype.com/firago/)**
 
