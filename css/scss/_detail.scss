@@ -31,8 +31,8 @@
     text-transform: uppercase;
 
     &:hover {
-      border-color: red;
-      color: red;
+      border-color: var(--red);
+      color: var(--red);
     }
 
     span {

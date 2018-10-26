@@ -1,6 +1,6 @@
 // Other styles
 // ----------------------------------------------------------------------------
-.highlight { color: red; }
+.highlight { color: var(--red); }
 
 .fade {
   color: #c9c9c9;
@@ -22,7 +22,7 @@
   }
 
   a {
-    color: red;
+    color: var(--red);
     font-weight: 400;
   }
 }

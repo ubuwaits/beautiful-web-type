@@ -32,8 +32,8 @@
       padding: 1.5em 1.5em 1.2em 1.5em;
 
       &:hover {
-        border-bottom-color: red;
-        color: red;
+        border-bottom-color: var(--red);
+        color: var(--red);
       }
     }
   }
@@ -44,7 +44,7 @@
     text-align: right;
 
     a {
-      color: red;
+      color: var(--red);
       font: 700 var(--ms0)/1 var(--alegreya-sans);
     }
   }
@@ -144,8 +144,8 @@ body.serif ol li.nav-serif a,
 body.sans-serif ol li.nav-sans-serif a,
 body.display ol li.nav-display a,
 body.monospaced ol li.nav-monospaced a {
-  border-bottom-color: red;
-  color: red;
+  border-bottom-color: var(--red);
+  color: var(--red);
 }
 
 // Responsive styles

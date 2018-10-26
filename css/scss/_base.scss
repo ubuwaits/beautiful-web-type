@@ -146,6 +146,12 @@
 .titl { font-feature-settings: 'titl'; }
 .zero { font-feature-settings: 'zero'; }
 
+// Colors
+// ---------------------------------------------------------------------------
+:root {
+  --red: #EC3B3B;
+}
+
 // Resets
 // ---------------------------------------------------------------------------
 * { box-sizing: border-box; }
@@ -186,6 +192,6 @@ a {
 
 [contenteditable]:focus {
   background: rgba(orange, 0.1);
-  caret-color: red;
+  caret-color: var(--red);
   outline: 0 solid transparent;
 }
