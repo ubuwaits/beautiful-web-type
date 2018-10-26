@@ -3,18 +3,16 @@
   <head>
     <meta charset='utf-8'>
     <title>{{ page.title }} &bull; Beautiful Web Type</title>
-    <meta name='description' content='{% if page.description %}{{ page.description }}{% else %}Beautiful examples and in-depth reviews of the best free fonts from Google and across the web. The original and best site for open-source type.{% endif %}'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='twitter:card' content='summary_large_image'>
     <meta name='twitter:creator' content='@ubuwaits'>
-    <meta property='og:url' content='https://beautifulwebtype.com'>
-    <meta property='og:title' content='The Definitive Guide to Open-Source Type &bull; Beautiful Web Type'>
-    <meta property='og:image' content='https://beautifulwebtype.com/assets/images/card.png'>
-    <link href='/css/application.css' rel='stylesheet' type='text/css' media='screen'>
-    <link href='https://indestructibletype-fonthosting.github.io/jost.css' rel='stylesheet' type='text/css' charset='utf-8'>
-    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600' rel='stylesheet'>
-    <link href='/assets/fonts/alegreya-sans/AlegreyaSans-BlackItalic.woff2' rel='preload' as='font'>
-    <link href='/assets/fonts/alegreya-sans/AlegreyaSans-Bold.woff2' rel='preload' as='font'>
+    <meta name='description' content='{% if page.description %}{{ page.description }}{% else %}Beautiful examples and in-depth reviews of the best free fonts from Google and across the web. The original and best site for open-source type.{% endif %}'>
+    <meta property='og:description' content='{% if page.description %}{{ page.description }}{% else %}Beautiful examples and in-depth reviews of the best free fonts from Google and across the web. The original and best site for open-source type.{% endif %}'>
+    <link rel='stylesheet' href='/css/application.css' type='text/css' media='screen'>
+    <link rel='stylesheet' href='https://indestructibletype-fonthosting.github.io/jost.css' type='text/css' charset='utf-8'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600'>
+    <link rel='preload' href='/assets/fonts/alegreya-sans/AlegreyaSans-BlackItalic.woff2' as='font'>
+    <link rel='preload' href='/assets/fonts/alegreya-sans/AlegreyaSans-Bold.woff2' as='font'>
     {{ page.body-head-content }}
   </head>
 
