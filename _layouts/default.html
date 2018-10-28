@@ -13,8 +13,10 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600'>
     <link rel='preload' href='/assets/fonts/alegreya-sans/AlegreyaSans-BlackItalic.woff2' as='font'>
     <link rel='preload' href='/assets/fonts/alegreya-sans/AlegreyaSans-Bold.woff2' as='font'>
+    <link rel='canonical' href='https://beautifulwebtype.com{{ page.permalink }}'>
     <meta property='og:url' content='https://beautifulwebtype.com{{ page.permalink }}'>
     {{ page.body-head-content }}
+    {% include breadcrumbs.html %}
   </head>
 
   <body class='{{ page.body-class }}' spellcheck='false'>

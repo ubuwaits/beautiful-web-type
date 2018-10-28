@@ -1,0 +1,61 @@
+{% if page.layout == 'detail' %}
+  {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+  {% assign typeface-url = typeface.name | downcase | replace: ' ', '-' %}
+  {% assign category-url = typeface.category | downcase | replace: ' ', '-' %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Open-Source Typefaces",
+      "item": "https://beautifulwebtype.com"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ typeface.category }} Typefaces",
+      "item": "https://beautifulwebtype.com/{{ category-url }}/"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ typeface.name }}",
+      "item": "https://beautifulwebtype.com/{{ typeface-url }}/"
+    }]
+  }
+  </script>
+
+{% elsif page.layout == 'category' %}
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Open-Source Typefaces",
+      "item": "https://beautifulwebtype.com"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.category-name }} Typefaces",
+      "item": "https://beautifulwebtype.com{{ page.permalink }}"
+    }]
+  }
+  </script>
+
+{% else %}
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Open-Source Typefaces",
+      "item": "https://beautifulwebtype.com"
+    }]
+  }
+  </script>
+{% endif %}
