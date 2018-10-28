@@ -2,7 +2,6 @@
   {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
   {% assign typeface-url = typeface.name | downcase | replace: ' ', '-' %}
   {% assign category-url = typeface.category | downcase | replace: ' ', '-' %}
-
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -25,7 +24,6 @@
     }]
   }
   </script>
-
 {% elsif page.layout == 'category' %}
   <script type="application/ld+json">
   {
@@ -44,7 +42,6 @@
     }]
   }
   </script>
-
 {% else %}
   <script type="application/ld+json">
   {
