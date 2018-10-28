@@ -1,0 +1,41 @@
+.biorhyme-expanded { font-family: 'Biorhyme Expanded', serif; }
+
+@font-face {
+  font-family: 'Biorhyme Expanded';
+  src:  url('/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraLight.woff2') format('woff2'),
+	      url('/assets/fonts/biorhyme-extended/BioRhymeExpanded-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biorhyme Expanded';
+  src:  url('/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Light.woff2') format('woff2'),
+	      url('/assets/fonts/biorhyme-extended/BioRhymeExpanded-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biorhyme Expanded';
+  src:  url('/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Regular.woff2') format('woff2'),
+	      url('/assets/fonts/biorhyme-extended/BioRhymeExpanded-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biorhyme Expanded';
+  src:  url('/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Bold.woff2') format('woff2'),
+	      url('/assets/fonts/biorhyme-extended/BioRhymeExpanded-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biorhyme Expanded';
+  src:  url('/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraBold.woff2') format('woff2'),
+	      url('/assets/fonts/biorhyme-extended/BioRhymeExpanded-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}

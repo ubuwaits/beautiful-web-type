@@ -201,7 +201,7 @@
 // BioRhyme
 // ----------------------------------------------------------------------------
 .biorhyme-sample {
-  background-color: #F1592A;
+  background-color: #43C94D;
 
   .text {
     color: #FFF;
@@ -221,6 +221,48 @@
   .biorhyme-sample .text {
     h1 {
       font-size: var(--ms7);
+    }
+  }
+}
+
+// BioRhyme Extended
+// ----------------------------------------------------------------------------
+.biorhyme-expanded-sample {
+  background-color: #F1592A;
+
+  .text {
+    color: #FFF;
+    margin: 0 auto;
+    max-width: 940px;
+    text-align: center;
+
+    h1 {
+      font-size: var(--ms16);
+      font-weight: 800;
+      letter-spacing: -0.15em;
+      line-height: 0.8;
+      margin-left: -0.2em;
+    }
+
+    h2 {
+      font-size: var(--ms8);
+      font-weight: 800;
+      letter-spacing: 0.25em;
+      line-height: 1;
+      margin-left: 0.1em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .biorhyme-expanded-sample .text {
+    h1 {
+      font-size: var(--ms11);
+    }
+
+    h2 {
+      font-size: var(--ms3);
     }
   }
 }

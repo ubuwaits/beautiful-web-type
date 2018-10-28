@@ -15,6 +15,9 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Oct 28
+* **Add [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)**
+
 ### 2018 Oct 25
 * **Preload some fonts to improve rendering on page load**. It's going to be a constant challenge with page load times and font rendering, given the number of assets I'm loading. As a first step, I'm preloading fonts that appear in the site header and index page headers.
 
@@ -40,6 +43,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Archivo](https://beautifulwebtype.com/archivo/)
 * [Archivo Black](https://beautifulwebtype.com/archivo-black/)
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/)
+* [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [FiraGo](https://beautifulwebtype.com/firago/)
 * [Jost](https://beautifulwebtype.com/jost/)

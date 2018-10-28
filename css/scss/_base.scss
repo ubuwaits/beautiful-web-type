@@ -53,6 +53,8 @@
   --ms0: 1rem;
   --ms-1: 0.833rem;
   --ms-2: 0.694rem;
+  --ms-3: 0.579rem;
+  --ms-4: 0.482rem;
 }
 
 .ms20 { font-size: 38.337rem; }
@@ -71,12 +73,12 @@
 .ms7  { font-size: 3.583rem !important;; }
 .ms6  { font-size: 2.986rem !important; }
 .ms5  { font-size: 2.488rem !important; }
-.ms4  { font-size: 2.074rem; }
-.ms3  { font-size: 1.728rem; }
-.ms2  { font-size: 1.44rem; }
+.ms4  { font-size: 2.074rem !important; }
+.ms3  { font-size: 1.728rem !important; }
+.ms2  { font-size: 1.44rem !important; }
 .ms1  { font-size: 1.2rem; }
 .ms0  { font-size: 1rem; }
-.ms-1 { font-size: 0.833rem; }
+.ms-1 { font-size: 0.833rem }
 .ms-2 { font-size: 0.694rem; }
 
 // Font weights

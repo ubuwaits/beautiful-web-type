@@ -55,6 +55,17 @@
   g-fonts-url: https://fonts.google.com/specimen/BioRhyme
   sample-html: '<h1>är d<span class="ss08">u</span> ny<span class="ss01">f</span>iken?</h1>'
 
+- name: BioRhyme Expanded
+  creator: Aoife Mooney
+  creator-url: http://www.aoifemooney.org
+  category: Serif
+  styles: 5
+  project-url: https://github.com/aoifemooney/makingbiorhyme
+  latest-version: v1.600
+  release-date: 9 Mar 2016
+  g-fonts-url: https://fonts.google.com/specimen/BioRhyme+Expanded
+  sample-html: '<h1>fat</h1><h2>burger</h2>'
+
 - name: Cooper Hewitt
   creator: Chester Jenkins
   creator-url: https://vllg.com/constellation
