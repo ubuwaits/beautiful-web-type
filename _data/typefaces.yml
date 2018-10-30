@@ -87,6 +87,18 @@
   sample-html: '<h2>Minimum</h2><h3>Minimum</h3><h4>Minimum</h4><h5>Minimum</h5><h6>Minimum</h6>'
   sample-shade: light
 
+- name: IBM Plex Serif
+  creator: Mike Abbink & Bold Monday
+  creator-url: https://boldmonday.com
+  category: Serif
+  styles: 16
+  project-url: https://github.com/IBM/plex
+  latest-version: v1.2.1
+  release-date: 22 Oct 2018
+  g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Serif
+  sample-html: '<h1>“This just proves that this is not some peculiar human characteristic, it’s not even a mammalian characteristic, it’s a characteristic of brains,” he said. “It also shows that serotonin has a hugely important role in mediating social interactions right across species.”</h1>'
+  sample-shade: light
+
 - name: Jost
   creator: Owen Earl
   creator-url: https://ewonrael.github.io

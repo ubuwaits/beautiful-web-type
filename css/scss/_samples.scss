@@ -377,6 +377,35 @@
   }
 }
 
+// IBM Plex Serif
+// ----------------------------------------------------------------------------
+.ibm-plex-serif-sample {
+  background-color: #FDE267;
+
+  .text {
+    color: #272727;
+    margin: 0 auto;
+    max-width: 1020px;
+
+    h1 {
+      font-size: var(--ms7);
+      font-style: italic;
+      font-weight: 200;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      text-indent: -0.45em;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .ibm-plex-serif-sample .text {
+    h1 {
+      font-size: var(--ms3);
+    }
+  }
+}
+
 // Jost*
 // ----------------------------------------------------------------------------
 .jost-sample {

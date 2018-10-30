@@ -1,0 +1,129 @@
+.ibm-plex-serif { font-family: 'IBM Plex Serif', serif; }
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Thin.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-ThinItalic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLight.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLightItalic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Light.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-LightItalic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Italic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Text.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Text.woff') format('woff');
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-TextItalic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-TextItalic.woff') format('woff');
+  font-weight: 450;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Medium.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-MediumItalic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBoldItalic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Bold.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src:  url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.woff2') format('woff2'),
+	      url('/assets/fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}

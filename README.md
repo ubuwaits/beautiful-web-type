@@ -15,6 +15,9 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Oct 30
+* **Add [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/)**
+
 ### 2018 Oct 28
 * **Add [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)**
 
@@ -46,6 +49,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [FiraGo](https://beautifulwebtype.com/firago/)
+* [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/)
 * [Jost](https://beautifulwebtype.com/jost/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
 * [Lora](https://beautifulwebtype.com/lora/)
