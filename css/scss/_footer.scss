@@ -45,6 +45,10 @@ footer.grid {
       font: var(--ms1) var(--alegreya-sans);
     }
 
+    label {
+      display: none;
+    }
+
     input[type='text'] {
       -webkit-appearance: none;
       border: 1px solid #000;
