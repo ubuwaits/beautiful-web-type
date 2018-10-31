@@ -16,7 +16,7 @@ I plan on growing this site to be the definitive resource for open-source type. 
 ## Changelog
 
 ### 2018 Oct 31
-* **Add [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-sans/)**
+* **Add [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/)**
 
 ### 2018 Oct 30
 * **Add [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/)**
