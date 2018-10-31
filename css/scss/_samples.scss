@@ -377,6 +377,45 @@
   }
 }
 
+// IBM Plex Sans
+// ----------------------------------------------------------------------------
+.ibm-plex-sans-sample {
+  background-color: #1863d6;
+
+  .text {
+    color: #ff6bce;
+    display: grid;
+    flex-grow: unset;
+    grid: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-gap: 1.5em;
+    margin: 0 auto;
+    max-width: 1020px;
+
+    p {
+      font-size: var(--ms4);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .title {
+      color: #FFF;
+      font-weight: 500;
+      grid-column: span 2;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .ibm-plex-sans-sample .text {
+    grid: repeat(8, 1fr) / 1fr 1fr;
+    grid-gap: 1em;
+
+    p {
+      font-size: var(--ms2);
+    }    
+  }
+}
+
 // IBM Plex Serif
 // ----------------------------------------------------------------------------
 .ibm-plex-serif-sample {

@@ -87,6 +87,17 @@
   sample-html: '<h2>Minimum</h2><h3>Minimum</h3><h4>Minimum</h4><h5>Minimum</h5><h6>Minimum</h6>'
   sample-shade: light
 
+- name: IBM Plex Sans
+  creator: Mike Abbink & Bold Monday
+  creator-url: https://boldmonday.com
+  category: Sans-Serif
+  styles: 16
+  project-url: https://github.com/IBM/plex
+  latest-version: v1.2.1
+  release-date: 22 Oct 2018
+  g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Sans
+  sample-html: '<p>Bruce<br>Smith</p><p>Reggie<br>White</p><p>Howie<br>Long</p><p>Greg<br>Townsend</p><p class="title">Top Defensive<br>Linemen</p><p>Bob<br>Nelson</p><p>Chris<br>Doleman</p><p>Pierce<br>Holt</p><p>Ray<br>Agnew</p><p class="title">Tecmo Super<br>Bowl</p><p>Richard<br>Dent</p><p>Jacob<br>Green</p><p>Jerry<br>Ball</p><p>Sean<br>Jones</p>'  
+
 - name: IBM Plex Serif
   creator: Mike Abbink & Bold Monday
   creator-url: https://boldmonday.com
