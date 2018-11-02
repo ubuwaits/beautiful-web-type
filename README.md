@@ -15,14 +15,14 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Nov 02
+* **Added [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)**
+
 ### 2018 Nov 01
 * **Added [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/)**
 
 ### 2018 Oct 31
 * **Added [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/)**
-
-### 2018 Oct 30
-* **Added [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/)**
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -37,6 +37,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [FiraGo](https://beautifulwebtype.com/firago/)
+* [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)
 * [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/)
 * [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/)
 * [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/)

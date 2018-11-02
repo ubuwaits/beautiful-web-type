@@ -20,7 +20,7 @@
   </div>
 
   {% assign typefaces = site.data.typefaces | where: 'category', 'Serif'  %}
-  <div class='gr1 gc3'>
+  <div class='gr1 gc2'>
     <h3><a href='/serif/'>Serif Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
@@ -30,7 +30,7 @@
   </div>
 
   {% assign typefaces = site.data.typefaces | where: 'category', 'Sans-Serif'  %}
-  <div class='gr1 gc3'>
+  <div class='gr1 gc2'>
     <h3><a href='/sans-serif/'>Sans-Serif Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
@@ -40,7 +40,7 @@
   </div>
 
   {% assign typefaces = site.data.typefaces | where: 'category', 'Display'  %}
-  <div class='gr1 gc3'>
+  <div class='gr1 gc2'>
     <h3><a href='/display/'>Display Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
@@ -49,11 +49,27 @@
     </ol>
   </div>
 
-  <div class='gr1 gc3'>
+  {% assign typefaces = site.data.typefaces | where: 'category', 'Monospaced'  %}
+  <div class='gr1 gc2'>
+    <h3><a href='/monospaced/'>Monospaced Typefaces</a></h3>
+    <ol>
+    {% for typeface in typefaces %}
+      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+    {% endfor %}
+    </ol>
+  </div>
+
+  <div class='gr1 gc2'>
+    <h3>About</h3>
+    <ol>
+      <li>By <a href='https://chad.is' target='_blank' rel='noopener'>Chad Mazzola</a></li>
+      <li><a href='https://www.patreon.com/ubuwaits' target='_blank' rel='noopener'>Support this project</a></li>
+    </ol>
+  </div>
+
+  <div class='gr1 gc2'>
     <h3>Additional Info</h3>
     <ol>
-      <li><a href='https://chad.is' target='_blank' rel='noopener'>Run by Chad Mazzola</a></li>
-      <li><a href='https://www.patreon.com/ubuwaits' target='_blank' rel='noopener'>Support this project</a></li>
       <li><a href='https://github.com/ubuwaits/beautiful-web-type' target='_blank' rel='noopener'>Source on GitHub</a></li>
       <li><a href='/v1/'>v1.0 of site</a></li>
     </ol>

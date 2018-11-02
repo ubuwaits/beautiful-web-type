@@ -1,0 +1,23 @@
+---
+title: Free Monospaced Fonts
+category-name: Monospaced
+layout: category
+permalink: /monospaced/
+body-class: monospaced
+body-head-content:
+  <meta property='og:title' content='Free Monospaced Fonts'>
+  <meta property='og:image' content='https://beautifulwebtype.com/assets/images/card.png'>
+  <link rel='preload' href='/assets/fonts/alegreya-sans/AlegreyaSans-Italic.woff2' as='font' type='font/woff2' crossorigin='anonymous'>
+---
+
+{% assign typefaces = site.data.typefaces | where: 'category', 'Monospaced'  %}
+
+<div class='samples grid'>
+  <div class='gr1 gc12 page-header center m1'>
+    <h1>Monospaced Typefaces</h1>
+  </div>
+
+  {% for typeface in typefaces %}
+    {% include sample.html %}
+  {% endfor %}
+</div>

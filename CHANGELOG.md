@@ -1,5 +1,8 @@
 # Changelog
 
+## 2018 Nov 02
+* **Added [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)**
+
 ## 2018 Nov 01
 * **Added [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/)**
 

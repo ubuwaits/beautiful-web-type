@@ -377,6 +377,63 @@
   }
 }
 
+// IBM Plex Mono
+// ----------------------------------------------------------------------------
+.ibm-plex-mono-sample {
+  background-color: #0C2340;
+
+  .text {
+    color: #FFF;
+    margin: 0 auto;
+    max-width: 1020px;
+
+    h1, h2 {
+      color: #BD3039;
+      font-size: var(--ms5);
+      font-weight: 500;
+    }
+
+    h1 {
+      margin-bottom: 0.1em;
+    }
+
+    h2 {
+      margin-bottom: 0.5em;
+    }
+
+    table {
+      font-size: var(--ms4);
+      line-height: 1.2;
+      width: 100%;
+    }
+
+    th {
+      font-style: italic;
+      font-weight: 600;
+      padding: 0.2em 1em 0.2em 0;
+      text-align: right;
+    }
+
+    td {
+      font-weight: 400;
+      padding: 0.2em 1em 0.2em 0;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .ibm-plex-mono-sample .text {
+    h1 {
+      font-size: var(--ms2);
+    }
+
+    table {
+      font-size: var(--ms2);
+    }
+  }
+}
+
 // IBM Plex Sans
 // ----------------------------------------------------------------------------
 .ibm-plex-sans-sample {
