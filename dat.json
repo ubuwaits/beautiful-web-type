@@ -1,6 +1,14 @@
 {
   "url": "dat://4a6d3de9851bc88387fb793158298b4fe715483673cc6a914240105932a5c42e/",
   "title": "Beautiful Web Type",
-  "description": "In-depth guide to the best free fonts from Google and across the web.",
-  "author": "Chad Mazzola"
+  "description": "In-depth guide to the best open-source fonts from   across the web.",
+  "author": "Chad Mazzola",
+  "links": {
+    "payment": [
+      {
+        "href": "https://www.patreon.com/ubuwaits",
+        "type": "text/html"
+      }
+    ]
+  }
 }
