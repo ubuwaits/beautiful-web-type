@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018 Nov 04
+* **Added a P2P mirror via the Dat protocol at [dat://beautifulwebtype.com/](dat://beautifulwebtype.com/).** You can access the distributed version using [Beaker Browser](https://beakerbrowser.com).
+* **Updated the sample for [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)**
+
 ## 2018 Nov 02
 * **Added [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)**
 
