@@ -84,7 +84,7 @@
 
     h1::first-line {
       font-feature-settings: 'smcp';
-      font-weight: 700;
+      font-weight: 500;
     }
 
     p {
@@ -380,56 +380,40 @@
 // IBM Plex Mono
 // ----------------------------------------------------------------------------
 .ibm-plex-mono-sample {
-  background-color: #0C2340;
+  background-color: #FFF;
 
   .text {
-    color: #FFF;
+    color: #000;
     margin: 0 auto;
-    max-width: 1020px;
+    max-width: 720px;
 
-    h1, h2 {
-      color: #BD3039;
-      font-size: var(--ms5);
+    .copy {
+      font-size: var(--ms2);
+      font-weight: 300;
+      line-height: 1.4;
+
+      em {
+        background-color: yellow;
+      }
+    }
+
+    .title {
+      font-size: var(--ms1);
       font-weight: 500;
-    }
-
-    h1 {
-      margin-bottom: 0.1em;
-    }
-
-    h2 {
-      margin-bottom: 0.5em;
-    }
-
-    table {
-      font-size: var(--ms4);
       line-height: 1.2;
-      width: 100%;
-    }
-
-    th {
-      font-style: italic;
-      font-weight: 600;
-      padding: 0.2em 1em 0.2em 0;
-      text-align: right;
-    }
-
-    td {
-      font-weight: 400;
-      padding: 0.2em 1em 0.2em 0;
-      text-align: left;
+      margin-top: 1em;
     }
   }
 }
 
 @media screen and (max-width: $mobile) {
   .ibm-plex-mono-sample .text {
-    h1 {
-      font-size: var(--ms2);
+    .copy {
+      font-size: var(--ms0);
     }
 
-    table {
-      font-size: var(--ms2);
+    .title {
+      font-size: var(--ms-1);
     }
   }
 }

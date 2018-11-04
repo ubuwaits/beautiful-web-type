@@ -96,7 +96,8 @@
   latest-version: v1.2.1
   release-date: 22 Oct 2018
   g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Mono
-  sample-html: '<h1>Ted Williams</h1><h2>#9 RF</h2><table><thead><tr><th>YEAR</th><th>H</th><th>HR</th><th>RBI</th><th>BA</th></thead><tbody><tr><td>1939</td><td>185</td><td>31</td><td>145</td><td>.327</td></tr><tr><td>1940</td><td>193</td><td>23</td><td>113</td><td>.344</td></tr><tr><td>1941</td><td>185</td><td>37</td><td>120</td><td>.406</td></tr><tr><td>1942</td><td>186</td><td>36</td><td>137</td><td>.356</td></tr></tbody></table>'
+  sample-html: '<p class="copy">The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point. Frequently the messages have <em>meaning</em>; that is they refer to or are correlated according to some system with certain physical or conceptual entities. These semantic aspects of communication are irrelevant to the engineering problem. The significant aspect is that the actual message is one <em>selected from a set</em> of possible messages.</p><p class="title"><span>Claude Shannon, &lsquo;A Mathematical Theory of Communication&rsquo;</span></p>'
+  sample-shade: light
 
 - name: IBM Plex Sans
   creator: Mike Abbink & Bold Monday
