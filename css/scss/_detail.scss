@@ -88,6 +88,10 @@
   p {
     font-size: var(--ms5);
     margin-bottom: 0.25em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .weight {

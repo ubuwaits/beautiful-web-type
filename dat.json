@@ -1,8 +1,9 @@
 {
-  "url": "dat://29a1e6da7cf2db4716d76de95c083590f2b21ae1060c976c8408e417b4fc67ef/",
+  "url": "dat://03e31b6ec25798b68a7838612dcaa0388adf501bd403fabbd8465f8100f51054/",
   "title": "Beautiful Web Type",
   "description": "In-depth guide to the best open-source fonts from across the web.",
   "author": "Chad Mazzola",
+  "web_root": "/_site",
   "links": {
     "payment": [
       {
