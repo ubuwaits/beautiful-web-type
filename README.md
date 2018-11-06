@@ -15,15 +15,15 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Nov 06
+* **Added short description for each typeface**
+
 ### 2018 Nov 04
 * **Added a P2P mirror via the Dat protocol at [dat://beautifulwebtype.com/](dat://beautifulwebtype.com/).** You can access the distributed version using [Beaker Browser](https://beakerbrowser.com).
 * **Updated the sample for [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)**
 
 ### 2018 Nov 02
 * **Added [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)**
-
-### 2018 Nov 01
-* **Added [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/)**
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
