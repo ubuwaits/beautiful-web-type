@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: beautifulwebtype.com
+Token: ca0cabbf4bd027be177d7c6affe93890238c9951b6983c3d61b2ead17bdd6d8a
