@@ -2,23 +2,14 @@
   -webkit-backdrop-filter: blur(2px);
   align-items: center;
   background: rgba(255, 255, 255, 0.975);
-  display: flex;
   margin: 0 -2rem 0 -2rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
 
-  h1 {
-    flex-basis: 275px;
-    font: italic 900 var(--ms1)/1 var(--alegreya-sans);
-    font-feature-settings: 'cpsp';
-    padding: 0 3rem 0 1.5rem;
-    text-transform: uppercase;
-  }
-
-  & > ol {
-    align-items: center;
+  & > .main-nav {
+    align-items: flex-end;
     display: flex;
     flex-grow: 1;
     font: 700 var(--ms0)/1 var(--alegreya-sans);
@@ -29,23 +20,44 @@
     a {
       border-bottom: 2px solid transparent;
       display: block;
-      padding: 1.5em 1.5em 1.2em 1.5em;
+      padding: 1.5em 1.5rem 1.2em 1.5rem;
 
       &:hover {
         border-bottom-color: var(--red);
         color: var(--red);
       }
     }
-  }
 
-  & > .support {
-    flex-basis: 275px;
-    margin-right: 1.5rem;
-    text-align: right;
+    .nav-home {
+      align-self: center;
+      margin-right: auto;
 
-    a {
-      color: var(--red);
-      font: 700 var(--ms0)/1 var(--alegreya-sans);
+      h1 {
+        flex-basis: 275px;
+        font: italic 900 var(--ms1)/0.5 var(--alegreya-sans);
+        font-feature-settings: 'cpsp';
+        text-transform: uppercase;
+      }
+
+      a:hover {
+        border-bottom-color: transparent;
+      }
+    }
+
+    .nav-support {
+      flex-basis: 275px;
+      margin-left: auto;
+      text-align: right;
+      text-transform: none;
+
+      a {
+        color: var(--red);
+        font: 700 var(--ms0)/1 var(--alegreya-sans);
+
+        &:hover {
+          border-bottom-color: transparent;
+        }
+      }
     }
   }
 }
@@ -128,12 +140,15 @@
     transition-delay: 0.03s;
   }
 
-  li,
-  p {
+  li {
     font: 700 var(--ms2)/1 var(--alegreya-sans);
     margin: 0.25em;
     padding: 0.5em;
     text-align: center;
+
+    &.nav-home {
+      display: none;
+    }
   }
 }
 
@@ -154,15 +169,21 @@ body.monospaced ol li.nav-monospaced a {
   .site-header {
     justify-content: flex-start;
     margin: 0 -1rem 0 -1rem;
-    padding: 1rem;
 
     .mobile-menu {
       visibility: visible;
     }
 
-    & > ol,
-    & > .support {
+    & > ol li {
       display: none;
+    }
+
+    & > ol .nav-home {
+      display: block;
+
+      a {
+        padding: 1.2em 1.5rem 1em 1rem;
+      }
     }
 
     h1 {
