@@ -15,6 +15,15 @@
   }
 }
 
+.pairing .text {
+  align-content: center;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  justify-content: center;
+  padding: 2em;
+}
+
 @media screen and (max-width: $tablet) {
   .sample > a {
     padding: 4em 3em;
@@ -51,16 +60,21 @@
     border-color: rgba(#000, 0.05);
     color: #333;
   }
+
+  .pairing-list a:first-child::after {
+    content: ' \0026';
+  }
 }
 
 // Hide sample label and remove anchor events when used on detail pages
+// Don't hide the label for pairing samples
 // ----------------------------------------------------------------------------
 .detail {
-  .sample .meta {
+  .sample:not(.pairing) .meta {
     display: none;
   }
 
-  .sample a {
+  .sample:not(.pairing) a {
     pointer-events: none;
   }
 }
@@ -888,7 +902,7 @@
 // Zilla Slab
 // ----------------------------------------------------------------------------
 .zilla-slab-sample {
-  background-image: linear-gradient(-90deg,#2f86d7,#1cf5ba);
+  background-image: linear-gradient(-90deg, #2f86d7, #1cf5ba);
 
   .text {
     color: #FFF;

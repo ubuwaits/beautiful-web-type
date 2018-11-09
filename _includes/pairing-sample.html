@@ -1,0 +1,28 @@
+{% if pairing.typefaces[0] == page.title %}
+  {% assign paired-typeface = site.data.typefaces | where: 'name', pairing.typefaces[1] | first %}
+{% else %}
+  {% assign paired-typeface = site.data.typefaces | where: 'name', pairing.typefaces[0] | first %}
+{% endif %}
+
+<div class='sample pairing {{ pairing.name | downcase | replace: ' ', '-' }}-sample gr6 gc6'>
+  <div class='text'>{{ pairing.sample-html }}</div>
+  <div class='meta {% if pairing.sample-shade == 'light' %}dark{% endif %}'>
+    {% if page.layout == 'detail' %}
+      <!-- {% comment %}
+        If showing the sample on a type detail page, then only show and link to
+        the other typeface's page.
+      {% endcomment %} -->
+      <p>Paired with <a href='/{{ paired-typeface.name | downcase | replace: ' ', '-' }}/'>{{ paired-typeface.name }}</a></p>
+    {% else %}
+      <!-- {% comment %}
+        Otherwise, list the two typefaces. CSS is used to insert an & after
+        the name of the first typeface.
+      {% endcomment %} -->
+      <p class='pairing-list'>
+        {% for typeface in pairing.typefaces %}
+          <a href='/{{ typeface | downcase | replace: ' ', '-' }}/'>{{ typeface }}</a>
+        {% endfor %}
+      </p>
+    {% endif %}
+  </div>
+</div>

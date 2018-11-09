@@ -32,7 +32,7 @@ $large: 1500px;
   grid-auto-rows: minmax(var(--rh), auto);
   grid-auto-flow: row dense;
   grid-gap: var(--gutter);
-  margin: 0 auto;
+  margin: 0 auto var(--gutter) auto;
   max-width: var(--wrapper);
 }
 

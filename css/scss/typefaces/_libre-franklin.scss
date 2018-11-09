@@ -1,4 +1,5 @@
-.libre-franklin { font-family: 'Libre Franklin', serif; }
+:root { --libre-franklin: 'Libre Franklin', sans-serif; }
+.libre-franklin { font-family: 'Libre Franklin', sans-serif; }
 
 @font-face {
   font-family: 'Libre Franklin';

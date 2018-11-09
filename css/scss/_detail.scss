@@ -199,3 +199,17 @@
 .character-label + .code {
   margin-top: 0;
 }
+
+// Pairings
+// ----------------------------------------------------------------------------
+.grid-pairings h3 {
+  font: italic 400 var(--ms5)/1.2 var(--alegreya-sans);
+}
+
+@media screen and (max-width: $mobile) {
+  .grid-pairings h3 {
+    font-size: var(--ms3);
+    grid-area: span 1 / span 6;
+    margin-top: 1rem;
+  }
+}

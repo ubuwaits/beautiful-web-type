@@ -1,0 +1,23 @@
+---
+title: Recommended Typeface Pairings
+category-name: Pairings
+layout: category
+permalink: /pairings/
+description: See beautiful examples of recommended pairings using only free & open-source fonts.
+body-class: pairings
+body-head-content:
+  <meta property='og:title' content='Recommended Typeface Pairings'>
+  <meta property='og:image' content='https://beautifulwebtype.com/assets/images/pairings.png'>
+---
+
+{% assign pairings = site.data.pairings %}
+
+<div class='samples grid'>
+  <div class='gr1 gc12 page-header center m1'>
+    <h1>Recommended Type Pairings</h1>
+  </div>
+
+  {% for pairing in pairings %}
+    {% include pairing-sample.html %}
+  {% endfor %}
+</div>

@@ -3,3 +3,15 @@ layout: default
 ---
 
 {{ content }}
+
+{% assign pairings = site.data.pairings | where: 'typefaces', page.title %}
+
+{% unless pairings.size == 0 %}
+  <div class='grid grid-pairings' id='pairings'>
+    <h3 class='gr1 gc12 ase'>Recommended Pairings for {{ page.title }}</h3>
+
+    {% for pairing in pairings %}
+      {% include pairing-sample.html %}
+    {% endfor %}
+  </div>
+{% endunless %}

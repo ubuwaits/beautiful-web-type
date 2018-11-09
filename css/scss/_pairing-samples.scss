@@ -1,0 +1,164 @@
+.archivo-black-and-lora-sample {
+  background-color: #080543;
+
+  .text {
+    color: #FFF;
+    text-align: center;
+
+    h1 {
+      font: 400 var(--ms10)/0.8 var(--archivo-black);
+      text-transform: uppercase;
+    }
+
+    p {
+      font: 400 var(--ms1)/1.4 var(--lora);
+      margin: 2em 2em 0;
+
+      &:last-child {
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .archivo-black-and-lora-sample .text {
+    h1 {
+      font-size: var(--ms7);
+    }
+
+    p {
+      margin: 1em 0 0 0;
+    }
+  }
+}
+
+.libre-franklin-and-source-serif-pro-sample {
+  background-color: #FAF9F6;
+
+  .text {
+    color: #272727;
+
+    h1 {
+      display: flex;
+      font: 900 var(--ms8)/0.9 var(--libre-franklin);
+      margin-bottom: 0.1em;
+      text-transform: uppercase;
+
+      span:last-child {
+        color: #0FADDA;
+        font-weight: 300;
+        padding-left: 0.25em;
+        text-transform: none;
+      }
+    }
+
+    p {
+      font: 400 var(--ms1)/1.4 var(--source-serif-pro);
+      margin: 1em 4em 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .libre-franklin-and-source-serif-pro-sample .text {
+    h1 {
+      font-size: var(--ms5);
+    }
+
+    p {
+      margin-right: 0;
+    }
+  }
+}
+
+.oswald-and-source-serif-pro-sample {
+  background-image: linear-gradient(25deg, #6356dd, #ac499f, #d23b62, #ec2a22);
+
+  .text {
+    color: #171717;
+    text-align: center;
+
+    h1 {
+      color: #FFF;
+      font: 700 var(--ms10)/1 var(--oswald);
+      margin-bottom: 2.25rem;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font: 700 var(--ms4)/1.2 var(--oswald);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font: 400 var(--ms5)/1.1 var(--source-serif-pro);
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .oswald-and-source-serif-pro-sample .text {
+    h1 {
+      font-size: var(--ms8);
+    }
+
+    h2 {
+      font-size: var(--ms2);
+    }
+
+    h3 {
+      font-size: var(--ms3);
+    }
+  }
+}
+
+.rakkas-and-vollkorn-sample {
+  background-color: #FFF;
+
+  .text {
+    color: #272727;
+    text-align: center;
+
+    h1 {
+      font: 400 var(--ms8)/0.9 var(--rakkas);
+      letter-spacing: 0.025em;
+      margin: 0.3em 0 0.25em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: #F00E31;
+      font: 400 var(--ms5)/1 var(--vollkorn);
+      font-feature-settings: 'smcp';
+    }
+
+    h3 {
+      font: italic 400 var(--ms2)/1 var(--vollkorn);
+      margin-top: 2em;
+
+      span {
+        font-style: normal;
+        font-feature-settings: 'smcp';
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .rakkas-and-vollkorn-sample .text {
+    h1 {
+      font-size: var(--ms7);
+    }
+
+    h2 {
+      font-size: var(--ms4);
+    }
+
+    h3 {
+      font-size: var(--ms1);
+    }
+  }
+}
