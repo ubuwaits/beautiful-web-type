@@ -4,12 +4,8 @@
   font-size: var(--ms5);
   font-weight: 400;
   line-height: 1.1;
-}
 
-// Responsive styles
-// --------------------------------------------------------------------------
-@media screen and (max-width: $mobile) {
-  .type-detail-header h2 {
+  @media screen and (max-width: $mobile) {
     font-size: var(--ms3);
   }
 }
@@ -21,6 +17,10 @@
   display: flex;
   justify-content: flex-end;
 
+  @media screen and (max-width: $mobile) {
+    margin-top: 1rem;
+  }
+
   a {
     background-color: #fff;
     border: 1px solid #e7e7e7;
@@ -29,6 +29,11 @@
     padding: 0.9em 1.8em;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: $mobile) {
+      flex-basis: 100%;
+      padding: 0.8em 1em;
+    }
 
     &:hover {
       border-color: var(--red);
@@ -44,19 +49,6 @@
 
   a + a {
     margin-left: 1em;
-  }
-}
-
-// Responsive styles
-// --------------------------------------------------------------------------
-@media screen and (max-width: $mobile) {
-  .font-download {
-    margin-top: 1rem;
-
-    a {
-      flex-basis: 100%;
-      padding: 0.8em 1em;
-    }
   }
 }
 
@@ -89,6 +81,10 @@
     font-size: var(--ms5);
     margin-bottom: 0.25em;
 
+    @media screen and (max-width: $mobile) {
+      font-size: var(--ms4);
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -100,14 +96,6 @@
   }
 }
 
-// Responsive styles
-// --------------------------------------------------------------------------
-@media screen and (max-width: $mobile) {
-  .type-styles p {
-    font-size: var(--ms4);
-  }
-}
-
 // Type detail table
 // ----------------------------------------------------------------------------
 .type-detail-table {
@@ -115,6 +103,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: $tablet) {
+    grid-area: span 1 / span 12;
+  }
+
+  @media screen and (max-width: $mobile) {
+    grid-area: span 1 / span 6;
+  }
 }
 
 .examples {
@@ -122,6 +118,10 @@
   flex-grow: 2;
   justify-content: center;
   padding: 2em;
+
+  @media screen and (max-width: $mobile) {  
+    padding: 1em !important;
+  }
 
   &.flow-row {
     align-content: center;
@@ -187,7 +187,7 @@
 .character-label,
 .code {
   color: #a7a7a7;
-  font: normal 600 var(--ms-1)/1 'IBM Plex Mono';
+  font: normal 600 var(--ms-1)/1 var(--ibm-plex-mono);
   font-feature-settings: 'liga' off;
   font-variant: normal;
   line-height: 1;
@@ -204,10 +204,8 @@
 // ----------------------------------------------------------------------------
 .grid-pairings h3 {
   font: italic 400 var(--ms5)/1.2 var(--alegreya-sans);
-}
 
-@media screen and (max-width: $mobile) {
-  .grid-pairings h3 {
+  @media screen and (max-width: $mobile) {
     font-size: var(--ms3);
     grid-area: span 1 / span 6;
     margin-top: 1rem;

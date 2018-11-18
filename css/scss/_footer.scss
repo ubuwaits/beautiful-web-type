@@ -3,6 +3,10 @@ footer.grid {
   margin-top: 2em;
   padding-top: 2em;
 
+  @media screen and (max-width: $mobile) {
+    grid-gap: 1.5em;
+  }
+
   h3 {
     color: #797979;
     font: 700 var(--ms0)/1 var(--alegreya-sans);
@@ -27,6 +31,10 @@ footer.grid {
 
   .footer-patreon-content {
     display: flex;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
 
     .patreon-logo {
       margin: 0.25em 1em 0 0;
@@ -66,17 +74,5 @@ footer.grid {
       color: #FFF;
       padding: 0.75em 1.5em;
     }
-  }
-}
-
-// Responsive styles
-// ----------------------------------------------------------------------------
-@media screen and (max-width: $mobile) {
-  footer.grid {
-    grid-gap: 1.5em;
-  }
-
-  .footer-patreon-content {
-    flex-direction: column;
   }
 }

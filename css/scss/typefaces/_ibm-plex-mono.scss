@@ -1,4 +1,5 @@
-.ibm-plex-mono { font-family: 'IBM Plex Mono', sans-serif; }
+.ibm-plex-mono { font-family: 'IBM Plex Mono', monospace; }
+:root { --ibm-plex-mono: 'IBM Plex Mono', monospace; }
 
 @font-face {
   font-family: 'IBM Plex Mono';

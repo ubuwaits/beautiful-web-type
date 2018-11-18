@@ -8,6 +8,11 @@
   width: 100%;
   z-index: 10;
 
+  @media screen and (max-width: $tablet) {
+    justify-content: flex-start;
+    margin: 0 -1rem 0 -1rem;
+  }
+
   & > .main-nav {
     align-items: flex-end;
     display: flex;
@@ -69,6 +74,10 @@
   top: 4px;
   visibility: hidden;
   width: 46px;
+
+  @media screen and (max-width: $tablet) {
+    visibility: visible;
+  }
 
   .menu-circle {
     height: 100%;
@@ -167,13 +176,6 @@ body.monospaced ol li.nav-monospaced a {
 // ----------------------------------------------------------------------------
 @media screen and (max-width: $tablet) {
   .site-header {
-    justify-content: flex-start;
-    margin: 0 -1rem 0 -1rem;
-
-    .mobile-menu {
-      visibility: visible;
-    }
-
     & > ol li {
       display: none;
     }

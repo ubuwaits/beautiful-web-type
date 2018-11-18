@@ -7,18 +7,12 @@ $large: 1500px;
   --wrapper: calc(100vw - (2 * var(--body-margin)));
   --gutter: 2em;
   --rh: calc((var(--wrapper) - (11 * var(--gutter))) / 12);
-}
 
-// Responsive styles
-// ----------------------------------------------------------------------------
-@media screen and (min-width: $large)  {
-  :root {
+  @media screen and (min-width: $large)  {
     --wrapper: 1344px;
   }
-}
 
-@media screen and (max-width: $tablet) {
-  :root {
+  @media screen and (max-width: $tablet) {
     --body-margin: 1em;
     --gutter: 1em;
   }
@@ -34,30 +28,16 @@ $large: 1500px;
   grid-gap: var(--gutter);
   margin: 0 auto var(--gutter) auto;
   max-width: var(--wrapper);
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+  }
 }
 
 // Responsive grid styles
 // --------------------------------------------------------------------------
-@media screen and (max-width: $tablet) {
-  .type-detail-table {
-    grid-area: span 1 / span 12;
-  }
-}
-
 @media screen and (max-width: $mobile) {
-  .grid {
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: auto;
-  }
-
-  .type-detail-table {
-    grid-area: span 1 / span 6;
-  }
-
-  .examples {
-    padding: 1em !important;
-  }
-
   .grid > header,
   .grid > div {
     grid-area: span 1 / span 6;
