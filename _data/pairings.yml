@@ -1,10 +1,12 @@
 - name: Archivo Black and Lora
+  date-added: 2018-11-09
   typefaces:
     - Archivo Black
     - Lora
   sample-html: '<h1>Werner Herzog</h1><p>There is nothing wrong with spending a night in jail if it means getting the shot you need. Send out all your dogs and one might return with prey. Never wallow in your troubles; despair must be kept private and brief. Expand your knowledge and understanding of music and literature, old and modern. That roll of unexposed celluloid you have in your hand might be the last in existence, so do something impressive with it. Carry bolt cutters everywhere. Thwart institutional cowardice.</p><p>From <em>A Guide for the Perplexed</em></p>'
 
 - name: Libre Franklin and Source Serif Pro
+  date-added: 2018-11-09
   typefaces:
     - Libre Franklin
     - Source Serif Pro
@@ -12,12 +14,14 @@
   sample-shade: light
 
 - name: Oswald and Source Serif Pro
+  date-added: 2018-11-09
   typefaces:
     - Oswald
     - Source Serif Pro
-  sample-html: '<h2>The Coming of Age of<br> Quantum Biology</h2><h1>Life on<br> the Edge</h1><h3>Johnjoe McFadden <br>& Jim Al-Khalili</h3>'  
+  sample-html: '<h2>The Coming of Age of<br> Quantum Biology</h2><h1>Life on<br> the Edge</h1><h3>Johnjoe McFadden <br>& Jim Al-Khalili</h3>'
 
 - name: Rakkas and Vollkorn
+  date-added: 2018-11-09
   typefaces:
     - Rakkas
     - Vollkorn

@@ -1,4 +1,5 @@
 - name: Alegreya
+  date-added: 2018-10-15
   creator: Huerta Tipográfica
   creator-url: https://huertatipografica.com/en
   category: Serif
@@ -12,6 +13,7 @@
   sample-shade: light
 
 - name: Alegreya Sans
+  date-added: 2018-10-15
   creator: Huerta Tipográfica
   creator-url: https://huertatipografica.com/en
   category: Sans-Serif
@@ -24,6 +26,7 @@
   sample-html: '<h1>Helvítis fokking fokk!</h1>'
 
 - name: Archivo
+  date-added: 2018-10-15
   creator: Omnibus-Type
   creator-url: https://www.omnibus-type.com
   category: Sans-Serif
@@ -36,6 +39,7 @@
   sample-html: '<h1>Dieter Rams<br>Bauhaus-Archiv<br>Museum für<br> Gestaltung<br>Retrospective <span class="oldstyle-proportional">02.10.2015<br>24.11.2015</span></h1>'
 
 - name: Archivo Black
+  date-added: 2018-10-19
   creator: Omnibus-Type
   creator-url: https://www.omnibus-type.com
   category: Sans-Serif
@@ -49,6 +53,7 @@
   sample-shade: light
 
 - name: BioRhyme
+  date-added: 2018-10-15
   creator: Aoife Mooney
   creator-url: http://www.aoifemooney.org
   category: Serif
@@ -61,6 +66,7 @@
   sample-html: '<h1>är d<span class="ss08">u</span> ny<span class="ss01">f</span>iken?</h1>'
 
 - name: BioRhyme Expanded
+  date-added: 2018-10-28
   creator: Aoife Mooney
   creator-url: http://www.aoifemooney.org
   category: Serif
@@ -73,6 +79,7 @@
   sample-html: '<h1>fat</h1><h2>burger</h2>'
 
 - name: Cooper Hewitt
+  date-added: 2018-10-15
   creator: Chester Jenkins
   creator-url: https://vllg.com/constellation
   category: Sans-Serif
@@ -84,6 +91,7 @@
   sample-html: '<h1>Cinémathèque Suisse</h1><h2>Jean-Luc Godard<br>12 Nov.84 Au 12 JAN.85<br>Casino de Montbenon<br>Lausanne</h2>'
 
 - name: FiraGO
+  date-added: 2018-10-23
   creator: bBox Type
   creator-url: https://bboxtype.com
   category: Sans-Serif
@@ -96,6 +104,7 @@
   sample-shade: light
 
 - name: IBM Plex Mono
+  date-added: 2018-11-02
   creator: Mike Abbink & Bold Monday
   creator-url: https://boldmonday.com
   category: Monospaced
@@ -109,6 +118,7 @@
   sample-shade: light
 
 - name: IBM Plex Sans
+  date-added: 2018-10-31
   creator: Mike Abbink & Bold Monday
   creator-url: https://boldmonday.com
   category: Sans-Serif
@@ -121,6 +131,7 @@
   sample-html: '<p>Bruce<br>Smith</p><p>Reggie<br>White</p><p>Howie<br>Long</p><p>Greg<br>Townsend</p><p class="title">Top Defensive<br>Linemen</p><p>Bob<br>Nelson</p><p>Chris<br>Doleman</p><p>Pierce<br>Holt</p><p>Ray<br>Agnew</p><p class="title">Tecmo Super<br>Bowl</p><p>Richard<br>Dent</p><p>Jacob<br>Green</p><p>Jerry<br>Ball</p><p>Sean<br>Jones</p>'
 
 - name: IBM Plex Sans Condensed
+  date-added: 2018-11-01
   creator: Mike Abbink & Bold Monday
   creator-url: https://boldmonday.com
   category: Sans-Serif
@@ -133,6 +144,7 @@
   sample-html: '<h1>Monk</h1><h2>Thelonious</h2>'
 
 - name: IBM Plex Serif
+  date-added: 2018-10-30
   creator: Mike Abbink & Bold Monday
   creator-url: https://boldmonday.com
   category: Serif
@@ -146,6 +158,7 @@
   sample-shade: light
 
 - name: Jost
+  date-added: 2018-10-15
   creator: Owen Earl
   creator-url: https://ewonrael.github.io
   category: Sans-Serif
@@ -157,6 +170,7 @@
   sample-html: '<h1>Vivre Sa Vie</h1><h2>Film En Douze Tableaux</h2>'
 
 - name: Libre Franklin
+  date-added: 2018-10-15
   creator: Impallari Type
   creator-url: https://github.com/impallari
   category: Sans-Serif
@@ -170,6 +184,7 @@
   sample-shade: light
 
 - name: Lora
+  date-added: 2018-10-15
   creator: Cyreal
   creator-url: http://www.cyreal.org
   category: Serif
@@ -182,6 +197,7 @@
   sample-html: '<p>Far off in the bending sky was the pearly light; and she felt the largeness of the world and the manifold wakings of men to labor and endurance. She was a part of that involuntary, palpitating life, and could neither look out on it from her luxurious shelter as a mere spectator, nor hide her eyes in selfish complaining.</p><h2>George Eliot, <em>Middlemarch</em></h2>'
 
 - name: Oswald
+  date-added: 2018-10-15
   creator: Vernon Adams
   creator-url: https://fonts.google.com/?query=Vernon+Adams
   category: Display
@@ -194,6 +210,7 @@
   sample-html: '<h1>1968</h1>'
 
 - name: Playfair Display
+  date-added: 2018-10-15
   creator: Claus Eggers Sørensen
   creator-url: https://forthehearts.net/
   category: Display
@@ -206,6 +223,7 @@
   sample-html: '<h1>the isms go</h1><h1>the ist dies</h1><h1>art remains</h1><p>Vladimir Nabokov</p>'
 
 - name: Rakkas
+  date-added: 2018-10-22
   creator: Zeynep Akay
   creator-url: http://theruqahproject.com
   category: Display
@@ -219,6 +237,7 @@
   sample-shade: light
 
 - name: Source Serif Pro
+  date-added: 2018-10-15
   creator: Frank Grießhammer
   creator-url: http://www.frgr.de
   category: Serif
@@ -232,6 +251,7 @@
   sample-shade: light
 
 - name: Vollkorn
+  date-added: 2018-10-15
   creator: Friedrich Althausen
   creator-url: https://friedrichalthausen.de/
   category: Serif
@@ -244,6 +264,7 @@
   sample-html: '<h1 class="w500">shinichi<br> nakazawa</h1><h2 class="w400 italic ase">Beyond<br> Development:<br> Rediscovering<br> Nature’s<br> Wisdom</h2><p>Technology was not given so humankind could ride roughshod over nature and wreak irreparable changes. Rather, technology is to draw out the hidden essence of all nature so that it can sparkle with new purpose. Technology is not to enslave and command life but to draw forth the infinite possibilities locked within all life and to open new realms of significance. <span class="ms-1">&#9670;</span></p>'
 
 - name: Zilla Slab
+  date-added: 2018-10-15
   creator: Typotheque
   creator-url: https://www.typotheque.com
   category: Serif
