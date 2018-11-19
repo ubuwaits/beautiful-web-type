@@ -7,7 +7,8 @@
   font-feature-settings: 'calt' off, 'liga' off, 'clig' off, 'dlig' off, 'subs' off, 'sups' off;
 }
 
-.jost { font-family: 'Jost*'; }
+:root { --jost: 'Jost*', sans-serif; }
+.jost { font-family: 'Jost*', sans-serif; }
 
 .page-header {
   margin: 3em 0 5em 0;

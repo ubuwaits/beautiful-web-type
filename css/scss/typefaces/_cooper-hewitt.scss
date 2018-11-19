@@ -1,4 +1,5 @@
-.cooper-hewitt { font-family: 'Cooper Hewitt', serif; }
+:root { --cooper-hewitt: 'Cooper Hewitt', sans-serif; }
+.cooper-hewitt { font-family: 'Cooper Hewitt', sans-serif; }
 
 @font-face {
   font-family: 'Cooper Hewitt';

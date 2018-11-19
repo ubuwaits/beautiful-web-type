@@ -1,4 +1,5 @@
-.ibm-plex-serif { font-family: 'IBM Plex Serif', serif; }
+:root { --ibm-plex-serif: 'IBM Plex Serif', 'Georgia', Times, serif; }
+.ibm-plex-serif { font-family: 'IBM Plex Serif', 'Georgia', Times, serif; }
 
 @font-face {
   font-family: 'IBM Plex Serif';

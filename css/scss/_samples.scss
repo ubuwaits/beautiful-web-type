@@ -1,6 +1,4 @@
 .sample {
-  background-color: #000;
-  color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +10,18 @@
     flex-flow: column;
     justify-content: center;
     padding: 2em;
+
+    @media screen and (max-width: $tablet) {
+      padding: 4em 3em;
+    }
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 1.5em;
+    }
+  }
+
+  .text {
+    margin: 0 auto;
   }
 }
 
@@ -24,22 +34,10 @@
   padding: 2em;
 }
 
-@media screen and (max-width: $tablet) {
-  .sample > a {
-    padding: 4em 3em;
-  }
-}
-
-@media screen and (max-width: $mobile) {
-  .sample > a {
-    padding: 2em 1.5em;
-  }
-}
-
 // Header for type tables and samples
 // ----------------------------------------------------------------------------
 .meta {
-  border-top: 1px solid rgba(#fff, 0.3);
+  border-top: 1px solid rgba(#FFF, 0.3);
   border-bottom: 0;
   color: #fff;
   font: 700 var(--ms0)/1 var(--alegreya-sans);
@@ -82,18 +80,19 @@
 // Alegreya
 // ----------------------------------------------------------------------------
 .alegreya-sample {
-  background-color: #DFD7C9;
+  background: #DFD7C9;
 
   .text {
     color: rgba(#02040F, 0.75);
-    margin: 0 auto;
     max-width: 760px;
 
     h1,
     p {
-      font-size: var(--ms5);
-      font-weight: 400;
-      line-height: 1.1;
+      font: 400 var(--ms5)/1.1 var(--alegreya);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
     }
 
     h1::first-line {
@@ -107,39 +106,24 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .alegreya-sample .text {
-    h1,
-    p {
-      font-size: var(--ms2);
-    }
-  }
-}
-
 // Alegreya Sans
 // ----------------------------------------------------------------------------
 .alegreya-sans-sample {
-  background-color: #EC3B3B;
+  background: #EC3B3B;
 
   .text {
-    margin: 0 auto;
     max-width: 920px;
     text-align: center;
 
     h1 {
+      color: #FFF;
+      font: 900 var(--ms12)/0.85 var(--alegreya-sans);
       font-feature-settings: 'cpsp';
-      font-size: var(--ms12);
-      font-weight: 900;
-      line-height: 0.85;
       text-transform: uppercase;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .alegreya-sans-sample .text {
-    h1 {
-      font-size: var(--ms7);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms7);
+      }
     }
   }
 }
@@ -147,18 +131,19 @@
 // Archivo
 // ----------------------------------------------------------------------------
 .archivo-sample {
-  background-color: #000;
+  background: #000;
 
   .text {
-    margin: 0 auto;
     max-width: 900px;
 
     h1 {
       color: #FFF;
-      font-size: var(--ms7);
-      font-weight: 700;
-      line-height: 1.05;
+      font: 700 var(--ms7)/1.05 var(--archivo);
       padding: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms4);
+      }
 
       span {
         display: block;
@@ -168,30 +153,23 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .archivo-sample .text {
-    h1 {
-      font-size: var(--ms4);
-    }
-  }
-}
-
 // Archivo Black
 // ----------------------------------------------------------------------------
 .archivo-black-sample {
-  background-color: #F5C827;
+  background: #F5C827;
 
   .text {
     color: #0B0A08;
-    margin: 0 auto;
     max-width: 1000px;
 
     h1 {
-      font-size: var(--ms11);
-      font-weight: 400;
+      font: 400 var(--ms11)/0.8 var(--archivo-black);
       letter-spacing: -0.05em;
-      line-height: 0.8;
       margin-bottom: 0.5rem;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms8);
+      }
     }
 
     h2 {
@@ -204,37 +182,22 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .archivo-black-sample .text {
-    h1 {
-      font-size: var(--ms8);
-    }
-  }
-}
-
 // BioRhyme
 // ----------------------------------------------------------------------------
 .biorhyme-sample {
-  background-color: #43C94D;
+  background: #43C94D;
 
   .text {
     color: #FFF;
-    margin: 0 auto;
     max-width: 940px;
     text-align: center;
 
     h1 {
-      font-size: var(--ms12);
-      font-weight: 800;
-      line-height: 1;
-    }
-  }
-}
+      font: 800 var(--ms12)/1 var(--biorhyme);
 
-@media screen and (max-width: $mobile) {
-  .biorhyme-sample .text {
-    h1 {
-      font-size: var(--ms7);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms7);
+      }
     }
   }
 }
@@ -242,41 +205,32 @@
 // BioRhyme Extended
 // ----------------------------------------------------------------------------
 .biorhyme-expanded-sample {
-  background-color: #F1592A;
+  background: #F1592A;
 
   .text {
     color: #FFF;
-    margin: 0 auto;
     max-width: 940px;
     text-align: center;
 
     h1 {
-      font-size: var(--ms16);
-      font-weight: 800;
+      font: 800 var(--ms16)/0.8 var(--biorhyme-expanded);
       letter-spacing: -0.15em;
-      line-height: 0.8;
       margin-left: -0.2em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms11);
+      }
     }
 
     h2 {
-      font-size: var(--ms8);
-      font-weight: 800;
+      font: 800 var(--ms8)/1 var(--biorhyme-expanded);
       letter-spacing: 0.25em;
-      line-height: 1;
       margin-left: 0.1em;
       text-transform: uppercase;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .biorhyme-expanded-sample .text {
-    h1 {
-      font-size: var(--ms11);
-    }
-
-    h2 {
-      font-size: var(--ms3);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
     }
   }
 }
@@ -284,52 +238,39 @@
 // Cooper Hewitt
 // ----------------------------------------------------------------------------
 .cooper-hewitt-sample {
-  background-color: #3A274E;
+  background: #3A274E;
 
   .text {
     color: #FFF;
-    margin: 0 auto;
     text-align: center;
 
     h1 {
-      font-size: var(--ms10);
-      font-weight: 400;
-      line-height: 1;
+      font: 400 var(--ms10)/1 var(--cooper-hewitt);
       margin-bottom: 1em;
       text-transform: uppercase;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms8);
+        margin-top: 0.2em;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
     }
 
     h2 {
-      font-size: var(--ms4);
-      font-weight: 300;
-      line-height: 1.3;
+      font: 300 var(--ms4)/1.3 var(--cooper-hewitt);
       text-transform: uppercase;
-    }
-  }
-}
 
-@media screen and (max-width: $tablet) {
-  .cooper-hewitt-sample .text {
-    h1 {
-      font-size: var(--ms8);
-      margin-top: 0.2em;
-    }
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms2);
+        margin-top: 1em;
+      }
 
-    h2 {
-      font-size: var(--ms2);
-      margin-top: 1em;
-    }
-  }
-}
-
-@media screen and (max-width: $mobile) {
-  .cooper-hewitt-sample .text {
-    h1 {
-      font-size: var(--ms5);
-    }
-
-    h2 {
-      font-size: var(--ms1);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
     }
   }
 }
@@ -337,21 +278,23 @@
 // FiraGO
 // ----------------------------------------------------------------------------
 .firago-sample {
-  background-color: #BCBBB8;
+  background: #BCBBB8;
 
   .text {
-    margin: 0 auto;
     text-align: center;
 
     h2, h3, h4, h5, h6 {
-      background-color: #BCBBB8;
+      background: #BCBBB8;
       color: #272727;
-      font-size: var(--ms11);
-      line-height: 1;
+      font: var(--ms11)/1 var(--firago);
       letter-spacing: 0.05em;
       margin-top: -0.375em;
       position: relative;
       text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms7);
+      }
     }
 
     h2 {
@@ -383,28 +326,21 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .firago-sample .text {
-    h2, h3, h4, h5, h6 {
-      font-size: var(--ms7);
-    }
-  }
-}
-
 // IBM Plex Mono
 // ----------------------------------------------------------------------------
 .ibm-plex-mono-sample {
-  background-color: #FFF;
+  background: #FFF;
 
   .text {
     color: #000;
-    margin: 0 auto;
     max-width: 720px;
 
     .copy {
-      font-size: var(--ms2);
-      font-weight: 300;
-      line-height: 1.4;
+      font: 300 var(--ms2)/1.4 var(--ibm-plex-mono);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms0);
+      }
 
       em {
         background-color: yellow;
@@ -412,22 +348,12 @@
     }
 
     .title {
-      font-size: var(--ms1);
-      font-weight: 500;
-      line-height: 1.2;
+      font: 500 var(--ms1)/1.2 var(--ibm-plex-mono);
       margin-top: 1em;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .ibm-plex-mono-sample .text {
-    .copy {
-      font-size: var(--ms0);
-    }
-
-    .title {
-      font-size: var(--ms-1);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms-1);
+      }
     }
   }
 }
@@ -435,7 +361,7 @@
 // IBM Plex Sans
 // ----------------------------------------------------------------------------
 .ibm-plex-sans-sample {
-  background-color: #1863d6;
+  background: #1863d6;
 
   .text {
     color: #ff6bce;
@@ -443,13 +369,19 @@
     flex-grow: unset;
     grid: repeat(4, 1fr) / repeat(4, 1fr);
     grid-gap: 1.5em;
-    margin: 0 auto;
     max-width: 1020px;
 
+    @media screen and (max-width: $mobile) {
+      grid: repeat(8, 1fr) / 1fr 1fr;
+      grid-gap: 1em;
+    }
+
     p {
-      font-size: var(--ms4);
-      font-weight: 400;
-      line-height: 1.2;
+      font: 400 var(--ms4)/1.2 var(--ibm-plex-sans);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
     }
 
     .title {
@@ -460,27 +392,15 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .ibm-plex-sans-sample .text {
-    grid: repeat(8, 1fr) / 1fr 1fr;
-    grid-gap: 1em;
-
-    p {
-      font-size: var(--ms2);
-    }
-  }
-}
-
 // IBM Plex Sans Condensed
 // ----------------------------------------------------------------------------
 .ibm-plex-sans-condensed-sample {
-  background-color: #000;
+  background: #000;
 
   .text {
     display: grid;
     flex-grow: unset;
     grid: 1fr / 1fr;
-    margin: 0 auto;
     max-width: 1100px;
     place-items: center;
 
@@ -492,33 +412,33 @@
 
     h1 {
       color: #FFF;
-      font-size: var(--ms17);
-      font-weight: 700;
+      font: 700 var(--ms17)/1 var(--ibm-plex-sans-condensed);
       letter-spacing: -0.05em;
-      line-height: 1;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms14);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms11);
+      }
     }
 
     h2 {
       background: #000;
       color: #EC2039;
-      font-size: var(--ms7);
-      font-weight: 200;
+      font: 200 var(--ms7)/1 var(--ibm-plex-sans-condensed);
       justify-self: stretch;
-      line-height: 1;
       padding: 0.05em 0;
       text-align: right;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .ibm-plex-sans-condensed-sample .text {
-    h1 {
-      font-size: var(--ms11);
-    }
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms4);
+      }
 
-    h2 {
-      font-size: var(--ms3);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
     }
   }
 }
@@ -526,28 +446,20 @@
 // IBM Plex Serif
 // ----------------------------------------------------------------------------
 .ibm-plex-serif-sample {
-  background-color: #FDE267;
+  background: #FDE267;
 
   .text {
     color: #272727;
-    margin: 0 auto;
     max-width: 1020px;
 
     h1 {
-      font-size: var(--ms7);
-      font-style: italic;
-      font-weight: 200;
+      font: italic 200 var(--ms7)/1.2 var(--ibm-plex-serif);
       letter-spacing: -0.03em;
-      line-height: 1.2;
       text-indent: -0.45em;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .ibm-plex-serif-sample .text {
-    h1 {
-      font-size: var(--ms3);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
     }
   }
 }
@@ -555,39 +467,41 @@
 // Jost*
 // ----------------------------------------------------------------------------
 .jost-sample {
+  background: #000;
+
   .text {
-    margin: 0 auto;
+    color: #FFF;
     max-width: 960px;
     text-align: center;
 
     h1 {
-      font-size: var(--ms10);
-      font-weight: 600;
-      line-height: 1;
+      font: 600 var(--ms10)/1 var(--jost);
       letter-spacing: 0.03em;
       text-transform: uppercase;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms9);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
     }
 
     h2 {
-      font-size: var(--ms6);
-      font-weight: 400;
-      line-height: 1;
+      font: 400 var(--ms6)/1 var(--jost);
       letter-spacing: 0.0975em;
       opacity: 0.5;
       margin-top: 0.5em;
       text-transform: uppercase;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .jost-sample .text {
-    h1 {
-      font-size: var(--ms5);
-    }
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms5);
+      }
 
-    h2 {
-      font-size: var(--ms1);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
     }
   }
 }
@@ -595,18 +509,19 @@
 // Libre Franklin
 // ----------------------------------------------------------------------------
 .libre-franklin-sample {
-  background-color: #EDE5D6;
+  background: #EDE5D6;
 
   .text {
-    margin: 0 auto;
     max-width: 960px;
 
     h1 {
       color: #EE4128;
-      font-size: var(--ms11);
-      font-weight: 900;
-      line-height: 0.9;
+      font: 900 var(--ms11)/0.9 var(--libre-franklin);
       text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms6);
+      }
 
       &:nth-child(2) {
         margin-bottom: 0.05em;
@@ -624,26 +539,17 @@
     h2 {
       color: #373737;
       display: flex;
-      font-size: var(--ms2);
-      font-weight: 900;
+      font: 900 var(--ms2) var(--libre-franklin);
       justify-content: space-between;
       margin: 0 0.075em 0 0.35em;
       text-transform: uppercase;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .libre-franklin-sample .text {
-    h1 {
-      font-size: var(--ms6);
-    }
-
-    h2 {
-      flex-direction: column;
-      font-size: var(--ms1);
-      line-height: 1.2;
-      margin: 0.75em 0 0 0.2em;
+      @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        font-size: var(--ms1);
+        line-height: 1.2;
+        margin: 0.75em 0 0 0.2em;
+      }
     }
   }
 }
@@ -651,40 +557,30 @@
 // Lora
 // ----------------------------------------------------------------------------
 .lora-sample {
-  background-color: #77918D;
+  background: #77918D;
 
   .text {
     color: #FFF;
-    margin: 0 auto;
     max-width: 600px;
 
     p {
-      font-size: var(--ms3);
-      font-style: italic;
-      font-weight: 400;
-      line-height: 1.4;
+      font: italic 400 var(--ms3)/1.4 var(--lora);
       margin-bottom: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+        line-height: 1.3;
+      }
     }
 
     h2 {
-      font-size: var(--ms1);
-      font-weight: 700;
+      font: 700 var(--ms1)/1 var(--lora);
       letter-spacing: 0.1em;
-      line-height: 1;
       text-transform: uppercase;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .lora-sample .text {
-    p {
-      font-size: var(--ms1);
-      line-height: 1.3;
-    }
-
-    h2 {
-      font-size: var(--ms-1);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms-1);
+      }
     }
   }
 }
@@ -692,25 +588,18 @@
 // Oswald
 // ----------------------------------------------------------------------------
 .oswald-sample {
-  background-color: #25408F;
+  background: #25408F;
 
   .text {
     color: #EC1C23;
-    margin: 0 auto;
     max-width: 960px;
 
     h1 {
-      font-size: var(--ms16);
-      font-weight: 900;
-      line-height: 1;
-    }
-  }
-}
+      font: 900 var(--ms16)/1 var(--oswald);
 
-@media screen and (max-width: $mobile) {
-  .oswald-sample .text {
-    h1 {
-      font-size: var(--ms11);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms11);
+      }
     }
   }
 }
@@ -718,19 +607,19 @@
 // Playfair Display
 // ----------------------------------------------------------------------------
 .playfair-display-sample {
-  background-color: #55AF8C;
+  background: #55AF8C;
 
   .text {
-    margin: 0 auto;
     text-align: center;
 
     h1 {
       color: #F6F3CF;
+      font: italic 400 var(--ms11)/0.7 var(--playfair-display);
       font-feature-settings: 'smcp', 'dlig';
-      font-size: var(--ms11);
-      font-style: italic;
-      font-weight: 400;
-      line-height: 0.7;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms6);
+      }
 
       &:nth-child(3) {
         font-weight: 900;
@@ -741,22 +630,11 @@
 
     p {
       color: #272727;
-      font-size: var(--ms4);
-      font-style: italic;
-      font-weight: 400;
-      line-height: 1;
-    }
-  }
-}
+      font: italic 400 var(--ms4)/1 var(--playfair-display);
 
-@media screen and (max-width: $mobile) {
-  .playfair-display-sample .text {
-    h1 {
-      font-size: var(--ms6);
-    }
-
-    p {
-      font-size: var(--ms2);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
     }
   }
 }
@@ -764,51 +642,44 @@
 // Rakkas
 // ----------------------------------------------------------------------------
 .rakkas-sample {
-  background-color: #FFF;
+  background: #FFF;
 
   .text {
     color: #272727;
-    margin: 0 auto;
     max-width: 1200px;
     text-align: center;
     text-transform: uppercase;
 
     h2, h4 {
       display: flex;
-      font-size: var(--ms12);
-      line-height: 0.8;
+      font: 400 var(--ms12)/0.8 var(--rakkas);
       justify-content: space-between;
       margin: 0 0.05em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms8);
+      }
     }
 
     h3 {
       color: #F00E31;
-      font-size: var(--ms9);
+      font: 400 var(--ms9)/0.8 var(--rakkas);
       letter-spacing: 0.085em;
-      line-height: 0.8;
       margin: 0 0 0.05em 0.2em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+        letter-spacing: 0.07em;
+      }
     }
 
     .bullet {
       align-self: center;
       font-size: var(--ms10) !important;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .rakkas-sample .text {
-    h2, h4 {
-      font-size: var(--ms8);
-    }
-
-    h3 {
-      font-size: var(--ms5);
-      letter-spacing: 0.07em;
-    }
-
-    .bullet {
-      font-size: var(--ms6) !important;
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms6) !important;
+      }
     }
   }
 }
@@ -816,17 +687,18 @@
 // Source Serif Pro
 // ----------------------------------------------------------------------------
 .source-serif-pro-sample {
-  background-color: #FCDEE0;
+  background: #FCDEE0;
 
   .text {
     color: #272727;
-    margin: 0 auto;
 
     h1 {
-      font-size: var(--ms11);
-      font-weight: 400;
+      font: 400 var(--ms11)/0.8 var(--source-serif-pro);
       letter-spacing: -0.03em;
-      line-height: 0.8;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms6);
+      }
     }
 
     h1:first-child {
@@ -835,18 +707,10 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .source-serif-pro-sample .text {
-    h1 {
-      font-size: var(--ms6);
-    }
-  }
-}
-
 // Vollkorn
 // ----------------------------------------------------------------------------
 .vollkorn-sample {
-  background-color: #00237D;
+  background: #00237D;
 
   .text {
     color: #FFFCFB;
@@ -854,22 +718,23 @@
     flex-grow: unset;
     grid: 1fr / 1fr 4fr;
     grid-gap: 1.5em;
-    margin: 0 auto;
     max-width: 760px;
 
     h1,
     h2,
     p {
-      font-feature-settings: 'dlig' off;
       font-size: var(--ms3);
       line-height: 1.4;
-
     }
 
     h1 {
-      font-feature-settings: 'smcp', 'dlig' off;
+      font-feature-settings: 'smcp';
       grid-area: 1 / 1;
       text-align: right;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms0);
+      }
     }
 
     h2 {
@@ -878,23 +743,18 @@
       line-height: 1.3;
       margin-bottom: 0.2em;
       text-align: right;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms-1);
+      }
     }
 
     p {
       grid-area: 1 / 2;
-    }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  .vollkorn-sample .text {
-    h1,
-    p {
-      font-size: var(--ms0);
-    }
-
-    h2 {
-      font-size: var(--ms-1);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms0);
+      }
     }
   }
 }
@@ -902,25 +762,18 @@
 // Zilla Slab
 // ----------------------------------------------------------------------------
 .zilla-slab-sample {
-  background-image: linear-gradient(-90deg, #2f86d7, #1cf5ba);
+  background: linear-gradient(-90deg, #2f86d7, #1cf5ba);
 
   .text {
     color: #FFF;
-    margin: 0 auto;
     max-width: 820px;
 
     h1 {
-      font-size: var(--ms6);
-      font-weight: 300;
-      line-height: 1.2;
-    }
-  }
-}
+      font: 300 var(--ms6)/1.2 var(--zilla-slab);
 
-@media screen and (max-width: $mobile) {
-  .zilla-slab-sample .text {
-    h1 {
-      font-size: var(--ms2);
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
     }
   }
 }

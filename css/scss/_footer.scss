@@ -29,6 +29,27 @@ footer.grid {
     }
   }
 
+  .footer-type-list {
+    @media screen and (max-width: $tablet) {
+      grid-area: span 1 / span 4;
+    }
+
+    @media screen and (max-width: $mobile) {
+      grid-area: span 1 / span 6;
+    }
+  }
+
+  .footer-patreon,
+  .footer-newsletter {
+    @media screen and (max-width: $tablet) {
+      grid-area: span 1 / span 12;
+    }
+
+    @media screen and (max-width: $mobile) {
+      grid-area: span 1 / span 6;
+    }
+  }
+
   .footer-patreon-content {
     display: flex;
 
