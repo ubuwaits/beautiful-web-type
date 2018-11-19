@@ -1,5 +1,8 @@
 # Changelog
 
+## 2018 Nov 19
+* **Improve layout and design for tablets**.
+
 ## 2018 Nov 09
 * **Added first group of [recommended typeface pairings](https://beautifulwebtype.com/pairings/)**. Each pairing example is also available from the detail pages of the respective typefaces.
 
