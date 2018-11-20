@@ -13,7 +13,7 @@
 .aileron { font-family: 'Aileron'; }
 
 .page-header {
-  margin: 3em 0 5em 0;
+  margin: 1.5em 0 2em;
 
   @media screen and (max-width: $tablet) {
     margin: 1em 0 0 0;
@@ -39,6 +39,16 @@
   a {
     color: var(--red);
     font-weight: 400;
+  }
+}
+
+.page-subhead {
+  font: italic 400 var(--ms6)/1 var(--alegreya-sans);  
+
+  @media screen and (max-width: $tablet) {
+    font-size: var(--ms3);
+    grid-area: span 1 / span 6 !important;
+    margin-top: 1em;
   }
 }
 

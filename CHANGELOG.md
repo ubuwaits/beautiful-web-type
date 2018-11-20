@@ -2,6 +2,7 @@
 
 ## 2018 Nov 20
 * **Added [Poppins](https://beautifulwebtype.com/poppins/)**
+* **Updated home page to show only 10 latest typefaces as well as pairings**. Given the number of typefaces now on the site, showing them all was causing the home page to load too slowly.
 
 ## 2018 Nov 19
 * **Improved layout and design for tablets**

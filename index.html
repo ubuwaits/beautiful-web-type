@@ -6,9 +6,6 @@ body-head-content:
   <meta property='og:title' content='Definitive Guide to Open-Source Type'>
   <meta property='og:image' content='https://beautifulwebtype.com/assets/images/card.png'>
   <link rel='preload' href='/assets/fonts/alegreya-sans/AlegreyaSans-Italic.woff2' as='font' type='font/woff2' crossorigin='anonymous'>
-  <link rel='preload' href='/assets/fonts/alegreya/Alegreya-Regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'>
-  <link rel='preload' href='/assets/fonts/alegreya/Alegreya-Medium.woff2' as='font' type='font/woff2' crossorigin='anonymous'>
-  <link rel='preload' href='/assets/fonts/alegreya/Alegreya-Italic.woff2' as='font' type='font/woff2' crossorigin='anonymous'>
 ---
 
 <div class='samples grid'>
@@ -17,10 +14,17 @@ body-head-content:
   </div>
 
   <div class='gr1 gc6 page-header asc center'>
-    <p>Welcome to the completely new Beautiful Web Type. There are {{ site.data.typefaces | size }} featured typefaces, with new ones continously added.</p>
+    <p>There are {{ site.data.typefaces | size }} featured typefaces, with new ones continously added. Below are the latest 10 featured typefaces.</p>
   </div>
 
-  {% for typeface in site.data.typefaces %}
+  {% assign latest_typefaces = site.data.typefaces | sort: 'date-added' | reverse %}
+  {% for typeface in latest_typefaces limit:10 %}
     {% include sample.html %}
+  {% endfor %}
+
+  {% assign pairings = site.data.pairings %}
+  <h2 class='page-subhead gc1 gc12 ase'>Latest pairings</h2>
+  {% for pairing in pairings %}
+    {% include pairing-sample.html %}
   {% endfor %}
 </div>
