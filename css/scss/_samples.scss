@@ -235,6 +235,43 @@
   }
 }
 
+// Colus
+// ----------------------------------------------------------------------------
+.colus-sample {
+  background: #ECE4B0;
+
+  .text {
+    text-align: center;
+
+    h1 {
+      color: #BF921C;
+      font: 400 var(--ms11)/1 var(--colus);
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms9);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
+    }
+
+    h2 {
+      color: #6A6C57;
+      font: 400 var(--ms9)/1 var(--colus);
+      letter-spacing: 0.05em;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms7);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
+    }
+  }
+}
+
 // Cooper Hewitt
 // ----------------------------------------------------------------------------
 .cooper-hewitt-sample {

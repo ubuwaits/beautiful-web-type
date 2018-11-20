@@ -17,6 +17,7 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ### 2018 Nov 20
 * **Added [Poppins](https://beautifulwebtype.com/poppins/)**
+* **Added [Colus](https://beautifulwebtype.com/colus/)**
 * **Updated home page to show only 10 latest typefaces as well as pairings**. Given the number of typefaces now on the site, showing them all was causing the home page to load too slowly.
 
 ### 2018 Nov 19
@@ -36,6 +37,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Archivo Black](https://beautifulwebtype.com/archivo-black/)
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/)
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
+* [Colus](https://beautifulwebtype.com/colus/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [FiraGo](https://beautifulwebtype.com/firago/)
 * [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)

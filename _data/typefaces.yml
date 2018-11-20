@@ -78,6 +78,19 @@
   description: BioRhyme Expanded takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme Expanded and its sister face BioRhyme take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
   sample-html: '<h1>fat</h1><h2>burger</h2>'
 
+- name: Colus
+  date-added: 2018-11-20
+  creator: Stan Partalev
+  creator-url: https://www.behance.net/stanpartal2a78
+  category: Display
+  styles: 1
+  project-url: https://www.fontfabric.com/colus/
+  latest-version: v1.0
+  release-date: 19 Feb 2018
+  description: Colus is a display face inspired by letters carved in stone and wood. It’s useful for large headlines, logos and signs. It includes support for both Latin and Cyrillic character sets.
+  sample-html: '<h1>Meditations</h1><h2>Marcus Aurelius</h2>'
+  sample-shade: light
+
 - name: Cooper Hewitt
   date-added: 2018-10-15
   creator: Chester Jenkins
@@ -232,7 +245,7 @@
   latest-version: v5.001
   release-date: 26 Mar 2018
   g-fonts-url: https://fonts.google.com/specimen/Poppins
-  description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari writing systems.
+  description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari chararacter sets.
   sample-html: '<h1>Lennon</h1><h1>McCartney</h1><h1>Harrison</h1><h1>& Starr</h1>'
 
 - name: Rakkas
