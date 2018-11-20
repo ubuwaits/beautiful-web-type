@@ -222,6 +222,19 @@
   description: Playfair Display is a transitional serif well-suited to headlines and titles. It has a very large x-height, short descenders, and extra short capitals. It offers a wide variety of typographic flavor with three weights, a beautiful italic and small caps, and a number of OpenType features.
   sample-html: '<h1>the isms go</h1><h1>the ist dies</h1><h1>art remains</h1><p>Vladimir Nabokov</p>'
 
+- name: Poppins
+  date-added: 2018-11-19
+  creator: Indian Type Foundry
+  creator-url: https://www.indiantypefoundry.com
+  category: Sans-Serif
+  styles: 18
+  project-url: https://github.com/itfoundry/Poppins
+  latest-version: v5.001
+  release-date: 26 Mar 2018
+  g-fonts-url: https://fonts.google.com/specimen/Poppins
+  description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari writing systems.
+  sample-html: '<h1>Lennon</h1><h1>McCartney</h1><h1>Harrison</h1><h1>& Starr</h1>'
+
 - name: Rakkas
   date-added: 2018-10-22
   creator: Zeynep Akay

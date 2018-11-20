@@ -639,6 +639,23 @@
   }
 }
 
+// Poppins
+// ----------------------------------------------------------------------------
+.poppins-sample {
+  background: #000;
+
+  .text {
+    h1 {
+      color: #FFF;
+      font: 700 var(--ms10)/0.9 var(--poppins);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
+    }
+  }
+}
+
 // Rakkas
 // ----------------------------------------------------------------------------
 .rakkas-sample {

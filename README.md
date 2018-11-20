@@ -15,16 +15,14 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Nov 20
+* **Added [Poppins](https://beautifulwebtype.com/poppins/)**
+
 ### 2018 Nov 19
-* **Improve layout and design for tablets**.
+* **Improved layout and design for tablets**
 
 ### 2018 Nov 09
 * **Added first group of [recommended typeface pairings](https://beautifulwebtype.com/pairings/)**. Each pairing example is also available from the detail pages of the respective typefaces.
-
-### 2018 Nov 06
-* **Added short description for each typeface**
-
-* **Updated the sample for [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)**
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -48,6 +46,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Lora](https://beautifulwebtype.com/lora/)
 * [Oswald](https://beautifulwebtype.com/oswald/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)
+* [Poppins](https://beautifulwebtype.com/poppins/)
 * [Rakkas](https://beautifulwebtype.com/rakkas/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/)
