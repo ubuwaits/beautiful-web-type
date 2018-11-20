@@ -22,26 +22,26 @@
   }
 
   a {
-    background-color: #fff;
-    border: 1px solid #e7e7e7;
-    color: #373737;
-    font: 700 var(--ms0)/1 var(--alegreya-sans);
-    padding: 0.9em 1.8em;
+    background: #000;
+    border-radius: 2px;
+    color: #FFF;
+    font: 700 var(--ms1)/1 var(--alegreya-sans);
+    padding: 0.7em 1.4em;
     text-align: center;
     text-transform: uppercase;
 
     @media screen and (max-width: $mobile) {
       flex-basis: 100%;
-      padding: 0.8em 1em;
+      padding: 0.7em 0;
     }
 
     &:hover {
-      border-color: var(--red);
-      color: var(--red);
+      background: var(--red);
     }
 
     span {
       display: block;
+      font-size: var(--ms0);
       font-weight: 500;
       text-transform: none;
     }
@@ -119,7 +119,7 @@
   justify-content: center;
   padding: 2em;
 
-  @media screen and (max-width: $mobile) {  
+  @media screen and (max-width: $mobile) {
     padding: 1em !important;
   }
 
