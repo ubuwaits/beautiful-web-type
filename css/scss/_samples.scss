@@ -330,31 +330,24 @@
 // IBM Plex Mono
 // ----------------------------------------------------------------------------
 .ibm-plex-mono-sample {
-  background: #FFF;
+  background: #AED0D8;
 
   .text {
-    color: #000;
-    max-width: 720px;
+    max-width: 700px;
 
-    .copy {
-      font: 300 var(--ms2)/1.4 var(--ibm-plex-mono);
+    p {
+      color: #9A4C22;
+      font: 450 var(--ms2)/1.4 var(--ibm-plex-mono);
+      margin-bottom: 1em;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms0);
       }
-
-      em {
-        background-color: yellow;
-      }
     }
 
     .title {
-      font: 500 var(--ms1)/1.2 var(--ibm-plex-mono);
-      margin-top: 1em;
-
-      @media screen and (max-width: $mobile) {
-        font-size: var(--ms-1);
-      }
+      color: #433D3A;
+      font-weight: 500;
     }
   }
 }
@@ -396,15 +389,15 @@
 // IBM Plex Sans Condensed
 // ----------------------------------------------------------------------------
 .ibm-plex-sans-condensed-sample {
-  background: #000;
+  background: #FC7609;
 
   .text {
     display: grid;
     flex-grow: unset;
     grid: 1fr / 1fr;
     max-width: 1100px;
-    place-items: center;
-    text-transform: uppercase;
+    place-items: start;
+    text-transform: lowercase;
 
     h1, h2 {
       grid-column: 1 / 1;
@@ -412,8 +405,8 @@
     }
 
     h1 {
-      color: #FFF;
-      font: 700 var(--ms17)/1 var(--ibm-plex-sans-condensed);
+      color: #FDF8E3;
+      font: 600 var(--ms17)/1 var(--ibm-plex-sans-condensed);
       letter-spacing: -0.05em;
 
       @media screen and (max-width: $tablet) {
@@ -426,12 +419,9 @@
     }
 
     h2 {
-      background: #000;
-      color: #EC2039;
-      font: 200 var(--ms7)/1 var(--ibm-plex-sans-condensed);
-      justify-self: stretch;
-      padding: 0.05em 0;
-      text-align: right;
+      color: #130107;
+      font: 700 var(--ms10)/1.5 var(--ibm-plex-sans-condensed);
+      padding-left: 0.2em;
 
       @media screen and (max-width: $tablet) {
         font-size: var(--ms4);
@@ -451,11 +441,10 @@
 
   .text {
     color: #272727;
-    max-width: 1020px;
+    max-width: 800px;
 
     h1 {
-      font: italic 200 var(--ms7)/1.2 var(--ibm-plex-serif);
-      letter-spacing: -0.03em;
+      font: italic 200 var(--ms6)/1.2 var(--ibm-plex-serif);
       text-indent: -0.45em;
 
       @media screen and (max-width: $mobile) {
@@ -528,6 +517,7 @@
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms5);
+        margin: 1.5em 0;
       }
     }
   }
@@ -686,7 +676,7 @@
 // Rakkas
 // ----------------------------------------------------------------------------
 .rakkas-sample {
-  background: #FFF;
+  background: #FFFEFA;
 
   .text {
     color: #272727;
@@ -694,9 +684,9 @@
     text-align: center;
     text-transform: uppercase;
 
-    h2, h4 {
+    h2 {
       display: flex;
-      font: 400 var(--ms12)/0.8 var(--rakkas);
+      font: 400 var(--ms13)/0.8 var(--rakkas);
       justify-content: space-between;
       margin: 0 0.05em;
 
@@ -707,7 +697,7 @@
 
     h3 {
       color: #F00E31;
-      font: 400 var(--ms9)/0.8 var(--rakkas);
+      font: 400 var(--ms10)/0.8 var(--rakkas);
       letter-spacing: 0.085em;
       margin: 0 0 0.05em 0.2em;
 
@@ -717,9 +707,18 @@
       }
     }
 
+    h2:first-child {
+      border-top: 0.05em solid #272727;
+      padding-top: 0.07em;
+    }
+
+    h2:last-child {
+      border-bottom: 0.05em solid #272727;
+    }
+
     .bullet {
       align-self: center;
-      font-size: var(--ms10) !important;
+      font-size: var(--ms11) !important;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms6) !important;

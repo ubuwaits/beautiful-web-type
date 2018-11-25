@@ -114,7 +114,7 @@
   release-date: 22 Oct 2018
   g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Mono
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
-  sample-html: '<p class="copy">The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point. Frequently the messages have <em>meaning</em>; that is they refer to or are correlated according to some system with certain physical or conceptual entities. These semantic aspects of communication are irrelevant to the engineering problem. The significant aspect is that the actual message is one <em>selected from a set</em> of possible messages.</p><p class="title"><span>Claude Shannon, &lsquo;A Mathematical Theory of Communication&rsquo;</span></p>'
+  sample-html: '<p><strong>(2)</strong> The <em>square</em> of a relation is that relation which hold between two terms <em>x</em> and <em>z</em> when there is no intermediate term <em>y</em> such that the given relation holds between <em>x</em> and <em>y</em> and between <em>y</em> and <em>z</em>. Thus “paternal grandfather” is the square of “father”, “greater by 2” is the square of “greater by 1”, and so on.</p><p class="title"><span>Bertrand Russell, <em>Introduction to Mathematical Philosophy</em>, pp 32–3</span></p>'
   sample-shade: light
 
 - name: IBM Plex Sans
@@ -258,7 +258,7 @@
   release-date: 10 Apr 2016
   g-fonts-url: https://fonts.google.com/specimen/Rakkas
   description: Rakkas is a single-weight display typeface supporting both Arabic and Latin scrips. The Latin is based on a blackletter style, but borrows heavily from the Arabic design, with heavy calligraphic strokes.
-  sample-html: '<h2><span>On</span><span class="bullet">&bull;</span><span>The</span></h2><h3>Shortness</h3><h4><span>of</span><span class="bullet">&bull;</span><span>life</span></h4>'
+  sample-html: '<h2><span>On</span><span class="bullet">&bull;</span><span>The</span></h2><h3>Shortness</h3><h2><span>of</span><span class="bullet">&bull;</span><span>life</span></h2>'
   sample-shade: light
 
 - name: Source Serif Pro
