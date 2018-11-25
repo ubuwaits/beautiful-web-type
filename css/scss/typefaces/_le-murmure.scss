@@ -1,0 +1,10 @@
+:root { --le-murmure: 'Le Murmure', serif; }
+.le-murmure { font-family: 'Le Murmure', serif; }
+
+@font-face {
+  font-family: 'Le Murmure';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/le-murmure/Le_Murmure-Regular.woff2') format('woff2'),
+       url('/assets/fonts/le-murmure/Le_Murmure-Regular.woff') format('woff');
+}

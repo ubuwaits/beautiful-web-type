@@ -1,0 +1,179 @@
+---
+layout: detail
+permalink: /le-murmure/
+title: Le Murmure
+description: Complete guide to the free font Le Murmure. See beautiful examples, recommended pairings, OpenType features, and more.
+body-class: display detail
+body-head-content:
+  <meta property='og:image' content='https://beautifulwebtype.com/assets/images/le-murmure.png'>
+  <meta property='og:title' content='Complete Guide to Le Murmure'>
+---
+
+{% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+{% assign text = site.data.text %}
+
+<div class='grid {{ typeface.name | downcase | replace: ' ', '-' }}'>
+  <header class='type-detail-header gr1 gc6'>
+    <h2>{{ typeface.name }}<br> by {{ typeface.creator }}</h2>
+  </header>
+
+  <div class='font-download gr1 gc6'>
+    <a href='{{ typeface.project-url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+  </div>
+
+  {% include sample.html %}
+
+  <div class='type-styles gr1 gc6'>
+    <p class='w400'>Regular <span class='weight'>400</span></p>
+  </div>
+
+  <div class='type-info gr1 gc3'>
+    <h3>Description</h3>
+    <h4>{{ typeface.description }}</h4>
+  </div>
+
+  <div class='type-info gr1 gc3'>
+    <h3>Designed by</h3>
+    <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
+
+    <h3>Category</h3>
+    <h4>{{ typeface.category }}</h4>
+
+    <h3>No. of styles</h3>
+    <h4>{{ typeface.styles }}</h4>
+  </div>
+
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Characters</p>
+    </div>
+    <div class='examples character-examples flow-row'>
+      {% include characters.html %}
+    </div>
+  </div>
+
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Words</p>
+    </div>
+    <div class='examples word-examples flow-column flow-center'>
+      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.word-01 }}</h1></div>
+      <div><h1 class='ms7 w400 upper' contenteditable='true'>{{ text.word-02 }}</h1></div>
+      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.word-03 }}</h1></div>
+      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.word-04 }}</h1></div>
+      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.word-05 }}</h1></div>
+      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.word-06 }}</h1></div>
+      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.word-07 }}</h1></div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr3 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Headlines</p>
+    </div>
+    <div class='examples flow-column'>
+      <div>
+        <h1 class='ms9 w400' contenteditable='true'>{{ text.headline-01 }}</h1>
+        <p class='character-label'>400</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr3 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Standard Ligatures</p>
+      <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+    </div>
+    <div class='examples flow-row'>
+      <div><span class='fade ms8'>ff</span> <span class='liga ms8'>ff</span></div>
+      <div><span class='fade ms8'>ffi</span> <span class='liga ms8'>ffi</span></div>
+      <div><span class='fade ms8'>ffl</span> <span class='liga ms8'>ffl</span></div>
+      <div><span class='fade ms8'>fi</span> <span class='liga ms8'>fi</span></div>
+      <div><span class='fade ms8'>fl</span> <span class='liga ms8'>fl</span></div>
+      <div><span class='fade ms8'>VTF</span> <span class='liga ms8'>VTF</span></div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr4 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Figures</p>
+    </div>
+    <div class='examples flow-column flow-center'>
+      <div>
+        <h1 class='oldstyle-proportional'>1234567890</h1>
+        <p class='character-label'>Proportional Oldstyle (default): 'pnum', 'onum'</p>
+      </div>
+
+      <div>
+        <h1 class='lining-proportional'>1234567890</h1>
+        <p class='character-label'>Proportional Lining: 'pnum', 'lnum'</p>
+      </div>
+
+      <div>
+        <h1><span class='fade'>0</span> <span class='zero'>0</span></h1>
+        <p class='character-label'>Slashed Zero: 'zero'</p>
+      </div>
+
+      <div>
+        <h1 class='fractions'>1/2 3/4 5/6 7/8 90/123</h1>
+        <p class='character-label'>Fractions: 'frac';</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr4 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Alternate Glyph Forms</p>
+      <p class='code'>font-feature-settings: 'ss--';</p>
+    </div>
+    <div class='examples flow-row'>
+      <div><span class='fade'>A</span> <span class='ss03'>A</span> <p class='code'>'ss03'</p></div>
+      <div><span class='fade'>Æ</span> <span class='ss03'>Æ</span> <p class='code'>'ss03'</p></div>
+      <div><span class='fade'>C</span> <span class='ss06'>C</span> <p class='code'>'ss06'</p></div>
+      <div><span class='fade'>f</span> <span class='ss01'>f</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>j</span> <span class='ss01'>j</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>M</span> <span class='ss01'>M</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>M</span> <span class='ss02'>M</span> <p class='code'>'ss02'</p></div>
+      <div><span class='fade'>M</span> <span class='ss05'>M</span> <p class='code'>'ss05'</p></div>
+      <div><span class='fade'>m</span> <span class='ss01'>m</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>m</span> <span class='ss02'>m</span> <p class='code'>'ss02'</p></div>
+      <div><span class='fade'>N</span> <span class='ss01'>N</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>N</span> <span class='ss02'>N</span> <p class='code'>'ss02'</p></div>
+      <div><span class='fade'>n</span> <span class='ss01'>n</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>n</span> <span class='ss02'>n</span> <p class='code'>'ss02'</p></div>
+      <div><span class='fade'>Q</span> <span class='ss07'>Q</span> <p class='code'>'ss07'</p></div>
+      <div><span class='fade'>R</span> <span class='ss07'>R</span> <p class='code'>'ss07'</p></div>
+      <div><span class='fade'>r</span> <span class='ss04'>r</span> <p class='code'>'ss04'</p></div>
+      <div><span class='fade'>S</span> <span class='ss01'>S</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>s</span> <span class='ss01'>s</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>W</span> <span class='ss05'>W</span> <p class='code'>'ss05'</p></div>
+      <div><span class='fade'>Z</span> <span class='ss01'>Z</span> <p class='code'>'ss01'</p></div>
+      <div><span class='fade'>z</span> <span class='ss01'>z</span> <p class='code'>'ss01'</p></div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr2 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Case Sensitive Forms</p>
+      <p class='code'>font-feature-settings: 'case';</p>
+    </div>
+    <div class='examples flow-row'>
+      <div><span class='fade'>()</span> <span class='case'>()</span></div>
+      <div><span class='fade'>-</span> <span class='case'>-</span></div>
+      <div><span class='fade'>¿</span> <span class='case'>¿</span></div>
+    </div>
+  </div>
+
+  <div class='type-detail-table gr2 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Special Characters and Symbols</p>
+    </div>
+    <div class='examples flow-row'>
+      <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
+      <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
+      <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
+      <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
+      <div><span>&#9889;</span> <p class='code'>&amp;#9889;</p></div>
+    </div>
+  </div>
+</div>

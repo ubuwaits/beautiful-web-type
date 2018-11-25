@@ -235,42 +235,6 @@
   }
 }
 
-// Colus
-// ----------------------------------------------------------------------------
-.colus-sample {
-  background: #ECE4B0;
-
-  .text {
-    text-align: center;
-
-    h1 {
-      color: #BF921C;
-      font: 400 var(--ms11)/1 var(--colus);
-
-      @media screen and (max-width: $tablet) {
-        font-size: var(--ms9);
-      }
-
-      @media screen and (max-width: $mobile) {
-        font-size: var(--ms5);
-      }
-    }
-
-    h2 {
-      color: #6A6C57;
-      font: 400 var(--ms9)/1 var(--colus);
-      letter-spacing: 0.05em;
-
-      @media screen and (max-width: $tablet) {
-        font-size: var(--ms7);
-      }
-
-      @media screen and (max-width: $mobile) {
-        font-size: var(--ms3);
-      }
-    }
-  }
-}
 
 // Cooper Hewitt
 // ----------------------------------------------------------------------------
@@ -444,7 +408,6 @@
     h1, h2 {
       grid-column: 1 / 1;
       grid-row: 1 / 1;
-      text-transform: uppercase;
     }
 
     h1 {
@@ -538,6 +501,32 @@
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms1);
+      }
+    }
+  }
+}
+
+// Le Murmure
+// ----------------------------------------------------------------------------
+.le-murmure-sample {
+  background: #0B0731;
+
+  .text {
+    text-align: center;
+
+    h1 {
+      background: linear-gradient(25deg, #221D52, #2389C8, #E63595, #F490A9);
+      -webkit-background-clip: text;
+      color: transparent;
+      font: 400 var(--ms12)/1 var(--le-murmure);
+      text-transform: uppercase;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms9);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
       }
     }
   }

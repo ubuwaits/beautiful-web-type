@@ -10,8 +10,6 @@
 :root { --jost: 'Jost*', sans-serif; }
 .jost { font-family: 'Jost*', sans-serif; }
 
-.aileron { font-family: 'Aileron'; }
-
 .page-header {
   margin: 1.5em 0 2em;
 
@@ -43,7 +41,7 @@
 }
 
 .page-subhead {
-  font: italic 400 var(--ms6)/1 var(--alegreya-sans);  
+  font: italic 400 var(--ms6)/1 var(--alegreya-sans);
 
   @media screen and (max-width: $tablet) {
     font-size: var(--ms3);

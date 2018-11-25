@@ -15,16 +15,17 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Nov 25
+* **Added [Le Murmure](https://beautifulwebtype.com/le-murmure/)**
+* **Removed Colus**. After adding this typeface earlier in the week, I discovered that it was free but not open-source. After some thought I’ve decided to focus exclusively on open-source, rather than just free, typefaces.
+
 ### 2018 Nov 20
 * **Added [Poppins](https://beautifulwebtype.com/poppins/)**
-* **Added [Colus](https://beautifulwebtype.com/colus/)**
+* **Added Colus**
 * **Updated home page to show only 10 latest typefaces as well as pairings**. Given the number of typefaces now on the site, showing them all was causing the home page to load too slowly.
 
 ### 2018 Nov 19
 * **Improved layout and design for tablets**
-
-### 2018 Nov 09
-* **Added first group of [recommended typeface pairings](https://beautifulwebtype.com/pairings/)**. Each pairing example is also available from the detail pages of the respective typefaces.
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018 Nov 25
+* **Added [Le Murmure](https://beautifulwebtype.com/le-murmure/)**
+* **Removed Colus**. After adding this typeface earlier in the week, I discovered that it was free but not open-source. After some thought I’ve decided to focus exclusively on open-source, rather than just free, typefaces.
+
 ## 2018 Nov 20
 * **Added [Poppins](https://beautifulwebtype.com/poppins/)**
 * **Added [Colus](https://beautifulwebtype.com/colus/)**

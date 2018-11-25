@@ -78,19 +78,6 @@
   description: BioRhyme Expanded takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme Expanded and its sister face BioRhyme take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
   sample-html: '<h1>fat</h1><h2>burger</h2>'
 
-- name: Colus
-  date-added: 2018-11-20
-  creator: Stan Partalev
-  creator-url: https://www.behance.net/stanpartal2a78
-  category: Display
-  styles: 1
-  project-url: https://www.fontfabric.com/colus/
-  latest-version: v1.0
-  release-date: 19 Feb 2018
-  description: Colus is a display face inspired by letters carved in stone and wood. It’s useful for large headlines, logos and signs. It includes support for both Latin and Cyrillic character sets.
-  sample-html: '<h1>Meditations</h1><h2>Marcus Aurelius</h2>'
-  sample-shade: light
-
 - name: Cooper Hewitt
   date-added: 2018-10-15
   creator: Chester Jenkins
@@ -181,6 +168,18 @@
   release-date: 21 Sep 2018
   description: Jost* is a sans-serif inspired by Futura, but with a larger x-height and more balanced capital forms. It features nine weights and two styles and is under active development.
   sample-html: '<h1>Vivre Sa Vie</h1><h2>Film En Douze Tableaux</h2>'
+
+- name: Le Murmure
+  date-added: 2018-11-25
+  creator: Jérémy Landes
+  creator-url: http://studiotriple.fr
+  category: Display
+  styles: 1
+  project-url: https://velvetyne.fr/fonts/le-murmure/
+  latest-version: v1.0
+  release-date: 10 Sep 2018
+  description: Designed especially for the French design agency <a href='https://murmure.me/'>Murmure</a>, Le Murmure is a distinctive sans-serif display typeface. Available in a single weight, it features a wealth of alternate glyphs.
+  sample-html: '<h1>&#9889; Oneohtrix Point Never &#9889;</h1>'
 
 - name: Libre Franklin
   date-added: 2018-10-15
