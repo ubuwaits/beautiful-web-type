@@ -288,6 +288,19 @@
   description: "Vollkorn is the German word for ‘wholemeal’, which designer Friedrich Althausen felt described this ‘dark, sturdy, and grainy’ serif well. It offers six weights, small caps, and a number of OpenType features, making it perfect for (to stretch this analogy even further) everyday, bread and butter usage."
   sample-html: '<h1 class="w500">shinichi<br> nakazawa</h1><h2 class="w400 italic ase">Beyond<br> Development:<br> Rediscovering<br> Nature’s<br> Wisdom</h2><p>Technology was not given so humankind could ride roughshod over nature and wreak irreparable changes. Rather, technology is to draw out the hidden essence of all nature so that it can sparkle with new purpose. Technology is not to enslave and command life but to draw forth the infinite possibilities locked within all life and to open new realms of significance. <span class="ms-1">&#9670;</span></p>'
 
+- name: Work Sans
+  date-added: 2018-11-26
+  creator: Wei Huang
+  creator-url: https://twitter.com/w__h_
+  category: Sans-Serif
+  styles: 18
+  project-url: https://github.com/weiweihuanghuang/Work-Sans
+  latest-version: v2.0
+  release-date: 23 Nov 2018
+  g-fonts-url: https://fonts.google.com/specimen/Work+Sans
+  description: "Work Sans is a sans-serif inspired by early Grotesque faces. It recently received a major update, adding an italic style and a wide selection of OpenType features. The face has a slightly playful feel, especially at heavier weights."
+  sample-html: '<h1>Say! I like green eggs and ham!<br>I do! I like them, Sam-I-Am!<br> And I would eat them in a boat.<br>And I would eat them with a goat...</h1>'
+
 - name: Zilla Slab
   date-added: 2018-10-15
   creator: Typotheque

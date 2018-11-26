@@ -802,6 +802,30 @@
   }
 }
 
+// Work Sans
+// ----------------------------------------------------------------------------
+.work-sans-sample {
+  background: #00A451;
+
+  .text {
+    color: #FFF;
+    max-width: 960px;
+
+    h1 {
+      font: 800 var(--ms6)/1.1 var(--work-sans);
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms4);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+        margin: 1em 0;
+      }
+    }
+  }
+}
+
 // Zilla Slab
 // ----------------------------------------------------------------------------
 .zilla-slab-sample {

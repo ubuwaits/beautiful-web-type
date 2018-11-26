@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2018 Nov 26
+* **Added [Work Sans](https://beautifulwebtype.com/work-sans/)**
 * **Updated [Alegreya](https://beautifulwebtype.com/alegreya/) to v2.008**
 
 ## 2018 Nov 25

@@ -16,6 +16,7 @@ I plan on growing this site to be the definitive resource for open-source type. 
 ## Changelog
 
 ### 2018 Nov 26
+* **Added [Work Sans](https://beautifulwebtype.com/work-sans/)**
 * **Updated [Alegreya](https://beautifulwebtype.com/alegreya/) to v2.008**
 
 ### 2018 Nov 25
@@ -55,6 +56,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Rakkas](https://beautifulwebtype.com/rakkas/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/)
+* [Work Sans](https://beautifulwebtype.com/work-sans/)
 * [Zilla Slab](https://beautifulwebtype.com/zilla-slab/)
 
 ## Suggesting Typefaces
