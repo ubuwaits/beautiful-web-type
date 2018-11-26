@@ -1,5 +1,8 @@
 # Changelog
 
+## 2018 Nov 26
+* **Updated [Alegreya](https://beautifulwebtype.com/alegreya/) to v2.008**
+
 ## 2018 Nov 25
 * **Improved the design of several samples**
 * **Added [Le Murmure](https://beautifulwebtype.com/le-murmure/)**

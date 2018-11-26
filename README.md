@@ -15,6 +15,9 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Nov 26
+* **Updated [Alegreya](https://beautifulwebtype.com/alegreya/) to v2.008**
+
 ### 2018 Nov 25
 * **Improved the design of several samples**
 * **Added [Le Murmure](https://beautifulwebtype.com/le-murmure/)**
@@ -24,9 +27,6 @@ I plan on growing this site to be the definitive resource for open-source type. 
 * **Added [Poppins](https://beautifulwebtype.com/poppins/)**
 * **Added Colus**
 * **Updated home page to show only 10 latest typefaces as well as pairings**. Given the number of typefaces now on the site, showing them all was causing the home page to load too slowly.
-
-### 2018 Nov 19
-* **Improved layout and design for tablets**
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
