@@ -2,6 +2,7 @@
 
 ## 2018 Nov 27
 * **Added [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)**
+* **Improved display of figures on detail pages**.
 
 ## 2018 Nov 26
 * **Added [Work Sans](https://beautifulwebtype.com/work-sans/)**
