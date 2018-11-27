@@ -33,7 +33,6 @@ body-head-content:
     <p class='w900'>Black <em>Italic</em> <span class='weight'>900</span></p>
   </div>
 
-
   <div class='type-info gr1 gc3'>
     <h3>Description</h3>
     <h4>{{ typeface.description }}</h4>
@@ -44,7 +43,7 @@ body-head-content:
     <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
 
     <h3>Category</h3>
-    <h4>{{ typeface.category }}</h4>
+    <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
 
     <h3>No. of styles</h3>
     <h4>{{ typeface.styles }}</h4>

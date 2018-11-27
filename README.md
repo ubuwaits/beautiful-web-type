@@ -17,7 +17,7 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ### 2018 Nov 27
 * **Added [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)**
-* **Improved display of figures on detail pages**.
+* **Improved display of figures on detail pages**
 
 ### 2018 Nov 26
 * **Added [Work Sans](https://beautifulwebtype.com/work-sans/)**

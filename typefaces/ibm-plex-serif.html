@@ -45,7 +45,7 @@ body-head-content:
     <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
 
     <h3>Category</h3>
-    <h4>{{ typeface.category }}</h4>
+    <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
 
     <h3>No. of styles</h3>
     <h4>{{ typeface.styles }}</h4>
