@@ -3,48 +3,48 @@
 
 @font-face {
   font-family: 'Playfair Display';
-  src:  url('/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2') format('woff2'),
-	      url('/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff') format('woff');
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  src: url('/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2') format('woff2'),
+	     url('/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src:  url('/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff2') format('woff2'),
-	      url('/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff') format('woff');
+  font-style: italic;
   font-weight: 400;
-  font-style: italic;
+  src: url('/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff2') format('woff2'),
+	     url('/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src:  url('/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff2') format('woff2'),
-	      url('/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff') format('woff');
-  font-weight: 700;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src:  url('/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
-	      url('/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff') format('woff');
   font-weight: 700;
-  font-style: italic;
+  src: url('/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff2') format('woff2'),
+	     url('/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src:  url('/assets/fonts/playfair-display/PlayfairDisplay-Black.woff2') format('woff2'),
-	      url('/assets/fonts/playfair-display/PlayfairDisplay-Black.woff') format('woff');
-  font-weight: 900;
+  font-style: italic;
+  font-weight: 700;
+  src: url('/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+	     url('/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
   font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/playfair-display/PlayfairDisplay-Black.woff2') format('woff2'),
+	     url('/assets/fonts/playfair-display/PlayfairDisplay-Black.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src:  url('/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
-	      url('/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff') format('woff');
-  font-weight: 900;
   font-style: italic;
+  font-weight: 900;
+  src: url('/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+	     url('/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff') format('woff');
 }

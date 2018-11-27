@@ -3,80 +3,80 @@
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-Light.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-Light.woff') format('woff');
+  font-style: normal;
   font-weight: 300;
-  font-style: normal;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-Light.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-Light.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-LightItalic.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-LightItalic.woff') format('woff');
+  font-style: italic;
   font-weight: 300;
-  font-style: italic;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-LightItalic.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-LightItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-Regular.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-Regular.woff') format('woff');
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-Regular.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-Italic.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-Italic.woff') format('woff');
+  font-style: italic;
   font-weight: 400;
-  font-style: italic;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-Italic.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-Italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-Medium.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-Medium.woff') format('woff');
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-Medium.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-Medium.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-MediumItalic.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-MediumItalic.woff') format('woff');
+  font-style: italic;
   font-weight: 500;
-  font-style: italic;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-MediumItalic.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-MediumItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-SemiBold.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-SemiBold.woff') format('woff');
-  font-weight: 600;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.woff') format('woff');
   font-weight: 600;
-  font-style: italic;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-SemiBold.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-SemiBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-Bold.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-Bold.woff') format('woff');
-  font-weight: 700;
+  font-style: italic;
+  font-weight: 600;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
   font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-Bold.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Zilla Slab';
-  src:  url('/assets/fonts/zilla-slab/ZillaSlab-BoldItalic.woff2') format('woff2'),
-	      url('/assets/fonts/zilla-slab/ZillaSlab-BoldItalic.woff') format('woff');
-  font-weight: 700;
   font-style: italic;
+  font-weight: 700;
+  src: url('/assets/fonts/zilla-slab/ZillaSlab-BoldItalic.woff2') format('woff2'),
+	     url('/assets/fonts/zilla-slab/ZillaSlab-BoldItalic.woff') format('woff');
 }

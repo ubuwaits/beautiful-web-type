@@ -3,144 +3,144 @@
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-thin.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-thin.woff') format('woff');
+  font-style: normal;
   font-weight: 100;
-  font-style: normal;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-Thin.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-Thin.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-thinitalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-thinitalic.woff') format('woff');
+  font-style: italic;
   font-weight: 100;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-ThinItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-ThinItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-extralight.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-extralight.woff') format('woff');
+  font-style: normal;
   font-weight: 200;
-  font-style: normal;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-ExtraLight.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-ExtraLight.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-extralightitalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-extralightitalic.woff') format('woff');
+  font-style: italic;
   font-weight: 200;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-ExtraLightItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-ExtraLightItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-light.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-light.woff') format('woff');
+  font-style: normal;
   font-weight: 300;
-  font-style: normal;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-Light.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-Light.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-lightitalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-lightitalic.woff') format('woff');
+  font-style: italic;
   font-weight: 300;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-LightItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-LightItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-regular.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-regular.woff') format('woff');
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-Regular.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-italic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-italic.woff') format('woff');
+  font-style: italic;
   font-weight: 400;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-Italic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-Italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-medium.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-medium.woff') format('woff');
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-Medium.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-Medium.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-mediumitalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-mediumitalic.woff') format('woff');
+  font-style: italic;
   font-weight: 500;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-MediumItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-MediumItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-semibold.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-semibold.woff') format('woff');
+  font-style: normal;
   font-weight: 600;
-  font-style: normal;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-SemiBold.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-SemiBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-semibolditalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-semibolditalic.woff') format('woff');
+  font-style: italic;
   font-weight: 600;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-SemiBoldItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-SemiBoldItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-bold.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-bold.woff') format('woff');
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-Bold.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-bolditalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-bolditalic.woff') format('woff');
+  font-style: italic;
   font-weight: 700;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-BoldItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-BoldItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-extrabold.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-extrabold.woff') format('woff');
-  font-weight: 800;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-extrabolditalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-extrabolditalic.woff') format('woff');
   font-weight: 800;
-  font-style: italic;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-ExtraBold.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-ExtraBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-black.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-black.woff') format('woff');
-  font-weight: 900;
+  font-style: italic;
+  font-weight: 800;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-ExtraBoldItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-ExtraBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
   font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-Black.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-Black.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Libre Franklin';
-  src:  url('/assets/fonts/libre-franklin/librefranklin-blackitalic.woff2') format('woff2'),
-	      url('/assets/fonts/libre-franklin/librefranklin-blackitalic.woff') format('woff');
-  font-weight: 900;
   font-style: italic;
+  font-weight: 900;
+  src: url('/assets/fonts/libre-franklin/LibreFranklin-BlackItalic.woff2') format('woff2'),
+	     url('/assets/fonts/libre-franklin/LibreFranklin-BlackItalic.woff') format('woff');
 }

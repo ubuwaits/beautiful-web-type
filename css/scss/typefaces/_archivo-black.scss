@@ -3,16 +3,16 @@
 
 @font-face {
   font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
   src: url('/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2') format('woff2'),
 	     url('/assets/fonts/archivo-black/ArchivoBlack-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'Archivo Black';
+  font-style: italic;
+  font-weight: 400;
   src: url('/assets/fonts/archivo-black/ArchivoBlack-Italic.woff2') format('woff2'),
 	     url('/assets/fonts/archivo-black/ArchivoBlack-Italic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
 }
