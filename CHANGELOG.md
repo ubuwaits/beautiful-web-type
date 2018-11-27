@@ -1,5 +1,8 @@
 # Changelog
 
+## 2018 Nov 27
+* **Added [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)**
+
 ## 2018 Nov 26
 * **Added [Work Sans](https://beautifulwebtype.com/work-sans/)**
 * **Updated [Alegreya](https://beautifulwebtype.com/alegreya/) to v2.008**

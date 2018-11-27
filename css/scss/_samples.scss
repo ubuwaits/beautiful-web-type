@@ -727,6 +727,41 @@
   }
 }
 
+// Source Sans Pro
+// ----------------------------------------------------------------------------
+.source-sans-pro-sample {
+  background: #295D74;
+
+  .text {
+    color: #F6EFDF;
+    max-width: 900px;
+
+    h1 {
+      font: 700 var(--ms5)/1 var(--source-sans-pro);
+      margin-bottom: 0.67em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms6);
+      }
+    }
+
+    h2 {
+      font: 400 var(--ms2)/1 var(--source-sans-pro);
+      font-feature-settings: 'smcp';
+      margin-bottom: 0.1em;
+    }
+
+    ol {
+      font: 400 var(--ms4)/1.2 var(--source-sans-pro);
+      list-style: lower-roman outside;
+    }
+
+    li {
+      margin-bottom: 0.33em;
+    }
+  }
+}
+
 // Source Serif Pro
 // ----------------------------------------------------------------------------
 .source-serif-pro-sample {

@@ -15,6 +15,9 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Nov 27
+* **Added [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)**
+
 ### 2018 Nov 26
 * **Added [Work Sans](https://beautifulwebtype.com/work-sans/)**
 * **Updated [Alegreya](https://beautifulwebtype.com/alegreya/) to v2.008**
@@ -23,11 +26,6 @@ I plan on growing this site to be the definitive resource for open-source type. 
 * **Improved the design of several samples**
 * **Added [Le Murmure](https://beautifulwebtype.com/le-murmure/)**
 * **Removed Colus**. After adding this typeface earlier in the week, I discovered that it was free but not open-source. After some thought I’ve decided to focus exclusively on open-source, rather than just free, typefaces.
-
-### 2018 Nov 20
-* **Added [Poppins](https://beautifulwebtype.com/poppins/)**
-* **Added Colus**
-* **Updated home page to show only 10 latest typefaces as well as pairings**. Given the number of typefaces now on the site, showing them all was causing the home page to load too slowly.
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -54,6 +52,7 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)
 * [Poppins](https://beautifulwebtype.com/poppins/)
 * [Rakkas](https://beautifulwebtype.com/rakkas/)
+* [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/)
