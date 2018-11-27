@@ -759,7 +759,7 @@
     ol {
       font: 400 var(--ms3)/1.3 var(--source-sans-pro);
       list-style: lower-roman outside;
-    
+
       @media screen and (max-width: $mobile) {
         font-size: var(--ms1);
         list-style: none;
@@ -857,7 +857,7 @@
     max-width: 960px;
 
     h1 {
-      font: 800 var(--ms6)/1.1 var(--work-sans);
+      font: 800 var(--ms6)/1.3 var(--work-sans);
 
       @media screen and (max-width: $tablet) {
         font-size: var(--ms4);
@@ -865,7 +865,6 @@
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms1);
-        line-height: 1.3;
         margin: 1em 0;
       }
     }
