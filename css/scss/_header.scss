@@ -17,7 +17,7 @@
     align-items: flex-end;
     display: flex;
     flex-grow: 1;
-    font: 700 var(--ms0)/1 var(--alegreya-sans);
+    font: 700 var(--ms0)/1 var(--ui-face);
     font-feature-settings: 'cpsp';
     justify-content: center;
     text-transform: uppercase;
@@ -39,7 +39,7 @@
 
       h1 {
         flex-basis: 275px;
-        font: italic 900 var(--ms1)/0.5 var(--alegreya-sans);
+        font: italic 900 var(--ms1)/0.4 var(--alegreya-sans);
         font-feature-settings: 'cpsp';
         text-transform: uppercase;
       }
@@ -57,7 +57,7 @@
 
       a {
         color: var(--red);
-        font: 700 var(--ms0)/1 var(--alegreya-sans);
+        font: 700 var(--ms0)/1 var(--ui-face);
 
         &:hover {
           border-bottom-color: transparent;

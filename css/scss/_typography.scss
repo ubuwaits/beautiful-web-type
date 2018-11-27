@@ -1,5 +1,8 @@
 // Other styles
 // ----------------------------------------------------------------------------
+:root { --ui-face: var(--source-sans-pro); }
+.ui-face { font-family: var(--source-sans-pro); }
+
 .highlight { color: var(--red); }
 
 .fade {

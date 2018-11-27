@@ -40,7 +40,7 @@
   border-top: 1px solid rgba(#FFF, 0.3);
   border-bottom: 0;
   color: #fff;
-  font: 700 var(--ms0)/1 var(--alegreya-sans);
+  font: 700 var(--ms0)/1 var(--ui-face);
   padding: 1.1em 1em 0.9em 1em;
   text-align: left;
 
@@ -741,7 +741,7 @@
       margin-bottom: 0.67em;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms6);
+        font-size: var(--ms4);
       }
     }
 
@@ -752,8 +752,17 @@
     }
 
     ol {
-      font: 400 var(--ms4)/1.2 var(--source-sans-pro);
+      font: 400 var(--ms4)/1.3 var(--source-sans-pro);
       list-style: lower-roman outside;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms3);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+        list-style: none;
+      }
     }
 
     li {
