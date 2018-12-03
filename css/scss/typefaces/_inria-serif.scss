@@ -1,0 +1,50 @@
+:root { --inria-serif: 'Inria Serif', 'Georgia', Times, serif; }
+.inria-serif { font-family: 'Inria Serif', 'Georgia', Times, serif; }
+
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/inria-serif/InriaSerif-Light.woff2') format('woff2'),
+	     url('/assets/fonts/inria-serif/InriaSerif-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: italic;
+  font-weight: 300;
+  src: url('/assets/fonts/inria-serif/InriaSerif-LightItalic.woff2') format('woff2'),
+	     url('/assets/fonts/inria-serif/InriaSerif-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/inria-serif/InriaSerif-Regular.woff2') format('woff2'),
+	     url('/assets/fonts/inria-serif/InriaSerif-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/inria-serif/InriaSerif-Italic.woff2') format('woff2'),
+	     url('/assets/fonts/inria-serif/InriaSerif-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/inria-serif/InriaSerif-Bold.woff2') format('woff2'),
+	     url('/assets/fonts/inria-serif/InriaSerif-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/assets/fonts/inria-serif/InriaSerif-BoldItalic.woff2') format('woff2'),
+	     url('/assets/fonts/inria-serif/InriaSerif-BoldItalic.woff') format('woff');
+}

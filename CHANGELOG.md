@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018 Dec 03
+* **Added [Inria Sans](https://beautifulwebtype.com/inria-sans/)**
+* **Added [Inria Serif](https://beautifulwebtype.com/inria-serif/)**
+
 ## 2018 Nov 27
 * **Added [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)**
 * **Improved display of figures on detail pages**

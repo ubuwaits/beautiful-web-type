@@ -454,6 +454,78 @@
   }
 }
 
+// Inria Sans
+// ----------------------------------------------------------------------------
+.inria-sans-sample {
+  background: #F28658;
+
+  .text {
+    color: #001678;
+    max-width: 600px;
+
+    h1 {
+      font: 700 var(--ms4)/1.3 var(--inria-sans);
+      text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
+    }
+
+    h2 {
+      font: 400 var(--ms2)/1.3 var(--inria-sans);
+      margin-bottom: 1em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+
+    p {
+      font: 400 var(--ms2)/1.4 var(--inria-sans);
+      margin-bottom: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+  }
+}
+
+// Inria Serif
+// ----------------------------------------------------------------------------
+.inria-serif-sample {
+  background: #082042;
+
+  .text {
+    color: #FAE8FB;
+    max-width: 760px;
+
+    h1 {
+      font: 700 var(--ms5)/1.2 var(--inria-serif);
+      text-indent: -0.45em;
+      margin-bottom: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
+    }
+
+    p {
+      font: 400 var(--ms3)/1.4 var(--inria-serif);
+      margin-bottom: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+
+    .title {
+      font-style: italic;
+    }
+  }
+}
+
 // Jost*
 // ----------------------------------------------------------------------------
 .jost-sample {

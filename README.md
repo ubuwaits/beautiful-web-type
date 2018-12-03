@@ -15,6 +15,10 @@ I plan on growing this site to be the definitive resource for open-source type. 
 
 ## Changelog
 
+### 2018 Dec 03
+* **Added [Inria Sans](https://beautifulwebtype.com/inria-sans/)**
+* **Added [Inria Serif](https://beautifulwebtype.com/inria-serif/)**
+
 ### 2018 Nov 27
 * **Added [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)**
 * **Improved display of figures on detail pages**
@@ -22,11 +26,6 @@ I plan on growing this site to be the definitive resource for open-source type. 
 ### 2018 Nov 26
 * **Added [Work Sans](https://beautifulwebtype.com/work-sans/)**
 * **Updated [Alegreya](https://beautifulwebtype.com/alegreya/) to v2.008**
-
-### 2018 Nov 25
-* **Improved the design of several samples**
-* **Added [Le Murmure](https://beautifulwebtype.com/le-murmure/)**
-* **Removed Colus**. After adding this typeface earlier in the week, I discovered that it was free but not open-source. After some thought I’ve decided to focus exclusively on open-source, rather than just free, typefaces.
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -45,6 +44,8 @@ I will be adding new typefaces continuously. Get notified when new typefaces are
 * [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/)
 * [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/)
 * [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/)
+* [Inria Sans](https://beautifulwebtype.com/inria-sans/)
+* [Inria Serif](https://beautifulwebtype.com/inria-serif/)
 * [Jost*](https://beautifulwebtype.com/jost/)
 * [Le Murmure](https://beautifulwebtype.com/le-murmure/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
