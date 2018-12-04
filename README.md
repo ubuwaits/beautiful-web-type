@@ -30,7 +30,9 @@ I plan on growing this site to be the definitive resource for open-source type. 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
-I will be adding new typefaces continuously. Get notified when new typefaces are added by signing up for [the newsletter](https://tinyletter.com/beautifulwebtype).
+All featured typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
+
+I will be adding new typefaces continuously. You can be notified when new typefaces are added by signing up for [the newsletter](https://tinyletter.com/beautifulwebtype).
 
 * [Alegreya](https://beautifulwebtype.com/alegreya/)
 * [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/)
