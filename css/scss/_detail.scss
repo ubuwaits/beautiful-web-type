@@ -183,6 +183,19 @@
   font-size: var(--ms4);
 }
 
+// Typeface comparisons
+// ----------------------------------------------------------------------------
+.examples.typeface-comparison {
+  h1 {
+    font-size: var(--ms7);
+    font-weight: 400;
+
+    @media screen and (max-width: $mobile) {
+      font-size: var(--ms3);
+    }
+  }
+}
+
 // Labels used in meta header and beneath individual examples
 // ----------------------------------------------------------------------------
 .character-label,
@@ -203,6 +216,7 @@
 
 // Pairings
 // ----------------------------------------------------------------------------
+.typeface-comparisons h3,
 .grid-pairings h3 {
   font: italic 400 var(--ms5)/1.2 var(--alegreya-sans);
 
