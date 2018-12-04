@@ -1,5 +1,8 @@
 # Changelog
 
+## 2018 Dec 04
+* **Added a section showing comparisons to similar typefaces on most detail pages**. For example, here's the comparisons for [FiraGO](https://beautifulwebtype.com/firago/#comparisons).
+
 ## 2018 Dec 03
 * **Added [Inria Sans](https://beautifulwebtype.com/inria-sans/)**
 * **Added [Inria Serif](https://beautifulwebtype.com/inria-serif/)**
