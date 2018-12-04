@@ -11,6 +11,11 @@
   description: Alegreya is a contemporary interpretation of a calligraphic face, designed for long-form literary texts. It offers five weights, a carefully designed italic, small caps, and good OpenType support. This rich typographic palette makes it a versatile and expressive typeface.
   sample-html: '<h1>like the generations of leaves, the lives of mortal men. Now the wind scatters the old leaves across the earth, now the living timber bursts with the new buds and spring comes round again. And so with men: as one generation comes to life, another dies away.</h1><p>Homer, <em>The Iliad</em></p>'
   sample-shade: light
+  comparison-faces:
+    - Alegreya Sans
+    - IBM Plex Serif
+    - Source Serif Pro
+    - Vollkorn
 
 - name: Alegreya Sans
   date-added: 2018-10-15
@@ -24,6 +29,11 @@
   g-fonts-url: https://fonts.google.com/specimen/Alegreya+Sans
   description: Alegreya Sans is the companion to Alegreya, with both typefaces taking inspiration from calligraphic letter forms. Offering seven weights, along with an expressive italic and small cap, it works well in a variety of contexts, from long-form texts to headlines.
   sample-html: '<h1>Helvítis fokking fokk!</h1>'
+  comparison-faces:
+    - Alegreya
+    - FiraGO
+    - IBM Plex Sans
+    - Inria Sans
 
 - name: Archivo
   date-added: 2018-10-15
@@ -37,6 +47,11 @@
   g-fonts-url: https://fonts.google.com/specimen/Archivo
   description: Archivo is a grotesque san-serif inspired by late 19<span class="ordinals">th</span> century American typefaces. Its letterforms are low contrast with a large x-height. It’s part of the Archivo family, which includes Black and Narrow styles.
   sample-html: '<h1>Dieter Rams<br>Bauhaus-Archiv<br>Museum für<br> Gestaltung<br>Retrospective <span class="oldstyle-proportional">02.10.2015<br>24.11.2015</span></h1>'
+  comparison-faces:
+    - FiraGO
+    - IBM Plex Sans
+    - Inria Sans
+    - Source Sans Pro
 
 - name: Archivo Black
   date-added: 2018-10-19
@@ -89,6 +104,11 @@
   release-date: 16 Jun 2014
   description: Cooper Hewitt is a contemporary sans-serif with a strong geometric feel. It works especially well for headlines when set in all caps. It was designed by Chester Jenkins for the Cooper Hewitt design museum.
   sample-html: '<h1>Cinémathèque Suisse</h1><h2>Jean-Luc Godard<br>12 Nov.84 Au 12 JAN.85<br>Casino de Montbenon<br>Lausanne</h2>'
+  comparison-faces:
+    - IBM Plex Sans
+    - IBM Plex Sans Condensed
+    - Inria Sans
+    - Source Sans Pro
 
 - name: FiraGO
   date-added: 2018-10-23
@@ -102,6 +122,11 @@
   description: FiraGO is the successor to Fira Sans and serves as the corporate typeface for Here. It is a versatile sans-serif and includes eleven weights, a well-designed italic, small caps, and good OpenType support. It works well for both long stretches of body copy and headlines.
   sample-html: '<h2>Minimum</h2><h3>Minimum</h3><h4>Minimum</h4><h5>Minimum</h5><h6>Minimum</h6>'
   sample-shade: light
+  comparison-faces:
+    - Alegreya Sans
+    - IBM Plex Sans
+    - Inria Sans
+    - Source Sans Pro
 
 - name: IBM Plex Mono
   date-added: 2018-11-02
@@ -116,6 +141,10 @@
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<p><strong>(2)</strong> The <em>square</em> of a relation is that relation which hold between two terms <em>x</em> and <em>z</em> when there is no intermediate term <em>y</em> such that the given relation holds between <em>x</em> and <em>y</em> and between <em>y</em> and <em>z</em>. Thus “paternal grandfather” is the square of “father”, “greater by 2” is the square of “greater by 1”, and so on.</p><p class="title"><span>Bertrand Russell, <em>Introduction to Mathematical Philosophy</em>, pp 32–3</span></p>'
   sample-shade: light
+  comparison-faces:
+    - IBM Plex Sans
+    - IBM Plex Sans Condensed
+    - IBM Plex Serif
 
 - name: IBM Plex Sans
   date-added: 2018-10-31
@@ -129,6 +158,12 @@
   g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Sans
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<p>Bruce<br>Smith</p><p>Reggie<br>White</p><p>Howie<br>Long</p><p>Greg<br>Townsend</p><p class="title">Top Defensive<br>Linemen</p><p>Bob<br>Nelson</p><p>Chris<br>Doleman</p><p>Pierce<br>Holt</p><p>Ray<br>Agnew</p><p class="title">Tecmo Super<br>Bowl</p><p>Richard<br>Dent</p><p>Jacob<br>Green</p><p>Jerry<br>Ball</p><p>Sean<br>Jones</p>'
+  comparison-faces:
+    - IBM Plex Serif
+    - Libre Franklin
+    - Source Sans Pro
+    - Work Sans
+
 
 - name: IBM Plex Sans Condensed
   date-added: 2018-11-01
@@ -142,6 +177,11 @@
   g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<h1>Monk</h1><h2>Thelonious</h2>'
+  comparison-faces:
+    - FiraGO
+    - IBM Plex Serif
+    - Inria Sans
+    - Jost
 
 - name: IBM Plex Serif
   date-added: 2018-10-30
@@ -156,6 +196,11 @@
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<h1>“This just proves that this is not some peculiar human characteristic, it’s not even a mammalian characteristic, it’s a characteristic of brains,” he said. “It also shows that serotonin has a hugely important role in mediating social interactions right across species.”</h1>'
   sample-shade: light
+  comparison-faces:
+    - IBM Plex Sans
+    - Inria Serif
+    - Lora
+    - Source Serif Pro
 
 - name: Inria Sans
   date-added: 2018-12-03
@@ -168,6 +213,11 @@
   release-date: 11 Jan 2018
   description: Inria Sans, along with <a href='/inria-serif/'>Inria Serif</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Sans has a contemporary feel, suitable for both body copy and headlines.
   sample-html: '<h1>Ten Things I Have Learned</h1><h2>Milton Glaser</h2><p>I was listening to the radio and heard an interviewer ask “Now that you have reached 75 have you any advice for our audience about how to prepare for your old age?” An irritated voice said “Why is everyone asking me about old age these days?” I recognised the voice as John Cage. “You know, I do know how to prepare for old age” he said. “Never have a job, because if you have a job someday someone will take it away from you and then you will be unprepared for your old age. For me, it has always been the same every since the age of 12. I wake up in the morning and I try to figure out how am I going to put bread on the table today?</p>'
+  comparison-faces:
+    - FiraGO
+    - IBM Plex Sans
+    - Inria Serif
+    - Source Sans Pro
 
 - name: Inria Serif
   date-added: 2018-12-03
@@ -180,6 +230,11 @@
   release-date: 11 Jan 2018
   description: Inria Serif, along with <a href='/inria-sans/'>Inria Sans</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Serif has a literary feel, suitable for both body copy and headlines.
   sample-html: '<h1>“Humans in Dark Times”</h1><p>Art is the ethical space where we encounter the pain of others and truly reflect on its significance to a shared human community. Art is a direct and imaginative response to the traumas of suffering. It refuses an image of the world that is presented to us as catastrophically fated. Art thus places itself on the side of life, as it directly resists the rituals of death and destruction.</p><p class=title>Brad Evans</p>'
+  comparison-faces:
+    - Alegreya
+    - IBM Plex Serif
+    - Inria Sans
+    - Source Serif Pro
 
 - name: Jost
   date-added: 2018-10-15
@@ -192,6 +247,11 @@
   release-date: 21 Sep 2018
   description: Jost* is a sans-serif inspired by Futura, but with a larger x-height and more balanced capital forms. It features nine weights and two styles and is under active development.
   sample-html: '<h1>Vivre Sa Vie</h1><h2>Film En Douze Tableaux</h2>'
+  comparison-faces:
+    - Cooper Hewitt
+    - IBM Plex Sans
+    - Poppins
+    - Source Sans Pro
 
 - name: Le Murmure
   date-added: 2018-11-25
@@ -218,6 +278,11 @@
   description: Libre Franklin is an interpretation and expansion of the classic Franklin Gothic typeface. It’s a versatile sans-serif, suitable for both long-form text and headlines. At large sizes, the distinctive rounded corners of the characters become apparent.
   sample-html: '<h1>Ornette</h1><h1><span class="yellow">On</span><span class="green">Tenor</span></h1><h2><span>Don Cherry</span><span>Jimmy Garrison</span><span>Ed Blackwell</span></h2>'
   sample-shade: light
+  comparison-faces:
+    - IBM Plex Sans
+    - Inria Sans
+    - Source Sans Pro
+    - Work Sans
 
 - name: Lora
   date-added: 2018-10-15
@@ -231,6 +296,11 @@
   g-fonts-url: https://fonts.google.com/specimen/Lora
   description: Lora is a contemporary serif with a moderate contrast, well-suited to body text. It takes inspiration from calligraphic forms, but has a pleasing contrast with sturdy serifs, especially at the bold weight.
   sample-html: '<p>Far off in the bending sky was the pearly light; and she felt the largeness of the world and the manifold wakings of men to labor and endurance. She was a part of that involuntary, palpitating life, and could neither look out on it from her luxurious shelter as a mere spectator, nor hide her eyes in selfish complaining.</p><h2>George Eliot, <em>Middlemarch</em></h2>'
+  comparison-faces:
+    - Alegreya
+    - IBM Plex Serif
+    - Source Serif Pro
+    - Vollkorn
 
 - name: Oswald
   date-added: 2018-10-15
@@ -270,6 +340,10 @@
   g-fonts-url: https://fonts.google.com/specimen/Poppins
   description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari chararacter sets.
   sample-html: '<h1>Lennon</h1><h1>McCartney</h1><h1>Harrison</h1><h1>& Starr</h1>'
+  comparison-faces:
+    - Archivo
+    - Cooper Hewitt
+    - Jost
 
 - name: Rakkas
   date-added: 2018-10-22
@@ -297,6 +371,11 @@
   g-fonts-url: https://fonts.google.com/specimen/Source+Sans+Pro
   description: Source Sans Pro is a versatile typeface designed particularly for user interfaces. Its letterforms are slightly condensed allowing them to fit into tight spaces within a UI, and remain well-defined even at small sizes.
   sample-html: '<h2>janine m. menyus&thinsp;&mdash;</h2><h1 class=oldstyle-proportional>9 basic principles of biomimicry</h1><ol><li>Nature runs on sunlight</li><li>Nature uses only the energy it needs</li><li>Nature fits form to function</li><li>Nature recycles everything</li><li>Nature rewards cooperation</li><li>Nature banks on diversity</li><li>Nature demands local expertise</li><li>Nature curbs excesses from within</li><li>Nature taps the power of limits</li></ol>'
+  comparison-faces:
+    - Archivo
+    - FiraGO
+    - Inria Sans
+    - Source Serif Pro
 
 - name: Source Serif Pro
   date-added: 2018-10-15
@@ -311,6 +390,11 @@
   description: Source Serif Pro was created as a companion to the Source Sans Pro typeface by Adobe. It exhibits a distinctive personality at each of its six weights, with a beautiful italic that remains useful from the lightest to the heaviest weights.
   sample-html: '<h1>Philip Glass</h1><h1>Dances</h1><h1>No.2&mdash;No.4</h1>'
   sample-shade: light
+  comparison-faces:
+    - IBM Plex Serif
+    - Inria Serif
+    - Lora
+    - Source Sans Pro
 
 - name: Vollkorn
   date-added: 2018-10-15
@@ -324,6 +408,11 @@
   g-fonts-url: https://fonts.google.com/specimen/Vollkorn
   description: "Vollkorn is the German word for ‘wholemeal’, which designer Friedrich Althausen felt described this ‘dark, sturdy, and grainy’ serif well. It offers six weights, small caps, and a number of OpenType features, making it perfect for (to stretch this analogy even further) everyday, bread and butter usage."
   sample-html: '<h1 class="w500">shinichi<br> nakazawa</h1><h2 class="w400 italic ase">Beyond<br> Development:<br> Rediscovering<br> Nature’s<br> Wisdom</h2><p>Technology was not given so humankind could ride roughshod over nature and wreak irreparable changes. Rather, technology is to draw out the hidden essence of all nature so that it can sparkle with new purpose. Technology is not to enslave and command life but to draw forth the infinite possibilities locked within all life and to open new realms of significance. <span class="ms-1">&#9670;</span></p>'
+  comparison-faces:
+    - Alegreya
+    - Inria Serif
+    - Lora
+    - Source Serif Pro
 
 - name: Work Sans
   date-added: 2018-11-26
@@ -337,6 +426,11 @@
   g-fonts-url: https://fonts.google.com/specimen/Work+Sans
   description: "Work Sans is a sans-serif inspired by early Grotesque faces. It recently received a major update, adding an italic style and a wide selection of OpenType features. The face has a slightly playful feel, especially at heavier weights."
   sample-html: '<h1>Say! I like green eggs and ham!<br>I do! I like them, Sam-I-Am!<br> And I would eat them in a boat.<br>And I would eat them with a goat...</h1>'
+  comparison-faces:
+    - Archivo
+    - Cooper Hewitt
+    - Poppins
+    - Source Sans Pro
 
 - name: Zilla Slab
   date-added: 2018-10-15
