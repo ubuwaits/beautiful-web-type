@@ -8,7 +8,7 @@ layout: default
 {{ content }}
 
 {% unless typeface.comparison-faces.size == nil %}
-  <div class='grid typeface-comparisons' id='comparisons'>
+  <div class='grid grid-comparisons' id='comparisons'>
     <h3 class='gr1 gc12 ase'>{{ typeface.name }} compared with similar typefaces</h3>
     {% for comparison-face in typeface.comparison-faces %}
       {% include typeface-comparison.html %}
