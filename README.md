@@ -1,12 +1,8 @@
-# [Beautiful web type](https://beautifulwebtype.com)
+# [Beautiful Web Type](https://beautifulwebtype.com)
 
-In October 2018 I released a completely re-thought and re-designed version of Beautiful Web Type. The first version of the project (and many subsequent projects following in its footsteps) put an emphasis on stylized examples of the typeface in use. This often served to hide the flaws and limitations of the various typefaces.
+In October 2018 I released a completely re-thought and re-designed version of Beautiful Web Type. The first version of the project (and many subsequent projects following in its footsteps) put an emphasis on stylized examples of the typeface in use. This often served to hide the flaws and limitations of the various typefaces. In contrast, the new version of the site aims to provide a complete look at each typeface, cataloging all the available weights and styles, the kerning quality, OpenType features, special characters and more.
 
-In contrast, the new version of the site aims to provide a complete look at each typeface, cataloging all the available weights and styles, the kerning quality, OpenType features, special characters and more.
-
-I have spent a great deal of time sorting through the growing number of open-source typefaces. I will highlight only those that show a high level of quality.
-
-I plan on growing this site to be the definitive resource for open-source type. Please consider supporting the project via [Patreon](https://www.patreon.com/ubuwaits).
+I have spent a great deal of time sorting through the growing number of open-source typefaces. I will highlight only those that show a high level of quality. I plan on growing this site to be the definitive resource for open-source type. Please consider supporting the project via [Patreon](https://www.patreon.com/ubuwaits).
 
 * Patreon: https://www.patreon.com/ubuwaits
 * Newsletter: https://tinyletter.com/beautifulwebtype
