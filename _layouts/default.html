@@ -29,13 +29,30 @@
     </section>
 
     {% include footer.html %}
-
-    <script>
-      document.getElementsByClassName('menu-link')[0].addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementsByClassName('mobile-menu')[0].classList.toggle('open');
-        document.getElementsByClassName('menu-overlay')[0].classList.toggle('open');
-      }, false);
-    </script>
   </body>
+  <script>
+    // Toggle mobile menu
+    document.getElementsByClassName('menu-link')[0].addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementsByClassName('mobile-menu')[0].classList.toggle('open');
+      document.getElementsByClassName('menu-overlay')[0].classList.toggle('open');
+    }, false);
+
+    // Keep text of typeface comparison section in sync
+    function updateComparisonText() {
+      for (var i = 0; i < similarTypefaces.length; i++) {
+        if (this.className != similarTypefaces[i].className) {
+          similarTypefaces[i].innerText = this.innerText;
+        }
+      }
+    }
+
+    if (document.getElementById('comparisons')) {
+      var similarTypefaces = document.getElementById('comparisons').getElementsByTagName('h1');
+
+      for (var i = 0; i < similarTypefaces.length; i++) {
+        similarTypefaces[i].addEventListener('input', updateComparisonText, false);
+      }
+    }
+  </script>
 </html>

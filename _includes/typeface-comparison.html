@@ -1,15 +1,17 @@
-<div class='type-detail-table gr1 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>{{ typeface.name }} vs {{ comparison-face }}</p>
-  </div>
+{% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+{% assign text = site.data.text %}
+
+<div class='type-detail-table gr1 gc12'>
   <div class='examples flow-column typeface-comparison'>
     <div>
       <h1 class='{{ typeface.name | downcase | replace: ' ', '-' }}' contenteditable='true'>{{ text.word-05 }}</h1>
       <p class='character-label'>{{ typeface.name }}</p>
     </div>
-    <div>
-      <h1 class='{{ comparison-face | downcase | replace: ' ', '-' }}' contenteditable='true'>{{ text.word-05 }}</h1>
-      <p class='character-label'><a href='/{{ comparison-face | downcase | replace: ' ', '-' }}/'>{{ comparison-face }}</a></p>
-    </div>
+    {% for comparison-face in typeface.comparison-faces %}
+      <div>
+        <h1 class='{{ comparison-face | downcase | replace: ' ', '-' }}' contenteditable='true'>{{ text.word-05 }}</h1>
+        <p class='character-label'><a href='/{{ comparison-face | downcase | replace: ' ', '-' }}/'>{{ comparison-face }}</a></p>
+      </div>
+    {% endfor %}
   </div>
 </div>

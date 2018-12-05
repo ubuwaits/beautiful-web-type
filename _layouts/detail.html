@@ -3,16 +3,13 @@ layout: default
 ---
 
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
-{% assign text = site.data.text %}
 
 {{ content }}
 
 {% unless typeface.comparison-faces.size == nil %}
   <div class='grid grid-comparisons' id='comparisons'>
     <h3 class='gr1 gc12 ase'>{{ typeface.name }} compared with similar typefaces</h3>
-    {% for comparison-face in typeface.comparison-faces %}
-      {% include typeface-comparison.html %}
-    {% endfor %}
+    {% include typeface-comparison.html %}
   </div>
 {% endunless %}
 

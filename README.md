@@ -11,16 +11,15 @@ I have spent a great deal of time sorting through the growing number of open-sou
 
 ## Changelog
 
+### 2018 Dec 05
+* **Improved behavior of typeface comparison text**. Now, when updating the sample text for one typeface, it changes the sample text for the other typefaces as well.
+
 ### 2018 Dec 04
 * **Added a section showing comparisons to similar typefaces on most detail pages**. For example, here's the comparisons for [FiraGO](https://beautifulwebtype.com/firago/#comparisons).
 
 ### 2018 Dec 03
 * **Added [Inria Sans](https://beautifulwebtype.com/inria-sans/)**
 * **Added [Inria Serif](https://beautifulwebtype.com/inria-serif/)**
-
-### 2018 Nov 27
-* **Added [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)**
-* **Improved display of figures on detail pages**
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
