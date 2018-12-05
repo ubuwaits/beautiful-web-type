@@ -104,10 +104,8 @@
   description: Cooper Hewitt is a contemporary sans-serif with a strong geometric feel. It works especially well for headlines when set in all caps. It was designed by Chester Jenkins for the Cooper Hewitt design museum.
   sample-html: '<h1>Cinémathèque Suisse</h1><h2>Jean-Luc Godard<br>12 Nov.84 Au 12 JAN.85<br>Casino de Montbenon<br>Lausanne</h2>'
   comparison-faces:
-    - IBM Plex Sans
-    - IBM Plex Sans Condensed
-    - Inria Sans
-    - Source Sans Pro
+    - Jost
+    - Poppins
 
 - name: FiraGO
   date-added: 2018-10-23
