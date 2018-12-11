@@ -213,20 +213,27 @@
     text-align: center;
 
     h1 {
-      font: 800 var(--ms16)/0.8 var(--biorhyme-expanded);
-      letter-spacing: -0.15em;
-      margin-left: -0.2em;
+      font: 800 var(--ms15)/0.8 var(--biorhyme-expanded);
+      letter-spacing: -0.05em;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms14);
+      }
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms11);
+        font-size: var(--ms10);
       }
     }
 
     h2 {
       font: 800 var(--ms8)/1 var(--biorhyme-expanded);
-      letter-spacing: 0.25em;
-      margin-left: 0.1em;
+      letter-spacing: 0.2em;
+      margin-left: 0.55em;
       text-transform: uppercase;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms7);
+      }
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms3);

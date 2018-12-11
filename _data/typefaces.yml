@@ -90,7 +90,7 @@
   release-date: 9 Mar 2016
   g-fonts-url: https://fonts.google.com/specimen/BioRhyme+Expanded
   description: BioRhyme Expanded takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme Expanded and its sister face BioRhyme take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
-  sample-html: '<h1>fat</h1><h2>burger</h2>'
+  sample-html: '<h1 class=ss02>fat</h1><h2>burger</h2>'
 
 - name: Cooper Hewitt
   date-added: 2018-10-15
