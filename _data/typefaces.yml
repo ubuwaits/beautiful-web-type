@@ -226,7 +226,8 @@
   latest-version: v1.200
   release-date: 11 Jan 2018
   description: Inria Serif, along with <a href='/inria-sans/'>Inria Sans</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Serif has a literary feel, suitable for both body copy and headlines.
-  sample-html: '<h1>“Humans in Dark Times”</h1><p>Art is the ethical space where we encounter the pain of others and truly reflect on its significance to a shared human community. Art is a direct and imaginative response to the traumas of suffering. It refuses an image of the world that is presented to us as catastrophically fated. Art thus places itself on the side of life, as it directly resists the rituals of death and destruction.</p><p class=title>Brad Evans</p>'
+  sample-html: '<h1>The Frolic of<br> the Beasts</h1><h2>Yukio Mishima</h2>'
+  sample-shade: light
   comparison-faces:
     - Inria Sans
     - IBM Plex Serif

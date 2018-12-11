@@ -495,33 +495,30 @@
 // Inria Serif
 // ----------------------------------------------------------------------------
 .inria-serif-sample {
-  background: #082042;
+  background: #FFF;
 
   .text {
-    color: #FAE8FB;
-    max-width: 760px;
+    color: #000;
+    max-width: 940px;
+    text-align: center;
 
     h1 {
-      font: 700 var(--ms5)/1.2 var(--inria-serif);
-      text-indent: -0.45em;
+      font: 700 var(--ms9)/1.1 var(--inria-serif);
+      text-transform: uppercase;
       margin-bottom: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+        margin-bottom: 0.25em;
+      }
+    }
+
+    h2 {
+      font: 400 var(--ms5)/1.2 var(--inria-serif);
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms3);
       }
-    }
-
-    p {
-      font: 400 var(--ms3)/1.4 var(--inria-serif);
-      margin-bottom: 0.5em;
-
-      @media screen and (max-width: $mobile) {
-        font-size: var(--ms1);
-      }
-    }
-
-    .title {
-      font-style: italic;
     }
   }
 }
