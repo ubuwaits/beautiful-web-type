@@ -337,24 +337,34 @@
 // IBM Plex Mono
 // ----------------------------------------------------------------------------
 .ibm-plex-mono-sample {
-  background: #AED0D8;
+  background: #0B3D91;
 
   .text {
+    color: #fff;
     max-width: 700px;
 
-    p {
-      color: #9A4C22;
-      font: 450 var(--ms2)/1.4 var(--ibm-plex-mono);
+    h1 {
+      font: 500 var(--ms7)/1.1 var(--ibm-plex-mono);
       margin-bottom: 1em;
+      //text-transform: uppercase;
+
+      span {
+        font-style: italic;
+        font-weight: 450;
+        text-transform: lowercase;
+      }
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms0);
+        font-size: var(--ms3);
       }
     }
 
-    .title {
-      color: #433D3A;
-      font-weight: 500;
+    h2 {
+      font: 500 var(--ms7)/1.1 var(--ibm-plex-mono);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
     }
   }
 }

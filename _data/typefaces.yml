@@ -136,8 +136,7 @@
   release-date: 22 Oct 2018
   g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Mono
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
-  sample-html: '<p><strong>(2)</strong> The <em>square</em> of a relation is that relation which hold between two terms <em>x</em> and <em>z</em> when there is no intermediate term <em>y</em> such that the given relation holds between <em>x</em> and <em>y</em> and between <em>y</em> and <em>z</em>. Thus “paternal grandfather” is the square of “father”, “greater by 2” is the square of “greater by 1”, and so on.</p><p class="title"><span>Bertrand Russell, <em>Introduction to Mathematical Philosophy</em>, pp 32–3</span></p>'
-  sample-shade: light
+  sample-html: '<h1>Introduction<br><span>to</span> Mathematical<br> Philosophy</h1><h2>Bertrand<br> Russell</h2>'
   comparison-faces:
     - IBM Plex Sans
     - IBM Plex Sans Condensed
