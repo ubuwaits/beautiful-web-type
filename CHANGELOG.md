@@ -1,5 +1,8 @@
 # Changelog
 
+## 11 Dec 2018
+* **Improved samples for several typefaces**
+
 ## 05 Dec 2018
 * **Improved behavior of typeface comparison text**. Now, when updating the sample text for one typeface, it changes the sample text for the other typefaces as well.
 
