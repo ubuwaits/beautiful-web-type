@@ -344,23 +344,13 @@
     max-width: 700px;
 
     h1 {
-      font: 500 var(--ms7)/1.1 var(--ibm-plex-mono);
-      margin-bottom: 1em;
-      //text-transform: uppercase;
+      border-bottom: 0.075em solid #fff;
+      font: italic 450 var(--ms6)/1.4 var(--ibm-plex-mono);
+      padding-bottom: 0.1em;      
 
-      span {
-        font-style: italic;
-        font-weight: 450;
-        text-transform: lowercase;
+      &:first-child {
+        border-top: 0.075em solid #fff;
       }
-
-      @media screen and (max-width: $mobile) {
-        font-size: var(--ms3);
-      }
-    }
-
-    h2 {
-      font: 500 var(--ms7)/1.1 var(--ibm-plex-mono);
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms3);
@@ -642,7 +632,7 @@
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
-        flex-direction: column;        
+        flex-direction: column;
         margin: 0.75em 0 0 0.2em;
       }
     }
