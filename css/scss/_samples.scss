@@ -457,33 +457,27 @@
 // Inria Sans
 // ----------------------------------------------------------------------------
 .inria-sans-sample {
-  background: #F28658;
+  background: #000;
 
   .text {
-    color: #001678;
-    max-width: 600px;
+    color: #FFF;
+    width: auto;
 
     h1 {
-      font: 700 var(--ms4)/1.3 var(--inria-sans);
-      text-transform: uppercase;
+      font: 700 var(--ms10)/0.95 var(--inria-sans);
+      letter-spacing: -0.0125em;
+      margin-bottom: 0.25em;
+      text-indent: 0.025em;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms2);
+        font-size: var(--ms5);
       }
     }
 
     h2 {
-      font: 400 var(--ms2)/1.3 var(--inria-sans);
-      margin-bottom: 1em;
-
-      @media screen and (max-width: $mobile) {
-        font-size: var(--ms1);
-      }
-    }
-
-    p {
-      font: 400 var(--ms2)/1.4 var(--inria-sans);
-      margin-bottom: 0.5em;
+      font: 400 var(--ms4)/1 var(--inria-sans);
+      margin-left: 0.15em;
+      text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms1);

@@ -209,7 +209,7 @@
   latest-version: v1.200
   release-date: 11 Jan 2018
   description: Inria Sans, along with <a href='/inria-serif/'>Inria Serif</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Sans has a contemporary feel, suitable for both body copy and headlines.
-  sample-html: '<h1>Ten Things I Have Learned</h1><h2>Milton Glaser</h2><p>I was listening to the radio and heard an interviewer ask “Now that you have reached 75 have you any advice for our audience about how to prepare for your old age?” An irritated voice said “Why is everyone asking me about old age these days?” I recognised the voice as John Cage. “You know, I do know how to prepare for old age” he said. “Never have a job, because if you have a job someday someone will take it away from you and then you will be unprepared for your old age. For me, it has always been the same every since the age of 12. I wake up in the morning and I try to figure out how am I going to put bread on the table today?</p>'
+  sample-html: '<h1>Solomon R.<br> Guggenheim<br> Museum</h1><h2>New York, New York</h2>'
   comparison-faces:
     - Inria Serif
     - FiraGO
