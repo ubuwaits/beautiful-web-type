@@ -804,10 +804,10 @@
 
   .text {
     color: #F6EFDF;
-    max-width: 900px;
+    width: auto;
 
     h1 {
-      font: 700 var(--ms5)/1 var(--source-sans-pro);
+      font: 700 var(--ms9)/1 var(--source-sans-pro);
       margin-bottom: 0.67em;
 
       @media screen and (max-width: $mobile) {
@@ -817,27 +817,13 @@
     }
 
     h2 {
-      font: 400 var(--ms2)/1 var(--source-sans-pro);
+      font: 400 var(--ms3)/1 var(--source-sans-pro);
       font-feature-settings: 'smcp';
-      margin-bottom: 0.1em;
+      margin: 0 0 0.15em 0.15em;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms1);
       }
-    }
-
-    ol {
-      font: 400 var(--ms3)/1.3 var(--source-sans-pro);
-      list-style: lower-roman outside;
-
-      @media screen and (max-width: $mobile) {
-        font-size: var(--ms1);
-        list-style: none;
-      }
-    }
-
-    li {
-      margin-bottom: 0.5em;
     }
   }
 }

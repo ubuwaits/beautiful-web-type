@@ -367,7 +367,7 @@
   release-date: 30 Oct 2018
   g-fonts-url: https://fonts.google.com/specimen/Source+Sans+Pro
   description: Source Sans Pro is a versatile typeface designed particularly for user interfaces. Its letterforms are slightly condensed allowing them to fit into tight spaces within a UI, and remain well-defined even at small sizes.
-  sample-html: '<h2>janine m. menyus&thinsp;&mdash;</h2><h1 class=oldstyle-proportional>9 basic principles of biomimicry</h1><ol><li>Nature runs on sunlight</li><li>Nature uses only the energy it needs</li><li>Nature fits form to function</li><li>Nature recycles everything</li><li>Nature rewards cooperation</li><li>Nature banks on diversity</li><li>Nature demands local expertise</li><li>Nature curbs excesses from within</li><li>Nature taps the power of limits</li></ol>'
+  sample-html: '<h2>janine m. menyus&thinsp;&mdash;</h2><h1 class=oldstyle-proportional>9 basic principles<br> of biomimicry</h1>'
   comparison-faces:
     - Source Serif Pro
     - Archivo
