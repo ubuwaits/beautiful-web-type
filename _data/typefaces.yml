@@ -153,7 +153,7 @@
   release-date: 22 Oct 2018
   g-fonts-url: https://fonts.google.com/specimen/IBM+Plex+Sans
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
-  sample-html: '<p>Bruce<br>Smith</p><p>Reggie<br>White</p><p>Howie<br>Long</p><p>Greg<br>Townsend</p><p class="title">Top Defensive<br>Linemen</p><p>Bob<br>Nelson</p><p>Chris<br>Doleman</p><p>Pierce<br>Holt</p><p>Ray<br>Agnew</p><p class="title">Tecmo Super<br>Bowl</p><p>Richard<br>Dent</p><p>Jacob<br>Green</p><p>Jerry<br>Ball</p><p>Sean<br>Jones</p>'
+  sample-html: '<h1>A Mathematical<br> Theory of<br> Communication</h1><h1>C.E. Shannon</h1>'
   comparison-faces:
     - IBM Plex Serif
     - Libre Franklin

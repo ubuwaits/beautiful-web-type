@@ -346,7 +346,7 @@
     h1 {
       border-bottom: 0.075em solid #fff;
       font: italic 450 var(--ms6)/1.4 var(--ibm-plex-mono);
-      padding-bottom: 0.1em;      
+      padding-bottom: 0.1em;
 
       &:first-child {
         border-top: 0.075em solid #fff;
@@ -362,33 +362,23 @@
 // IBM Plex Sans
 // ----------------------------------------------------------------------------
 .ibm-plex-sans-sample {
-  background: #1863d6;
+  background: linear-gradient(30deg, #93949C, #C0C2CA);
 
   .text {
-    color: #ff6bce;
-    display: grid;
-    flex-grow: unset;
-    grid: repeat(4, 1fr) / repeat(4, 1fr);
-    grid-gap: 1.5em;
-    max-width: 1020px;
+    width: auto;
 
-    @media screen and (max-width: $mobile) {
-      grid: repeat(8, 1fr) / 1fr 1fr;
-      grid-gap: 1em;
-    }
+    h1 {
+      color: #fff;
+      font: 400 var(--ms9)/1 var(--ibm-plex-sans);
 
-    p {
-      font: 400 var(--ms4)/1.2 var(--ibm-plex-sans);
+      &:first-child {
+        color: #373737;
+        margin-bottom: 0.25em;
+      }
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms2);
+        font-size: var(--ms4);
       }
-    }
-
-    .title {
-      color: #FFF;
-      font-weight: 500;
-      grid-column: span 2;
     }
   }
 }
