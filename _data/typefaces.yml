@@ -273,7 +273,6 @@
   g-fonts-url: https://fonts.google.com/specimen/Libre+Franklin
   description: Libre Franklin is an interpretation and expansion of the classic Franklin Gothic typeface. It’s a versatile sans-serif, suitable for both long-form text and headlines. At large sizes, the distinctive rounded corners of the characters become apparent.
   sample-html: '<h1>Ornette</h1><h1><span class="yellow">On</span><span class="green">Tenor</span></h1><h2><span>Don Cherry</span><span>Jimmy Garrison</span><span>Ed Blackwell</span></h2>'
-  sample-shade: light
   comparison-faces:
     - IBM Plex Sans
     - Inria Sans

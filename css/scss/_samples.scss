@@ -606,7 +606,7 @@
 // Libre Franklin
 // ----------------------------------------------------------------------------
 .libre-franklin-sample {
-  background: #EDE5D6;
+  background: #171717;
 
   .text {
     max-width: 960px;
@@ -621,7 +621,7 @@
       }
 
       &:nth-child(2) {
-        margin-bottom: 0.05em;
+        margin-bottom: 0.025em;
       }
     }
 
@@ -634,17 +634,15 @@
     }
 
     h2 {
-      color: #373737;
+      color: #FFF;
       display: flex;
-      font: 900 var(--ms2) var(--libre-franklin);
+      font: 900 var(--ms2)/1.2 var(--libre-franklin);
       justify-content: space-between;
       margin: 0 0.075em 0 0.35em;
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
-        flex-direction: column;
-        font-size: var(--ms1);
-        line-height: 1.2;
+        flex-direction: column;        
         margin: 0.75em 0 0 0.2em;
       }
     }
