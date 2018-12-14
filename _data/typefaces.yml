@@ -8,6 +8,7 @@
   latest-version: v2.008
   release-date: 30 Oct 2018
   g-fonts-url: https://fonts.google.com/specimen/Alegreya
+  fontFile: "'/assets/fonts/alegreya/Alegreya-Regular.woff'"
   description: Alegreya is a contemporary interpretation of a calligraphic face, designed for long-form literary texts. It offers five weights, a carefully designed italic, small caps, and good OpenType support. This rich typographic palette makes it a versatile and expressive typeface.
   sample-html: '<h1>like the generations of leaves, the lives of mortal men. Now the wind scatters the old leaves across the earth, now the living timber bursts with the new buds and spring comes round again. And so with men: as one generation comes to life, another dies away.</h1><p>Homer, <em>The Iliad</em></p>'
   sample-shade: light
@@ -258,6 +259,7 @@
   project-url: https://velvetyne.fr/fonts/le-murmure/
   latest-version: v1.0
   release-date: 10 Sep 2018
+  fontFile: "'/assets/fonts/le-murmure/Le_Murmure-Regular.woff'"
   description: Designed especially for the French design agency <a href='https://murmure.me/'>Murmure</a>, Le Murmure is a distinctive sans-serif display typeface. Available in a single weight, it features a wealth of alternate glyphs.
   sample-html: '<h1>&#9889; Oneohtrix Point Never &#9889;</h1>'
 
@@ -333,6 +335,7 @@
   latest-version: v5.001
   release-date: 26 Mar 2018
   g-fonts-url: https://fonts.google.com/specimen/Poppins
+  fontFile: "'/assets/fonts/poppins/Poppins-Regular.woff'"
   description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari chararacter sets.
   sample-html: '<h1>Lennon</h1><h1>McCartney</h1><h1>Harrison</h1><h1>& Starr</h1>'
   comparison-faces:

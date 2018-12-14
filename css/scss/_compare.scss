@@ -1,0 +1,130 @@
+#glyph-detail {
+  .sidebar-header {
+    background: #101010;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 0.7em 0.9em;
+
+    a {
+      color: #FFF;
+      display: block;
+      font: 600 var(--ms0)/1 var(--ui-face);
+      padding: 0.35em 0 0.4em;
+
+      span {
+        font-size: var(--ms1);
+        font-weight: 700;
+        line-height: 0.7;
+        margin-right: 0.1em;
+      }
+    }
+  }
+
+  #active-glyph {
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+  }
+
+  #glyph-info {
+    background: #fff;
+    padding: 1em 1em 0.3em 1em;
+
+    h3 {
+      font: 700 var(--ms0)/1.2 var(--ui-face);
+      text-transform: uppercase;
+    }
+
+    p {
+      font: 500 var(--ms0)/1.2 var(--ui-monospaced);
+      margin-bottom: 1em;
+    }
+  }
+}
+
+#glyph-grid {
+  background: #fff;
+  border: 1px solid #efefef;
+  border-top: 0;
+  border-left: 0;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  grid-gap: 0;
+  margin: 0 auto;
+  max-width: 100%;
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .glyph-container {
+    background: #fff;
+    border: 1px solid #efefef;
+    border-right: 0;
+    border-bottom: 0;
+
+    &.active {
+      background: #efefef;
+    }
+
+    &:hover {
+      background: #efefef;
+    }
+  }
+}
+
+.pagination-wrapper {
+  background: #101010;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  padding: 0.55em;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#glyph-pagination {
+  background: #101010;
+  display: flex;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  a {
+    background: #515151;
+    border-right: 1px solid #313131;
+    color: #fff;
+    font: 600 var(--ms0)/1 var(--ui-face);
+    padding: 0.5em 1em 0.55em;
+
+    &:first-child {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+
+    &:last-child {
+      border: 0;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+
+    &:hover {
+      background: #313131;
+    }
+  }
+
+  .selected-page {
+    background: #313131;
+  }
+}

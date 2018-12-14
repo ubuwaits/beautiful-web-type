@@ -2,6 +2,8 @@
 // ----------------------------------------------------------------------------
 :root { --ui-face: var(--source-sans-pro); }
 .ui-face { font-family: var(--source-sans-pro); }
+:root { --ui-monospaced: var(--ibm-plex-mono); }
+.ui-monospaced { font-family: var(--ibm-plex-mono); }
 
 .highlight { color: var(--red); }
 
