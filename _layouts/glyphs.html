@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
+
+<header class='type-detail-header m2'>
+  <h2 class='ui-face'>{{ typeface.name }} glyph inspector</h2>
+</header>
+
+<div class='grid'>
+  <div class='gr1 gc3' id='glyph-detail'>
+    <div class='sidebar-header'><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'><span>&#8592;</span> Back to main page</a></div>
+    <canvas id='active-glyph'></canvas>
+    <div id='glyph-info'>
+      <h3>Glyph Name</h3>
+      <p>Undefined</p>
+      <h3>HTML Code</h3>
+      <p>Undefined</p>
+      <h3>CSS Code</h3>
+      <p>Undefined</p>
+    </div>
+  </div>
+
+  <div class='gr1 gc9'>
+    <div class='pagination-wrapper'><div id='glyph-pagination'></div></div>
+    <div id='glyph-grid'></div>
+  </div>
+</div>
+
+<script src='/js/opentype.min.js'></script>
+<script src='/js/glyph-inspector.js'></script>
+<script>
+  glyphInspector({{ typeface.fontFile }})
+</script>
