@@ -49,7 +49,7 @@ function selectGlyph(e) {
   removeClass('active')
   this.classList.add('active')
 
-  displayGlyphInfo(font.glyphs.get(event.target.id.substr(1)))
+  displayGlyphInfo(font.glyphs.get(e.target.id.substr(1)))
 }
 
 function enableHighDPICanvas(canvas) {
