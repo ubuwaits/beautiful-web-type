@@ -69,11 +69,16 @@
     border-bottom: 0;
 
     &.active {
-      background: #efefef;
+      background: rgba(orange, 0.2);
     }
 
     &:hover {
-      background: #efefef;
+      background: rgba(orange, 0.2);
+      cursor: pointer;
+    }
+
+    &:active {
+      background: rgba(orange, 0.4);
     }
   }
 }

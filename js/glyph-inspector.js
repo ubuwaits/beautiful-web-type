@@ -208,8 +208,8 @@ function glyphInspector(fontFile) {
       createNavigation()
       displayGlyphPage(0)
 
-      document.getElementById('g0').parentNode.classList.add('active')
-      displayGlyphInfo(font.glyphs.get(0))
+      document.getElementById('g5').parentNode.classList.add('active')
+      displayGlyphInfo(font.glyphs.get(5))
     }
   })
 }
