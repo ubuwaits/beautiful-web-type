@@ -1,5 +1,8 @@
 # Changelog
 
+## 14 Dec 2018
+* **Added glyph inspector for each typeface**. [See it in action](https://beautifulwebtype.com/ibm-plex-mono/glyphs/). This feature was made possible by [opentype.js](https://github.com/opentypejs/opentype.js). 
+
 ## 11 Dec 2018
 * **Improved samples for several typefaces**
 

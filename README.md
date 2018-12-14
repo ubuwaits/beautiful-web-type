@@ -11,14 +11,14 @@ I have spent a great deal of time sorting through the growing number of open-sou
 
 ## Changelog
 
+### 14 Dec 2018
+* **Added glyph inspector for each typeface**. [See it in action](https://beautifulwebtype.com/ibm-plex-mono/glyphs/). This feature was made possible by [opentype.js](https://github.com/opentypejs/opentype.js).
+
 ### 11 Dec 2018
 * **Improved samples for several typefaces**
 
 ### 05 Dec 2018
 * **Improved behavior of typeface comparison text**. Now, when updating the sample text for one typeface, it changes the sample text for the other typefaces as well.
-
-### 04 Dec 2018
-* **Added a section showing comparisons to similar typefaces on most detail pages**. For example, here's the comparisons for [FiraGO](https://beautifulwebtype.com/firago/#comparisons).
 
 **[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -27,33 +27,33 @@ All featured typefaces are licensed under the [SIL Open Font License](https://sc
 
 I will be adding new typefaces continuously. You can be notified when new typefaces are added by signing up for [the newsletter](https://tinyletter.com/beautifulwebtype).
 
-* [Alegreya](https://beautifulwebtype.com/alegreya/)
-* [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/)
-* [Archivo](https://beautifulwebtype.com/archivo/)
-* [Archivo Black](https://beautifulwebtype.com/archivo-black/)
-* [BioRhyme](https://beautifulwebtype.com/biorhyme/)
-* [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
-* [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
-* [FiraGo](https://beautifulwebtype.com/firago/)
-* [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)
-* [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/)
-* [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/)
-* [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/)
-* [Inria Sans](https://beautifulwebtype.com/inria-sans/)
-* [Inria Serif](https://beautifulwebtype.com/inria-serif/)
-* [Jost*](https://beautifulwebtype.com/jost/)
-* [Le Murmure](https://beautifulwebtype.com/le-murmure/)
-* [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
-* [Lora](https://beautifulwebtype.com/lora/)
-* [Oswald](https://beautifulwebtype.com/oswald/)
-* [Playfair Display](https://beautifulwebtype.com/playfair-display/)
-* [Poppins](https://beautifulwebtype.com/poppins/)
-* [Rakkas](https://beautifulwebtype.com/rakkas/)
-* [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)
-* [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)
-* [Vollkorn](https://beautifulwebtype.com/vollkorn/)
-* [Work Sans](https://beautifulwebtype.com/work-sans/)
-* [Zilla Slab](https://beautifulwebtype.com/zilla-slab/)
+* [Alegreya](https://beautifulwebtype.com/alegreya/) / [Glyph explorer](https://beautifulwebtype.com/alegreya/glyphs/)
+* [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/) / [Glyph explorer](https://beautifulwebtype.com/alegreya-sans/glyphs/)
+* [Archivo](https://beautifulwebtype.com/archivo/) / [Glyph explorer](https://beautifulwebtype.com/archivo/glyphs/)
+* [Archivo Black](https://beautifulwebtype.com/archivo-black/) / [Glyph explorer](https://beautifulwebtype.com/archivo-black/glyphs/)
+* [BioRhyme](https://beautifulwebtype.com/biorhyme/) / [Glyph explorer](https://beautifulwebtype.com/biorhyme/glyphs/)
+* [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/) / [Glyph explorer](https://beautifulwebtype.com/biorhyme-expanded/glyphs/)
+* [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) / [Glyph explorer](https://beautifulwebtype.com/cooper-hewitt/glyphs/)
+* [FiraGo](https://beautifulwebtype.com/firago/) / [Glyph explorer](https://beautifulwebtype.com/firago/glyphs/)
+* [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/) / [Glyph explorer](https://beautifulwebtype.com/ibm-plex-mono/glyphs/)
+* [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/) / [Glyph explorer](https://beautifulwebtype.com/ibm-plex-sans/glyphs/)
+* [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/) / [Glyph explorer](https://beautifulwebtype.com/ibm-plex-sans-condensed/glyphs/)
+* [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/) / [Glyph explorer](https://beautifulwebtype.com/ibm-plex-serif/glyphs/)
+* [Inria Sans](https://beautifulwebtype.com/inria-sans/) / [Glyph explorer](https://beautifulwebtype.com/inria-sans/glyphs/)
+* [Inria Serif](https://beautifulwebtype.com/inria-serif/) / [Glyph explorer](https://beautifulwebtype.com/inria-serif/glyphs/)
+* [Jost*](https://beautifulwebtype.com/jost/) / [Glyph explorer](https://beautifulwebtype.com/jost/glyphs/)
+* [Le Murmure](https://beautifulwebtype.com/le-murmure/) / [Glyph explorer](https://beautifulwebtype.com/le-murmure/glyphs/)
+* [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) / [Glyph explorer](https://beautifulwebtype.com/libre-franklin/glyphs/)
+* [Lora](https://beautifulwebtype.com/lora/) / [Glyph explorer](https://beautifulwebtype.com/lora/glyphs/)
+* [Oswald](https://beautifulwebtype.com/oswald/) / [Glyph explorer](https://beautifulwebtype.com/oswald/glyphs/)
+* [Playfair Display](https://beautifulwebtype.com/playfair-display/) / [Glyph explorer](https://beautifulwebtype.com/playfair-display/glyphs/)
+* [Poppins](https://beautifulwebtype.com/poppins/) / [Glyph explorer](https://beautifulwebtype.com/poppins/glyphs/)
+* [Rakkas](https://beautifulwebtype.com/rakkas/) / [Glyph explorer](https://beautifulwebtype.com/rakkas/glyphs/)
+* [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) / [Glyph explorer](https://beautifulwebtype.com/source-sans-pro/glyphs/)
+* [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) / [Glyph explorer](https://beautifulwebtype.com/source-serif-pro/glyphs/)
+* [Vollkorn](https://beautifulwebtype.com/vollkorn/) / [Glyph explorer](https://beautifulwebtype.com/vollkorn/glyphs/)
+* [Work Sans](https://beautifulwebtype.com/work-sans/) / [Glyph explorer](https://beautifulwebtype.com/work-sans/glyphs/)
+* [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) / [Glyph explorer](https://beautifulwebtype.com/zilla-slab/glyphs/)
 
 ## Suggesting Typefaces
 
