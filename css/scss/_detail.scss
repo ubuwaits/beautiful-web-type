@@ -1,12 +1,20 @@
 // Page header
 // --------------------------------------------------------------------------
-.type-detail-header h2 {
-  font-size: var(--ms5);
-  font-weight: 400;
-  line-height: 1.1;
+.type-detail-header {
+  h2 {
+    font: 600 var(--ms5)/1.1 var(--ui-face);
 
-  @media screen and (max-width: $mobile) {
-    font-size: var(--ms3);
+    @media screen and (max-width: $mobile) {
+      font-size: var(--ms3);
+    }
+  }
+
+  h3 {
+    font: 400 var(--ms5)/1.1 var(--ui-face);
+
+    @media screen and (max-width: $mobile) {
+      font-size: var(--ms3);
+    }
   }
 }
 
