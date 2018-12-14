@@ -59,6 +59,17 @@
     color: #333;
   }
 
+  p span {
+    float: right;
+
+    a {
+      color: var(--red);
+      font-size: var(--ms-1);
+      letter-spacing: 0.035em;
+      text-transform: uppercase;
+    }
+  }
+
   .pairing-list a:first-child::after {
     content: ' \0026';
   }

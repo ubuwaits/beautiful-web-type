@@ -5,7 +5,7 @@ layout: default
 {% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 
 <header class='type-detail-header m2'>
-  <h2 class='ui-face'>{{ typeface.name }} glyph inspector</h2>
+  <h2><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a> / Glyph inspector</h2>
 </header>
 
 <div class='grid'>
