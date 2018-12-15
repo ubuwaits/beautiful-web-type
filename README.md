@@ -9,7 +9,7 @@ I have spent a great deal of time sorting through the growing number of open-sou
 * Personal site: https://chad.is
 * Twitter: https://twitter.com/ubuwaits
 
-## Changelog
+## Changelog / [Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)
 
 ### 14 Dec 2018
 * **Added glyph inspector for each typeface**. [See it in action](https://beautifulwebtype.com/ibm-plex-mono/glyphs/). This feature was made possible by [opentype.js](https://github.com/opentypejs/opentype.js).
@@ -19,8 +19,6 @@ I have spent a great deal of time sorting through the growing number of open-sou
 
 ### 05 Dec 2018
 * **Improved behavior of typeface comparison text**. Now, when updating the sample text for one typeface, it changes the sample text for the other typefaces as well.
-
-**[Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
 All featured typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
