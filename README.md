@@ -4,8 +4,9 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## How to support this project
 
-I am now dedicating a considerable amount of time to this project. Your support is essential to ensure that I can continue to do so. If you get value from this project, please consider becoming a patron at [Patreon](https://www.patreon.com/ubuwaits).
+I am now dedicating a considerable amount of time to this project. Your support is essential to ensure that I can continue to do so. If you get value from this project, please consider becoming a patron.
 
+* Patreon: https://www.patreon.com/ubuwaits
 * Newsletter: https://tinyletter.com/beautifulwebtype
 * Personal site: https://chad.is
 * Twitter: https://twitter.com/ubuwaits
@@ -63,6 +64,8 @@ I'm happy to receive suggestions for typefaces to feature either though [a GitHu
 ## Old version of site
 
 The old version of the site is archived here: https://beautifulwebtype.com/v1/
+
+**Please note**: I no longer own the hellohappy.org domain. It was purchased by a link spammer who uploaded an archived version of the site with links to their essay writing services sprinkled throughout. Please spread the word by updating any links to point to https://beautifulwebtype.com rather than hellohappy.org.
 
 ## Local development
 
