@@ -12,169 +12,156 @@ body-head-content:
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
 {% assign text = site.data.text %}
 
-<div class='grid {{ typeface.name | downcase | replace: ' ', '-' }}'>
-  <header class='type-detail-header gr1 gc6'>
-    <h2>{{ typeface.name }}</h2>
-    <h3>by {{ typeface.creator }}</h3>
-  </header>
+<div class='type-styles gr1 gc6'>
+  <p class='w400'>Regular <span class='weight'>400</span></p>
+</div>
 
-  <div class='font-download gr1 gc6'>
-    <a href='{{ typeface.project-url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+<div class='type-info gr1 gc3'>
+  <h3>Description</h3>
+  <h4>{{ typeface.description }}</h4>
+</div>
+
+<div class='type-info gr1 gc3'>
+  <h3>Designed by</h3>
+  <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
+
+  <h3>Category</h3>
+  <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
+
+  <h3>No. of styles</h3>
+  <h4>{{ typeface.styles }}</h4>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
   </div>
-
-  {% include sample.html %}
-
-  <div class='type-styles gr1 gc6'>
-    <p class='w400'>Regular <span class='weight'>400</span></p>
+  <div class='examples character-examples flow-row'>
+    {% include characters.html %}
   </div>
+</div>
 
-  <div class='type-info gr1 gc3'>
-    <h3>Description</h3>
-    <h4>{{ typeface.description }}</h4>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Words</p>
   </div>
-
-  <div class='type-info gr1 gc3'>
-    <h3>Designed by</h3>
-    <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
-
-    <h3>Category</h3>
-    <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
-
-    <h3>No. of styles</h3>
-    <h4>{{ typeface.styles }}</h4>
+  <div class='examples word-examples flow-column flow-center'>
+    <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[0] }}</h1></div>
+    <div><h1 class='ms7 w400 upper' contenteditable='true'>{{ text.words[1] }}</h1></div>
+    <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[2] }}</h1></div>
+    <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[3] }}</h1></div>
+    <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[4] }}</h1></div>
+    <div><h1 class='ms6 w400' contenteditable='true'>{{ text.words[5] }}</h1></div>
+    <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[6] }}</h1></div>
   </div>
+</div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
-    </div>
-    <div class='examples character-examples flow-row'>
-      {% include characters.html %}
-    </div>
+<div class='type-detail-table gr3 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Headlines</p>
   </div>
-
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Words</p>
-    </div>
-    <div class='examples word-examples flow-column flow-center'>
-      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[0] }}</h1></div>
-      <div><h1 class='ms7 w400 upper' contenteditable='true'>{{ text.words[1] }}</h1></div>
-      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[2] }}</h1></div>
-      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[3] }}</h1></div>
-      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[4] }}</h1></div>
-      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.words[5] }}</h1></div>
-      <div><h1 class='ms7 w400' contenteditable='true'>{{ text.words[6] }}</h1></div>
-    </div>
-  </div>
-
-  <div class='type-detail-table gr3 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Headlines</p>
-    </div>
-    <div class='examples flow-column'>
-      <div>
-        <h1 class='ms9 w400' contenteditable='true'>{{ text.headlines[0] }}</h1>
-        <p class='character-label'>400</p>
-      </div>
+  <div class='examples flow-column'>
+    <div>
+      <h1 class='ms9 w400' contenteditable='true'>{{ text.headlines[0] }}</h1>
+      <p class='character-label'>400</p>
     </div>
   </div>
+</div>
 
-  <div class='type-detail-table gr3 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Standard Ligatures</p>
-      <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+<div class='type-detail-table gr3 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Standard Ligatures</p>
+    <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade ms8'>ff</span> <span class='liga ms8'>ff</span></div>
+    <div><span class='fade ms8'>ffi</span> <span class='liga ms8'>ffi</span></div>
+    <div><span class='fade ms8'>ffl</span> <span class='liga ms8'>ffl</span></div>
+    <div><span class='fade ms8'>fi</span> <span class='liga ms8'>fi</span></div>
+    <div><span class='fade ms8'>fl</span> <span class='liga ms8'>fl</span></div>
+    <div><span class='fade ms8'>VTF</span> <span class='liga ms8'>VTF</span></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr4 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Figures</p>
+  </div>
+  <div class='examples flow-column flow-center'>
+    <div>
+      <h1 class='oldstyle-proportional ms6 w400'>1234567890</h1>
+      <p class='character-label'>Proportional Oldstyle (default): 'pnum', 'onum'</p>
     </div>
-    <div class='examples flow-row'>
-      <div><span class='fade ms8'>ff</span> <span class='liga ms8'>ff</span></div>
-      <div><span class='fade ms8'>ffi</span> <span class='liga ms8'>ffi</span></div>
-      <div><span class='fade ms8'>ffl</span> <span class='liga ms8'>ffl</span></div>
-      <div><span class='fade ms8'>fi</span> <span class='liga ms8'>fi</span></div>
-      <div><span class='fade ms8'>fl</span> <span class='liga ms8'>fl</span></div>
-      <div><span class='fade ms8'>VTF</span> <span class='liga ms8'>VTF</span></div>
+
+    <div>
+      <h1 class='lining-proportional ms6 w400'>1234567890</h1>
+      <p class='character-label'>Proportional Lining: 'pnum', 'lnum'</p>
+    </div>
+
+    <div>
+      <h1 class='ms6 w400'><span class='fade'>0</span> <span class='zero'>0</span></h1>
+      <p class='character-label'>Slashed Zero: 'zero'</p>
+    </div>
+
+    <div>
+      <h1 class='fractions ms6 w400'>1/2 3/4 5/6 7/8 90/123</h1>
+      <p class='character-label'>Fractions: 'frac';</p>
     </div>
   </div>
+</div>
 
-  <div class='type-detail-table gr4 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Figures</p>
-    </div>
-    <div class='examples flow-column flow-center'>
-      <div>
-        <h1 class='oldstyle-proportional ms6 w400'>1234567890</h1>
-        <p class='character-label'>Proportional Oldstyle (default): 'pnum', 'onum'</p>
-      </div>
-
-      <div>
-        <h1 class='lining-proportional ms6 w400'>1234567890</h1>
-        <p class='character-label'>Proportional Lining: 'pnum', 'lnum'</p>
-      </div>
-
-      <div>
-        <h1 class='ms6 w400'><span class='fade'>0</span> <span class='zero'>0</span></h1>
-        <p class='character-label'>Slashed Zero: 'zero'</p>
-      </div>
-
-      <div>
-        <h1 class='fractions ms6 w400'>1/2 3/4 5/6 7/8 90/123</h1>
-        <p class='character-label'>Fractions: 'frac';</p>
-      </div>
-    </div>
+<div class='type-detail-table gr4 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Alternate Glyph Forms</p>
+    <p class='code'>font-feature-settings: 'ss--';</p>
   </div>
-
-  <div class='type-detail-table gr4 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Alternate Glyph Forms</p>
-      <p class='code'>font-feature-settings: 'ss--';</p>
-    </div>
-    <div class='examples flow-row'>
-      <div><span class='fade'>A</span> <span class='ss03'>A</span> <p class='code'>'ss03'</p></div>
-      <div><span class='fade'>Æ</span> <span class='ss03'>Æ</span> <p class='code'>'ss03'</p></div>
-      <div><span class='fade'>C</span> <span class='ss06'>C</span> <p class='code'>'ss06'</p></div>
-      <div><span class='fade'>f</span> <span class='ss01'>f</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>j</span> <span class='ss01'>j</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>M</span> <span class='ss01'>M</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>M</span> <span class='ss02'>M</span> <p class='code'>'ss02'</p></div>
-      <div><span class='fade'>M</span> <span class='ss05'>M</span> <p class='code'>'ss05'</p></div>
-      <div><span class='fade'>m</span> <span class='ss01'>m</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>m</span> <span class='ss02'>m</span> <p class='code'>'ss02'</p></div>
-      <div><span class='fade'>N</span> <span class='ss01'>N</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>N</span> <span class='ss02'>N</span> <p class='code'>'ss02'</p></div>
-      <div><span class='fade'>n</span> <span class='ss01'>n</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>n</span> <span class='ss02'>n</span> <p class='code'>'ss02'</p></div>
-      <div><span class='fade'>Q</span> <span class='ss07'>Q</span> <p class='code'>'ss07'</p></div>
-      <div><span class='fade'>R</span> <span class='ss07'>R</span> <p class='code'>'ss07'</p></div>
-      <div><span class='fade'>r</span> <span class='ss04'>r</span> <p class='code'>'ss04'</p></div>
-      <div><span class='fade'>S</span> <span class='ss01'>S</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>s</span> <span class='ss01'>s</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>W</span> <span class='ss05'>W</span> <p class='code'>'ss05'</p></div>
-      <div><span class='fade'>Z</span> <span class='ss01'>Z</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>z</span> <span class='ss01'>z</span> <p class='code'>'ss01'</p></div>
-    </div>
+  <div class='examples flow-row'>
+    <div><span class='fade'>A</span> <span class='ss03'>A</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade'>Æ</span> <span class='ss03'>Æ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade'>C</span> <span class='ss06'>C</span> <p class='code'>'ss06'</p></div>
+    <div><span class='fade'>f</span> <span class='ss01'>f</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>j</span> <span class='ss01'>j</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>M</span> <span class='ss01'>M</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>M</span> <span class='ss02'>M</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade'>M</span> <span class='ss05'>M</span> <p class='code'>'ss05'</p></div>
+    <div><span class='fade'>m</span> <span class='ss01'>m</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>m</span> <span class='ss02'>m</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade'>N</span> <span class='ss01'>N</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>N</span> <span class='ss02'>N</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade'>n</span> <span class='ss01'>n</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>n</span> <span class='ss02'>n</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade'>Q</span> <span class='ss07'>Q</span> <p class='code'>'ss07'</p></div>
+    <div><span class='fade'>R</span> <span class='ss07'>R</span> <p class='code'>'ss07'</p></div>
+    <div><span class='fade'>r</span> <span class='ss04'>r</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade'>S</span> <span class='ss01'>S</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>s</span> <span class='ss01'>s</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>W</span> <span class='ss05'>W</span> <p class='code'>'ss05'</p></div>
+    <div><span class='fade'>Z</span> <span class='ss01'>Z</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>z</span> <span class='ss01'>z</span> <p class='code'>'ss01'</p></div>
   </div>
+</div>
 
-  <div class='type-detail-table gr2 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Case Sensitive Forms</p>
-      <p class='code'>font-feature-settings: 'case';</p>
-    </div>
-    <div class='examples flow-row'>
-      <div><span class='fade'>(8)</span> <span class='case'>(8)</span></div>
-      <div><span class='fade'>-</span> <span class='case'>-</span></div>
-      <div><span class='fade'>¿</span> <span class='case'>¿</span></div>
-    </div>
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Case Sensitive Forms</p>
+    <p class='code'>font-feature-settings: 'case';</p>
   </div>
+  <div class='examples flow-row'>
+    <div><span class='fade'>(8)</span> <span class='case'>(8)</span></div>
+    <div><span class='fade'>-</span> <span class='case'>-</span></div>
+    <div><span class='fade'>¿</span> <span class='case'>¿</span></div>
+  </div>
+</div>
 
-  <div class='type-detail-table gr2 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Special Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
-    </div>
-    <div class='examples flow-row'>
-      <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
-      <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-      <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
-      <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
-      <div><span>&#9889;</span> <p class='code'>&amp;#9889;</p></div>
-    </div>
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Special Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
+    <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
+    <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
+    <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>&#9889;</span> <p class='code'>&amp;#9889;</p></div>
   </div>
 </div>

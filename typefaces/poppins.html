@@ -12,247 +12,233 @@ body-head-content:
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
 {% assign text = site.data.text %}
 
-<div class='grid {{ typeface.name | downcase | replace: ' ', '-' }}'>
-  <header class='type-detail-header gr1 gc6'>
-    <h2>{{ typeface.name }}</h2>
-    <h3>by {{ typeface.creator }}</h3>
-  </header>
+<div class='type-styles gr1 gc6'>
+  <p class='w100'>Thin <em>Italic</em> <span class='weight'>100</span></p>
+  <p class='w200'>ExtraLight <em>Italic</em> <span class='weight'>200</span></p>
+  <p class='w300'>Light <em>Italic</em> <span class='weight'>300</span></p>
+  <p class='w400'>Regular <em>Italic</em> <span class='weight'>400</span></p>
+  <p class='w500'>Medium <em>Italic</em> <span class='weight'>500</span></p>
+  <p class='w600'>SemiBold <em>Italic</em> <span class='weight'>600</span></p>
+  <p class='w700'>Bold <em>Italic</em> <span class='weight'>700</span></p>
+  <p class='w800'>ExtraBold <em>Italic</em> <span class='weight'>800</span></p>
+  <p class='w900'>Black <em>Italic</em> <span class='weight'>900</span></p>
+</div>
 
-  <div class='font-download gr1 gc6'>
-    <a href='{{ typeface.g-fonts-url }}' target='_blank' rel='noopener'>Embed <span>using Google Fonts</span></a>
-    <a href='{{ typeface.project-url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+<div class='type-info gr1 gc3'>
+  <h3>Description</h3>
+  <h4>{{ typeface.description }}</h4>
+</div>
+
+<div class='type-info gr1 gc3'>
+  <h3>Designed by</h3>
+  <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
+
+  <h3>Category</h3>
+  <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
+
+  <h3>No. of styles</h3>
+  <h4>{{ typeface.styles }}</h4>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
   </div>
-
-  {% include sample.html %}
-
-  <div class='type-styles gr1 gc6'>
-    <p class='w100'>Thin <em>Italic</em> <span class='weight'>100</span></p>
-    <p class='w200'>ExtraLight <em>Italic</em> <span class='weight'>200</span></p>
-    <p class='w300'>Light <em>Italic</em> <span class='weight'>300</span></p>
-    <p class='w400'>Regular <em>Italic</em> <span class='weight'>400</span></p>
-    <p class='w500'>Medium <em>Italic</em> <span class='weight'>500</span></p>
-    <p class='w600'>SemiBold <em>Italic</em> <span class='weight'>600</span></p>
-    <p class='w700'>Bold <em>Italic</em> <span class='weight'>700</span></p>
-    <p class='w800'>ExtraBold <em>Italic</em> <span class='weight'>800</span></p>
-    <p class='w900'>Black <em>Italic</em> <span class='weight'>900</span></p>
+  <div class='examples character-examples flow-row'>
+    {% include characters.html %}
   </div>
+</div>
 
-  <div class='type-info gr1 gc3'>
-    <h3>Description</h3>
-    <h4>{{ typeface.description }}</h4>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Words</p>
   </div>
-
-  <div class='type-info gr1 gc3'>
-    <h3>Designed by</h3>
-    <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
-
-    <h3>Category</h3>
-    <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
-
-    <h3>No. of styles</h3>
-    <h4>{{ typeface.styles }}</h4>
+  <div class='examples word-examples flow-column flow-center'>
+    <div><h1 class='ms6 w100' contenteditable='true'>{{ text.words[0] }}</h1></div>
+    <div><h1 class='ms6 w200 upper' contenteditable='true'>{{ text.words[1] }}</h1></div>
+    <div><h1 class='ms6 w300 italic' contenteditable='true'>{{ text.words[2] }}</h1></div>
+    <div><h1 class='ms6 w400' contenteditable='true'>{{ text.words[3] }}</h1></div>
+    <div><h1 class='ms6 w600' contenteditable='true'>{{ text.words[4] }}</h1></div>
+    <div><h1 class='w700' contenteditable='true'>{{ text.words[5] }}</h1></div>
+    <div><h1 class='ms6 w900' contenteditable='true'>{{ text.words[6] }}</h1></div>
   </div>
+</div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Headlines</p>
+  </div>
+  <div class='examples flow-column'>
+    <div>
+      <h1 class='w100' contenteditable='true'>{{ text.headlines[0] }}</h1>
+      <p class='character-label'>100</p>
     </div>
-    <div class='examples character-examples flow-row'>
-      {% include characters.html %}
+
+    <div>
+      <h1 class='w200' contenteditable='true'>{{ text.headlines[1] }}</h1>
+      <p class='character-label'>200</p>
     </div>
-  </div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Words</p>
+    <div>
+      <h1 class='w300' contenteditable='true'>{{ text.headlines[2] }}</h1>
+      <p class='character-label'>300</p>
     </div>
-    <div class='examples word-examples flow-column flow-center'>
-      <div><h1 class='ms6 w100' contenteditable='true'>{{ text.words[0] }}</h1></div>
-      <div><h1 class='ms6 w200 upper' contenteditable='true'>{{ text.words[1] }}</h1></div>
-      <div><h1 class='ms6 w300 italic' contenteditable='true'>{{ text.words[2] }}</h1></div>
-      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.words[3] }}</h1></div>
-      <div><h1 class='ms6 w600' contenteditable='true'>{{ text.words[4] }}</h1></div>
-      <div><h1 class='w700' contenteditable='true'>{{ text.words[5] }}</h1></div>
-      <div><h1 class='ms6 w900' contenteditable='true'>{{ text.words[6] }}</h1></div>
+
+    <div>
+      <h1 class='w400' contenteditable='true'>{{ text.headlines[3] }}</h1>
+      <p class='character-label'>400</p>
     </div>
-  </div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Headlines</p>
+    <div>
+      <h1 class='w500' contenteditable='true'>{{ text.headlines[4] }}</h1>
+      <p class='character-label'>500</p>
     </div>
-    <div class='examples flow-column'>
-      <div>
-        <h1 class='w100' contenteditable='true'>{{ text.headlines[0] }}</h1>
-        <p class='character-label'>100</p>
-      </div>
 
-      <div>
-        <h1 class='w200' contenteditable='true'>{{ text.headlines[1] }}</h1>
-        <p class='character-label'>200</p>
-      </div>
+    <div>
+      <h1 class='w600' contenteditable='true'>{{ text.headlines[5] }}</h1>
+      <p class='character-label'>600</p>
+    </div>
 
-      <div>
-        <h1 class='w300' contenteditable='true'>{{ text.headlines[2] }}</h1>
-        <p class='character-label'>300</p>
-      </div>
+    <div>
+      <h1 class='w700' contenteditable='true'>{{ text.headlines[6] }}</h1>
+      <p class='character-label'>700</p>
+    </div>
 
-      <div>
-        <h1 class='w400' contenteditable='true'>{{ text.headlines[3] }}</h1>
-        <p class='character-label'>400</p>
-      </div>
+    <div>
+      <h1 class='w800' contenteditable='true'>{{ text.headlines[7] }}</h1>
+      <p class='character-label'>800</p>
+    </div>
 
-      <div>
-        <h1 class='w500' contenteditable='true'>{{ text.headlines[4] }}</h1>
-        <p class='character-label'>500</p>
-      </div>
-
-      <div>
-        <h1 class='w600' contenteditable='true'>{{ text.headlines[5] }}</h1>
-        <p class='character-label'>600</p>
-      </div>
-
-      <div>
-        <h1 class='w700' contenteditable='true'>{{ text.headlines[6] }}</h1>
-        <p class='character-label'>700</p>
-      </div>
-
-      <div>
-        <h1 class='w800' contenteditable='true'>{{ text.headlines[7] }}</h1>
-        <p class='character-label'>800</p>
-      </div>
-
-      <div>
-        <h1 class='w900' contenteditable='true'>{{ text.headlines[8] }}</h1>
-        <p class='character-label'>900</p>
-      </div>
+    <div>
+      <h1 class='w900' contenteditable='true'>{{ text.headlines[8] }}</h1>
+      <p class='character-label'>900</p>
     </div>
   </div>
+</div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Italic headlines</p>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Italic headlines</p>
+  </div>
+  <div class='examples flow-column'>
+    <div>
+      <h1 class='w100 italic' contenteditable='true'>{{ text.headlines[0] }}</h1>
+      <p class='character-label'>100</p>
     </div>
-    <div class='examples flow-column'>
-      <div>
-        <h1 class='w100 italic' contenteditable='true'>{{ text.headlines[0] }}</h1>
-        <p class='character-label'>100</p>
-      </div>
 
-      <div>
-        <h1 class='w200 italic' contenteditable='true'>{{ text.headlines[1] }}</h1>
-        <p class='character-label'>200</p>
-      </div>
+    <div>
+      <h1 class='w200 italic' contenteditable='true'>{{ text.headlines[1] }}</h1>
+      <p class='character-label'>200</p>
+    </div>
 
-      <div>
-        <h1 class='w300 italic' contenteditable='true'>{{ text.headlines[2] }}</h1>
-        <p class='character-label'>300</p>
-      </div>
+    <div>
+      <h1 class='w300 italic' contenteditable='true'>{{ text.headlines[2] }}</h1>
+      <p class='character-label'>300</p>
+    </div>
 
-      <div>
-        <h1 class='w400 italic' contenteditable='true'>{{ text.headlines[3] }}</h1>
-        <p class='character-label'>400</p>
-      </div>
+    <div>
+      <h1 class='w400 italic' contenteditable='true'>{{ text.headlines[3] }}</h1>
+      <p class='character-label'>400</p>
+    </div>
 
-      <div>
-        <h1 class='w500 italic' contenteditable='true'>{{ text.headlines[4] }}</h1>
-        <p class='character-label'>500</p>
-      </div>
+    <div>
+      <h1 class='w500 italic' contenteditable='true'>{{ text.headlines[4] }}</h1>
+      <p class='character-label'>500</p>
+    </div>
 
-      <div>
-        <h1 class='w600 italic' contenteditable='true'>{{ text.headlines[5] }}</h1>
-        <p class='character-label'>600</p>
-      </div>
+    <div>
+      <h1 class='w600 italic' contenteditable='true'>{{ text.headlines[5] }}</h1>
+      <p class='character-label'>600</p>
+    </div>
 
-      <div>
-        <h1 class='w700 italic' contenteditable='true'>{{ text.headlines[6] }}</h1>
-        <p class='character-label'>700</p>
-      </div>
+    <div>
+      <h1 class='w700 italic' contenteditable='true'>{{ text.headlines[6] }}</h1>
+      <p class='character-label'>700</p>
+    </div>
 
-      <div>
-        <h1 class='w800 italic' contenteditable='true'>{{ text.headlines[7] }}</h1>
-        <p class='character-label'>800</p>
-      </div>
+    <div>
+      <h1 class='w800 italic' contenteditable='true'>{{ text.headlines[7] }}</h1>
+      <p class='character-label'>800</p>
+    </div>
 
-      <div>
-        <h1 class='w900 italic' contenteditable='true'>{{ text.headlines[8] }}</h1>
-        <p class='character-label'>900</p>
-      </div>
+    <div>
+      <h1 class='w900 italic' contenteditable='true'>{{ text.headlines[8] }}</h1>
+      <p class='character-label'>900</p>
     </div>
   </div>
+</div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Paragraphs</p>
-      <p class='code'>font-weight: 300</p>
-    </div>
-    <div class='examples flow-column'>
-      <div><p class='ms2 w300' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms1 w300' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms0 w300' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms-1 w300 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms-2 w300 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    </div>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Paragraphs</p>
+    <p class='code'>font-weight: 300</p>
   </div>
-
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Paragraphs</p>
-      <p class='code'>font-weight: 400</p>
-    </div>
-    <div class='examples flow-column'>
-      <div><p class='ms2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms1' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms0' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms-1 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms-2 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    </div>
+  <div class='examples flow-column'>
+    <div><p class='ms2 w300' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms1 w300' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms0 w300' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms-1 w300 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms-2 w300 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
   </div>
+</div>
 
-  <div class='type-detail-table gr9 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Paragraphs</p>
-      <p class='code'>font-weight: 500</p>
-    </div>
-    <div class='examples flow-column'>
-      <div><p class='ms2 w500' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms1 w500' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms0 w500' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms-1 w500 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-      <div><p class='ms-2 w500 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    </div>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Paragraphs</p>
+    <p class='code'>font-weight: 400</p>
   </div>
-
-  <div class='type-detail-table gr3 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Alternate Glyph Forms</p>
-      <p class='code'>font-feature-settings: 'ss--';</p>
-    </div>
-    <div class='examples flow-row'>
-      <div><span class='fade'>!</span> <span class='ss01'>!</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>?</span> <span class='ss01'>?</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>‘ ’</span> <span class='ss01'>‘ ’</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>“ ”</span> <span class='ss01'>“ ”</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>,</span> <span class='ss01'>,</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>.</span> <span class='ss01'>.</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>:</span> <span class='ss01'>:</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>;</span> <span class='ss01'>;</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>&hellip;</span> <span class='ss01'>&hellip;</span> <p class='code'>'ss01'</p></div>
-      <div><span class='fade'>a</span> <span class='ss02'>a</span> <p class='code'>'ss02'</p></div>
-      <div><span class='fade'>&</span> <span class='ss03'>&</span> <p class='code'>'ss03'</p></div>
-      <div><span class='fade'>3</span> <span class='ss04'>3</span> <p class='code'>'ss04'</p></div>
-      <div><span class='fade'>6</span> <span class='ss04'>6</span> <p class='code'>'ss04'</p></div>
-      <div><span class='fade'>9</span> <span class='ss04'>9</span> <p class='code'>'ss04'</p></div>
-    </div>
+  <div class='examples flow-column'>
+    <div><p class='ms2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms1' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms0' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms-1 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms-2 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
   </div>
+</div>
 
-  <div class='type-detail-table gr2 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Special Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
-    </div>
-    <div class='examples flow-row'>
-      <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
-      <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-    </div>
+<div class='type-detail-table gr9 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Paragraphs</p>
+    <p class='code'>font-weight: 500</p>
+  </div>
+  <div class='examples flow-column'>
+    <div><p class='ms2 w500' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms1 w500' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms0 w500' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms-1 w500 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+    <div><p class='ms-2 w500 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr3 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Alternate Glyph Forms</p>
+    <p class='code'>font-feature-settings: 'ss--';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade'>!</span> <span class='ss01'>!</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>?</span> <span class='ss01'>?</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>‘ ’</span> <span class='ss01'>‘ ’</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>“ ”</span> <span class='ss01'>“ ”</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>,</span> <span class='ss01'>,</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>.</span> <span class='ss01'>.</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>:</span> <span class='ss01'>:</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>;</span> <span class='ss01'>;</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>&hellip;</span> <span class='ss01'>&hellip;</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade'>a</span> <span class='ss02'>a</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade'>&</span> <span class='ss03'>&</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade'>3</span> <span class='ss04'>3</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade'>6</span> <span class='ss04'>6</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade'>9</span> <span class='ss04'>9</span> <p class='code'>'ss04'</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Special Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
+    <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
   </div>
 </div>

@@ -12,205 +12,191 @@ body-head-content:
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
 {% assign text = site.data.text %}
 
-<div class='grid {{ typeface.name | downcase | replace: ' ', '-' }}'>
-  <header class='type-detail-header gr1 gc6'>
-    <h2>{{ typeface.name }}</h2>
-    <h3>by {{ typeface.creator }}</h3>
-  </header>
+<div class='type-styles gr1 gc6'>
+  <h1 class='w200 ms6'>Extra-Light <span class='weight'>200</span></h1>
+  <h1 class='w300 ms6'>Light <span class='weight'>300</span></h1>
+  <h1 class='w400 ms6'>Regular <span class='weight'>400</span></h1>
+  <h1 class='w500 ms6'>Medium <span class='weight'>500</span></h1>
+  <h1 class='w600 ms6'>Semi-Bold <span class='weight'>600</span></h1>
+  <h1 class='w700 ms6'>Bold <span class='weight'>700</span></h1>
+  <h1 class='w900 ms6'>Heavy <span class='weight'>900</span></h1>
+</div>
 
-  <div class='font-download gr1 gc6'>
-    <a href='{{ typeface.g-fonts-url }}' target='_blank' rel='noopener'>Embed <span>using Google Fonts</span></a>
-    <a href='{{ typeface.project-url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+<div class='type-info gr1 gc3'>
+  <h3>Description</h3>
+  <h4>{{ typeface.description }}</h4>
+</div>
+
+<div class='type-info gr1 gc3'>
+  <h3>Designed by</h3>
+  <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
+
+  <h3>Category</h3>
+  <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
+
+  <h3>No. of styles</h3>
+  <h4>{{ typeface.styles }}</h4>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
   </div>
-
-  {% include sample.html %}
-
-  <div class='type-styles gr1 gc6'>
-    <h1 class='w200 ms6'>Extra-Light <span class='weight'>200</span></h1>
-    <h1 class='w300 ms6'>Light <span class='weight'>300</span></h1>
-    <h1 class='w400 ms6'>Regular <span class='weight'>400</span></h1>
-    <h1 class='w500 ms6'>Medium <span class='weight'>500</span></h1>
-    <h1 class='w600 ms6'>Semi-Bold <span class='weight'>600</span></h1>
-    <h1 class='w700 ms6'>Bold <span class='weight'>700</span></h1>
-    <h1 class='w900 ms6'>Heavy <span class='weight'>900</span></h1>
+  <div class='examples character-examples flow-row'>
+    {% include characters.html %}
   </div>
+</div>
 
-  <div class='type-info gr1 gc3'>
-    <h3>Description</h3>
-    <h4>{{ typeface.description }}</h4>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Words</p>
   </div>
-
-  <div class='type-info gr1 gc3'>
-    <h3>Designed by</h3>
-    <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
-
-    <h3>Category</h3>
-    <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
-
-    <h3>No. of styles</h3>
-    <h4>{{ typeface.styles }}</h4>
+  <div class='examples word-examples flow-column flow-center'>
+    <div><h1 class='ms7 w200' contenteditable='true'>{{ text.words[0] }}</h1></div>
+    <div><h1 class='ms6 w300 upper' contenteditable='true'>{{ text.words[1] }}</h1></div>
+    <div><h1 class='ms6 w400' contenteditable='true'>{{ text.words[2] }}</h1></div>
+    <div><h1 class='ms6 w500' contenteditable='true'>{{ text.words[3] }}</h1></div>
+    <div><h1 class='ms5 w600' contenteditable='true'>{{ text.words[4] }}</h1></div>
+    <div><h1 class='ms6 w700' contenteditable='true'>{{ text.words[5] }}</h1></div>
+    <div><h1 class='ms6 w900' contenteditable='true'>{{ text.words[6] }}</h1></div>
   </div>
+</div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Headlines</p>
+  </div>
+  <div class='examples flow-column'>
+    <div>
+      <h1 class='w200' contenteditable='true'>{{ text.headlines[0] }}</h1>
+      <p class='character-label'>200</p>
     </div>
-    <div class='examples character-examples flow-row'>
-      {% include characters.html %}
+
+    <div>
+      <h1 class='w300' contenteditable='true'>{{ text.headlines[1] }}</h1>
+      <p class='character-label'>300</p>
     </div>
-  </div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Words</p>
+    <div>
+      <h1 class='w400' contenteditable='true'>{{ text.headlines[2] }}</h1>
+      <p class='character-label'>400</p>
     </div>
-    <div class='examples word-examples flow-column flow-center'>
-      <div><h1 class='ms7 w200' contenteditable='true'>{{ text.words[0] }}</h1></div>
-      <div><h1 class='ms6 w300 upper' contenteditable='true'>{{ text.words[1] }}</h1></div>
-      <div><h1 class='ms6 w400' contenteditable='true'>{{ text.words[2] }}</h1></div>
-      <div><h1 class='ms6 w500' contenteditable='true'>{{ text.words[3] }}</h1></div>
-      <div><h1 class='ms5 w600' contenteditable='true'>{{ text.words[4] }}</h1></div>
-      <div><h1 class='ms6 w700' contenteditable='true'>{{ text.words[5] }}</h1></div>
-      <div><h1 class='ms6 w900' contenteditable='true'>{{ text.words[6] }}</h1></div>
+
+    <div>
+      <h1 class='w500' contenteditable='true'>{{ text.headlines[3] }}</h1>
+      <p class='character-label'>500</p>
     </div>
-  </div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Headlines</p>
+    <div>
+      <h1 class='w600' contenteditable='true'>{{ text.headlines[4] }}</h1>
+      <p class='character-label'>600</p>
     </div>
-    <div class='examples flow-column'>
-      <div>
-        <h1 class='w200' contenteditable='true'>{{ text.headlines[0] }}</h1>
-        <p class='character-label'>200</p>
-      </div>
 
-      <div>
-        <h1 class='w300' contenteditable='true'>{{ text.headlines[1] }}</h1>
-        <p class='character-label'>300</p>
-      </div>
+    <div>
+      <h1 class='w700' contenteditable='true'>{{ text.headlines[5] }}</h1>
+      <p class='character-label'>700</p>
+    </div>
 
-      <div>
-        <h1 class='w400' contenteditable='true'>{{ text.headlines[2] }}</h1>
-        <p class='character-label'>400</p>
-      </div>
-
-      <div>
-        <h1 class='w500' contenteditable='true'>{{ text.headlines[3] }}</h1>
-        <p class='character-label'>500</p>
-      </div>
-
-      <div>
-        <h1 class='w600' contenteditable='true'>{{ text.headlines[4] }}</h1>
-        <p class='character-label'>600</p>
-      </div>
-
-      <div>
-        <h1 class='w700' contenteditable='true'>{{ text.headlines[5] }}</h1>
-        <p class='character-label'>700</p>
-      </div>
-
-      <div>
-        <h1 class='w900' contenteditable='true'>{{ text.headlines[6] }}</h1>
-        <p class='character-label'>900</p>
-      </div>
+    <div>
+      <h1 class='w900' contenteditable='true'>{{ text.headlines[6] }}</h1>
+      <p class='character-label'>900</p>
     </div>
   </div>
+</div>
 
-  <div class='type-detail-table gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Uppercase Headlines</p>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Uppercase Headlines</p>
+  </div>
+  <div class='examples flow-column'>
+    <div>
+      <h1 class='w200 upper' contenteditable='true'>{{ text.headlines[0] }}</h1>
+      <p class='character-label'>200</p>
     </div>
-    <div class='examples flow-column'>
-      <div>
-        <h1 class='w200 upper' contenteditable='true'>{{ text.headlines[0] }}</h1>
-        <p class='character-label'>200</p>
-      </div>
 
-      <div>
-        <h1 class='w300 upper' contenteditable='true'>{{ text.headlines[1] }}</h1>
-        <p class='character-label'>300</p>
-      </div>
+    <div>
+      <h1 class='w300 upper' contenteditable='true'>{{ text.headlines[1] }}</h1>
+      <p class='character-label'>300</p>
+    </div>
 
-      <div>
-        <h1 class='w400 upper' contenteditable='true'>{{ text.headlines[2] }}</h1>
-        <p class='character-label'>400</p>
-      </div>
+    <div>
+      <h1 class='w400 upper' contenteditable='true'>{{ text.headlines[2] }}</h1>
+      <p class='character-label'>400</p>
+    </div>
 
-      <div>
-        <h1 class='w500 upper' contenteditable='true'>{{ text.headlines[3] }}</h1>
-        <p class='character-label'>500</p>
-      </div>
+    <div>
+      <h1 class='w500 upper' contenteditable='true'>{{ text.headlines[3] }}</h1>
+      <p class='character-label'>500</p>
+    </div>
 
-      <div>
-        <h1 class='w600 upper' contenteditable='true'>{{ text.headlines[4] }}</h1>
-        <p class='character-label'>600</p>
-      </div>
+    <div>
+      <h1 class='w600 upper' contenteditable='true'>{{ text.headlines[4] }}</h1>
+      <p class='character-label'>600</p>
+    </div>
 
-      <div>
-        <h1 class='w700 upper' contenteditable='true'>{{ text.headlines[5] }}</h1>
-        <p class='character-label'>700</p>
-      </div>
+    <div>
+      <h1 class='w700 upper' contenteditable='true'>{{ text.headlines[5] }}</h1>
+      <p class='character-label'>700</p>
+    </div>
 
-      <div>
-        <h1 class='w900 upper' contenteditable='true'>{{ text.headlines[6] }}</h1>
-        <p class='character-label'>900</p>
-      </div>
+    <div>
+      <h1 class='w900 upper' contenteditable='true'>{{ text.headlines[6] }}</h1>
+      <p class='character-label'>900</p>
     </div>
   </div>
+</div>
 
-  <div class='type-detail-table gr2 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Standard Ligatures</p>
-      <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Standard Ligatures</p>
+    <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade'>ffi</span> <span class='liga'>ffi</span></div>
+    <div><span class='fade'>ffl</span> <span class='liga'>ffl</span></div>
+    <div><span class='fade'>fi</span> <span class='liga'>fi</span></div>
+    <div><span class='fade'>fl</span> <span class='liga'>fl</span></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Figures</p>
+  </div>
+  <div class='examples flow-row'>
+    <div>
+      <h1 class='fractions ms6 w400'>1/2 3/4</h1>
+      <p class='character-label'>Fractions: 'frac'</p>
     </div>
-    <div class='examples flow-row'>
-      <div><span class='fade'>ffi</span> <span class='liga'>ffi</span></div>
-      <div><span class='fade'>ffl</span> <span class='liga'>ffl</span></div>
-      <div><span class='fade'>fi</span> <span class='liga'>fi</span></div>
-      <div><span class='fade'>fl</span> <span class='liga'>fl</span></div>
+
+    <div>
+      <h1 class='ms6 w400'><span class='fade'>A</span><span class='superscript'>123</span></h1>
+      <p class='character-label'>Superscripts: 'sups'</p>
     </div>
   </div>
+</div>
 
-  <div class='type-detail-table gr2 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Figures</p>
-    </div>
-    <div class='examples flow-row'>
-      <div>
-        <h1 class='fractions ms6 w400'>1/2 3/4</h1>
-        <p class='character-label'>Fractions: 'frac'</p>
-      </div>
-
-      <div>
-        <h1 class='ms6 w400'><span class='fade'>A</span><span class='superscript'>123</span></h1>
-        <p class='character-label'>Superscripts: 'sups'</p>
-      </div>
-    </div>
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Ordinals</p>
+    <p class='code'>font-feature-settings: 'ordn';</p>
   </div>
-
-  <div class='type-detail-table gr2 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Ordinals</p>
-      <p class='code'>font-feature-settings: 'ordn';</p>
-    </div>
-    <div class='examples flow-row'>
-      <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
-      <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
-    </div>
+  <div class='examples flow-row'>
+    <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
+    <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
   </div>
+</div>
 
-  <div class='type-detail-table gr2 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Special Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
-    </div>
-    <div class='examples flow-row'>
-      <div><span>&#9650;</span> <p class='code'>&amp;#9650;</p></div>
-      <div><span>&#9660;</span> <p class='code'>&amp;#9660;</p></div>
-      <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
-      <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-      <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
-      <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
-    </div>
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Special Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span>&#9650;</span> <p class='code'>&amp;#9650;</p></div>
+    <div><span>&#9660;</span> <p class='code'>&amp;#9660;</p></div>
+    <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
+    <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
+    <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
+    <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
   </div>
 </div>
