@@ -1,10 +1,8 @@
-{% assign clean-name = typeface.name | downcase | replace: ' ', '-' %}
-
-<div class='sample {{ clean-name }} {{ clean-name }}-sample gr6 gc12'>
-  <a href='/{{ clean-name }}/'>
+<div class='sample {{ typeface.name | slugify }} {{ typeface.name | slugify }}-sample gr6 gc12'>
+  <a href='/{{ typeface.name | slugify }}/'>
     <div class='text'>{{ typeface.sample-html }}</div>
   </a>
   <div class='meta {% if typeface.sample-shade == 'light' %}dark{% endif %}'>
-    <p class='name'><a href='/{{ clean-name }}/'>{{ typeface.name }} by {{ typeface.creator }}</a></p>
+    <p class='name'><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }} by {{ typeface.creator }}</a></p>
   </div>
 </div>

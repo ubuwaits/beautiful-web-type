@@ -1,7 +1,7 @@
 {% if page.layout == 'detail' %}
   {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
-  {% assign typeface-url = typeface.name | downcase | replace: ' ', '-' %}
-  {% assign category-url = typeface.category | downcase | replace: ' ', '-' %}
+  {% assign typeface-url = typeface.name | slugify %}
+  {% assign category-url = typeface.category | slugify %}
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",

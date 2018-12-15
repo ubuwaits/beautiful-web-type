@@ -24,7 +24,7 @@
     <h3><a href='/serif/'>Serif Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>
@@ -34,7 +34,7 @@
     <h3><a href='/sans-serif/'>Sans-Serif Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>
@@ -44,7 +44,7 @@
     <h3><a href='/display/'>Display Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>
@@ -54,7 +54,7 @@
     <h3><a href='/monospaced/'>Monospaced Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | downcase | replace: ' ', '-' }}/'>{{ typeface.name }}</a></li>
+      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>
