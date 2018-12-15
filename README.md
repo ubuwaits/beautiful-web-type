@@ -1,15 +1,16 @@
 # [Beautiful Web Type](https://beautifulwebtype.com)
 
-In October 2018 I released a completely re-thought and re-designed version of Beautiful Web Type. The first version of the project (and many subsequent projects following in its footsteps) put an emphasis on stylized examples of the typeface in use. This often served to hide the flaws and limitations of the various typefaces. In contrast, the new version of the site aims to provide a complete look at each typeface, cataloging all the available weights and styles, the kerning quality, OpenType features, special characters and more.
+In October 2018 I released a completely re-thought and re-designed version of this project. The new version aims to provide a complete look at each typeface, cataloging all the available weights and styles, the full glyph set, the kerning quality, OpenType features, recommended pairings and more. I will highlight only typefaces that show a high level of quality.
 
-I have spent a great deal of time sorting through the growing number of open-source typefaces. I will highlight only those that show a high level of quality. I plan on growing this site to be the definitive resource for open-source type. Please consider supporting the project via [Patreon](https://www.patreon.com/ubuwaits).
+## How to support this project
 
-* Patreon: https://www.patreon.com/ubuwaits
+I am now dedicating a considerable amount of time to this project. Your support is essential to ensure that I can continue to do so. If you get value from this project, please consider becoming a patron at [Patreon](https://www.patreon.com/ubuwaits).
+
 * Newsletter: https://tinyletter.com/beautifulwebtype
 * Personal site: https://chad.is
 * Twitter: https://twitter.com/ubuwaits
 
-## Changelog / [Read complete Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)
+## Changelog
 
 ### 14 Dec 2018
 * **Added glyph inspector for each typeface**. [See it in action](https://beautifulwebtype.com/ibm-plex-mono/glyphs/). This feature was made possible by [opentype.js](https://github.com/opentypejs/opentype.js).
@@ -19,6 +20,8 @@ I have spent a great deal of time sorting through the growing number of open-sou
 
 ### 05 Dec 2018
 * **Improved behavior of typeface comparison text**. Now, when updating the sample text for one typeface, it changes the sample text for the other typefaces as well.
+
+**[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
 All featured typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
