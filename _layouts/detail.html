@@ -4,7 +4,7 @@ layout: default
 
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
 
-<div class='grid {{ typeface.name | downcase | replace: ' ', '-' }}'>
+<div class='grid {{ typeface.name | slugify }}'>
   <header class='type-detail-header gr1 gc6'>
     <h2>{{ typeface.name }}</h2>
     <h3>by {{ typeface.creator }}</h3>
@@ -18,6 +18,50 @@ layout: default
   </div>
 
   {% include sample.html %}
+
+  <div class='type-styles gr1 gc6'>
+  {% for weight in typeface.weights %}
+    <p class='w{{ weight.weight }}'>
+      {{ weight.name }}
+      {% unless typeface.italic == nil %}<em>Italic</em>{% endunless %}
+      <span class='weight'>{{ weight.weight }}</span>
+    </p>
+  {% endfor %}
+  </div>
+
+  <div class='type-info gr1 gc3'>
+    <h3>Description</h3>
+    <h4>{{ typeface.description }}</h4>
+  </div>
+
+  <div class='type-info gr1 gc3'>
+    <h3>Designed by</h3>
+    <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
+
+    <h3>Category</h3>
+    <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
+
+    <h3>No. of styles</h3>
+    <h4>{{ typeface.styles }}</h4>
+
+    {% unless typeface.familyFaces == nil %}
+      <h3>Other faces in family</h3>
+      <ul>
+        {% for typeface in typeface.familyFaces %}
+          <li><a href='/{{ typeface | slugify }}/'>{{ typeface }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endunless %}
+  </div>
+
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
+    </div>
+    <div class='examples character-examples flow-row'>
+      {% include characters.html %}
+    </div>
+  </div>
 
   {{ content }}
 

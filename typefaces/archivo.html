@@ -12,41 +12,6 @@ body-head-content:
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
 {% assign text = site.data.text %}
 
-<div class='type-styles gr1 gc6'>
-  <p class='w400'>Regular <em>Italic</em> <span class='weight'>400</span></p>
-  <p class='w500'>Medium <em>Italic</em> <span class='weight'>500</span></p>
-  <p class='w600'>Semi-Bold <em>Italic</em> <span class='weight'>600</span></p>
-  <p class='w700'>Bold <em>Italic</em> <span class='weight'>700</span></p>
-</div>
-
-<div class='type-info gr1 gc3'>
-  <h3>Description</h3>
-  <h4>{{ typeface.description }}</h4>
-</div>
-
-<div class='type-info gr1 gc3'>
-  <h3>Designed by</h3>
-  <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
-
-  <h3>Category</h3>
-  <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
-
-  <h3>No. of styles</h3>
-  <h4>{{ typeface.styles }}</h4>
-
-  <h3>Other faces in family</h3>
-  <h4><a href='/archivo-black/'>Archivo Black</a></h4>
-</div>
-
-<div class='type-detail-table gr1 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
-  </div>
-  <div class='examples character-examples flow-row'>
-    {% include characters.html %}
-  </div>
-</div>
-
 <div class='type-detail-table gr1 gc6'>
   <div class='meta dark top'>
     <p class='name'>Words</p>

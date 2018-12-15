@@ -4,6 +4,12 @@
   creator-url: https://huertatipografica.com/en
   category: Serif
   styles: 10
+  italic: true
+  weights: [{ weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'Extra-Bold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/huertatipografica/Alegreya
   latest-version: v2.008
   release-date: 30 Oct 2018
@@ -12,11 +18,8 @@
   description: Alegreya is a contemporary interpretation of a calligraphic face, designed for long-form literary texts. It offers five weights, a carefully designed italic, small caps, and good OpenType support. This rich typographic palette makes it a versatile and expressive typeface.
   sample-html: '<h1>like the generations of leaves, the lives of mortal men. Now the wind scatters the old leaves across the earth, now the living timber bursts with the new buds and spring comes round again. And so with men: as one generation comes to life, another dies away.</h1><p>Homer, <em>The Iliad</em></p>'
   sample-shade: light
-  comparison-faces:
-    - Alegreya Sans
-    - IBM Plex Serif
-    - Source Serif Pro
-    - Vollkorn
+  familyFaces: [Alegreya Sans]
+  comparison-faces: [Alegreya Sans, IBM Plex Serif, Source Serif Pro, Vollkorn]
 
 - name: Alegreya Sans
   date-added: 2018-10-15
@@ -24,6 +27,14 @@
   creator-url: https://huertatipografica.com/en
   category: Sans-Serif
   styles: 14
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'Extra-Bold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/huertatipografica/Alegreya-Sans
   latest-version: v2.008
   release-date: 13 Mar 2018
@@ -31,11 +42,8 @@
   fontFile: "'/assets/fonts/alegreya-sans/AlegreyaSans-Regular.woff'"
   description: Alegreya Sans is the companion to Alegreya, with both typefaces taking inspiration from calligraphic letter forms. Offering seven weights, along with an expressive italic and small cap, it works well in a variety of contexts, from long-form texts to headlines.
   sample-html: '<h1>Helvítis fokking fokk!</h1>'
-  comparison-faces:
-    - Alegreya
-    - FiraGO
-    - IBM Plex Sans
-    - Inria Sans
+  familyFaces: [Alegreya]
+  comparison-faces: [Alegreya, FiraGO, IBM Plex Sans, Inria Sans]
 
 - name: Archivo
   date-added: 2018-10-15
@@ -43,6 +51,11 @@
   creator-url: https://www.omnibus-type.com
   category: Sans-Serif
   styles: 8
+  italic: true
+  weights: [{ weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/Omnibus-Type/Archivo
   latest-version: v1.002
   release-date: 12 Aug 2018
@@ -50,10 +63,8 @@
   fontFile: "'/assets/fonts/archivo/Archivo-Regular.woff'"
   description: Archivo is a grotesque san-serif inspired by late 19<span class="ordinals">th</span> century American typefaces. Its letterforms are low contrast with a large x-height. It’s part of the Archivo family, which includes Black and Narrow styles.
   sample-html: '<h1>Dieter Rams<br>Bauhaus-Archiv<br>Museum für<br> Gestaltung<br>Retrospective <span class="oldstyle-proportional">02.10.2015<br>24.11.2015</span></h1>'
-  comparison-faces:
-    - FiraGO
-    - IBM Plex Sans
-    - Source Sans Pro
+  familyFaces: [Archivo Black]
+  comparison-faces: [FiraGO, IBM Plex Sans, Source Sans Pro]
 
 - name: Archivo Black
   date-added: 2018-10-19
@@ -61,6 +72,8 @@
   creator-url: https://www.omnibus-type.com
   category: Sans-Serif
   styles: 2
+  italic: yes
+  weights: [{ weight: 400, name: 'Regular' }]
   project-url: https://github.com/Omnibus-Type/ArchivoBlack
   latest-version: v1.006
   release-date: 12 Aug 2018
@@ -69,6 +82,8 @@
   description: Archivo Black is a grotesque san-serif inspired by late 19<span class="ordinals">th</span> century American typefaces. Its letterforms are low contrast with a large x-height. It’s part of the Archivo family, which includes normal and Narrow styles.
   sample-html: '<h1>Die<br>Neue<br>Gesell<br>schaft</h1><h2>August 1974</h2>'
   sample-shade: light
+  familyFaces: [Archivo]
+  comparison-faces: [Archivo]
 
 - name: BioRhyme
   date-added: 2018-10-15
@@ -76,6 +91,11 @@
   creator-url: http://www.aoifemooney.org
   category: Display
   styles: 5
+  weights: [{ weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'Extra-Bold' }]
   project-url: https://github.com/aoifemooney/makingbiorhyme
   latest-version: v1.600
   release-date: 9 Mar 2016
@@ -83,6 +103,8 @@
   fontFile: "'/assets/fonts/biorhyme/BioRhyme-Regular.woff'"
   description: BioRhyme takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme and its sister face BioRhyme Expanded take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
   sample-html: '<h1>är d<span class="ss08">u</span> ny<span class="ss01">f</span>iken?</h1>'
+  familyFaces: [BioRhyme Expanded]
+  comparison-faces: [BioRhyme Expanded]
 
 - name: BioRhyme Expanded
   date-added: 2018-10-28
@@ -90,6 +112,11 @@
   creator-url: http://www.aoifemooney.org
   category: Display
   styles: 5
+  weights: [{ weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'Extra-Bold' }]
   project-url: https://github.com/aoifemooney/makingbiorhyme
   latest-version: v1.600
   release-date: 9 Mar 2016
@@ -97,6 +124,8 @@
   fontFile: "'/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Regular.woff'"
   description: BioRhyme Expanded takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme Expanded and its sister face BioRhyme take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
   sample-html: '<h1 class=ss02>fat</h1><h2>burger</h2>'
+  familyFaces: [BioRhyme]
+  comparison-faces: [BioRhyme]
 
 - name: Cooper Hewitt
   date-added: 2018-10-15
@@ -104,15 +133,21 @@
   creator-url: https://vllg.com/constellation
   category: Sans-Serif
   styles: 14
+  italic: true
+  weights: [{ weight: 200, name: 'Thin' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Book' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'SemiBold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 900, name: 'Heavy' }]
   project-url: https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/
   latest-version: v1.0
   release-date: 16 Jun 2014
   fontFile: "'/assets/fonts/cooper-hewitt/CooperHewitt-Book.woff'"
   description: Cooper Hewitt is a contemporary sans-serif with a strong geometric feel. It works especially well for headlines when set in all caps. It was designed by Chester Jenkins for the Cooper Hewitt design museum.
   sample-html: '<h1>Cinémathèque Suisse</h1><h2>Jean-Luc Godard<br>12 Nov.84 Au 12 JAN.85<br>Casino de Montbenon<br>Lausanne</h2>'
-  comparison-faces:
-    - Jost
-    - Poppins
+  comparison-faces: [Jost, Poppins]
 
 - name: FiraGO
   date-added: 2018-10-23
@@ -120,6 +155,18 @@
   creator-url: https://bboxtype.com
   category: Sans-Serif
   styles: 22
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'UltraLight' },
+            { weight: 250, name: 'ExtraLight' },
+            { weight: 300, name: 'Light' },
+            { weight: 350, name: 'Book' },
+            { weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'SemiBold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'ExtraBold' },
+            { weight: 900, name: 'Heavy' }]
   project-url: https://github.com/bBoxType/FiraGO
   latest-version: v1.000
   release-date: 14 Mar 2018
@@ -127,11 +174,7 @@
   description: FiraGO is the successor to Fira Sans and serves as the corporate typeface for Here. It is a versatile sans-serif and includes eleven weights, a well-designed italic, small caps, and good OpenType support. It works well for both long stretches of body copy and headlines.
   sample-html: '<h2>Minimum</h2><h3>Minimum</h3><h4>Minimum</h4><h5>Minimum</h5><h6>Minimum</h6>'
   sample-shade: light
-  comparison-faces:
-    - Alegreya Sans
-    - IBM Plex Sans
-    - Inria Sans
-    - Source Sans Pro
+  comparison-faces: [Alegreya Sans, IBM Plex Sans, Inria Sans, Source Sans Pro]
 
 - name: IBM Plex Mono
   date-added: 2018-11-02
@@ -139,6 +182,15 @@
   creator-url: https://boldmonday.com
   category: Monospaced
   styles: 16
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 450, name: 'Text' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/IBM/plex
   latest-version: v1.2.1
   release-date: 22 Oct 2018
@@ -146,10 +198,8 @@
   fontFile: "'/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff'"
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<h1>Introduction</h1><h1>to Mathematical</h1><h1>Philosophy</h1><h1>Bertrand</h1><h1>Russell</h1>'
-  comparison-faces:
-    - IBM Plex Sans
-    - IBM Plex Sans Condensed
-    - IBM Plex Serif
+  familyFaces: [IBM Plex Sans, IBM Plex Sans Condensed, IBM Plex Serif]
+  comparison-faces: [IBM Plex Sans, IBM Plex Sans Condensed, IBM Plex Serif]
 
 - name: IBM Plex Sans
   date-added: 2018-10-31
@@ -157,6 +207,15 @@
   creator-url: https://boldmonday.com
   category: Sans-Serif
   styles: 16
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 450, name: 'Text' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/IBM/plex
   latest-version: v1.2.1
   release-date: 22 Oct 2018
@@ -164,11 +223,8 @@
   fontFile: "'/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff'"
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<h1>A Mathematical<br> Theory of<br> Communication</h1><h1>C.E. Shannon</h1>'
-  comparison-faces:
-    - IBM Plex Serif
-    - Libre Franklin
-    - Source Sans Pro
-    - Work Sans
+  familyFaces: [IBM Plex Mono, IBM Plex Sans Condensed, IBM Plex Serif]
+  comparison-faces: [IBM Plex Serif, Libre Franklin, Source Sans Pro, Work Sans]
 
 
 - name: IBM Plex Sans Condensed
@@ -177,6 +233,15 @@
   creator-url: https://boldmonday.com
   category: Sans-Serif
   styles: 16
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 450, name: 'Text' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/IBM/plex
   latest-version: v1.2.1
   release-date: 22 Oct 2018
@@ -184,11 +249,8 @@
   fontFile: "'/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Regular.woff'"
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<h1>Monk</h1><h2>Thelonious</h2>'
-  comparison-faces:
-    - IBM Plex Serif
-    - FiraGO
-    - Inria Sans
-    - Jost
+  familyFaces: [IBM Plex Mono, IBM Plex Sans, IBM Plex Serif]
+  comparison-faces: [IBM Plex Serif, FiraGO, Inria Sans, Jost]
 
 - name: IBM Plex Serif
   date-added: 2018-10-30
@@ -196,6 +258,15 @@
   creator-url: https://boldmonday.com
   category: Serif
   styles: 16
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 450, name: 'Text' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/IBM/plex
   latest-version: v1.2.1
   release-date: 22 Oct 2018
@@ -204,11 +275,8 @@
   description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
   sample-html: '<h1>“This just proves that this is not some peculiar human characteristic, it’s not even a mammalian characteristic, it’s a characteristic of brains,” he said. “It also shows that serotonin has a hugely important role in mediating social interactions right across species.”</h1>'
   sample-shade: light
-  comparison-faces:
-    - IBM Plex Sans
-    - Inria Serif
-    - Lora
-    - Source Serif Pro
+  familyFaces: [IBM Plex Mono, IBM Plex Sans, IBM Plex Sans Condensed]
+  comparison-faces: [IBM Plex Sans, Inria Serif, Lora, Source Serif Pro]
 
 - name: Inria Sans
   date-added: 2018-12-03
@@ -216,17 +284,18 @@
   creator-url: https://black-foundry.com/work/inria/
   category: Sans-Serif
   styles: 6
+  italic: true
+  weights: [{ weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/BlackFoundry/InriaFonts
   latest-version: v1.200
   release-date: 11 Jan 2018
   fontFile: "'/assets/fonts/inria-sans/InriaSans-Regular.woff'"
   description: Inria Sans, along with <a href='/inria-serif/'>Inria Serif</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Sans has a contemporary feel, suitable for both body copy and headlines.
   sample-html: '<h1>Solomon R.<br> Guggenheim<br> Museum</h1><h2>New York, New York</h2>'
-  comparison-faces:
-    - Inria Serif
-    - FiraGO
-    - IBM Plex Sans
-    - Source Sans Pro
+  familyFaces: [Inria Serif]
+  comparison-faces: [Inria Serif, FiraGO, IBM Plex Sans, Source Sans Pro]
 
 - name: Inria Serif
   date-added: 2018-12-03
@@ -234,6 +303,10 @@
   creator-url: https://black-foundry.com/work/inria/
   category: Serif
   styles: 6
+  italic: true
+  weights: [{ weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/BlackFoundry/InriaFonts
   latest-version: v1.200
   release-date: 11 Jan 2018
@@ -241,10 +314,8 @@
   description: Inria Serif, along with <a href='/inria-sans/'>Inria Sans</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Serif has a literary feel, suitable for both body copy and headlines.
   sample-html: '<h1>The Frolic of<br> the Beasts</h1><h2>Yukio Mishima</h2>'
   sample-shade: light
-  comparison-faces:
-    - Inria Sans
-    - IBM Plex Serif
-    - Source Serif Pro
+  familyFaces: [Inria Sans]
+  comparison-faces: [Inria Sans, IBM Plex Serif, Source Serif Pro]
 
 - name: Jost
   date-added: 2018-10-15
@@ -252,17 +323,23 @@
   creator-url: https://ewonrael.github.io
   category: Sans-Serif
   styles: 18
+  italic: true
+  weights: [{ weight: 100, name: 'Hairline' },
+            { weight: 200, name: 'Thin' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Book' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'Heavy' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/indestructible-type/Jost
   latest-version: v3.3
   release-date: 21 Sep 2018
   fontFile: "'/assets/fonts/jost/jost-400-book.woff'"
   description: Jost* is a sans-serif inspired by Futura, but with a larger x-height and more balanced capital forms. It features nine weights and two styles and is under active development.
   sample-html: '<h1>Vivre Sa Vie</h1><h2>Film En Douze Tableaux</h2>'
-  comparison-faces:
-    - Cooper Hewitt
-    - IBM Plex Sans
-    - Poppins
-    - Source Sans Pro
+  comparison-faces: [Cooper Hewitt, IBM Plex Sans, Poppins, Source Sans Pro]
 
 - name: Le Murmure
   date-added: 2018-11-25
@@ -270,6 +347,7 @@
   creator-url: http://studiotriple.fr
   category: Display
   styles: 1
+  weights: [{ weight: 400, name: 'Regular' }]
   project-url: https://velvetyne.fr/fonts/le-murmure/
   latest-version: v1.0
   release-date: 10 Sep 2018
@@ -283,6 +361,16 @@
   creator-url: https://github.com/impallari
   category: Sans-Serif
   styles: 18
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'Extra-Bold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/impallari/Libre-Franklin
   latest-version: v1.045
   release-date: 15 Nov 2016
@@ -290,11 +378,7 @@
   fontFile: "'/assets/fonts/libre-franklin/LibreFranklin-Regular.woff'"
   description: Libre Franklin is an interpretation and expansion of the classic Franklin Gothic typeface. It’s a versatile sans-serif, suitable for both long-form text and headlines. At large sizes, the distinctive rounded corners of the characters become apparent.
   sample-html: '<h1>Ornette</h1><h1><span class="yellow">On</span><span class="green">Tenor</span></h1><h2><span>Don Cherry</span><span>Jimmy Garrison</span><span>Ed Blackwell</span></h2>'
-  comparison-faces:
-    - IBM Plex Sans
-    - Inria Sans
-    - Source Sans Pro
-    - Work Sans
+  comparison-faces: [IBM Plex Sans, Inria Sans, Source Sans Pro, Work Sans]
 
 - name: Lora
   date-added: 2018-10-15
@@ -302,6 +386,9 @@
   creator-url: http://www.cyreal.org
   category: Serif
   styles: 4
+  italic: true
+  weights: [{ weight: 400, name: 'Regular'},
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/cyrealtype/Lora-Cyrillic
   latest-version: v2.202
   release-date: 18 Jan 2018
@@ -309,11 +396,7 @@
   fontFile: "'/assets/fonts/lora/Lora-Regular.woff'"
   description: Lora is a contemporary serif with a moderate contrast, well-suited to body text. It takes inspiration from calligraphic forms, but has a pleasing contrast with sturdy serifs, especially at the bold weight.
   sample-html: '<p>Far off in the bending sky was the pearly light; and she felt the largeness of the world and the manifold wakings of men to labor and endurance. She was a part of that involuntary, palpitating life, and could neither look out on it from her luxurious shelter as a mere spectator, nor hide her eyes in selfish complaining.</p><h2>George Eliot, <em>Middlemarch</em></h2>'
-  comparison-faces:
-    - Alegreya
-    - IBM Plex Serif
-    - Source Serif Pro
-    - Vollkorn
+  comparison-faces: ['Alegreya', 'IBM Plex Serif', 'Source Serif Pro', 'Vollkorn']
 
 - name: Oswald
   date-added: 2018-10-15
@@ -321,6 +404,13 @@
   creator-url: https://fonts.google.com/?query=Vernon+Adams
   category: Display
   styles: 7
+  weights: [{ weight: 200, name: 'Extra-Light' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 900, name: 'Heavy' }]
   project-url: https://github.com/googlefonts/OswaldFont
   latest-version: v4.004
   release-date: 22 Sep 2017
@@ -335,6 +425,10 @@
   creator-url: https://forthehearts.net/
   category: Display
   styles: 6
+  italic: true
+  weights: [{ weight: 400, name: 'Regular' },
+            { weight: 700, name: 'Bold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/clauseggers/Playfair-Display
   latest-version: v1.202
   release-date: 5 Nov 2017
@@ -349,6 +443,16 @@
   creator-url: https://www.indiantypefoundry.com
   category: Sans-Serif
   styles: 18
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'ExtraLight' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'SemiBold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'ExtraBold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/itfoundry/Poppins
   latest-version: v5.001
   release-date: 26 Mar 2018
@@ -356,10 +460,7 @@
   fontFile: "'/assets/fonts/poppins/Poppins-Regular.woff'"
   description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari chararacter sets.
   sample-html: '<h1>Lennon</h1><h1>McCartney</h1><h1>Harrison</h1><h1>& Starr</h1>'
-  comparison-faces:
-    - Archivo
-    - Cooper Hewitt
-    - Jost
+  comparison-faces: [Archivo, Cooper Hewitt, Jost]
 
 - name: Rakkas
   date-added: 2018-10-22
@@ -367,6 +468,7 @@
   creator-url: http://theruqahproject.com
   category: Display
   styles: 1
+  weights: [{ weight: 400, name: 'Regular' }]
   project-url: https://github.com/zeynepakay/Rakkas
   latest-version: v1.001
   release-date: 10 Apr 2016
@@ -382,6 +484,13 @@
   creator-url: https://github.com/pauldhunt
   category: Sans-Serif
   styles: 12
+  italic: true
+  weights: [{ weight: 200, name: 'ExtraLight' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 600, name: 'SemiBold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/adobe-fonts/source-sans-pro
   latest-version: v2.040
   release-date: 30 Oct 2018
@@ -389,11 +498,8 @@
   fontFile: "'/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf.woff'"
   description: Source Sans Pro is a versatile typeface designed particularly for user interfaces. Its letterforms are slightly condensed allowing them to fit into tight spaces within a UI, and remain well-defined even at small sizes.
   sample-html: '<h2>janine m. menyus&thinsp;&mdash;</h2><h1 class=oldstyle-proportional>9 basic principles<br> of biomimicry</h1>'
-  comparison-faces:
-    - Source Serif Pro
-    - Archivo
-    - FiraGO
-    - Inria Sans
+  familyFaces: [Source Serif Pro]
+  comparison-faces: [Source Serif Pro, Archivo, FiraGO, Inria Sans]
 
 - name: Source Serif Pro
   date-added: 2018-10-15
@@ -401,6 +507,13 @@
   creator-url: http://www.frgr.de
   category: Serif
   styles: 12
+  italic: true
+  weights: [{ weight: 200, name: 'ExtraLight' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 600, name: 'SemiBold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/adobe-fonts/source-serif-pro
   latest-version: v2.007
   release-date: 17 Aug 2018
@@ -409,11 +522,8 @@
   description: Source Serif Pro was created as a companion to the Source Sans Pro typeface by Adobe. It exhibits a distinctive personality at each of its six weights, with a beautiful italic that remains useful from the lightest to the heaviest weights.
   sample-html: '<h1>Philip Glass</h1><h1>Dances</h1><h1>No.2&mdash;No.4</h1>'
   sample-shade: light
-  comparison-faces:
-    - Source Sans Pro
-    - IBM Plex Serif
-    - Inria Serif
-    - Lora
+  familyFaces: [Source Sans Pro]
+  comparison-faces: [Source Sans Pro, IBM Plex Serif, Inria Serif, Lora]
 
 - name: Vollkorn
   date-added: 2018-10-15
@@ -421,6 +531,13 @@
   creator-url: https://friedrichalthausen.de/
   category: Serif
   styles: 12
+  italic: true
+  weights: [{ weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'SemiBold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'ExtraBold' },
+            { weight: 900, name: 'Black' }]
   project-url: http://vollkorn-typeface.com/#download
   latest-version: v4.105
   release-date: 09 May 2018
@@ -428,11 +545,7 @@
   fontFile: "'/assets/fonts/vollkorn/Vollkorn-Regular.woff'"
   description: "Vollkorn is the German word for ‘wholemeal’, which designer Friedrich Althausen felt described this ‘dark, sturdy, and grainy’ serif well. It offers six weights, small caps, and a number of OpenType features, making it perfect for (to stretch this analogy even further) everyday, bread and butter usage."
   sample-html: '<h1 class="w500">shinichi<br> nakazawa</h1><h2 class="w400 italic ase">Beyond<br> Development:<br> Rediscovering<br> Nature’s<br> Wisdom</h2><p>Technology was not given so humankind could ride roughshod over nature and wreak irreparable changes. Rather, technology is to draw out the hidden essence of all nature so that it can sparkle with new purpose. Technology is not to enslave and command life but to draw forth the infinite possibilities locked within all life and to open new realms of significance. <span class="ms-1">&#9670;</span></p>'
-  comparison-faces:
-    - Alegreya
-    - Inria Serif
-    - Lora
-    - Source Serif Pro
+  comparison-faces: [Alegreya, Inria Serif, Lora, Source Serif Pro]
 
 - name: Work Sans
   date-added: 2018-11-26
@@ -440,6 +553,16 @@
   creator-url: https://twitter.com/w__h_
   category: Sans-Serif
   styles: 18
+  italic: true
+  weights: [{ weight: 100, name: 'Thin' },
+            { weight: 200, name: 'ExtraLight' },
+            { weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'SemiBold' },
+            { weight: 700, name: 'Bold' },
+            { weight: 800, name: 'ExtraBold' },
+            { weight: 900, name: 'Black' }]
   project-url: https://github.com/weiweihuanghuang/Work-Sans
   latest-version: v2.0
   release-date: 23 Nov 2018
@@ -447,11 +570,7 @@
   fontFile: "'/assets/fonts/work-sans/WorkSans-Regular.woff'"
   description: "Work Sans is a sans-serif inspired by early Grotesque faces. It recently received a major update, adding an italic style and a wide selection of OpenType features. The face has a slightly playful feel, especially at heavier weights."
   sample-html: '<h1>Say! I like green eggs and ham!<br>I do! I like them, Sam-I-Am!<br> And I would eat them in a boat.<br>And I would eat them with a goat...</h1>'
-  comparison-faces:
-    - Archivo
-    - Cooper Hewitt
-    - Poppins
-    - Source Sans Pro
+  comparison-faces: [Archivo, Cooper Hewitt, Poppins, Source Sans Pro]
 
 - name: Zilla Slab
   date-added: 2018-10-15
@@ -459,6 +578,12 @@
   creator-url: https://www.typotheque.com
   category: Serif
   styles: 10
+  italic: true
+  weights: [{ weight: 300, name: 'Light' },
+            { weight: 400, name: 'Regular' },
+            { weight: 500, name: 'Medium' },
+            { weight: 600, name: 'Semi-Bold' },
+            { weight: 700, name: 'Bold' }]
   project-url: https://github.com/mozilla/zilla-slab
   latest-version: v1.002
   release-date: 23 Aug 2017
