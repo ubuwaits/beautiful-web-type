@@ -1,1 +1,15 @@
 include: [".well-known"]
+
+defaults:
+  -
+    scope:
+      path: 'typefaces'
+      type: 'pages'
+    values:
+      layout: 'detail'
+  -
+    scope:
+      path: 'categories'
+      type: 'pages'
+    values:
+      layout: 'category'
