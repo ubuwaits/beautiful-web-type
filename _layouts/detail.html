@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+{% assign text = site.data.text %}
 
 <div class='grid {{ typeface.name | slugify }}'>
   <header class='type-detail-header gr1 gc6'>
@@ -60,6 +61,17 @@ layout: default
     </div>
     <div class='examples character-examples flow-row'>
       {% include characters.html %}
+    </div>
+  </div>
+
+  <div class='type-detail-table gr1 gc6'>
+    <div class='meta dark top'>
+      <p class='name'>Words</p>
+    </div>
+    <div class='examples word-examples flow-column flow-center'>
+      {% for i in (0..6) %}
+        <div><h1 contenteditable='true'>{{ text.words[i] }}</h1></div>        
+      {% endfor %}
     </div>
   </div>
 

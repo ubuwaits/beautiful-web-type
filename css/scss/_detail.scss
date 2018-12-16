@@ -201,6 +201,35 @@
   font-size: var(--ms4);
 }
 
+// Word examples
+// ----------------------------------------------------------------------------
+.word-examples {
+  h1 {
+    font-size: var(--ms6);
+  }
+
+  div:nth-child(1) h1 { font-weight: 100; }
+  div:nth-child(2) h1 { font-weight: 300; text-transform: uppercase; }
+  div:nth-child(3) h1 { font-weight: 400; font-style: italic; }
+  div:nth-child(4) h1 { font-weight: 500; }
+  div:nth-child(5) h1 { font-weight: 700; }
+  div:nth-child(6) h1 { font-weight: 800; font-size: var(--ms5); }
+  div:nth-child(7) h1 { font-weight: 900; }
+}
+
+// Remove italic for typefaces with no italic
+.biorhyme .word-examples,
+.biorhyme-expanded .word-examples,
+.le-murmure .word-examples,
+.oswald .word-examples,
+.rakkas .word-examples {
+  div:nth-child(3) h1 { font-style: normal; }
+}
+
+.le-murmure .word-examples h1 {
+  font-size: var(--ms7);
+}
+
 // Typeface comparisons
 // ----------------------------------------------------------------------------
 .examples.typeface-comparison {
