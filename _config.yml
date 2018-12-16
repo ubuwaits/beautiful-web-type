@@ -1,6 +1,12 @@
-include: [".well-known"]
+include: ['.well-known']
 
 defaults:
+  -
+    scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'default'
   -
     scope:
       path: 'typefaces'
@@ -13,3 +19,27 @@ defaults:
       type: 'pages'
     values:
       layout: 'category'
+  - # Set default body classes for type detail pages
+    scope:
+      path: 'typefaces/display'
+      type: 'pages'
+    values:
+      body-class: 'display detail'
+  -
+    scope:
+      path: 'typefaces/monospaced'
+      type: 'pages'
+    values:
+      body-class: 'monospaced detail'
+  -
+    scope:
+      path: 'typefaces/sans-serif'
+      type: 'pages'
+    values:
+      body-class: 'sans-serif detail'
+  -
+    scope:
+      path: 'typefaces/serif'
+      type: 'pages'
+    values:
+      body-class: 'serif detail'

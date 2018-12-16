@@ -1,4 +1,4 @@
-{% if pairing.typefaces[0] == page.title %}
+{% if pairing.typefaces[0] == page.typeface %}
   {% assign paired-typeface = site.data.typefaces | where: 'name', pairing.typefaces[1] | first %}
 {% else %}
   {% assign paired-typeface = site.data.typefaces | where: 'name', pairing.typefaces[0] | first %}

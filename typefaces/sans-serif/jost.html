@@ -1,11 +1,10 @@
 ---
-permalink: /libre-franklin/
-title: Libre Franklin
-description: Complete guide to the free font Libre Franklin. See beautiful examples, recommended pairings, OpenType features, and more.
-body-class: sans-serif detail
+typeface: Jost
+permalink: /jost/
+title: Complete Guide to Jost*
+description: Complete guide to the free font Jost*. See beautiful examples, recommended pairings, OpenType features, and more.
 body-head-content:
-  <meta property='og:image' content='https://beautifulwebtype.com/assets/images/libre-franklin.png'>
-  <meta property='og:title' content='Complete Guide to Libre Franklin'>
+  <meta property='og:image' content='https://beautifulwebtype.com/assets/images/jost.png'>
 ---
 
 {% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
@@ -57,7 +56,7 @@ body-head-content:
     </div>
 
     <div>
-      <h1 class='w900' contenteditable='true'>{{ text.headlines[8] }}</h1>
+      <h1 class='w900 upper' contenteditable='true'>{{ text.headlines[8] }}</h1>
       <p class='character-label'>900</p>
     </div>
   </div>
@@ -109,7 +108,7 @@ body-head-content:
     </div>
 
     <div>
-      <h1 class='w900 italic' contenteditable='true'>{{ text.headlines[8] }}</h1>
+      <h1 class='w900 italic upper' contenteditable='true'>{{ text.headlines[8] }}</h1>
       <p class='character-label'>900</p>
     </div>
   </div>
@@ -157,26 +156,31 @@ body-head-content:
   </div>
 </div>
 
-<div class='type-detail-table gr2 gc6'>
+<div class='type-detail-table gr3 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='ms6 w400'><span class='fade'>A</span><span class='superscript'>123</span></h1>
-      <p class='character-label'>Superscripts: 'sups'</p>
+      <h1 class='lining-proportional ms6 w400'>1234567890</h1>
+      <p class='character-label'>Proportional Lining (default): 'pnum', 'lnum'</p>
+    </div>
+
+    <div>
+      <h1 class='lining-tabular ms6 w400'>1234567890</h1>
+      <p class='character-label'>Tabular Lining: 'tnum', 'lnum'</p>
     </div>
   </div>
 </div>
 
 <div class='type-detail-table gr2 gc6'>
   <div class='meta dark top'>
-    <p class='name'>Ordinals</p>
-    <p class='code'>font-feature-settings: 'ordn';</p>
+    <p class='name'>Alternate Glyph Forms</p>
+    <p class='code'>font-feature-settings: 'ss01';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
-    <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
+    <div><span class='fade'>a</span> <span class='ss01'>a</span></div>
+    <div><span class='fade italic'>a</span> <span class='ss01 italic'>a</span></div>
   </div>
 </div>
 
