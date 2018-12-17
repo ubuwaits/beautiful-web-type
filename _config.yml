@@ -4,6 +4,7 @@ collections:
     permalink: /:name/
 
 include: ['.well-known']
+exclude: ['Rakefile']
 
 defaults:
   - # Set default layouts
