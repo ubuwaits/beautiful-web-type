@@ -1,10 +1,9 @@
 ---
 typeface: Source Sans Pro
 permalink: /source-sans-pro/
-title: Complete Guide to Source Sans Pro
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 {% assign text = site.data.text %}
 
 <div class='type-detail-table gr1 gc6'>

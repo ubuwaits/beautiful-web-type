@@ -1,7 +1,7 @@
 include: ['.well-known']
 
 defaults:
-  -
+  - # Set default layouts
     scope:
       path: ''
       type: 'pages'
@@ -13,6 +13,12 @@ defaults:
       type: 'pages'
     values:
       layout: 'detail'
+  -
+    scope:
+      path: 'glyphs'
+      type: 'pages'
+    values:
+      layout: 'glyphs'
   -
     scope:
       path: 'categories'
@@ -43,3 +49,27 @@ defaults:
       type: 'pages'
     values:
       body-class: 'serif detail'
+  - # Set default body classes for glyph explorer pages
+    scope:
+      path: 'glyphs/display'
+      type: 'pages'
+    values:
+      body-class: 'display glyphs'
+  -
+    scope:
+      path: 'glyphs/monospaced'
+      type: 'pages'
+    values:
+      body-class: 'monospaced glyphs'
+  -
+    scope:
+      path: 'glyphs/sans-serif'
+      type: 'pages'
+    values:
+      body-class: 'sans-serif glyphs'
+  -
+    scope:
+      path: 'glyphs/serif'
+      type: 'pages'
+    values:
+      body-class: 'serif glyphs'

@@ -1,10 +1,9 @@
 ---
 typeface: Zilla Slab
 permalink: /zilla-slab/
-title: Complete Guide to Zilla Slab
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 {% assign text = site.data.text %}
 
 <div class='type-detail-table gr1 gc6'>

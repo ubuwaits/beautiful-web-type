@@ -1,10 +1,9 @@
 ---
 typeface: BioRhyme Expanded
 permalink: /biorhyme-expanded/
-title: Complete Guide to BioRhyme Expanded
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 {% assign text = site.data.text %}
 
 <div class='type-detail-table gr6 gc6'>

@@ -1,10 +1,9 @@
 ---
 typeface: IBM Plex Sans
 permalink: /ibm-plex-sans/
-title: Complete Guide to IBM Plex Sans
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.title | first %}
+{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 {% assign text = site.data.text %}
 
 <div class='type-detail-table gr1 gc6'>
