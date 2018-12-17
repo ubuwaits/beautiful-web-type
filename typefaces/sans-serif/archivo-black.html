@@ -6,30 +6,6 @@ permalink: /archivo-black/
 {% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 {% assign text = site.data.text %}
 
-<div class='type-detail-table gr1 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Headlines</p>
-  </div>
-  <div class='examples flow-column'>
-    <div>
-      <h1 class='w400' contenteditable='true'>{{ text.headlines[0] }}</h1>
-      <p class='character-label'>400</p>
-    </div>
-  </div>
-</div>
-
-<div class='type-detail-table gr1 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Italic headlines</p>
-  </div>
-  <div class='examples flow-column'>
-    <div>
-      <h1 class='w400 italic' contenteditable='true'>{{ text.headlines[0] }}</h1>
-      <p class='character-label'>400</p>
-    </div>
-  </div>
-</div>
-
 <div class='type-detail-table gr12 gc6'>
   <div class='meta dark top'>
     <p class='name'>Paragraphs</p>

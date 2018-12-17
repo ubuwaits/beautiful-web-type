@@ -8,34 +8,6 @@ permalink: /alegreya-sans/
 
 <div class='type-detail-table gr1 gc6'>
   <div class='meta dark top'>
-    <p class='name'>Headlines</p>
-  </div>
-  <div class='examples flow-column'>
-    {% for weight in typeface.weights %}
-    <div>
-      <h1 class='w{{ weight.weight }}' contenteditable='true'>{{ text.headlines[forloop.index0] }}</h1>
-      <p class='character-label'>{{ weight.weight }}</p>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<div class='type-detail-table gr1 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Italic Headlines</p>
-  </div>
-  <div class='examples flow-column'>
-    {% for weight in typeface.weights %}
-    <div>
-      <h1 class='w{{ weight.weight }} italic' contenteditable='true'>{{ text.headlines[forloop.index0] }}</h1>
-      <p class='character-label'>{{ weight.weight }}</p>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<div class='type-detail-table gr1 gc6'>
-  <div class='meta dark top'>
     <p class='name'>Paragraphs</p>
     <p class='code'>font-weight: 300</p>
   </div>
