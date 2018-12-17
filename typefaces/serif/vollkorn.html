@@ -3,9 +3,6 @@ typeface: Vollkorn
 permalink: /vollkorn/
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
-{% assign text = site.data.text %}
-
 <div class='type-detail-table gr4 gc6'>
   <div class='meta dark top'>
     <p class='name'>Standard Ligatures</p>
@@ -95,53 +92,45 @@ permalink: /vollkorn/
   </div>
 </div>
 
-<div class='type-detail-table gr8 gc6'>
+<div class='type-detail-table examples-figures gr8 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='oldstyle-proportional ms6 w400'>1234567890</h1>
+      <h1 class='oldstyle-proportional'>1234567890</h1>
       <p class='character-label'>Proportional Oldstyle (default): 'pnum', 'onum'</p>
     </div>
-
     <div>
-      <h1 class='oldstyle-tabular ms6 w400'>1234567890</h1>
+      <h1 class='oldstyle-tabular'>1234567890</h1>
       <p class='character-label'>Tabular Oldstyle: 'tnum', 'onum'</p>
     </div>
-
     <div>
-      <h1 class='lining-proportional ms6 w400'>1234567890</h1>
+      <h1 class='lining-proportional'>1234567890</h1>
       <p class='character-label'>Proportional Lining: 'pnum', 'lnum'</p>
     </div>
-
     <div>
-      <h1 class='lining-tabular ms6 w400'>1234567890</h1>
+      <h1 class='lining-tabular'>1234567890</h1>
       <p class='character-label'>Tabular Lining: 'tnum', 'lnum';</p>
     </div>
-
     <div>
-      <h1 class='small-caps ms6 w400'>1234567890</h1>
+      <h1 class='small-caps'>1234567890</h1>
       <p class='character-label'>Small Caps: 'smcp';</p>
     </div>
-
     <div>
-      <h1 class='ms6 w400'><span class='fade'>0</span> <span class='zero'>0</span></h1>
+      <h1><span class='fade'>0</span> <span class='zero'>0</span></h1>
       <p class='character-label'>Slashed Zero: 'zero'</p>
     </div>
-
     <div>
-      <h1 class='fractions ms6 w400'>1/2 3/4 5/6 7/8 90/123</h1>
+      <h1 class='fractions'>1/2 3/4 5/6 7/8 90/123</h1>
       <p class='character-label'>Fractions: 'frac';</p>
     </div>
-
     <div>
-      <h1 class='ms6 w400'><span class='fade'>A</span><span class='subscript'>1234567890</span></h1>
+      <h1><span class='fade'>A</span><span class='subscript'>1234567890</span></h1>
       <p class='character-label'>Subscripts: 'subs'</p>
     </div>
-
     <div>
-      <h1 class='ms6 w400'><span class='fade'>A</span><span class='superscript'>1234567890&para;&sect;&dagger;&Dagger;&DoubleVerticalBar;</span></h1>
+      <h1><span class='fade'>A</span><span class='superscript'>1234567890&para;&sect;&dagger;&Dagger;&DoubleVerticalBar;</span></h1>
       <p class='character-label'>Superscripts: 'sups'</p>
     </div>
   </div>

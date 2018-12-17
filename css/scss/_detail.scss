@@ -226,6 +226,15 @@
   div:nth-child(3) h1 { font-style: normal; }
 }
 
+// Figure examples
+// ----------------------------------------------------------------------------
+.examples-figures {
+  .examples h1 {
+    font-size: var(--ms6);
+    font-weight: 400;
+  }
+}
+
 // Typeface comparisons
 // ----------------------------------------------------------------------------
 .examples.typeface-comparison {

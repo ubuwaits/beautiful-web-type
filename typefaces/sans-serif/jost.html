@@ -3,21 +3,17 @@ typeface: Jost
 permalink: /jost/
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
-{% assign text = site.data.text %}
-
-<div class='type-detail-table gr4 gc6'>
+<div class='type-detail-table examples-figures gr4 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='lining-proportional ms6 w400'>1234567890</h1>
+      <h1 class='lining-proportional'>1234567890</h1>
       <p class='character-label'>Proportional Lining (default): 'pnum', 'lnum'</p>
     </div>
-
     <div>
-      <h1 class='lining-tabular ms6 w400'>1234567890</h1>
+      <h1 class='lining-tabular'>1234567890</h1>
       <p class='character-label'>Tabular Lining: 'tnum', 'lnum'</p>
     </div>
   </div>

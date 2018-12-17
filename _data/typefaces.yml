@@ -74,7 +74,7 @@
   creator-url: https://www.omnibus-type.com
   category: Sans-Serif
   styles: 2
-  italic: yes
+  italic: true 
   weights: [{ weight: 400, name: 'Regular' }]
   project-url: https://github.com/Omnibus-Type/ArchivoBlack
   latest-version: v1.006

@@ -3,9 +3,6 @@ typeface: Lora
 permalink: /lora/
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
-{% assign text = site.data.text %}
-
 <div class='type-detail-table gr2 gc6'>
   <div class='meta dark top'>
     <p class='name'>Standard Ligatures</p>
@@ -19,18 +16,17 @@ permalink: /lora/
   </div>
 </div>
 
-<div class='type-detail-table gr3 gc6'>
+<div class='type-detail-table examples-figures gr3 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='fractions ms6 w400'>1/2 3/4</h1>
+      <h1 class='fractions'>1/2 3/4</h1>
       <p class='character-label'>Fractions: 'frac'</p>
     </div>
-
     <div>
-      <h1 class='ms6 w400'><span class='fade'>A</span><span class='superscript'>1234</span></h1>
+      <h1><span class='fade'>A</span><span class='superscript'>1234</span></h1>
       <p class='character-label'>Superscripts: 'sups'</p>
     </div>
   </div>
