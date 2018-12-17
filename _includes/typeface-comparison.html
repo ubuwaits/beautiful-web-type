@@ -4,7 +4,7 @@
       <h1 class='{{ typeface.name | slugify }}' contenteditable='true'>{{ text.words[4] }}</h1>
       <p class='character-label'>{{ typeface.name }}</p>
     </div>
-    {% for comparison-face in typeface.comparison-faces %}
+    {% for comparison-face in typeface.comparison_faces %}
       <div>
         <h1 class='{{ comparison-face | slugify }}' contenteditable='true'>{{ text.words[4] }}</h1>
         <p class='character-label'><a href='/{{ comparison-face | slugify }}/'>{{ comparison-face }}</a></p>

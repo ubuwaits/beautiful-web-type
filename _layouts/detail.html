@@ -12,10 +12,10 @@ layout: default
   </header>
 
   <div class='font-download gr1 gc6'>
-    {% unless typeface.g-fonts-url == nil %}
-      <a href='{{ typeface.g-fonts-url }}' target='_blank' rel='noopener'>Embed <span>using Google Fonts</span></a>
+    {% unless typeface.g_fonts_url == nil %}
+      <a href='{{ typeface.g_fonts_url }}' target='_blank' rel='noopener'>Embed <span>using Google Fonts</span></a>
     {% endunless %}
-    <a href='{{ typeface.project-url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest-version }} ({{ typeface.release-date }})</span></a>
+    <a href='{{ typeface.project_url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest_version }} ({{ typeface.release_date }})</span></a>
   </div>
 
   {% include sample.html %}
@@ -37,7 +37,7 @@ layout: default
 
   <div class='type-info gr1 gc3'>
     <h3>Designed by</h3>
-    <h4><a href='{{ typeface.creator-url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
+    <h4><a href='{{ typeface.creator_url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
 
     <h3>Category</h3>
     <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
@@ -45,10 +45,10 @@ layout: default
     <h3>No. of styles</h3>
     <h4>{{ typeface.styles }}</h4>
 
-    {% unless typeface.familyFaces == nil %}
+    {% unless typeface.family_faces == nil %}
       <h3>Other faces in family</h3>
       <ul>
-        {% for typeface in typeface.familyFaces %}
+        {% for typeface in typeface.family_faces %}
           <li><a href='/{{ typeface | slugify }}/'>{{ typeface }}</a></li>
         {% endfor %}
       </ul>
@@ -147,7 +147,7 @@ layout: default
 
 </div>
 
-{% unless typeface.comparison-faces.size == nil %}
+{% unless typeface.comparison_faces.size == nil %}
   <div class='grid grid-comparisons' id='comparisons'>
     <h3 class='gr1 gc12 ase'>{{ typeface.name }} compared with similar typefaces</h3>
     {% include typeface-comparison.html %}

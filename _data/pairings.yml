@@ -1,21 +1,21 @@
 - name: Archivo Black and Lora
-  date-added: 2018-11-09
+  date_added: 2018-11-09
   typefaces: [Archivo Black, Lora]
-  sample-html: '<h1>Werner Herzog</h1><p>There is nothing wrong with spending a night in jail if it means getting the shot you need. Send out all your dogs and one might return with prey. Never wallow in your troubles; despair must be kept private and brief. Expand your knowledge and understanding of music and literature, old and modern. That roll of unexposed celluloid you have in your hand might be the last in existence, so do something impressive with it. Carry bolt cutters everywhere. Thwart institutional cowardice.</p><p>From <em>A Guide for the Perplexed</em></p>'
+  sample_html: '<h1>Werner Herzog</h1><p>There is nothing wrong with spending a night in jail if it means getting the shot you need. Send out all your dogs and one might return with prey. Never wallow in your troubles; despair must be kept private and brief. Expand your knowledge and understanding of music and literature, old and modern. That roll of unexposed celluloid you have in your hand might be the last in existence, so do something impressive with it. Carry bolt cutters everywhere. Thwart institutional cowardice.</p><p>From <em>A Guide for the Perplexed</em></p>'
 
 - name: Libre Franklin and Source Serif Pro
-  date-added: 2018-11-09
+  date_added: 2018-11-09
   typefaces: [Libre Franklin, Source Serif Pro]
-  sample-html: '<h1><span>Out to<br> Lunch!</span><span>Eric<br> Dolphy</span></h1><p><em>Out to Lunch</em> stands as Eric Dolphy’s magnum opus, an absolute pinnacle of avant-garde jazz in any form or era. Its rhythmic complexity was perhaps unrivaled since Dave Brubeck’s <em>Time Out</em>, and its five Dolphy originals&mdash;the jarring Monk tribute “Hat and Beard,” the aptly titled “Something Sweet, Something Tender,” the weirdly jaunty flute showcase “Gazzelloni,” the militaristic title track, the drunken lurch of “Straight Up and Down”&mdash;were a perfect balance of structured frameworks, carefully calibrated timbres, and generous individual freedom. &mdash; <em>AllMusic Review by Steve Huey</em></p>'
-  sample-shade: light
+  sample_html: '<h1><span>Out to<br> Lunch!</span><span>Eric<br> Dolphy</span></h1><p><em>Out to Lunch</em> stands as Eric Dolphy’s magnum opus, an absolute pinnacle of avant-garde jazz in any form or era. Its rhythmic complexity was perhaps unrivaled since Dave Brubeck’s <em>Time Out</em>, and its five Dolphy originals&mdash;the jarring Monk tribute “Hat and Beard,” the aptly titled “Something Sweet, Something Tender,” the weirdly jaunty flute showcase “Gazzelloni,” the militaristic title track, the drunken lurch of “Straight Up and Down”&mdash;were a perfect balance of structured frameworks, carefully calibrated timbres, and generous individual freedom. &mdash; <em>AllMusic Review by Steve Huey</em></p>'
+  sample_shade: light
 
 - name: Oswald and Source Serif Pro
-  date-added: 2018-11-09
+  date_added: 2018-11-09
   typefaces: [Oswald, Source Serif Pro]
-  sample-html: '<h2>The Coming of Age of<br> Quantum Biology</h2><h1>Life on<br> the Edge</h1><h3>Johnjoe McFadden <br>& Jim Al-Khalili</h3>'
+  sample_html: '<h2>The Coming of Age of<br> Quantum Biology</h2><h1>Life on<br> the Edge</h1><h3>Johnjoe McFadden <br>& Jim Al-Khalili</h3>'
 
 - name: Rakkas and Vollkorn
-  date-added: 2018-11-09
+  date_added: 2018-11-09
   typefaces: [Rakkas, Vollkorn]
-  sample-html: '<h1>Anger</h1><h2>lucius</h2><h1>Mercy</h1><h2>annaeus</h2><h1>Revenge</h1><h2>seneca</h2><h3><em>translated by</em> <span>robert a. kaster</span><br><em>and</em> <span>martha c. nussbaum</span>'
-  sample-shade: light
+  sample_html: '<h1>Anger</h1><h2>lucius</h2><h1>Mercy</h1><h2>annaeus</h2><h1>Revenge</h1><h2>seneca</h2><h3><em>translated by</em> <span>robert a. kaster</span><br><em>and</em> <span>martha c. nussbaum</span>'
+  sample_shade: light

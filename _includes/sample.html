@@ -1,8 +1,8 @@
 <div class='sample {{ typeface.name | slugify }} {{ typeface.name | slugify }}-sample gr6 gc12'>
   <a href='/{{ typeface.name | slugify }}/'>
-    <div class='text'>{{ typeface.sample-html }}</div>
+    <div class='text'>{{ typeface.sample_html }}</div>
   </a>
-  <div class='meta {% if typeface.sample-shade == 'light' %}dark{% endif %}'>
+  <div class='meta {% if typeface.sample_shade == 'light' %}dark{% endif %}'>
     <p class='name'><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }} by {{ typeface.creator }}</a></p>
   </div>
 </div>
