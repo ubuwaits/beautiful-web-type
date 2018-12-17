@@ -13,6 +13,9 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 17 Dec 2018
+* **Major refactoring of front-end**
+
 ### 14 Dec 2018
 * **Added glyph inspector for each typeface**. [See it in action](https://beautifulwebtype.com/ibm-plex-mono/glyphs/). This feature was made possible by [opentype.js](https://github.com/opentypejs/opentype.js).
 
