@@ -226,10 +226,6 @@
   div:nth-child(3) h1 { font-style: normal; }
 }
 
-.le-murmure .word-examples h1 {
-  font-size: var(--ms7);
-}
-
 // Typeface comparisons
 // ----------------------------------------------------------------------------
 .examples.typeface-comparison {
@@ -271,5 +267,192 @@
     font-size: var(--ms3);
     grid-area: span 1 / span 6;
     margin-top: 1rem;
+  }
+}
+
+// Typeface specific tweaks
+// ----------------------------------------------------------------------------
+// Alegreya
+// ----------------------------------------------------------------------------
+.grid.alegreya {
+  .examples-smallcap {
+    grid-area: span 6 / span 6;
+  }
+}
+
+// Alegreya Sans
+// ----------------------------------------------------------------------------
+.grid.alegreya-sans {
+  .examples-paragraphs {
+    grid-area: span 5 / span 6;
+  }
+
+  .examples-smallcap {
+    grid-area: span 6 / span 6;
+  }
+}
+
+// Archivo Black
+// ----------------------------------------------------------------------------
+.grid.archivo-black {
+  .examples-paragraphs {
+    grid-area: span 11 / span 6;
+  }
+}
+
+// BioRhyme
+// ----------------------------------------------------------------------------
+.grid.biorhyme {
+  .examples-headlines {
+    .examples h1 {
+      font-size: var(--ms5);
+    }
+  }
+}
+
+// BioRhyme Expanded
+// ----------------------------------------------------------------------------
+.grid.biorhyme-expanded {
+  .examples-characters {
+    .examples span {
+      font-size: var(--ms4);
+    }
+  }
+
+  .examples-words {
+    .word-examples {
+      h1 {
+        font-size: var(--ms4);
+      }
+
+      div:nth-child(6) h1 {
+        font-size: var(--ms2);
+      }
+    }
+  }
+
+  .examples-headlines-uppercase {
+    .examples h1 {
+      font-size: var(--ms3);
+    }
+  }
+}
+
+// FiraGO
+// ----------------------------------------------------------------------------
+.grid.firago {
+  .examples-smallcap {
+    grid-area: span 11 / span 6;
+  }
+}
+
+// IBM Plex Mono
+// ----------------------------------------------------------------------------
+.grid.ibm-plex-mono {
+  .examples-paragraphs {
+    grid-area: span 9 / span 6;
+  }
+}
+
+// Le Murmure
+// ----------------------------------------------------------------------------
+.grid.le-murmure {
+  .examples-characters {
+    .examples span {
+      font-size: var(--ms8);
+    }
+  }
+
+  .examples-words .word-examples h1 {
+    font-size: var(--ms7);
+  }
+
+  .examples-headlines {
+    .examples h1 {
+      font-size: var(--ms8);
+    }
+  }
+
+  .examples-headlines-uppercase {
+    .examples h1 {
+      font-size: var(--ms8);
+    }
+  }
+}
+
+// Lora
+// ----------------------------------------------------------------------------
+.grid.lora {
+  .examples-paragraphs {
+    grid-area: span 9 / span 6;
+  }
+}
+
+// Playfair Display
+// ----------------------------------------------------------------------------
+.grid.playfair-display {
+  .examples-characters {
+    .examples span {
+      font-size: var(--ms7);
+    }
+  }
+
+  .examples-headlines {
+    .examples h1 {
+      font-size: var(--ms7);
+      line-height: 1;
+    }
+  }
+
+  .examples-headlines-italic {
+    .examples h1 {
+      font-size: var(--ms7);
+      line-height: 1;
+    }
+  }
+
+  .examples-smallcap {
+    .examples h1 {
+      font-size: var(--ms7);
+      line-height: 0.9;
+    }
+  }
+
+  .examples-smallcap-italic {
+    .examples h1 {
+      line-height: 0.9;
+    }
+  }
+}
+
+// Rakkas
+// ----------------------------------------------------------------------------
+.grid.rakkas {
+  .examples-headlines {
+    .examples h1 {
+      font-size: var(--ms8);
+    }
+  }
+
+  .examples-headlines-uppercase {
+    .examples h1 {
+      font-size: var(--ms7);
+    }
+  }
+}
+
+// Work Sans
+// ----------------------------------------------------------------------------
+.grid.work-sans {
+  .examples-smallcap {
+    grid-area: span 10 / span 6;
+  }
+}
+
+// Zilla Slab
+// ----------------------------------------------------------------------------
+.grid.zilla-slab {
+  .examples-smallcap {
+    grid-area: span 6 / span 6;
   }
 }

@@ -6,59 +6,26 @@ permalink: /playfair-display/
 {% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 {% assign text = site.data.text %}
 
-<div class='type-detail-table gr1 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Smallcap headlines</p>
-    <p class='code'>font-feature-settings: 'smcp';</p>
-  </div>
-  <div class='examples flow-column small-caps'>
-    <div>
-      <h1 class='w400 ms7 lh1' contenteditable='true'>{{ text.headlines[0] }}</h1>
-      <p class='character-label'>400</p>
-    </div>
-
-    <div>
-      <h1 class='w700 ms7 lh1' contenteditable='true'>{{ text.headlines[1] }}</h1>
-      <p class='character-label'>700</p>
-    </div>
-
-    <div>
-      <h1 class='w900 ms7 lh1' contenteditable='true'>{{ text.headlines[2] }}</h1>
-      <p class='character-label'>900</p>
-    </div>
-  </div>
-</div>
-
-<div class='type-detail-table gr1 gc6'>
+<div class='type-detail-table examples-smallcap-italic gr7 gc6'>
   <div class='meta dark top'>
     <p class='name'>Italic smallcap headlines</p>
     <p class='code'>font-feature-settings: 'smcp';</p>
   </div>
   <div class='examples flow-column small-caps'>
     <div>
-      <h1 class='w400 ms7 lh1 italic' contenteditable='true'>{{ text.headlines[0] }}</h1>
+      <h1 class='w400 ms7 italic' contenteditable='true'>{{ text.headlines[0] }}</h1>
       <p class='character-label'>400</p>
     </div>
 
     <div>
-      <h1 class='w700 ms7 lh1 italic' contenteditable='true'>{{ text.headlines[1] }}</h1>
+      <h1 class='w700 ms7 italic' contenteditable='true'>{{ text.headlines[1] }}</h1>
       <p class='character-label'>700</p>
     </div>
 
     <div>
-      <h1 class='w900 ms7 lh1 italic' contenteditable='true'>{{ text.headlines[2] }}</h1>
+      <h1 class='w900 ms7 italic' contenteditable='true'>{{ text.headlines[2] }}</h1>
       <p class='character-label'>900</p>
     </div>
-  </div>
-</div>
-
-<div class='type-detail-table gr10 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Paragraphs</p>
-  </div>
-  <div class='examples flow-column'>
-    <div><p class='ms5 lh1-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    <div><p class='ms4 lh1-3' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
   </div>
 </div>
 
@@ -106,7 +73,7 @@ permalink: /playfair-display/
   </div>
 </div>
 
-<div class='type-detail-table gr5 gc6'>
+<div class='type-detail-table gr6 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>

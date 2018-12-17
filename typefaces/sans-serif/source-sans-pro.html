@@ -6,58 +6,6 @@ permalink: /source-sans-pro/
 {% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
 {% assign text = site.data.text %}
 
-<div class='type-detail-table gr7 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Paragraphs</p>
-    <p class='code'>font-weight: 400</p>
-  </div>
-  <div class='examples flow-column'>
-    <div><p class='ms2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    <div><p class='ms1' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    <div><p class='ms0' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    <div><p class='ms-1 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-    <div><p class='ms-2 col-2' contenteditable='true'>{{ text.paragraphs[0] }}</p></div>
-  </div>
-</div>
-
-<div class='type-detail-table gr6 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Smallcap headlines</p>
-    <p class='code'>font-feature-settings: 'smcp';</p>
-  </div>
-  <div class='examples flow-column small-caps'>
-    <div>
-      <h1 class='w200' contenteditable='true'>{{ text.headlines[0] }}</h1>
-      <p class='character-label'>200</p>
-    </div>
-
-    <div>
-      <h1 class='w300' contenteditable='true'>{{ text.headlines[1] }}</h1>
-      <p class='character-label'>300</p>
-    </div>
-
-    <div>
-      <h1 class='w400' contenteditable='true'>{{ text.headlines[2] }}</h1>
-      <p class='character-label'>400</p>
-    </div>
-
-    <div>
-      <h1 class='w600' contenteditable='true'>{{ text.headlines[3] }}</h1>
-      <p class='character-label'>600</p>
-    </div>
-
-    <div>
-      <h1 class='w700' contenteditable='true'>{{ text.headlines[4] }}</h1>
-      <p class='character-label'>700</p>
-    </div>
-
-    <div>
-      <h1 class='w900' contenteditable='true'>{{ text.headlines[5] }}</h1>
-      <p class='character-label'>900</p>
-    </div>
-  </div>
-</div>
-
 <div class='type-detail-table gr2 gc6'>
   <div class='meta dark top'>
     <p class='name'>Standard Ligatures</p>
@@ -70,18 +18,6 @@ permalink: /source-sans-pro/
     <div><span class='fade italic'>fft</span> <span class='liga italic'>fft</span></div>
     <div><span class='fade'>ft</span> <span class='liga'>ft</span></div>
     <div><span class='fade italic'>ft</span> <span class='liga italic'>ft</span></div>
-  </div>
-</div>
-
-<div class='type-detail-table gr2 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Alternate Glyph Forms</p>
-    <p class='code'>font-feature-settings: 'ss--';</p>
-  </div>
-  <div class='examples flow-row'>
-    <div><span class='fade'>a</span> <span class='ss02'>a</span> <p class='code'>'ss02'</p></div>
-    <div><span class='fade'>g</span> <span class='ss03'>g</span> <p class='code'>'ss03'</p></div>
-    <div><span class='fade'>l</span> <span class='ss01'>l</span> <p class='code'>'ss01'</p></div>
   </div>
 </div>
 
@@ -136,6 +72,19 @@ permalink: /source-sans-pro/
     </div>
   </div>
 </div>
+
+<div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Alternate Glyph Forms</p>
+    <p class='code'>font-feature-settings: 'ss--';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade'>a</span> <span class='ss02'>a</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade'>g</span> <span class='ss03'>g</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade'>l</span> <span class='ss01'>l</span> <p class='code'>'ss01'</p></div>
+  </div>
+</div>
+
 
 <div class='type-detail-table gr3 gc6'>
   <div class='meta dark top'>

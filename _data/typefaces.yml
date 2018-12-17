@@ -5,6 +5,7 @@
   category: Serif
   styles: 10
   italic: true
+  smallcap: true
   weights: [{ weight: 400, name: 'Regular' },
             { weight: 500, name: 'Medium' },
             { weight: 700, name: 'Bold' },
@@ -28,6 +29,7 @@
   category: Sans-Serif
   styles: 14
   italic: true
+  smallcap: true
   weights: [{ weight: 100, name: 'Thin' },
             { weight: 300, name: 'Light' },
             { weight: 400, name: 'Regular' },
@@ -156,6 +158,7 @@
   category: Sans-Serif
   styles: 22
   italic: true
+  smallcap: true
   weights: [{ weight: 100, name: 'Thin' },
             { weight: 200, name: 'UltraLight' },
             { weight: 250, name: 'ExtraLight' },
@@ -426,6 +429,7 @@
   category: Display
   styles: 6
   italic: true
+  smallcap: true
   weights: [{ weight: 400, name: 'Regular' },
             { weight: 700, name: 'Bold' },
             { weight: 900, name: 'Black' }]
@@ -485,6 +489,7 @@
   category: Sans-Serif
   styles: 12
   italic: true
+  smallcap: true
   weights: [{ weight: 200, name: 'ExtraLight' },
             { weight: 300, name: 'Light' },
             { weight: 400, name: 'Regular' },
@@ -508,6 +513,7 @@
   category: Serif
   styles: 12
   italic: true
+  smallcap: true
   weights: [{ weight: 200, name: 'ExtraLight' },
             { weight: 300, name: 'Light' },
             { weight: 400, name: 'Regular' },
@@ -532,6 +538,7 @@
   category: Serif
   styles: 12
   italic: true
+  smallcap: true
   weights: [{ weight: 400, name: 'Regular' },
             { weight: 500, name: 'Medium' },
             { weight: 600, name: 'SemiBold' },
@@ -554,6 +561,7 @@
   category: Sans-Serif
   styles: 18
   italic: true
+  smallcap: true
   weights: [{ weight: 100, name: 'Thin' },
             { weight: 200, name: 'ExtraLight' },
             { weight: 300, name: 'Light' },
@@ -579,6 +587,7 @@
   category: Serif
   styles: 10
   italic: true
+  smallcap: true
   weights: [{ weight: 300, name: 'Light' },
             { weight: 400, name: 'Regular' },
             { weight: 500, name: 'Medium' },

@@ -55,7 +55,7 @@ layout: default
     {% endunless %}
   </div>
 
-  <div class='type-detail-table gr1 gc6'>
+  <div class='type-detail-table examples-characters gr1 gc6'>
     <div class='meta dark top'>
       <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
     </div>
@@ -64,7 +64,7 @@ layout: default
     </div>
   </div>
 
-  <div class='type-detail-table gr1 gc6'>
+  <div class='type-detail-table examples-words gr1 gc6'>
     <div class='meta dark top'>
       <p class='name'>Words</p>
     </div>
@@ -75,7 +75,7 @@ layout: default
     </div>
   </div>
 
-  <div class='type-detail-table gr1 gc6'>
+  <div class='type-detail-table examples-headlines gr1 gc6'>
     <div class='meta dark top'>
       <p class='name'>Headlines</p>
     </div>
@@ -95,7 +95,7 @@ layout: default
     {% assign second_headline_type = 'uppercase' %}
   {% endif %}
 
-  <div class='type-detail-table gr1 gc6'>
+  <div class='type-detail-table examples-headlines-{{ second_headline_type }} gr1 gc6'>
     <div class='meta dark top'>
       <p class='name'>{{ second_headline_type | capitalize }} Headlines</p>
     </div>
@@ -108,6 +108,40 @@ layout: default
       {% endfor %}
     </div>
   </div>
+
+  {% unless typeface.category == 'Display' %}
+    {% if typeface.italic == true %}{% assign i = 0 %}{% else %}{% assign i = 1 %}{% endif %}
+    <div class='type-detail-table examples-paragraphs gr8 gc6'>
+      <div class='meta dark top'>
+        <p class='name'>Paragraphs</p>
+        <p class='code'>font-weight: 400</p>
+      </div>
+      <div class='examples flow-column'>
+        <div><p class='ms2' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
+        <div><p class='ms1' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
+        <div><p class='ms0' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
+        <div><p class='ms-1' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
+        <div><p class='ms-2 col-2' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
+      </div>
+    </div>
+  {% endunless %}
+
+  {% unless typeface.smallcap == nil %}
+    <div class='type-detail-table examples-smallcap gr7 gc6'>
+      <div class='meta dark top'>
+        <p class='name'>Smallcap headlines</p>
+        <p class='code'>font-feature-settings: 'smcp';</p>
+      </div>
+      <div class='examples flow-column small-caps'>
+        {% for weight in typeface.weights %}
+        <div>
+          <h1 class='w{{ weight.weight }}' contenteditable='true'>{{ text.headlines[forloop.index0] }}</h1>
+          <p class='character-label'>{{ weight.weight }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endunless %}
 
   {{ content }}
 
