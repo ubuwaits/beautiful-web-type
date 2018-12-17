@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{{ content }}
+{% assign typefaces = site.data.typefaces | where: 'category', page.category  %}
+
+<div class='samples grid'>
+  <div class='gr1 gc12 page-header center'>
+    <h1>{{ page.category }} Typefaces</h1>
+  </div>
+
+  {% for typeface in typefaces %}
+    {% include sample.html %}
+  {% endfor %}
+</div>

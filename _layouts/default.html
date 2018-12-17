@@ -28,7 +28,7 @@
 
     <meta name='twitter:card' content='summary_large_image'>
     <meta name='twitter:creator' content='@ubuwaits'>
-    
+
     {% if page.layout == 'detail' or page.layout == 'glyphs' %}
       <meta property='og:image' content='https://beautifulwebtype.com/assets/images/{{ page.typeface | slugify }}.png'>
     {% else %}
@@ -45,8 +45,6 @@
       <title>{{ page.title }} &bull; Beautiful Web Type</title>
       <meta property='og:title' content='{{ page.title }}'>
     {% endif }
-
-    {{ page.body-head-content }}
     {% include breadcrumbs.html %}
   </head>
 
