@@ -19,42 +19,42 @@
     </div>
   </div>
 
-  {% assign typefaces = site.data.typefaces | where: 'category', 'Serif'  %}
+  {% assign typefaces = site.typefaces | where: 'category', 'Serif' %}
   <div class='footer-type-list gr1 gc2'>
     <h3><a href='/serif/'>Serif Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
+      <li><a href='{{ typeface.url }}'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>
 
-  {% assign typefaces = site.data.typefaces | where: 'category', 'Sans-Serif'  %}
+  {% assign typefaces = site.typefaces | where: 'category', 'Sans-Serif' %}
   <div class='footer-type-list gr1 gc2'>
     <h3><a href='/sans-serif/'>Sans-Serif Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
+      <li><a href='{{ typeface.url }}'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>
 
-  {% assign typefaces = site.data.typefaces | where: 'category', 'Display'  %}
+  {% assign typefaces = site.typefaces | where: 'category', 'Display' %}
   <div class='footer-type-list gr1 gc2'>
     <h3><a href='/display/'>Display Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
+      <li><a href='{{ typeface.url }}'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>
 
-  {% assign typefaces = site.data.typefaces | where: 'category', 'Monospaced'  %}
+  {% assign typefaces = site.typefaces | where: 'category', 'Monospaced'  %}
   <div class='footer-type-list gr1 gc2'>
     <h3><a href='/monospaced/'>Monospaced Typefaces</a></h3>
     <ol>
     {% for typeface in typefaces %}
-      <li><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a></li>
+      <li><a href='{{ typeface.url }}'>{{ typeface.name }}</a></li>
     {% endfor %}
     </ol>
   </div>

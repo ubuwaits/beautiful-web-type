@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
+{% assign typeface = site.typefaces | where: 'name', page.name | first %}
 {% assign text = site.data.text %}
 
 <div class='grid {{ typeface.name | slugify }}'>
@@ -154,7 +154,7 @@ layout: default
   </div>
 {% endunless %}
 
-{% assign pairings = site.data.pairings | where: 'typefaces', page.typeface %}
+{% assign pairings = site.data.pairings | where: 'typefaces', typeface.name %}
 {% unless pairings.size == 0 %}
   <div class='grid grid-pairings' id='pairings'>
     <h3 class='gr1 gc12 ase'>Recommended Pairings for {{ page.title }}</h3>

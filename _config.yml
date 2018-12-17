@@ -1,3 +1,8 @@
+collections:
+  typefaces:
+    output: true
+    permalink: /:name/
+
 include: ['.well-known']
 
 defaults:
@@ -9,8 +14,8 @@ defaults:
       layout: 'default'
   -
     scope:
-      path: 'typefaces'
-      type: 'pages'
+      path: ''
+      type: 'typefaces'
     values:
       layout: 'detail'
   -
@@ -27,26 +32,26 @@ defaults:
       layout: 'category'
   - # Set default body classes for type detail pages
     scope:
-      path: 'typefaces/display'
-      type: 'pages'
+      path: '_typefaces/display'
+      type: 'typefaces'
     values:
       body-class: 'display detail'
   -
     scope:
-      path: 'typefaces/monospaced'
-      type: 'pages'
+      path: '_typefaces/monospaced'
+      type: 'typefaces'
     values:
       body-class: 'monospaced detail'
   -
     scope:
-      path: 'typefaces/sans-serif'
-      type: 'pages'
+      path: '_typefaces/sans-serif'
+      type: 'typefaces'
     values:
       body-class: 'sans-serif detail'
   -
     scope:
-      path: 'typefaces/serif'
-      type: 'pages'
+      path: '_typefaces/serif'
+      type: 'typefaces'
     values:
       body-class: 'serif detail'
   - # Set default body classes for glyph explorer pages

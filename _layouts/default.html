@@ -16,8 +16,8 @@
     <link rel='preload' href='/assets/fonts/source-sans-pro/SourceSansPro-Regular.ttf.woff2' as='font' type='font/woff2' crossorigin='anonymous'>
 
     {% if page.layout == 'detail' %}
-      <meta name='description' content='Complete guide to the free font {{ page.typeface }}. See beautiful examples, recommended pairings, OpenType features, and more.'>
-      <meta property='og:description' content='Complete guide to the free font {{ page.typeface }}. See beautiful examples, recommended pairings, OpenType features, and more.'>
+      <meta name='description' content='Complete guide to the free font {{ page.name }}. See beautiful examples, recommended pairings, OpenType features, and more.'>
+      <meta property='og:description' content='Complete guide to the free font {{ page.name }}. See beautiful examples, recommended pairings, OpenType features, and more.'>
     {% elsif page.layout == 'glyphs' %}
       <meta name='description' content='Explore the complete character set for the free font {{ page.typeface }}'>
       <meta property='og:description' content='Explore the complete character set for the free font {{ page.typeface }}'>
@@ -29,22 +29,25 @@
     <meta name='twitter:card' content='summary_large_image'>
     <meta name='twitter:creator' content='@ubuwaits'>
 
-    {% if page.layout == 'detail' or page.layout == 'glyphs' %}
-      <meta property='og:image' content='https://beautifulwebtype.com/assets/images/{{ page.typeface | slugify }}.png'>
+    {% if page.layout == 'detail' %}
+      <meta property='og:image' content='https://beautifulwebtype.com/assets/images/{{ page.name | slugify }}.png'>
+    {% elsif page.layout == 'glyphs' %}
+        <meta property='og:image' content='https://beautifulwebtype.com/assets/images/{{ page.typeface | slugify }}.png'>
     {% else %}
         <meta property='og:image' content='https://beautifulwebtype.com/assets/images/card.png'>
     {% endif %}
 
     {% if page.layout == 'detail' %}
-      <title>Complete Guide to {{ page.typeface }} &bull; Beautiful Web Type</title>
-      <meta property='og:title' content='Complete Guide to {{ page.typeface }}'>
+      <title>Complete Guide to {{ page.name }} &bull; Beautiful Web Type</title>
+      <meta property='og:title' content='Complete Guide to {{ page.name }}'>
     {% elsif page.layout == 'glyphs' %}
       <title>{{ page.typeface }} Glyph Inspector &bull; Beautiful Web Type</title>
       <meta property='og:title' content='{{ page.typeface }} Glyph Inspector'>
     {% else %}
       <title>{{ page.title }} &bull; Beautiful Web Type</title>
       <meta property='og:title' content='{{ page.title }}'>
-    {% endif }
+    {% endif %}
+
     {% include breadcrumbs.html %}
   </head>
 

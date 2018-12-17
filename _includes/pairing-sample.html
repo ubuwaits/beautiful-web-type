@@ -1,7 +1,7 @@
-{% if pairing.typefaces[0] == page.typeface %}
-  {% assign paired-typeface = site.data.typefaces | where: 'name', pairing.typefaces[1] | first %}
+{% if pairing.typefaces[0] == page.name %}
+  {% assign paired-typeface = site.typefaces | where: 'name', pairing.typefaces[1] | first %}
 {% else %}
-  {% assign paired-typeface = site.data.typefaces | where: 'name', pairing.typefaces[0] | first %}
+  {% assign paired-typeface = site.typefaces | where: 'name', pairing.typefaces[0] | first %}
 {% endif %}
 
 <div class='sample pairing {{ pairing.name | slugify }}-sample gr6 gc6'>
@@ -12,7 +12,7 @@
         If showing the sample on a type detail page, then only show and link to
         the other typeface's page.
       {% endcomment %} -->
-      <p>Paired with <a href='/{{ paired-typeface.name | slugify }}/'>{{ paired-typeface.name }}</a></p>
+      <p>Paired with <a href='{{ paired-typeface.url }}'>{{ paired-typeface.name }}</a></p>
     {% else %}
       <!-- {% comment %}
         Otherwise, list the two typefaces. CSS is used to insert an & after

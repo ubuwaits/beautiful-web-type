@@ -7,7 +7,7 @@
     {% for comparison-face in typeface.comparison_faces %}
       <div>
         <h1 class='{{ comparison-face | slugify }}' contenteditable='true'>{{ text.words[4] }}</h1>
-        <p class='character-label'><a href='/{{ comparison-face | slugify }}/'>{{ comparison-face }}</a></p>
+        <p class='character-label'><a href='{{ comparison-face.url }}'>{{ comparison-face }}</a></p>
       </div>
     {% endfor %}
   </div>

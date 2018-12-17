@@ -2,15 +2,15 @@
 layout: default
 ---
 
-{% assign typeface = site.data.typefaces | where: 'name', page.typeface | first %}
+{% assign typeface = site.typefaces | where: 'name', page.typeface | first %}
 
 <header class='type-detail-header m2'>
-  <h2><a href='/{{ typeface.name | slugify }}/'>{{ typeface.name }}</a> / <span class='w400'>Glyph inspector</span></h2>
+  <h2><a href='{{ typeface.url }}'>{{ typeface.name }}</a> / <span class='w400'>Glyph inspector</span></h2>
 </header>
 
 <div class='grid'>
   <div class='gr1 gc3' id='glyph-detail'>
-    <div class='sidebar-header'><a href='/{{ typeface.name | slugify }}/'><span>&#8592;</span> Back to main typeface page</a></div>
+    <div class='sidebar-header'><a href='{{ typeface.url }}'><span>&#8592;</span> Back to main typeface page</a></div>
     <canvas id='active-glyph'></canvas>
     <div id='glyph-info'>
       <h3>Glyph Name</h3>
