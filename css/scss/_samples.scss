@@ -852,6 +852,49 @@
   }
 }
 
+// Source Code Pro
+// ----------------------------------------------------------------------------
+.source-code-pro-sample {
+  background: #C5E3D7;
+
+  .text {
+    color: #000;
+    text-align: center;
+    width: auto;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font: 300 var(--ms10)/1.1 var(--source-code-pro);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
+    }
+
+    h2 {
+      font: 900 var(--ms6)/1 var(--source-code-pro);
+      margin-top: 2em;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
+    }
+
+    h3 {
+      font: 500 var(--ms3)/1 var(--source-code-pro);
+      margin-top: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms0);        
+      }
+    }
+  }
+}
+
 // Source Sans Pro
 // ----------------------------------------------------------------------------
 .source-sans-pro-sample {

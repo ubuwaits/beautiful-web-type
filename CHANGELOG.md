@@ -1,6 +1,10 @@
 # Changelog
 
+## 18 Dec 2018
+* **Added [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)**
+
 ## 17 Dec 2018
+* **Begin using a Jekyll collection for typefaces**
 * **Major refactoring of front-end**
 
 ## 14 Dec 2018

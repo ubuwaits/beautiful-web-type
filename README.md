@@ -13,17 +13,15 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
-### 17 Dec 2018
+## 18 Dec 2018
+* **Added [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)**
+
+## 17 Dec 2018
+* **Begin using a Jekyll collection for typefaces**
 * **Major refactoring of front-end**
 
 ### 14 Dec 2018
 * **Added glyph inspector for each typeface**. [See it in action](https://beautifulwebtype.com/ibm-plex-mono/glyphs/). This feature was made possible by [opentype.js](https://github.com/opentypejs/opentype.js).
-
-### 11 Dec 2018
-* **Improved samples for several typefaces**
-
-### 05 Dec 2018
-* **Improved behavior of typeface comparison text**. Now, when updating the sample text for one typeface, it changes the sample text for the other typefaces as well.
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -54,6 +52,7 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/) &#8594; [Glyph inspector](https://beautifulwebtype.com/playfair-display/glyphs/)
 * [Poppins](https://beautifulwebtype.com/poppins/) &#8594; [Glyph inspector](https://beautifulwebtype.com/poppins/glyphs/)
 * [Rakkas](https://beautifulwebtype.com/rakkas/) &#8594; [Glyph inspector](https://beautifulwebtype.com/rakkas/glyphs/)
+* [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-code-pro/glyphs/)
 * [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-sans-pro/glyphs/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-serif-pro/glyphs/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/) &#8594; [Glyph inspector](https://beautifulwebtype.com/vollkorn/glyphs/)
