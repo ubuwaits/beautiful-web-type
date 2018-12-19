@@ -154,7 +154,7 @@ layout: default
   </div>
 {% endunless %}
 
-{% assign pairings = site.data.pairings | where: 'typefaces', typeface.name %}
+{% assign pairings = site.pairings | where: 'typefaces', typeface.name %}
 {% unless pairings.size == 0 %}
   <div class='grid grid-pairings' id='pairings'>
     <h3 class='gr1 gc12 ase'>Recommended Pairings for {{ page.title }}</h3>

@@ -5,7 +5,7 @@
 {% endif %}
 
 <div class='sample pairing {{ pairing.name | slugify }}-sample gr6 gc6'>
-  <div class='text'>{{ pairing.sample_html }}</div>
+  <div class='text'>{{ pairing.content }}</div>
   <div class='meta {% if pairing.sample_shade == 'light' %}dark{% endif %}'>
     {% if page.layout == 'detail' %}
       <!-- {% comment %}

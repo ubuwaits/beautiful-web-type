@@ -2,6 +2,8 @@ collections:
   typefaces:
     output: true
     permalink: /:name/
+  pairings:
+    output: false
 
 include: ['.well-known']
 exclude: ['Rakefile']
