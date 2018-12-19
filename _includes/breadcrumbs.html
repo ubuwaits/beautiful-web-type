@@ -1,58 +1,87 @@
-{% if page.layout == 'detail' %}
-  {% assign typeface = site.typefaces | where: 'name', page.name | first %}
-  {% assign typeface-url = typeface.name | slugify %}
-  {% assign category-url = typeface.category | slugify %}
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Free & Open-Source Fonts",
-      "item": "https://beautifulwebtype.com"
-    },{
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ typeface.category }}",
-      "item": "https://beautifulwebtype.com/{{ category-url }}/"
-    },{
-      "@type": "ListItem",
-      "position": 3,
-      "name": "{{ typeface.name }}",
-      "item": "https://beautifulwebtype.com/{{ typeface-url }}/"
-    }]
-  }
-  </script>
-{% elsif page.layout == 'category' %}
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Free & Open-Source Fonts",
-      "item": "https://beautifulwebtype.com"
-    },{
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ page.category-name }}",
-      "item": "https://beautifulwebtype.com{{ page.permalink }}"
-    }]
-  }
-  </script>
-{% else %}
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Free & Open-Source Fonts",
-      "item": "https://beautifulwebtype.com"
-    }]
-  }
-  </script>
-{% endif %}
+{% case page.layout %}
+  {% when 'detail' %}
+    {% assign typeface = site.typefaces | where: 'name', page.name | first %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Free & Open-Source Fonts",
+        "item": "https://beautifulwebtype.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ typeface.category }}",
+        "item": "https://beautifulwebtype.com/{{ typeface.category | slugify }}/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ typeface.name }}",
+        "item": "https://beautifulwebtype.com{{ typeface.url }}"
+      }]
+    }
+    </script>
+  {% when 'glyphs' %}
+    {% assign typeface = site.typefaces | where: 'name', page.typeface | first %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Free & Open-Source Fonts",
+        "item": "https://beautifulwebtype.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ typeface.category }}",
+        "item": "https://beautifulwebtype.com/{{ typeface.category | slugify }}/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ typeface.name }}",
+        "item": "https://beautifulwebtype.com{{ typeface.url }}"
+      },
+      ,{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Glyph Inspector",
+        "item": "https://beautifulwebtype.com{{ typeface.url }}glyphs/"
+      }]
+    }
+    </script>
+  {% when 'category' %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Free & Open-Source Fonts",
+        "item": "https://beautifulwebtype.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ page.category }}",
+        "item": "https://beautifulwebtype.com{{ page.permalink }}"
+      }]
+    }
+    </script>
+  {% else %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Free & Open-Source Fonts",
+        "item": "https://beautifulwebtype.com"
+      }]
+    }
+    </script>
+{% endcase %}
