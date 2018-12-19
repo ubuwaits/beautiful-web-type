@@ -2,6 +2,9 @@ collections:
   typefaces:
     output: true
     permalink: /:name/
+  glyphs:
+    output: true
+    permalink: /:name/glyphs/
   pairings:
     output: false
 
@@ -23,8 +26,8 @@ defaults:
       layout: 'detail'
   -
     scope:
-      path: 'glyphs'
-      type: 'pages'
+      path: ''
+      type: 'glyphs'
     values:
       layout: 'glyphs'
   -
@@ -59,25 +62,25 @@ defaults:
       body-class: 'serif detail'
   - # Set default body classes for glyph explorer pages
     scope:
-      path: 'glyphs/display'
-      type: 'pages'
+      path: '_glyphs/display'
+      type: 'glyphs'
     values:
       body-class: 'display glyphs'
   -
     scope:
-      path: 'glyphs/monospaced'
-      type: 'pages'
+      path: '_glyphs/monospaced'
+      type: 'glyphs'
     values:
       body-class: 'monospaced glyphs'
   -
     scope:
-      path: 'glyphs/sans-serif'
-      type: 'pages'
+      path: '_glyphs/sans-serif'
+      type: 'glyphs'
     values:
       body-class: 'sans-serif glyphs'
   -
     scope:
-      path: 'glyphs/serif'
-      type: 'pages'
+      path: '_glyphs/serif'
+      type: 'glyphs'
     values:
       body-class: 'serif glyphs'
