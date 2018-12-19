@@ -1,3 +1,11 @@
+url: 'https://beautifulwebtype.com'
+
+plugins:
+  - jekyll-sitemap
+
+include: ['.well-known']
+exclude: ['Rakefile']
+
 collections:
   typefaces:
     output: true
@@ -7,9 +15,6 @@ collections:
     permalink: /:name/glyphs/
   pairings:
     output: false
-
-include: ['.well-known']
-exclude: ['Rakefile']
 
 defaults:
   - # Set default layouts
