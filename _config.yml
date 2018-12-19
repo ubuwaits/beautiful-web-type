@@ -4,7 +4,7 @@ plugins:
   - jekyll-sitemap
 
 include: ['.well-known']
-exclude: ['Rakefile']
+exclude: ['Rakefile', 'test.html']
 
 collections:
   typefaces:
