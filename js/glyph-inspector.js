@@ -122,6 +122,9 @@ function displayGlyphInfo(glyph) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   glyphPosition = getGlyphPosition(canvas, glyph)
+
+  ctx.fillStyle = '#F9C4C4'
+  ctx.fillRect(32, glyphPosition.fontBaseline, (canvas.width / pixelRatio) - 64, 1)
   glyph.draw(ctx, glyphPosition.xmin, glyphPosition.fontBaseline, glyphPosition.fontSize)
 
   if (glyph.unicodes.length == 0) {
