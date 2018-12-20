@@ -124,11 +124,11 @@
   justify-content: center;
 
   @media screen and (max-width: $tablet) {
-    grid-area: span 1 / span 12;
+    grid-area: span 1 / span 12 !important;
   }
 
   @media screen and (max-width: $mobile) {
-    grid-area: span 1 / span 6;
+    grid-area: span 1 / span 6 !important;
   }
 }
 
