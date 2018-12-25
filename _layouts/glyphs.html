@@ -11,7 +11,7 @@ layout: default
 <div class='grid'>
   <div class='gr1 gc3' id='glyph-detail'>
     <div class='sidebar-header'><a href='{{ typeface.url }}'><span>&#8592;</span> Back to main typeface page</a></div>
-    <canvas id='active-glyph'></canvas>
+    <canvas id='glyph-detail-canvas'></canvas>
     <div id='glyph-info'>
       <h3>Glyph Name</h3>
       <p>Undefined</p>
@@ -22,7 +22,7 @@ layout: default
     </div>
   </div>
 
-  <div class='gr1 gc9'>
+  <div id='glyph-grid-container' class='gr1 gc9'>
     <div class='pagination-wrapper'><div id='glyph-pagination'></div></div>
     <div id='glyph-grid'></div>
   </div>
