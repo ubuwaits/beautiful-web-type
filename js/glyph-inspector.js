@@ -89,6 +89,8 @@ function displayActiveGlyph(glyph, font) {
 
   displayActiveGlyphInfo(glyph)
   highlightSelectedGlyph(glyph)
+
+  history.replaceState({}, document.title, '?i=' + glyph.index)
 }
 
 function getGlyphPosition(canvas, glyph, font) {
@@ -197,11 +199,20 @@ function glyphInspector(fontFile) {
       const pagination = paginationCreate(glyphsPerPage, font)
       document.getElementById('glyph-pagination').appendChild(pagination)
 
-      // Display first page of glyphs
-      displayGlyphPage(0, glyphsPerPage, font)
+      // See if there is a URL parameter specificying specifc glyph
+      // otherwise set initial glyph to the 5th
+      const parsedUrl = new URL(window.location.href)
+      let glyphIndex = parsedUrl.searchParams.get('i')
 
-      // Display the 5th glyph on page load
-      displayActiveGlyph(font.glyphs.get(5), font)
+      if (!glyphIndex) { glyphIndex = 5 }
+      if (glyphIndex >= font.numGlyphs) { glyphIndex = font.numGlyphs - 1 }
+      if (glyphIndex < 0 ) { glyphIndex = 0 }
+
+      // Display initial page of glyphs
+      const startPage = Math.floor(glyphIndex / glyphsPerPage)
+      displayGlyphPage(startPage, glyphsPerPage, font)
+
+      displayActiveGlyph(font.glyphs.get(glyphIndex), font)
     }
   })
 }

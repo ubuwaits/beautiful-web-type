@@ -13,10 +13,13 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
-## 18 Dec 2018
+### 31 Dec 2018
+* **Added ability to link to specific glyph** [For instance](https://beautifulwebtype.com/work-sans/glyphs/?i=1210).
+
+### 18 Dec 2018
 * **Added [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)**
 
-## 17 Dec 2018
+### 17 Dec 2018
 * **Begin using a Jekyll collection for typefaces**
 * **Major refactoring of front-end**
 
