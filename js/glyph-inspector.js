@@ -199,11 +199,11 @@ function glyphInspector(fontFile) {
       const pagination = paginationCreate(glyphsPerPage, font)
       document.getElementById('glyph-pagination').appendChild(pagination)
 
-      // See if there is a URL parameter specificying specifc glyph
-      // otherwise set initial glyph to the 5th
+      // See if there is a URL parameter specifying specific glyph
       const parsedUrl = new URL(window.location.href)
       let glyphIndex = parsedUrl.searchParams.get('i')
 
+      // Error checking
       if (!glyphIndex) { glyphIndex = 5 }
       if (glyphIndex >= font.numGlyphs) { glyphIndex = font.numGlyphs - 1 }
       if (glyphIndex < 0 ) { glyphIndex = 0 }
@@ -212,6 +212,7 @@ function glyphInspector(fontFile) {
       const startPage = Math.floor(glyphIndex / glyphsPerPage)
       displayGlyphPage(startPage, glyphsPerPage, font)
 
+      // Display initial glyph
       displayActiveGlyph(font.glyphs.get(glyphIndex), font)
     }
   })
