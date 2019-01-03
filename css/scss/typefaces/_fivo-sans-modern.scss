@@ -1,0 +1,82 @@
+:root { --fivo-sans-modern: 'Fivo Sans Modern', sans-serif; }
+.fivo-sans-modern { font-family: 'Fivo Sans Modern', sans-serif; }
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-regular-oblique.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-regular-oblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-medium.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: italic;
+  font-weight: 500;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-medium-oblique.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-medium-oblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-bold.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-bold-oblique.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-bold-oblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-heavy.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-heavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: italic;
+  font-weight: 800;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-heavy-oblique.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-heavy-oblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-extblack.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-extblack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern';
+  font-style: italic;
+  font-weight: 900;
+  src: url('/assets/fonts/fivo-sans-modern/fivosansmodern-extblack-oblique.woff2') format('woff2'),
+	     url('/assets/fonts/fivo-sans-modern/fivosansmodern-extblack-oblique.woff') format('woff');
+}

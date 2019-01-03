@@ -1,5 +1,9 @@
 # Changelog
 
+## 03 Jan 2019
+* **Added [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)**
+* **Added [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)**
+
 ## 31 Dec 2018
 * **Added ability to link to specific glyph**. [For instance](https://beautifulwebtype.com/work-sans/glyphs/?i=1210).
 

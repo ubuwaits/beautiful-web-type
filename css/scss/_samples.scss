@@ -357,6 +357,81 @@
   }
 }
 
+// Fivo Sans
+// ----------------------------------------------------------------------------
+.fivo-sans-sample {
+  background: #006DA9;
+
+  .text {
+    color: #FFF;
+    width: auto;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font: 700 var(--ms9)/1 var(--fivo-sans);
+      letter-spacing: -0.025em;
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms7);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
+    }
+  }
+}
+
+// Fivo Sans Modern
+// ----------------------------------------------------------------------------
+.fivo-sans-modern-sample {
+  background: #E7E6E2;
+
+  .text {
+    color: #000;
+    display: flex;
+    width: auto;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font: 700 var(--ms19)/0.425 var(--fivo-sans-modern);
+      transform: scaleX(-1);
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms17);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms13);
+      }
+    }
+
+    h2 {
+      font: 400 var(--ms10)/0.9 var(--fivo-sans-modern);
+      letter-spacing: -0.025em;
+      text-align: right;
+
+      strong {
+        font-weight: 700;
+      }
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms8);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms4);
+      }
+    }
+  }
+}
+
 // IBM Plex Mono
 // ----------------------------------------------------------------------------
 .ibm-plex-mono-sample {
@@ -889,7 +964,7 @@
       margin-top: 0.5em;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms0);        
+        font-size: var(--ms0);
       }
     }
   }

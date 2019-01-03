@@ -13,6 +13,10 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 03 Jan 2019
+* **Added [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)**
+* **Added [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)**
+
 ### 31 Dec 2018
 * **Added ability to link to specific glyph**. [For instance](https://beautifulwebtype.com/work-sans/glyphs/?i=1210).
 
@@ -41,6 +45,8 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/) &#8594; [Glyph inspector](https://beautifulwebtype.com/biorhyme-expanded/glyphs/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) &#8594; [Glyph inspector](https://beautifulwebtype.com/cooper-hewitt/glyphs/)
 * [FiraGo](https://beautifulwebtype.com/firago/) &#8594; [Glyph inspector](https://beautifulwebtype.com/firago/glyphs/)
+* [Fivo Sans](https://beautifulwebtype.com/fivo-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans/glyphs/)
+* [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans-modern/glyphs/)
 * [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-mono/glyphs/)
 * [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-sans/glyphs/)
 * [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-sans-condensed/glyphs/)
