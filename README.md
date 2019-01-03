@@ -23,13 +23,6 @@ I am now dedicating a considerable amount of time to this project. Your support 
 ### 18 Dec 2018
 * **Added [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)**
 
-### 17 Dec 2018
-* **Begin using a Jekyll collection for typefaces**
-* **Major refactoring of front-end**
-
-### 14 Dec 2018
-* **Added glyph inspector for each typeface**. [See it in action](https://beautifulwebtype.com/ibm-plex-mono/glyphs/). This feature was made possible by [opentype.js](https://github.com/opentypejs/opentype.js).
-
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
