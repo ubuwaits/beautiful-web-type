@@ -13,6 +13,8 @@ collections:
   glyphs:
     output: true
     permalink: /:name/glyphs/
+  samples:
+    output: false
   pairings:
     output: false
 
@@ -35,6 +37,12 @@ defaults:
       type: 'glyphs'
     values:
       layout: 'glyphs'
+  -
+    scope:
+      path: ''
+      type: 'samples'
+    values:
+      layout: 'none'
   -
     scope:
       path: 'categories'

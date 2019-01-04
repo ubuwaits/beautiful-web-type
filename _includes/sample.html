@@ -1,8 +1,10 @@
+{% assign sample = site.samples | where: 'typeface', typeface.name | first %}
+
 <div class='sample {{ typeface.name | slugify }} {{ typeface.name | slugify }}-sample gr6 gc12'>
   <a href='{{ typeface.url }}'>
-    <div class='text'>{{ typeface.sample_html }}</div>
+    <div class='text'>{{ sample.content }}</div>
   </a>
-  <div class='meta {% if typeface.sample_shade == 'light' %}dark{% endif %}'>
+  <div class='meta {% if sample.sample_shade == 'light' %}dark{% endif %}'>
     <p class='name'><a href='{{ typeface.url }}'>{{ typeface.name }} by {{ typeface.creator }}</a></p>
   </div>
 </div>
