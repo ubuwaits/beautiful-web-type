@@ -9,7 +9,7 @@ function removeClass(classToRemove) {
 }
 
 function formatCSSCode(unicode) {
-  unicode = unicode.toString(16);
+  unicode = unicode.toString(16)
 
   if (unicode.length > 4) {
     return '&#92;' + ("000000" + unicode.toUpperCase()).substr(-6)
@@ -24,9 +24,6 @@ function formatHTMLCode(unicode) {
 }
 
 function enableHighDPICanvas(canvas) {
-  if (typeof canvas === 'string') {
-    canvas = document.getElementById(canvas)
-  }
   if (pixelRatio === 1) return
 
   const oldWidth = canvas.width
@@ -38,12 +35,12 @@ function enableHighDPICanvas(canvas) {
   canvas.getContext('2d').scale(pixelRatio, pixelRatio)
 }
 
-function highlightSelectedGlyph(glyph) {
+function highlightSelectedGlyph(glyphIndex) {
   removeClass('active')
-  document.getElementById('g' + glyph.index).parentNode.classList.add('active')
+  document.getElementById('g' + glyphIndex).parentNode.classList.add('active')
 }
 
-function displayActiveGlyphInfo(glyph) {
+function displaySelectedGlyphInfo(glyph) {
   const glyphInfoContainer = document.getElementById('glyph-info')
 
   if (glyph.unicodes.length == 0) {
@@ -72,7 +69,7 @@ function displayActiveGlyphInfo(glyph) {
   }
 }
 
-function displayActiveGlyph(glyph, font) {
+function displaySelectedGlyph(font, glyph) {
   const canvas = document.getElementById('glyph-detail-canvas')
   canvas.width = canvas.parentNode.offsetWidth
   canvas.height = canvas.width * 0.8
@@ -87,9 +84,8 @@ function displayActiveGlyph(glyph, font) {
 
   glyph.draw(ctx, glyphPosition.xmin, glyphPosition.fontBaseline, glyphPosition.fontSize)
 
-  displayActiveGlyphInfo(glyph)
-  highlightSelectedGlyph(glyph)
-
+  displaySelectedGlyphInfo(glyph)
+  highlightSelectedGlyph(glyph.index)
   history.replaceState({}, document.title, '?i=' + glyph.index)
 }
 
@@ -108,31 +104,50 @@ function getGlyphPosition(canvas, glyph, font) {
   return { xmin, fontBaseline, fontSize }
 }
 
-function createCanvas(glyphIndex, font) {
-  const glyphContainer = document.createElement('div')
-  glyphContainer.classList.add('glyph-container')
-  glyphContainer.addEventListener('click', () => { displayActiveGlyph(font.glyphs.get(glyphIndex), font) }, false)
+function getNumCols() {
+  if (window.innerWidth > 940) {
+    return 16
+  }
+  else if (window.innerWidth <= 940 && window.innerWidth > 700) {
+    return 10
+  }
+  else if (window.innerWidth <= 700) {
+    return 6
+  }
+}
 
-  if (window.innerWidth > 940) { var numCols = 16 }
-  else if (window.innerWidth <= 940 && window.innerWidth > 700) { var numCols = 10 }
-  else if (window.innerWidth <= 700) { var numCols = 6 }
+function createGlyphCanvasContainer(font, glyphIndex) {
+  const glyphCanvasContainer = document.createElement('div')
+  glyphCanvasContainer.classList.add('glyph-container')
 
-  document.getElementById('glyph-grid').appendChild(glyphContainer)
-  const canvasWidth = (document.getElementById('glyph-grid').offsetWidth / numCols) - 1
+  glyphCanvasContainer.addEventListener('click', () => {
+    displaySelectedGlyph(font, font.glyphs.get(glyphIndex))
+  }, false)
+
+  document.getElementById('glyph-grid').appendChild(glyphCanvasContainer)
+
+  return glyphCanvasContainer
+}
+
+function createGlyphCanvas(font, glyphIndex) {
+  const glyphCanvasContainer = createGlyphCanvasContainer(font, glyphIndex)
+  const numCols = getNumCols()
+  const canvasWidth = document.getElementById('glyph-grid').offsetWidth / numCols - 1
 
   const glyphCanvas = document.createElement('canvas')
   glyphCanvas.width = canvasWidth
   glyphCanvas.height = canvasWidth * 1.2
   glyphCanvas.className = 'glyph'
   glyphCanvas.id = 'g'+ glyphIndex
+
   enableHighDPICanvas(glyphCanvas)
-  glyphContainer.appendChild(glyphCanvas)
+  glyphCanvasContainer.appendChild(glyphCanvas)
 
   return glyphCanvas
 }
 
-function writeGlyph(glyphIndex, font) {
-  const glyphCanvas = createCanvas(glyphIndex, font)
+function writeGlyph(font, glyphIndex) {
+  const glyphCanvas = createGlyphCanvas(font, glyphIndex)
   if (glyphIndex >= font.numGlyphs) return;
 
   const ctx = glyphCanvas.getContext('2d')
@@ -141,7 +156,7 @@ function writeGlyph(glyphIndex, font) {
   glyph.draw(ctx, glyphPosition.xmin, glyphPosition.fontBaseline, glyphPosition.fontSize)
 }
 
-function paginationHighlight(pageNum) {
+function highlightPagination(pageNum) {
   removeClass('selected-page')
   document.getElementById('p' + pageNum).className = 'selected-page'
 }
@@ -154,17 +169,18 @@ function removeGlyphs() {
   }
 }
 
-function displayGlyphPage(pageNum, glyphsPerPage, font) {
+function displaySelectedGlyphPage(font, glyphsPerPage, pageNum) {
   removeGlyphs()
-  paginationHighlight(pageNum)
+  highlightPagination(pageNum)
 
-  const firstGlyph = pageNum * glyphsPerPage
-  for (var index = 0; index < glyphsPerPage; index++) {
-    writeGlyph(firstGlyph + index, font)
+  const firstGlyphIndex = pageNum * glyphsPerPage
+
+  for (let i = 0; i < glyphsPerPage; i++) {
+    writeGlyph(font, firstGlyphIndex + i)
   }
 }
 
-function paginationCreate(glyphsPerPage, font) {
+function displayPagination(font, glyphsPerPage) {
   const numPages = Math.ceil(font.numGlyphs / glyphsPerPage)
   var pagination = document.createDocumentFragment()
 
@@ -176,12 +192,35 @@ function paginationCreate(glyphsPerPage, font) {
 
     pageLink.addEventListener('click', (e) => {
       e.preventDefault()
-      displayGlyphPage(e.target.id.substr(1), glyphsPerPage, font)
+      displaySelectedGlyphPage(font, glyphsPerPage, e.target.id.substr(1))
     }, false)
     pagination.appendChild(pageLink)
   }
 
-  return pagination
+  document.getElementById('glyph-pagination').appendChild(pagination)
+}
+
+function getInitialGlyphIndex(font) {
+  const parsedUrl = new URL(window.location.href)
+  let glyphIndex = parsedUrl.searchParams.get('i')
+
+  if (!glyphIndex) { glyphIndex = 5 }
+  if (glyphIndex >= font.numGlyphs) { glyphIndex = font.numGlyphs - 1 }
+  if (glyphIndex < 0 ) { glyphIndex = 0 }
+
+  return glyphIndex
+}
+
+function getGlyphsPerPage() {
+  if (window.innerWidth > 940) {
+    return 128
+  }
+  else if (window.innerWidth <= 940 && window.innerWidth > 700) {
+    return 130
+  }
+  else if (window.innerWidth <= 700) {
+    return 54
+  }
 }
 
 function glyphInspector(fontFile) {
@@ -190,30 +229,13 @@ function glyphInspector(fontFile) {
       console.log('Font could not be loaded: ' + err)
     }
     else {
-      // Set the number of glyphs per page based on window width
-      if (window.innerWidth > 940) { var glyphsPerPage = 128 }
-      else if (window.innerWidth <= 940 && window.innerWidth > 700) { var glyphsPerPage = 130 }
-      else if (window.innerWidth <= 700) { var glyphsPerPage = 54 }
+      const glyphsPerPage = getGlyphsPerPage()
+      const initialGlyphIndex = getInitialGlyphIndex(font)
+      const initialGlyphPage = Math.floor(initialGlyphIndex / glyphsPerPage)
 
-      // Create pagination
-      const pagination = paginationCreate(glyphsPerPage, font)
-      document.getElementById('glyph-pagination').appendChild(pagination)
-
-      // See if there is a URL parameter specifying specific glyph
-      const parsedUrl = new URL(window.location.href)
-      let glyphIndex = parsedUrl.searchParams.get('i')
-
-      // Error checking
-      if (!glyphIndex) { glyphIndex = 5 }
-      if (glyphIndex >= font.numGlyphs) { glyphIndex = font.numGlyphs - 1 }
-      if (glyphIndex < 0 ) { glyphIndex = 0 }
-
-      // Display initial page of glyphs
-      const startPage = Math.floor(glyphIndex / glyphsPerPage)
-      displayGlyphPage(startPage, glyphsPerPage, font)
-
-      // Display initial glyph
-      displayActiveGlyph(font.glyphs.get(glyphIndex), font)
+      displayPagination(font, glyphsPerPage)
+      displaySelectedGlyphPage(font, glyphsPerPage, initialGlyphPage)
+      displaySelectedGlyph(font, font.glyphs.get(initialGlyphIndex))
     }
   })
 }
