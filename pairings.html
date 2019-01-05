@@ -5,14 +5,12 @@ description: See beautiful examples of recommended pairings using only free & op
 body-class: pairings
 ---
 
-{% assign pairings = site.pairings %}
-
 <div class='samples grid'>
   <div class='gr1 gc12 page-header center'>
     <h1>Recommended Typeface Pairings</h1>
   </div>
 
-  {% for pairing in pairings %}
+  {% for pairing in site.pairings %}
     {% include pairing-sample.html %}
   {% endfor %}
 </div>
