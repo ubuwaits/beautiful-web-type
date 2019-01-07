@@ -13,15 +13,15 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 07 Jan 2019
+* **Improved performance of glyph inspector**. Switching between glyph pages is now much faster.
+
 ### 03 Jan 2019
 * **Added [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)**
 * **Added [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)**
 
 ### 31 Dec 2018
 * **Added ability to link to specific glyph**. [For instance](https://beautifulwebtype.com/work-sans/glyphs/?i=1210).
-
-### 18 Dec 2018
-* **Added [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 

@@ -75,14 +75,13 @@ function displaySelectedGlyph(font, glyph) {
   canvas.height = canvas.width * 0.8
   enableHighDPICanvas(canvas)
   const ctx = canvas.getContext('2d')
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  glyphPosition = getGlyphPosition(canvas, glyph, font)
+  const {xmin, fontBaseline, fontSize} = getGlyphPosition(canvas, glyph, font)
 
   // Draw baseline
   ctx.fillStyle = '#F9C4C4'
-  ctx.fillRect(32, glyphPosition.fontBaseline, (canvas.width / pixelRatio) - 64, 1)
+  ctx.fillRect(32, fontBaseline, (canvas.width / pixelRatio) - 64, 1)
 
-  glyph.draw(ctx, glyphPosition.xmin, glyphPosition.fontBaseline, glyphPosition.fontSize)
+  glyph.draw(ctx, xmin, fontBaseline, fontSize)
 
   displaySelectedGlyphInfo(glyph)
   highlightSelectedGlyph(glyph.index)
@@ -104,6 +103,44 @@ function getGlyphPosition(canvas, glyph, font) {
   return { xmin, fontBaseline, fontSize }
 }
 
+function writeGlyph(font, glyphCanvas, glyphIndex) {
+  if (glyphIndex >= font.numGlyphs) return;
+
+  glyphCanvas.id = 'g' + glyphIndex
+
+  const glyph = font.glyphs.get(glyphIndex)
+  const {xmin, fontBaseline, fontSize} = getGlyphPosition(glyphCanvas, glyph, font)
+
+  const ctx = glyphCanvas.getContext('2d')
+  glyph.draw(ctx, xmin, fontBaseline, fontSize)
+}
+
+function highlightPagination(pageNum) {
+  removeClass('selected-page')
+  document.getElementById('p' + pageNum).className = 'selected-page'
+}
+
+function clearGlyphCanvases() {
+  removeClass('active')
+  const glyphCanvases = document.getElementsByClassName('glyph')
+
+  for (let i = 0; i < glyphCanvases.length; i++) {
+    glyphCanvases[i].getContext('2d').clearRect(0, 0, glyphCanvases[i].width, glyphCanvases[i].height);
+  }
+}
+
+function displaySelectedGlyphPage(font, glyphsPerPage, pageNum) {
+  clearGlyphCanvases()
+  highlightPagination(pageNum)
+
+  const firstGlyphIndex = pageNum * glyphsPerPage
+  const glyphCanvases = document.getElementsByClassName('glyph')
+
+  for (let i = 0; i < glyphsPerPage; i++) {
+    writeGlyph(font, glyphCanvases[i], firstGlyphIndex + i)
+  }
+}
+
 function getNumCols() {
   if (window.innerWidth > 940) {
     return 16
@@ -120,8 +157,8 @@ function createGlyphCanvasContainer(font, glyphIndex) {
   const glyphCanvasContainer = document.createElement('div')
   glyphCanvasContainer.classList.add('glyph-container')
 
-  glyphCanvasContainer.addEventListener('click', () => {
-    displaySelectedGlyph(font, font.glyphs.get(glyphIndex))
+  glyphCanvasContainer.addEventListener('click', (e) => {
+    displaySelectedGlyph(font, font.glyphs.get(e.target.id.substr(1)))
   }, false)
 
   document.getElementById('glyph-grid').appendChild(glyphCanvasContainer)
@@ -131,14 +168,12 @@ function createGlyphCanvasContainer(font, glyphIndex) {
 
 function createGlyphCanvas(font, glyphIndex) {
   const glyphCanvasContainer = createGlyphCanvasContainer(font, glyphIndex)
-  const numCols = getNumCols()
-  const canvasWidth = document.getElementById('glyph-grid').offsetWidth / numCols - 1
+  const canvasWidth = document.getElementById('glyph-grid').offsetWidth / getNumCols() - 1
 
   const glyphCanvas = document.createElement('canvas')
   glyphCanvas.width = canvasWidth
   glyphCanvas.height = canvasWidth * 1.2
   glyphCanvas.className = 'glyph'
-  glyphCanvas.id = 'g'+ glyphIndex
 
   enableHighDPICanvas(glyphCanvas)
   glyphCanvasContainer.appendChild(glyphCanvas)
@@ -146,37 +181,9 @@ function createGlyphCanvas(font, glyphIndex) {
   return glyphCanvas
 }
 
-function writeGlyph(font, glyphIndex) {
-  const glyphCanvas = createGlyphCanvas(font, glyphIndex)
-  if (glyphIndex >= font.numGlyphs) return;
-
-  const ctx = glyphCanvas.getContext('2d')
-  const glyph = font.glyphs.get(glyphIndex)
-  const glyphPosition = getGlyphPosition(glyphCanvas, glyph, font)
-  glyph.draw(ctx, glyphPosition.xmin, glyphPosition.fontBaseline, glyphPosition.fontSize)
-}
-
-function highlightPagination(pageNum) {
-  removeClass('selected-page')
-  document.getElementById('p' + pageNum).className = 'selected-page'
-}
-
-function removeGlyphs() {
-  const glyphGrid = document.getElementById('glyph-grid')
-
-  while (glyphGrid.firstChild) {
-    glyphGrid.removeChild(glyphGrid.firstChild)
-  }
-}
-
-function displaySelectedGlyphPage(font, glyphsPerPage, pageNum) {
-  removeGlyphs()
-  highlightPagination(pageNum)
-
-  const firstGlyphIndex = pageNum * glyphsPerPage
-
+function displayGlyphGrid(font, glyphsPerPage) {
   for (let i = 0; i < glyphsPerPage; i++) {
-    writeGlyph(font, firstGlyphIndex + i)
+    createGlyphCanvas(font, i)
   }
 }
 
@@ -184,8 +191,8 @@ function displayPagination(font, glyphsPerPage) {
   const numPages = Math.ceil(font.numGlyphs / glyphsPerPage)
   var pagination = document.createDocumentFragment()
 
-  for (var i = 0; i < numPages; i++) {
-    let pageLink = document.createElement('a');
+  for (let i = 0; i < numPages; i++) {
+    const pageLink = document.createElement('a');
     pageLink.href = '#'
     pageLink.textContent = i + 1
     pageLink.id = 'p' + i
@@ -194,6 +201,7 @@ function displayPagination(font, glyphsPerPage) {
       e.preventDefault()
       displaySelectedGlyphPage(font, glyphsPerPage, e.target.id.substr(1))
     }, false)
+
     pagination.appendChild(pageLink)
   }
 
@@ -234,6 +242,7 @@ function glyphInspector(fontFile) {
       const initialGlyphPage = Math.floor(initialGlyphIndex / glyphsPerPage)
 
       displayPagination(font, glyphsPerPage)
+      displayGlyphGrid(font, glyphsPerPage)
       displaySelectedGlyphPage(font, glyphsPerPage, initialGlyphPage)
       displaySelectedGlyph(font, font.glyphs.get(initialGlyphIndex))
     }

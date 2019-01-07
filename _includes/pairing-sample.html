@@ -1,23 +1,15 @@
 {% if pairing.typefaces[0] == page.name %}
-  {% assign paired-typeface = site.typefaces | where: 'name', pairing.typefaces[1] | first %}
+  {% assign paired_typeface = site.typefaces | where: 'name', pairing.typefaces[1] | first %}
 {% else %}
-  {% assign paired-typeface = site.typefaces | where: 'name', pairing.typefaces[0] | first %}
+  {% assign paired_typeface = site.typefaces | where: 'name', pairing.typefaces[0] | first %}
 {% endif %}
 
 <div class='sample pairing {{ pairing.name | slugify }}-sample gr6 gc6'>
   <div class='text'>{{ pairing.content }}</div>
   <div class='meta {% if pairing.sample_shade == 'light' %}dark{% endif %}'>
     {% if page.layout == 'detail' %}
-      <!-- {% comment %}
-        If showing the sample on a type detail page, then only show and link to
-        the other typeface's page.
-      {% endcomment %} -->
-      <p>Paired with <a href='{{ paired-typeface.url }}'>{{ paired-typeface.name }}</a></p>
+      <p>Paired with <a href='{{ paired_typeface.url }}'>{{ paired_typeface.name }}</a></p>
     {% else %}
-      <!-- {% comment %}
-        Otherwise, list the two typefaces. CSS is used to insert an & after
-        the name of the first typeface.
-      {% endcomment %} -->
       <p class='pairing-list'>
         {% for typeface in pairing.typefaces %}
           <a href='/{{ typeface | slugify }}/'>{{ typeface }}</a>

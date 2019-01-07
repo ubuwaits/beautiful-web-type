@@ -1,5 +1,8 @@
 # Changelog
 
+## 07 Jan 2019
+* **Improved performance of glyph inspector**. Switching between glyph pages is now much faster.
+
 ## 03 Jan 2019
 * **Added [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)**
 * **Added [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)**
