@@ -8,14 +8,14 @@ layout: default
 <div class='grid {{ typeface.name | slugify }}'>
   <header class='type-detail-header gr1 gc6'>
     <h2>{{ typeface.name }}</h2>
-    <h3>by {{ typeface.creator }}</h3>
+    <h3>by {{ typeface.creator.name }}</h3>
   </header>
 
   <div class='font-download gr1 gc6'>
     {% unless typeface.g_fonts_url == nil %}
       <a href='{{ typeface.g_fonts_url }}' target='_blank' rel='noopener'>Embed <span>using Google Fonts</span></a>
     {% endunless %}
-    <a href='{{ typeface.project_url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest_version }} ({{ typeface.release_date }})</span></a>
+    <a href='{{ typeface.project_url }}' target='_blank' rel='noopener'>Download <span>{{ typeface.latest_release.version }} ({{ typeface.latest_release.date }})</span></a>
   </div>
 
   {% include sample.html %}
@@ -37,7 +37,7 @@ layout: default
 
   <div class='type-info gr1 gc3'>
     <h3>Designed by</h3>
-    <h4><a href='{{ typeface.creator_url }}' target='_blank' rel='noopener'>{{ typeface.creator }}</a></h4>
+    <h4><a href='{{ typeface.creator.url }}' target='_blank' rel='noopener'>{{ typeface.creator.name }}</a></h4>
 
     <h3>Category</h3>
     <h4><a href='/{{ typeface.category | downcase }}/'>{{ typeface.category }}</a></h4>
