@@ -1032,6 +1032,33 @@
   }
 }
 
+// Space Mono
+// ----------------------------------------------------------------------------
+.space-mono-sample {
+  background: #FFC900;
+
+  .text {
+    color: #111;    
+    width: auto;
+
+    @media screen and (max-width: $mobile) {
+      padding: 1em 0;
+    }
+
+    h1 {
+      font: 700 var(--ms9)/1 var(--space-mono);
+
+      &:nth-child(2) {
+        margin-bottom: 0.5em;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
+    }
+  }
+}
+
 // Vollkorn
 // ----------------------------------------------------------------------------
 .vollkorn-sample {

@@ -450,6 +450,25 @@
   }
 }
 
+// Space Mono
+// ----------------------------------------------------------------------------
+.grid.space-mono {
+  .examples-words .word-examples h1 {
+    font-feature-settings: 'liga' off, 'clig' off, 'dlig' off;
+  }
+
+  .examples-headlines,
+  .examples-headlines-italic {
+    .examples h1 {
+      font-feature-settings: 'liga' off, 'clig' off, 'dlig' off;
+    }
+  }
+
+  .examples-paragraphs {
+    font-feature-settings: 'liga' off, 'clig' off, 'dlig' off;
+  }
+}
+
 // Work Sans
 // ----------------------------------------------------------------------------
 .grid.work-sans {

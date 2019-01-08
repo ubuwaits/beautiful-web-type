@@ -13,15 +13,15 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 08 Jan 2019
+* **Added [Space Mono](https://beautifulwebtype.com/space-mono/)**
+
 ### 07 Jan 2019
 * **Improved performance of glyph inspector**. Switching between glyph pages is now much faster.
 
 ### 03 Jan 2019
 * **Added [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)**
 * **Added [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)**
-
-### 31 Dec 2018
-* **Added ability to link to specific glyph**. [For instance](https://beautifulwebtype.com/work-sans/glyphs/?i=1210).
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -57,6 +57,7 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-code-pro/glyphs/)
 * [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-sans-pro/glyphs/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-serif-pro/glyphs/)
+* [Space Mono](https://beautifulwebtype.com/space-mono/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-mono/glyphs/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/) &#8594; [Glyph inspector](https://beautifulwebtype.com/vollkorn/glyphs/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/work-sans/glyphs/)
 * [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) &#8594; [Glyph inspector](https://beautifulwebtype.com/zilla-slab/glyphs/)

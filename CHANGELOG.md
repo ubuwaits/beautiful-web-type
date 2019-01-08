@@ -1,5 +1,8 @@
 # Changelog
 
+## 08 Jan 2019
+* **Added [Space Mono](https://beautifulwebtype.com/space-mono/)**
+
 ## 07 Jan 2019
 * **Improved performance of glyph inspector**. Switching between glyph pages is now much faster.
 
