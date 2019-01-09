@@ -41,54 +41,38 @@ function highlightSelectedGlyph(glyphIndex) {
 }
 
 function displaySelectedGlyphInfo(glyph) {
-  const glyphInfoContainer = document.getElementById('glyph-info')
+  document.getElementById('glyph-info').innerHTML = `
+    <h3>Glyph Name</h3>
+    <p>${glyph.name}</p>
 
-  if (glyph.unicodes.length == 0) {
-    glyphInfoContainer.innerHTML = `
-      <h3>Glyph Name</h3>
-      <p>${glyph.name}</p>
+    <h3>HTML Code</h3>
+    <p>${glyph.unicodes.map(formatHTMLCode).join(', ') || 'Not available' }</p>
 
-      <h3>HTML Code</h3>
-      <p>Undefined</p>
-
-      <h3>CSS Code</h3>
-      <p>Undefined</p>
-    `
-  }
-  else {
-    glyphInfoContainer.innerHTML = `
-      <h3>Glyph Name</h3>
-      <p>${glyph.name}</p>
-
-      <h3>HTML Code</h3>
-      <p>${glyph.unicodes.map(formatHTMLCode).join(', ')}</p>
-
-      <h3>CSS Code</h3>
-      <p>${glyph.unicodes.map(formatCSSCode).join(', ')}</p>
-    `
-  }
+    <h3>CSS Code</h3>
+    <p>${glyph.unicodes.map(formatCSSCode).join(', ') || 'Not available' }</p>
+  `
 }
 
 function displaySelectedGlyph(font, glyph) {
+  displaySelectedGlyphInfo(glyph)
+  highlightSelectedGlyph(glyph.index)
+  history.replaceState({}, document.title, '?i=' + glyph.index)
+
   const canvas = document.getElementById('glyph-detail-canvas')
   canvas.width = canvas.parentNode.offsetWidth
   canvas.height = canvas.width * 0.8
   enableHighDPICanvas(canvas)
   const ctx = canvas.getContext('2d')
-  const {xmin, fontBaseline, fontSize} = getGlyphPosition(canvas, glyph, font)
+  const { xmin, fontBaseline, fontSize } = getGlyphPosition(font, canvas, glyph)
 
   // Draw baseline
   ctx.fillStyle = '#F9C4C4'
   ctx.fillRect(32, fontBaseline, (canvas.width / pixelRatio) - 64, 1)
 
   glyph.draw(ctx, xmin, fontBaseline, fontSize)
-
-  displaySelectedGlyphInfo(glyph)
-  highlightSelectedGlyph(glyph.index)
-  history.replaceState({}, document.title, '?i=' + glyph.index)
 }
 
-function getGlyphPosition(canvas, glyph, font) {
+function getGlyphPosition(font, canvas, glyph) {
   const w = canvas.width / pixelRatio
   const h = canvas.height / pixelRatio
   const maxHeight = font.tables.head.yMax - font.tables.head.yMin
@@ -109,7 +93,7 @@ function writeGlyph(font, glyphCanvas, glyphIndex) {
   glyphCanvas.id = 'g' + glyphIndex
 
   const glyph = font.glyphs.get(glyphIndex)
-  const {xmin, fontBaseline, fontSize} = getGlyphPosition(glyphCanvas, glyph, font)
+  const { xmin, fontBaseline, fontSize } = getGlyphPosition(font, glyphCanvas, glyph)
 
   const ctx = glyphCanvas.getContext('2d')
   glyph.draw(ctx, xmin, fontBaseline, fontSize)
@@ -142,18 +126,12 @@ function displaySelectedGlyphPage(font, glyphsPerPage, pageNum) {
 }
 
 function getNumCols() {
-  if (window.innerWidth > 940) {
-    return 16
-  }
-  else if (window.innerWidth <= 940 && window.innerWidth > 700) {
-    return 10
-  }
-  else if (window.innerWidth <= 700) {
-    return 6
-  }
+  if (window.innerWidth > 940) return 16
+  else if (window.innerWidth <= 940 && window.innerWidth > 700) return 10
+  else if (window.innerWidth <= 700) return 6
 }
 
-function createGlyphCanvasContainer(font, glyphIndex) {
+function createGlyphCanvasContainer(font) {
   const glyphCanvasContainer = document.createElement('div')
   glyphCanvasContainer.classList.add('glyph-container')
 
@@ -166,8 +144,8 @@ function createGlyphCanvasContainer(font, glyphIndex) {
   return glyphCanvasContainer
 }
 
-function createGlyphCanvas(font, glyphIndex) {
-  const glyphCanvasContainer = createGlyphCanvasContainer(font, glyphIndex)
+function createGlyphCanvas(font) {
+  const glyphCanvasContainer = createGlyphCanvasContainer(font)
   const canvasWidth = document.getElementById('glyph-grid').offsetWidth / getNumCols() - 1
 
   const glyphCanvas = document.createElement('canvas')
@@ -183,7 +161,7 @@ function createGlyphCanvas(font, glyphIndex) {
 
 function displayGlyphGrid(font, glyphsPerPage) {
   for (let i = 0; i < glyphsPerPage; i++) {
-    createGlyphCanvas(font, i)
+    createGlyphCanvas(font)
   }
 }
 
@@ -208,27 +186,20 @@ function displayPagination(font, glyphsPerPage) {
   document.getElementById('glyph-pagination').appendChild(pagination)
 }
 
-function getInitialGlyphIndex(font) {
-  const parsedUrl = new URL(window.location.href)
-  let glyphIndex = parsedUrl.searchParams.get('i')
+function getInitialGlyph(font) {
+  let glyphIndex = new URL(window.location.href).searchParams.get('i')
 
   if (!glyphIndex) { glyphIndex = 5 }
   if (glyphIndex >= font.numGlyphs) { glyphIndex = font.numGlyphs - 1 }
   if (glyphIndex < 0 ) { glyphIndex = 0 }
 
-  return glyphIndex
+  return font.glyphs.get(glyphIndex)
 }
 
 function getGlyphsPerPage() {
-  if (window.innerWidth > 940) {
-    return 128
-  }
-  else if (window.innerWidth <= 940 && window.innerWidth > 700) {
-    return 130
-  }
-  else if (window.innerWidth <= 700) {
-    return 54
-  }
+  if (window.innerWidth > 940) return 128
+  else if (window.innerWidth <= 940 && window.innerWidth > 700) return 130
+  else if (window.innerWidth <= 700) return 54
 }
 
 function glyphInspector(fontFile) {
@@ -238,13 +209,13 @@ function glyphInspector(fontFile) {
     }
     else {
       const glyphsPerPage = getGlyphsPerPage()
-      const initialGlyphIndex = getInitialGlyphIndex(font)
-      const initialGlyphPage = Math.floor(initialGlyphIndex / glyphsPerPage)
+      const initialGlyph = getInitialGlyph(font)
+      const initialGlyphPage = Math.floor(initialGlyph.index / glyphsPerPage)
 
       displayPagination(font, glyphsPerPage)
       displayGlyphGrid(font, glyphsPerPage)
       displaySelectedGlyphPage(font, glyphsPerPage, initialGlyphPage)
-      displaySelectedGlyph(font, font.glyphs.get(initialGlyphIndex))
+      displaySelectedGlyph(font, initialGlyph)
     }
   })
 }
