@@ -10,13 +10,7 @@ function removeClass(classToRemove) {
 
 function formatCSSCode(unicode) {
   unicode = unicode.toString(16)
-
-  if (unicode.length > 4) {
-    return '&#92;' + ("000000" + unicode.toUpperCase()).substr(-6)
-  }
-  else {
-    return 'content: \'&#92;' + ("0000" + unicode.toUpperCase()).substr(-4) + '\';'
-  }
+  return 'content: \'&#92;' + ("0000" + unicode.toUpperCase()).substr(-4) + '\';'
 }
 
 function formatHTMLCode(unicode) {
@@ -126,9 +120,12 @@ function displaySelectedGlyphPage(font, glyphsPerPage, pageNum) {
 }
 
 function getNumCols() {
-  if (window.innerWidth > 940) return 16
-  else if (window.innerWidth <= 940 && window.innerWidth > 700) return 10
-  else if (window.innerWidth <= 700) return 6
+  if (window.innerWidth > 940)
+    return 16
+  else if (window.innerWidth <= 940 && window.innerWidth > 700)
+    return 10
+  else if (window.innerWidth <= 700)
+    return 6
 }
 
 function createGlyphCanvasContainer(font) {
@@ -155,8 +152,6 @@ function createGlyphCanvas(font) {
 
   enableHighDPICanvas(glyphCanvas)
   glyphCanvasContainer.appendChild(glyphCanvas)
-
-  return glyphCanvas
 }
 
 function displayGlyphGrid(font, glyphsPerPage) {
@@ -167,7 +162,7 @@ function displayGlyphGrid(font, glyphsPerPage) {
 
 function displayPagination(font, glyphsPerPage) {
   const numPages = Math.ceil(font.numGlyphs / glyphsPerPage)
-  var pagination = document.createDocumentFragment()
+  const paginationContainer = document.getElementById('glyph-pagination')
 
   for (let i = 0; i < numPages; i++) {
     const pageLink = document.createElement('a');
@@ -180,26 +175,32 @@ function displayPagination(font, glyphsPerPage) {
       displaySelectedGlyphPage(font, glyphsPerPage, e.target.id.substr(1))
     }, false)
 
-    pagination.appendChild(pageLink)
+    paginationContainer.appendChild(pageLink)
   }
-
-  document.getElementById('glyph-pagination').appendChild(pagination)
 }
 
 function getInitialGlyph(font) {
   let glyphIndex = new URL(window.location.href).searchParams.get('i')
 
-  if (!glyphIndex) { glyphIndex = 5 }
-  if (glyphIndex >= font.numGlyphs) { glyphIndex = font.numGlyphs - 1 }
-  if (glyphIndex < 0 ) { glyphIndex = 0 }
+  if (!glyphIndex)
+    glyphIndex = 5
+
+  if (glyphIndex >= font.numGlyphs)
+    glyphIndex = font.numGlyphs - 1
+
+  if (glyphIndex < 0)
+    glyphIndex = 0
 
   return font.glyphs.get(glyphIndex)
 }
 
 function getGlyphsPerPage() {
-  if (window.innerWidth > 940) return 128
-  else if (window.innerWidth <= 940 && window.innerWidth > 700) return 130
-  else if (window.innerWidth <= 700) return 54
+  if (window.innerWidth > 940)
+    return 128
+  else if (window.innerWidth <= 940 && window.innerWidth > 700)
+    return 130
+  else if (window.innerWidth <= 700)
+    return 54
 }
 
 function glyphInspector(fontFile) {
