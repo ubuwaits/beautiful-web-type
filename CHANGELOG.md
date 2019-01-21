@@ -1,5 +1,8 @@
 # Changelog
 
+## 21 Jan 2019
+* **Added [Fira Code](https://beautifulwebtype.com/fira-code/)**
+
 ## 08 Jan 2019
 * **Added [Space Mono](https://beautifulwebtype.com/space-mono/)**
 

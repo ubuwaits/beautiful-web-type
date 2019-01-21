@@ -13,15 +13,14 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 21 Jan 2019
+* **Added [Fira Code](https://beautifulwebtype.com/fira-code/)**
+
 ### 08 Jan 2019
 * **Added [Space Mono](https://beautifulwebtype.com/space-mono/)**
 
 ### 07 Jan 2019
 * **Improved performance of glyph inspector**. Switching between glyph pages is now much faster.
-
-### 03 Jan 2019
-* **Added [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)**
-* **Added [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -37,6 +36,7 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/) &#8594; [Glyph inspector](https://beautifulwebtype.com/biorhyme/glyphs/)
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/) &#8594; [Glyph inspector](https://beautifulwebtype.com/biorhyme-expanded/glyphs/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) &#8594; [Glyph inspector](https://beautifulwebtype.com/cooper-hewitt/glyphs/)
+* [Fira Code](https://beautifulwebtype.com/fira-code/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fira-code/glyphs/)
 * [FiraGo](https://beautifulwebtype.com/firago/) &#8594; [Glyph inspector](https://beautifulwebtype.com/firago/glyphs/)
 * [Fivo Sans](https://beautifulwebtype.com/fivo-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans/glyphs/)
 * [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans-modern/glyphs/)
