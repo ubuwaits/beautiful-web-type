@@ -306,6 +306,41 @@
   }
 }
 
+// Fira Code
+// ----------------------------------------------------------------------------
+.fira-code-sample {
+  background: #0D3560;
+
+  .text {
+    color: #FDA18F;
+    text-align: center;
+    width: auto;
+
+    @media (max-width: $mobile) {
+      padding: 1em 0;
+    }
+
+    h1 {
+      font: 400 var(--ms7)/1.2 var(--fira-code);
+      margin-bottom: 0.2em;
+
+      span {
+        font-weight: 700;
+        padding: 0 0.2em;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: $tablet) {
+        font-size: var(--ms4);
+      }
+
+      @media (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+  }
+}
+
 // FiraGO
 // ----------------------------------------------------------------------------
 .firago-sample {
@@ -1038,7 +1073,7 @@
   background: #FFC900;
 
   .text {
-    color: #111;    
+    color: #111;
     width: auto;
 
     @media screen and (max-width: $mobile) {
