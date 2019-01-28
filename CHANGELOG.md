@@ -1,5 +1,8 @@
 # Changelog
 
+## 28 Jan 2019
+* **Updated latest version info for IBM Plex Family, Source Serif Pro and Source Sans Pro**
+
 ## 21 Jan 2019
 * **Added [Fira Code](https://beautifulwebtype.com/fira-code/)**
 

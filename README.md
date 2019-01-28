@@ -13,14 +13,14 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 28 Jan 2019
+* **Updated latest version info for IBM Plex Family, Source Serif Pro and Source Sans Pro**
+
 ### 21 Jan 2019
 * **Added [Fira Code](https://beautifulwebtype.com/fira-code/)**
 
 ### 08 Jan 2019
 * **Added [Space Mono](https://beautifulwebtype.com/space-mono/)**
-
-### 07 Jan 2019
-* **Improved performance of glyph inspector**. Switching between glyph pages is now much faster.
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
