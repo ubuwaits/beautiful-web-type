@@ -1,5 +1,8 @@
 # Changelog
 
+## 30 Jan 2019
+* **Added [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)**
+
 ## 28 Jan 2019
 * **Updated latest version info for IBM Plex Family, Source Serif Pro and Source Sans Pro**
 

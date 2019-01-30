@@ -467,6 +467,37 @@
   }
 }
 
+// iA Writer Quattro
+// ----------------------------------------------------------------------------
+.ia-writer-quattro-sample {
+  background: #CE5D18;
+
+  .text {
+    width: auto;
+
+    @media screen and (max-width: $mobile) {
+      padding: 1em 0;
+    }
+
+    h1 {
+      color: #000;
+      font: 400 var(--ms9)/1.2 var(--ia-writer-quattro);
+
+      &:first-child {
+        text-indent: -1.05em;
+      }
+
+      @media screen and (max-width: $tablet) {
+        font-size: var(--ms7);
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms4);
+      }
+    }
+  }
+}
+
 // IBM Plex Mono
 // ----------------------------------------------------------------------------
 .ibm-plex-mono-sample {

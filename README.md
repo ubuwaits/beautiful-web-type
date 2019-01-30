@@ -13,14 +13,14 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 30 Jan 2019
+* **Added [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)**
+
 ### 28 Jan 2019
 * **Updated latest version info for IBM Plex Family, Source Serif Pro and Source Sans Pro**
 
 ### 21 Jan 2019
 * **Added [Fira Code](https://beautifulwebtype.com/fira-code/)**
-
-### 08 Jan 2019
-* **Added [Space Mono](https://beautifulwebtype.com/space-mono/)**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -40,6 +40,7 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [FiraGo](https://beautifulwebtype.com/firago/) &#8594; [Glyph inspector](https://beautifulwebtype.com/firago/glyphs/)
 * [Fivo Sans](https://beautifulwebtype.com/fivo-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans/glyphs/)
 * [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans-modern/glyphs/)
+* [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ia-writer-quattro/glyphs/)
 * [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-mono/glyphs/)
 * [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-sans/glyphs/)
 * [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-sans-condensed/glyphs/)
