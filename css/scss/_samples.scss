@@ -871,7 +871,7 @@
       margin-bottom: 1em;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms5);
+        font-size: var(--ms2);
       }
     }
 
@@ -879,7 +879,7 @@
       font: 800 var(--ms4)/1.2 var(--manrope);
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms5);
+        font-size: var(--ms0);
       }
     }
   }
