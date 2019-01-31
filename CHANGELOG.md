@@ -1,5 +1,8 @@
 # Changelog
 
+## 31 Jan 2019
+* **Added [Manrope](https://beautifulwebtype.com/manrope/)**
+
 ## 30 Jan 2019
 * **Added [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)**
 

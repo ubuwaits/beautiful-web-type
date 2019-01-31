@@ -13,14 +13,14 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 31 Jan 2019
+* **Added [Manrope](https://beautifulwebtype.com/manrope/)**
+
 ### 30 Jan 2019
 * **Added [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)**
 
 ### 28 Jan 2019
 * **Updated latest version info for IBM Plex Family, Source Serif Pro and Source Sans Pro**
-
-### 21 Jan 2019
-* **Added [Fira Code](https://beautifulwebtype.com/fira-code/)**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -51,6 +51,7 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [Le Murmure](https://beautifulwebtype.com/le-murmure/) &#8594; [Glyph inspector](https://beautifulwebtype.com/le-murmure/glyphs/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) &#8594; [Glyph inspector](https://beautifulwebtype.com/libre-franklin/glyphs/)
 * [Lora](https://beautifulwebtype.com/lora/) &#8594; [Glyph inspector](https://beautifulwebtype.com/lora/glyphs/)
+* [Manrope](https://beautifulwebtype.com/manrope/) &#8594; [Glyph inspector](https://beautifulwebtype.com/manrope/glyphs/)
 * [Oswald](https://beautifulwebtype.com/oswald/) &#8594; [Glyph inspector](https://beautifulwebtype.com/oswald/glyphs/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/) &#8594; [Glyph inspector](https://beautifulwebtype.com/playfair-display/glyphs/)
 * [Poppins](https://beautifulwebtype.com/poppins/) &#8594; [Glyph inspector](https://beautifulwebtype.com/poppins/glyphs/)

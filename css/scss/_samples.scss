@@ -852,6 +852,39 @@
   }
 }
 
+// Manrope
+// ----------------------------------------------------------------------------
+.manrope-sample {
+  background: #000;
+
+  .text {
+    color: #FFF;
+    max-width: 840px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile) {
+      padding: 1em 0;
+    }
+
+    h1 {
+      font: 800 var(--ms6)/1.2 var(--manrope);
+      margin-bottom: 1em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
+    }
+
+    h2 {
+      font: 800 var(--ms4)/1.2 var(--manrope);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+      }
+    }
+  }
+}
+
 // Oswald
 // ----------------------------------------------------------------------------
 .oswald-sample {
