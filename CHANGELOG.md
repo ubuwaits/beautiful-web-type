@@ -1,5 +1,8 @@
 # Changelog
 
+## 1 Feb 2019
+* **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
+
 ## 31 Jan 2019
 * **Added [Manrope](https://beautifulwebtype.com/manrope/)**
 

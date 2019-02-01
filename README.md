@@ -13,14 +13,14 @@ I am now dedicating a considerable amount of time to this project. Your support 
 
 ## Changelog
 
+### 1 Feb 2019
+* **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
+
 ### 31 Jan 2019
 * **Added [Manrope](https://beautifulwebtype.com/manrope/)**
 
 ### 30 Jan 2019
 * **Added [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)**
-
-### 28 Jan 2019
-* **Updated latest version info for IBM Plex Family, Source Serif Pro and Source Sans Pro**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
