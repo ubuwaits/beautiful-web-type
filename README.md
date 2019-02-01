@@ -14,6 +14,7 @@ I am now dedicating a considerable amount of time to this project. Your support 
 ## Changelog
 
 ### 1 Feb 2019
+* **Added [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)**
 * **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
 
 ### 31 Jan 2019
@@ -59,6 +60,7 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-code-pro/glyphs/)
 * [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-sans-pro/glyphs/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-serif-pro/glyphs/)
+* [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-grotesk/glyphs/) 
 * [Space Mono](https://beautifulwebtype.com/space-mono/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-mono/glyphs/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/) &#8594; [Glyph inspector](https://beautifulwebtype.com/vollkorn/glyphs/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/work-sans/glyphs/)

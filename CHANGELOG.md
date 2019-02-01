@@ -1,6 +1,7 @@
 # Changelog
 
 ## 1 Feb 2019
+* **Added [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)**
 * **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
 
 ## 31 Jan 2019

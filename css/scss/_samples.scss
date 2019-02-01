@@ -1131,6 +1131,58 @@
   }
 }
 
+// Space Grotesk
+// ----------------------------------------------------------------------------
+.space-grotesk-sample {
+  background: #000;
+
+  .text {
+    color: #000;
+    max-width: 840px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile) {
+      padding: 1em 0;
+    }
+
+    h1 {
+      font: 700 var(--ms7)/1.3 var(--space-grotesk);
+      font-feature-settings: 'ss02';
+      display: inline;
+      margin: 0 0.05em;
+      padding: 0 0.1em;
+
+      &:nth-child(1) {
+        background: #D3544D;
+      }
+
+      &:nth-child(2) {
+        background: #9AB099;
+      }
+
+      &:nth-child(3) {
+        background: #5D6B92;
+      }
+
+      &:nth-child(4) {
+        background: #E2A50E;
+      }
+
+      &:nth-child(5) {
+        background: #D4BFC4;
+      }
+
+      &:nth-child(6) {
+        background: #D71E1F;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
+    }
+  }
+}
+
 // Space Mono
 // ----------------------------------------------------------------------------
 .space-mono-sample {
