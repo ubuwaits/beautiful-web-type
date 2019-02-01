@@ -22,7 +22,7 @@ sitemap: false
       <id>https://beautifulwebtype.com{{ typeface.url }}</id>
       <updated>{{ typeface.date_added | date_to_xmlschema }}</updated>
       <summary type='html'>{{ typeface.description | xml_escape }}</summary>
-      <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'><p>{{ typeface.description | xml_escape }}</p><p><a href='{{site.root_uri}}{{ typeface.url }}'><img src='https://beautifulwebtype.com/assets/images/{{ typface.name | slugify }}.png' alt='{{ typeface.name | xml_escape }} by {{ typeface.creator.name | xml_escape }}' /></a></p></div>
+      <content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'><p>{{ typeface.description | xml_escape }}</p><p><a href='{{site.root_uri}}{{ typeface.url }}'><img src='https://beautifulwebtype.com/assets/images/{{ typeface.name | slugify }}.png' alt='{{ typeface.name | xml_escape }} by {{ typeface.creator.name | xml_escape }}' /></a></p></div>
       </content>
     </entry>
   {% endfor %}
