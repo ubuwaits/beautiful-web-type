@@ -1,24 +1,4 @@
 <footer class='grid'>
-  <div class='footer-patreon gr1 gc6'>
-    <h3>Support this site on Patreon</h3>
-    <div class='footer-patreon-content'>
-      <div class='patreon-logo'><a href='https://www.patreon.com/bePatron?u=4566737' target='_blank' rel='noopener'><img src='/assets/images/patreon.png' alt='Become a patron'></a></div>
-      <p class='asc'>Your support enables me to grow this project into a definitive resource, with new typefaces and features.</p>
-    </div>
-  </div>
-
-  <div class='footer-newsletter gr1 gc6'>
-    <h3>Sign up for the monthly newsletter</h3>
-    <div class='subscribe-form'>
-      <form action='https://tinyletter.com/beautifulwebtype' method='post' target='popupwindow' onsubmit='window.open('https://tinyletter.com/beautifulwebtype', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true'>
-        <input type='hidden' value='1' name='embed'>
-        <label for='tlemail'>Enter your email address</label>
-        <input type='text' name='email' id='tlemail' placeholder='Enter your email address (Powered by TinyLetter)'>
-        <input type='submit' value='Subscribe'>
-      </form>
-    </div>
-  </div>
-
   {% assign typefaces = site.typefaces | where: 'category', 'Serif' %}
   <div class='footer-type-list gr1 gc2'>
     <h3><a href='/serif/'>Serif Typefaces</a></h3>
@@ -64,6 +44,7 @@
     <ol>
       <li><a href='https://github.com/ubuwaits/beautiful-web-type' target='_blank' rel='noopener'>Source on GitHub</a></li>
       <li><a href='https://www.are.na/chad-mazzola/beautiful-web-type' target='_blank' rel='noopener noreferrer'>Are.na Channel</a></li>
+      <li><a href='https://tinyletter.com/beautifulwebtype' target='_blank' rel='noopener noreferrer'>Newsletter</a></li>
       <li><a href='/feed.xml'>Atom feed</a></li>
       <li><a href='dat://beautifulwebtype.com/' target='_blank' rel='noopener'>P2P version via Dat</a></li>
       <li><a href='/v1/'>Old version of site</a></li>

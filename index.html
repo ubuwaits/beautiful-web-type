@@ -5,12 +5,8 @@ title: In-Depth Guide to the Best Free Fonts
 {% assign latest_typefaces = site.typefaces | sort: 'date_added' | reverse %}
 
 <div class='samples grid'>
-  <div class='gr1 gc6 page-header center'>
+  <div class='gr1 gc12 page-header center'>
     <h1>Guide to Only the Best<br> Open-Source Typefaces</h1>
-  </div>
-
-  <div class='gr1 gc6 page-header asc center'>
-    <p>There are {{ site.typefaces | size }} featured typefaces, with new ones added continously. Below are the latest 10.</p>
   </div>
 
   {% for typeface in latest_typefaces limit:10 %}

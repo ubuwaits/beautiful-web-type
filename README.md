@@ -2,11 +2,6 @@
 
 In October 2018 I released a completely re-thought and re-designed version of this project. The new version aims to provide a complete look at each typeface, cataloging all the available weights and styles, the full glyph set, the kerning quality, OpenType features, recommended pairings and more. I will highlight only typefaces that show a high level of quality.
 
-## How to support this project
-
-I am now dedicating a considerable amount of time to this project. Your support is essential to ensure that I can continue to do so. If you get value from this project, please consider becoming a patron.
-
-* Patreon: https://www.patreon.com/ubuwaits
 * Newsletter: https://tinyletter.com/beautifulwebtype
 * Personal site: https://chad.is
 * Twitter: https://twitter.com/ubuwaits
@@ -60,7 +55,7 @@ I will be adding new typefaces continuously. You can be notified when new typefa
 * [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-code-pro/glyphs/)
 * [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-sans-pro/glyphs/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-serif-pro/glyphs/)
-* [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-grotesk/glyphs/) 
+* [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-grotesk/glyphs/)
 * [Space Mono](https://beautifulwebtype.com/space-mono/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-mono/glyphs/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/) &#8594; [Glyph inspector](https://beautifulwebtype.com/vollkorn/glyphs/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/work-sans/glyphs/)
