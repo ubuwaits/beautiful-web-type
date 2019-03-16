@@ -23,8 +23,6 @@ In October 2018 I released a completely re-thought and re-designed version of th
 ## Featured typefaces
 All featured typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
 
-I will be adding new typefaces continuously. You can be notified when new typefaces are added by signing up for [the newsletter](https://tinyletter.com/beautifulwebtype).
-
 * [Alegreya](https://beautifulwebtype.com/alegreya/) &#8594; [Glyph inspector](https://beautifulwebtype.com/alegreya/glyphs/)
 * [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/alegreya-sans/glyphs/)
 * [Archivo](https://beautifulwebtype.com/archivo/) &#8594; [Glyph inspector](https://beautifulwebtype.com/archivo/glyphs/)
