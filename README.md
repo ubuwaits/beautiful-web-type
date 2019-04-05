@@ -8,15 +8,15 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
+## 5 Apr 2019
+* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v3.0.
+
 ### 1 Feb 2019
 * **Added [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)**
 * **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
 
 ### 31 Jan 2019
 * **Added [Manrope](https://beautifulwebtype.com/manrope/)**
-
-### 30 Jan 2019
-* **Added [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 

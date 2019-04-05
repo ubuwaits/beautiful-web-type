@@ -1,5 +1,8 @@
 # Changelog
 
+## 5 Apr 2019
+* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v3.0.
+
 ## 1 Feb 2019
 * **Added [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)**
 * **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
