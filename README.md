@@ -21,7 +21,7 @@ In October 2018 I released a completely re-thought and re-designed version of th
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
-All featured typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
+All typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
 
 * [Alegreya](https://beautifulwebtype.com/alegreya/) &#8594; [Glyph inspector](https://beautifulwebtype.com/alegreya/glyphs/)
 * [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/alegreya-sans/glyphs/)
@@ -61,7 +61,7 @@ All featured typefaces are licensed under the [SIL Open Font License](https://sc
 
 ## Suggesting Typefaces
 
-I'm happy to receive suggestions for typefaces to feature either though [a GitHub issue](https://github.com/ubuwaits/beautiful-web-type/issues) or via [email](mailto:ubuwaits@gmail.com). When sending the suggestion please send an example or two of the type in use. This helps me to make an initial evaluation of the typeface.
+I'm happy to receive suggestions for typefaces via [a GitHub issue](https://github.com/ubuwaits/beautiful-web-type/issues). When sending suggestions please include an example or two of the typeface in use. This helps me to make an initial evaluation of the typeface.
 
 ## Old version of site
 
