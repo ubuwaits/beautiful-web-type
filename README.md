@@ -8,7 +8,7 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
-## 5 Apr 2019
+### 5 Apr 2019
 * **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v3.0.
 
 ### 1 Feb 2019
