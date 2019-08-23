@@ -1,5 +1,8 @@
 # Changelog
 
+## 23 Aug 2019
+* **Updated [Le Murmure](https://beautifulwebtype.com/le-murmure/)** to v1.1.
+
 ## 5 Apr 2019
 * **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v3.0.
 

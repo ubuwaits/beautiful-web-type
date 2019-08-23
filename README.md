@@ -8,15 +8,15 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
+### 23 Aug 2019
+* **Updated [Le Murmure](https://beautifulwebtype.com/le-murmure/)** to v1.1.
+
 ### 5 Apr 2019
 * **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v3.0.
 
 ### 1 Feb 2019
 * **Added [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)**
 * **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
-
-### 31 Jan 2019
-* **Added [Manrope](https://beautifulwebtype.com/manrope/)**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
