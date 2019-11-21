@@ -1,16 +1,21 @@
 // Page header
 // --------------------------------------------------------------------------
 .type-detail-header {
+  align-self: flex-end;
+  display: flex;
+
   h2 {
     font: 600 var(--ms5)/1.1 var(--ui-face);
-
-    @media screen and (max-width: $mobile) {
-      font-size: var(--ms3);
-    }
   }
 
   h3 {
     font: 400 var(--ms5)/1.1 var(--ui-face);
+  }
+
+  h2, h3 {
+    @media screen and (max-width: $tablet) {
+      font-size: var(--ms4);
+    }
 
     @media screen and (max-width: $mobile) {
       font-size: var(--ms3);
@@ -40,6 +45,7 @@
 
     @media screen and (max-width: $mobile) {
       flex-basis: 100%;
+      font-size: var(--ms0);
       padding: 0.7em 0;
     }
 
@@ -53,6 +59,10 @@
       font-weight: 400;
       opacity: 0.8;
       text-transform: none;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms-1);
+      }
     }
   }
 

@@ -7,8 +7,10 @@ layout: default
 
 <div class='grid {{ typeface.name | slugify }}'>
   <header class='type-detail-header gr1 gc6'>
-    <h2>{{ typeface.name }}</h2>
-    <h3>by {{ typeface.creator.name }}</h3>
+    <div>
+      <h2>{{ typeface.name }}</h2>
+      <h3>by {{ typeface.creator.name }}</h3>
+    </div>
   </header>
 
   <div class='font-download gr1 gc6'>

@@ -1,16 +1,12 @@
-$mobile: 700px;
-$tablet: 940px;
-$large: 1500px;
+$mobile: 720px;
+$tablet: 1020px;
+$large: 1680px;
 
 :root {
   --body-margin: 2em;
   --wrapper: calc(100vw - (2 * var(--body-margin)));
   --gutter: 2em;
   --rh: calc((var(--wrapper) - (11 * var(--gutter))) / 12);
-
-  @media screen and (min-width: $large)  {
-    --wrapper: 1344px;
-  }
 
   @media screen and (max-width: $tablet) {
     --body-margin: 1em;
