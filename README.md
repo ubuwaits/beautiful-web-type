@@ -8,6 +8,10 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
+### 21 Nov 2019
+* **Updated [Fira Code](https://beautifulwebtype.com/fira-code/)** to v2.0.
+* Small changes to layout, responsive styles and typography. Site will now stretch the full width of the screen.
+
 ### 23 Aug 2019
 * **Updated [Le Murmure](https://beautifulwebtype.com/le-murmure/)** to v1.1.
 
