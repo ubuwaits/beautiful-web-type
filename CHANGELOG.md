@@ -1,6 +1,7 @@
 # Changelog
 
 ## 21 May 2019
+* **Updated [Jost](https://beautifulwebtype.com/jost/)** to v3.5. Included link to Google Fonts version and removed local files. Author has not provided official [WOFF or WOFF2 distribution](https://github.com/indestructible-type/Jost/issues/35) yet.
 * **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to v3.001.
 * **Updated IBM Plex** family typefaces to v4.0.2.
 
