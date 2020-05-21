@@ -1,6 +1,7 @@
 # Changelog
 
 ## 21 May 2019
+* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v4.5.
 * **Updated [Jost](https://beautifulwebtype.com/jost/)** to v3.5. Included link to Google Fonts version and removed local files. Author has not provided a [WOFF or WOFF2 distribution](https://github.com/indestructible-type/Jost/issues/35), so I recommend using the Google Fonts version.
 * **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to v3.001.
 * **Updated IBM Plex** family typefaces to v4.0.2.
