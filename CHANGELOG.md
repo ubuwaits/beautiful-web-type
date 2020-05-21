@@ -1,6 +1,7 @@
 # Changelog
 
 ## 21 May 2019
+* **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to v1.1.6.
 * **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to v3.006.
 * **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v4.5.
 * **Updated [Jost](https://beautifulwebtype.com/jost/)** to v3.5. Included link to Google Fonts version and removed local files. Author has not provided a [WOFF or WOFF2 distribution](https://github.com/indestructible-type/Jost/issues/35), so I recommend using the Google Fonts version.
