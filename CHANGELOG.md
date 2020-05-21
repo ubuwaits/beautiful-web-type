@@ -1,6 +1,7 @@
 # Changelog
 
 ## 21 May 2019
+* **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to v3.001.
 * **Updated IBM Plex** family typefaces to v4.0.2.
 
 ## 21 Nov 2019
