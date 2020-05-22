@@ -8,19 +8,21 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
+### 22 May 2019
+* **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to version from 1 May 2020.
+* **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to v1.1.6.
+* **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to v3.006.
+* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v4.5.
+* **Updated [Jost](https://beautifulwebtype.com/jost/)** to v3.5. Included link to Google Fonts version and removed local files. Author has not provided a [WOFF or WOFF2 distribution](https://github.com/indestructible-type/Jost/issues/35), so I recommend using the Google Fonts version.
+* **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to v3.001.
+* **Updated IBM Plex** family typefaces to v4.0.2.
+
 ### 21 Nov 2019
 * **Updated [Fira Code](https://beautifulwebtype.com/fira-code/)** to v2.0.
 * Small changes to layout, responsive styles and typography. Site will now stretch the full width of the screen.
 
 ### 23 Aug 2019
 * **Updated [Le Murmure](https://beautifulwebtype.com/le-murmure/)** to v1.1.
-
-### 5 Apr 2019
-* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v3.0.
-
-### 1 Feb 2019
-* **Added [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)**
-* **Added [Atom feed](https://beautifulwebtype.com/feed.xml) for typefaces**
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 

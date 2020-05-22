@@ -1,6 +1,7 @@
 # Changelog
 
-## 21 May 2019
+## 22 May 2019
+* **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to version from 1 May 2020.
 * **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to v1.1.6.
 * **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to v3.006.
 * **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v4.5.
