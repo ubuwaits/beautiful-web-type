@@ -1,34 +1,9 @@
-.fira-code { font-family: 'Fira Code', monospace; }
-:root { --fira-code: 'Fira Code', monospace; }
+.fira-code { font-family: 'Fira Code VF', monospace; }
+:root { --fira-code: 'Fira Code VF', monospace; }
 
 @font-face {
-  font-family: 'Fira Code';
+  font-family: 'Fira Code VF';
   font-style: normal;
-  font-weight: 300;
-  src: url('/assets/fonts/fira-code/FiraCode-Light.woff2') format('woff2'),
-	     url('/assets/fonts/fira-code/FiraCode-Light.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/fira-code/FiraCode-Regular.woff2') format('woff2'),
-	     url('/assets/fonts/fira-code/FiraCode-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: 500;
-  src: url('/assets/fonts/fira-code/FiraCode-Medium.woff2') format('woff2'),
-	     url('/assets/fonts/fira-code/FiraCode-Medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/fira-code/FiraCode-Bold.woff2') format('woff2'),
-	     url('/assets/fonts/fira-code/FiraCode-Bold.woff') format('woff');
+  font-weight: 300 700;
+  src: url('/assets/fonts/fira-code/FiraCode-VF.woff2') format('woff2-variations');
 }
