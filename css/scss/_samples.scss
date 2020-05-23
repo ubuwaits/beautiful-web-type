@@ -315,12 +315,16 @@
     color: #181516;
     max-width: 640px;
 
+    @media (max-width: $mobile) {
+      padding: 1em;
+    }
+
     p {
       font: 400 var(--ms3)/1.3 var(--crimson-pro);
       margin-bottom: 0.5em;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms2);
+        font-size: var(--ms1);
       }
     }
 
