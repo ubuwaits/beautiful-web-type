@@ -1,5 +1,8 @@
 # Changelog
 
+## 23 May 2019
+* **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to use the variable version.
+
 ## 22 May 2019
 * **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to version from 1 May 2020.
 * **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to v1.1.6.
