@@ -6,13 +6,13 @@
   font-stretch: normal;
   font-style: normal;
   font-weight: 200 900;
-  src: url('/assets/fonts/source-sans-pro/SourceSansVariable-Roman.ttf.woff2') format('woff2');
+  src: url('/assets/fonts/source-sans-pro/SourceSansVariable-Roman.ttf.woff2') format('woff2-variations');
 }
 
 @font-face {
   font-family: 'Source Sans Variable';
   font-stretch: normal;
   font-style: italic;
-  font-weight: 200 900;  
-  src: url('/assets/fonts/source-sans-pro/SourceSansVariable-Italic.ttf.woff2') format('woff2');
+  font-weight: 200 900;
+  src: url('/assets/fonts/source-sans-pro/SourceSansVariable-Italic.ttf.woff2') format('woff2-variations');
 }
