@@ -1,6 +1,8 @@
 # Changelog
 
 ## 23 May 2019
+* **Updated [Lora](https://beautifulwebtype.com/lora/)** to variable version.
+* **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to variable version.
 * **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to variable version.
 * **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to variable version.
 * **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to variable version.
