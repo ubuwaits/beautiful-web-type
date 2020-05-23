@@ -1,6 +1,7 @@
 # Changelog
 
 ## 23 May 2019
+* **Updated [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)** to variable version.
 * **Updated [Fire Code](https://beautifulwebtype.com/fira-code/)** to v4.0 variable version.
 * **Updated [Lora](https://beautifulwebtype.com/lora/)** to variable version.
 * **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to variable version.

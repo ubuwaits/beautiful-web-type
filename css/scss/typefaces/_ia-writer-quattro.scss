@@ -1,34 +1,16 @@
-:root { --ia-writer-quattro: 'iA Writer Quattro S', 'Helvetica Neue', Arial, sans-serif; }
-.ia-writer-quattro { font-family: 'iA Writer Quattro S', 'Helvetica Neue', Arial, sans-serif; }
+:root { --ia-writer-quattro: 'iA Writer Quattro', 'Helvetica Neue', Arial, sans-serif; }
+.ia-writer-quattro { font-family: 'iA Writer Quattro', 'Helvetica Neue', Arial, sans-serif; }
 
 @font-face {
-  font-family: 'iA Writer Quattro S';
+  font-family: 'iA Writer Quattro';
   font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-Regular.woff2') format('woff2'),
-	     url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-Regular.woff') format('woff');
+  font-weight: 300 700;
+  src: url('/assets/fonts/ia-writer-quattro/iAWriterQuattroV.ttf') format('truetype-variations');
 }
 
 @font-face {
-  font-family: 'iA Writer Quattro S';
+  font-family: 'iA Writer Quattro';
   font-style: italic;
-  font-weight: 400;
-  src: url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-Italic.woff2') format('woff2'),
-	     url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-Italic.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'iA Writer Quattro S';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-Bold.woff2') format('woff2'),
-	     url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'iA Writer Quattro S';
-  font-style: italic;
-  font-weight: 700;
-  src: url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-BoldItalic.woff2') format('woff2'),
-	     url('/assets/fonts/ia-writer-quattro/iAWriterQuattroS-BoldItalic.woff') format('woff');
+  font-weight: 300 700;
+  src: url('/assets/fonts/ia-writer-quattro/iAWriterQuattroV-Italic.ttf') format('truetype-variations');
 }
