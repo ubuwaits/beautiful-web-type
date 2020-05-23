@@ -8,7 +8,7 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
-## 23 May 2020
+### 23 May 2020
 * **Updated [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)** to variable version.
 * **Updated [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)** to variable version.
 * **Updated [Fire Code](https://beautifulwebtype.com/fira-code/)** to v4.0 variable version.
