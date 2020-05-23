@@ -306,6 +306,30 @@
   }
 }
 
+// Crimson Pro
+// ----------------------------------------------------------------------------
+.crimson-pro-sample {
+  background: #C2C4BA;
+
+  .text {
+    color: #181516;
+    max-width: 640px;
+
+    p {
+      font: 400 var(--ms3)/1.3 var(--crimson-pro);
+      margin-bottom: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
+    }
+
+    p:first-child {
+      text-indent: -0.45em;
+    }
+  }
+}
+
 // Fira Code
 // ----------------------------------------------------------------------------
 .fira-code-sample {

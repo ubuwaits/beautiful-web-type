@@ -1,6 +1,7 @@
 # Changelog
 
 ## 23 May 2019
+* **Added [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)**.
 * **Updated [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)** to variable version.
 * **Updated [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)** to variable version.
 * **Updated [Fire Code](https://beautifulwebtype.com/fira-code/)** to v4.0 variable version.
