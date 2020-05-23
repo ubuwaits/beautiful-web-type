@@ -8,7 +8,18 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
-### 22 May 2019
+## 23 May 2020
+* **Updated [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)** to variable version.
+* **Updated [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)** to variable version.
+* **Updated [Fire Code](https://beautifulwebtype.com/fira-code/)** to v4.0 variable version.
+* **Updated [Lora](https://beautifulwebtype.com/lora/)** to variable version.
+* **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to variable version.
+* **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to variable version.
+* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to variable version.
+* **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to variable version.
+* **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to variable version.
+
+### 22 May 2020
 * **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to version from 1 May 2020.
 * **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to v1.1.6.
 * **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to v3.006.
@@ -20,9 +31,6 @@ In October 2018 I released a completely re-thought and re-designed version of th
 ### 21 Nov 2019
 * **Updated [Fira Code](https://beautifulwebtype.com/fira-code/)** to v2.0.
 * Small changes to layout, responsive styles and typography. Site will now stretch the full width of the screen.
-
-### 23 Aug 2019
-* **Updated [Le Murmure](https://beautifulwebtype.com/le-murmure/)** to v1.1.
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
