@@ -1,6 +1,7 @@
 # Changelog
 
 ## 23 May 2019
+* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to variable version.
 * **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to variable version.
 * **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to variable version.
 

@@ -1,58 +1,10 @@
-:root { --manrope: 'Manrope', 'Helvetica Neue', Arial, sans-serif; }
-.manrope { font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif; }
+:root { --manrope: 'Manrope VF', 'Helvetica Neue', Arial, sans-serif; }
+.manrope { font-family: 'Manrope VF', 'Helvetica Neue', Arial, sans-serif; }
 
 @font-face {
-  font-family: 'Manrope';
+  font-family: 'Manrope VF';
+  font-stretch: normal;
   font-style: normal;
-  font-weight: 200;
-  src: url('/assets/fonts/manrope/manrope-extralight.woff2') format('woff2'),
-	     url('/assets/fonts/manrope/manrope-extralight.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 300;
-  src: url('/assets/fonts/manrope/manrope-light.woff2') format('woff2'),
-	     url('/assets/fonts/manrope/manrope-light.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/manrope/manrope-regular.woff2') format('woff2'),
-	     url('/assets/fonts/manrope/manrope-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  src: url('/assets/fonts/manrope/manrope-medium.woff2') format('woff2'),
-	     url('/assets/fonts/manrope/manrope-medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/assets/fonts/manrope/manrope-semibold.woff2') format('woff2'),
-	     url('/assets/fonts/manrope/manrope-semibold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/manrope/manrope-bold.woff2') format('woff2'),
-	     url('/assets/fonts/manrope/manrope-bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 800;
-  src: url('/assets/fonts/manrope/manrope-extrabold.woff2') format('woff2'),
-	     url('/assets/fonts/manrope/manrope-extrabold.woff') format('woff');
+  font-weight: 200 800;
+  src: url('/assets/fonts/manrope/manrope-variable.ttf') format('truetype-variations');
 }
