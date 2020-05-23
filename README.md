@@ -9,6 +9,7 @@ In October 2018 I released a completely re-thought and re-designed version of th
 ## Changelog
 
 ### 23 May 2020
+* **Added [Messapia](https://beautifulwebtype.com/messapia/)**.
 * **Added [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)**.
 * **Updated [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)** to variable version.
 * **Updated [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)** to variable version.
@@ -62,6 +63,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) &#8594; [Glyph inspector](https://beautifulwebtype.com/libre-franklin/glyphs/)
 * [Lora](https://beautifulwebtype.com/lora/) &#8594; [Glyph inspector](https://beautifulwebtype.com/lora/glyphs/)
 * [Manrope](https://beautifulwebtype.com/manrope/) &#8594; [Glyph inspector](https://beautifulwebtype.com/manrope/glyphs/)
+* [Messapia](https://beautifulwebtype.com/messapia/) &#8594; [Glyph inspector](https://beautifulwebtype.com/messapia/glyphs/)
 * [Oswald](https://beautifulwebtype.com/oswald/) &#8594; [Glyph inspector](https://beautifulwebtype.com/oswald/glyphs/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/) &#8594; [Glyph inspector](https://beautifulwebtype.com/playfair-display/glyphs/)
 * [Poppins](https://beautifulwebtype.com/poppins/) &#8594; [Glyph inspector](https://beautifulwebtype.com/poppins/glyphs/)

@@ -233,6 +233,7 @@
 .fira-code .word-examples,
 .le-murmure .word-examples,
 .manrope .word-examples,
+.messapia .word-examples,
 .oswald .word-examples,
 .rakkas .word-examples,
 .space-grotesk .word-examples {
@@ -407,6 +408,22 @@
 .grid.lora {
   .examples-paragraphs {
     grid-area: span 9 / span 6;
+  }
+}
+
+// Messapia
+// ----------------------------------------------------------------------------
+.grid.messapia {
+  .examples-words {
+    .word-examples {
+      h1 {
+        font-size: var(--ms6);
+      }
+
+      div:nth-child(6) h1 {
+        font-size: var(--ms4);
+      }
+    }
   }
 }
 
