@@ -1,7 +1,8 @@
 # Changelog
 
 ## 23 May 2019
-* **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to use the variable version.
+* **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to variable version.
+* **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to variable version.
 
 ## 22 May 2019
 * **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to version from 1 May 2020.
