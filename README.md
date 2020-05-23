@@ -45,6 +45,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/) &#8594; [Glyph inspector](https://beautifulwebtype.com/biorhyme/glyphs/)
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/) &#8594; [Glyph inspector](https://beautifulwebtype.com/biorhyme-expanded/glyphs/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) &#8594; [Glyph inspector](https://beautifulwebtype.com/cooper-hewitt/glyphs/)
+* [Crimson Pro](https://beautifulwebtype.com/crimson-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/crimson-pro/glyphs/)
 * [Fira Code](https://beautifulwebtype.com/fira-code/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fira-code/glyphs/)
 * [FiraGo](https://beautifulwebtype.com/firago/) &#8594; [Glyph inspector](https://beautifulwebtype.com/firago/glyphs/)
 * [Fivo Sans](https://beautifulwebtype.com/fivo-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans/glyphs/)
