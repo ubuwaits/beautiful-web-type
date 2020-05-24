@@ -3,18 +3,18 @@
     background: #101010;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    padding: 0.7em 0.9em;
+    padding: 0.5rem 1rem;
 
     a {
       color: #FFF;
       display: block;
-      font: 600 var(--ms0)/1 var(--ui-face);
-      padding: 0.35em 0 0.4em;
+      font: 600 var(--ms0)/1rem var(--ui-face);
+      padding: 0.5rem 0;
 
       span {
         font-size: var(--ms1);
         font-weight: 700;
-        line-height: 0.7;
+        line-height: 1rem;
         margin-right: 0.1em;
       }
     }
@@ -27,16 +27,16 @@
 
   #glyph-info {
     background: #fff;
-    padding: 1em 1em 0.3em 1em;
+    padding: 1rem 1rem 0.5rem 1rem;
 
     h3 {
-      font: 700 var(--ms0)/1.2 var(--ui-face);
+      font: 700 var(--ms0)/1rem var(--ui-face);
       text-transform: uppercase;
     }
 
     p {
-      font: 500 var(--ms0)/1.2 var(--ui-monospaced);
-      margin-bottom: 1em;
+      font: 500 var(--ms0)/1.5rem var(--ui-monospaced);
+      margin-bottom: 1rem;
       overflow-wrap: break-word;
     }
   }
@@ -91,7 +91,7 @@
   display: flex;
   justify-content: center;
   overflow-x: scroll;
-  padding: 0.55em;
+  padding: 0.5rem;
 
   &::-webkit-scrollbar {
     display: none;
@@ -111,8 +111,8 @@
     background: #515151;
     border-right: 1px solid #313131;
     color: #fff;
-    font: 600 var(--ms0)/1 var(--ui-face);
-    padding: 0.5em 1em 0.55em;
+    font: 600 var(--ms0)/1rem var(--ui-face);
+    padding: 0.5rem 1rem 0.5rem;
 
     &:first-child {
       border-top-left-radius: 2px;

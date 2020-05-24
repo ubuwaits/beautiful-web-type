@@ -18,7 +18,7 @@
 
     @media screen and (max-width: $mobile) {
       height: auto;
-      padding: 2rem;
+      padding: 2.5rem;
     }
   }
 
@@ -203,18 +203,14 @@
 
   .text {
     color: #FFF;
-    max-width: 940px;
     text-align: center;
 
-    @media screen and (max-width: $mobile) {
-      padding: 1em 0;
-    }
-
     h1 {
-      font: 800 var(--ms12)/1 var(--biorhyme);
+      font: 800 var(--ms12)/8rem var(--biorhyme);
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms7);
+        line-height: 3.5rem;
       }
     }
   }
@@ -227,43 +223,35 @@
 
   .text {
     color: #FFF;
-    max-width: 940px;
     text-align: center;
 
     @media screen and (max-width: $mobile) {
-      padding: 1em 0;
+      margin-top: 1rem;
     }
 
     h1 {
-      font: 800 var(--ms15)/0.8 var(--biorhyme-expanded);
+      font: 800 var(--ms15)/11.5rem var(--biorhyme-expanded);
       letter-spacing: -0.05em;
-
-      @media screen and (max-width: $tablet) {
-        font-size: var(--ms14);
-      }
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms10);
+        line-height: 3rem;
       }
     }
 
     h2 {
-      font: 800 var(--ms8)/1 var(--biorhyme-expanded);
+      font: 800 var(--ms8)/5rem var(--biorhyme-expanded);
       letter-spacing: 0.2em;
       margin-left: 0.55em;
       text-transform: uppercase;
 
-      @media screen and (max-width: $tablet) {
-        font-size: var(--ms7);
-      }
-
       @media screen and (max-width: $mobile) {
         font-size: var(--ms3);
+        line-height: 4rem;
       }
     }
   }
 }
-
 
 // Cooper Hewitt
 // ----------------------------------------------------------------------------
@@ -275,31 +263,24 @@
     text-align: center;
 
     h1 {
-      font: 400 var(--ms10)/1 var(--cooper-hewitt);
-      margin-bottom: 1em;
+      font: 400 var(--ms10)/6rem var(--cooper-hewitt);
+      margin-bottom: 5rem;
       text-transform: uppercase;
 
-      @media screen and (max-width: $tablet) {
-        font-size: var(--ms8);
-        margin-top: 0.2em;
-      }
-
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms5);
+        font-size: var(--ms4);
+        line-height: 2rem;
+        margin-bottom: 2rem;
       }
     }
 
     h2 {
-      font: 300 var(--ms4)/1.3 var(--cooper-hewitt);
+      font: 300 var(--ms4)/3rem var(--cooper-hewitt);
       text-transform: uppercase;
-
-      @media screen and (max-width: $tablet) {
-        font-size: var(--ms2);
-        margin-top: 1em;
-      }
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms1);
+        line-height: 1.5rem;
       }
     }
   }
@@ -312,33 +293,29 @@
 
   .text {
     color: #181516;
-    max-width: 640px;
-
-    @media screen and (max-width: $mobile) {
-      margin: 1em;
-    }
+    max-width: 40rem;
 
     p {
-      font: 400 var(--ms3)/1.3 var(--crimson-pro);
-      margin-bottom: 0.5em;
+      font: 400 var(--ms3)/2.5rem var(--crimson-pro);
+      margin-bottom: 1rem;
       text-indent: -0.45em;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms1);
+        line-height: 1.5rem;
       }
     }
 
     h6 {
       color: #9E3444;
-      font: 300 var(--ms2)/1 var(--crimson-pro);
+      font: 500 var(--ms2)/1.5rem var(--crimson-pro);
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms0);
-        font-weight: 500;
+        line-height: 1rem;
       }
     }
-
   }
 }
 
@@ -352,26 +329,24 @@
     text-align: center;
     width: auto;
 
-    @media (max-width: $mobile) {
-      padding: 1em 0;
-    }
-
     h1 {
-      font: 400 var(--ms7)/1.2 var(--fira-code);
-      margin-bottom: 0.2em;
+      font: 400 var(--ms7)/4rem var(--fira-code);
+      margin-bottom: 0.5rem;
 
       span {
         font-weight: 700;
-        padding: 0 0.2em;
+        padding: 0 0.5rem;
         text-transform: uppercase;
       }
 
       @media (max-width: $tablet) {
         font-size: var(--ms4);
+        line-height: 2.5rem;
       }
 
       @media (max-width: $mobile) {
-        font-size: var(--ms1);
+        font-size: var(--ms0);
+        line-height: 1rem;
       }
     }
   }
@@ -388,14 +363,16 @@
     h2, h3, h4, h5, h6 {
       background: #BCBBB8;
       color: #272727;
-      font: var(--ms11)/1 var(--firago);
+      font: var(--ms11)/7rem var(--firago);
       letter-spacing: 0.05em;
-      margin-top: -0.375em;
+      margin-top: -3rem;
       position: relative;
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms7);
+        line-height: 4rem;
+        margin-top: -1.5rem;
       }
     }
 
@@ -800,7 +777,7 @@
       }
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms5);
+        font-size: var(--ms4);
         margin: 1.5em 0;
       }
     }
@@ -929,29 +906,27 @@
 
   .text {
     color: #FFF;
-    max-width: 980px;
     text-align: center;
 
-    @media screen and (max-width: $mobile) {
-      padding: 1em 0;
-    }
-
     h1 {
-      font: 700 var(--ms9)/1 var(--messapia);
-      margin-bottom: 0.1em;
+      font: 700 var(--ms9)/4rem var(--messapia);
+      margin-bottom: 0.5rem;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms4);
+        font-size: var(--ms2);
+        line-height: 2rem;
+        margin-bottom: 0;
       }
     }
 
     h2 {
-      font: 400 var(--ms6)/1 var(--messapia);
+      font: 400 var(--ms6)/3rem var(--messapia);
       letter-spacing: 0.0315em;
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms1);
+        font-size: var(--ms-1);
+        line-height: 1rem;
       }
     }
   }

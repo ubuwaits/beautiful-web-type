@@ -73,12 +73,12 @@
 }
 
 .mobile-menu {
-  height: 46px;
+  height: 48px;
   position: absolute;
   right: 4px;
-  top: 4px;
+  top: 8px;
   visibility: hidden;
-  width: 46px;
+  width: 48px;
 
   @media screen and (max-width: $tablet) {
     visibility: visible;

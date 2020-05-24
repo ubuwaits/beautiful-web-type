@@ -315,6 +315,14 @@
   .examples-paragraphs {
     grid-area: span 11 / span 6;
   }
+
+  .examples-words {
+    .word-examples {
+      div:nth-child(5) h1 {
+        font-size: var(--ms4);
+      }
+    }
+  }
 }
 
 // BioRhyme

@@ -15,12 +15,15 @@
 .page-header {
   margin: 1.5rem 0 2rem;
 
-  @media screen and (max-width: $tablet) { margin: 1em 0; }
+  @media screen and (max-width: $tablet) { margin: 1em 0 1.5rem; }
 
   h1 {
     font: italic 400 var(--ms8)/4rem var(--alegreya-sans);
 
-    @media screen and (max-width: $tablet) { font-size: var(--ms4); }
+    @media screen and (max-width: $tablet) {
+      font-size: var(--ms4);
+      line-height: 2rem;
+    }
   }
 
   p {
