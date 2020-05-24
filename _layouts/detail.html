@@ -24,11 +24,11 @@ layout: default
 
   <div class='type-styles gr1 gc6'>
   {% for weight in typeface.weights %}
-    <p class='w{{ weight.weight }}'>
-      {{ weight.name }}
-      {% unless typeface.italic == nil %}<em>Italic</em>{% endunless %}
-      <span class='weight'>{{ weight.weight }}</span>
-    </p>
+    <div>
+      <p class='w{{ weight.weight }}'>{{ weight.name }}</p>
+      {% unless typeface.italic == nil %}<p class='w{{ weight.weight }}'><em>Italic</em></p>{% endunless %}
+      <p class='weight'>{{ weight.weight }}</p>
+    </div>
   {% endfor %}
   </div>
 
@@ -58,8 +58,9 @@ layout: default
   </div>
 
   <div class='type-detail-table examples-characters gr1 gc6'>
-    <div class='meta dark top'>
-      <p class='name'>Characters <span><a href='glyphs/'>Explore all characters</a></span></p>
+    <div class='meta dark top flex-row'>
+      <p class='name'>Characters</p>
+      <a href='glyphs/' class='glyph-explorer'>Explore all characters</a>
     </div>
     <div class='examples character-examples flow-row'>
       {% include characters.html %}
@@ -70,8 +71,9 @@ layout: default
     <div class='meta dark top'>
       <p class='name'>Words</p>
     </div>
+
     <div class='examples word-examples flow-column flow-center'>
-      {% for i in (0..6) %}
+      {% for i in (0..5) %}
         <div><h1 contenteditable='true'>{{ text.words[i] }}</h1></div>
       {% endfor %}
     </div>
@@ -81,6 +83,7 @@ layout: default
     <div class='meta dark top'>
       <p class='name'>Headlines</p>
     </div>
+
     <div class='examples flow-column'>
       {% for weight in typeface.weights %}
       <div>
@@ -113,12 +116,12 @@ layout: default
 
   {% unless typeface.category == 'Display' %}
     {% if typeface.italic == true %}{% assign i = 0 %}{% else %}{% assign i = 1 %}{% endif %}
-    <div class='type-detail-table examples-paragraphs gr7 gc6'>
-      <div class='meta dark top'>
+    <div class='type-detail-table examples-paragraphs gr6 gc6'>
+      <div class='meta dark top flex-column'>
         <p class='name'>Paragraphs</p>
         <p class='code'>font-weight: 400</p>
       </div>
-      <div class='examples flow-column'>
+      <div class='examples paragraph-examples flow-column'>
         <div><p class='ms2' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
         <div><p class='ms1' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
         <div><p class='ms0' contenteditable='true'>{{ text.paragraphs[i] }}</p></div>
@@ -130,7 +133,7 @@ layout: default
 
   {% unless typeface.smallcap == nil %}
     <div class='type-detail-table examples-smallcap gr7 gc6'>
-      <div class='meta dark top'>
+      <div class='meta dark top flex-column'>
         <p class='name'>Smallcap headlines</p>
         <p class='code'>font-feature-settings: 'smcp';</p>
       </div>
@@ -151,7 +154,7 @@ layout: default
 
 {% unless typeface.comparison_faces.size == nil %}
   <div class='grid grid-comparisons' id='comparisons'>
-    <h3 class='gr1 gc12 ase'>{{ typeface.name }} compared with similar typefaces</h3>
+    <h3 class='gr1 gc12 ase mt3'>{{ typeface.name }} compared with similar typefaces</h3>
     {% include typeface-comparison.html %}
   </div>
 {% endunless %}
@@ -159,7 +162,7 @@ layout: default
 {% assign pairings = site.pairings | where: 'typefaces', typeface.name %}
 {% unless pairings.size == 0 %}
   <div class='grid grid-pairings' id='pairings'>
-    <h3 class='gr1 gc12 ase'>Recommended Pairings for {{ page.title }}</h3>
+    <h3 class='gr1 gc12 ase mt3'>Recommended Pairings for {{ page.title }}</h3>
 
     {% for pairing in pairings %}
       {% include pairing-sample.html %}

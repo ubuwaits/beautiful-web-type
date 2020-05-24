@@ -4,22 +4,12 @@
   align-self: flex-end;
   display: flex;
 
-  h2 {
-    font: 600 var(--ms5)/1.1 var(--ui-face);
-  }
-
-  h3 {
-    font: 400 var(--ms5)/1.1 var(--ui-face);
-  }
+  h2 { font: 600 var(--ms5)/2.5rem var(--ui-face); }
+  h3 { font: 400 var(--ms5)/2.5rem var(--ui-face); }
 
   h2, h3 {
-    @media screen and (max-width: $tablet) {
-      font-size: var(--ms4);
-    }
-
-    @media screen and (max-width: $mobile) {
-      font-size: var(--ms3);
-    }
+    @media screen and (max-width: $tablet) { font-size: var(--ms4); }
+    @media screen and (max-width: $mobile) { font-size: var(--ms3); }
   }
 }
 
@@ -30,16 +20,14 @@
   display: flex;
   justify-content: flex-end;
 
-  @media screen and (max-width: $mobile) {
-    margin-top: 1rem;
-  }
+  @media screen and (max-width: $mobile) { margin-top: 1rem; }
 
   a {
     background: #000;
-    border-radius: 2px;
+    border-radius: 3px;
     color: #FFF;
-    font: 600 var(--ms1)/1.1 var(--ui-face);
-    padding: 0.7em 1.4em;
+    font: 600 var(--ms1)/1.25rem var(--ui-face);
+    padding: 0.75rem 2rem;
     text-align: center;
     text-transform: uppercase;
 
@@ -49,9 +37,7 @@
       padding: 0.7em 0;
     }
 
-    &:hover {
-      background: var(--red);
-    }
+    &:hover { background: var(--red); }
 
     span {
       display: block;
@@ -71,17 +57,41 @@
   }
 }
 
+// List of weights and styles
+// --------------------------------------------------------------------------
+.type-styles {
+  & > div {
+    align-items: baseline;
+    display: flex;
+  }
+
+  p {
+    font-size: var(--ms5);
+    line-height: 3rem;
+    margin-right: 0.75rem;
+
+    @media screen and (max-width: $mobile) { font-size: var(--ms4); }
+  }
+
+  .weight {
+    font-size: var(--ms2);
+    color: #878787;
+    line-height: 1;
+  }
+}
+
+
 // Typeface details
 // --------------------------------------------------------------------------
 .type-info {
   h3 {
-    font: 700 var(--ms0)/1 var(--ui-face);
+    font: 700 var(--ms0)/1.75rem var(--ui-face);
     text-transform: uppercase;
   }
 
   h4, li {
-    font: 400 var(--ms1)/1.4 var(--ui-face);
-    margin-bottom: 1em;
+    font: 400 var(--ms1)/1.75rem var(--ui-face);
+    margin-bottom: .875rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -90,7 +100,6 @@
 
   ul {
     list-style: none;
-    margin: 0;
     padding: 0;
 
     li {
@@ -103,28 +112,6 @@
   }
 }
 
-// List of weights and styles
-// --------------------------------------------------------------------------
-.type-styles {
-  p {
-    font-size: var(--ms5);
-    margin-bottom: 0.25em;
-
-    @media screen and (max-width: $mobile) {
-      font-size: var(--ms4);
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .weight {
-    font-size: var(--ms3);
-    color: #878787;
-  }
-}
-
 // Type detail table
 // ----------------------------------------------------------------------------
 .type-detail-table {
@@ -133,23 +120,18 @@
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: $tablet) {
-    grid-area: span 1 / span 12 !important;
-  }
-
-  @media screen and (max-width: $mobile) {
-    grid-area: span 1 / span 6 !important;
-  }
+  @media screen and (max-width: $tablet) { grid-area: span 1 / span 12 !important; }
+  @media screen and (max-width: $mobile) { grid-area: span 1 / span 6 !important; }
 }
 
 .examples {
   display: flex;
   flex-grow: 2;
   justify-content: center;
-  padding: 2em;
+  padding: 2rem;
 
   @media screen and (max-width: $mobile) {
-    padding: 1em !important;
+    padding: 1rem !important;
   }
 
   &.flow-row {
@@ -172,11 +154,11 @@
 }
 
 .character-examples > div {
-  padding: 0.4em;
+  padding: 0.5rem 0.25rem;
 }
 
 .word-examples > div {
-  margin-bottom: 0.8em;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
@@ -196,15 +178,17 @@
 // ----------------------------------------------------------------------------
 .examples h1 {
   font-size: var(--ms4);
-  line-height: 1.2;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .examples p {
-  line-height: 1.5;
+  line-height: 1.5rem;
 }
 
 .examples span {
   font-size: var(--ms6);
+  line-height: 3.5rem;
 }
 
 .examples.small-characters span {
@@ -214,13 +198,11 @@
 // Word examples
 // ----------------------------------------------------------------------------
 .word-examples {
-  h1 {
-    font-size: var(--ms6);
-  }
+  h1 { font-size: var(--ms6); }
 
   div:nth-child(1) h1 { font-weight: 100; }
   div:nth-child(2) h1 { font-weight: 300; text-transform: uppercase; }
-  div:nth-child(3) h1 { font-weight: 400; font-style: italic; }
+  div:nth-child(3) h1 { font-weight: 400; }
   div:nth-child(4) h1 { font-weight: 500; }
   div:nth-child(5) h1 { font-weight: 700; }
   div:nth-child(6) h1 { font-weight: 800; font-size: var(--ms5); }
@@ -240,6 +222,16 @@
   div:nth-child(3) h1 { font-style: normal; }
 }
 
+// Paragraph examples
+// ----------------------------------------------------------------------------
+.paragraph-examples {
+  .ms2 { line-height: 2rem; }
+  .ms1 { line-height: 1.75rem; }
+  .ms0 { line-height: 1.5rem; }
+  .ms-1 { line-height: 1.25rem; }
+  .ms-2 { line-height: 1rem; }
+}
+
 // Figure examples
 // ----------------------------------------------------------------------------
 .examples-figures {
@@ -255,6 +247,7 @@
   h1 {
     font-size: var(--ms7);
     font-weight: 400;
+    line-height: 3.5rem;
 
     @media screen and (max-width: $mobile) {
       font-size: var(--ms3);
@@ -270,8 +263,8 @@
   font: normal 600 var(--ms-1)/1 var(--ibm-plex-mono);
   font-feature-settings: 'liga' off;
   font-variant: normal;
-  line-height: 1;
-  margin-top: 0.25em;
+  line-height: 1rem;
+  margin-top: 0.5rem;
   padding: 0;
   text-transform: none;
 }
@@ -348,7 +341,7 @@
         font-size: var(--ms4);
       }
 
-      div:nth-child(6) h1 {
+      div:nth-child(5) h1 {
         font-size: var(--ms2);
       }
     }
@@ -390,15 +383,11 @@
     font-size: var(--ms7);
   }
 
-  .examples-headlines {
-    .examples h1 {
-      font-size: var(--ms8);
-    }
-  }
-
+  .examples-headlines,
   .examples-headlines-uppercase {
     .examples h1 {
       font-size: var(--ms8);
+      line-height: 4.5rem;
     }
   }
 }
@@ -420,7 +409,7 @@
         font-size: var(--ms6);
       }
 
-      div:nth-child(6) h1 {
+      div:nth-child(5) h1 {
         font-size: var(--ms4);
       }
     }

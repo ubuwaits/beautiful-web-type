@@ -27,6 +27,8 @@
 .justify-center { justify-content: center; }
 .justify-start  { justify-content: flex-start; }
 .flow-center { text-align: center; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row !important; }
 
 // Modular scale
 // ----------------------------------------------------------------------------
@@ -68,10 +70,10 @@
 .ms13 { font-size: 10.699rem; }
 .ms12 { font-size: 8.916rem; }
 .ms11 { font-size: 7.43rem; }
-.ms10 { font-size: 6.192rem !important;; }
-.ms9  { font-size: 5.16rem !important;; }
-.ms8  { font-size: 4.3rem !important;; }
-.ms7  { font-size: 3.583rem !important;; }
+.ms10 { font-size: 6.192rem !important; }
+.ms9  { font-size: 5.16rem !important; }
+.ms8  { font-size: 4.3rem !important; }
+.ms7  { font-size: 3.583rem !important; }
 .ms6  { font-size: 2.986rem !important; }
 .ms5  { font-size: 2.488rem !important; }
 .ms4  { font-size: 2.074rem !important; }
@@ -112,6 +114,7 @@
 .m075 { margin-bottom: 0.75em; }
 .m05 { margin-bottom: 0.5em; }
 .m025 { margin-bottom: 0.25em; }
+.mt3 { margin-top: 3rem; }
 
 // Alignment
 // ----------------------------------------------------------------------------
@@ -161,17 +164,16 @@
 // Resets
 // ---------------------------------------------------------------------------
 * { box-sizing: border-box; }
-h1, h2, h3, h4, h5, h6, p, ol, li { margin: 0; line-height: 1; }
+h1, h2, h3, h4, h5, h6, p, ol, ul, li { margin: 0; }
 ol { list-style: none; padding: 0; }
 
 $min_width: 940px;
 $max_width: 1440px;
 $min_font: 12px;
 $max_font: 16px;
-$body-bg: #f2f2f2;
 
 html {
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  // @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
   @media screen and (max-width: $tablet) {
     font-size: 16px;
@@ -179,20 +181,24 @@ html {
 }
 
 body {
-  background: $body-bg;
+  background: #f2f2f2;
   margin: 6em var(--body-margin) var(--body-margin);
   text-rendering: optimizeLegibility;
   font-feature-settings: 'liga' on, 'clig' on, 'dlig' off;
   -webkit-font-smoothing: antialiased;
 
-  @media screen and (max-width: $mobile) {
-    margin-top: 4.5em;
-  }
+  @media screen and (max-width: $mobile) { margin-top: 4.5rem; }
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+[contenteditable]:hover {
+  background: rgba(orange, 0.1);
+  caret-color: var(--red);
+  outline: 0 solid transparent;
 }
 
 [contenteditable]:focus {

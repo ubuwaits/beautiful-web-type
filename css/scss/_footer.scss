@@ -1,31 +1,26 @@
 footer.grid {
-  border-top: 1px solid rgba(#d7d7d7, 0.4);
-  margin-top: 2em;
-  padding-top: 2em;
+  box-shadow: 0 -1px 0 rgba(#d7d7d7, 0.4);
+  margin-top: 2rem;
+  padding-top: 2rem;
 
-  @media screen and (max-width: $mobile) {
-    grid-gap: 1.5em;
-  }
+  @media screen and (max-width: $mobile) { grid-gap: 1.5rem; }
 
   h3 {
     color: #797979;
-    font: 700 var(--ms0)/1 var(--ui-face);
-    margin-bottom: 0.25em;
+    font: 700 var(--ms0)/1.25rem var(--ui-face);
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
   li {
-    font: 400 var(--ms0)/1 var(--ui-face);
-    margin-bottom: 0.3em;
-    padding: 0.2em 0;
+    font: 400 var(--ms0)/1.25rem var(--ui-face);
+    margin-bottom: 0.5rem;
+
+    a:hover { color: var(--red); }
   }
 
   p {
-    font: 400 var(--ms1)/1.3 var(--ui-face);
-
-    a {
-      color: var(--red);
-    }
+    font: 400 var(--ms1)/1.75 var(--ui-face);
   }
 
   .footer-type-list {

@@ -1,3 +1,4 @@
+
 .sample {
   display: flex;
   flex-direction: column;
@@ -8,6 +9,7 @@
     display: flex;
     flex-grow: 1;
     flex-flow: column;
+    height: 45rem;
     justify-content: center;
     padding: 2em;
 
@@ -37,11 +39,13 @@
 // Header for type tables and samples
 // ----------------------------------------------------------------------------
 .meta {
-  border-top: 1px solid rgba(#FFF, 0.3);
-  border-bottom: 0;
+  box-shadow: 0 -1px 0 rgba(#fff, 0.3);
   color: #fff;
-  font: 700 var(--ms0)/1 var(--ui-face);
-  padding: 1.1em 1em 0.9em 1em;
+  display: flex;
+  font: 700 var(--ms0)/1rem var(--ui-face);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
   text-align: left;
 
   &.code {
@@ -49,25 +53,26 @@
     font-weight: 500;
   }
 
-  &.top {
-    border-bottom: 1px solid rgba(#fff, 0.3);
-    border-top: 0;
-  }
-
   &.dark {
-    border-color: rgba(#000, 0.05);
+    box-shadow: 0 -1px 0 rgba(#000, 0.075);
     color: #333;
   }
 
-  p span {
-    float: right;
+  &.top {
+    box-shadow: 0 1px 0 rgba(#fff, 0.3);
+  }
 
-    a {
-      color: var(--red);
-      font-size: var(--ms-1);
-      letter-spacing: 0.035em;
-      text-transform: uppercase;
-    }
+  &.top.dark {
+    box-shadow: 0 1px 0 rgba(#000, 0.075);
+    color: #333;
+  }
+
+  a.glyph-explorer {
+    color: var(--red);
+    display: inline-block;
+    font-size: var(--ms-1);
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
   }
 
   .pairing-list a:first-child::after {
