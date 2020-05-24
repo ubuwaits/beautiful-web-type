@@ -8,8 +8,14 @@
   h3 { font: 400 var(--ms5)/2.5rem var(--ui-face); }
 
   h2, h3 {
-    @media screen and (max-width: $tablet) { font-size: var(--ms4); }
-    @media screen and (max-width: $mobile) { font-size: var(--ms3); }
+    @media screen and (max-width: $tablet) {
+      font-size: var(--ms4);
+    }
+
+    @media screen and (max-width: $mobile) {
+      font-size: var(--ms3);
+      line-height: 2rem;
+    }
   }
 }
 
@@ -70,7 +76,10 @@
     line-height: 3rem;
     margin-right: 0.75rem;
 
-    @media screen and (max-width: $mobile) { font-size: var(--ms4); }
+    @media screen and (max-width: $mobile) {
+      font-size: var(--ms4);
+      line-height: 2.5rem;
+    }
   }
 
   .weight {
@@ -180,6 +189,10 @@
   font-size: var(--ms4);
   line-height: 2.5rem;
   margin-bottom: 0.5rem;
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 0;
+  }
 }
 
 .examples p {
@@ -207,19 +220,6 @@
   div:nth-child(5) h1 { font-weight: 700; }
   div:nth-child(6) h1 { font-weight: 800; font-size: var(--ms5); }
   div:nth-child(7) h1 { font-weight: 900; }
-}
-
-// Remove italic for typefaces with no italic
-.biorhyme .word-examples,
-.biorhyme-expanded .word-examples,
-.fira-code .word-examples,
-.le-murmure .word-examples,
-.manrope .word-examples,
-.messapia .word-examples,
-.oswald .word-examples,
-.rakkas .word-examples,
-.space-grotesk .word-examples {
-  div:nth-child(3) h1 { font-style: normal; }
 }
 
 // Paragraph examples
@@ -251,6 +251,7 @@
 
     @media screen and (max-width: $mobile) {
       font-size: var(--ms3);
+      line-height: 2.5rem;
     }
   }
 }

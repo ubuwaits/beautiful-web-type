@@ -1,4 +1,3 @@
-
 .sample {
   display: flex;
   flex-direction: column;
@@ -11,14 +10,15 @@
     flex-flow: column;
     height: 45rem;
     justify-content: center;
-    padding: 2em;
+    padding: 2rem;
 
     @media screen and (max-width: $tablet) {
-      padding: 4em 3em;
+      padding: 4rem 3rem;
     }
 
     @media screen and (max-width: $mobile) {
-      padding: 2em 1.5em;
+      height: auto;
+      padding: 2rem;
     }
   }
 
@@ -100,14 +100,14 @@
 
   .text {
     color: rgba(#02040F, 0.75);
-    max-width: 760px;
+    max-width: 40rem;
 
-    h1,
-    p {
-      font: 400 var(--ms5)/1.1 var(--alegreya);
+    h1, p {
+      font: 400 var(--ms4)/2.5rem var(--alegreya);
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms2);
+        line-height: 2rem;
       }
     }
 
@@ -117,7 +117,7 @@
     }
 
     p {
-      margin-top: 0.5em;
+      margin-top: 1rem;
     }
   }
 }
@@ -128,21 +128,17 @@
   background: #EC3B3B;
 
   .text {
-    max-width: 920px;
     text-align: center;
-
-    @media screen and (max-width: $mobile) {
-      padding: 1em 0;
-    }
 
     h1 {
       color: #FFF;
-      font: 900 var(--ms12)/0.85 var(--alegreya-sans);
+      font: 900 var(--ms12)/7.5rem var(--alegreya-sans);
       font-feature-settings: 'cpsp';
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms7);
+        line-height: 3rem;
       }
     }
   }
@@ -154,20 +150,18 @@
   background: #000;
 
   .text {
-    max-width: 900px;
-
     h1 {
       color: #FFF;
-      font: 700 var(--ms7)/1.05 var(--archivo);
-      padding: 0.5em;
+      font: 600 var(--ms6)/3.5rem var(--archivo);
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms4);
+        line-height: 2.5rem;
       }
 
       span {
         display: block;
-        margin-top: 0.5em;
+        margin-top: 2rem;
       }
     }
   }
@@ -180,20 +174,20 @@
 
   .text {
     color: #0B0A08;
-    max-width: 1000px;
 
     h1 {
-      font: 400 var(--ms11)/0.8 var(--archivo-black);
+      font: 400 var(--ms11)/6rem var(--archivo-black);
       letter-spacing: -0.05em;
       margin-bottom: 0.5rem;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms8);
+        line-height: 3.5rem;
       }
     }
 
     h2 {
-      border-top: 0.2em solid #0B0A08;
+      border-top: 0.5rem solid #0B0A08;
       font-size: var(--ms3);
       padding-top: 0.5rem;
       text-align: right;
