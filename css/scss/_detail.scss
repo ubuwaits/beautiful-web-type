@@ -471,9 +471,17 @@
     }
   }
 
+  .examples-headlines {
+    .examples h1 {
+      font-size: var(--ms8);
+      line-height: 4.5rem;
+    }
+  }
+
   .examples-headlines-uppercase {
     .examples h1 {
-      font-size: var(--ms7);
+      font-size: var(--ms8);
+      line-height: 4rem;
     }
   }
 }
