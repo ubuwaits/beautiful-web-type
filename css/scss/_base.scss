@@ -169,16 +169,8 @@ ol { list-style: none; padding: 0; }
 
 $min_width: 940px;
 $max_width: 1440px;
-$min_font: 12px;
-$max_font: 16px;
 
-html {
-  // @include fluid-type($min_width, $max_width, $min_font, $max_font);
-
-  @media screen and (max-width: $tablet) {
-    font-size: 16px;
-  }
-}
+html { font-size: 16px; }
 
 body {
   background: #f2f2f2;
