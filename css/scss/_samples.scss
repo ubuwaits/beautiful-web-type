@@ -909,7 +909,7 @@
 
     h1 {
       font: 700 var(--ms9)/4rem var(--messapia);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms2);
@@ -920,7 +920,8 @@
 
     h2 {
       font: 400 var(--ms6)/3rem var(--messapia);
-      letter-spacing: 0.0315em;
+      letter-spacing: 0.03em;
+      margin-left: 0.05em;
       text-transform: uppercase;
 
       @media screen and (max-width: $mobile) {
