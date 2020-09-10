@@ -493,18 +493,25 @@
 
     h1 {
       color: #000;
-      font: 400 var(--ms9)/1.2 var(--ia-writer-quattro);
+      font: 400 var(--ms7)/1.2 var(--ia-writer-quattro);
 
       &:first-child {
-        text-indent: -1.05em;
-      }
-
-      @media screen and (max-width: $tablet) {
-        font-size: var(--ms7);
+        text-indent: -1em;
       }
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms4);
+        font-size: var(--ms1);
+      }
+    }
+
+    h2 {
+      color: #FFF;
+      font: 400 var(--ms4)/1.2 var(--ia-writer-quattro);
+      margin-top: 1em;
+      opacity: 0.8;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
       }
     }
   }
