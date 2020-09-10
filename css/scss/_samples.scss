@@ -289,10 +289,10 @@
 // Crimson Pro
 // ----------------------------------------------------------------------------
 .crimson-pro-sample {
-  background: #C2B1A9;
+  background: #84AB8D;
 
   .text {
-    color: #181516;
+    color: #2A2F2C;
     max-width: 40rem;
 
     p {
@@ -307,9 +307,8 @@
     }
 
     h6 {
-      color: #9E3444;
-      font: 500 var(--ms2)/1.5rem var(--crimson-pro);
-      text-transform: uppercase;
+      color: #FFF;
+      font: 400 var(--ms3)/1.5rem var(--crimson-pro);
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms0);
