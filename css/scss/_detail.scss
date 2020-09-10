@@ -36,6 +36,7 @@
     padding: 0.75rem 2rem;
     text-align: center;
     text-transform: uppercase;
+    transition: background 0.2s ease-in-out;
 
     @media screen and (max-width: $mobile) {
       flex-basis: 100%;
