@@ -1,4 +1,6 @@
 const pixelRatio = window.devicePixelRatio || 1
+let exp = window.location.href.split(/^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/);
+let fontName = exp[5].split('/')[1]
 
 function removeClass(classToRemove) {
   nodes = document.getElementsByClassName(classToRemove)
@@ -36,6 +38,9 @@ function highlightSelectedGlyph(glyphIndex) {
 
 function displaySelectedGlyphInfo(glyph) {
   document.getElementById('glyph-info').innerHTML = `
+    <h3>Glyph</h3>
+    <p class='${fontName}'>&#${glyph.unicode};</p>
+
     <h3>Glyph Name</h3>
     <p>${glyph.name}</p>
 

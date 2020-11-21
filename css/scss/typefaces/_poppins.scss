@@ -1,5 +1,5 @@
 :root { --poppins: 'Poppins', sans-serif; }
-.poppins { font-family: 'Poppins', sans-serif; }
+.poppins { font-family: 'Poppins', sans-serif !important; }
 
 @font-face {
   font-family: 'Poppins';
@@ -142,5 +142,5 @@
   font-style: italic;
   font-weight: 900;
   src: url('/assets/fonts/poppins/Poppins-BlackItalic.woff2') format('woff2'),
-	     url('/assets/fonts/poppins/Poppins-BlackItalic.woff') format('woff');    
+	     url('/assets/fonts/poppins/Poppins-BlackItalic.woff') format('woff');
 }

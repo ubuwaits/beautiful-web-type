@@ -1,5 +1,5 @@
-.space-mono { font-family: 'Space Mono', monospace; }
 :root { --space-mono: 'Space Mono', monospace; }
+.space-mono { font-family: 'Space Mono', monospace !important; }
 
 @font-face {
   font-family: 'Space Mono';

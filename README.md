@@ -10,6 +10,7 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ### 21 Nov 2020
 * **Added [Inter](https://beautifulwebtype.com/inter/)**.
+* **Updated glyph inspector** to include plain text character in sidebar for easier copying.
 
 ### 23 May 2020
 * **Added [Messapia](https://beautifulwebtype.com/messapia/)**.
