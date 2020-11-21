@@ -1,6 +1,9 @@
 # Changelog
 
-## 23 May 2019
+## 21 Nov 2020
+* **Added [Inter](https://beautifulwebtype.com/inter/)**.
+
+## 23 May 2020
 * **Added [Messapia](https://beautifulwebtype.com/messapia/)**.
 * **Added [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)**.
 * **Updated [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)** to variable version.

@@ -717,6 +717,47 @@
   }
 }
 
+// Inter
+// ----------------------------------------------------------------------------
+.inter-sample {
+  background: #020022;
+
+  .text {
+    color: #FFF;
+    max-width: 1080px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      background: linear-gradient(25deg, #FF01D7, #FFEB00, #00EDF5, #5600CC);
+      -webkit-background-clip: text;
+      color: transparent;
+      font: 475 var(--ms11)/1.1 var(--inter);
+      font-feature-settings: 'ss03';
+      letter-spacing: -0.045em;
+      margin-bottom: 0.5em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+        margin-bottom: 0.25em;
+      }
+    }
+
+    h2 {
+      font: 300 var(--ms5)/1.2 var(--inter);
+      font-feature-settings: 'ss03';
+      letter-spacing: -0.025em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
+    }
+  }
+}
+
 // Jost*
 // ----------------------------------------------------------------------------
 .jost-sample {

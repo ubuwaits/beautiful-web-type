@@ -8,6 +8,9 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
+### 21 Nov 2020
+* **Added [Inter](https://beautifulwebtype.com/inter/)**.
+
 ### 23 May 2020
 * **Added [Messapia](https://beautifulwebtype.com/messapia/)**.
 * **Added [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)**.
@@ -29,10 +32,6 @@ In October 2018 I released a completely re-thought and re-designed version of th
 * **Updated [Jost](https://beautifulwebtype.com/jost/)** to v3.5. Included link to Google Fonts version and removed local files. Author has not provided a [WOFF or WOFF2 distribution](https://github.com/indestructible-type/Jost/issues/35), so I recommend using the Google Fonts version.
 * **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to v3.001.
 * **Updated IBM Plex** family typefaces to v4.0.2.
-
-### 21 Nov 2019
-* **Updated [Fira Code](https://beautifulwebtype.com/fira-code/)** to v2.0.
-* Small changes to layout, responsive styles and typography. Site will now stretch the full width of the screen.
 
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
@@ -58,6 +57,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-serif/glyphs/)
 * [Inria Sans](https://beautifulwebtype.com/inria-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/inria-sans/glyphs/)
 * [Inria Serif](https://beautifulwebtype.com/inria-serif/) &#8594; [Glyph inspector](https://beautifulwebtype.com/inria-serif/glyphs/)
+* [Inter](https://beautifulwebtype.com/inter/) &#8594; [Glyph inspector](https://beautifulwebtype.com/inter/glyphs/)
 * [Jost*](https://beautifulwebtype.com/jost/) &#8594; [Glyph inspector](https://beautifulwebtype.com/jost/glyphs/)
 * [Le Murmure](https://beautifulwebtype.com/le-murmure/) &#8594; [Glyph inspector](https://beautifulwebtype.com/le-murmure/glyphs/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) &#8594; [Glyph inspector](https://beautifulwebtype.com/libre-franklin/glyphs/)

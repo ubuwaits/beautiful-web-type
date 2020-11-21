@@ -10,9 +10,8 @@ layout: default
 
 <div class='grid'>
   <div class='gr1 gc3' id='glyph-detail'>
-    <div class='sidebar-header'><a href='{{ typeface.url }}'><span>&#8592;</span> Back to main typeface page</a></div>
     <canvas id='glyph-detail-canvas'></canvas>
-    <div id='glyph-info'>
+    <div id='glyph-info'>      
       <h3>Glyph Name</h3>
       <p>Undefined</p>
       <h3>HTML Code</h3>
@@ -31,5 +30,5 @@ layout: default
 <script src='/js/opentype.min.js'></script>
 <script src='/js/glyph-inspector.js'></script>
 <script>
-  glyphInspector({{ page.font_file }})
+  glyphInspector({{ page.font_file }}, '{{ typeface.name | slugify }}')
 </script>
