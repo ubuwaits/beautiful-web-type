@@ -10,7 +10,9 @@ body-class: pairings
     <h1>Recommended Typeface Pairings</h1>
   </div>
 
-  {% for pairing in site.pairings %}
+  {% assign latest_pairings = site.pairings | sort: 'date_added' | reverse %}
+
+  {% for pairing in latest_pairings %}
     {% include pairing-sample.html %}
   {% endfor %}
 </div>

@@ -3,6 +3,7 @@ title: In-Depth Guide to the Best Free Fonts
 ---
 
 {% assign latest_typefaces = site.typefaces | sort: 'date_added' | reverse %}
+{% assign latest_pairings = site.pairings | sort: 'date_added' | reverse %}
 
 <div class='samples grid'>
   <div class='gr1 gc12 page-header center'>
@@ -14,7 +15,7 @@ title: In-Depth Guide to the Best Free Fonts
   {% endfor %}
 
   <h2 class='page-subhead gc1 gc12 mt3 ase'>Latest pairings</h2>
-  {% for pairing in site.pairings %}
+  {% for pairing in latest_pairings %}
     {% include pairing-sample.html %}
   {% endfor %}
 </div>

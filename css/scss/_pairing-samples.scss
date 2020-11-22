@@ -11,6 +11,7 @@
 
   .text {
     color: #FFF;
+    margin: 3rem 0;
     text-align: center;
 
     h1 {
@@ -37,6 +38,60 @@
   }
 }
 
+// Fraunces + Libre Franklin
+// ----------------------------------------------------------------------------
+.fraunces-and-libre-franklin-sample {
+  background: #111412;
+
+  .text {
+    color: #377CB2;
+    margin: 6rem 0;
+    text-align: center;
+
+    h1 {
+      font: 200 var(--ms13)/0.8 var(--fraunces);
+      font-variation-settings: "WONK" 1, "SOFT" 10, "opsz" 144;
+      letter-spacing: -0.05em;
+      margin: 0 0 0.5rem 0;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms8);
+      }
+    }
+
+    h2 {
+      font: 350 var(--ms7)/1 var(--fraunces);
+      font-variation-settings: "WONK" 1, "SOFT" 60, "opsz" 90;
+      letter-spacing: 0.0045em;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms2);
+      }
+    }
+
+    h3 {
+      color: #FFF;
+      font: 600 var(--ms2)/1.4 var(--libre-franklin);
+      margin: 6rem 0 0 0;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+
+    p {
+      color: #FFF;
+      font: 600 var(--ms2)/1.4 var(--libre-franklin);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+  }
+}
+
 // Libre Franklin + Source Serif Pro
 // ----------------------------------------------------------------------------
 .libre-franklin-and-source-serif-pro-sample {
@@ -44,6 +99,7 @@
 
   .text {
     color: #272727;
+    margin: 3rem;
 
     h1 {
       display: flex;
@@ -81,6 +137,7 @@
 
   .text {
     color: #171717;
+    margin: 3rem 0;
     text-align: center;
 
     h1 {
@@ -123,6 +180,7 @@
 
   .text {
     color: #272727;
+    margin: 3rem 0;
     text-align: center;
 
     h1 {
