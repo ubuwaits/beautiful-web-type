@@ -479,6 +479,30 @@
   }
 }
 
+// Fraunces
+// ----------------------------------------------------------------------------
+.fraunces-sample {
+  background: #558B58;
+
+  .text {
+    color: #FFF;
+    text-align: center;
+
+    h1 {
+      font: 900 var(--ms12)/0.725 var(--fraunces);
+      font-variation-settings: "WONK" 1, "SOFT" 100, "opsz" 144;
+      letter-spacing: -0.03em;
+
+      span { color: #F5E16D; }
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms7);
+      }
+    }
+  }
+}
+
+
 // iA Writer Quattro
 // ----------------------------------------------------------------------------
 .ia-writer-quattro-sample {

@@ -1,5 +1,8 @@
 # Changelog
 
+## 22 Nov 2020
+* **Added [Fraunces](https://beautifulwebtype.com/fraunces/)**.
+
 ## 21 Nov 2020
 * **Added [Inter](https://beautifulwebtype.com/inter/)**.
 * **Updated glyph inspector** to include plain text character in sidebar for easier copying.

@@ -8,6 +8,9 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ## Changelog
 
+### 22 Nov 2020
+* **Added [Fraunces](https://beautifulwebtype.com/fraunces/)**.
+
 ### 21 Nov 2020
 * **Added [Inter](https://beautifulwebtype.com/inter/)**.
 * **Updated glyph inspector** to include plain text character in sidebar for easier copying.
@@ -51,6 +54,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [FiraGo](https://beautifulwebtype.com/firago/) &#8594; [Glyph inspector](https://beautifulwebtype.com/firago/glyphs/)
 * [Fivo Sans](https://beautifulwebtype.com/fivo-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans/glyphs/)
 * [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fivo-sans-modern/glyphs/)
+* [Fraunces](https://beautifulwebtype.com/fraunces/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fraunces/glyphs/)
 * [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ia-writer-quattro/glyphs/)
 * [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-mono/glyphs/)
 * [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-sans/glyphs/)
