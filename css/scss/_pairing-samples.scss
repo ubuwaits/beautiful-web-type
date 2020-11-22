@@ -101,6 +101,10 @@
     color: #272727;
     margin: 3rem;
 
+    @media screen and (max-width: $mobile) {
+      margin: 3rem 0;
+    }
+
     h1 {
       display: flex;
       font: 900 var(--ms8)/0.9 var(--libre-franklin);
@@ -130,10 +134,48 @@
   }
 }
 
+// Messapia + Inter
+// ----------------------------------------------------------------------------
+.messapia-and-inter-sample {
+  background: #191F26;
+
+  .text {
+    color: #FFF;
+    margin: 6rem 3rem;
+    text-align: center;
+
+    @media screen and (max-width: $mobile) {
+      margin: 3rem 0rem;
+    }
+
+    h1 {
+      font: 700 var(--ms8)/0.95 var(--messapia);
+      letter-spacing: -0.035em;
+      margin: 0 0 2rem 0;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+        line-height: 1.1;
+      }
+    }
+
+    p {
+      color: #C4CCD5;
+      font: 440 var(--ms3)/1.25 var(--inter);
+      letter-spacing: -0.015em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+  }
+}
+
 // Oswald + Source Serif Pro
 // ----------------------------------------------------------------------------
 .oswald-and-source-serif-pro-sample {
-  background: linear-gradient(25deg, #6356dd, #ac499f, #d23b62, #ec2a22);
+  background: linear-gradient(25deg, #6356dd, #ec2a22);
 
   .text {
     color: #171717;

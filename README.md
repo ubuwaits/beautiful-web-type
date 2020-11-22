@@ -10,6 +10,8 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 ### 22 Nov 2020
 * **Added [Fraunces](https://beautifulwebtype.com/fraunces/)**.
+* **Added pairing example** for Fraunces and Libre Franklin.
+* **Added pairing example** for Messapia and Inter.
 
 ### 21 Nov 2020
 * **Added [Inter](https://beautifulwebtype.com/inter/)**.
