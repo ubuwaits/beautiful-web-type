@@ -1,17 +1,15 @@
 :root { --fraunces: 'Fraunces', serif; }
 .fraunces { font-family: 'Fraunces', serif !important; }
 
-/* Latin extended, for diacritics in font which are not included in Latin Basic */
 @font-face {
   font-family: 'Fraunces';
   font-weight: 100 900;
-  src: url('/assets/fonts/fraunces/Fraunces.woff2') format('woff2');
+  src: url('/assets/fonts/fraunces/Fraunces.woff2') format('woff2-variations');
 }
 
-/* Latin extended, for diacritics in font which are not included in Latin Basic */
 @font-face {
   font-family: 'Fraunces';
   font-weight: 100 900;
   font-style: italic;
-  src: url('/assets/fonts/fraunces/Fraunces-Italic.woff2') format('woff2');
+  src: url('/assets/fonts/fraunces/Fraunces-Italic.woff2') format('woff2-variations');
 }

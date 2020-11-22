@@ -28,15 +28,6 @@ In October 2018 I released a completely re-thought and re-designed version of th
 * **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to variable version.
 * **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to variable version.
 
-### 22 May 2020
-* **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to version from 1 May 2020.
-* **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to v1.1.6.
-* **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to v3.006.
-* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to v4.5.
-* **Updated [Jost](https://beautifulwebtype.com/jost/)** to v3.5. Included link to Google Fonts version and removed local files. Author has not provided a [WOFF or WOFF2 distribution](https://github.com/indestructible-type/Jost/issues/35), so I recommend using the Google Fonts version.
-* **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to v3.001.
-* **Updated IBM Plex** family typefaces to v4.0.2.
-
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
