@@ -77,7 +77,7 @@
       margin: 6rem 0 0 0;
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms1);
+        font-size: var(--ms0);
       }
     }
 
@@ -86,7 +86,7 @@
       font: 600 var(--ms2)/1.4 var(--libre-franklin);
 
       @media screen and (max-width: $mobile) {
-        font-size: var(--ms1);
+        font-size: var(--ms0);
       }
     }
   }
