@@ -26,7 +26,7 @@ In October 2018 I released a completely re-thought and re-designed version of th
 * **Updated [Lora](https://beautifulwebtype.com/lora/)** to variable version.
 * **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to variable version.
 * **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to variable version.
-* **Updated [Manrope](https://beautifulwebtype.com/manrope/)** to variable version.
+* **Updated Manrope** to variable version.
 * **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to variable version.
 * **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to variable version.
 
@@ -60,7 +60,6 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Le Murmure](https://beautifulwebtype.com/le-murmure/) &#8594; [Glyph inspector](https://beautifulwebtype.com/le-murmure/glyphs/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) &#8594; [Glyph inspector](https://beautifulwebtype.com/libre-franklin/glyphs/)
 * [Lora](https://beautifulwebtype.com/lora/) &#8594; [Glyph inspector](https://beautifulwebtype.com/lora/glyphs/)
-* [Manrope](https://beautifulwebtype.com/manrope/) &#8594; [Glyph inspector](https://beautifulwebtype.com/manrope/glyphs/)
 * [Messapia](https://beautifulwebtype.com/messapia/) &#8594; [Glyph inspector](https://beautifulwebtype.com/messapia/glyphs/)
 * [Oswald](https://beautifulwebtype.com/oswald/) &#8594; [Glyph inspector](https://beautifulwebtype.com/oswald/glyphs/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/) &#8594; [Glyph inspector](https://beautifulwebtype.com/playfair-display/glyphs/)
