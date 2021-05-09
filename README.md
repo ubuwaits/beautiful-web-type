@@ -4,7 +4,12 @@ In October 2018 I released a completely re-thought and re-designed version of th
 
 * Newsletter: https://tinyletter.com/beautifulwebtype
 * Personal site: https://chad.is
-* Twitter: https://twitter.com/ubuwaits
+
+## Important note about the hellohappy.org domain
+
+The original version of this site was located at hellohappy.org/beautiful-web-type. That domain has since been purchased by a link spammer who uploaded an archived version of the site with links to their essay writing services sprinkled throughout. Please update any links to that old version so they instead point to https://beautifulwebtype.com.
+
+The original version of the site is archived here: https://beautifulwebtype.com/v1/
 
 ## Changelog
 
@@ -77,12 +82,6 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 ## Suggesting Typefaces
 
 I'm happy to receive suggestions for typefaces via [a GitHub issue](https://github.com/ubuwaits/beautiful-web-type/issues). When sending suggestions please include an example or two of the typeface in use. This helps me to make an initial evaluation of the typeface.
-
-## Old version of site
-
-The old version of the site is archived here: https://beautifulwebtype.com/v1/
-
-**Please note**: I no longer own the hellohappy.org domain. It was purchased by a link spammer who uploaded an archived version of the site with links to their essay writing services sprinkled throughout. Please spread the word by updating any links to point to https://beautifulwebtype.com rather than hellohappy.org.
 
 ## Local development
 
