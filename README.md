@@ -2,13 +2,6 @@
 
 In October 2018 I released a completely re-thought and re-designed version of this project. The new version aims to provide a complete look at each typeface, cataloging all the available weights and styles, the full glyph set, the kerning quality, OpenType features, recommended pairings and more. I will highlight only typefaces that show a high level of quality.
 
-* Newsletter: https://tinyletter.com/beautifulwebtype
-* Personal site: https://chad.is
-
-## Important note about the hellohappy.org domain
-
-The original version of this site was located at hellohappy.org/beautiful-web-type. That domain has since been purchased by a link spammer who uploaded an archived version of the site with links to their essay writing services sprinkled throughout. Please update any links to that old version so they instead point to https://beautifulwebtype.com.
-
 The original version of the site is archived here: https://beautifulwebtype.com/v1/
 
 ## Changelog
