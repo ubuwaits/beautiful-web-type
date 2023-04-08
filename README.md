@@ -6,6 +6,9 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 8 Apr 2023
+ * **Updated [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)** to version 1.024.
+
 ### 22 Nov 2020
 * **Added [Fraunces](https://beautifulwebtype.com/fraunces/)**.
 * **Added pairing example** for Fraunces and Libre Franklin.
