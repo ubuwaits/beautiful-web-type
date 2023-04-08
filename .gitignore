@@ -5,3 +5,4 @@ _site
 .dat
 .jekyll-metadata
 Gemfile.lock
+.jekyll-cache
