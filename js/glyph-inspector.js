@@ -1,18 +1,24 @@
 const pixelRatio = window.devicePixelRatio || 1
-let exp = window.location.href.split(/^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/);
-let fontName = exp[5].split('/')[1]
 
-function removeClass(classToRemove) {
-  nodes = document.getElementsByClassName(classToRemove)
-  if (!nodes[0]) return
+function extractFontName(url) {
+  const regex = /^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?/
+  const exp = url.split(regex)
+  return exp[5].split('/')[1]
+}
 
-  nodes[0].classList.remove(classToRemove)
-  if (nodes[0]) removeClass(classToRemove)
+const fontName = extractFontName(window.location.href)
+
+function removeClass(className) {
+  let nodes = document.getElementsByClassName(className)
+
+  while (nodes[0]) {
+    nodes[0].classList.remove(className)
+  }
 }
 
 function formatCSSCode(unicode) {
-  unicode = unicode.toString(16)
-  return 'content: \'&#92;' + ("0000" + unicode.toUpperCase()).substr(-4) + '\';'
+  const hexUnicode = unicode.toString(16)
+  return `content: '\\${("0000" + hexUnicode.toUpperCase()).substr(-4)}';`
 }
 
 function formatHTMLCode(unicode) {
@@ -22,18 +28,18 @@ function formatHTMLCode(unicode) {
 function enableHighDPICanvas(canvas) {
   if (pixelRatio === 1) return
 
-  const oldWidth = canvas.width
-  const oldHeight = canvas.height
-  canvas.width = oldWidth * pixelRatio
-  canvas.height = oldHeight * pixelRatio
-  canvas.style.width = oldWidth + 'px'
-  canvas.style.height = oldHeight + 'px'
-  canvas.getContext('2d').scale(pixelRatio, pixelRatio)
+  const { width: oldWidth, height: oldHeight } = canvas;
+  canvas.width = oldWidth * pixelRatio;
+  canvas.height = oldHeight * pixelRatio;
+  canvas.style.width = `${oldWidth}px`;
+  canvas.style.height = `${oldHeight}px`;
+  canvas.getContext('2d').scale(pixelRatio, pixelRatio);
+
 }
 
 function highlightSelectedGlyph(glyphIndex) {
   removeClass('active')
-  document.getElementById('g' + glyphIndex).parentNode.classList.add('active')
+  document.getElementById(`g${glyphIndex}`).parentNode.classList.add('active')
 }
 
 function displaySelectedGlyphInfo(glyph) {
@@ -55,7 +61,7 @@ function displaySelectedGlyphInfo(glyph) {
 function displaySelectedGlyph(font, glyph) {
   displaySelectedGlyphInfo(glyph)
   highlightSelectedGlyph(glyph.index)
-  history.replaceState({}, document.title, '?i=' + glyph.index)
+  history.replaceState({}, document.title, `?i=${glyph.index}`)
 
   const canvas = document.getElementById('glyph-detail-canvas')
   canvas.width = canvas.parentNode.offsetWidth
@@ -124,7 +130,7 @@ function displaySelectedGlyphPage(font, glyphsPerPage, pageNum) {
   }
 }
 
-function getNumCols() {
+function getColumnCount() {
   if (window.innerWidth > 940)
     return 16
   else if (window.innerWidth <= 940 && window.innerWidth > 700)
@@ -148,7 +154,7 @@ function createGlyphCanvasContainer(font) {
 
 function createGlyphCanvas(font) {
   const glyphCanvasContainer = createGlyphCanvasContainer(font)
-  const canvasWidth = document.getElementById('glyph-grid').offsetWidth / getNumCols() - 1
+  const canvasWidth = document.getElementById('glyph-grid').offsetWidth / getColumnCount() - 1
 
   const glyphCanvas = document.createElement('canvas')
   glyphCanvas.width = canvasWidth
@@ -173,7 +179,7 @@ function displayPagination(font, glyphsPerPage) {
     const pageLink = document.createElement('a');
     pageLink.href = '#'
     pageLink.textContent = i + 1
-    pageLink.id = 'p' + i
+    pageLink.id = `p${i}`
 
     pageLink.addEventListener('click', (e) => {
       e.preventDefault()
@@ -200,7 +206,7 @@ function getInitialGlyph(font) {
 }
 
 function getGlyphsPerPage() {
-  if (window.innerWidth > 940)
+  if (window.innerWidth >= 940)
     return 128
   else if (window.innerWidth <= 940 && window.innerWidth > 700)
     return 130
@@ -211,7 +217,7 @@ function getGlyphsPerPage() {
 function glyphInspector(fontFile) {
   opentype.load(fontFile, function(err, font) {
     if (err) {
-      console.log('Font could not be loaded: ' + err)
+      console.log(`Font could not be loaded: ${err}`)
     }
     else {
       const glyphsPerPage = getGlyphsPerPage()
