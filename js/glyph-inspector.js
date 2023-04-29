@@ -206,7 +206,7 @@ function getInitialGlyph(font) {
 }
 
 function getGlyphsPerPage() {
-  if (window.innerWidth >= 940)
+  if (window.innerWidth > 940)
     return 128
   else if (window.innerWidth <= 940 && window.innerWidth > 700)
     return 130
