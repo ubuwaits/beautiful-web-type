@@ -1,0 +1,10 @@
+:root { --tasa-orbiter: 'TASA Orbiter', sans-serif; }
+.tasa-orbiter { font-family: 'TASA Orbiter', sans-serif !important; }
+
+@font-face {
+  font-family: 'TASA Orbiter';
+  font-weight: 100 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/assets/fonts/tasa-orbiter/TASAOrbiterVF.woff2') format('woff2-variations');
+}
