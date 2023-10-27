@@ -1300,7 +1300,7 @@
 // TASA Orbiter
 // ----------------------------------------------------------------------------
 .tasa-orbiter-sample {
-  background: #020022;
+  background: #FFF;
 
   .text {
     color: #FFF;
@@ -1312,13 +1312,11 @@
     }
 
     h1 {
-      background: linear-gradient(25deg, #FF01D7, #FFEB00, #00EDF5, #5600CC);
       -webkit-background-clip: text;
-      color: transparent;
-      font: 475 var(--ms11)/1.1 var(--tasa-orbiter);
+      color: #362420;
+      font: 475 var(--ms12)/1.1 var(--tasa-orbiter);
       font-feature-settings: 'ss03';
-      letter-spacing: -0.045em;
-      margin-bottom: 0.5em;
+      margin-bottom: 0;
 
       @media screen and (max-width: $mobile) {
         font-size: var(--ms5);
@@ -1327,7 +1325,8 @@
     }
 
     h2 {
-      font: 300 var(--ms5)/1.2 var(--tasa-orbiter);
+      color: #362420;
+      font: 300 var(--ms6)/1.2 var(--tasa-orbiter);
       font-feature-settings: 'ss03';
       letter-spacing: -0.025em;
 
