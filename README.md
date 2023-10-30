@@ -74,6 +74,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/source-serif-pro/glyphs/)
 * [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-grotesk/glyphs/)
 * [Space Mono](https://beautifulwebtype.com/space-mono/) &#8594; [Glyph inspector](https://beautifulwebtype.com/space-mono/glyphs/)
+* [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/) &#8594; [Glyph inspector](https://beautifulwebtype.com/tasa-orbiter/glyphs/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/) &#8594; [Glyph inspector](https://beautifulwebtype.com/vollkorn/glyphs/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/work-sans/glyphs/)
 * [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) &#8594; [Glyph inspector](https://beautifulwebtype.com/zilla-slab/glyphs/)
