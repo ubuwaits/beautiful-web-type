@@ -741,6 +741,40 @@
   }
 }
 
+// Instrument Serif
+// ----------------------------------------------------------------------------
+.instrument-serif-sample {
+  background: #000;
+
+  .text {
+    color: #FFF;
+    max-width: 940px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font: 400 var(--ms8)/1.1 var(--instrument-serif);
+      margin-bottom: 0.2em;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms5);
+        margin-bottom: 0.25em;
+      }
+    }
+
+    h2 {
+      font: 400 var(--ms5)/1.2 var(--instrument-serif);
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms3);
+      }
+    }
+  }
+}
+
 // Inter
 // ----------------------------------------------------------------------------
 .inter-sample {

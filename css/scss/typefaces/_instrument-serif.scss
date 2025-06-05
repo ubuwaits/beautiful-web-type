@@ -1,0 +1,16 @@
+:root { --instrument-serif: 'Instrument Serif', 'Georgia', Times, serif; }
+.instrument-serif { font-family: 'Instrument Serif', 'Georgia', Times, serif !important; }
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/instrument-serif/InstrumentSerif-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/instrument-serif/InstrumentSerif-Italic.woff2') format('woff2');
+}
