@@ -24,19 +24,6 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 * **Added [Inter](https://beautifulwebtype.com/inter/)**.
 * **Updated glyph inspector** to include plain text character in sidebar for easier copying.
 
-### 23 May 2020
-* **Added [Messapia](https://beautifulwebtype.com/messapia/)**.
-* **Added [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)**.
-* **Updated [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)** to variable version.
-* **Updated [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)** to variable version.
-* **Updated [Fire Code](https://beautifulwebtype.com/fira-code/)** to v4.0 variable version.
-* **Updated [Lora](https://beautifulwebtype.com/lora/)** to variable version.
-* **Updated [Work Sans](https://beautifulwebtype.com/work-sans/)** to variable version.
-* **Updated [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)** to variable version.
-* **Updated Manrope** to variable version.
-* **Updated [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)** to variable version.
-* **Updated [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)** to variable version.
-
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
@@ -62,6 +49,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/) &#8594; [Glyph inspector](https://beautifulwebtype.com/ibm-plex-serif/glyphs/)
 * [Inria Sans](https://beautifulwebtype.com/inria-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/inria-sans/glyphs/)
 * [Inria Serif](https://beautifulwebtype.com/inria-serif/) &#8594; [Glyph inspector](https://beautifulwebtype.com/inria-serif/glyphs/)
+* [Instrument Serif](https://beautifulwebtype.com/instrument-serif/) &#8594; [Glyph inspector](https://beautifulwebtype.com/instrument-serif/glyphs/)
 * [Inter](https://beautifulwebtype.com/inter/) &#8594; [Glyph inspector](https://beautifulwebtype.com/inter/glyphs/)
 * [Jost*](https://beautifulwebtype.com/jost/) &#8594; [Glyph inspector](https://beautifulwebtype.com/jost/glyphs/)
 * [Le Murmure](https://beautifulwebtype.com/le-murmure/) &#8594; [Glyph inspector](https://beautifulwebtype.com/le-murmure/glyphs/)
