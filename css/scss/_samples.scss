@@ -741,6 +741,52 @@
   }
 }
 
+// Instrument Sans
+// ----------------------------------------------------------------------------
+.instrument-sans-sample {
+  background: #FEBA33;
+
+  .text {
+    color: #000;
+    max-width: 940px;
+    text-align: center;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font: 700 var(--ms10)/0.85 var(--instrument-sans);
+      text-transform: uppercase;
+      font-variation-settings: 'wdth' 85, 'wght' 700, 'ital' 0;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms7);
+      }
+
+      &:nth-child(2) {
+        font-variation-settings: 'wdth' 75, 'wght' 700, 'ital' 0;
+      }
+
+      &:nth-child(3) {
+        font-variation-settings: 'wdth' 91, 'wght' 700, 'ital' 0;
+      }
+
+      &:nth-child(4) {
+        font-variation-settings: 'wdth' 92, 'wght' 700, 'ital' 0;
+      }
+
+      &:nth-child(5) {
+        font-variation-settings: 'wdth' 89, 'wght' 700, 'ital' 0;
+      }
+
+      &:nth-child(6) {
+        font-variation-settings: 'wdth' 82, 'wght' 700, 'ital' 0;
+      }
+    }
+  }
+}
+
 // Instrument Serif
 // ----------------------------------------------------------------------------
 .instrument-serif-sample {

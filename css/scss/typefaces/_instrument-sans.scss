@@ -1,0 +1,16 @@
+:root { --instrument-sans: 'Instrument Sans', sans-serif; }
+.instrument-sans { font-family: 'Instrument Sans', sans-serif; }
+
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('/assets/fonts/instrument-sans/InstrumentSans.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: italic;
+  font-weight: 100 900;
+  src: url('/assets/fonts/instrument-sans/InstrumentSans-Italic.woff2') format('woff2');
+}
