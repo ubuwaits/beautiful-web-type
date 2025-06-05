@@ -1,6 +1,7 @@
 # Changelog
 
 ## 05 June 2025
+* **Added [Instrument Sans](https://beautifulwebtype.com/instrument-sans/)**.
 * **Added [Instrument Serif](https://beautifulwebtype.com/instrument-serif/)**.
 
 ## 23 Oct 2023
