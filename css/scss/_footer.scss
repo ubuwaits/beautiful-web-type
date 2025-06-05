@@ -92,3 +92,17 @@ footer.grid {
     }
   }
 }
+
+.chadwin:before {
+  content: "NEW";
+  display: inline-block;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 0.15em 0.5em;
+  margin-right: 0.5em;
+  border-radius: 0.25em;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
