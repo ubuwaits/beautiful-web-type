@@ -1,5 +1,8 @@
 # Changelog
 
+## 06 June 2025
+* **Added [Commissioner](https://beautifulwebtype.com/commissioner/)**.
+
 ## 05 June 2025
 * **Added [Instrument Sans](https://beautifulwebtype.com/instrument-sans/)**.
 * **Added [Instrument Serif](https://beautifulwebtype.com/instrument-serif/)**.

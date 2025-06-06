@@ -253,6 +253,49 @@
   }
 }
 
+// Commissioner
+// ----------------------------------------------------------------------------
+.commissioner-sample {
+  background: #ED3428;
+
+  .text {
+    color: #F3A537;
+    max-width: 720px;
+    text-align: left;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font: 700 var(--ms9)/0.85 var(--commissioner);
+      font-variation-settings: 'slnt' 0, 'FLAR' 100, 'wght' 900, 'VOLM' 100;
+      margin-bottom: 5rem;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms4);
+        margin-bottom: 2rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      font: 700 var(--ms4)/1 var(--commissioner);
+      font-variation-settings: 'slnt' -12, 'FLAR' 0, 'wght' 900, 'VOLM' 0;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.25rem;
+
+      @media screen and (max-width: $mobile) {
+        font-size: var(--ms1);
+      }
+    }
+  }
+}
+
 // Cooper Hewitt
 // ----------------------------------------------------------------------------
 .cooper-hewitt-sample {

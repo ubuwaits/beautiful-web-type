@@ -6,6 +6,9 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 06 June 2025
+* **Added [Commissioner](https://beautifulwebtype.com/commissioner/)**.
+
 ### 05 June 2025
 * **Added [Instrument Sans](https://beautifulwebtype.com/instrument-sans/)**.
 * **Added [Instrument Serif](https://beautifulwebtype.com/instrument-serif/)**.
@@ -21,10 +24,6 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 * **Added pairing example** for Fraunces and Libre Franklin.
 * **Added pairing example** for Messapia and Inter.
 
-### 21 Nov 2020
-* **Added [Inter](https://beautifulwebtype.com/inter/)**.
-* **Updated glyph inspector** to include plain text character in sidebar for easier copying.
-
 **[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
 
 ## Featured typefaces
@@ -36,6 +35,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Archivo Black](https://beautifulwebtype.com/archivo-black/) &#8594; [Glyph inspector](https://beautifulwebtype.com/archivo-black/glyphs/)
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/) &#8594; [Glyph inspector](https://beautifulwebtype.com/biorhyme/glyphs/)
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/) &#8594; [Glyph inspector](https://beautifulwebtype.com/biorhyme-expanded/glyphs/)
+* [Commissioner](https://beautifulwebtype.com/commissioner/) &#8594; [Glyph inspector](https://beautifulwebtype.com/commissioner/glyphs/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) &#8594; [Glyph inspector](https://beautifulwebtype.com/cooper-hewitt/glyphs/)
 * [Crimson Pro](https://beautifulwebtype.com/crimson-pro/) &#8594; [Glyph inspector](https://beautifulwebtype.com/crimson-pro/glyphs/)
 * [Fira Code](https://beautifulwebtype.com/fira-code/) &#8594; [Glyph inspector](https://beautifulwebtype.com/fira-code/glyphs/)
