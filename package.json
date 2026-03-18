@@ -1,0 +1,41 @@
+{
+  "name": "beautiful-web-type",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.10.0",
+  "scripts": {
+    "prepare:static": "tsx scripts/prepare-static.ts",
+    "predev": "pnpm prepare:static",
+    "dev": "next dev",
+    "prebuild": "pnpm prepare:static",
+    "build": "next build",
+    "postbuild": "tsx scripts/verify-export.ts",
+    "start": "serve out -l 3000",
+    "test": "pnpm test:unit && pnpm test:e2e",
+    "test:unit": "vitest run",
+    "test:e2e": "pnpm prepare:static && playwright test"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "playwright": "^1.51.1",
+    "postcss": "^8.5.3",
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}

@@ -5,3 +5,10 @@ _site
 .jekyll-metadata
 Gemfile.lock
 .jekyll-cache
+node_modules
+.next
+out
+public/*
+!public/.gitkeep
+playwright-report
+test-results

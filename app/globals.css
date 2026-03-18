@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-nav a.active {
+  border-bottom-color: var(--red);
+  color: var(--red);
+}
+
+.menu-link {
+  cursor: pointer;
+}
