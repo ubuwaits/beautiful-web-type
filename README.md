@@ -24,7 +24,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 * **Added pairing example** for Fraunces and Libre Franklin.
 * **Added pairing example** for Messapia and Inter.
 
-**[Read full Changelog](https://github.com/ubuwaits/beautiful-web-type/blob/gh-pages/CHANGELOG.md)**
+**[Read full Changelog](./CHANGELOG.md)**
 
 ## Featured typefaces
 All typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
@@ -78,6 +78,12 @@ I'm happy to receive suggestions for typefaces via [a GitHub issue](https://gith
 
 ## Local development
 
-To work with the site locally, start the Jekyll server and watch the Sass files with:
+Install dependencies and start the Next.js dev server:
 
-    rake s
+    pnpm install
+    pnpm dev
+
+Useful commands:
+
+    pnpm build
+    pnpm test

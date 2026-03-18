@@ -1,10 +1,5 @@
-_site
 *.swp
 *.DS_Store
-.sass-cache/*
-.jekyll-metadata
-Gemfile.lock
-.jekyll-cache
 node_modules
 .next
 out

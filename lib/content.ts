@@ -106,7 +106,47 @@ const TYPEFACES_DIR = path.join(ROOT_DIR, "_typefaces");
 const GLYPHS_DIR = path.join(ROOT_DIR, "_glyphs");
 const SAMPLES_DIR = path.join(ROOT_DIR, "_samples");
 const PAIRINGS_DIR = path.join(ROOT_DIR, "_pairings");
-const CATEGORIES_DIR = path.join(ROOT_DIR, "categories");
+
+const HOME_PAGE_CONFIG: StaticPageConfig = {
+  slug: "home",
+  title: "In-Depth Guide to the Best Free Fonts",
+  permalink: "/"
+};
+
+const PAIRINGS_PAGE_CONFIG: StaticPageConfig = {
+  slug: "pairings",
+  title: "Recommended Typeface Pairings",
+  description: "See beautiful examples of recommended pairings using only free & open-source fonts.",
+  bodyClass: "pairings",
+  permalink: "/pairings/"
+};
+
+const CATEGORY_PAGE_CONFIGS: StaticPageConfig[] = [
+  {
+    slug: "display",
+    title: "In-Depth Guide to the Best Free Headline & Display Fonts",
+    bodyClass: "display",
+    permalink: "/display/"
+  },
+  {
+    slug: "monospaced",
+    title: "In-Depth Guide to the Best Free Monospaced Fonts",
+    bodyClass: "monospaced",
+    permalink: "/monospaced/"
+  },
+  {
+    slug: "sans-serif",
+    title: "In-Depth Guide to the Best Free Sans-Serif Fonts",
+    bodyClass: "sans-serif",
+    permalink: "/sans-serif/"
+  },
+  {
+    slug: "serif",
+    title: "In-Depth Guide to the Best Free Serif Fonts",
+    bodyClass: "serif",
+    permalink: "/serif/"
+  }
+];
 
 const RESERVED_TOP_LEVEL_SLUGS = new Set([
   "assets",
@@ -375,34 +415,6 @@ function loadPairings(): Pairing[] {
   });
 }
 
-function loadStaticPageConfig(filePath: string): StaticPageConfig {
-  const { data } = readFrontMatterFile(filePath);
-  const basename = path.basename(filePath, path.extname(filePath));
-  const permalink = maybeString(data.permalink) ?? `/${basename}/`;
-
-  return {
-    slug: basename,
-    title: assertString(data.title, "title", filePath),
-    description: maybeString(data.description),
-    bodyClass: maybeString(data["body-class"]),
-    permalink
-  };
-}
-
-function loadHomePageConfig(): StaticPageConfig {
-  return loadStaticPageConfig(path.join(ROOT_DIR, "index.html"));
-}
-
-function loadPairingsPageConfig(): StaticPageConfig {
-  return loadStaticPageConfig(path.join(ROOT_DIR, "pairings.html"));
-}
-
-function loadCategoryPages(): StaticPageConfig[] {
-  return listFilesRecursively(CATEGORIES_DIR, ".html").map((filePath) =>
-    loadStaticPageConfig(filePath)
-  );
-}
-
 function loadTextData(): TextData {
   const textDataPath = path.join(ROOT_DIR, "_data", "text.yml");
   const rawValue = fs.readFileSync(textDataPath, "utf8");
@@ -488,12 +500,12 @@ export function getSiteData(): SiteData {
     }
   }
 
-  const categories = loadCategoryPages();
+  const categories = CATEGORY_PAGE_CONFIGS;
   const categoriesBySlug = new Map(categories.map((entry) => [entry.slug, entry]));
 
   cachedSiteData = {
-    homePage: loadHomePageConfig(),
-    pairingsPage: loadPairingsPageConfig(),
+    homePage: HOME_PAGE_CONFIG,
+    pairingsPage: PAIRINGS_PAGE_CONFIG,
     categories,
     categoriesBySlug,
     typefaces,
