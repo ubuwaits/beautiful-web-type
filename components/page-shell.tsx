@@ -9,7 +9,7 @@ type PageShellProps = {
 export function PageShell({ bodyClass, children }: PageShellProps) {
   return (
     <main className={clsx(bodyClass, "min-h-[calc(100vh-4rem)]")}>
-      <section className="container">{children}</section>
+      <section className="w-full">{children}</section>
     </main>
   );
 }
