@@ -1,8 +1,6 @@
 import { mkdir, rm, cp, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { buildFeedXml, buildSitemapXml } from "../lib/content";
-
 const ROOT_DIR = process.cwd();
 const PUBLIC_DIR = path.join(ROOT_DIR, "public");
 const GOOGLE_VERIFICATION_FILE = "google146824b99fdbed48.html";
@@ -49,11 +47,7 @@ async function copyStaticEntries() {
   }
 }
 
-async function writeGeneratedXmlFiles() {
-  const buildDate = new Date().toISOString();
-
-  await writeFile(path.join(PUBLIC_DIR, "feed.xml"), buildFeedXml(buildDate), "utf8");
-  await writeFile(path.join(PUBLIC_DIR, "sitemap.xml"), buildSitemapXml(buildDate), "utf8");
+async function writeGeneratedStaticFiles() {
   await writeFile(
     path.join(PUBLIC_DIR, GOOGLE_VERIFICATION_FILE),
     GOOGLE_VERIFICATION_CONTENT,
@@ -64,7 +58,7 @@ async function writeGeneratedXmlFiles() {
 async function main() {
   await clearGeneratedPublicFiles();
   await copyStaticEntries();
-  await writeGeneratedXmlFiles();
+  await writeGeneratedStaticFiles();
 }
 
 main().catch((error) => {

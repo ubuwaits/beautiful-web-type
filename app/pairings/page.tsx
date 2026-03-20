@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
-import { getSiteData } from "@/lib/content";
+import { getLatestPairings } from "@/lib/content";
 
-const site = getSiteData();
+const latestPairings = getLatestPairings();
 
 export const metadata: Metadata = {
   title: "Recommended Typeface Pairings",
@@ -25,7 +25,7 @@ export default function PairingsPage() {
           <h1>Recommended Typeface Pairings</h1>
         </div>
 
-        {site.latestPairings.map((pairing) => (
+        {latestPairings.map((pairing) => (
           <PairingCard key={pairing.slug} pairing={pairing} />
         ))}
       </div>

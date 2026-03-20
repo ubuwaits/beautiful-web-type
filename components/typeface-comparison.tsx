@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import type { Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
+import { getTypefacePath } from "@/lib/routes";
 
 type TypefaceComparisonProps = {
   comparisonFaces: string[];
@@ -33,7 +34,7 @@ export function TypefaceComparison({
               {text}
             </h1>
             <p className="character-label">
-              <Link href={`/${resolveTypefaceSlugByName(comparisonFace)}/`}>
+              <Link href={getTypefacePath(resolveTypefaceSlugByName(comparisonFace))}>
                 {comparisonFace}
               </Link>
             </p>

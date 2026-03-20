@@ -4,9 +4,14 @@ import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
 import { SampleCard } from "@/components/sample-card";
-import { getSiteData } from "@/lib/content";
+import {
+  getLatestPairings,
+  getLatestTypefaces,
+  getSampleForTypeface
+} from "@/lib/content";
 
-const site = getSiteData();
+const latestTypefaces = getLatestTypefaces().slice(0, 10);
+const latestPairings = getLatestPairings();
 
 export const metadata: Metadata = {
   title: "In-Depth Guide to the Best Free Fonts",
@@ -27,8 +32,8 @@ export default function HomePage() {
           </h1>
         </div>
 
-        {site.latestTypefaces.slice(0, 10).map((typeface) => {
-          const sample = site.sampleByTypefaceName.get(typeface.name);
+        {latestTypefaces.map((typeface) => {
+          const sample = getSampleForTypeface(typeface.name);
 
           if (!sample) {
             return null;
@@ -38,7 +43,7 @@ export default function HomePage() {
         })}
 
         <h2 className="page-subhead gc1 gc12 mt3 ase">Latest pairings</h2>
-        {site.latestPairings.map((pairing) => (
+        {latestPairings.map((pairing) => (
           <PairingCard key={pairing.slug} pairing={pairing} />
         ))}
       </div>

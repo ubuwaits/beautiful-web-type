@@ -1,7 +1,7 @@
 import { access } from "node:fs/promises";
 import path from "node:path";
 
-import { getSiteData } from "../lib/content";
+import { getAllTypefaceSlugs } from "../lib/content";
 
 const ROOT_DIR = process.cwd();
 const OUT_DIR = path.join(ROOT_DIR, "out");
@@ -17,7 +17,7 @@ async function assertExists(relativePath: string) {
 }
 
 async function main() {
-  const site = getSiteData();
+  const typefaceSlugs = getAllTypefaceSlugs();
   const expectedFiles = [
     "404.html",
     "feed.xml",
@@ -36,9 +36,9 @@ async function main() {
     "assets/fonts/inter/Inter-Regular.woff"
   ];
 
-  for (const typeface of site.typefaces) {
-    expectedFiles.push(`${typeface.slug}/index.html`);
-    expectedFiles.push(`${typeface.slug}/glyphs/index.html`);
+  for (const typefaceSlug of typefaceSlugs) {
+    expectedFiles.push(`${typefaceSlug}/index.html`);
+    expectedFiles.push(`${typefaceSlug}/glyphs/index.html`);
   }
 
   await Promise.all(expectedFiles.map(assertExists));

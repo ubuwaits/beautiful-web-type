@@ -1,4 +1,4 @@
-const SITE_ORIGIN = "https://www.beautifulwebtype.com";
+import { toAbsoluteUrl } from "@/lib/routes";
 
 type BreadcrumbItem = {
   name: string;
@@ -18,7 +18,7 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
         "@type": "ListItem",
         position: index + 1,
         name: item.name,
-        item: new URL(item.path, SITE_ORIGIN).toString()
+        item: toAbsoluteUrl(item.path)
       }))
     },
     null,

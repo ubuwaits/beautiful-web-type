@@ -3,9 +3,7 @@ import type { Metadata } from "next";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { CategoryPage } from "@/components/category-page";
 import { PageShell } from "@/components/page-shell";
-import { getSiteData, getTypefacesByCategory } from "@/lib/content";
-
-const site = getSiteData();
+import { getTypefacesByCategory } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "In-Depth Guide to the Best Free Headline & Display Fonts",
@@ -23,11 +21,7 @@ export default function DisplayPage() {
           { name: "Display", path: "/display/" }
         ]}
       />
-      <CategoryPage
-        heading="Display Typefaces"
-        samplesByTypefaceName={site.sampleByTypefaceName}
-        typefaces={getTypefacesByCategory("display")}
-      />
+      <CategoryPage heading="Display Typefaces" typefaces={getTypefacesByCategory("display")} />
     </PageShell>
   );
 }

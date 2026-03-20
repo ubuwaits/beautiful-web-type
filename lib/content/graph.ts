@@ -2,114 +2,26 @@ import fs from "node:fs";
 import path from "node:path";
 
 import matter from "gray-matter";
+import { cache } from "react";
 
-export type CategoryName = "Display" | "Monospaced" | "Sans-Serif" | "Serif";
-
-export type CategorySlug = "display" | "monospaced" | "sans-serif" | "serif";
-
-export type Weight = {
-  weight: number;
-  name: string;
-};
-
-export type Typeface = {
-  slug: string;
-  name: string;
-  dateAdded: string;
-  category: CategoryName;
-  categorySlug: CategorySlug;
-  styles: string | number;
-  weights: Weight[];
-  latestRelease: {
-    version: string;
-    date: string;
-  };
-  projectUrl: string;
-  gFontsUrl?: string;
-  creator: {
-    name: string;
-    url: string;
-  };
-  description: string;
-  italic?: boolean;
-  smallcap?: boolean;
-  familyFaces?: string[];
-  comparisonFaces?: string[];
-  bodyHtml: string;
-  bodyClass: string;
-};
-
-export type GlyphPage = {
-  slug: string;
-  typefaceName: string;
-  fontFile: string;
-  bodyClass: string;
-};
-
-export type Sample = {
-  slug: string;
-  typefaceName: string;
-  sampleShade?: string;
-  bodyHtml: string;
-};
-
-export type Pairing = {
-  slug: string;
-  name: string;
-  dateAdded: string;
-  typefaces: string[];
-  sampleShade?: string;
-  bodyHtml: string;
-};
-
-export type TextData = {
-  words: string[];
-  headlines: string[];
-  paragraphs: string[];
-};
-
-export type SiteData = {
-  typefaces: Typeface[];
-  typefaceBySlug: Map<string, Typeface>;
-  typefaceByName: Map<string, Typeface>;
-  glyphPages: GlyphPage[];
-  glyphPageBySlug: Map<string, GlyphPage>;
-  glyphPageByTypefaceName: Map<string, GlyphPage>;
-  samples: Sample[];
-  sampleByTypefaceName: Map<string, Sample>;
-  pairings: Pairing[];
-  pairingsByTypefaceName: Map<string, Pairing[]>;
-  latestTypefaces: Typeface[];
-  latestPairings: Pairing[];
-  text: TextData;
-};
+import { getReservedTopLevelSlugs } from "../routes";
+import type {
+  CategoryName,
+  CategorySlug,
+  ContentGraph,
+  GlyphPage,
+  Pairing,
+  Sample,
+  TextData,
+  Typeface,
+  Weight
+} from "./types";
 
 const ROOT_DIR = process.cwd();
-const SITE_NAME = "Beautiful Web Type";
-const SITE_ORIGIN = "https://www.beautifulwebtype.com";
 const TYPEFACES_DIR = path.join(ROOT_DIR, "_typefaces");
 const GLYPHS_DIR = path.join(ROOT_DIR, "_glyphs");
 const SAMPLES_DIR = path.join(ROOT_DIR, "_samples");
 const PAIRINGS_DIR = path.join(ROOT_DIR, "_pairings");
-
-const STATIC_PUBLIC_ROUTES = [
-  "/",
-  "/display/",
-  "/monospaced/",
-  "/sans-serif/",
-  "/serif/",
-  "/pairings/"
-] as const;
-
-const NON_TYPEFACE_TOP_LEVEL_PATHS = [
-  "assets",
-  "css",
-  "feed.xml",
-  "google146824b99fdbed48.html",
-  "js",
-  "sitemap.xml",
-  "v1"
-] as const;
 
 const CATEGORY_SLUGS: Record<CategoryName, CategorySlug> = {
   Display: "display",
@@ -118,16 +30,7 @@ const CATEGORY_SLUGS: Record<CategoryName, CategorySlug> = {
   Serif: "serif"
 };
 
-function routeToTopLevelSlug(routePath: string): string | undefined {
-  return routePath.split("/").filter(Boolean)[0];
-}
-
-const RESERVED_TOP_LEVEL_SLUGS = new Set([
-  ...STATIC_PUBLIC_ROUTES.map(routeToTopLevelSlug).filter(
-    (routeSlug): routeSlug is string => routeSlug !== undefined
-  ),
-  ...NON_TYPEFACE_TOP_LEVEL_PATHS
-]);
+const RESERVED_TOP_LEVEL_SLUGS = getReservedTopLevelSlugs();
 
 function listFilesRecursively(directory: string, extension: string): string[] {
   const entries = fs
@@ -158,11 +61,7 @@ function readFrontMatterFile(filePath: string): {
   };
 }
 
-function assertString(
-  value: unknown,
-  key: string,
-  filePath: string
-): string {
+function assertString(value: unknown, key: string, filePath: string): string {
   if (typeof value !== "string" || value.length === 0) {
     throw new Error(`Expected "${key}" to be a non-empty string in ${filePath}`);
   }
@@ -170,11 +69,7 @@ function assertString(
   return value;
 }
 
-function assertStringValue(
-  value: unknown,
-  key: string,
-  filePath: string
-): string {
+function assertStringValue(value: unknown, key: string, filePath: string): string {
   if (typeof value !== "string") {
     throw new Error(`Expected "${key}" to be a string in ${filePath}`);
   }
@@ -202,11 +97,7 @@ function maybeBoolean(value: unknown): boolean | undefined {
   return typeof value === "boolean" ? value : undefined;
 }
 
-function assertStringArray(
-  value: unknown,
-  key: string,
-  filePath: string
-): string[] {
+function assertStringArray(value: unknown, key: string, filePath: string): string[] {
   if (!Array.isArray(value) || value.some((entry) => typeof entry !== "string")) {
     throw new Error(`Expected "${key}" to be a string array in ${filePath}`);
   }
@@ -264,7 +155,7 @@ function sanitizeFontFile(fontFile: string): string {
   return fontFile.replace(/^['"]|['"]$/g, "");
 }
 
-function sortByDateDesc<T extends { dateAdded: string }>(entries: T[]): T[] {
+function sortByDateDesc<T extends { dateAdded: string }>(entries: readonly T[]): T[] {
   return [...entries].sort((left, right) =>
     right.dateAdded.localeCompare(left.dateAdded)
   );
@@ -334,7 +225,9 @@ function loadGlyphPages(typefaceByName: Map<string, Typeface>): GlyphPage[] {
     const typeface = typefaceByName.get(typefaceName);
 
     if (!typeface) {
-      throw new Error(`Glyph page in ${filePath} references missing typeface "${typefaceName}"`);
+      throw new Error(
+        `Glyph page in ${filePath} references missing typeface "${typefaceName}"`
+      );
     }
 
     return {
@@ -387,28 +280,28 @@ function loadTextData(): TextData {
   };
 }
 
-function validateSiteData(data: SiteData): void {
-  for (const typeface of data.typefaces) {
+function validateContentGraph(graph: ContentGraph): void {
+  for (const typeface of graph.typefaces) {
     if (RESERVED_TOP_LEVEL_SLUGS.has(typeface.slug)) {
       throw new Error(`Typeface slug "${typeface.slug}" collides with a reserved route`);
     }
 
-    if (!data.sampleByTypefaceName.has(typeface.name)) {
+    if (!graph.sampleByTypefaceName.has(typeface.name)) {
       throw new Error(`Missing sample for typeface "${typeface.name}"`);
     }
 
-    if (!data.glyphPageByTypefaceName.has(typeface.name)) {
+    if (!graph.glyphPageByTypefaceName.has(typeface.name)) {
       throw new Error(`Missing glyph page for typeface "${typeface.name}"`);
     }
 
     for (const relatedName of typeface.familyFaces ?? []) {
-      if (!data.typefaceByName.has(relatedName)) {
+      if (!graph.typefaceByName.has(relatedName)) {
         throw new Error(`Missing family face "${relatedName}" referenced by "${typeface.name}"`);
       }
     }
 
     for (const relatedName of typeface.comparisonFaces ?? []) {
-      if (!data.typefaceByName.has(relatedName)) {
+      if (!graph.typefaceByName.has(relatedName)) {
         throw new Error(
           `Missing comparison face "${relatedName}" referenced by "${typeface.name}"`
         );
@@ -416,28 +309,24 @@ function validateSiteData(data: SiteData): void {
     }
   }
 
-  for (const sample of data.samples) {
-    if (!data.typefaceByName.has(sample.typefaceName)) {
-      throw new Error(`Sample "${sample.slug}" references missing typeface "${sample.typefaceName}"`);
+  for (const sample of graph.samples) {
+    if (!graph.typefaceByName.has(sample.typefaceName)) {
+      throw new Error(
+        `Sample "${sample.slug}" references missing typeface "${sample.typefaceName}"`
+      );
     }
   }
 
-  for (const pairing of data.pairings) {
+  for (const pairing of graph.pairings) {
     for (const typefaceName of pairing.typefaces) {
-      if (!data.typefaceByName.has(typefaceName)) {
+      if (!graph.typefaceByName.has(typefaceName)) {
         throw new Error(`Pairing "${pairing.name}" references missing typeface "${typefaceName}"`);
       }
     }
   }
 }
 
-let cachedSiteData: SiteData | null = null;
-
-export function getSiteData(): SiteData {
-  if (cachedSiteData) {
-    return cachedSiteData;
-  }
-
+function buildContentGraph(): ContentGraph {
   const typefaces = loadTypefaces();
   const typefaceBySlug = new Map(typefaces.map((entry) => [entry.slug, entry]));
   const typefaceByName = new Map(typefaces.map((entry) => [entry.name, entry]));
@@ -459,7 +348,7 @@ export function getSiteData(): SiteData {
     }
   }
 
-  cachedSiteData = {
+  const graph: ContentGraph = {
     typefaces,
     typefaceBySlug,
     typefaceByName,
@@ -475,118 +364,13 @@ export function getSiteData(): SiteData {
     text: loadTextData()
   };
 
-  validateSiteData(cachedSiteData);
+  validateContentGraph(graph);
 
-  return cachedSiteData;
+  return graph;
 }
 
-export function getTypefacesByCategory(categorySlug: CategorySlug): Typeface[] {
-  return getSiteData().typefaces.filter((entry) => entry.categorySlug === categorySlug);
-}
+const getCachedContentGraph = cache(buildContentGraph);
 
-export function getTypefacesForFooter(): Record<CategorySlug, Typeface[]> {
-  return {
-    display: getTypefacesByCategory("display"),
-    monospaced: getTypefacesByCategory("monospaced"),
-    "sans-serif": getTypefacesByCategory("sans-serif"),
-    serif: getTypefacesByCategory("serif")
-  };
-}
-
-export function resolveTypefaceSlugByName(typefaceName: string): string {
-  const typeface = getSiteData().typefaceByName.get(typefaceName);
-
-  if (!typeface) {
-    throw new Error(`Unknown typeface "${typefaceName}"`);
-  }
-
-  return typeface.slug;
-}
-
-export function getTypefacePath(typeface: Pick<Typeface, "slug">): string {
-  return `/${typeface.slug}/`;
-}
-
-export function getGlyphPath(typeface: Pick<Typeface, "slug">): string {
-  return `/${typeface.slug}/glyphs/`;
-}
-
-export function getPublicRoutes(): string[] {
-  const site = getSiteData();
-
-  return [
-    ...STATIC_PUBLIC_ROUTES,
-    ...site.typefaces.map((entry) => getTypefacePath(entry)),
-    ...site.typefaces.map((entry) => getGlyphPath(entry))
-  ];
-}
-
-function xmlEscape(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
-}
-
-function absoluteUrl(routePath: string): string {
-  return new URL(routePath, SITE_ORIGIN).toString();
-}
-
-export function buildSitemapXml(buildDate = new Date().toISOString()): string {
-  const urls = getPublicRoutes()
-    .map(
-      (routePath) => `<url>
-<loc>${xmlEscape(absoluteUrl(routePath))}</loc>
-<lastmod>${xmlEscape(buildDate)}</lastmod>
-</url>`
-    )
-    .join("\n");
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls}
-</urlset>
-`;
-}
-
-export function buildFeedXml(buildDate = new Date().toISOString()): string {
-  const { latestTypefaces } = getSiteData();
-  const entries = latestTypefaces
-    .map((typeface) => {
-      const imageUrl = absoluteUrl(`/assets/images/${typeface.slug}.png`);
-      const typefaceUrl = absoluteUrl(getTypefacePath(typeface));
-
-      return `<entry>
-  <title>${xmlEscape(`${typeface.name} by ${typeface.creator.name}`)}</title>
-  <link href="${xmlEscape(typefaceUrl)}" />
-  <id>${xmlEscape(typefaceUrl)}</id>
-  <updated>${xmlEscape(new Date(typeface.dateAdded).toISOString())}</updated>
-  <summary type="html">${xmlEscape(typeface.description)}</summary>
-  <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>${xmlEscape(
-    typeface.description
-  )}</p><p><a href="${xmlEscape(typefaceUrl)}"><img src="${xmlEscape(
-    imageUrl
-  )}" alt="${xmlEscape(`${typeface.name} by ${typeface.creator.name}`)}" /></a></p></div>
-  </content>
-</entry>`;
-    })
-    .join("\n");
-
-  return `<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>${SITE_NAME}</title>
-  <link href="${absoluteUrl("/feed.xml")}" rel="self" />
-  <link href="${SITE_ORIGIN}" />
-  <id>${SITE_ORIGIN}/</id>
-  <updated>${xmlEscape(buildDate)}</updated>
-  <author>
-    <name>Chad Mazzola</name>
-    <email>ubuwaits@gmail.com</email>
-    <uri>${SITE_ORIGIN}</uri>
-  </author>
-${entries}
-</feed>
-`;
+export function getContentGraph(): ContentGraph {
+  return getCachedContentGraph();
 }
