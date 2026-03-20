@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 
-import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
-import { CategoryPage } from "@/components/category-page";
-import { PageShell } from "@/components/page-shell";
-import { getTypefacesByCategory } from "@/lib/content";
+import { CategoryRoutePage } from "@/components/category-route-page";
 
 export const metadata: Metadata = {
   title: "In-Depth Guide to the Best Free Headline & Display Fonts",
@@ -14,14 +11,12 @@ export const metadata: Metadata = {
 
 export default function DisplayPage() {
   return (
-    <PageShell bodyClass="display">
-      <BreadcrumbJsonLd
-        items={[
-          { name: "Free & Open-Source Fonts", path: "/" },
-          { name: "Display", path: "/display/" }
-        ]}
-      />
-      <CategoryPage heading="Display Typefaces" typefaces={getTypefacesByCategory("display")} />
-    </PageShell>
+    <CategoryRoutePage
+      bodyClass="display"
+      breadcrumbLabel="Display"
+      categorySlug="display"
+      heading="Display Typefaces"
+      path="/display/"
+    />
   );
 }

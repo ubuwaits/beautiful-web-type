@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 
-import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
-import { CategoryPage } from "@/components/category-page";
-import { PageShell } from "@/components/page-shell";
-import { getTypefacesByCategory } from "@/lib/content";
+import { CategoryRoutePage } from "@/components/category-route-page";
 
 export const metadata: Metadata = {
   title: "In-Depth Guide to the Best Free Monospaced Fonts",
@@ -14,17 +11,12 @@ export const metadata: Metadata = {
 
 export default function MonospacedPage() {
   return (
-    <PageShell bodyClass="monospaced">
-      <BreadcrumbJsonLd
-        items={[
-          { name: "Free & Open-Source Fonts", path: "/" },
-          { name: "Monospaced", path: "/monospaced/" }
-        ]}
-      />
-      <CategoryPage
-        heading="Monospaced Typefaces"
-        typefaces={getTypefacesByCategory("monospaced")}
-      />
-    </PageShell>
+    <CategoryRoutePage
+      bodyClass="monospaced"
+      breadcrumbLabel="Monospaced"
+      categorySlug="monospaced"
+      heading="Monospaced Typefaces"
+      path="/monospaced/"
+    />
   );
 }
