@@ -10,3 +10,72 @@
 .menu-link {
   cursor: pointer;
 }
+
+body.menu-open {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1104px) {
+  body .mobile-menu {
+    position: fixed;
+    right: 0.25rem;
+    top: 0.5rem;
+    visibility: visible;
+    z-index: 1002;
+  }
+
+  body .mobile-menu .menu-line {
+    transition-duration: 0.25s;
+    transition-property: transform, opacity;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  body .menu-overlay {
+    -webkit-backdrop-filter: none;
+    align-items: center;
+    backdrop-filter: none;
+    background-color: #fff;
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    min-height: 100dvh;
+    opacity: 0;
+    padding: 1.5rem;
+    pointer-events: none;
+    position: fixed;
+    visibility: hidden;
+    width: 100vw;
+    z-index: 1001;
+  }
+
+  body .menu-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  body .menu-overlay .main-nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    justify-content: center;
+    min-height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  body .menu-overlay li {
+    margin: 0;
+    padding: 0;
+  }
+
+  body .menu-overlay li.nav-home {
+    display: none;
+  }
+
+  body .menu-overlay a {
+    display: block;
+    padding: 0.25rem 0;
+  }
+}

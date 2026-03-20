@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 function NavItems({
   activeSection,
@@ -84,11 +84,21 @@ export function SiteHeader() {
       : "";
   }, [pathname]);
 
+  useEffect(() => {
+    document.body.classList.toggle("menu-open", menuOpen);
+
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
+  }, [menuOpen]);
+
   return (
-    <header className="site-header">
-      <ol className="main-nav">
-        <NavItems activeSection={activeSection} />
-      </ol>
+    <>
+      <header className="site-header">
+        <ol className="main-nav">
+          <NavItems activeSection={activeSection} />
+        </ol>
+      </header>
 
       <div className={menuOpen ? "mobile-menu open" : "mobile-menu"}>
         <span className="menu-circle" />
@@ -112,6 +122,6 @@ export function SiteHeader() {
           <NavItems activeSection={activeSection} onNavigate={() => setMenuOpen(false)} />
         </ol>
       </div>
-    </header>
+    </>
   );
 }
