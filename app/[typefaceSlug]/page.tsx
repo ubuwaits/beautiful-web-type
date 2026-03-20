@@ -4,15 +4,22 @@ import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { PageShell } from "@/components/page-shell";
 import { TypefaceDetail } from "@/components/typeface-detail";
-import { getSiteData } from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
+import {
+  getAllTypefaceSlugs,
+  getPairingsForTypeface,
+  getSampleForTypeface,
+  getTextData,
+  getTypefaceBySlug
+} from "@/lib/content";
+import { getTypefacePath } from "@/lib/routes";
 
 export const dynamicParams = false;
 
+const SITE_NAME = "Beautiful Web Type";
+const TWITTER_CREATOR = "@ubuwaits";
+
 export function generateStaticParams() {
-  return getSiteData().typefaces.map((typeface) => ({
-    typefaceSlug: typeface.slug
-  }));
+  return getAllTypefaceSlugs().map((typefaceSlug) => ({ typefaceSlug }));
 }
 
 export async function generateMetadata({
@@ -21,18 +28,36 @@ export async function generateMetadata({
   params: Promise<{ typefaceSlug: string }>;
 }): Promise<Metadata> {
   const { typefaceSlug } = await params;
-  const typeface = getSiteData().typefaceBySlug.get(typefaceSlug);
+  const typeface = getTypefaceBySlug(typefaceSlug);
 
   if (!typeface) {
     return {};
   }
 
-  return buildPageMetadata({
-    title: `Complete Guide to ${typeface.name}`,
-    description: `Complete guide to the free font ${typeface.name}. See beautiful examples, recommended pairings, OpenType features, and more.`,
-    imagePath: `/assets/images/${typeface.slug}.png`,
-    path: `/${typeface.slug}/`
-  });
+  const title = `Complete Guide to ${typeface.name}`;
+  const description = `Complete guide to the free font ${typeface.name}. See beautiful examples, recommended pairings, OpenType features, and more.`;
+  const imagePath = `/assets/images/${typeface.slug}.png`;
+  const path = getTypefacePath(typeface.slug);
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: path
+    },
+    openGraph: {
+      title,
+      siteName: SITE_NAME,
+      description,
+      url: path,
+      images: [imagePath]
+    },
+    twitter: {
+      card: "summary_large_image",
+      creator: TWITTER_CREATOR,
+      images: [imagePath]
+    }
+  };
 }
 
 export default async function TypefacePage({
@@ -41,34 +66,34 @@ export default async function TypefacePage({
   params: Promise<{ typefaceSlug: string }>;
 }) {
   const { typefaceSlug } = await params;
-  const site = getSiteData();
-  const typeface = site.typefaceBySlug.get(typefaceSlug);
+  const typeface = getTypefaceBySlug(typefaceSlug);
 
   if (!typeface) {
     notFound();
   }
 
-  const sample = site.sampleByTypefaceName.get(typeface.name);
+  const sample = getSampleForTypeface(typeface.name);
 
   if (!sample) {
     notFound();
   }
 
-  const pairings = site.pairingsByTypefaceName.get(typeface.name) ?? [];
+  const pairings = getPairingsForTypeface(typeface.name);
+  const text = getTextData();
 
   return (
     <PageShell bodyClass={typeface.bodyClass}>
       <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([
+        items={[
           { name: "Free & Open-Source Fonts", path: "/" },
           { name: typeface.category, path: `/${typeface.categorySlug}/` },
-          { name: typeface.name, path: `/${typeface.slug}/` }
-        ])}
+          { name: typeface.name, path: getTypefacePath(typeface.slug) }
+        ]}
       />
       <TypefaceDetail
         pairings={pairings}
         sampleBody={sample.bodyHtml}
-        text={site.text}
+        text={text}
         typeface={typeface}
       />
     </PageShell>

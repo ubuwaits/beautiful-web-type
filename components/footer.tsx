@@ -1,9 +1,13 @@
 import Link from "next/link";
 
-import { getTypefacesForFooter } from "@/lib/content";
+import { getTypefacesByCategory } from "@/lib/content";
+import { getTypefacePath } from "@/lib/routes";
 
 export function SiteFooter() {
-  const groupedTypefaces = getTypefacesForFooter();
+  const serifTypefaces = getTypefacesByCategory("serif");
+  const sansSerifTypefaces = getTypefacesByCategory("sans-serif");
+  const displayTypefaces = getTypefacesByCategory("display");
+  const monospacedTypefaces = getTypefacesByCategory("monospaced");
 
   return (
     <footer className="grid">
@@ -12,9 +16,9 @@ export function SiteFooter() {
           <Link href="/serif/">Serif Typefaces</Link>
         </h3>
         <ol>
-          {groupedTypefaces.serif.map((typeface) => (
+          {serifTypefaces.map((typeface) => (
             <li key={typeface.slug}>
-              <Link href={`/${typeface.slug}/`}>{typeface.name}</Link>
+              <Link href={getTypefacePath(typeface.slug)}>{typeface.name}</Link>
             </li>
           ))}
         </ol>
@@ -25,9 +29,9 @@ export function SiteFooter() {
           <Link href="/sans-serif/">Sans-Serif Typefaces</Link>
         </h3>
         <ol>
-          {groupedTypefaces["sans-serif"].map((typeface) => (
+          {sansSerifTypefaces.map((typeface) => (
             <li key={typeface.slug}>
-              <Link href={`/${typeface.slug}/`}>{typeface.name}</Link>
+              <Link href={getTypefacePath(typeface.slug)}>{typeface.name}</Link>
             </li>
           ))}
         </ol>
@@ -38,9 +42,9 @@ export function SiteFooter() {
           <Link href="/display/">Display Typefaces</Link>
         </h3>
         <ol>
-          {groupedTypefaces.display.map((typeface) => (
+          {displayTypefaces.map((typeface) => (
             <li key={typeface.slug}>
-              <Link href={`/${typeface.slug}/`}>{typeface.name}</Link>
+              <Link href={getTypefacePath(typeface.slug)}>{typeface.name}</Link>
             </li>
           ))}
         </ol>
@@ -51,9 +55,9 @@ export function SiteFooter() {
           <Link href="/monospaced/">Monospaced Typefaces</Link>
         </h3>
         <ol>
-          {groupedTypefaces.monospaced.map((typeface) => (
+          {monospacedTypefaces.map((typeface) => (
             <li key={typeface.slug}>
-              <Link href={`/${typeface.slug}/`}>{typeface.name}</Link>
+              <Link href={getTypefacePath(typeface.slug)}>{typeface.name}</Link>
             </li>
           ))}
         </ol>

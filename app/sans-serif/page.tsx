@@ -1,34 +1,22 @@
-import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
-import { CategoryPage } from "@/components/category-page";
-import { PageShell } from "@/components/page-shell";
-import { getSiteData, getTypefacesByCategory } from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
 
-const site = getSiteData();
-const category = site.categoriesBySlug.get("sans-serif")!;
+import { CategoryRoutePage } from "@/components/category-route-page";
 
-export const metadata = buildPageMetadata({
-  title: category.title,
-  description:
-    category.description ??
-    "Discover the best free fonts from Google and across the web. See beautiful examples, recommended pairings, OpenType features, and more.",
-  path: category.permalink
-});
+export const metadata: Metadata = {
+  title: "In-Depth Guide to the Best Free Sans-Serif Fonts",
+  alternates: {
+    canonical: "/sans-serif/"
+  }
+};
 
 export default function SansSerifPage() {
   return (
-    <PageShell bodyClass={category.bodyClass}>
-      <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([
-          { name: "Free & Open-Source Fonts", path: "/" },
-          { name: "Sans-Serif", path: category.permalink }
-        ])}
-      />
-      <CategoryPage
-        heading="Sans-Serif Typefaces"
-        samplesByTypefaceName={site.sampleByTypefaceName}
-        typefaces={getTypefacesByCategory("sans-serif")}
-      />
-    </PageShell>
+    <CategoryRoutePage
+      bodyClass="sans-serif"
+      breadcrumbLabel="Sans-Serif"
+      categorySlug="sans-serif"
+      heading="Sans-Serif Typefaces"
+      path="/sans-serif/"
+    />
   );
 }

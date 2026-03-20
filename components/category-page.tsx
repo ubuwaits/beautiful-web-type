@@ -1,17 +1,13 @@
 import { SampleCard } from "@/components/sample-card";
-import type { Sample, Typeface } from "@/lib/content";
+import { getSampleForTypeface } from "@/lib/content";
+import type { Typeface } from "@/lib/content";
 
 type CategoryPageProps = {
   heading: string;
-  samplesByTypefaceName: Map<string, Sample>;
   typefaces: Typeface[];
 };
 
-export function CategoryPage({
-  heading,
-  samplesByTypefaceName,
-  typefaces
-}: CategoryPageProps) {
+export function CategoryPage({ heading, typefaces }: CategoryPageProps) {
   return (
     <div className="samples grid">
       <div className="gr1 gc12 page-header center">
@@ -19,7 +15,7 @@ export function CategoryPage({
       </div>
 
       {typefaces.map((typeface) => {
-        const sample = samplesByTypefaceName.get(typeface.name);
+        const sample = getSampleForTypeface(typeface.name);
 
         if (!sample) {
           return null;

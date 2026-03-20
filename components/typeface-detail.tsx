@@ -6,6 +6,7 @@ import { SampleCard } from "@/components/sample-card";
 import { TypefaceComparison } from "@/components/typeface-comparison";
 import type { Pairing, TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
+import { getGlyphPath, getTypefacePath } from "@/lib/routes";
 
 const CHARACTER_EXAMPLES = [
   "Aa",
@@ -140,7 +141,9 @@ export function TypefaceDetail({
               <ul>
                 {typeface.familyFaces.map((familyFace) => (
                   <li key={familyFace}>
-                    <Link href={`/${resolveTypefaceSlugByName(familyFace)}/`}>{familyFace}</Link>
+                    <Link href={getTypefacePath(resolveTypefaceSlugByName(familyFace))}>
+                      {familyFace}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -151,7 +154,7 @@ export function TypefaceDetail({
         <div className="type-detail-table examples-characters gr1 gc6">
           <div className="meta dark top flex-row">
             <p className="name">Characters</p>
-            <Link className="glyph-explorer" href={`/${typeface.slug}/glyphs/`}>
+            <Link className="glyph-explorer" href={getGlyphPath(typeface.slug)}>
               Explore all characters
             </Link>
           </div>

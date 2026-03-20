@@ -4,15 +4,16 @@ import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { GlyphInspector } from "@/components/glyph-inspector";
 import { PageShell } from "@/components/page-shell";
-import { getSiteData } from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
+import { getAllTypefaceSlugs, getGlyphPageBySlug, getTypefaceBySlug } from "@/lib/content";
+import { getGlyphPath, getTypefacePath } from "@/lib/routes";
 
 export const dynamicParams = false;
 
+const SITE_NAME = "Beautiful Web Type";
+const TWITTER_CREATOR = "@ubuwaits";
+
 export function generateStaticParams() {
-  return getSiteData().typefaces.map((typeface) => ({
-    typefaceSlug: typeface.slug
-  }));
+  return getAllTypefaceSlugs().map((typefaceSlug) => ({ typefaceSlug }));
 }
 
 export async function generateMetadata({
@@ -21,18 +22,36 @@ export async function generateMetadata({
   params: Promise<{ typefaceSlug: string }>;
 }): Promise<Metadata> {
   const { typefaceSlug } = await params;
-  const typeface = getSiteData().typefaceBySlug.get(typefaceSlug);
+  const typeface = getTypefaceBySlug(typefaceSlug);
 
   if (!typeface) {
     return {};
   }
 
-  return buildPageMetadata({
-    title: `${typeface.name} Glyph Inspector`,
-    description: `Explore the complete character set for the free font ${typeface.name}`,
-    imagePath: `/assets/images/${typeface.slug}.png`,
-    path: `/${typeface.slug}/glyphs/`
-  });
+  const title = `${typeface.name} Glyph Inspector`;
+  const description = `Explore the complete character set for the free font ${typeface.name}`;
+  const imagePath = `/assets/images/${typeface.slug}.png`;
+  const path = getGlyphPath(typeface.slug);
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: path
+    },
+    openGraph: {
+      title,
+      siteName: SITE_NAME,
+      description,
+      url: path,
+      images: [imagePath]
+    },
+    twitter: {
+      card: "summary_large_image",
+      creator: TWITTER_CREATOR,
+      images: [imagePath]
+    }
+  };
 }
 
 export default async function GlyphPage({
@@ -41,9 +60,8 @@ export default async function GlyphPage({
   params: Promise<{ typefaceSlug: string }>;
 }) {
   const { typefaceSlug } = await params;
-  const site = getSiteData();
-  const typeface = site.typefaceBySlug.get(typefaceSlug);
-  const glyphPage = site.glyphPageBySlug.get(typefaceSlug);
+  const typeface = getTypefaceBySlug(typefaceSlug);
+  const glyphPage = getGlyphPageBySlug(typefaceSlug);
 
   if (!typeface || !glyphPage) {
     notFound();
@@ -52,18 +70,18 @@ export default async function GlyphPage({
   return (
     <PageShell bodyClass={glyphPage.bodyClass}>
       <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([
+        items={[
           { name: "Free & Open-Source Fonts", path: "/" },
           { name: typeface.category, path: `/${typeface.categorySlug}/` },
-          { name: typeface.name, path: `/${typeface.slug}/` },
-          { name: "Glyph Inspector", path: `/${typeface.slug}/glyphs/` }
-        ])}
+          { name: typeface.name, path: getTypefacePath(typeface.slug) },
+          { name: "Glyph Inspector", path: getGlyphPath(typeface.slug) }
+        ]}
       />
       <GlyphInspector
         fontClassName={typeface.slug}
         fontFile={glyphPage.fontFile}
         typefaceName={typeface.name}
-        typefacePath={`/${typeface.slug}/`}
+        typefacePath={getTypefacePath(typeface.slug)}
       />
     </PageShell>
   );

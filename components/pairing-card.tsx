@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import type { Pairing } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
+import { getTypefacePath } from "@/lib/routes";
 
 type PairingCardProps = {
   pairing: Pairing;
@@ -20,14 +21,17 @@ export function PairingCard({ pairing, currentTypefaceName }: PairingCardProps) 
         {pairedTypefaceName ? (
           <p>
             Paired with{" "}
-            <Link href={`/${resolveTypefaceSlugByName(pairedTypefaceName)}/`}>
+            <Link href={getTypefacePath(resolveTypefaceSlugByName(pairedTypefaceName))}>
               {pairedTypefaceName}
             </Link>
           </p>
         ) : (
           <p className="pairing-list">
             {pairing.typefaces.map((typefaceName) => (
-              <Link key={typefaceName} href={`/${resolveTypefaceSlugByName(typefaceName)}/`}>
+              <Link
+                key={typefaceName}
+                href={getTypefacePath(resolveTypefaceSlugByName(typefaceName))}
+              >
                 {typefaceName}
               </Link>
             ))}
