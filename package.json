@@ -16,6 +16,7 @@
     "test:e2e": "pnpm prepare:static && playwright test"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
