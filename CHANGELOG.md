@@ -1,9 +1,12 @@
 # Changelog
 
-## 06 June 2025
+## 20 Mar 2026
+* **Removed Jost**, as the creator now charges for the variable font.
+
+## 06 Jun 2025
 * **Added [Commissioner](https://beautifulwebtype.com/commissioner/)**.
 
-## 05 June 2025
+## 05 Jun 2025
 * **Added [Instrument Sans](https://beautifulwebtype.com/instrument-sans/)**.
 * **Added [Instrument Serif](https://beautifulwebtype.com/instrument-serif/)**.
 
