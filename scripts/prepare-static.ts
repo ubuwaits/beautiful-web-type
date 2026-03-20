@@ -8,7 +8,7 @@ const PUBLIC_DIR = path.join(ROOT_DIR, "public");
 const GOOGLE_VERIFICATION_FILE = "google146824b99fdbed48.html";
 const GOOGLE_VERIFICATION_CONTENT =
   "google-site-verification: google146824b99fdbed48.html\n";
-const LEGACY_UNUSED_PUBLIC_FILES = ["CHANGELOG.md", "CNAME", "LICENSE", "README.md"];
+const REPO_ROOT_DOCUMENTATION_FILES = ["CHANGELOG.md", "LICENSE", "README.md"];
 
 const DIRECTORIES_TO_CLEAR = ["assets", "css", "js", "v1", ".well-known"];
 const DIRECTORIES_TO_COPY = [
@@ -29,7 +29,7 @@ async function clearGeneratedPublicFiles() {
 
   for (const fileName of [
     ...FILES_TO_COPY,
-    ...LEGACY_UNUSED_PUBLIC_FILES,
+    ...REPO_ROOT_DOCUMENTATION_FILES,
     GOOGLE_VERIFICATION_FILE,
     "feed.xml",
     "sitemap.xml"
