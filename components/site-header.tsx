@@ -74,6 +74,10 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  if (pathname.startsWith("/v1")) {
+    return null;
+  }
+
   const activeSection = useMemo(() => {
     const [firstSegment = ""] = pathname.split("/").filter(Boolean);
 

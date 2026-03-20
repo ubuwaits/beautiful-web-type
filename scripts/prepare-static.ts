@@ -10,13 +10,20 @@ const GOOGLE_VERIFICATION_CONTENT =
   "google-site-verification: google146824b99fdbed48.html\n";
 const LEGACY_UNUSED_PUBLIC_FILES = ["CHANGELOG.md", "CNAME", "LICENSE", "README.md"];
 
-const DIRECTORIES_TO_COPY = ["assets", "css", "js", "v1", ".well-known"];
+const DIRECTORIES_TO_CLEAR = ["assets", "css", "js", "v1", ".well-known"];
+const DIRECTORIES_TO_COPY = [
+  { source: "assets", target: "assets" },
+  { source: "css", target: "css" },
+  { source: "js", target: "js" },
+  { source: "v1/stylesheets", target: "v1/stylesheets" },
+  { source: ".well-known", target: ".well-known" }
+];
 const FILES_TO_COPY = ["favicon-16x16.png", "favicon-32x32.png", "favicon-96x96.png"];
 
 async function clearGeneratedPublicFiles() {
   await mkdir(PUBLIC_DIR, { recursive: true });
 
-  for (const directory of DIRECTORIES_TO_COPY) {
+  for (const directory of DIRECTORIES_TO_CLEAR) {
     await rm(path.join(PUBLIC_DIR, directory), { force: true, recursive: true });
   }
 
@@ -33,7 +40,7 @@ async function clearGeneratedPublicFiles() {
 
 async function copyStaticEntries() {
   for (const directory of DIRECTORIES_TO_COPY) {
-    await cp(path.join(ROOT_DIR, directory), path.join(PUBLIC_DIR, directory), {
+    await cp(path.join(ROOT_DIR, directory.source), path.join(PUBLIC_DIR, directory.target), {
       recursive: true
     });
   }
