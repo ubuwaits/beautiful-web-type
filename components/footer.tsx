@@ -77,7 +77,7 @@ export function SiteFooter() {
             </a>
           </li>
           <li>
-            <Link href="/feed.xml">Atom feed</Link>
+            <a href="/feed.xml">Atom feed</a>
           </li>
           <li>
             <a href="/v1/">Old version of site</a>
