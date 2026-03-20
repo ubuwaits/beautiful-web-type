@@ -1,28 +1,27 @@
+import type { Metadata } from "next";
+
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { CategoryPage } from "@/components/category-page";
 import { PageShell } from "@/components/page-shell";
 import { getSiteData, getTypefacesByCategory } from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
 
 const site = getSiteData();
-const category = site.categoriesBySlug.get("display")!;
 
-export const metadata = buildPageMetadata({
-  title: category.title,
-  description:
-    category.description ??
-    "Discover the best free fonts from Google and across the web. See beautiful examples, recommended pairings, OpenType features, and more.",
-  path: category.permalink
-});
+export const metadata: Metadata = {
+  title: "In-Depth Guide to the Best Free Headline & Display Fonts",
+  alternates: {
+    canonical: "/display/"
+  }
+};
 
 export default function DisplayPage() {
   return (
-    <PageShell bodyClass={category.bodyClass}>
+    <PageShell bodyClass="display">
       <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([
+        items={[
           { name: "Free & Open-Source Fonts", path: "/" },
-          { name: "Display", path: category.permalink }
-        ])}
+          { name: "Display", path: "/display/" }
+        ]}
       />
       <CategoryPage
         heading="Display Typefaces"

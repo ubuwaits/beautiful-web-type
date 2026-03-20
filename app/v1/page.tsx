@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { buildPageMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
 
 const LEGACY_V1_PATH = path.join(process.cwd(), "v1/index.html");
 
@@ -17,11 +17,15 @@ function extractBodyHtml(html: string): string {
 
 const legacyBodyHtml = extractBodyHtml(fs.readFileSync(LEGACY_V1_PATH, "utf8"));
 
-export const metadata = buildPageMetadata({
-  title: "Beautiful Web Type - the best typefaces from Google Fonts",
+export const metadata: Metadata = {
+  title: {
+    absolute: "Beautiful Web Type - the best typefaces from Google Fonts"
+  },
   description: "A showcase of the best typefaces from the Google web fonts directory.",
-  path: "/v1/"
-});
+  alternates: {
+    canonical: "/v1/"
+  }
+};
 
 export default function LegacyV1Page() {
   return (

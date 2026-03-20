@@ -1,28 +1,27 @@
+import type { Metadata } from "next";
+
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { CategoryPage } from "@/components/category-page";
 import { PageShell } from "@/components/page-shell";
 import { getSiteData, getTypefacesByCategory } from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
 
 const site = getSiteData();
-const category = site.categoriesBySlug.get("sans-serif")!;
 
-export const metadata = buildPageMetadata({
-  title: category.title,
-  description:
-    category.description ??
-    "Discover the best free fonts from Google and across the web. See beautiful examples, recommended pairings, OpenType features, and more.",
-  path: category.permalink
-});
+export const metadata: Metadata = {
+  title: "In-Depth Guide to the Best Free Sans-Serif Fonts",
+  alternates: {
+    canonical: "/sans-serif/"
+  }
+};
 
 export default function SansSerifPage() {
   return (
-    <PageShell bodyClass={category.bodyClass}>
+    <PageShell bodyClass="sans-serif">
       <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([
+        items={[
           { name: "Free & Open-Source Fonts", path: "/" },
-          { name: "Sans-Serif", path: category.permalink }
-        ])}
+          { name: "Sans-Serif", path: "/sans-serif/" }
+        ]}
       />
       <CategoryPage
         heading="Sans-Serif Typefaces"

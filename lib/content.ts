@@ -3,11 +3,6 @@ import path from "node:path";
 
 import matter from "gray-matter";
 
-export const SITE_NAME = "Beautiful Web Type";
-export const SITE_URL = "https://www.beautifulwebtype.com";
-export const DEFAULT_SITE_DESCRIPTION =
-  "Discover the best free fonts from Google and across the web. See beautiful examples, recommended pairings, OpenType features, and more.";
-
 export type CategoryName = "Display" | "Monospaced" | "Sans-Serif" | "Serif";
 
 export type CategorySlug = "display" | "monospaced" | "sans-serif" | "serif";
@@ -73,19 +68,7 @@ export type TextData = {
   paragraphs: string[];
 };
 
-export type StaticPageConfig = {
-  slug: string;
-  title: string;
-  description?: string;
-  bodyClass?: string;
-  permalink: string;
-};
-
 export type SiteData = {
-  homePage: StaticPageConfig;
-  pairingsPage: StaticPageConfig;
-  categories: StaticPageConfig[];
-  categoriesBySlug: Map<string, StaticPageConfig>;
   typefaces: Typeface[];
   typefaceBySlug: Map<string, Typeface>;
   typefaceByName: Map<string, Typeface>;
@@ -102,66 +85,31 @@ export type SiteData = {
 };
 
 const ROOT_DIR = process.cwd();
+const SITE_NAME = "Beautiful Web Type";
+const SITE_ORIGIN = "https://www.beautifulwebtype.com";
 const TYPEFACES_DIR = path.join(ROOT_DIR, "_typefaces");
 const GLYPHS_DIR = path.join(ROOT_DIR, "_glyphs");
 const SAMPLES_DIR = path.join(ROOT_DIR, "_samples");
 const PAIRINGS_DIR = path.join(ROOT_DIR, "_pairings");
 
-const HOME_PAGE_CONFIG: StaticPageConfig = {
-  slug: "home",
-  title: "In-Depth Guide to the Best Free Fonts",
-  permalink: "/"
-};
+const STATIC_PUBLIC_ROUTES = [
+  "/",
+  "/display/",
+  "/monospaced/",
+  "/sans-serif/",
+  "/serif/",
+  "/pairings/"
+] as const;
 
-const PAIRINGS_PAGE_CONFIG: StaticPageConfig = {
-  slug: "pairings",
-  title: "Recommended Typeface Pairings",
-  description: "See beautiful examples of recommended pairings using only free & open-source fonts.",
-  bodyClass: "pairings",
-  permalink: "/pairings/"
-};
-
-const CATEGORY_PAGE_CONFIGS: StaticPageConfig[] = [
-  {
-    slug: "display",
-    title: "In-Depth Guide to the Best Free Headline & Display Fonts",
-    bodyClass: "display",
-    permalink: "/display/"
-  },
-  {
-    slug: "monospaced",
-    title: "In-Depth Guide to the Best Free Monospaced Fonts",
-    bodyClass: "monospaced",
-    permalink: "/monospaced/"
-  },
-  {
-    slug: "sans-serif",
-    title: "In-Depth Guide to the Best Free Sans-Serif Fonts",
-    bodyClass: "sans-serif",
-    permalink: "/sans-serif/"
-  },
-  {
-    slug: "serif",
-    title: "In-Depth Guide to the Best Free Serif Fonts",
-    bodyClass: "serif",
-    permalink: "/serif/"
-  }
-];
-
-const RESERVED_TOP_LEVEL_SLUGS = new Set([
+const NON_TYPEFACE_TOP_LEVEL_PATHS = [
   "assets",
   "css",
-  "display",
   "feed.xml",
   "google146824b99fdbed48.html",
   "js",
-  "monospaced",
-  "pairings",
-  "sans-serif",
-  "serif",
   "sitemap.xml",
   "v1"
-]);
+] as const;
 
 const CATEGORY_SLUGS: Record<CategoryName, CategorySlug> = {
   Display: "display",
@@ -169,6 +117,17 @@ const CATEGORY_SLUGS: Record<CategoryName, CategorySlug> = {
   "Sans-Serif": "sans-serif",
   Serif: "serif"
 };
+
+function routeToTopLevelSlug(routePath: string): string | undefined {
+  return routePath.split("/").filter(Boolean)[0];
+}
+
+const RESERVED_TOP_LEVEL_SLUGS = new Set([
+  ...STATIC_PUBLIC_ROUTES.map(routeToTopLevelSlug).filter(
+    (routeSlug): routeSlug is string => routeSlug !== undefined
+  ),
+  ...NON_TYPEFACE_TOP_LEVEL_PATHS
+]);
 
 function listFilesRecursively(directory: string, extension: string): string[] {
   const entries = fs
@@ -500,14 +459,7 @@ export function getSiteData(): SiteData {
     }
   }
 
-  const categories = CATEGORY_PAGE_CONFIGS;
-  const categoriesBySlug = new Map(categories.map((entry) => [entry.slug, entry]));
-
   cachedSiteData = {
-    homePage: HOME_PAGE_CONFIG,
-    pairingsPage: PAIRINGS_PAGE_CONFIG,
-    categories,
-    categoriesBySlug,
     typefaces,
     typefaceBySlug,
     typefaceByName,
@@ -528,7 +480,7 @@ export function getSiteData(): SiteData {
   return cachedSiteData;
 }
 
-export function getTypefacesByCategory(categorySlug: string): Typeface[] {
+export function getTypefacesByCategory(categorySlug: CategorySlug): Typeface[] {
   return getSiteData().typefaces.filter((entry) => entry.categorySlug === categorySlug);
 }
 
@@ -563,9 +515,7 @@ export function getPublicRoutes(): string[] {
   const site = getSiteData();
 
   return [
-    "/",
-    ...site.categories.map((entry) => entry.permalink),
-    site.pairingsPage.permalink,
+    ...STATIC_PUBLIC_ROUTES,
     ...site.typefaces.map((entry) => getTypefacePath(entry)),
     ...site.typefaces.map((entry) => getGlyphPath(entry))
   ];
@@ -581,7 +531,7 @@ function xmlEscape(value: string): string {
 }
 
 function absoluteUrl(routePath: string): string {
-  return new URL(routePath, SITE_URL).toString();
+  return new URL(routePath, SITE_ORIGIN).toString();
 }
 
 export function buildSitemapXml(buildDate = new Date().toISOString()): string {
@@ -628,13 +578,13 @@ export function buildFeedXml(buildDate = new Date().toISOString()): string {
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>${SITE_NAME}</title>
   <link href="${absoluteUrl("/feed.xml")}" rel="self" />
-  <link href="${SITE_URL}" />
-  <id>${SITE_URL}/</id>
+  <link href="${SITE_ORIGIN}" />
+  <id>${SITE_ORIGIN}/</id>
   <updated>${xmlEscape(buildDate)}</updated>
   <author>
     <name>Chad Mazzola</name>
     <email>ubuwaits@gmail.com</email>
-    <uri>${SITE_URL}</uri>
+    <uri>${SITE_ORIGIN}</uri>
   </author>
 ${entries}
 </feed>

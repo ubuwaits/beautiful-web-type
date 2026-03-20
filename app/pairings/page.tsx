@@ -1,23 +1,25 @@
+import type { Metadata } from "next";
+
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
 import { getSiteData } from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
 
 const site = getSiteData();
 
-export const metadata = buildPageMetadata({
-  title: site.pairingsPage.title,
-  description: site.pairingsPage.description ?? "",
-  path: site.pairingsPage.permalink
-});
+export const metadata: Metadata = {
+  title: "Recommended Typeface Pairings",
+  description:
+    "See beautiful examples of recommended pairings using only free & open-source fonts.",
+  alternates: {
+    canonical: "/pairings/"
+  }
+};
 
 export default function PairingsPage() {
   return (
-    <PageShell bodyClass={site.pairingsPage.bodyClass}>
-      <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([{ name: "Free & Open-Source Fonts", path: "/" }])}
-      />
+    <PageShell bodyClass="pairings">
+      <BreadcrumbJsonLd items={[{ name: "Free & Open-Source Fonts", path: "/" }]} />
       <div className="samples grid">
         <div className="gr1 gc12 page-header center">
           <h1>Recommended Typeface Pairings</h1>

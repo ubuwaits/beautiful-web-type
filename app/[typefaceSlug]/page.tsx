@@ -5,9 +5,11 @@ import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { PageShell } from "@/components/page-shell";
 import { TypefaceDetail } from "@/components/typeface-detail";
 import { getSiteData } from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
+
+const SITE_NAME = "Beautiful Web Type";
+const TWITTER_CREATOR = "@ubuwaits";
 
 export function generateStaticParams() {
   return getSiteData().typefaces.map((typeface) => ({
@@ -27,12 +29,30 @@ export async function generateMetadata({
     return {};
   }
 
-  return buildPageMetadata({
-    title: `Complete Guide to ${typeface.name}`,
-    description: `Complete guide to the free font ${typeface.name}. See beautiful examples, recommended pairings, OpenType features, and more.`,
-    imagePath: `/assets/images/${typeface.slug}.png`,
-    path: `/${typeface.slug}/`
-  });
+  const title = `Complete Guide to ${typeface.name}`;
+  const description = `Complete guide to the free font ${typeface.name}. See beautiful examples, recommended pairings, OpenType features, and more.`;
+  const imagePath = `/assets/images/${typeface.slug}.png`;
+  const path = `/${typeface.slug}/`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: path
+    },
+    openGraph: {
+      title,
+      siteName: SITE_NAME,
+      description,
+      url: path,
+      images: [imagePath]
+    },
+    twitter: {
+      card: "summary_large_image",
+      creator: TWITTER_CREATOR,
+      images: [imagePath]
+    }
+  };
 }
 
 export default async function TypefacePage({
@@ -59,11 +79,11 @@ export default async function TypefacePage({
   return (
     <PageShell bodyClass={typeface.bodyClass}>
       <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([
+        items={[
           { name: "Free & Open-Source Fonts", path: "/" },
           { name: typeface.category, path: `/${typeface.categorySlug}/` },
           { name: typeface.name, path: `/${typeface.slug}/` }
-        ])}
+        ]}
       />
       <TypefaceDetail
         pairings={pairings}

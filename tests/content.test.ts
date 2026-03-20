@@ -21,12 +21,22 @@ describe("content graph", () => {
   });
 
   it("includes key static routes in the generated sitemap route list", () => {
+    const site = getSiteData();
     const routes = getPublicRoutes();
 
-    expect(routes).toContain("/");
-    expect(routes).toContain("/pairings/");
-    expect(routes).toContain("/inter/");
-    expect(routes).toContain("/inter/glyphs/");
+    expect(routes).toEqual(
+      expect.arrayContaining([
+        "/",
+        "/display/",
+        "/monospaced/",
+        "/sans-serif/",
+        "/serif/",
+        "/pairings/",
+        "/inter/",
+        "/inter/glyphs/"
+      ])
+    );
+    expect(routes).toHaveLength(6 + site.typefaces.length * 2);
   });
 
   it("builds feed and sitemap XML from the typed content graph", () => {

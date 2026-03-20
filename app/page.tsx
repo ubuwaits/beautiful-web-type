@@ -1,27 +1,24 @@
+import type { Metadata } from "next";
+
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
 import { SampleCard } from "@/components/sample-card";
-import {
-  DEFAULT_SITE_DESCRIPTION,
-  getSiteData
-} from "@/lib/content";
-import { buildBreadcrumbJsonLd, buildPageMetadata } from "@/lib/seo";
+import { getSiteData } from "@/lib/content";
 
 const site = getSiteData();
 
-export const metadata = buildPageMetadata({
-  title: site.homePage.title,
-  description: DEFAULT_SITE_DESCRIPTION,
-  path: "/"
-});
+export const metadata: Metadata = {
+  title: "In-Depth Guide to the Best Free Fonts",
+  alternates: {
+    canonical: "/"
+  }
+};
 
 export default function HomePage() {
   return (
     <PageShell>
-      <BreadcrumbJsonLd
-        value={buildBreadcrumbJsonLd([{ name: "Free & Open-Source Fonts", path: "/" }])}
-      />
+      <BreadcrumbJsonLd items={[{ name: "Free & Open-Source Fonts", path: "/" }]} />
       <div className="samples grid">
         <div className="gr1 gc12 page-header center">
           <h1>
