@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import type { ReactNode } from "react";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/site-header";
@@ -70,11 +69,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <SiteFooter />
         <Analytics />
-        <Script
-          data-cf-beacon='{"token": "72080d8c1b674ef5a1b594f9948af293"}'
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
