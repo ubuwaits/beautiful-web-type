@@ -1,0 +1,40 @@
+name: Instrument Sans
+dateAdded: '2025-06-05'
+category: Sans-Serif
+styles: Variable
+italic: true
+sampleShade: light
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: Extra-Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi-Bold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra-Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.000
+  date: 20 Mar 2023
+projectUrl: https://github.com/Instrument/instrument-sans
+gFontsUrl: https://fonts.google.com/specimen/Instrument+Sans
+creator:
+  name: Rodrigo Fuenzalida
+  url: https://www.instagram.com/erre.efe
+description: Instrument Sans is a variable sans-serif which balances an abundance of precision with subtle notes of playfulness.
+familyFaces:
+  - Instrument Serif
+comparisonFaces:
+  - Instrument Serif
+  - Inter
+  - IBM Plex Sans

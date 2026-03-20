@@ -1,0 +1,37 @@
+name: Alegreya Sans
+dateAdded: '2018-10-15'
+category: Sans-Serif
+styles: 14
+italic: true
+smallcap: true
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra-Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v2.008
+  date: 13 Mar 2018
+projectUrl: https://github.com/huertatipografica/Alegreya-Sans
+gFontsUrl: https://fonts.google.com/specimen/Alegreya+Sans
+creator:
+  name: Huerta Tipográfica
+  url: https://huertatipografica.com/en
+description: Alegreya Sans is the companion to Alegreya, with both typefaces taking inspiration from calligraphic letter forms. Offering seven weights, along with an expressive italic and small cap, it works well in a variety of contexts, from long-form texts to headlines.
+familyFaces:
+  - Alegreya
+comparisonFaces:
+  - Alegreya
+  - FiraGO
+  - IBM Plex Sans
+  - Inria Sans

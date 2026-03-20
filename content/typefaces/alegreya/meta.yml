@@ -1,0 +1,34 @@
+name: Alegreya
+dateAdded: '2018-10-15'
+category: Serif
+styles: 10
+italic: true
+smallcap: true
+sampleShade: light
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra-Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v2.008
+  date: 30 Oct 2018
+projectUrl: https://github.com/huertatipografica/Alegreya
+gFontsUrl: https://fonts.google.com/specimen/Alegreya
+creator:
+  name: Huerta Tipográfica
+  url: https://huertatipografica.com/en
+description: Alegreya is a contemporary interpretation of a calligraphic face, designed for long-form literary texts. It offers five weights, a carefully designed italic, small caps, and good OpenType support. This rich typographic palette makes it a versatile and expressive typeface.
+familyFaces:
+  - Alegreya Sans
+comparisonFaces:
+  - Alegreya Sans
+  - IBM Plex Serif
+  - Source Serif Pro
+  - Vollkorn

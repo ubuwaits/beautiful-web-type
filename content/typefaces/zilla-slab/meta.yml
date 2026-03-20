@@ -1,0 +1,26 @@
+name: Zilla Slab
+dateAdded: '2018-10-15'
+category: Serif
+styles: 10
+italic: true
+smallcap: true
+weights:
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi-Bold
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v1.002
+  date: 23 Aug 2017
+projectUrl: https://github.com/mozilla/zilla-slab
+gFontsUrl: https://fonts.google.com/specimen/Zilla+Slab
+creator:
+  name: Typotheque
+  url: https://www.typotheque.com
+description: Zilla Slab is Mozilla’s core typeface. It’s a contemporary slab serif with true italics, small caps and good OpenType support.

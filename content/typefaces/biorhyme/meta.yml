@@ -1,0 +1,28 @@
+name: BioRhyme
+dateAdded: '2018-10-15'
+category: Display
+styles: 5
+weights:
+  - weight: 200
+    name: Extra-Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra-Bold
+latestRelease:
+  version: v1.600
+  date: 9 Mar 2016
+projectUrl: https://github.com/aoifemooney/makingbiorhyme
+gFontsUrl: https://fonts.google.com/specimen/BioRhyme
+creator:
+  name: Aoife Mooney
+  url: http://www.aoifemooney.org
+description: BioRhyme takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme and its sister face BioRhyme Expanded take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
+familyFaces:
+  - BioRhyme Expanded
+comparisonFaces:
+  - BioRhyme Expanded

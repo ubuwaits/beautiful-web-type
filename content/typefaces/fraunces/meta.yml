@@ -1,0 +1,34 @@
+name: Fraunces
+dateAdded: '2020-11-22'
+category: Display
+styles: Variable
+italic: true
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: Extra-Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi Bold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra-Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.0
+  date: 29 Oct 2020
+projectUrl: https://github.com/undercasetype/Fraunces
+creator:
+  name: Undercase Type
+  url: http://www.undercase.xyz
+description: 'Fraunces is a display face inspired by 20th century faces such as Windsor and Cooper. It’s available as a variable font, making use of several custom axes: ‘SOFT’ and ‘WONK’, along with the registered axes ‘wght’ and ‘opsz’.'
+comparisonFaces:
+  - Playfair Display

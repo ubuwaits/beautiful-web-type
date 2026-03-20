@@ -1,0 +1,26 @@
+name: Space Mono
+dateAdded: '2019-01-08'
+category: Monospaced
+styles: 4
+italic: true
+sampleShade: light
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v1.0
+  date: 16 Feb 2017
+projectUrl: https://github.com/googlefonts/spacemono
+gFontsUrl: https://fonts.google.com/specimen/Space+Mono
+creator:
+  name: Colophon Foundry
+  url: https://www.colophon-foundry.org
+description: Space Mono is a monospaced typeface built on a geometric foundation with grotesque details. It’s suitable for both general purpose uses and display settings.
+familyFaces:
+  - Space Grotesk
+comparisonFaces:
+  - IBM Plex Mono
+  - Source Code Pro
+  - Space Grotesk

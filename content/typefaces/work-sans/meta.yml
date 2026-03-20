@@ -1,0 +1,39 @@
+name: Work Sans
+dateAdded: '2018-11-26'
+category: Sans-Serif
+styles: Variable
+italic: true
+smallcap: true
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: ExtraLight
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: SemiBold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: ExtraBold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v?
+  date: 1 May 2020
+projectUrl: https://github.com/weiweihuanghuang/Work-Sans
+gFontsUrl: https://fonts.google.com/specimen/Work+Sans
+creator:
+  name: Wei Huang
+  url: https://twitter.com/w__h_
+description: Work Sans is a sans-serif inspired by early Grotesque faces. It recently received a major update, adding an italic style and a wide selection of OpenType features. The face has a slightly playful feel, especially at heavier weights.
+comparisonFaces:
+  - Archivo
+  - Cooper Hewitt
+  - Poppins
+  - Source Sans Pro

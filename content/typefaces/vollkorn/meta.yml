@@ -1,0 +1,33 @@
+name: Vollkorn
+dateAdded: '2018-10-15'
+category: Serif
+styles: 12
+italic: true
+smallcap: true
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: SemiBold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: ExtraBold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v4.105
+  date: 09 May 2018
+projectUrl: http://vollkorn-typeface.com/#download
+gFontsUrl: https://fonts.google.com/specimen/Vollkorn
+creator:
+  name: Friedrich Althausen
+  url: https://friedrichalthausen.de/
+description: Vollkorn is the German word for ‘wholemeal’, which designer Friedrich Althausen felt described this ‘dark, sturdy, and grainy’ serif well. It offers six weights, small caps, and a number of OpenType features, making it perfect for (to stretch this analogy even further) everyday, bread and butter usage.
+comparisonFaces:
+  - Alegreya
+  - Inria Serif
+  - Lora
+  - Source Serif Pro

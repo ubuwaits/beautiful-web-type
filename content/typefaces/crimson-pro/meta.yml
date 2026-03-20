@@ -1,0 +1,33 @@
+name: Crimson Pro
+dateAdded: '2020-05-23'
+category: Serif
+styles: Variable
+italic: true
+sampleShade: light
+weights:
+  - weight: 200
+    name: Extra Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.002
+  date: 21 Feb 2019
+projectUrl: https://github.com/Fonthausen/CrimsonPro
+gFontsUrl: https://fonts.google.com/specimen/Crimson+Pro
+creator:
+  name: Jacques Le Bailly
+  url: http://baronvonfonthausen.com
+description: Released in January 2019, Crimson Pro is a redesign of the Crimson face by Sebastian Kosch. It’s ideal for long-form texts where readability is key.
+comparisonFaces:
+  - Vollkorn
+  - Source Serif Pro

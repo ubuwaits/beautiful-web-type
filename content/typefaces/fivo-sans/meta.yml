@@ -1,0 +1,35 @@
+name: Fivo Sans
+dateAdded: '2019-01-03'
+category: Sans-Serif
+styles: 14
+italic: true
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Heavy
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.0
+  date: 30 Jun 2017
+projectUrl: https://www.behance.net/gallery/53653425/Fivo-Sans-Free-Font-Family
+creator:
+  name: Alex Slobzheninov
+  url: https://www.behance.net/slobzheninov
+description: Fivo Sans is a neo-grotesque face inspired by the International Typographic Style.
+familyFaces:
+  - Fivo Sans Modern
+comparisonFaces:
+  - Fivo Sans Modern
+  - Jost
+  - Archivo
+  - Cooper Hewitt

@@ -1,0 +1,28 @@
+name: Oswald
+dateAdded: '2018-10-15'
+category: Display
+styles: 7
+weights:
+  - weight: 200
+    name: Extra-Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi-Bold
+  - weight: 700
+    name: Bold
+  - weight: 900
+    name: Heavy
+latestRelease:
+  version: v4.004
+  date: 22 Sep 2017
+projectUrl: https://github.com/googlefonts/OswaldFont
+gFontsUrl: https://fonts.google.com/specimen/Oswald
+creator:
+  name: Vernon Adams
+  url: https://fonts.google.com/?query=Vernon+Adams
+description: Oswald, inspired by the ‘Alternate Gothic’ style of typefaces, is a condensed sans-serif, well-suited to headlines, especially when set in all caps. Originally designed by the late Vernon Adams, work on the typeface continues under several collaborators.

@@ -1,0 +1,41 @@
+name: IBM Plex Serif
+dateAdded: '2018-10-30'
+category: Serif
+styles: 16
+italic: true
+sampleShade: light
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: Extra-Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 450
+    name: Text
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi-Bold
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v4.0.2
+  date: 09 Dec 2019
+projectUrl: https://github.com/IBM/plex
+gFontsUrl: https://fonts.google.com/specimen/IBM+Plex+Serif
+creator:
+  name: Mike Abbink & Bold Monday
+  url: https://boldmonday.com
+description: IBM Plex is the corporate typeface for IBM. The Plex family includes Serif, Sans, Sans Condensed and Mono typefaces. They are designed to work well in user interfaces, with a surprisingly expressive italic for each.
+familyFaces:
+  - IBM Plex Mono
+  - IBM Plex Sans
+  - IBM Plex Sans Condensed
+comparisonFaces:
+  - IBM Plex Sans
+  - Inria Serif
+  - Lora
+  - Source Serif Pro

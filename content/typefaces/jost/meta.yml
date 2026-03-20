@@ -1,0 +1,38 @@
+name: Jost
+dateAdded: '2018-10-15'
+category: Sans-Serif
+styles: 18
+italic: true
+weights:
+  - weight: 100
+    name: Hairline
+  - weight: 200
+    name: Thin
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Book
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Heavy
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v3.5
+  date: 31 Jan 2019
+projectUrl: https://github.com/indestructible-type/Jost
+gFontsUrl: https://fonts.google.com/specimen/Jost
+creator:
+  name: Owen Earl
+  url: https://ewonrael.github.io
+description: Jost* is a sans-serif inspired by Futura, but with a larger x-height and more balanced capital forms. It features nine weights and two styles and is under active development.
+comparisonFaces:
+  - Cooper Hewitt
+  - IBM Plex Sans
+  - Poppins
+  - Source Sans Pro

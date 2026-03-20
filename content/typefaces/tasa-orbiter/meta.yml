@@ -1,0 +1,28 @@
+name: TASA Orbiter
+dateAdded: '2023-10-22'
+category: Sans-Serif
+styles: Variable
+sampleShade: light
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: SemiBold
+  - weight: 700
+    name: Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.001
+  date: 16 May 2023
+projectUrl: https://tasatype.localremote.co
+creator:
+  name: Local Remote
+  url: https://localremote.co/work
+description: Bespoke typeface designed for the rebrand of Taiwan Space Agency. Neo-Grotesques and right-angled strokes designed for versatility across a broad range of applications for everyday use.
+comparisonFaces:
+  - Archivo
+  - Fivo Sans
+  - iA Writer Quattro
