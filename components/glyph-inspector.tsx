@@ -3,50 +3,14 @@
 import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 
+import { loadGlyphInspectorFont, type Font, type Glyph } from "@/lib/glyph-inspector-font-loader";
+
 type GlyphInspectorProps = {
   fontClassName: string;
   fontFile: string;
   typefaceName: string;
   typefacePath: string;
 };
-
-type Glyph = {
-  index: number;
-  unicode?: number;
-  unicodes: number[];
-  name?: string;
-  advanceWidth: number;
-  draw: (
-    context: CanvasRenderingContext2D,
-    x: number,
-    y: number,
-    fontSize: number
-  ) => void;
-};
-
-type Font = {
-  numGlyphs: number;
-  unitsPerEm: number;
-  glyphs: {
-    get: (glyphIndex: number) => Glyph;
-  };
-  tables: {
-    head: {
-      xMax: number;
-      xMin: number;
-      yMax: number;
-      yMin: number;
-    };
-  };
-};
-
-declare global {
-  interface Window {
-    opentype?: {
-      load: (fontFile: string, callback: (error: Error | null, font?: Font) => void) => void;
-    };
-  }
-}
 
 function formatCssCode(unicode: number): string {
   const hexUnicode = unicode.toString(16);
@@ -145,208 +109,225 @@ export function GlyphInspector({
       return;
     }
 
-    window.opentype.load(fontFile, (error, font) => {
-      if (error || !font) {
-        console.error(`Font could not be loaded: ${error}`);
-        return;
-      }
+    let cancelled = false;
 
-      const removeClass = (className: string) => {
-        const nodes = Array.from(document.getElementsByClassName(className));
-        nodes.forEach((node) => node.classList.remove(className));
-      };
+    const initializeGlyphInspector = async () => {
+      try {
+        const font = await loadGlyphInspectorFont(fontFile);
 
-      const highlightSelectedGlyph = (glyphIndex: number) => {
-        removeClass("active");
-        document.getElementById(`g${glyphIndex}`)?.parentElement?.classList.add("active");
-      };
-
-      const displaySelectedGlyphInfo = (glyph: Glyph) => {
-        const glyphValue = glyph.unicode ?? glyph.unicodes[0];
-        const glyphMarkup =
-          glyphValue === undefined ? "Undefined" : `&#${glyphValue};`;
-
-        glyphInfo.innerHTML = `
-          <h3>Glyph</h3>
-          <p class="${fontClassName}">${glyphMarkup}</p>
-
-          <h3>Glyph Name</h3>
-          <p>${glyph.name ?? "Not available"}</p>
-
-          <h3>HTML Code</h3>
-          <p>${glyph.unicodes.map(formatHtmlCode).join(", ") || "Not available"}</p>
-
-          <h3>CSS Code</h3>
-          <p>${glyph.unicodes.map(formatCssCode).join(", ") || "Not available"}</p>
-        `;
-      };
-
-      const displaySelectedGlyph = (glyph: Glyph) => {
-        displaySelectedGlyphInfo(glyph);
-        highlightSelectedGlyph(glyph.index);
-        window.history.replaceState({}, document.title, `?i=${glyph.index}`);
-
-        detailCanvas.width = detailCanvas.parentElement?.clientWidth ?? 0;
-        detailCanvas.height = detailCanvas.width * 0.8;
-        enableHighDpiCanvas(detailCanvas);
-
-        const context = detailCanvas.getContext("2d");
-
-        if (!context) {
+        if (cancelled) {
           return;
         }
 
-        const pixelRatio = getPixelRatio();
-        const { xMin, fontBaseline, fontSize } = getGlyphPosition(font, detailCanvas, glyph);
+        const removeClass = (className: string) => {
+          const nodes = Array.from(document.getElementsByClassName(className));
+          nodes.forEach((node) => node.classList.remove(className));
+        };
 
-        context.clearRect(0, 0, detailCanvas.width, detailCanvas.height);
-        context.fillStyle = "#F9C4C4";
-        context.fillRect(
-          32,
-          fontBaseline,
-          detailCanvas.width / pixelRatio - 64,
-          1
-        );
-        glyph.draw(context, xMin, fontBaseline, fontSize);
-      };
+        const highlightSelectedGlyph = (glyphIndex: number) => {
+          removeClass("active");
+          document.getElementById(`g${glyphIndex}`)?.parentElement?.classList.add("active");
+        };
 
-      const writeGlyph = (glyphCanvas: HTMLCanvasElement, glyphIndex: number) => {
-        if (glyphIndex >= font.numGlyphs) {
-          return;
-        }
+        const displaySelectedGlyphInfo = (glyph: Glyph) => {
+          const glyphValue = glyph.unicode ?? glyph.unicodes[0];
+          const glyphMarkup =
+            glyphValue === undefined ? "Undefined" : `&#${glyphValue};`;
 
-        glyphCanvas.id = `g${glyphIndex}`;
-        glyphCanvas.dataset.glyphIndex = String(glyphIndex);
+          glyphInfo.innerHTML = `
+            <h3>Glyph</h3>
+            <p class="${fontClassName}">${glyphMarkup}</p>
 
-        const glyph = font.glyphs.get(glyphIndex);
-        const context = glyphCanvas.getContext("2d");
+            <h3>Glyph Name</h3>
+            <p>${glyph.name ?? "Not available"}</p>
 
-        if (!context) {
-          return;
-        }
+            <h3>HTML Code</h3>
+            <p>${glyph.unicodes.map(formatHtmlCode).join(", ") || "Not available"}</p>
 
-        context.clearRect(0, 0, glyphCanvas.width, glyphCanvas.height);
-        const { xMin, fontBaseline, fontSize } = getGlyphPosition(font, glyphCanvas, glyph);
-        glyph.draw(context, xMin, fontBaseline, fontSize);
-      };
+            <h3>CSS Code</h3>
+            <p>${glyph.unicodes.map(formatCssCode).join(", ") || "Not available"}</p>
+          `;
+        };
 
-      const highlightPagination = (pageNumber: number) => {
-        removeClass("selected-page");
-        document.getElementById(`p${pageNumber}`)?.classList.add("selected-page");
-      };
+        const displaySelectedGlyph = (glyph: Glyph) => {
+          displaySelectedGlyphInfo(glyph);
+          highlightSelectedGlyph(glyph.index);
+          window.history.replaceState({}, document.title, `?i=${glyph.index}`);
 
-      const clearGlyphCanvases = () => {
-        removeClass("active");
+          detailCanvas.width = detailCanvas.parentElement?.clientWidth ?? 0;
+          detailCanvas.height = detailCanvas.width * 0.8;
+          enableHighDpiCanvas(detailCanvas);
 
-        const glyphCanvases = Array.from(
-          glyphGrid.getElementsByClassName("glyph")
-        ) as HTMLCanvasElement[];
+          const context = detailCanvas.getContext("2d");
 
-        glyphCanvases.forEach((canvas) => {
-          canvas.getContext("2d")?.clearRect(0, 0, canvas.width, canvas.height);
-        });
-      };
-
-      const displaySelectedGlyphPage = (glyphsPerPage: number, pageNumber: number) => {
-        clearGlyphCanvases();
-        highlightPagination(pageNumber);
-
-        const firstGlyphIndex = pageNumber * glyphsPerPage;
-        const glyphCanvases = Array.from(
-          glyphGrid.getElementsByClassName("glyph")
-        ) as HTMLCanvasElement[];
-
-        for (let index = 0; index < glyphsPerPage; index += 1) {
-          writeGlyph(glyphCanvases[index], firstGlyphIndex + index);
-        }
-      };
-
-      const createGlyphCanvas = () => {
-        const glyphCanvasContainer = document.createElement("div");
-        glyphCanvasContainer.classList.add("glyph-container");
-
-        const canvasWidth = glyphGrid.offsetWidth / getColumnCount() - 1;
-        const glyphCanvas = document.createElement("canvas");
-        glyphCanvas.width = canvasWidth;
-        glyphCanvas.height = canvasWidth * 1.2;
-        glyphCanvas.className = "glyph";
-        enableHighDpiCanvas(glyphCanvas);
-
-        glyphCanvasContainer.appendChild(glyphCanvas);
-        glyphCanvasContainer.addEventListener("click", (event) => {
-          const target = event.target;
-
-          if (!(target instanceof HTMLCanvasElement)) {
+          if (!context) {
             return;
           }
 
-          const glyphIndex = Number(target.dataset.glyphIndex);
+          const pixelRatio = getPixelRatio();
+          const { xMin, fontBaseline, fontSize } = getGlyphPosition(font, detailCanvas, glyph);
 
-          if (Number.isNaN(glyphIndex)) {
+          context.clearRect(0, 0, detailCanvas.width, detailCanvas.height);
+          context.fillStyle = "#F9C4C4";
+          context.fillRect(
+            32,
+            fontBaseline,
+            detailCanvas.width / pixelRatio - 64,
+            1
+          );
+          glyph.draw(context, xMin, fontBaseline, fontSize);
+        };
+
+        const writeGlyph = (glyphCanvas: HTMLCanvasElement, glyphIndex: number) => {
+          if (glyphIndex >= font.numGlyphs) {
+            glyphCanvas.id = "";
+            delete glyphCanvas.dataset.glyphIndex;
             return;
           }
 
-          displaySelectedGlyph(font.glyphs.get(glyphIndex));
-        });
+          glyphCanvas.id = `g${glyphIndex}`;
+          glyphCanvas.dataset.glyphIndex = String(glyphIndex);
 
-        glyphGrid.appendChild(glyphCanvasContainer);
-      };
+          const glyph = font.glyphs.get(glyphIndex);
+          const context = glyphCanvas.getContext("2d");
 
-      const displayGlyphGrid = (glyphsPerPage: number) => {
-        glyphGrid.innerHTML = "";
+          if (!context) {
+            return;
+          }
 
-        for (let index = 0; index < glyphsPerPage; index += 1) {
-          createGlyphCanvas();
-        }
-      };
+          context.clearRect(0, 0, glyphCanvas.width, glyphCanvas.height);
+          const { xMin, fontBaseline, fontSize } = getGlyphPosition(font, glyphCanvas, glyph);
+          glyph.draw(context, xMin, fontBaseline, fontSize);
+        };
 
-      const displayPagination = (glyphsPerPage: number) => {
-        const numberOfPages = Math.ceil(font.numGlyphs / glyphsPerPage);
-        glyphPagination.innerHTML = "";
+        const highlightPagination = (pageNumber: number) => {
+          removeClass("selected-page");
+          document.getElementById(`p${pageNumber}`)?.classList.add("selected-page");
+        };
 
-        for (let index = 0; index < numberOfPages; index += 1) {
-          const pageLink = document.createElement("a");
-          pageLink.href = "#";
-          pageLink.id = `p${index}`;
-          pageLink.textContent = String(index + 1);
+        const clearGlyphCanvases = () => {
+          removeClass("active");
 
-          pageLink.addEventListener("click", (event) => {
-            event.preventDefault();
-            displaySelectedGlyphPage(glyphsPerPage, index);
+          const glyphCanvases = Array.from(
+            glyphGrid.getElementsByClassName("glyph")
+          ) as HTMLCanvasElement[];
+
+          glyphCanvases.forEach((canvas) => {
+            canvas.getContext("2d")?.clearRect(0, 0, canvas.width, canvas.height);
+          });
+        };
+
+        const displaySelectedGlyphPage = (glyphsPerPage: number, pageNumber: number) => {
+          clearGlyphCanvases();
+          highlightPagination(pageNumber);
+
+          const firstGlyphIndex = pageNumber * glyphsPerPage;
+          const glyphCanvases = Array.from(
+            glyphGrid.getElementsByClassName("glyph")
+          ) as HTMLCanvasElement[];
+
+          for (let index = 0; index < glyphsPerPage; index += 1) {
+            writeGlyph(glyphCanvases[index], firstGlyphIndex + index);
+          }
+        };
+
+        const createGlyphCanvas = () => {
+          const glyphCanvasContainer = document.createElement("div");
+          glyphCanvasContainer.classList.add("glyph-container");
+
+          const canvasWidth = glyphGrid.offsetWidth / getColumnCount() - 1;
+          const glyphCanvas = document.createElement("canvas");
+          glyphCanvas.width = canvasWidth;
+          glyphCanvas.height = canvasWidth * 1.2;
+          glyphCanvas.className = "glyph";
+          enableHighDpiCanvas(glyphCanvas);
+
+          glyphCanvasContainer.appendChild(glyphCanvas);
+          glyphCanvasContainer.addEventListener("click", (event) => {
+            const target = event.target;
+
+            if (!(target instanceof HTMLCanvasElement)) {
+              return;
+            }
+
+            const glyphIndex = Number(target.dataset.glyphIndex);
+
+            if (Number.isNaN(glyphIndex)) {
+              return;
+            }
+
+            displaySelectedGlyph(font.glyphs.get(glyphIndex));
           });
 
-          glyphPagination.appendChild(pageLink);
+          glyphGrid.appendChild(glyphCanvasContainer);
+        };
+
+        const displayGlyphGrid = (glyphsPerPage: number) => {
+          glyphGrid.innerHTML = "";
+
+          for (let index = 0; index < glyphsPerPage; index += 1) {
+            createGlyphCanvas();
+          }
+        };
+
+        const displayPagination = (glyphsPerPage: number) => {
+          const numberOfPages = Math.ceil(font.numGlyphs / glyphsPerPage);
+          glyphPagination.innerHTML = "";
+
+          for (let index = 0; index < numberOfPages; index += 1) {
+            const pageLink = document.createElement("a");
+            pageLink.href = "#";
+            pageLink.id = `p${index}`;
+            pageLink.textContent = String(index + 1);
+
+            pageLink.addEventListener("click", (event) => {
+              event.preventDefault();
+              displaySelectedGlyphPage(glyphsPerPage, index);
+            });
+
+            glyphPagination.appendChild(pageLink);
+          }
+        };
+
+        const getInitialGlyph = () => {
+          const searchParams = new URL(window.location.href).searchParams;
+          let glyphIndex = Number(searchParams.get("i") ?? 5);
+
+          if (Number.isNaN(glyphIndex)) {
+            glyphIndex = 5;
+          }
+
+          if (glyphIndex >= font.numGlyphs) {
+            glyphIndex = font.numGlyphs - 1;
+          }
+
+          if (glyphIndex < 0) {
+            glyphIndex = 0;
+          }
+
+          return font.glyphs.get(glyphIndex);
+        };
+
+        const glyphsPerPage = getGlyphsPerPage();
+        const initialGlyph = getInitialGlyph();
+        const initialGlyphPage = Math.floor(initialGlyph.index / glyphsPerPage);
+
+        displayPagination(glyphsPerPage);
+        displayGlyphGrid(glyphsPerPage);
+        displaySelectedGlyphPage(glyphsPerPage, initialGlyphPage);
+        displaySelectedGlyph(initialGlyph);
+      } catch (error) {
+        if (!cancelled) {
+          console.error("Font could not be loaded", error);
         }
-      };
+      }
+    };
 
-      const getInitialGlyph = () => {
-        const searchParams = new URL(window.location.href).searchParams;
-        let glyphIndex = Number(searchParams.get("i") ?? 5);
+    void initializeGlyphInspector();
 
-        if (Number.isNaN(glyphIndex)) {
-          glyphIndex = 5;
-        }
-
-        if (glyphIndex >= font.numGlyphs) {
-          glyphIndex = font.numGlyphs - 1;
-        }
-
-        if (glyphIndex < 0) {
-          glyphIndex = 0;
-        }
-
-        return font.glyphs.get(glyphIndex);
-      };
-
-      const glyphsPerPage = getGlyphsPerPage();
-      const initialGlyph = getInitialGlyph();
-      const initialGlyphPage = Math.floor(initialGlyph.index / glyphsPerPage);
-
-      displayPagination(glyphsPerPage);
-      displayGlyphGrid(glyphsPerPage);
-      displaySelectedGlyphPage(glyphsPerPage, initialGlyphPage);
-      displaySelectedGlyph(initialGlyph);
-    });
+    return () => {
+      cancelled = true;
+    };
   }, [fontClassName, fontFile, scriptReady]);
 
   return (

@@ -32,6 +32,7 @@ async function main() {
     "google146824b99fdbed48.html",
     "css/application.css",
     "js/opentype.min.js",
+    "js/wawoff2-decompress.js",
     "assets/images/card.png",
     "assets/fonts/inter/Inter-Regular.woff"
   ];

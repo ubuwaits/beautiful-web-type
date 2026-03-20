@@ -59,3 +59,13 @@ test("loads the glyph inspector and updates the glyph query param", async ({ pag
   await page.locator("#glyph-grid canvas").first().click();
   await expect(page).toHaveURL(/\/inter\/glyphs\/\?i=\d+/);
 });
+
+test("loads the Commissioner glyph inspector from WOFF2", async ({ page }) => {
+  await page.goto("/commissioner/glyphs/?i=10");
+  await page.waitForFunction(
+    () => document.querySelectorAll("#glyph-pagination a").length > 0
+  );
+
+  await page.locator("#glyph-grid canvas").first().click();
+  await expect(page).toHaveURL(/\/commissioner\/glyphs\/\?i=\d+/);
+});
