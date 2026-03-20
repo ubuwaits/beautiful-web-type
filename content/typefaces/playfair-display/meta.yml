@@ -1,0 +1,22 @@
+name: Playfair Display
+dateAdded: '2018-10-15'
+category: Display
+styles: 6
+italic: true
+smallcap: true
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 700
+    name: Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.202
+  date: 5 Nov 2017
+projectUrl: https://github.com/clauseggers/Playfair-Display
+gFontsUrl: https://fonts.google.com/specimen/Playfair+Display
+creator:
+  name: Claus Eggers Sørensen
+  url: https://forthehearts.net/
+description: Playfair Display is a transitional serif well-suited to headlines and titles. It has a very large x-height, short descenders, and extra short capitals. It offers a wide variety of typographic flavor with three weights, a beautiful italic and small caps, and a number of OpenType features.

@@ -1,0 +1,27 @@
+name: Space Grotesk
+dateAdded: '2019-02-01'
+category: Sans-Serif
+styles: Variable
+weights:
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: SemiBold
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v1.1.6
+  date: 9 Dec 2019
+projectUrl: https://github.com/floriankarsten/space-grotesk
+creator:
+  name: Florian Karsten
+  url: https://fonts.floriankarsten.com/space-grotesk
+description: Space Grotesk is a sans-serif variation of the fixed-width Space Mono. It retains some of the angular quirkiness of Space Mono while still offering a functional face suitable for many uses.
+familyFaces:
+  - Space Mono
+comparisonFaces:
+  - Space Mono

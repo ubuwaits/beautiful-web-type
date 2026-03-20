@@ -1,0 +1,37 @@
+name: Inter
+dateAdded: '2020-11-21'
+category: Sans-Serif
+styles: Variable
+italic: true
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: Extra Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi Bold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v3.15
+  date: 20 Aug 2020
+projectUrl: https://rsms.me/inter/
+gFontsUrl: https://fonts.google.com/specimen/Inter
+creator:
+  name: Rasmus Andersson
+  url: https://rsms.me/
+description: Inter is a versatile typeface designed especially for screens. It’s an excellent choice for general user interface needs, but can also work well for body copy and headlines.
+comparisonFaces:
+  - Cooper Hewitt
+  - Jost
+  - Libre Franklin

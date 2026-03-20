@@ -1,0 +1,37 @@
+name: Source Code Pro
+dateAdded: '2018-12-18'
+category: Monospaced
+styles: Variable
+italic: true
+sampleShade: light
+weights:
+  - weight: 200
+    name: ExtraLight
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: SemiBold
+  - weight: 700
+    name: Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.024
+  date: 4 Apr 2023
+projectUrl: https://github.com/adobe-fonts/source-code-pro
+gFontsUrl: https://fonts.google.com/specimen/Source+Code+Pro
+creator:
+  name: Paul D. Hunt
+  url: https://github.com/pauldhunt
+description: Source Code Pro is part of the Source Pro family of typefaces from Adobe. They are versatile typefaces designed especially for use in user interfaces.
+familyFaces:
+  - Source Sans Pro
+  - Source Serif Pro
+comparisonFaces:
+  - IBM Plex Mono
+  - Source Sans Pro
+  - Source Serif Pro

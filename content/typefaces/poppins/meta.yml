@@ -1,0 +1,37 @@
+name: Poppins
+dateAdded: '2018-11-19'
+category: Sans-Serif
+styles: 18
+italic: true
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: ExtraLight
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: SemiBold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: ExtraBold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v4.001
+  date: 26 Mar 2018
+projectUrl: https://github.com/itfoundry/Poppins
+gFontsUrl: https://fonts.google.com/specimen/Poppins
+creator:
+  name: Indian Type Foundry
+  url: https://www.indiantypefoundry.com
+description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari chararacter sets.
+comparisonFaces:
+  - Archivo
+  - Cooper Hewitt
+  - Jost

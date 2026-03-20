@@ -1,0 +1,39 @@
+name: Commissioner
+dateAdded: '2025-06-06'
+category: Sans-Serif
+styles: Variable
+italic: true
+sampleShade: light
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: Extra-Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi-Bold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra-Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.000
+  date: 24 Sep 2020
+projectUrl: https://github.com/kosbarts/Commissioner
+gFontsUrl: https://fonts.google.com/specimen/Commissioner
+creator:
+  name: Kostas Bartsokas
+  url: https://kostasbartsokas.com/
+description: Commissioner is a low-contrast humanist sans-serif with almost classical proportions, conceived as a variable family. The family consists of three “voices”. The default style is a grotesque with straight stems. As the flare axis grows the straight grotesque terminals develop a swelling and become almost glyphic serifs while joints become more idiosyncratic. The volume axis transforms the glyphic serifs to wedge-like ones.
+comparisonFaces:
+  - Archivo
+  - Fivo Sans
+  - Libre Franklin
+  - Source Sans Pro

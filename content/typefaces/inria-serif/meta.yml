@@ -1,0 +1,27 @@
+name: Inria Serif
+dateAdded: '2018-12-03'
+category: Serif
+styles: 6
+italic: true
+sampleShade: light
+weights:
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v1.200
+  date: 11 Jan 2018
+projectUrl: https://github.com/BlackFoundry/InriaFonts
+creator:
+  name: BlackFoundry
+  url: https://black-foundry.com/work/inria/
+description: Inria Serif, along with <a href='/inria-sans/'>Inria Sans</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Serif has a literary feel, suitable for both body copy and headlines.
+familyFaces:
+  - Inria Sans
+comparisonFaces:
+  - Inria Sans
+  - IBM Plex Serif
+  - Source Serif Pro

@@ -1,0 +1,28 @@
+name: Lora
+dateAdded: '2018-10-15'
+category: Serif
+styles: Variable
+italic: true
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi Bold
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v2.210
+  date: 4 Feb 2019
+projectUrl: https://github.com/cyrealtype/Lora-Cyrillic
+gFontsUrl: https://fonts.google.com/specimen/Lora
+creator:
+  name: Cyreal
+  url: http://www.cyreal.org
+description: Lora is a contemporary serif with a moderate contrast, well-suited to body text. It takes inspiration from calligraphic forms, but has a pleasing contrast with sturdy serifs, especially at the bold weight.
+comparisonFaces:
+  - Alegreya
+  - IBM Plex Serif
+  - Source Serif Pro
+  - Vollkorn

@@ -1,0 +1,31 @@
+name: Cooper Hewitt
+dateAdded: '2018-10-15'
+category: Sans-Serif
+styles: 14
+italic: true
+weights:
+  - weight: 200
+    name: Thin
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Book
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: SemiBold
+  - weight: 700
+    name: Bold
+  - weight: 900
+    name: Heavy
+latestRelease:
+  version: v1.0
+  date: 16 Jun 2014
+projectUrl: https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/
+creator:
+  name: Chester Jenkins
+  url: https://vllg.com/constellation
+description: Cooper Hewitt is a contemporary sans-serif with a strong geometric feel. It works especially well for headlines when set in all caps. It was designed by Chester Jenkins for the Cooper Hewitt design museum.
+comparisonFaces:
+  - Jost
+  - Poppins

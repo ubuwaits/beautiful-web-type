@@ -1,0 +1,25 @@
+name: Instrument Serif
+dateAdded: '2025-06-05'
+category: Serif
+styles: 1
+italic: true
+sampleShade: dark
+weights:
+  - weight: 400
+    name: Regular
+latestRelease:
+  version: v1.000
+  date: 20 Mar 2023
+projectUrl: https://github.com/Instrument/instrument-serif
+gFontsUrl: https://fonts.google.com/specimen/Instrument+Serif
+creator:
+  name: Rodrigo Fuenzalida
+  url: https://www.instagram.com/erre.efe
+description: A condensed, display serif designed for the Instrument brand
+familyFaces:
+  - Instrument Sans
+comparisonFaces:
+  - Instrument Sans
+  - Inria Serif
+  - IBM Plex Serif
+  - Source Serif Pro

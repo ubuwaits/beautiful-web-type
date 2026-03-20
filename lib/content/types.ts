@@ -7,6 +7,8 @@ export type Weight = {
   name: string;
 };
 
+export type SampleShade = "light" | "dark";
+
 export type Typeface = {
   slug: string;
   name: string;
@@ -44,7 +46,7 @@ export type GlyphPage = {
 export type Sample = {
   slug: string;
   typefaceName: string;
-  sampleShade?: string;
+  sampleShade?: SampleShade;
   bodyHtml: string;
 };
 
@@ -53,7 +55,7 @@ export type Pairing = {
   name: string;
   dateAdded: string;
   typefaces: string[];
-  sampleShade?: string;
+  sampleShade?: SampleShade;
   bodyHtml: string;
 };
 

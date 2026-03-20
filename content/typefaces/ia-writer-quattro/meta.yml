@@ -1,0 +1,26 @@
+name: iA Writer Quattro
+dateAdded: '2019-01-30'
+category: Sans-Serif
+styles: Variable
+italic: true
+sampleShade: dark
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi Bold
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v2.0
+  date: 25 Dec 2018
+projectUrl: https://github.com/iaolo/iA-Fonts
+creator:
+  name: iA
+  url: https://ia.net
+description: iA Writer Quattro is based on the monospaced version of IBM Plex, but gives extra width to some characters (such as m and w), while reducing the width of other characters (such as f, i, l, r and s). This variability in width, while still retaining the overall feel of a monospaced face, provides a unique, hybrid feel. More information is available on the <a href=https://ia.net/writer/blog/a-typographic-christmas>iA site</a>.
+comparisonFaces:
+  - IBM Plex Mono
+  - IBM Plex Sans

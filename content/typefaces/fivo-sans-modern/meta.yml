@@ -1,0 +1,32 @@
+name: Fivo Sans Modern
+dateAdded: '2019-01-03'
+category: Display
+styles: 10
+italic: true
+sampleShade: light
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Heavy
+  - weight: 900
+    name: Extra Black
+latestRelease:
+  version: v1.0
+  date: 5 Jul 2017
+projectUrl: https://www.behance.net/gallery/54442585/FIvo-Sans-Modern-Typeface
+creator:
+  name: Alex Slobzheninov
+  url: https://www.behance.net/slobzheninov
+description: Fivo Sans Modern is the display version of Fivo Sans. It’s notable for the ‘extremely huge’ ink traps that provide a distinctive feel while still maintaining its Swiss roots.
+familyFaces:
+  - Fivo Sans
+comparisonFaces:
+  - Fivo Sans
+  - Jost
+  - Archivo
+  - Cooper Hewitt

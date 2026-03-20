@@ -1,0 +1,27 @@
+name: Inria Sans
+dateAdded: '2018-12-03'
+category: Sans-Serif
+styles: 6
+italic: true
+weights:
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v1.200
+  date: 11 Jan 2018
+projectUrl: https://github.com/BlackFoundry/InriaFonts
+creator:
+  name: BlackFoundry
+  url: https://black-foundry.com/work/inria/
+description: Inria Sans, along with <a href='/inria-serif/'>Inria Serif</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Sans has a contemporary feel, suitable for both body copy and headlines.
+familyFaces:
+  - Inria Serif
+comparisonFaces:
+  - Inria Serif
+  - FiraGO
+  - IBM Plex Sans
+  - Source Sans Pro

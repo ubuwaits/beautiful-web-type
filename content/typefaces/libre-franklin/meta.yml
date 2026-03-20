@@ -1,0 +1,38 @@
+name: Libre Franklin
+dateAdded: '2018-10-15'
+category: Sans-Serif
+styles: 18
+italic: true
+weights:
+  - weight: 100
+    name: Thin
+  - weight: 200
+    name: Extra-Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi-Bold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra-Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v1.045
+  date: 15 Nov 2016
+projectUrl: https://github.com/impallari/Libre-Franklin
+gFontsUrl: https://fonts.google.com/specimen/Libre+Franklin
+creator:
+  name: Impallari Type
+  url: https://github.com/impallari
+description: Libre Franklin is an interpretation and expansion of the classic Franklin Gothic typeface. It’s a versatile sans-serif, suitable for both long-form text and headlines. At large sizes, the distinctive rounded corners of the characters become apparent.
+comparisonFaces:
+  - IBM Plex Sans
+  - Inria Sans
+  - Source Sans Pro
+  - Work Sans

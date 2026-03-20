@@ -1,0 +1,22 @@
+name: Archivo Black
+dateAdded: '2018-10-19'
+category: Sans-Serif
+styles: 2
+italic: true
+sampleShade: light
+weights:
+  - weight: 400
+    name: Regular
+latestRelease:
+  version: v1.006
+  date: 12 Aug 2018
+projectUrl: https://github.com/Omnibus-Type/ArchivoBlack
+gFontsUrl: https://fonts.google.com/specimen/Archivo+Black
+creator:
+  name: Omnibus-Type
+  url: https://www.omnibus-type.com
+description: Archivo Black is a grotesque san-serif inspired by late 19<span class=ordinals>th</span> century American typefaces. Its letterforms are low contrast with a large x-height. It’s part of the Archivo family, which includes normal and Narrow styles.
+familyFaces:
+  - Archivo
+comparisonFaces:
+  - Archivo

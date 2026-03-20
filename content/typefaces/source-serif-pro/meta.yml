@@ -1,0 +1,41 @@
+name: Source Serif Pro
+dateAdded: '2018-10-15'
+category: Serif
+styles: Variable
+italic: true
+smallcap: true
+sampleShade: light
+weights:
+  - weight: 200
+    name: Extra Light
+  - weight: 300
+    name: Light
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi Bold
+  - weight: 700
+    name: Bold
+  - weight: 800
+    name: Extra Bold
+  - weight: 900
+    name: Black
+latestRelease:
+  version: v3.001
+  date: 11 Oct 2019
+projectUrl: https://github.com/adobe-fonts/source-serif-pro
+gFontsUrl: https://fonts.google.com/specimen/Source+Serif+Pro
+creator:
+  name: Frank Grießhammer
+  url: http://www.frgr.de
+description: Source Serif Pro was created as a companion to the Source Sans Pro typeface by Adobe. It exhibits a distinctive personality at each of its six weights, with a beautiful italic that remains useful from the lightest to the heaviest weights.
+familyFaces:
+  - Source Code Pro
+  - Source Sans Pro
+comparisonFaces:
+  - Source Sans Pro
+  - IBM Plex Serif
+  - Inria Serif
+  - Lora

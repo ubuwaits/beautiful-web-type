@@ -1,0 +1,20 @@
+name: Messapia
+dateAdded: '2020-05-23'
+category: Display
+styles: 2
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: ''
+  date: 19 Mar 2019
+projectUrl: http://collletttivo.it
+creator:
+  name: Luca Marsano
+  url: http://www.shuluq.com
+description: 'From the Colllectttivo site: “Messapia is a type family with two styles: the first is inspired by an old font from the 19th century, the second is a sans serif bold extended.”'
+comparisonFaces:
+  - BioRhyme
+  - Le Murmure

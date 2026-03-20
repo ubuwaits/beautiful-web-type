@@ -1,0 +1,29 @@
+name: Archivo
+dateAdded: '2018-10-15'
+category: Sans-Serif
+styles: 8
+italic: true
+weights:
+  - weight: 400
+    name: Regular
+  - weight: 500
+    name: Medium
+  - weight: 600
+    name: Semi-Bold
+  - weight: 700
+    name: Bold
+latestRelease:
+  version: v1.003
+  date: 12 Aug 2018
+projectUrl: https://github.com/Omnibus-Type/Archivo
+gFontsUrl: https://fonts.google.com/specimen/Archivo
+creator:
+  name: Omnibus-Type
+  url: https://www.omnibus-type.com
+description: Archivo is a grotesque san-serif inspired by late 19<span class=ordinals>th</span> century American typefaces. Its letterforms are low contrast with a large x-height. It’s part of the Archivo family, which includes Black and Narrow styles.
+familyFaces:
+  - Archivo Black
+comparisonFaces:
+  - FiraGO
+  - IBM Plex Sans
+  - Source Sans Pro
