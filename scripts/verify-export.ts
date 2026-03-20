@@ -34,7 +34,9 @@ async function main() {
     "js/opentype.min.js",
     "js/wawoff2-decompress.js",
     "assets/images/card.png",
-    "assets/fonts/inter/Inter-Regular.woff"
+    "assets/fonts/cooper-hewitt/CooperHewitt-Book.woff2",
+    "assets/fonts/inter/Inter-roman.var.woff2",
+    "assets/fonts/jost/Jost-400-Book.woff2"
   ];
 
   for (const typefaceSlug of typefaceSlugs) {

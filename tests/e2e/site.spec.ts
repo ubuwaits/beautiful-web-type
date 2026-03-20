@@ -69,3 +69,23 @@ test("loads the Commissioner glyph inspector from WOFF2", async ({ page }) => {
   await page.locator("#glyph-grid canvas").first().click();
   await expect(page).toHaveURL(/\/commissioner\/glyphs\/\?i=\d+/);
 });
+
+test("loads the Jost glyph inspector from generated WOFF2", async ({ page }) => {
+  await page.goto("/jost/glyphs/?i=10");
+  await page.waitForFunction(
+    () => document.querySelectorAll("#glyph-pagination a").length > 0
+  );
+
+  await page.locator("#glyph-grid canvas").first().click();
+  await expect(page).toHaveURL(/\/jost\/glyphs\/\?i=\d+/);
+});
+
+test("loads the Cooper Hewitt glyph inspector from converted WOFF2", async ({ page }) => {
+  await page.goto("/cooper-hewitt/glyphs/?i=10");
+  await page.waitForFunction(
+    () => document.querySelectorAll("#glyph-pagination a").length > 0
+  );
+
+  await page.locator("#glyph-grid canvas").first().click();
+  await expect(page).toHaveURL(/\/cooper-hewitt\/glyphs\/\?i=\d+/);
+});
