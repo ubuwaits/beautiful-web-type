@@ -4,7 +4,7 @@ import path from "node:path";
 import matter from "gray-matter";
 
 export const SITE_NAME = "Beautiful Web Type";
-export const SITE_URL = "https://beautifulwebtype.com";
+export const SITE_URL = "https://www.beautifulwebtype.com";
 export const DEFAULT_SITE_DESCRIPTION =
   "Discover the best free fonts from Google and across the web. See beautiful examples, recommended pairings, OpenType features, and more.";
 

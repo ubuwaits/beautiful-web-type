@@ -33,10 +33,10 @@ describe("content graph", () => {
     const sitemapXml = buildSitemapXml("2026-03-18T10:00:00.000Z");
     const feedXml = buildFeedXml("2026-03-18T10:00:00.000Z");
 
-    expect(sitemapXml).toContain("https://beautifulwebtype.com/inter/");
-    expect(sitemapXml).toContain("https://beautifulwebtype.com/inter/glyphs/");
+    expect(sitemapXml).toContain("https://www.beautifulwebtype.com/inter/");
+    expect(sitemapXml).toContain("https://www.beautifulwebtype.com/inter/glyphs/");
     expect(feedXml).toContain("<feed");
     expect(feedXml).toContain("Inter by Rasmus Andersson");
-    expect(feedXml).toContain("https://beautifulwebtype.com/assets/images/inter.png");
+    expect(feedXml).toContain("https://www.beautifulwebtype.com/assets/images/inter.png");
   });
 });
