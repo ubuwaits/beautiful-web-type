@@ -6,9 +6,9 @@ describe("content graph", () => {
   it("loads all collections and validates cross-links", () => {
     const graph = getContentGraph();
 
-    expect(graph.typefaces).toHaveLength(42);
-    expect(graph.glyphPages).toHaveLength(42);
-    expect(graph.samples).toHaveLength(42);
+    expect(graph.typefaces).toHaveLength(41);
+    expect(graph.glyphPages).toHaveLength(41);
+    expect(graph.samples).toHaveLength(41);
     expect(graph.pairings).toHaveLength(6);
     expect(graph.typefaceBySlug.get("inter")?.name).toBe("Inter");
     expect(graph.sampleByTypefaceName.get("Inter")?.slug).toBe("inter");

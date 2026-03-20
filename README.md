@@ -53,7 +53,6 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Instrument Sans](https://beautifulwebtype.com/instrument-sans/) &#8594; [Glyph inspector](https://beautifulwebtype.com/instrument-sans/glyphs/)
 * [Instrument Serif](https://beautifulwebtype.com/instrument-serif/) &#8594; [Glyph inspector](https://beautifulwebtype.com/instrument-serif/glyphs/)
 * [Inter](https://beautifulwebtype.com/inter/) &#8594; [Glyph inspector](https://beautifulwebtype.com/inter/glyphs/)
-* [Jost*](https://beautifulwebtype.com/jost/) &#8594; [Glyph inspector](https://beautifulwebtype.com/jost/glyphs/)
 * [Le Murmure](https://beautifulwebtype.com/le-murmure/) &#8594; [Glyph inspector](https://beautifulwebtype.com/le-murmure/glyphs/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) &#8594; [Glyph inspector](https://beautifulwebtype.com/libre-franklin/glyphs/)
 * [Lora](https://beautifulwebtype.com/lora/) &#8594; [Glyph inspector](https://beautifulwebtype.com/lora/glyphs/)
