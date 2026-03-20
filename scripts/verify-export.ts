@@ -36,7 +36,7 @@ async function main() {
     "assets/images/card.png",
     "assets/fonts/cooper-hewitt/CooperHewitt-Book.woff2",
     "assets/fonts/inter/Inter-roman.var.woff2",
-    "assets/fonts/jost/Jost-400-Book.woff2"
+    "assets/fonts/work-sans/WorkSans-Variable.woff2"
   ];
 
   for (const typefaceSlug of typefaceSlugs) {

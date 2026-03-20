@@ -70,14 +70,14 @@ test("loads the Commissioner glyph inspector from WOFF2", async ({ page }) => {
   await expect(page).toHaveURL(/\/commissioner\/glyphs\/\?i=\d+/);
 });
 
-test("loads the Jost glyph inspector from generated WOFF2", async ({ page }) => {
-  await page.goto("/jost/glyphs/?i=10");
+test("loads the Work Sans glyph inspector from generated WOFF2", async ({ page }) => {
+  await page.goto("/work-sans/glyphs/?i=10");
   await page.waitForFunction(
     () => document.querySelectorAll("#glyph-pagination a").length > 0
   );
 
   await page.locator("#glyph-grid canvas").first().click();
-  await expect(page).toHaveURL(/\/jost\/glyphs\/\?i=\d+/);
+  await expect(page).toHaveURL(/\/work-sans\/glyphs\/\?i=\d+/);
 });
 
 test("loads the Cooper Hewitt glyph inspector from converted WOFF2", async ({ page }) => {
