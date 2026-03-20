@@ -29,7 +29,6 @@ async function main() {
     "sans-serif/index.html",
     "serif/index.html",
     "v1/index.html",
-    ".well-known/brave-payments-verification.txt",
     "google146824b99fdbed48.html",
     "css/application.css",
     "js/opentype.min.js",
