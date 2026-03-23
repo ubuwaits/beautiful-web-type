@@ -15,123 +15,134 @@ body.menu-open {
   overflow: hidden;
 }
 
-body .standardized-sample {
-  --sample-divider: rgba(255, 255, 255, 0.14);
-  --sample-fit-width: 0.65;
-  --sample-ink: #fff;
-  --sample-surface: #000;
-  background: var(--sample-surface);
-}
-
-body .standardized-sample[data-variant="grid"] {
-  --sample-divider: rgba(0, 0, 0, 0.12);
-  --sample-ink: #111;
-  --sample-surface: #fff;
-}
-
-body .standardized-sample:focus-within {
-  outline: 2px solid var(--red);
-  outline-offset: 2px;
-}
-
-body .standardized-sample > a {
-  align-content: center;
-  color: var(--sample-ink);
-  container-type: inline-size;
-  display: flex;
-  flex-flow: column;
-  height: 27.5rem;
-  justify-content: center;
-  padding: 2.5rem 1.75rem;
-}
-
-body .standardized-sample .standardized-specimen {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  margin: 0;
-  max-width: none;
-  text-align: center;
-  width: 100%;
-}
-
-body .standardized-sample .standardized-specimen-fit {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  overflow: visible;
-  width: 100%;
-}
-
-body .standardized-sample .standardized-specimen-fit[data-ready="false"] {
-  opacity: 0;
-}
-
-body .standardized-sample .standardized-specimen-fit h1 {
-  color: var(--sample-ink);
-  display: block;
-  font-size: 10rem;
-  font-weight: 400;
-  font-kerning: normal;
-  letter-spacing: normal;
-  line-height: 1;
-  margin: 0;
-  max-width: none;
-  transform: scale(var(--fit-scale, 1));
-  transform-origin: center center;
-  white-space: nowrap;
-  width: max-content;
-}
-
-body .standardized-sample .meta {
-  box-shadow: 0 -1px 0 var(--sample-divider);
-  color: var(--sample-ink);
-}
-
-body .standardized-sample .meta .name {
-  align-items: baseline;
-  display: flex;
-  gap: 0.35rem;
-  justify-content: space-between;
-  width: 100%;
-}
-
-body .standardized-sample .meta a:hover {
-  color: var(--red);
-}
-
-body .standardized-sample[data-variant="hero"] > a {
-  height: 28rem;
-}
-
-body .standardized-sample[data-variant="hero"] .standardized-specimen-fit h1 {
-  font-size: 12rem;
-}
-
-@media screen and (max-width: 1104px) {
+@layer components {
   body .standardized-sample {
-    --sample-fit-width: 0.9;
+    --sample-divider: rgba(255, 255, 255, 0.14);
+    --sample-fit-width: 0.65;
+    --sample-ink: #fff;
+    --sample-surface: #000;
+    background: var(--sample-surface);
+  }
+
+  body .standardized-sample[data-variant="grid"] {
+    --sample-divider: rgba(0, 0, 0, 0.12);
+    --sample-ink: #111;
+    --sample-surface: #fff;
+  }
+
+  body .standardized-sample:focus-within {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
   }
 
   body .standardized-sample > a {
-    height: 20rem;
-    padding: 2.5rem 1.5rem;
+    align-content: center;
+    color: var(--sample-ink);
+    container-type: inline-size;
+    display: flex;
+    flex-flow: column;
+    height: 27.5rem;
+    justify-content: center;
+    padding: 2.5rem 1.75rem;
+  }
+
+  body :where(.standardized-sample .standardized-specimen) {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    max-width: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  body :where(.standardized-sample .standardized-specimen-fit) {
+    align-items: center;
+    color: var(--sample-ink);
+    display: flex;
+    font-kerning: normal;
+    font-size: 10rem;
+    font-weight: 400;
+    height: 100%;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: 1;
+    overflow: visible;
+    width: 100%;
+  }
+
+  body .standardized-sample .standardized-specimen-fit[data-ready="false"] {
+    opacity: 0;
   }
 
   body .standardized-sample .standardized-specimen-fit h1 {
-    font-size: 8.5rem;
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    max-width: none;
+    transform: scale(var(--fit-scale, 1));
+    transform-origin: center center;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  body .standardized-sample .meta {
+    box-shadow: 0 -1px 0 var(--sample-divider);
+    color: var(--sample-ink);
+  }
+
+  body .standardized-sample .meta .name {
+    align-items: baseline;
+    display: flex;
+    gap: 0.35rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  body .standardized-sample .meta a:hover {
+    color: var(--red);
   }
 
   body .standardized-sample[data-variant="hero"] > a {
-    height: 24.5rem;
+    height: 28rem;
   }
 
-  body .standardized-sample[data-variant="hero"] .standardized-specimen-fit h1 {
-    font-size: 10rem;
+  body .standardized-sample[data-variant="hero"] .standardized-specimen-fit {
+    font-size: 12rem;
   }
+}
 
+@layer components {
+  @media screen and (max-width: 1104px) {
+    body .standardized-sample {
+      --sample-fit-width: 0.9;
+    }
+
+    body .standardized-sample > a {
+      height: 20rem;
+      padding: 2.5rem 1.5rem;
+    }
+
+    body .standardized-sample .standardized-specimen-fit {
+      font-size: 8.5rem;
+    }
+
+    body .standardized-sample[data-variant="hero"] > a {
+      height: 24.5rem;
+    }
+
+    body .standardized-sample[data-variant="hero"] .standardized-specimen-fit {
+      font-size: 10rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1104px) {
   body .mobile-menu {
     position: fixed;
     right: 0.25rem;
@@ -196,26 +207,28 @@ body .standardized-sample[data-variant="hero"] .standardized-specimen-fit h1 {
   }
 }
 
-@media screen and (max-width: 720px) {
-  body .standardized-sample > a {
-    height: 18rem;
-    padding: 2rem 1.2rem;
-  }
+@layer components {
+  @media screen and (max-width: 720px) {
+    body .standardized-sample > a {
+      height: 18rem;
+      padding: 2rem 1.2rem;
+    }
 
-  body .standardized-sample .standardized-specimen-fit h1 {
-    font-size: 6.5rem;
-    line-height: 1;
-  }
+    body .standardized-sample .standardized-specimen-fit {
+      font-size: 6.5rem;
+      line-height: 1;
+    }
 
-  body .standardized-sample[data-variant="hero"] > a {
-    height: 21rem;
-  }
+    body .standardized-sample[data-variant="hero"] > a {
+      height: 21rem;
+    }
 
-  body .standardized-sample[data-variant="hero"] .standardized-specimen-fit h1 {
-    font-size: 7.5rem;
-  }
+    body .standardized-sample[data-variant="hero"] .standardized-specimen-fit {
+      font-size: 7.5rem;
+    }
 
-  body .standardized-sample .meta .name {
-    display: block;
+    body .standardized-sample .meta .name {
+      display: block;
+    }
   }
 }

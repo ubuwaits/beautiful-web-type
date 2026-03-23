@@ -16,6 +16,8 @@ export type Typeface = {
   category: CategoryName;
   categorySlug: CategorySlug;
   sampleShade?: SampleShade;
+  sampleText?: string;
+  sampleClasses?: string;
   styles: string | number;
   weights: Weight[];
   latestRelease: {

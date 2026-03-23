@@ -218,6 +218,8 @@ function loadTypefaceBundles(contentDir: string): {
       category,
       categorySlug: categoryToSlug(category),
       sampleShade: assertSampleShade(meta.sampleShade, "sampleShade", metaPath),
+      sampleText: maybeString(meta.sampleText),
+      sampleClasses: maybeString(meta.sampleClasses),
       styles: assertStringOrNumber(meta.styles, "styles", metaPath),
       weights: assertWeights(meta.weights, metaPath),
       latestRelease: {

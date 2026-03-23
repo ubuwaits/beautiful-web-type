@@ -39,6 +39,8 @@ function createContentRoot(): string {
       "category: Sans-Serif",
       "styles: 2",
       "sampleShade: light",
+      "sampleText: Bespoke Sample",
+      'sampleClasses: "[--sample-fit-width:0.78] tracking-tight"',
       "weights:",
       "  - weight: 400",
       "    name: Regular",
@@ -61,6 +63,20 @@ function createContentRoot(): string {
 }
 
 describe("content validation", () => {
+  it("loads per-typeface sample overrides from metadata", () => {
+    const root = createContentRoot();
+
+    try {
+      const graph = buildContentGraphFromContentDir(root);
+      const typeface = graph.typefaceBySlug.get("test-sans");
+
+      expect(typeface?.sampleText).toBe("Bespoke Sample");
+      expect(typeface?.sampleClasses).toBe("[--sample-fit-width:0.78] tracking-tight");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
   it("rejects invalid sampleShade values", () => {
     const root = createContentRoot();
 

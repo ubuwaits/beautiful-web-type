@@ -1,15 +1,18 @@
 "use client";
 
+import clsx from "clsx";
 import type { CSSProperties } from "react";
 import { useLayoutEffect, useRef, useState } from "react";
 
 type FittedSpecimenTextProps = {
+  sampleClassName?: string;
   text: string;
   typefaceClassName: string;
   variant?: "grid" | "hero";
 };
 
 export function FittedSpecimenText({
+  sampleClassName,
   text,
   typefaceClassName,
   variant = "grid"
@@ -97,11 +100,11 @@ export function FittedSpecimenText({
       resizeObserver.disconnect();
       document.fonts.removeEventListener?.("loadingdone", scheduleMeasure);
     };
-  }, [text, variant, typefaceClassName]);
+  }, [sampleClassName, text, variant, typefaceClassName]);
 
   return (
     <div
-      className="standardized-specimen-fit"
+      className={clsx("standardized-specimen-fit", sampleClassName)}
       data-ready={isReady ? "true" : "false"}
       data-variant={variant}
       ref={stageRef}

@@ -12,6 +12,7 @@ type SampleCardProps = {
 
 export function SampleCard({ specimen, typeface, variant = "grid" }: SampleCardProps) {
   const typefacePath = getTypefacePath(typeface.slug);
+  const sampleText = typeface.sampleText ?? specimen.primary;
 
   return (
     <div
@@ -22,7 +23,8 @@ export function SampleCard({ specimen, typeface, variant = "grid" }: SampleCardP
       <Link href={typefacePath}>
         <div className="text standardized-specimen">
           <FittedSpecimenText
-            text={specimen.primary}
+            sampleClassName={typeface.sampleClasses}
+            text={sampleText}
             typefaceClassName={typeface.slug}
             variant={variant}
           />

@@ -5,6 +5,8 @@ styles: 10
 italic: true
 smallcap: true
 sampleShade: light
+sampleText: "Difficult Waffles"
+sampleClasses: ""
 weights:
   - weight: 400
     name: Regular

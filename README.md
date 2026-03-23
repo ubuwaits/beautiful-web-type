@@ -103,11 +103,18 @@ Create `content/typefaces/<slug>/` with:
 - `sample.html`
 - `glyphs.yml`
 
-`meta.yml` holds the typeface metadata used by the app, including `name`, `dateAdded`, `category`, `styles`, `weights`, `latestRelease`, `projectUrl`, `creator`, `description`, and optional fields like `gFontsUrl`, `italic`, `smallcap`, `sampleShade`, `familyFaces`, and `comparisonFaces`.
+`meta.yml` holds the typeface metadata used by the app, including `name`, `dateAdded`, `category`, `styles`, `weights`, `latestRelease`, `projectUrl`, `creator`, `description`, and optional fields like `gFontsUrl`, `italic`, `smallcap`, `sampleShade`, `sampleText`, `sampleClasses`, `familyFaces`, and `comparisonFaces`.
 
 `detail.html` is the trusted HTML fragment rendered on the typeface detail page.
 
-`sample.html` is retained as authored specimen source content. Listing cards and the top specimen on detail pages use shared specimen copy from `content/site/text.yml`.
+`sample.html` is retained as authored specimen source content. Listing cards and the top specimen on detail pages use shared specimen copy from `content/site/text.yml`, unless a typeface overrides it with `sampleText` in `meta.yml`.
+
+`sampleClasses` can be used for per-typeface Tailwind overrides on the specimen stage. Quote the string when using responsive variants or arbitrary properties, for example:
+
+```yml
+sampleText: "Sharp & Quiet"
+sampleClasses: "[--sample-fit-width:0.78] tracking-tight text-[#b42318] md:[--sample-fit-width:0.82]"
+```
 
 `glyphs.yml` must include:
 
