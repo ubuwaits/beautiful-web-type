@@ -15,7 +15,6 @@ const DIRECTORIES_TO_COPY = [
   { source: "js", target: "js" },
   { source: "v1/stylesheets", target: "v1/stylesheets" }
 ];
-const FILES_TO_COPY = ["favicon-16x16.png", "favicon-32x32.png", "favicon-96x96.png"];
 
 async function clearGeneratedPublicFiles() {
   await mkdir(PUBLIC_DIR, { recursive: true });
@@ -25,7 +24,6 @@ async function clearGeneratedPublicFiles() {
   }
 
   for (const fileName of [
-    ...FILES_TO_COPY,
     ...REPO_ROOT_DOCUMENTATION_FILES,
     GOOGLE_VERIFICATION_FILE,
     "feed.xml",
@@ -40,10 +38,6 @@ async function copyStaticEntries() {
     await cp(path.join(ROOT_DIR, directory.source), path.join(PUBLIC_DIR, directory.target), {
       recursive: true
     });
-  }
-
-  for (const fileName of FILES_TO_COPY) {
-    await cp(path.join(ROOT_DIR, fileName), path.join(PUBLIC_DIR, fileName));
   }
 }
 
