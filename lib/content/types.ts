@@ -15,6 +15,7 @@ export type Typeface = {
   dateAdded: string;
   category: CategoryName;
   categorySlug: CategorySlug;
+  sampleShade?: SampleShade;
   styles: string | number;
   weights: Weight[];
   latestRelease: {
@@ -60,6 +61,9 @@ export type Pairing = {
 };
 
 export type TextData = {
+  specimen: {
+    primary: string;
+  };
   words: string[];
   headlines: string[];
   paragraphs: string[];

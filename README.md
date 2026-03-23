@@ -107,7 +107,7 @@ Create `content/typefaces/<slug>/` with:
 
 `detail.html` is the trusted HTML fragment rendered on the typeface detail page.
 
-`sample.html` is the trusted HTML fragment rendered in listing cards and on the detail page.
+`sample.html` is retained as authored specimen source content. Listing cards and the top specimen on detail pages use shared specimen copy from `content/site/text.yml`.
 
 `glyphs.yml` must include:
 
@@ -128,4 +128,4 @@ Create `content/pairings/<slug>/` with:
 
 ### Shared site text
 
-`content/site/text.yml` holds the reusable `words`, `headlines`, and `paragraphs` arrays used across specimen pages.
+`content/site/text.yml` holds the shared `specimen` copy plus the reusable `words`, `headlines`, and `paragraphs` arrays used across specimen pages.

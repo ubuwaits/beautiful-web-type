@@ -217,6 +217,7 @@ function loadTypefaceBundles(contentDir: string): {
       dateAdded: toDateString(meta.dateAdded, "dateAdded", metaPath),
       category,
       categorySlug: categoryToSlug(category),
+      sampleShade: assertSampleShade(meta.sampleShade, "sampleShade", metaPath),
       styles: assertStringOrNumber(meta.styles, "styles", metaPath),
       weights: assertWeights(meta.weights, metaPath),
       latestRelease: {
@@ -286,8 +287,12 @@ function loadPairings(contentDir: string): Pairing[] {
 function loadTextData(contentDir: string): TextData {
   const textPath = path.join(contentDir, "site", "text.yml");
   const parsed = readYamlFile(textPath);
+  const specimen = assertObject(parsed.specimen, "specimen", textPath);
 
   return {
+    specimen: {
+      primary: assertString(specimen.primary, "specimen.primary", textPath)
+    },
     words: assertStringArray(parsed.words, "words", textPath),
     headlines: assertStringArray(parsed.headlines, "headlines", textPath),
     paragraphs: assertStringArray(parsed.paragraphs, "paragraphs", textPath)

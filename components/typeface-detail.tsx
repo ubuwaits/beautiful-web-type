@@ -57,17 +57,11 @@ const CHARACTER_EXAMPLES = [
 
 type TypefaceDetailProps = {
   pairings: Pairing[];
-  sampleBody: string;
   text: TextData;
   typeface: Typeface;
 };
 
-export function TypefaceDetail({
-  pairings,
-  sampleBody,
-  text,
-  typeface
-}: TypefaceDetailProps) {
+export function TypefaceDetail({ pairings, text, typeface }: TypefaceDetailProps) {
   const secondHeadlineType = typeface.italic ? "italic" : "uppercase";
   const paragraphText = text.paragraphs[typeface.italic ? 0 : 1];
 
@@ -95,10 +89,7 @@ export function TypefaceDetail({
           </a>
         </div>
 
-        <SampleCard
-          sample={{ bodyHtml: sampleBody, slug: typeface.slug, typefaceName: typeface.name }}
-          typeface={typeface}
-        />
+        <SampleCard specimen={text.specimen} typeface={typeface} variant="hero" />
 
         <div className="type-styles gr1 gc6">
           {typeface.weights.map((weight) => (

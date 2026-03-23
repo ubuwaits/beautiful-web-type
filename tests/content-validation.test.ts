@@ -19,6 +19,8 @@ function createContentRoot(): string {
   writeFileSync(
     path.join(siteDir, "text.yml"),
     [
+      "specimen:",
+      "  primary: Signal & Shape",
       "words:",
       "  - Questography",
       "headlines:",

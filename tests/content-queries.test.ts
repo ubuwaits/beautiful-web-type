@@ -20,6 +20,7 @@ describe("content queries", () => {
     expect(getSampleForTypeface("Inter")?.slug).toBe("inter");
     expect(getPairingsForTypeface("Inter").length).toBeGreaterThan(0);
     expect(resolveTypefaceSlugByName("Inter")).toBe("inter");
+    expect(getTextData().specimen.primary).toBe("Signal & Shape");
     expect(getTextData().words.length).toBeGreaterThan(0);
   });
 });

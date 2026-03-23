@@ -184,6 +184,9 @@ async function migrateTextData() {
   const parsed = parseYamlText(await readFile(legacyTextPath, "utf8"), legacyTextPath);
 
   await writeYamlFile(nextTextPath, {
+    specimen: {
+      primary: "Signal & Shape"
+    },
     words: assertStringArray(parsed.words, "words", legacyTextPath),
     headlines: assertStringArray(parsed.headlines, "headlines", legacyTextPath),
     paragraphs: assertStringArray(parsed.paragraphs, "paragraphs", legacyTextPath)

@@ -5,13 +5,14 @@ import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
 import { SampleCard } from "@/components/sample-card";
 import {
+  getTextData,
   getLatestPairings,
-  getLatestTypefaces,
-  getSampleForTypeface
+  getLatestTypefaces
 } from "@/lib/content";
 
 const latestTypefaces = getLatestTypefaces().slice(0, 10);
 const latestPairings = getLatestPairings();
+const specimen = getTextData().specimen;
 
 export const metadata: Metadata = {
   title: "In-Depth Guide to the Best Free Fonts",
@@ -33,13 +34,7 @@ export default function HomePage() {
         </div>
 
         {latestTypefaces.map((typeface) => {
-          const sample = getSampleForTypeface(typeface.name);
-
-          if (!sample) {
-            return null;
-          }
-
-          return <SampleCard key={typeface.slug} sample={sample} typeface={typeface} />;
+          return <SampleCard key={typeface.slug} specimen={specimen} typeface={typeface} />;
         })}
 
         <h2 className="page-subhead gc1 gc12 mt3 ase">Latest pairings</h2>
