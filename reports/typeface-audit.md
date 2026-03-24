@@ -1,6 +1,6 @@
 # Typeface Audit
 
-Generated: 2026-03-24T07:17:09.052Z
+Generated: 2026-03-24T07:30:01.455Z
 
 Method:
 - Google Fonts and project URLs are checked with live HTTP requests that follow redirects.
@@ -19,7 +19,7 @@ Attention:
 - Problem project links: 0
   none
 - Typefaces with newer upstream releases: 1
-  TASA Orbiter
+  Source Code Pro
 
 Detailed Results:
 
@@ -413,13 +413,13 @@ Detailed Results:
   url: fonts.google.com/specimen/Source+Code+Pro
 - project-link: ok (200)
   url: github.com/adobe-fonts/source-code-pro
-- recorded-release: v2.042R-u/1.062R-i/1.026R-vf (12 Apr 2023)
+- recorded-release: v1.026 (12 Apr 2023)
 - upstream-release: v2.042R-u/1.062R-i/1.026R-vf (unknown)
   source: github.com/adobe-fonts/source-code-pro/tags
-- newer-release: no
+- newer-release: yes
 - notes:
   Repo: github.com/adobe-fonts/source-code-pro
-  Recorded release matches the latest stable GitHub tag.
+  A newer stable GitHub tag exists than the release recorded in metadata.
 
 ## Source Sans Pro
 - google-fonts: ok (200)
@@ -478,13 +478,13 @@ Detailed Results:
 - google-fonts: n/a
 - project-link: ok (200)
   url: github.com/localremotetw/TASA-Typeface-Collection
-- recorded-release: v1.001 (16 May 2023)
+- recorded-release: v2.012 (16 Oct 2025)
 - upstream-release: v2.012 (unknown)
   source: github.com/localremotetw/TASA-Typeface-Collection/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/localremotetw/TASA-Typeface-Collection
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Vollkorn
 - google-fonts: ok (200)

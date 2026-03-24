@@ -15,8 +15,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v1.001
-  date: 16 May 2023
+  version: 'v2.012'
+  date: 16 Oct 2025
 projectUrl: https://github.com/localremotetw/TASA-Typeface-Collection
 creator:
   name: Local Remote
