@@ -10,10 +10,12 @@ function createContentRoot(): string {
   const root = mkdtempSync(path.join(tmpdir(), "beautiful-web-type-content-"));
   const typefaceDir = path.join(root, "typefaces", "test-sans");
   const pairingsDir = path.join(root, "pairings");
+  const fontsDir = path.join(root, "public", "assets", "fonts");
   const siteDir = path.join(root, "site");
 
   mkdirSync(typefaceDir, { recursive: true });
   mkdirSync(pairingsDir, { recursive: true });
+  mkdirSync(fontsDir, { recursive: true });
   mkdirSync(siteDir, { recursive: true });
 
   writeFileSync(
@@ -57,6 +59,7 @@ function createContentRoot(): string {
   writeFileSync(path.join(typefaceDir, "detail.html"), "<p>Detail body</p>\n", "utf8");
   writeFileSync(path.join(typefaceDir, "sample.html"), "<p>Sample body</p>\n", "utf8");
   writeFileSync(path.join(typefaceDir, "glyphs.yml"), "fontFile: /assets/fonts/test.woff\n", "utf8");
+  writeFileSync(path.join(fontsDir, "test.woff"), "font-data\n", "utf8");
 
   return root;
 }
@@ -111,6 +114,24 @@ describe("content validation", () => {
       rmSync(path.join(root, "typefaces", "test-sans", "glyphs.yml"));
 
       expect(() => buildContentGraphFromContentDir(root)).toThrow("Expected file to exist");
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it("requires glyph font assets referenced by content", () => {
+    const root = createContentRoot();
+
+    try {
+      writeFileSync(
+        path.join(root, "typefaces", "test-sans", "glyphs.yml"),
+        "fontFile: /assets/fonts/missing.woff\n",
+        "utf8"
+      );
+
+      expect(() => buildContentGraphFromContentDir(root)).toThrow(
+        'Expected "fontFile" asset to exist'
+      );
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

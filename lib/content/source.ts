@@ -74,6 +74,26 @@ function assertString(value: unknown, key: string, filePath: string): string {
   return value;
 }
 
+function assertPublicAssetPath(
+  value: unknown,
+  key: string,
+  filePath: string,
+  contentDir: string
+): string {
+  const assetPath = assertString(value, key, filePath);
+  const normalizedAssetPath = assetPath.replace(/^\/+/, "");
+  const publicAssetPaths = [
+    path.join(contentDir, "public", normalizedAssetPath),
+    path.join(path.dirname(contentDir), "public", normalizedAssetPath)
+  ];
+
+  if (!publicAssetPaths.some((candidatePath) => fs.existsSync(candidatePath))) {
+    throw new Error(`Expected "${key}" asset to exist: ${publicAssetPaths[0]}`);
+  }
+
+  return assetPath;
+}
+
 function assertStringValue(value: unknown, key: string, filePath: string): string {
   if (typeof value !== "string") {
     throw new Error(`Expected "${key}" to be a string in ${filePath}`);
@@ -247,7 +267,7 @@ function loadTypefaceBundles(contentDir: string): {
     glyphPages.push({
       slug,
       typefaceName,
-      fontFile: assertString(glyphs.fontFile, "fontFile", glyphsPath),
+      fontFile: assertPublicAssetPath(glyphs.fontFile, "fontFile", glyphsPath, contentDir),
       bodyClass: `${categoryToSlug(category)} glyphs`
     });
 
