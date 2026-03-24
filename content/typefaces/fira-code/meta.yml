@@ -23,3 +23,5 @@ comparisonFaces:
   - IBM Plex Mono
   - Source Code Pro
   - Space Mono
+sampleText: 'World Wide Web'
+sampleClasses: 'font-[600] tracking-tight'

@@ -38,5 +38,5 @@ comparisonFaces:
   - IBM Plex Sans
   - IBM Plex Sans Condensed
   - IBM Plex Serif
-sampleText: 'ROMIE I - 29:11:22'
-sampleClasses: 'font-[600]'
+sampleText: 'Mathematical'
+sampleClasses: 'font-[500] italic tracking-tight'

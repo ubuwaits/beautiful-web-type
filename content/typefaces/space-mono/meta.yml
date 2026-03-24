@@ -23,5 +23,5 @@ comparisonFaces:
   - IBM Plex Mono
   - Source Code Pro
   - Space Grotesk
-sampleText: 'Artikulation'
-sampleClasses: 'font-[600] tracking-tight'
+sampleText: '78% ECUADOR'
+sampleClasses: 'font-[400] tracking-tight'

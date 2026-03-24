@@ -34,3 +34,5 @@ comparisonFaces:
   - IBM Plex Mono
   - Source Sans Pro
   - Source Serif Pro
+sampleText: 'Inauguración'
+sampleClasses: 'font-[400] tracking-tight'
