@@ -36,3 +36,5 @@ comparisonFaces:
   - Fivo Sans
   - Libre Franklin
   - Source Sans Pro
+sampleText: 'Albert Ayler'
+sampleClasses: 'font-[900]'
