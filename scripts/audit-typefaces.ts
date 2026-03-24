@@ -67,6 +67,8 @@ type UpstreamReleaseStatus =
         | "github-api-error"
         | "project-link-unavailable";
       repo?: string;
+      url?: string;
+      date?: string;
       note: string;
     };
 
@@ -81,6 +83,16 @@ const linkCheckCache = new Map<string, Promise<LinkStatus>>();
 const htmlCache = new Map<string, Promise<string | undefined>>();
 const discoveredRepoCache = new Map<string, Promise<string | undefined>>();
 const githubTagsCache = new Map<string, Promise<GitHubTagCandidate[] | undefined>>();
+const githubLatestCommitCache = new Map<
+  string,
+  Promise<
+    | {
+        date?: string;
+        url: string;
+      }
+    | undefined
+  >
+>();
 
 function isSuccessStatus(status: number): boolean {
   return status >= 200 && status < 300;
@@ -98,16 +110,72 @@ function normalizeVersion(value?: string): string {
     .replace(/\s+/g, "");
 
   if (/^\d+(?:\.\d+)*$/.test(normalized)) {
-    const parts = normalized.split(".").map((part) => String(Number(part)));
+    const parts = normalized.split(".");
 
-    while (parts.length > 1 && parts.at(-1) === "0") {
+    while (parts.length > 1 && /^0+$/.test(parts.at(-1) ?? "")) {
       parts.pop();
     }
 
-    return parts.join(".");
+    return parts
+      .map((part, index) => {
+        if (index === 0) {
+          return String(Number(part));
+        }
+
+        return part;
+      })
+      .join(".");
   }
 
   return normalized;
+}
+
+function stripReleaseQualifier(value: string): string {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/^v\.?/, "")
+    .replace(/\s+/g, "")
+    .replace(/-(?:vf|var|variable|upright|roman|italic|u|i)$/i, "")
+    .replace(/r$/i, "")
+    .replace(/[-_]+$/, "");
+}
+
+function extractVersionCandidates(value?: string): string[] {
+  const raw = (value ?? "").trim();
+
+  if (!raw) {
+    return [];
+  }
+
+  const candidates = new Set<string>();
+  const push = (candidate?: string) => {
+    const normalized = normalizeVersion(candidate);
+
+    if (normalized) {
+      candidates.add(normalized);
+    }
+  };
+
+  push(raw);
+
+  for (const part of raw.split(/[\/_]+/)) {
+    push(part);
+
+    const stripped = stripReleaseQualifier(part);
+    if (stripped !== part) {
+      push(stripped);
+    }
+  }
+
+  return Array.from(candidates);
+}
+
+function versionsMatch(recordedVersion?: string, upstreamVersion?: string): boolean {
+  const recordedCandidates = extractVersionCandidates(recordedVersion);
+  const upstreamCandidates = new Set(extractVersionCandidates(upstreamVersion));
+
+  return recordedCandidates.some((candidate) => upstreamCandidates.has(candidate));
 }
 
 function formatVersionLabel(value?: string): string {
@@ -202,6 +270,24 @@ function normalizeGitHubRepoUrl(url: string): string | undefined {
   } catch {
     return undefined;
   }
+}
+
+function parseGitHubOwnerRepo(repoUrl: string): { owner: string; repo: string } | undefined {
+  const normalized = normalizeGitHubRepoUrl(repoUrl);
+
+  if (!normalized) {
+    return undefined;
+  }
+
+  const match = normalized.match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)$/);
+  if (!match) {
+    return undefined;
+  }
+
+  return {
+    owner: match[1],
+    repo: match[2]
+  };
 }
 
 function scoreGitHubCandidate(
@@ -502,19 +588,83 @@ async function getLatestGitHubTag(repoUrl: string): Promise<GitHubTagCandidate[]
   return promise;
 }
 
-function compareVersions(typeface: Typeface, upstreamVersion: string): "current" | "newer" {
-  const recordedVersion = normalizeVersion(typeface.latestRelease.version);
-  const latestVersion = normalizeVersion(upstreamVersion);
+async function getLatestGitHubCommit(
+  repoUrl: string
+): Promise<
+  | {
+      date?: string;
+      url: string;
+    }
+  | undefined
+> {
+  const cached = githubLatestCommitCache.get(repoUrl);
+  if (cached) {
+    return cached;
+  }
 
-  if (recordedVersion && latestVersion && recordedVersion === latestVersion) {
+  const promise = (async () => {
+    const repo = parseGitHubOwnerRepo(repoUrl);
+    if (!repo) {
+      return undefined;
+    }
+
+    try {
+      const response = await fetch(
+        `https://api.github.com/repos/${repo.owner}/${repo.repo}/commits?per_page=1`,
+        {
+          method: "GET",
+          headers: {
+            "user-agent": USER_AGENT,
+            accept: "application/vnd.github+json"
+          },
+          redirect: "follow",
+          signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS)
+        }
+      );
+
+      if (!isSuccessStatus(response.status)) {
+        if (response.body) {
+          await response.body.cancel();
+        }
+
+        return undefined;
+      }
+
+      const payload = (await response.json()) as Array<{
+        commit?: {
+          committer?: {
+            date?: string;
+          };
+          author?: {
+            date?: string;
+          };
+        };
+      }>;
+      const latestCommit = payload[0];
+
+      return {
+        date: latestCommit?.commit?.committer?.date ?? latestCommit?.commit?.author?.date,
+        url: `${repoUrl}/commits`
+      };
+    } catch {
+      return undefined;
+    }
+  })();
+
+  githubLatestCommitCache.set(repoUrl, promise);
+  return promise;
+}
+
+function compareVersions(typeface: Typeface, upstreamVersion: string): "current" | "newer" {
+  if (versionsMatch(typeface.latestRelease.version, upstreamVersion)) {
     return "current";
   }
 
-  if (!recordedVersion && latestVersion) {
+  if (!typeface.latestRelease.version.trim() && upstreamVersion.trim()) {
     return "newer";
   }
 
-  return recordedVersion === latestVersion ? "current" : "newer";
+  return "newer";
 }
 
 async function getReleaseStatus(typeface: Typeface, project: LinkStatus): Promise<UpstreamReleaseStatus> {
@@ -555,11 +705,17 @@ async function getReleaseStatus(typeface: Typeface, project: LinkStatus): Promis
 
   const latestTag = tags[0];
   if (!latestTag) {
+    const latestCommit = await getLatestGitHubCommit(repoUrl);
+
     return {
       status: "unknown",
       source: "github-no-tags",
       repo: repoUrl,
-      note: "GitHub repo has no stable version tags."
+      url: latestCommit?.url ?? `${repoUrl}/commits`,
+      date: latestCommit?.date,
+      note: latestCommit?.date
+        ? "GitHub repo has no stable version tags; latest repo activity falls back to the newest commit."
+        : "GitHub repo has no stable version tags."
     };
   }
 
@@ -568,16 +724,18 @@ async function getReleaseStatus(typeface: Typeface, project: LinkStatus): Promis
   const comparison = compareVersions(typeface, latestTag.name);
 
   if (comparison === "current") {
+    const directMatch =
+      normalizeVersion(typeface.latestRelease.version) === normalizeVersion(latestTag.name);
+
     return {
       status: "current",
       source: repoSource,
       repo: repoUrl,
       version: latestTag.name,
       url: `${repoUrl}/tags`,
-      note:
-        normalizeVersion(typeface.latestRelease.version) === normalizeVersion(latestTag.name)
-          ? "Recorded release matches the latest stable GitHub tag."
-          : "Recorded release normalizes to the latest stable GitHub tag."
+      note: directMatch
+        ? "Recorded release matches the latest stable GitHub tag."
+        : "Recorded release matches a component of the latest stable GitHub tag."
     };
   }
 
@@ -615,6 +773,9 @@ function buildNotes(row: AuditRow): string[] {
   }
 
   if (row.release.status === "unknown") {
+    if (row.release.repo) {
+      notes.push(`Repo: ${compactUrl(row.release.repo)}`);
+    }
     notes.push(row.release.note);
   } else {
     notes.push(`Repo: ${compactUrl(row.release.repo)}`);
@@ -667,7 +828,23 @@ function buildTypefaceSection(row: AuditRow): string[] {
   );
 
   if (row.release.status === "unknown") {
-    lines.push("- upstream-release: unknown");
+    if (row.release.source === "github-no-tags") {
+      lines.push("- upstream-release: unknown (no stable tags)");
+
+      if (row.release.date) {
+        lines.push(`  latest-commit: ${formatIsoDate(row.release.date)}`);
+      }
+
+      if (row.release.url) {
+        lines.push(`  source: ${compactUrl(row.release.url)}`);
+      }
+    } else {
+      lines.push("- upstream-release: unknown");
+
+      if (row.release.url) {
+        lines.push(`  source: ${compactUrl(row.release.url)}`);
+      }
+    }
   } else {
     lines.push(`- upstream-release: ${formatVersionLabel(row.release.version)} (${formatIsoDate(row.release.date)})`);
     lines.push(`  source: ${compactUrl(row.release.url)}`);
@@ -706,6 +883,21 @@ function buildReport(rows: AuditRow[]): string {
   const newerReleaseNames = rows
     .filter((row) => row.release.status === "newer")
     .map((row) => row.typeface.name);
+  const unknownNoStableTagNames = rows
+    .filter((row) => row.release.status === "unknown" && row.release.source === "github-no-tags")
+    .map((row) => row.typeface.name);
+  const unknownNoRepoNames = rows
+    .filter((row) => row.release.status === "unknown" && row.release.source === "no-github-repo")
+    .map((row) => row.typeface.name);
+  const unknownProjectUnavailableNames = rows
+    .filter((row) => row.release.status === "unknown" && row.release.source === "project-link-unavailable")
+    .map((row) => row.typeface.name);
+  const unknownApiErrorNames = rows
+    .filter((row) => row.release.status === "unknown" && row.release.source === "github-api-error")
+    .map((row) => row.typeface.name);
+  const unknownNoProjectLinkNames = rows
+    .filter((row) => row.release.status === "unknown" && row.release.source === "no-project-link")
+    .map((row) => row.typeface.name);
 
   const lines = [
     "# Typeface Audit",
@@ -727,6 +919,17 @@ function buildReport(rows: AuditRow[]): string {
     ...buildSummaryBlock("Broken Google Fonts links", brokenGoogleNames),
     ...buildSummaryBlock("Problem project links", projectProblemNames),
     ...buildSummaryBlock("Typefaces with newer upstream releases", newerReleaseNames),
+    ...buildSummaryBlock(
+      "Unknown upstream release: GitHub repo has no stable tags",
+      unknownNoStableTagNames
+    ),
+    ...buildSummaryBlock("Unknown upstream release: no GitHub repo identified", unknownNoRepoNames),
+    ...buildSummaryBlock(
+      "Unknown upstream release: project link unavailable",
+      unknownProjectUnavailableNames
+    ),
+    ...buildSummaryBlock("Unknown upstream release: GitHub lookup failed", unknownApiErrorNames),
+    ...buildSummaryBlock("Unknown upstream release: no project link", unknownNoProjectLinkNames),
     "",
     "Detailed Results:",
     ""

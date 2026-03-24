@@ -1,6 +1,6 @@
 # Typeface Audit
 
-Generated: 2026-03-24T07:30:01.455Z
+Generated: 2026-03-24T07:45:53.248Z
 
 Method:
 - Google Fonts and project URLs are checked with live HTTP requests that follow redirects.
@@ -11,15 +11,26 @@ Summary:
 - Total typefaces: 41
 - Google Fonts links: 28 ok, 0 broken, 0 error, 13 n/a
 - Project links: 41 ok, 0 broken, 0 error
-- Newer upstream release: 1 yes, 24 no, 16 unknown
+- Newer upstream release: 0 yes, 25 no, 16 unknown
 
 Attention:
 - Broken Google Fonts links: 0
   none
 - Problem project links: 0
   none
-- Typefaces with newer upstream releases: 1
-  Source Code Pro
+- Typefaces with newer upstream releases: 0
+  none
+- Unknown upstream release: GitHub repo has no stable tags: 12
+  Archivo, Archivo Black, Cooper Hewitt, Crimson Pro, iA Writer Quattro, Instrument
+  Sans, Instrument Serif, Libre Franklin, Oswald, Rakkas, Space Mono, Vollkorn
+- Unknown upstream release: no GitHub repo identified: 4
+  Fivo Sans, Fivo Sans Modern, Le Murmure, Messapia
+- Unknown upstream release: project link unavailable: 0
+  none
+- Unknown upstream release: GitHub lookup failed: 0
+  none
+- Unknown upstream release: no project link: 0
+  none
 
 Detailed Results:
 
@@ -55,10 +66,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/Omnibus-Type/Archivo
 - recorded-release: v1.003 (12 Aug 2018)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2021-02-01
+  source: github.com/Omnibus-Type/Archivo/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/Omnibus-Type/Archivo
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Archivo Black
 - google-fonts: ok (200)
@@ -66,10 +81,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/Omnibus-Type/ArchivoBlack
 - recorded-release: v1.006 (12 Aug 2018)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2019-03-07
+  source: github.com/Omnibus-Type/ArchivoBlack/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/Omnibus-Type/ArchivoBlack
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## BioRhyme
 - google-fonts: ok (200)
@@ -115,10 +134,14 @@ Detailed Results:
 - project-link: ok (200)
   url: www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins
 - recorded-release: v1.0 (16 Jun 2014)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2015-04-09
+  source: github.com/cooperhewitt/cooperhewitt-typeface/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/cooperhewitt/cooperhewitt-typeface
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Crimson Pro
 - google-fonts: ok (200)
@@ -126,10 +149,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/Fonthausen/CrimsonPro
 - recorded-release: v1.002 (21 Feb 2019)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2022-08-30
+  source: github.com/Fonthausen/CrimsonPro/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/Fonthausen/CrimsonPro
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Fira Code
 - google-fonts: n/a
@@ -192,10 +219,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/iaolo/iA-Fonts
 - recorded-release: v2.0 (25 Dec 2018)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2023-06-16
+  source: github.com/iaolo/iA-Fonts/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/iaolo/iA-Fonts
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## IBM Plex Mono
 - google-fonts: ok (200)
@@ -283,10 +314,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/Instrument/instrument-sans
 - recorded-release: v1.000 (20 Mar 2023)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2023-06-14
+  source: github.com/Instrument/instrument-sans/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/Instrument/instrument-sans
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Instrument Serif
 - google-fonts: ok (200)
@@ -294,10 +329,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/Instrument/instrument-serif
 - recorded-release: v1.000 (20 Mar 2023)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2023-04-26
+  source: github.com/Instrument/instrument-serif/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/Instrument/instrument-serif
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Inter
 - google-fonts: ok (200)
@@ -328,10 +367,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/impallari/Libre-Franklin
 - recorded-release: v1.045 (15 Nov 2016)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2025-09-02
+  source: github.com/impallari/Libre-Franklin/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/impallari/Libre-Franklin
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Lora
 - google-fonts: ok (200)
@@ -364,10 +407,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/googlefonts/OswaldFont
 - recorded-release: v4.004 (22 Sep 2017)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2024-05-29
+  source: github.com/googlefonts/OswaldFont/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/googlefonts/OswaldFont
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Playfair Display
 - google-fonts: ok (200)
@@ -403,10 +450,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/zeynepakay/Rakkas
 - recorded-release: v1.001 (10 Apr 2016)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2016-06-15
+  source: github.com/zeynepakay/Rakkas/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/zeynepakay/Rakkas
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Source Code Pro
 - google-fonts: ok (200)
@@ -416,10 +467,10 @@ Detailed Results:
 - recorded-release: v1.026 (12 Apr 2023)
 - upstream-release: v2.042R-u/1.062R-i/1.026R-vf (unknown)
   source: github.com/adobe-fonts/source-code-pro/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/adobe-fonts/source-code-pro
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches a component of the latest stable GitHub tag.
 
 ## Source Sans Pro
 - google-fonts: ok (200)
@@ -469,10 +520,14 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/googlefonts/spacemono
 - recorded-release: v1.0 (16 Feb 2017)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2025-01-17
+  source: github.com/googlefonts/spacemono/commits
 - newer-release: unknown
 - notes:
-  GitHub repo has no stable version tags.
+  Repo: github.com/googlefonts/spacemono
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## TASA Orbiter
 - google-fonts: n/a
@@ -493,11 +548,15 @@ Detailed Results:
   url: vollkorn-typeface.com/#download
   resolved: vollkorn-typeface.com
 - recorded-release: v4.105 (09 May 2018)
-- upstream-release: unknown
+- upstream-release: unknown (no stable tags)
+  latest-commit: 2020-08-23
+  source: github.com/FAlthausen/Vollkorn-Typeface/commits
 - newer-release: unknown
 - notes:
   Project URL redirects to vollkorn-typeface.com
-  GitHub repo has no stable version tags.
+  Repo: github.com/FAlthausen/Vollkorn-Typeface
+  GitHub repo has no stable version tags; latest repo activity falls back to the newest
+  commit.
 
 ## Work Sans
 - google-fonts: ok (200)
