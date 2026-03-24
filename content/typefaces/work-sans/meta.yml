@@ -37,3 +37,5 @@ comparisonFaces:
   - Cooper Hewitt
   - Poppins
   - Source Sans Pro
+sampleText: 'Sam-I-Am!'
+sampleClasses: 'font-[600] tracking-tight'

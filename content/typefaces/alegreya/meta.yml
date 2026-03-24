@@ -4,7 +4,8 @@ category: Serif
 styles: 10
 italic: true
 smallcap: true
-sampleShade: light
+sampleText: "The Iliad"
+sampleClasses: "italic tracking-tight font-[400]"
 weights:
   - weight: 400
     name: Regular

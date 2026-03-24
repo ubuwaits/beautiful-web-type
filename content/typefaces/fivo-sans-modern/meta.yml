@@ -3,7 +3,6 @@ dateAdded: '2019-01-03'
 category: Display
 styles: 10
 italic: true
-sampleShade: light
 weights:
   - weight: 400
     name: Regular
@@ -29,3 +28,5 @@ comparisonFaces:
   - Fivo Sans
   - Archivo
   - Cooper Hewitt
+sampleText: 'Die Schöpfung'
+sampleClasses: 'font-[500] tracking-tighter italic'

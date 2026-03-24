@@ -38,3 +38,5 @@ comparisonFaces:
   - Archivo
   - FiraGO
   - Inria Sans
+sampleText: 'Café de la Paix'
+sampleClasses: 'font-[700] tracking-tight'

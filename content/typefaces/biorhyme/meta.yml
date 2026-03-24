@@ -26,3 +26,5 @@ familyFaces:
   - BioRhyme Expanded
 comparisonFaces:
   - BioRhyme Expanded
+sampleText: 'nyfiken?'
+sampleClasses: 'font-[400]'

@@ -7,7 +7,6 @@ import { TypefaceDetail } from "@/components/typeface-detail";
 import {
   getAllTypefaceSlugs,
   getPairingsForTypeface,
-  getSampleForTypeface,
   getTextData,
   getTypefaceBySlug
 } from "@/lib/content";
@@ -72,12 +71,6 @@ export default async function TypefacePage({
     notFound();
   }
 
-  const sample = getSampleForTypeface(typeface.name);
-
-  if (!sample) {
-    notFound();
-  }
-
   const pairings = getPairingsForTypeface(typeface.name);
   const text = getTextData();
 
@@ -90,12 +83,7 @@ export default async function TypefacePage({
           { name: typeface.name, path: getTypefacePath(typeface.slug) }
         ]}
       />
-      <TypefaceDetail
-        pairings={pairings}
-        sampleBody={sample.bodyHtml}
-        text={text}
-        typeface={typeface}
-      />
+      <TypefaceDetail pairings={pairings} text={text} typeface={typeface} />
     </PageShell>
   );
 }

@@ -32,3 +32,5 @@ comparisonFaces:
   - Fivo Sans Modern
   - Archivo
   - Cooper Hewitt
+sampleText: 'Bluthochzeit'
+sampleClasses: 'font-[700] tracking-tighter'

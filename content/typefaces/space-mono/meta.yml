@@ -3,7 +3,6 @@ dateAdded: '2019-01-08'
 category: Monospaced
 styles: 4
 italic: true
-sampleShade: light
 weights:
   - weight: 400
     name: Regular
@@ -24,3 +23,5 @@ comparisonFaces:
   - IBM Plex Mono
   - Source Code Pro
   - Space Grotesk
+sampleText: '78% ECUADOR'
+sampleClasses: 'font-[400] tracking-tight'

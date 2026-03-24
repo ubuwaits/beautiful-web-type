@@ -4,7 +4,6 @@ category: Sans-Serif
 styles: 22
 italic: true
 smallcap: true
-sampleShade: light
 weights:
   - weight: 100
     name: Thin
@@ -41,3 +40,5 @@ comparisonFaces:
   - IBM Plex Sans
   - Inria Sans
   - Source Sans Pro
+sampleText: 'Minimum'
+sampleClasses: 'font-[800] tracking-tight uppercase'

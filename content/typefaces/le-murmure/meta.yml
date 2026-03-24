@@ -13,3 +13,5 @@ creator:
   name: Jérémy Landes
   url: http://studiotriple.fr
 description: Designed especially for the French design agency <a href='https://murmure.me/'>Murmure</a>, Le Murmure is a distinctive sans-serif display typeface. Available in a single weight, it features a wealth of alternate glyphs.
+sampleText: 'Oneohtrix Point Never'
+sampleClasses: 'font-[400] tracking-tight'

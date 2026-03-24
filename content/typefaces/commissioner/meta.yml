@@ -3,7 +3,6 @@ dateAdded: '2025-06-06'
 category: Sans-Serif
 styles: Variable
 italic: true
-sampleShade: light
 weights:
   - weight: 100
     name: Thin
@@ -37,3 +36,5 @@ comparisonFaces:
   - Fivo Sans
   - Libre Franklin
   - Source Sans Pro
+sampleText: 'Albert Ayler'
+sampleClasses: 'font-[900]'

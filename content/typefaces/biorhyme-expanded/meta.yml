@@ -26,3 +26,5 @@ familyFaces:
   - BioRhyme
 comparisonFaces:
   - BioRhyme
+sampleText: 'fat burger'
+sampleClasses: 'font-[800] uppercase'

@@ -15,6 +15,8 @@ export type Typeface = {
   dateAdded: string;
   category: CategoryName;
   categorySlug: CategorySlug;
+  sampleText?: string;
+  sampleClasses?: string;
   styles: string | number;
   weights: Weight[];
   latestRelease: {
@@ -46,7 +48,6 @@ export type GlyphPage = {
 export type Sample = {
   slug: string;
   typefaceName: string;
-  sampleShade?: SampleShade;
   bodyHtml: string;
 };
 
@@ -60,6 +61,9 @@ export type Pairing = {
 };
 
 export type TextData = {
+  specimen: {
+    primary: string;
+  };
   words: string[];
   headlines: string[];
   paragraphs: string[];

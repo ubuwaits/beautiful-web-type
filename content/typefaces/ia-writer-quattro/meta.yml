@@ -3,7 +3,6 @@ dateAdded: '2019-01-30'
 category: Sans-Serif
 styles: Variable
 italic: true
-sampleShade: dark
 weights:
   - weight: 400
     name: Regular
@@ -24,3 +23,5 @@ description: iA Writer Quattro is based on the monospaced version of IBM Plex, b
 comparisonFaces:
   - IBM Plex Mono
   - IBM Plex Sans
+sampleText: 'System/360'
+sampleClasses: 'font-[600]'

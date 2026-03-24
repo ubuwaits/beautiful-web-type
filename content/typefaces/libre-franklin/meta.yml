@@ -36,3 +36,5 @@ comparisonFaces:
   - Inria Sans
   - Source Sans Pro
   - Work Sans
+sampleText: 'Public Lecture'
+sampleClasses: 'font-[800]'

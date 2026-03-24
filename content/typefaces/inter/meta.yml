@@ -34,3 +34,5 @@ description: Inter is a versatile typeface designed especially for screens. Itâ€
 comparisonFaces:
   - Cooper Hewitt
   - Libre Franklin
+sampleText: 'Hahnenkammrennen'
+sampleClasses: 'font-[500]'

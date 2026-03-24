@@ -38,3 +38,5 @@ comparisonFaces:
   - IBM Plex Sans
   - IBM Plex Sans Condensed
   - IBM Plex Serif
+sampleText: 'Mathematical'
+sampleClasses: 'font-[500] italic tracking-tight'

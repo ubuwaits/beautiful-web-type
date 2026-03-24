@@ -184,6 +184,9 @@ async function migrateTextData() {
   const parsed = parseYamlText(await readFile(legacyTextPath, "utf8"), legacyTextPath);
 
   await writeYamlFile(nextTextPath, {
+    specimen: {
+      primary: "Signal & Shape"
+    },
     words: assertStringArray(parsed.words, "words", legacyTextPath),
     headlines: assertStringArray(parsed.headlines, "headlines", legacyTextPath),
     paragraphs: assertStringArray(parsed.paragraphs, "paragraphs", legacyTextPath)
@@ -252,7 +255,6 @@ async function migrateTypefaceBundles() {
         styles: data.styles,
         italic: maybeBoolean(data.italic),
         smallcap: maybeBoolean(data.smallcap),
-        sampleShade: maybeSampleShade(sample.data.sample_shade, sampleFile),
         weights: data.weights,
         latestRelease: {
           version: assertStringValue(

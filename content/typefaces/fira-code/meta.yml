@@ -2,7 +2,6 @@ name: Fira Code
 dateAdded: '2019-01-21'
 category: Monospaced
 styles: Variable
-sampleShade: light
 weights:
   - weight: 300
     name: Light
@@ -24,3 +23,5 @@ comparisonFaces:
   - IBM Plex Mono
   - Source Code Pro
   - Space Mono
+sampleText: 'World Wide Web'
+sampleClasses: 'font-[600] tracking-tight'

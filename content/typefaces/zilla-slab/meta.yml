@@ -4,6 +4,8 @@ category: Serif
 styles: 10
 italic: true
 smallcap: true
+sampleText: "cyberspace"
+sampleClasses: "font-[300] tracking-tight"
 weights:
   - weight: 300
     name: Light

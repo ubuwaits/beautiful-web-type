@@ -37,3 +37,5 @@ comparisonFaces:
   - IBM Plex Serif
   - FiraGO
   - Inria Sans
+sampleText: 'Cyanocobalamin'
+sampleClasses: 'font-[400]'
