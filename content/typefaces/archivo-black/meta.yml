@@ -3,7 +3,6 @@ dateAdded: '2018-10-19'
 category: Sans-Serif
 styles: 2
 italic: true
-sampleShade: light
 weights:
   - weight: 400
     name: Regular

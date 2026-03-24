@@ -3,7 +3,6 @@ dateAdded: '2018-10-30'
 category: Serif
 styles: 16
 italic: true
-sampleShade: light
 sampleText: "mammalian"
 sampleClasses: "italic tracking-tighter font-[200]"
 weights:

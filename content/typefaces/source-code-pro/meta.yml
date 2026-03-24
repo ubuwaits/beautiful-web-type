@@ -3,7 +3,6 @@ dateAdded: '2018-12-18'
 category: Monospaced
 styles: Variable
 italic: true
-sampleShade: light
 weights:
   - weight: 200
     name: ExtraLight

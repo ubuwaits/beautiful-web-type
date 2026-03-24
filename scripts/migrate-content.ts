@@ -255,7 +255,6 @@ async function migrateTypefaceBundles() {
         styles: data.styles,
         italic: maybeBoolean(data.italic),
         smallcap: maybeBoolean(data.smallcap),
-        sampleShade: maybeSampleShade(sample.data.sample_shade, sampleFile),
         weights: data.weights,
         latestRelease: {
           version: assertStringValue(

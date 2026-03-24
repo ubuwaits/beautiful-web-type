@@ -217,7 +217,6 @@ function loadTypefaceBundles(contentDir: string): {
       dateAdded: toDateString(meta.dateAdded, "dateAdded", metaPath),
       category,
       categorySlug: categoryToSlug(category),
-      sampleShade: assertSampleShade(meta.sampleShade, "sampleShade", metaPath),
       sampleText: maybeString(meta.sampleText),
       sampleClasses: maybeString(meta.sampleClasses),
       styles: assertStringOrNumber(meta.styles, "styles", metaPath),
@@ -255,7 +254,6 @@ function loadTypefaceBundles(contentDir: string): {
     samples.push({
       slug,
       typefaceName,
-      sampleShade: assertSampleShade(meta.sampleShade, "sampleShade", metaPath),
       bodyHtml: readRequiredTextFile(samplePath)
     });
   }

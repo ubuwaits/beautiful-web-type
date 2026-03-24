@@ -2,7 +2,6 @@ name: Fira Code
 dateAdded: '2019-01-21'
 category: Monospaced
 styles: Variable
-sampleShade: light
 weights:
   - weight: 300
     name: Light

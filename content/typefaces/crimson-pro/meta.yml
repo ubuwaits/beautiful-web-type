@@ -3,7 +3,6 @@ dateAdded: '2020-05-23'
 category: Serif
 styles: Variable
 italic: true
-sampleShade: light
 sampleText: "excellent"
 sampleClasses: "tracking-tighter font-[600]"
 weights:

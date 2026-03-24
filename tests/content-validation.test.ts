@@ -38,7 +38,6 @@ function createContentRoot(): string {
       "dateAdded: '2024-01-01'",
       "category: Sans-Serif",
       "styles: 2",
-      "sampleShade: light",
       "sampleText: Bespoke Sample",
       'sampleClasses: "[--sample-fit-width:0.78] tracking-tight"',
       "weights:",
@@ -77,32 +76,25 @@ describe("content validation", () => {
     }
   });
 
-  it("rejects invalid sampleShade values", () => {
+  it("rejects invalid pairing sampleShade values", () => {
     const root = createContentRoot();
 
     try {
+      const pairingDir = path.join(root, "pairings", "test-pairing");
+
+      mkdirSync(pairingDir, { recursive: true });
       writeFileSync(
-        path.join(root, "typefaces", "test-sans", "meta.yml"),
+        path.join(pairingDir, "meta.yml"),
         [
-          "name: Test Sans",
+          "name: Test Pairing",
           "dateAdded: '2024-01-01'",
-          "category: Sans-Serif",
-          "styles: 2",
           "sampleShade: neon",
-          "weights:",
-          "  - weight: 400",
-          "    name: Regular",
-          "latestRelease:",
-          "  version: v1.0",
-          "  date: 1 Jan 2024",
-          "projectUrl: https://example.com/test-sans",
-          "creator:",
-          "  name: Example Foundry",
-          "  url: https://example.com",
-          "description: Example typeface"
+          "typefaces:",
+          "  - Test Sans"
         ].join("\n"),
         "utf8"
       );
+      writeFileSync(path.join(pairingDir, "sample.html"), "<p>Pairing sample</p>\n", "utf8");
 
       expect(() => buildContentGraphFromContentDir(root)).toThrow(
         'Expected "sampleShade" to be "light" or "dark"'

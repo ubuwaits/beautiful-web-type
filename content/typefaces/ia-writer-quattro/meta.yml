@@ -3,7 +3,6 @@ dateAdded: '2019-01-30'
 category: Sans-Serif
 styles: Variable
 italic: true
-sampleShade: dark
 weights:
   - weight: 400
     name: Regular

@@ -103,7 +103,7 @@ Create `content/typefaces/<slug>/` with:
 - `sample.html`
 - `glyphs.yml`
 
-`meta.yml` holds the typeface metadata used by the app, including `name`, `dateAdded`, `category`, `styles`, `weights`, `latestRelease`, `projectUrl`, `creator`, `description`, and optional fields like `gFontsUrl`, `italic`, `smallcap`, `sampleShade`, `sampleText`, `sampleClasses`, `familyFaces`, and `comparisonFaces`.
+`meta.yml` holds the typeface metadata used by the app, including `name`, `dateAdded`, `category`, `styles`, `weights`, `latestRelease`, `projectUrl`, `creator`, `description`, and optional fields like `gFontsUrl`, `italic`, `smallcap`, `sampleText`, `sampleClasses`, `familyFaces`, and `comparisonFaces`.
 
 `detail.html` is the trusted HTML fragment rendered on the typeface detail page.
 

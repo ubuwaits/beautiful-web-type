@@ -4,7 +4,6 @@ category: Sans-Serif
 styles: 22
 italic: true
 smallcap: true
-sampleShade: light
 weights:
   - weight: 100
     name: Thin

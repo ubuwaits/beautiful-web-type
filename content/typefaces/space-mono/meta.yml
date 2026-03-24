@@ -3,7 +3,6 @@ dateAdded: '2019-01-08'
 category: Monospaced
 styles: 4
 italic: true
-sampleShade: light
 weights:
   - weight: 400
     name: Regular

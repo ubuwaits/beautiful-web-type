@@ -4,7 +4,6 @@ category: Serif
 styles: Variable
 italic: true
 smallcap: true
-sampleShade: light
 sampleText: "Philip Glass"
 sampleClasses: "font-[600] tracking-tight"
 weights:

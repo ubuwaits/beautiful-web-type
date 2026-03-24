@@ -15,7 +15,6 @@ export type Typeface = {
   dateAdded: string;
   category: CategoryName;
   categorySlug: CategorySlug;
-  sampleShade?: SampleShade;
   sampleText?: string;
   sampleClasses?: string;
   styles: string | number;
@@ -49,7 +48,6 @@ export type GlyphPage = {
 export type Sample = {
   slug: string;
   typefaceName: string;
-  sampleShade?: SampleShade;
   bodyHtml: string;
 };
 
