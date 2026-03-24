@@ -24,8 +24,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v?
-  date: 1 May 2020
+  version: 'v2.010'
+  date: 31 Jul 2020
 projectUrl: https://github.com/weiweihuanghuang/Work-Sans
 gFontsUrl: https://fonts.google.com/specimen/Work+Sans
 creator:

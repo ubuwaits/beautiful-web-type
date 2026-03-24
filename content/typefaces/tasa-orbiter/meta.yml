@@ -15,12 +15,12 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v1.001
-  date: 16 May 2023
-projectUrl: https://tasatype.localremote.co
+  version: 'v2.012'
+  date: 16 Oct 2025
+projectUrl: https://github.com/localremotetw/TASA-Typeface-Collection
 creator:
   name: Local Remote
-  url: https://localremote.co/work
+  url: https://localremote.co
 description: Bespoke typeface designed for the rebrand of Taiwan Space Agency. Neo-Grotesques and right-angled strokes designed for versatility across a broad range of applications for everyday use.
 comparisonFaces:
   - Archivo

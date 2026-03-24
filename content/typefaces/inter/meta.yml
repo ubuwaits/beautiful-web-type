@@ -23,8 +23,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v3.15
-  date: 20 Aug 2020
+  version: 'v4.1'
+  date: 16 Nov 2024
 projectUrl: https://rsms.me/inter/
 gFontsUrl: https://fonts.google.com/specimen/Inter
 creator:

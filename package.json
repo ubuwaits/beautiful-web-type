@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.10.0",
   "scripts": {
+    "audit:typefaces": "tsx scripts/audit-typefaces.ts",
     "prepare:static": "tsx scripts/prepare-static.ts",
     "predev": "pnpm prepare:static",
     "dev": "next dev",

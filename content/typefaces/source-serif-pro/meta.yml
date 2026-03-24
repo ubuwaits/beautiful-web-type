@@ -23,10 +23,10 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v3.001
-  date: 11 Oct 2019
+  version: 'v4.005R'
+  date: 20 Jan 2023
 projectUrl: https://github.com/adobe-fonts/source-serif-pro
-gFontsUrl: https://fonts.google.com/specimen/Source+Serif+Pro
+gFontsUrl: https://fonts.google.com/specimen/Source+Serif+4
 creator:
   name: Frank Grießhammer
   url: http://www.frgr.de

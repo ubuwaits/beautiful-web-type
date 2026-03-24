@@ -13,8 +13,8 @@ weights:
   - weight: 700
     name: Bold
 latestRelease:
-  version: v2.210
-  date: 4 Feb 2019
+  version: 'v.3021'
+  date: 22 Oct 2025
 projectUrl: https://github.com/cyrealtype/Lora-Cyrillic
 gFontsUrl: https://fonts.google.com/specimen/Lora
 creator:

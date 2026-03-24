@@ -24,8 +24,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v1.000
-  date: 24 Sep 2020
+  version: 'v1.012'
+  date: 18 Nov 2025
 projectUrl: https://github.com/kosbarts/Commissioner
 gFontsUrl: https://fonts.google.com/specimen/Commissioner
 creator:
