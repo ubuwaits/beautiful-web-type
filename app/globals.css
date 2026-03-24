@@ -18,8 +18,8 @@ body.menu-open {
 @layer components {
   body .standardized-sample {
     --sample-divider: rgba(255, 255, 255, 0.14);
-    --sample-fit-width: 0.65;
-    --sample-fit-max-width: none;
+    --sample-fit-width: 0.6;
+    --sample-fit-max-width: 80rem;
     --sample-ink: #fff;
     --sample-surface: #000;
     background: var(--sample-surface);
@@ -27,8 +27,6 @@ body.menu-open {
 
   body .standardized-sample[data-variant="grid"] {
     --sample-divider: rgba(0, 0, 0, 0.12);
-    --sample-fit-width: 0.6;
-    --sample-fit-max-width: 80rem;
     --sample-ink: #111;
     --sample-surface: #fff;
   }
@@ -124,10 +122,6 @@ body.menu-open {
 @layer components {
   @media screen and (max-width: 1104px) {
     body .standardized-sample {
-      --sample-fit-width: 0.9;
-    }
-
-    body .standardized-sample[data-variant="grid"] {
       --sample-fit-width: 0.85;
       --sample-fit-max-width: none;
     }
