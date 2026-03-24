@@ -223,6 +223,13 @@ body.menu-open {
       padding: 2rem 1.2rem;
     }
 
+    body .standardized-sample[data-variant="grid"] > a {
+      aspect-ratio: 5 / 3;
+      height: auto;
+      min-height: 13rem;
+      padding: 1.5rem 1rem;
+    }
+
     body .standardized-sample .standardized-specimen-fit {
       font-size: 6.5rem;
       line-height: 1;
