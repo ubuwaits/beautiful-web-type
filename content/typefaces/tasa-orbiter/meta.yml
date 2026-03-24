@@ -25,3 +25,5 @@ comparisonFaces:
   - Archivo
   - Fivo Sans
   - iA Writer Quattro
+sampleText: 'Artikulation'
+sampleClasses: 'font-[600] tracking-tight'

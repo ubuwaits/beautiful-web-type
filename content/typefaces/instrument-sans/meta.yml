@@ -37,3 +37,5 @@ comparisonFaces:
   - Instrument Serif
   - Inter
   - IBM Plex Sans
+sampleText: 'Otsuka MV'
+sampleClasses: 'font-[700]'

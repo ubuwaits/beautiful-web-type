@@ -40,3 +40,5 @@ comparisonFaces:
   - IBM Plex Sans
   - Inria Sans
   - Source Sans Pro
+sampleText: 'Minimum'
+sampleClasses: 'font-[800] tracking-tight uppercase'

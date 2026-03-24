@@ -25,3 +25,5 @@ comparisonFaces:
   - FiraGO
   - IBM Plex Sans
   - Source Sans Pro
+sampleText: 'Guggenheim'
+sampleClasses: 'font-[700] tracking-tighter'

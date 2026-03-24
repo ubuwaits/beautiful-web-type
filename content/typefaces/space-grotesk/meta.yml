@@ -25,3 +25,5 @@ familyFaces:
   - Space Mono
 comparisonFaces:
   - Space Mono
+sampleText: 'Certificate'
+sampleClasses: 'font-[600] tracking-tight'

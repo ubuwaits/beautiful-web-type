@@ -38,3 +38,6 @@ comparisonFaces:
   - Libre Franklin
   - Source Sans Pro
   - Work Sans
+sampleText: 'Multi-Vitamin Infusion'
+sampleClasses: 'font-[300] italic'
+
