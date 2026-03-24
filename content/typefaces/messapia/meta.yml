@@ -18,3 +18,5 @@ description: 'From the Colllectttivo site: “Messapia is a type family with two
 comparisonFaces:
   - BioRhyme
   - Le Murmure
+sampleText: 'Fierce People'
+sampleClasses: 'font-[400] tracking-tight'

@@ -20,3 +20,5 @@ creator:
   name: Claus Eggers Sørensen
   url: https://forthehearts.net/
 description: Playfair Display is a transitional serif well-suited to headlines and titles. It has a very large x-height, short descenders, and extra short capitals. It offers a wide variety of typographic flavor with three weights, a beautiful italic and small caps, and a number of OpenType features.
+sampleText: 'Objects & Methods'
+sampleClasses: 'font-[700] italic tracking-tight'

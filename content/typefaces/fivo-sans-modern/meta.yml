@@ -28,3 +28,5 @@ comparisonFaces:
   - Fivo Sans
   - Archivo
   - Cooper Hewitt
+sampleText: 'Die Schöpfung'
+sampleClasses: 'font-[500] tracking-tighter italic'

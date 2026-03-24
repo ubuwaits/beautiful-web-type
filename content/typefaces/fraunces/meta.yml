@@ -32,3 +32,5 @@ creator:
 description: 'Fraunces is a display face inspired by 20th century faces such as Windsor and Cooper. It’s available as a variable font, making use of several custom axes: ‘SOFT’ and ‘WONK’, along with the registered axes ‘wght’ and ‘opsz’.'
 comparisonFaces:
   - Playfair Display
+sampleText: 'The Quartet'
+sampleClasses: 'font-[900]'

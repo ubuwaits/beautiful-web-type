@@ -14,3 +14,5 @@ creator:
   name: Zeynep Akay
   url: http://theruqahproject.com
 description: Rakkas is a single-weight display typeface supporting both Arabic and Latin scrips. The Latin is based on a blackletter style, but borrows heavily from the Arabic design, with heavy calligraphic strokes.
+sampleText: 'Algorithmic'
+sampleClasses: 'font-[400]'
