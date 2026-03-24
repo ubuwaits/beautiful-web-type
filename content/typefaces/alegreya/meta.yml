@@ -5,8 +5,8 @@ styles: 10
 italic: true
 smallcap: true
 sampleShade: light
-sampleText: "Difficult Waffles"
-sampleClasses: ""
+sampleText: "The Iliad"
+sampleClasses: "italic tracking-tight font-[400]"
 weights:
   - weight: 400
     name: Regular

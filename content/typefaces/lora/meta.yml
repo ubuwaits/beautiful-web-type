@@ -3,6 +3,8 @@ dateAdded: '2018-10-15'
 category: Serif
 styles: Variable
 italic: true
+sampleText: "Middlemarch"
+sampleClasses: "font-[500]"
 weights:
   - weight: 400
     name: Regular

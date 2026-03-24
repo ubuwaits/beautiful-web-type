@@ -4,6 +4,8 @@ category: Serif
 styles: Variable
 italic: true
 sampleShade: light
+sampleText: "excellent"
+sampleClasses: "tracking-tighter font-[600]"
 weights:
   - weight: 200
     name: Extra Light

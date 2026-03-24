@@ -4,6 +4,8 @@ category: Serif
 styles: 6
 italic: true
 sampleShade: light
+sampleText: "The Beast"
+sampleClasses: "tracking-tight font-[700] uppercase"
 weights:
   - weight: 300
     name: Light

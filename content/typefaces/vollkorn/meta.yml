@@ -4,6 +4,8 @@ category: Serif
 styles: 12
 italic: true
 smallcap: true
+sampleText: "infinite"
+sampleClasses: "font-[400] tracking-tight"
 weights:
   - weight: 400
     name: Regular

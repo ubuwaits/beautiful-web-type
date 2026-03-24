@@ -116,6 +116,12 @@ sampleText: "Sharp & Quiet"
 sampleClasses: "[--sample-fit-width:0.78] tracking-tight text-[#b42318] md:[--sample-fit-width:0.82]"
 ```
 
+For OpenType features, use Tailwind arbitrary properties rather than `font-features-*`. For example, small caps should be:
+
+```yml
+sampleClasses: "[font-feature-settings:'smcp']"
+```
+
 `glyphs.yml` must include:
 
 ```yml
