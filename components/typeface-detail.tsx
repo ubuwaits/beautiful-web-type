@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ComparisonSync } from "@/components/comparison-sync";
 import { PairingCard } from "@/components/pairing-card";
 import { SampleCard } from "@/components/sample-card";
+import { TrustedHtml } from "@/components/trusted-html";
 import { TypefaceComparison } from "@/components/typeface-comparison";
 import type { Pairing, TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
@@ -107,7 +108,7 @@ export function TypefaceDetail({ pairings, text, typeface }: TypefaceDetailProps
 
         <div className="type-info gr1 gc3">
           <h3>Description</h3>
-          <h4>{typeface.description}</h4>
+          <TrustedHtml as="h4" html={typeface.description} />
         </div>
 
         <div className="type-info gr1 gc3">
