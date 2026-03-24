@@ -110,6 +110,16 @@ function normalizeVersion(value?: string): string {
   return normalized;
 }
 
+function formatVersionLabel(value?: string): string {
+  const trimmed = (value ?? "").trim();
+
+  if (!trimmed) {
+    return "";
+  }
+
+  return /^v/i.test(trimmed) ? trimmed : `v${trimmed}`;
+}
+
 function compactUrl(url?: string): string | undefined {
   if (!url) {
     return undefined;
@@ -653,13 +663,13 @@ function buildTypefaceSection(row: AuditRow): string[] {
   }
 
   lines.push(
-    `- recorded-release: ${row.typeface.latestRelease.version || "(blank)"} (${row.typeface.latestRelease.date})`
+    `- recorded-release: ${formatVersionLabel(row.typeface.latestRelease.version) || "(blank)"} (${row.typeface.latestRelease.date})`
   );
 
   if (row.release.status === "unknown") {
     lines.push("- upstream-release: unknown");
   } else {
-    lines.push(`- upstream-release: ${row.release.version} (${formatIsoDate(row.release.date)})`);
+    lines.push(`- upstream-release: ${formatVersionLabel(row.release.version)} (${formatIsoDate(row.release.date)})`);
     lines.push(`  source: ${compactUrl(row.release.url)}`);
   }
 

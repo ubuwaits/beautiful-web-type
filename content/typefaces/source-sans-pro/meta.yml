@@ -22,8 +22,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v3.006
-  date: 05 Sep 2019
+  version: 'v3.052R'
+  date: 4 Apr 2023
 projectUrl: https://github.com/adobe-fonts/source-sans-pro
 gFontsUrl: https://fonts.google.com/specimen/Source+Sans+3
 creator:

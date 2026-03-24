@@ -12,8 +12,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v1.202
-  date: 5 Nov 2017
+  version: 'v2.203'
+  date: 12 Nov 2024
 projectUrl: https://github.com/clauseggers/Playfair-Display
 gFontsUrl: https://fonts.google.com/specimen/Playfair+Display
 creator:

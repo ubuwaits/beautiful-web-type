@@ -1,6 +1,6 @@
 # Typeface Audit
 
-Generated: 2026-03-23T17:54:16.723Z
+Generated: 2026-03-24T07:17:09.052Z
 
 Method:
 - Google Fonts and project URLs are checked with live HTTP requests that follow redirects.
@@ -9,19 +9,17 @@ Method:
 
 Summary:
 - Total typefaces: 41
-- Google Fonts links: 26 ok, 2 broken, 0 error, 13 n/a
-- Project links: 40 ok, 0 broken, 1 error
-- Newer upstream release: 15 yes, 9 no, 17 unknown
+- Google Fonts links: 28 ok, 0 broken, 0 error, 13 n/a
+- Project links: 41 ok, 0 broken, 0 error
+- Newer upstream release: 1 yes, 24 no, 16 unknown
 
 Attention:
-- Broken Google Fonts links: 2
-  Source Sans Pro, Source Serif Pro
-- Problem project links: 1
+- Broken Google Fonts links: 0
+  none
+- Problem project links: 0
+  none
+- Typefaces with newer upstream releases: 1
   TASA Orbiter
-- Typefaces with newer upstream releases: 15
-  Commissioner, Fira Code, IBM Plex Mono, IBM Plex Sans, IBM Plex Sans Condensed, IBM
-  Plex Serif, Inter, Lora, Playfair Display, Poppins, Source Code Pro, Source Sans Pro,
-  Source Serif Pro, Space Grotesk, Work Sans
 
 Detailed Results:
 
@@ -104,13 +102,13 @@ Detailed Results:
   url: fonts.google.com/specimen/Commissioner
 - project-link: ok (200)
   url: github.com/kosbarts/Commissioner
-- recorded-release: v1.000 (24 Sep 2020)
-- upstream-release: 1.012 (unknown)
+- recorded-release: v1.012 (18 Nov 2025)
+- upstream-release: v1.012 (unknown)
   source: github.com/kosbarts/Commissioner/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/kosbarts/Commissioner
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Cooper Hewitt
 - google-fonts: n/a
@@ -137,20 +135,20 @@ Detailed Results:
 - google-fonts: n/a
 - project-link: ok (200)
   url: github.com/tonsky/FiraCode
-- recorded-release: v4.0 (18 May 2020)
-- upstream-release: 6.2 (unknown)
+- recorded-release: v6.2 (6 Dec 2021)
+- upstream-release: v6.2 (unknown)
   source: github.com/tonsky/FiraCode/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/tonsky/FiraCode
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## FiraGO
 - google-fonts: n/a
 - project-link: ok (200)
   url: github.com/bBoxType/FiraGO
 - recorded-release: v1.0 (14 Mar 2018)
-- upstream-release: 1.000 (unknown)
+- upstream-release: v1.000 (unknown)
   source: github.com/bBoxType/FiraGO/tags
 - newer-release: no
 - notes:
@@ -182,7 +180,7 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/undercasetype/Fraunces
 - recorded-release: v1.0 (29 Oct 2020)
-- upstream-release: 1.000 (unknown)
+- upstream-release: v1.000 (unknown)
   source: github.com/undercasetype/Fraunces/tags
 - newer-release: no
 - notes:
@@ -204,52 +202,52 @@ Detailed Results:
   url: fonts.google.com/specimen/IBM+Plex+Mono
 - project-link: ok (200)
   url: github.com/IBM/plex
-- recorded-release: v4.0.2 (09 Dec 2019)
+- recorded-release: v6.4.2 (16 May 2024)
 - upstream-release: v6.4.2 (unknown)
   source: github.com/IBM/plex/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/IBM/plex
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## IBM Plex Sans
 - google-fonts: ok (200)
   url: fonts.google.com/specimen/IBM+Plex+Sans
 - project-link: ok (200)
   url: github.com/IBM/plex
-- recorded-release: v4.0.2 (09 Dec 2019)
+- recorded-release: v6.4.2 (16 May 2024)
 - upstream-release: v6.4.2 (unknown)
   source: github.com/IBM/plex/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/IBM/plex
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## IBM Plex Sans Condensed
 - google-fonts: ok (200)
   url: fonts.google.com/specimen/IBM+Plex+Sans+Condensed
 - project-link: ok (200)
   url: github.com/IBM/plex
-- recorded-release: v4.0.2 (09 Dec 2019)
+- recorded-release: v6.4.2 (16 May 2024)
 - upstream-release: v6.4.2 (unknown)
   source: github.com/IBM/plex/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/IBM/plex
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## IBM Plex Serif
 - google-fonts: ok (200)
   url: fonts.google.com/specimen/IBM+Plex+Serif
 - project-link: ok (200)
   url: github.com/IBM/plex
-- recorded-release: v4.0.2 (09 Dec 2019)
+- recorded-release: v6.4.2 (16 May 2024)
 - upstream-release: v6.4.2 (unknown)
   source: github.com/IBM/plex/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/IBM/plex
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Inria Sans
 - google-fonts: n/a
@@ -306,13 +304,13 @@ Detailed Results:
   url: fonts.google.com/specimen/Inter
 - project-link: ok (200)
   url: rsms.me/inter
-- recorded-release: v3.15 (20 Aug 2020)
+- recorded-release: v4.1 (16 Nov 2024)
 - upstream-release: v4.1 (unknown)
   source: github.com/rsms/inter/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/rsms/inter
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Le Murmure
 - google-fonts: n/a
@@ -340,13 +338,13 @@ Detailed Results:
   url: fonts.google.com/specimen/Lora
 - project-link: ok (200)
   url: github.com/cyrealtype/Lora-Cyrillic
-- recorded-release: v2.210 (4 Feb 2019)
+- recorded-release: v.3021 (22 Oct 2025)
 - upstream-release: v.3021 (unknown)
   source: github.com/cyrealtype/Lora-Cyrillic/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/cyrealtype/Lora-Cyrillic
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Messapia
 - google-fonts: n/a
@@ -377,27 +375,27 @@ Detailed Results:
 - project-link: ok (200)
   url: github.com/clauseggers/Playfair-Display
   resolved: github.com/clauseggers/Playfair
-- recorded-release: v1.202 (5 Nov 2017)
-- upstream-release: 2.203 (unknown)
+- recorded-release: v2.203 (12 Nov 2024)
+- upstream-release: v2.203 (unknown)
   source: github.com/clauseggers/Playfair/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Project URL redirects to github.com/clauseggers/Playfair
   Repo: github.com/clauseggers/Playfair
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Poppins
 - google-fonts: ok (200)
   url: fonts.google.com/specimen/Poppins
 - project-link: ok (200)
   url: github.com/itfoundry/Poppins
-- recorded-release: v4.001 (26 Mar 2018)
+- recorded-release: v4.003 (5 Mar 2019)
 - upstream-release: v4.003 (unknown)
   source: github.com/itfoundry/Poppins/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/itfoundry/Poppins
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Rakkas
 - google-fonts: ok (200)
@@ -415,55 +413,55 @@ Detailed Results:
   url: fonts.google.com/specimen/Source+Code+Pro
 - project-link: ok (200)
   url: github.com/adobe-fonts/source-code-pro
-- recorded-release: v1.024 (4 Apr 2023)
-- upstream-release: 2.042R-u/1.062R-i/1.026R-vf (unknown)
+- recorded-release: v2.042R-u/1.062R-i/1.026R-vf (12 Apr 2023)
+- upstream-release: v2.042R-u/1.062R-i/1.026R-vf (unknown)
   source: github.com/adobe-fonts/source-code-pro/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/adobe-fonts/source-code-pro
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Source Sans Pro
-- google-fonts: broken (404)
-  url: fonts.google.com/specimen/Source+Sans+Pro
+- google-fonts: ok (200)
+  url: fonts.google.com/specimen/Source+Sans+3
 - project-link: ok (200)
   url: github.com/adobe-fonts/source-sans-pro
   resolved: github.com/adobe-fonts/source-sans
-- recorded-release: v3.006 (05 Sep 2019)
-- upstream-release: 3.052R (unknown)
+- recorded-release: v3.052R (4 Apr 2023)
+- upstream-release: v3.052R (unknown)
   source: github.com/adobe-fonts/source-sans/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Project URL redirects to github.com/adobe-fonts/source-sans
   Repo: github.com/adobe-fonts/source-sans
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Source Serif Pro
-- google-fonts: broken (404)
-  url: fonts.google.com/specimen/Source+Serif+Pro
+- google-fonts: ok (200)
+  url: fonts.google.com/specimen/Source+Serif+4
 - project-link: ok (200)
   url: github.com/adobe-fonts/source-serif-pro
   resolved: github.com/adobe-fonts/source-serif
-- recorded-release: v3.001 (11 Oct 2019)
-- upstream-release: 4.005R (unknown)
+- recorded-release: v4.005R (20 Jan 2023)
+- upstream-release: v4.005R (unknown)
   source: github.com/adobe-fonts/source-serif/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Project URL redirects to github.com/adobe-fonts/source-serif
   Repo: github.com/adobe-fonts/source-serif
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Space Grotesk
 - google-fonts: n/a
 - project-link: ok (200)
   url: github.com/floriankarsten/space-grotesk
-- recorded-release: v1.1.6 (9 Dec 2019)
-- upstream-release: 2.0.0 (unknown)
+- recorded-release: v2.0.0 (29 Oct 2020)
+- upstream-release: v2.0.0 (unknown)
   source: github.com/floriankarsten/space-grotesk/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/floriankarsten/space-grotesk
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Space Mono
 - google-fonts: ok (200)
@@ -478,13 +476,15 @@ Detailed Results:
 
 ## TASA Orbiter
 - google-fonts: n/a
-- project-link: error (fetch failed)
-  url: tasatype.localremote.co
+- project-link: ok (200)
+  url: github.com/localremotetw/TASA-Typeface-Collection
 - recorded-release: v1.001 (16 May 2023)
-- upstream-release: unknown
-- newer-release: unknown
+- upstream-release: v2.012 (unknown)
+  source: github.com/localremotetw/TASA-Typeface-Collection/tags
+- newer-release: yes
 - notes:
-  Project page did not resolve, so upstream release could not be checked.
+  Repo: github.com/localremotetw/TASA-Typeface-Collection
+  A newer stable GitHub tag exists than the release recorded in metadata.
 
 ## Vollkorn
 - google-fonts: ok (200)
@@ -504,13 +504,13 @@ Detailed Results:
   url: fonts.google.com/specimen/Work+Sans
 - project-link: ok (200)
   url: github.com/weiweihuanghuang/Work-Sans
-- recorded-release: v? (1 May 2020)
+- recorded-release: v2.010 (31 Jul 2020)
 - upstream-release: v2.010 (unknown)
   source: github.com/weiweihuanghuang/Work-Sans/tags
-- newer-release: yes
+- newer-release: no
 - notes:
   Repo: github.com/weiweihuanghuang/Work-Sans
-  A newer stable GitHub tag exists than the release recorded in metadata.
+  Recorded release matches the latest stable GitHub tag.
 
 ## Zilla Slab
 - google-fonts: ok (200)

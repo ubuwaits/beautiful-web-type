@@ -13,8 +13,8 @@ weights:
   - weight: 700
     name: Bold
 latestRelease:
-  version: v4.0
-  date: 18 May 2020
+  version: 'v6.2'
+  date: 6 Dec 2021
 projectUrl: https://github.com/tonsky/FiraCode
 creator:
   name: Nikita Prokopov

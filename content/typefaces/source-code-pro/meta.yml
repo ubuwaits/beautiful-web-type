@@ -20,8 +20,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v1.024
-  date: 4 Apr 2023
+  version: 'v1.026'
+  date: 12 Apr 2023
 projectUrl: https://github.com/adobe-fonts/source-code-pro
 gFontsUrl: https://fonts.google.com/specimen/Source+Code+Pro
 creator:

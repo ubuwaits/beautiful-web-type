@@ -14,8 +14,8 @@ weights:
   - weight: 700
     name: Bold
 latestRelease:
-  version: v1.1.6
-  date: 9 Dec 2019
+  version: 'v2.0.0'
+  date: 29 Oct 2020
 projectUrl: https://github.com/floriankarsten/space-grotesk
 creator:
   name: Florian Karsten
