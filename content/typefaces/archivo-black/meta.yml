@@ -19,3 +19,5 @@ familyFaces:
   - Archivo
 comparisonFaces:
   - Archivo
+sampleText: "Gesammelte Werke"
+sampleClasses: "font-[400] tracking-tight"

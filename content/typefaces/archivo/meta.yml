@@ -27,3 +27,5 @@ comparisonFaces:
   - FiraGO
   - IBM Plex Sans
   - Source Sans Pro
+sampleText: "Bauhaus-Archiv"
+sampleClasses: "font-[600] tracking-tight"
