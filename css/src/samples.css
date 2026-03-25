@@ -1,0 +1,80 @@
+.sample {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sample > a {
+  align-content: center;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  height: 45rem;
+  justify-content: center;
+  padding: 2rem;
+}
+@media screen and (max-width: 1104px) {
+  .sample > a {
+    padding: 4rem 3rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sample > a {
+    height: auto;
+    padding: 2.5rem;
+  }
+}
+.sample .text {
+  margin: 0 auto;
+}
+
+.pairing .text {
+  align-content: center;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.meta {
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+  color: #fff;
+  display: flex;
+  font: 700 var(--ms0)/1rem var(--ui-face);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  text-align: left;
+}
+.meta.code {
+  color: #a7a7a7;
+  font-weight: 500;
+}
+.meta.dark {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.075);
+  color: #333;
+}
+.meta.top {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+.meta.top.dark {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.075);
+  color: #333;
+}
+.meta a.glyph-explorer {
+  color: var(--red);
+  display: inline-block;
+  font-size: var(--ms-1);
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.meta .pairing-list a:first-child::after {
+  content: " &";
+}
+
+.detail .sample:not(.pairing) .meta {
+  display: none;
+}
+.detail .sample:not(.pairing) a {
+  pointer-events: none;
+}

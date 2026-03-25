@@ -1,0 +1,264 @@
+@media screen and (max-width: 1104px) {
+  .pairing {
+    grid-area: span 1/span 12;
+  }
+}
+.archivo-black-and-lora-sample {
+  background: #080543;
+}
+.archivo-black-and-lora-sample .text {
+  color: #FFF;
+  margin: 3rem 0;
+  text-align: center;
+}
+.archivo-black-and-lora-sample .text h1 {
+  font: 400 var(--ms10)/0.8 var(--archivo-black);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 720px) {
+  .archivo-black-and-lora-sample .text h1 {
+    font-size: var(--ms7);
+  }
+}
+.archivo-black-and-lora-sample .text p {
+  font: 400 var(--ms1)/1.4 var(--lora);
+  margin: 2em 2em 0;
+}
+@media screen and (max-width: 720px) {
+  .archivo-black-and-lora-sample .text p {
+    margin: 1em 0 0 0;
+  }
+}
+.archivo-black-and-lora-sample .text p:last-child {
+  margin-top: 1em;
+}
+
+.fraunces-and-libre-franklin-sample {
+  background: #111412;
+}
+.fraunces-and-libre-franklin-sample .text {
+  color: #377CB2;
+  margin: 6rem 0;
+  text-align: center;
+}
+.fraunces-and-libre-franklin-sample .text h1 {
+  font: 200 var(--ms13)/0.8 var(--fraunces);
+  font-variation-settings: "WONK" 1, "SOFT" 10, "opsz" 144;
+  letter-spacing: -0.05em;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 721px) and (max-width: 1600px) {
+  .fraunces-and-libre-franklin-sample .text h1 {
+    font-size: clamp(var(--ms8), calc(14.5vw - 2rem), var(--ms13));
+  }
+}
+@media screen and (max-width: 720px) {
+  .fraunces-and-libre-franklin-sample .text h1 {
+    font-size: var(--ms8);
+  }
+}
+.fraunces-and-libre-franklin-sample .text h2 {
+  font: 350 var(--ms7)/1 var(--fraunces);
+  font-variation-settings: "WONK" 1, "SOFT" 60, "opsz" 90;
+  letter-spacing: 0.0045em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 720px) {
+  .fraunces-and-libre-franklin-sample .text h2 {
+    font-size: var(--ms2);
+  }
+}
+.fraunces-and-libre-franklin-sample .text h3 {
+  color: #FFF;
+  font: 600 var(--ms2)/1.4 var(--libre-franklin);
+  margin: 6rem 0 0 0;
+}
+@media screen and (max-width: 720px) {
+  .fraunces-and-libre-franklin-sample .text h3 {
+    font-size: var(--ms0);
+  }
+}
+.fraunces-and-libre-franklin-sample .text p {
+  color: #FFF;
+  font: 600 var(--ms2)/1.4 var(--libre-franklin);
+}
+@media screen and (max-width: 720px) {
+  .fraunces-and-libre-franklin-sample .text p {
+    font-size: var(--ms0);
+  }
+}
+
+.libre-franklin-and-source-serif-pro-sample {
+  background-color: #FAF9F6;
+}
+.libre-franklin-and-source-serif-pro-sample .text {
+  color: #272727;
+  margin: 3rem;
+}
+@media screen and (max-width: 720px) {
+  .libre-franklin-and-source-serif-pro-sample .text {
+    margin: 3rem 0;
+  }
+}
+.libre-franklin-and-source-serif-pro-sample .text h1 {
+  display: flex;
+  font: 900 var(--ms8)/0.9 var(--libre-franklin);
+  margin-bottom: 0.1em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 721px) and (max-width: 1600px) {
+  .libre-franklin-and-source-serif-pro-sample .text h1 {
+    font-size: clamp(var(--ms5), calc(4vw + 0.35rem), var(--ms8));
+  }
+}
+@media screen and (max-width: 720px) {
+  .libre-franklin-and-source-serif-pro-sample .text h1 {
+    font-size: var(--ms5);
+  }
+}
+.libre-franklin-and-source-serif-pro-sample .text h1 span:last-child {
+  color: #0FADDA;
+  font-weight: 300;
+  padding-left: 0.25em;
+  text-transform: none;
+}
+@media screen and (min-width: 721px) and (max-width: 1600px) {
+  .libre-franklin-and-source-serif-pro-sample .text h1 span:last-child {
+    padding-left: 0.15em;
+  }
+}
+.libre-franklin-and-source-serif-pro-sample .text p {
+  font: 400 var(--ms1)/1.4 var(--source-serif-pro);
+  margin: 1em 4em 0 0;
+}
+@media screen and (max-width: 720px) {
+  .libre-franklin-and-source-serif-pro-sample .text p {
+    margin-right: 0;
+  }
+}
+
+.messapia-and-inter-sample {
+  background: #191F26;
+}
+.messapia-and-inter-sample .text {
+  color: #FFF;
+  margin: 6rem 3rem;
+  text-align: center;
+}
+@media screen and (max-width: 720px) {
+  .messapia-and-inter-sample .text {
+    margin: 3rem 0rem;
+  }
+}
+.messapia-and-inter-sample .text h1 {
+  font: 700 var(--ms8)/0.95 var(--messapia);
+  letter-spacing: -0.035em;
+  margin: 0 0 2rem 0;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 721px) and (max-width: 1600px) {
+  .messapia-and-inter-sample .text h1 {
+    font-size: clamp(var(--ms5), calc(5.75vw - 1.75rem), var(--ms8));
+  }
+}
+@media screen and (max-width: 720px) {
+  .messapia-and-inter-sample .text h1 {
+    font-size: var(--ms3);
+    line-height: 1.1;
+  }
+}
+.messapia-and-inter-sample .text p {
+  color: #C4CCD5;
+  font: 440 var(--ms3)/1.25 var(--inter);
+  letter-spacing: -0.015em;
+}
+@media screen and (max-width: 720px) {
+  .messapia-and-inter-sample .text p {
+    font-size: var(--ms1);
+  }
+}
+
+.oswald-and-source-serif-pro-sample {
+  background: linear-gradient(25deg, #6356dd, #ec2a22);
+}
+.oswald-and-source-serif-pro-sample .text {
+  color: #171717;
+  margin: 3rem 0;
+  text-align: center;
+}
+.oswald-and-source-serif-pro-sample .text h1 {
+  color: #FFF;
+  font: 700 var(--ms10)/1 var(--oswald);
+  margin-bottom: 2.25rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 720px) {
+  .oswald-and-source-serif-pro-sample .text h1 {
+    font-size: var(--ms8);
+    margin-bottom: 1.2rem;
+  }
+}
+.oswald-and-source-serif-pro-sample .text h2 {
+  font: 700 var(--ms4)/1.2 var(--oswald);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 720px) {
+  .oswald-and-source-serif-pro-sample .text h2 {
+    font-size: var(--ms2);
+    margin-bottom: 1rem;
+  }
+}
+.oswald-and-source-serif-pro-sample .text h3 {
+  font: 400 var(--ms5)/1.1 var(--source-serif-pro);
+}
+@media screen and (max-width: 720px) {
+  .oswald-and-source-serif-pro-sample .text h3 {
+    font-size: var(--ms3);
+  }
+}
+
+.rakkas-and-vollkorn-sample {
+  background: #FFF;
+}
+.rakkas-and-vollkorn-sample .text {
+  color: #272727;
+  margin: 3rem 0;
+  text-align: center;
+}
+.rakkas-and-vollkorn-sample .text h1 {
+  font: 400 var(--ms8)/0.9 var(--rakkas);
+  letter-spacing: 0.025em;
+  margin: 0.3em 0 0.25em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 720px) {
+  .rakkas-and-vollkorn-sample .text h1 {
+    font-size: var(--ms7);
+  }
+}
+.rakkas-and-vollkorn-sample .text h2 {
+  color: #F00E31;
+  font: 400 var(--ms5)/1 var(--vollkorn);
+  font-feature-settings: "smcp";
+}
+@media screen and (max-width: 720px) {
+  .rakkas-and-vollkorn-sample .text h2 {
+    font-size: var(--ms4);
+  }
+}
+.rakkas-and-vollkorn-sample .text h3 {
+  font: italic 400 var(--ms2)/1 var(--vollkorn);
+  margin-top: 2em;
+}
+@media screen and (max-width: 720px) {
+  .rakkas-and-vollkorn-sample .text h3 {
+    font-size: var(--ms1);
+  }
+}
+.rakkas-and-vollkorn-sample .text h3 span {
+  font-style: normal;
+  font-feature-settings: "smcp";
+  letter-spacing: 0.05em;
+}

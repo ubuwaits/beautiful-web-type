@@ -1,0 +1,403 @@
+.type-detail-header {
+  align-self: flex-end;
+  display: flex;
+}
+.type-detail-header h2 {
+  font: 600 var(--ms5)/2.5rem var(--ui-face);
+}
+.type-detail-header h3 {
+  font: 400 var(--ms5)/2.5rem var(--ui-face);
+}
+@media screen and (max-width: 1104px) {
+  .type-detail-header h2, .type-detail-header h3 {
+    font-size: var(--ms4);
+  }
+}
+@media screen and (max-width: 720px) {
+  .type-detail-header h2, .type-detail-header h3 {
+    font-size: var(--ms3);
+    line-height: 2rem;
+  }
+}
+
+.font-download {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 720px) {
+  .font-download {
+    margin-top: 1rem;
+  }
+}
+.font-download a {
+  background: #000;
+  border-radius: 3px;
+  color: #FFF;
+  font: 600 var(--ms1)/1.25rem var(--ui-face);
+  padding: 0.75rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.2s ease-in-out;
+}
+@media screen and (max-width: 720px) {
+  .font-download a {
+    flex-basis: 100%;
+    font-size: var(--ms0);
+    padding: 0.7em 0;
+  }
+}
+.font-download a:hover {
+  background: var(--red);
+}
+.font-download a span {
+  display: block;
+  font-size: var(--ms0);
+  font-weight: 400;
+  opacity: 0.8;
+  text-transform: none;
+}
+@media screen and (max-width: 720px) {
+  .font-download a span {
+    font-size: var(--ms-1);
+  }
+}
+.font-download a + a {
+  margin-left: 1em;
+}
+
+.type-styles > div {
+  align-items: baseline;
+  display: flex;
+}
+.type-styles p {
+  font-size: var(--ms5);
+  line-height: 3rem;
+  margin-right: 0.75rem;
+}
+@media screen and (max-width: 720px) {
+  .type-styles p {
+    font-size: var(--ms3);
+    line-height: 2.5rem;
+  }
+}
+.type-styles .weight {
+  font-size: var(--ms2);
+  color: #878787;
+  line-height: 1;
+}
+
+.type-info h3 {
+  font: 700 var(--ms0)/1.75rem var(--ui-face);
+  text-transform: uppercase;
+}
+.type-info h4, .type-info li {
+  font: 400 var(--ms1)/1.75rem var(--ui-face);
+  margin-bottom: 0.875rem;
+}
+.type-info h4:last-child, .type-info li:last-child {
+  margin-bottom: 0;
+}
+.type-info ul {
+  list-style: none;
+  padding: 0;
+}
+.type-info ul li {
+  margin-bottom: 0;
+}
+.type-info a {
+  text-decoration: underline;
+}
+
+.type-detail-table {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1104px) {
+  .type-detail-table {
+    grid-area: span 1/span 12 !important;
+  }
+}
+@media screen and (max-width: 720px) {
+  .type-detail-table {
+    grid-area: span 1/span 6 !important;
+  }
+}
+
+.examples {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+  padding: 2rem;
+}
+@media screen and (max-width: 720px) {
+  .examples {
+    padding: 1rem !important;
+  }
+}
+.examples.flow-row {
+  align-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.examples.flow-column {
+  flex-flow: column;
+}
+
+.examples > div {
+  padding: 1rem;
+  overflow-wrap: break-word;
+}
+
+.character-examples > div {
+  padding: 0.5rem 0.25rem;
+}
+
+.word-examples > div {
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .word-examples > div h1 {
+    font-size: var(--ms3) !important;
+  }
+  .word-examples > div:nth-child(6) h1 {
+    font-size: var(--ms2) !important;
+  }
+}
+.examples h1 {
+  font-size: var(--ms4);
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 720px) {
+  .examples h1 {
+    margin-bottom: 0;
+  }
+}
+
+.examples p {
+  line-height: 1.5rem;
+}
+
+.examples span {
+  font-size: var(--ms6);
+  line-height: 3.5rem;
+}
+
+.examples.small-characters span {
+  font-size: var(--ms4);
+}
+
+.word-examples h1 {
+  font-size: var(--ms6);
+}
+.word-examples div:nth-child(1) h1 {
+  font-weight: 100;
+}
+.word-examples div:nth-child(2) h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.word-examples div:nth-child(3) h1 {
+  font-weight: 400;
+}
+.word-examples div:nth-child(4) h1 {
+  font-weight: 500;
+}
+.word-examples div:nth-child(5) h1 {
+  font-weight: 700;
+}
+.word-examples div:nth-child(6) h1 {
+  font-weight: 800;
+  font-size: var(--ms5);
+}
+.word-examples div:nth-child(7) h1 {
+  font-weight: 900;
+}
+
+.paragraph-examples .ms2 {
+  line-height: 2rem;
+}
+.paragraph-examples .ms1 {
+  line-height: 1.75rem;
+}
+.paragraph-examples .ms0 {
+  line-height: 1.5rem;
+}
+.paragraph-examples .ms-1 {
+  line-height: 1.25rem;
+}
+.paragraph-examples .ms-2 {
+  line-height: 1rem;
+}
+
+.examples-figures .examples h1 {
+  font-size: var(--ms6);
+  font-weight: 400;
+}
+
+.examples.typeface-comparison h1 {
+  font-size: var(--ms7);
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+@media screen and (max-width: 720px) {
+  .examples.typeface-comparison h1 {
+    font-size: var(--ms3);
+    line-height: 2.5rem;
+  }
+}
+
+.character-label,
+.code {
+  color: #a7a7a7;
+  font: normal 600 var(--ms-1)/1 var(--ibm-plex-mono);
+  font-feature-settings: "liga" off;
+  font-variant: normal;
+  line-height: 1rem;
+  margin-top: 0.5rem;
+  padding: 0;
+  text-transform: none;
+}
+
+.character-label + .code {
+  margin-top: 0;
+}
+
+.grid-comparisons h3,
+.grid-pairings h3 {
+  font: italic 400 var(--ms5)/1.2 var(--alegreya-sans);
+}
+@media screen and (max-width: 720px) {
+  .grid-comparisons h3,
+  .grid-pairings h3 {
+    font-size: var(--ms3);
+    grid-area: span 1/span 6;
+    margin-top: 1rem;
+  }
+}
+
+.grid.alegreya .examples-smallcap {
+  grid-area: span 6/span 6;
+}
+
+.grid.alegreya-sans .examples-paragraphs {
+  grid-area: span 5/span 6;
+}
+.grid.alegreya-sans .examples-smallcap {
+  grid-area: span 6/span 6;
+}
+
+.grid.archivo-black .examples-paragraphs {
+  grid-area: span 11/span 6;
+}
+.grid.archivo-black .examples-words .word-examples div:nth-child(5) h1 {
+  font-size: var(--ms4);
+}
+
+.grid.biorhyme .examples-headlines .examples h1 {
+  font-size: var(--ms5);
+}
+
+.grid.biorhyme-expanded .examples-characters .examples span {
+  font-size: var(--ms4);
+}
+.grid.biorhyme-expanded .examples-words .word-examples h1 {
+  font-size: var(--ms4);
+}
+.grid.biorhyme-expanded .examples-words .word-examples div:nth-child(5) h1 {
+  font-size: var(--ms2);
+}
+.grid.biorhyme-expanded .examples-headlines-uppercase .examples h1 {
+  font-size: var(--ms3);
+}
+
+.grid.firago .examples-smallcap {
+  grid-area: span 11/span 6;
+}
+
+.grid.ibm-plex-mono .examples-paragraphs {
+  grid-area: span 9/span 6;
+}
+
+.grid.instrument-serif .examples-words .word-examples h1 {
+  font-weight: 400;
+}
+
+.grid.le-murmure .examples-characters .examples span {
+  font-size: var(--ms8);
+}
+.grid.le-murmure .examples-words .word-examples h1 {
+  font-size: var(--ms7);
+}
+.grid.le-murmure .examples-headlines .examples h1,
+.grid.le-murmure .examples-headlines-uppercase .examples h1 {
+  font-size: var(--ms8);
+  line-height: 4.5rem;
+}
+
+.grid.lora .examples-paragraphs {
+  grid-area: span 9/span 6;
+}
+
+.grid.messapia .examples-words .word-examples h1 {
+  font-size: var(--ms6);
+}
+.grid.messapia .examples-words .word-examples div:nth-child(5) h1 {
+  font-size: var(--ms4);
+}
+
+.grid.playfair-display .examples-characters .examples span {
+  font-size: var(--ms7);
+}
+.grid.playfair-display .examples-headlines .examples h1 {
+  font-size: var(--ms7);
+  line-height: 1;
+}
+.grid.playfair-display .examples-headlines-italic .examples h1 {
+  font-size: var(--ms7);
+  line-height: 1;
+}
+.grid.playfair-display .examples-smallcap .examples h1 {
+  font-size: var(--ms7);
+  line-height: 0.9;
+}
+.grid.playfair-display .examples-smallcap-italic .examples h1 {
+  line-height: 0.9;
+}
+
+.grid.rakkas .examples-headlines .examples h1 {
+  font-size: var(--ms8);
+}
+.grid.rakkas .examples-headlines .examples h1 {
+  font-size: var(--ms8);
+  line-height: 4.5rem;
+}
+.grid.rakkas .examples-headlines-uppercase .examples h1 {
+  font-size: var(--ms8);
+  line-height: 4rem;
+}
+
+.grid.space-mono .examples-words .word-examples h1 {
+  font-feature-settings: "liga" off, "clig" off, "dlig" off;
+}
+.grid.space-mono .examples-headlines .examples h1,
+.grid.space-mono .examples-headlines-italic .examples h1 {
+  font-feature-settings: "liga" off, "clig" off, "dlig" off;
+}
+.grid.space-mono .examples-paragraphs {
+  font-feature-settings: "liga" off, "clig" off, "dlig" off;
+}
+
+.grid.work-sans .examples-smallcap {
+  grid-area: span 10/span 6;
+}
+
+.grid.zilla-slab .examples-smallcap {
+  grid-area: span 6/span 6;
+}

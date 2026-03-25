@@ -1,0 +1,8 @@
+@import url("https://indestructibletype.com/fonts/Jost.css");
+:root {
+  --jost: 'Jost', sans-serif;
+}
+
+.jost {
+  font-family: "Jost", sans-serif !important;
+}

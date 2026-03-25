@@ -1,0 +1,128 @@
+footer.grid .subscribe-form input[type=submit] {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* Remove excess padding and border in Firefox 4+ */
+}
+footer.grid .subscribe-form input[type=submit]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+footer.grid {
+  box-shadow: 0 -1px 0 rgba(215, 215, 215, 0.4);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+@media screen and (max-width: 720px) {
+  footer.grid {
+    grid-gap: 1.5rem;
+  }
+}
+footer.grid h3 {
+  color: #797979;
+  font: 700 var(--ms0)/1.25rem var(--ui-face);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+footer.grid li {
+  font: 400 var(--ms0)/1.25rem var(--ui-face);
+  margin-bottom: 0.5rem;
+}
+footer.grid li a:hover {
+  color: var(--red);
+}
+footer.grid p {
+  font: 400 var(--ms1)/1.75 var(--ui-face);
+}
+@media screen and (max-width: 1104px) {
+  footer.grid .footer-type-list {
+    grid-area: span 1/span 4;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer.grid .footer-type-list {
+    grid-area: span 1/span 6;
+  }
+}
+@media screen and (max-width: 1104px) {
+  footer.grid .footer-patreon,
+  footer.grid .footer-newsletter {
+    grid-area: span 1/span 12;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer.grid .footer-patreon,
+  footer.grid .footer-newsletter {
+    grid-area: span 1/span 6;
+  }
+}
+footer.grid .footer-patreon-content {
+  display: flex;
+}
+@media screen and (max-width: 720px) {
+  footer.grid .footer-patreon-content {
+    flex-direction: column;
+  }
+}
+footer.grid .footer-patreon-content .patreon-logo {
+  margin: 0.25em 1em 0 0;
+}
+footer.grid .footer-patreon-content .patreon-logo img {
+  height: 3.375rem;
+}
+footer.grid .subscribe-form {
+  margin: 0.5em 0;
+}
+footer.grid .subscribe-form form {
+  display: flex;
+  font: var(--ms1) var(--ui-face);
+}
+footer.grid .subscribe-form label {
+  display: none;
+}
+footer.grid .subscribe-form input[type=text] {
+  -webkit-appearance: none;
+  border: 1px solid #000;
+  border-radius: 0;
+  border-right: 0;
+  flex-grow: 2;
+  outline: none;
+  padding: 0.75em;
+  min-width: 100px;
+}
+footer.grid .subscribe-form input[type=submit] {
+  background: #000;
+  color: #FFF;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+}
+
+.chadwin:before {
+  content: "NEW";
+  display: inline-block;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 0.15em 0.5em;
+  margin-right: 0.5em;
+  border-radius: 0.25em;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}

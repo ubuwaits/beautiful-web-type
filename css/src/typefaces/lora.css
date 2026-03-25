@@ -1,0 +1,22 @@
+:root {
+  --lora: 'Lora', serif;
+}
+
+.lora {
+  font-family: "Lora", serif !important;
+}
+
+@font-face {
+  font-family: "Lora";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/assets/fonts/lora/Lora-VF.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Lora";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("/assets/fonts/lora/Lora-Italic-VF.woff2") format("woff2-variations");
+}

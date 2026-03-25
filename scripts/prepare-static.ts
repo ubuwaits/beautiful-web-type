@@ -7,11 +7,11 @@ const GOOGLE_VERIFICATION_FILE = "google146824b99fdbed48.html";
 const GOOGLE_VERIFICATION_CONTENT =
   "google-site-verification: google146824b99fdbed48.html\n";
 const REPO_ROOT_DOCUMENTATION_FILES = ["CHANGELOG.md", "LICENSE", "README.md"];
+const FILES_TO_COPY = [{ source: "css/application.css", target: "css/application.css" }];
 
 const DIRECTORIES_TO_CLEAR = ["assets", "css", "js", "v1"];
 const DIRECTORIES_TO_COPY = [
   { source: "assets", target: "assets" },
-  { source: "css", target: "css" },
   { source: "js", target: "js" },
   { source: "v1/stylesheets", target: "v1/stylesheets" }
 ];
@@ -38,6 +38,12 @@ async function copyStaticEntries() {
     await cp(path.join(ROOT_DIR, directory.source), path.join(PUBLIC_DIR, directory.target), {
       recursive: true
     });
+  }
+
+  for (const file of FILES_TO_COPY) {
+    const targetPath = path.join(PUBLIC_DIR, file.target);
+    await mkdir(path.dirname(targetPath), { recursive: true });
+    await cp(path.join(ROOT_DIR, file.source), targetPath);
   }
 }
 
