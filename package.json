@@ -40,5 +40,10 @@
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "vitest": "^3.0.8"
+  },
+  "pnpm": {
+    "overrides": {
+      "picomatch": "^4.0.4"
+    }
   }
 }
