@@ -39,11 +39,13 @@
     "tailwindcss": "^3.4.17",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
+    "vite": "^7.3.2",
     "vitest": "^3.0.8"
   },
   "pnpm": {
     "overrides": {
-      "picomatch": "^4.0.4"
+      "picomatch": "^4.0.4",
+      "vite": "^7.3.2"
     }
   }
 }
