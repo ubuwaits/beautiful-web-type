@@ -3,7 +3,11 @@ import path from "node:path";
 
 import type { Metadata } from "next";
 
+import { createPageMetadata } from "@/lib/metadata";
+
 const LEGACY_V1_PATH = path.join(process.cwd(), "v1/index.html");
+const title = "Beautiful Web Type - the best typefaces from Google Fonts";
+const description = "A showcase of the best typefaces from the Google web fonts directory.";
 
 function extractBodyHtml(html: string): string {
   const match = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
@@ -19,12 +23,14 @@ const legacyBodyHtml = extractBodyHtml(fs.readFileSync(LEGACY_V1_PATH, "utf8"));
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Beautiful Web Type - the best typefaces from Google Fonts"
+    absolute: title
   },
-  description: "A showcase of the best typefaces from the Google web fonts directory.",
-  alternates: {
-    canonical: "/v1/"
-  }
+  description,
+  ...createPageMetadata({
+    title,
+    description,
+    path: "/v1/"
+  })
 };
 
 export default function LegacyV1Page() {

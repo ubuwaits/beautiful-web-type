@@ -4,15 +4,14 @@ import { Analytics } from "@vercel/analytics/next";
 
 import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/site-header";
+import {
+  DEFAULT_SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_ORIGIN,
+  TWITTER_CREATOR
+} from "@/lib/metadata";
 
 import "./globals.css";
-
-const SITE_NAME = "Beautiful Web Type";
-const SITE_ORIGIN = "https://www.beautifulwebtype.com";
-const DEFAULT_SITE_DESCRIPTION =
-  "Discover the best free fonts from Google and across the web. See beautiful examples, recommended pairings, OpenType features, and more.";
-const DEFAULT_SOCIAL_IMAGE_PATH = "/assets/images/card.png";
-const TWITTER_CREATOR = "@ubuwaits";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
@@ -22,16 +21,11 @@ export const metadata: Metadata = {
   },
   description: DEFAULT_SITE_DESCRIPTION,
   openGraph: {
-    title: SITE_NAME,
-    siteName: SITE_NAME,
-    description: DEFAULT_SITE_DESCRIPTION,
-    url: SITE_ORIGIN,
-    images: [DEFAULT_SOCIAL_IMAGE_PATH]
+    siteName: SITE_NAME
   },
   twitter: {
     card: "summary_large_image",
-    creator: TWITTER_CREATOR,
-    images: [DEFAULT_SOCIAL_IMAGE_PATH]
+    creator: TWITTER_CREATOR
   }
 };
 

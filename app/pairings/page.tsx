@@ -4,16 +4,21 @@ import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
 import { getLatestPairings } from "@/lib/content";
+import { createPageMetadata } from "@/lib/metadata";
 
 const latestPairings = getLatestPairings();
+const title = "Recommended Typeface Pairings";
+const description =
+  "See beautiful examples of recommended pairings using only free & open-source fonts.";
 
 export const metadata: Metadata = {
-  title: "Recommended Typeface Pairings",
-  description:
-    "See beautiful examples of recommended pairings using only free & open-source fonts.",
-  alternates: {
-    canonical: "/pairings/"
-  }
+  title,
+  description,
+  ...createPageMetadata({
+    title,
+    description,
+    path: "/pairings/"
+  })
 };
 
 export default function PairingsPage() {

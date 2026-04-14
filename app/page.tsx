@@ -9,16 +9,22 @@ import {
   getLatestPairings,
   getLatestTypefaces
 } from "@/lib/content";
+import { DEFAULT_SITE_DESCRIPTION, createPageMetadata } from "@/lib/metadata";
 
 const latestTypefaces = getLatestTypefaces().slice(0, 10);
 const latestPairings = getLatestPairings();
 const specimen = getTextData().specimen;
+const title = "In-Depth Guide to the Best Free Fonts";
+const description = DEFAULT_SITE_DESCRIPTION;
 
 export const metadata: Metadata = {
-  title: "In-Depth Guide to the Best Free Fonts",
-  alternates: {
-    canonical: "/"
-  }
+  title,
+  description,
+  ...createPageMetadata({
+    title,
+    description,
+    path: "/"
+  })
 };
 
 export default function HomePage() {

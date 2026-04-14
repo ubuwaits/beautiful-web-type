@@ -5,12 +5,10 @@ import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
 import { GlyphInspector } from "@/components/glyph-inspector";
 import { PageShell } from "@/components/page-shell";
 import { getAllTypefaceSlugs, getGlyphPageBySlug, getTypefaceBySlug } from "@/lib/content";
+import { createPageMetadata } from "@/lib/metadata";
 import { getGlyphPath, getTypefacePath } from "@/lib/routes";
 
 export const dynamicParams = false;
-
-const SITE_NAME = "Beautiful Web Type";
-const TWITTER_CREATOR = "@ubuwaits";
 
 export function generateStaticParams() {
   return getAllTypefaceSlugs().map((typefaceSlug) => ({ typefaceSlug }));
@@ -36,21 +34,12 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: {
-      canonical: path
-    },
-    openGraph: {
+    ...createPageMetadata({
       title,
-      siteName: SITE_NAME,
       description,
-      url: path,
-      images: [imagePath]
-    },
-    twitter: {
-      card: "summary_large_image",
-      creator: TWITTER_CREATOR,
-      images: [imagePath]
-    }
+      path,
+      imagePath
+    })
   };
 }
 
