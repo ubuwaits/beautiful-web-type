@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.10.0",
   "scripts": {
+    "audit:security": "osv-scanner scan source --lockfile=pnpm-lock.yaml --verbosity=error",
     "audit:typefaces": "tsx scripts/audit-typefaces.ts",
     "build:legacy-css": "tsx scripts/build-legacy-css.ts",
     "prepare:static": "pnpm build:legacy-css && tsx scripts/prepare-static.ts",
@@ -15,7 +16,7 @@
     "start": "serve out -l 3000",
     "test": "pnpm test:unit && pnpm test:e2e",
     "test:unit": "vitest run",
-    "test:e2e": "pnpm prepare:static && playwright test"
+    "test:e2e": "pnpm build && env -u NO_COLOR playwright test"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -44,6 +45,7 @@
   },
   "pnpm": {
     "overrides": {
+      "brace-expansion": "^1.1.13",
       "picomatch": "^4.0.4",
       "vite": "^7.3.2"
     }

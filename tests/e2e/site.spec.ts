@@ -6,14 +6,14 @@ test("renders the serif category page with serif samples", async ({ page }) => {
   await expect(page.locator(".page-header h1")).toHaveText("Serif Typefaces");
   await expect(page.locator("[data-testid='typeface-card'] a[href='/alegreya/']").first()).toBeVisible();
   await expect(page.locator("[data-testid='typeface-card'] a[href='/inter/']")).toHaveCount(0);
-  await expect(page.locator("[data-testid='typeface-card']").first()).toContainText("Signal & Shape");
+  await expect(page.locator("[data-testid='typeface-card']").first()).toContainText("The Iliad");
 });
 
-test("uses the shared specimen hero on detail pages", async ({ page }) => {
+test("uses typeface-specific specimen text on detail pages", async ({ page }) => {
   await page.goto("/inter/");
 
   await expect(page.locator("[data-testid='typeface-card'][data-variant='hero']")).toContainText(
-    "Signal & Shape"
+    "Hahnenkammrennen"
   );
 });
 

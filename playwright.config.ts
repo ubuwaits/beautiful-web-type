@@ -8,7 +8,7 @@ export default defineConfig({
     trace: "on-first-retry"
   },
   webServer: {
-    command: "NEXT_DIST_DIR=.next-playwright pnpm exec next dev --port 3100",
+    command: "pnpm exec serve out -l 3100",
     reuseExistingServer: false,
     timeout: 120000,
     url: "http://127.0.0.1:3100"
