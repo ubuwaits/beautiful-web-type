@@ -10,5 +10,5 @@
   font-family: "Rakkas";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/rakkas/Rakkas-Regular.woff2") format("woff2"), url("/assets/fonts/rakkas/Rakkas-Regular.woff") format("woff");
+  src: url("/assets/fonts/rakkas/Rakkas-Regular.woff2") format("woff2");
 }

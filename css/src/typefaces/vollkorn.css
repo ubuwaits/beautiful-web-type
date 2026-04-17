@@ -10,71 +10,71 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Regular.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Regular.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Italic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Italic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Medium.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Medium.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/vollkorn/Vollkorn-MediumItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-MediumItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBold.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Bold.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Bold.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/vollkorn/Vollkorn-BoldItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-BoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBold.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBoldItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-ExtraBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Black.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Black.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Black.woff2") format("woff2");
 }
 @font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/vollkorn/Vollkorn-BlackItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-BlackItalic.woff2") format("woff2");
 }

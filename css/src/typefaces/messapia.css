@@ -10,11 +10,11 @@
   font-family: "Messapia";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/messapia/Messapia-Regular.woff2") format("woff2"), url("/assets/fonts/messapia/Messapia-Regular.woff") format("woff");
+  src: url("/assets/fonts/messapia/Messapia-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Messapia";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/messapia/Messapia-Bold.woff2") format("woff2"), url("/assets/fonts/messapia/Messapia-Bold.woff") format("woff");
+  src: url("/assets/fonts/messapia/Messapia-Bold.woff2") format("woff2");
 }

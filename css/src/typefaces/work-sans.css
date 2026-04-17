@@ -11,12 +11,12 @@
   font-stretch: normal;
   font-style: normal;
   font-weight: 100 900;
-  src: url("/assets/fonts/work-sans/WorkSans-Variable.ttf") format("truetype-variations");
+  src: url("/assets/fonts/work-sans/WorkSans-Variable.woff2") format("woff2-variations");
 }
 @font-face {
   font-family: "Work Sans";
   font-stretch: normal;
   font-style: italic;
   font-weight: 100 900;
-  src: url("/assets/fonts/work-sans/WorkSans-Italic-Variable.ttf") format("truetype-variations");
+  src: url("/assets/fonts/work-sans/WorkSans-Italic-Variable.woff2") format("woff2-variations");
 }

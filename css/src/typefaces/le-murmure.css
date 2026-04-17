@@ -10,5 +10,5 @@
   font-family: "Le Murmure";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/le-murmure/Le_Murmure-Regular.woff2") format("woff2"), url("/assets/fonts/le-murmure/Le_Murmure-Regular.woff") format("woff");
+  src: url("/assets/fonts/le-murmure/Le_Murmure-Regular.woff2") format("woff2");
 }

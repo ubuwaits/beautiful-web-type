@@ -11,5 +11,5 @@
   font-stretch: normal;
   font-style: normal;
   font-weight: 300 700;
-  src: url("/assets/fonts/space-grotesk/SpaceGroteskVariable.ttf") format("truetype-variations");
+  src: url("/assets/fonts/space-grotesk/SpaceGroteskVariable.woff2") format("woff2-variations");
 }

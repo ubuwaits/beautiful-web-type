@@ -10,11 +10,11 @@
   font-family: "iA Writer Quattro";
   font-style: normal;
   font-weight: 300 700;
-  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV.ttf") format("truetype-variations");
+  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV.woff2") format("woff2-variations");
 }
 @font-face {
   font-family: "iA Writer Quattro";
   font-style: italic;
   font-weight: 300 700;
-  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV-Italic.ttf") format("truetype-variations");
+  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV-Italic.woff2") format("woff2-variations");
 }

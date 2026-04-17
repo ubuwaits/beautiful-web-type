@@ -10,29 +10,29 @@
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraLight.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraLight.woff2") format("woff2");
 }
 @font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Light.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-Light.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Regular.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-Regular.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Bold.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-Bold.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraBold.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraBold.woff2") format("woff2");
 }

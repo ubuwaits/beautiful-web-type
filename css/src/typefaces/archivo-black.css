@@ -10,11 +10,11 @@
   font-family: "Archivo Black";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2") format("woff2"), url("/assets/fonts/archivo-black/ArchivoBlack-Regular.woff") format("woff");
+  src: url("/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Archivo Black";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/archivo-black/ArchivoBlack-Italic.woff2") format("woff2"), url("/assets/fonts/archivo-black/ArchivoBlack-Italic.woff") format("woff");
+  src: url("/assets/fonts/archivo-black/ArchivoBlack-Italic.woff2") format("woff2");
 }

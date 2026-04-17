@@ -10,35 +10,35 @@
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Black.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Black.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Black.woff2") format("woff2");
 }
 @font-face {
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff2") format("woff2");
 }

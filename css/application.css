@@ -1452,52 +1452,52 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Alegreya";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/alegreya/Alegreya-Regular.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-Regular.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/alegreya/Alegreya-Italic.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-Italic.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/alegreya/Alegreya-Medium.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-Medium.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/alegreya/Alegreya-MediumItalic.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/alegreya/Alegreya-Bold.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-Bold.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/alegreya/Alegreya-BoldItalic.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/alegreya/Alegreya-ExtraBold.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-ExtraBold.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/alegreya/Alegreya-ExtraBoldItalic.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-ExtraBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-ExtraBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/alegreya/Alegreya-Black.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-Black.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-Black.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/alegreya/Alegreya-BlackItalic.woff2") format("woff2"), url("/assets/fonts/alegreya/Alegreya-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya/Alegreya-BlackItalic.woff2") format("woff2");
 }:root {
   --alegreya-sans: 'Alegreya Sans', serif;
 }.alegreya-sans {
@@ -1506,72 +1506,72 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Thin.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-Thin.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-ThinItalic.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Light.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-Light.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-LightItalic.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Regular.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-Regular.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Italic.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-Italic.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Medium.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-Medium.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-MediumItalic.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Bold.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-Bold.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-BoldItalic.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-ExtraBold.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-ExtraBold.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-ExtraBoldItalic.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-ExtraBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-ExtraBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Black.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-Black.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-Black.woff2") format("woff2");
 }@font-face {
   font-family: "Alegreya Sans";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-BlackItalic.woff2") format("woff2"), url("/assets/fonts/alegreya-sans/AlegreyaSans-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/alegreya-sans/AlegreyaSans-BlackItalic.woff2") format("woff2");
 }:root {
   --archivo: 'Archivo', sans-serif;
 }.archivo {
@@ -1580,42 +1580,42 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/archivo/Archivo-Regular.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-Regular.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/archivo/Archivo-Italic.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-Italic.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/archivo/Archivo-Medium.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-Medium.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/archivo/Archivo-MediumItalic.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/archivo/Archivo-SemiBold.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/archivo/Archivo-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/archivo/Archivo-Bold.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-Bold.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/archivo/Archivo-BoldItalic.woff2") format("woff2"), url("/assets/fonts/archivo/Archivo-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/archivo/Archivo-BoldItalic.woff2") format("woff2");
 }:root {
   --archivo-black: 'Archivo Black', sans-serif;
 }.archivo-black {
@@ -1624,12 +1624,12 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Archivo Black";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2") format("woff2"), url("/assets/fonts/archivo-black/ArchivoBlack-Regular.woff") format("woff");
+  src: url("/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Archivo Black";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/archivo-black/ArchivoBlack-Italic.woff2") format("woff2"), url("/assets/fonts/archivo-black/ArchivoBlack-Italic.woff") format("woff");
+  src: url("/assets/fonts/archivo-black/ArchivoBlack-Italic.woff2") format("woff2");
 }:root {
   --biorhyme: 'BioRhyme', serif;
 }.biorhyme {
@@ -1638,27 +1638,27 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Biorhyme";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/biorhyme/BioRhyme-ExtraLight.woff2") format("woff2"), url("/assets/fonts/biorhyme/BioRhyme-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/biorhyme/BioRhyme-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/biorhyme/BioRhyme-Light.woff2") format("woff2"), url("/assets/fonts/biorhyme/BioRhyme-Light.woff") format("woff");
+  src: url("/assets/fonts/biorhyme/BioRhyme-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/biorhyme/BioRhyme-Regular.woff2") format("woff2"), url("/assets/fonts/biorhyme/BioRhyme-Regular.woff") format("woff");
+  src: url("/assets/fonts/biorhyme/BioRhyme-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/biorhyme/BioRhyme-Bold.woff2") format("woff2"), url("/assets/fonts/biorhyme/BioRhyme-Bold.woff") format("woff");
+  src: url("/assets/fonts/biorhyme/BioRhyme-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/biorhyme/BioRhyme-ExtraBold.woff2") format("woff2"), url("/assets/fonts/biorhyme/BioRhyme-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/biorhyme/BioRhyme-ExtraBold.woff2") format("woff2");
 }:root {
   --biorhyme-expanded: 'BioRhyme Expanded', serif;
 }.biorhyme-expanded {
@@ -1667,27 +1667,27 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraLight.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Light.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-Light.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Regular.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-Regular.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Bold.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-Bold.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Biorhyme Expanded";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraBold.woff2") format("woff2"), url("/assets/fonts/biorhyme-extended/BioRhymeExpanded-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/biorhyme-expanded/BioRhymeExpanded-ExtraBold.woff2") format("woff2");
 }:root {
   --commissioner: 'Commissioner', sans-serif;
 }.commissioner {
@@ -1696,7 +1696,12 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Commissioner";
   font-style: normal;
   font-weight: 100 900;
-  src: url("/assets/fonts/commissioner/Commissioner_VF_1.001.woff2") format("woff2");
+  src: url("/assets/fonts/commissioner/Commissioner[FLAR,VOLM,wght].woff2") format("woff2");
+}@font-face {
+  font-family: "Commissioner";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("/assets/fonts/commissioner/Commissioner-Italic[FLAR,VOLM,wght].woff2") format("woff2");
 }:root {
   --cooper-hewitt: 'Cooper Hewitt', sans-serif;
 }.cooper-hewitt {
@@ -1705,72 +1710,72 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Cooper Hewitt";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Thin.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Light.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Book.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Book.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-BookItalic.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-BookItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Medium.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Semibold.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-SemiboldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Bold.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Heavy.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-Heavy.woff2") format("woff2");
 }@font-face {
   font-family: "Cooper Hewitt";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-HeavyItalic.woff") format("woff");
+  src: url("/assets/fonts/cooper-hewitt/CooperHewitt-HeavyItalic.woff2") format("woff2");
 }:root {
   --crimson-pro: 'Crimson Pro', serif;
 }.crimson-pro {
@@ -1804,112 +1809,112 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/firago/FiraGO-Thin.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Thin.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/firago/FiraGO-ThinItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/firago/FiraGO-UltraLight.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-UltraLight.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-UltraLight.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/firago/FiraGO-UltraLightItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-UltraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-UltraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 250;
-  src: url("/assets/fonts/firago/FiraGO-ExtraLight.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 250;
-  src: url("/assets/fonts/firago/FiraGO-ExtraLightItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-ExtraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-ExtraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/firago/FiraGO-Light.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Light.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Light.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/firago/FiraGO-LightItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 350;
-  src: url("/assets/fonts/firago/FiraGO-Book.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Book.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Book.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 350;
-  src: url("/assets/fonts/firago/FiraGO-BookItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-BookItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-BookItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/firago/FiraGO-Regular.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Regular.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/firago/FiraGO-Italic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Italic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/firago/FiraGO-Medium.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Medium.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/firago/FiraGO-MediumItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/firago/FiraGO-SemiBold.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/firago/FiraGO-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/firago/FiraGO-Bold.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Bold.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/firago/FiraGO-BoldItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/firago/FiraGO-ExtraBold.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-ExtraBold.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/firago/FiraGO-ExtraBoldItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-ExtraBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-ExtraBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/firago/FiraGO-Heavy.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-Heavy.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-Heavy.woff2") format("woff2");
 }@font-face {
   font-family: "FiraGo";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/firago/FiraGO-HeavyItalic.woff2") format("woff2"), url("/assets/fonts/firago/FiraGO-HeavyItalic.woff") format("woff");
+  src: url("/assets/fonts/firago/FiraGO-HeavyItalic.woff2") format("woff2");
 }:root {
   --fivo-sans: 'Fivo Sans', sans-serif;
 }.fivo-sans {
@@ -1918,72 +1923,72 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Fivo Sans";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/fivo-sans/fivosans-thin.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-thin.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-thin.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/fivo-sans/fivosans-thin-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-thin-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-thin-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/fivo-sans/fivosans-light.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-light.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-light.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/fivo-sans/fivosans-light-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-light-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-light-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/fivo-sans/fivosans-regular.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-regular.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-regular.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/fivo-sans/fivosans-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/fivo-sans/fivosans-medium.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-medium.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-medium.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/fivo-sans/fivosans-medium-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-medium-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-medium-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/fivo-sans/fivosans-bold.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-bold.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-bold.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/fivo-sans/fivosans-bold-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-bold-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-bold-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/fivo-sans/fivosans-heavy.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-heavy.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-heavy.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/fivo-sans/fivosans-heavy-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-heavy-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-heavy-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/fivo-sans/fivosans-black.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-black.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-black.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/fivo-sans/fivosans-black-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans/fivosans-black-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans/fivosans-black-oblique.woff2") format("woff2");
 }:root {
   --fivo-sans-modern: 'Fivo Sans Modern', sans-serif;
 }.fivo-sans-modern {
@@ -1992,52 +1997,52 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Fivo Sans Modern";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-regular-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-regular-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-regular-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-medium.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-medium.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-medium.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-medium-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-medium-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-medium-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-bold.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-bold.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-bold.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-bold-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-bold-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-bold-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-heavy.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-heavy.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-heavy.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-heavy-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-heavy-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-heavy-oblique.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-extblack.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-extblack.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-extblack.woff2") format("woff2");
 }@font-face {
   font-family: "Fivo Sans Modern";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-extblack-oblique.woff2") format("woff2"), url("/assets/fonts/fivo-sans-modern/fivosansmodern-extblack-oblique.woff") format("woff");
+  src: url("/assets/fonts/fivo-sans-modern/fivosansmodern-extblack-oblique.woff2") format("woff2");
 }:root {
   --fraunces: 'Fraunces', serif;
 }.fraunces {
@@ -2059,12 +2064,12 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "iA Writer Quattro";
   font-style: normal;
   font-weight: 300 700;
-  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV.ttf") format("truetype-variations");
+  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV.woff2") format("woff2-variations");
 }@font-face {
   font-family: "iA Writer Quattro";
   font-style: italic;
   font-weight: 300 700;
-  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV-Italic.ttf") format("truetype-variations");
+  src: url("/assets/fonts/ia-writer-quattro/iAWriterQuattroV-Italic.woff2") format("woff2-variations");
 }:root {
   --ibm-plex-mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
 }.ibm-plex-mono {
@@ -2073,82 +2078,82 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Thin.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Thin.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ThinItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ExtraLight.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ExtraLightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ExtraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-ExtraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-LightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Text.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Text.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Text.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-TextItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-TextItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-TextItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Medium.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Medium.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-MediumItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-BoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-mono/IBMPlexMono-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-mono/IBMPlexMono-BoldItalic.woff2") format("woff2");
 }:root {
   --ibm-plex-sans: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 }.ibm-plex-sans {
@@ -2157,82 +2162,82 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Thin.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Thin.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ThinItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ExtraLight.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ExtraLightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ExtraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-ExtraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Light.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Light.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Light.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-LightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Italic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Italic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Text.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Text.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Text.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-TextItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-TextItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-TextItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-MediumItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-BoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans/IBMPlexSans-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans/IBMPlexSans-BoldItalic.woff2") format("woff2");
 }:root {
   --ibm-plex-sans-condensed: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
 }.ibm-plex-sans-condensed {
@@ -2241,82 +2246,82 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Thin.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Thin.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ThinItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ExtraLight.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ExtraLightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ExtraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-ExtraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Light.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Light.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Light.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-LightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Regular.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Regular.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Italic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Italic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Text.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Text.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Text.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-TextItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-TextItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-TextItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Medium.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Medium.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-MediumItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-SemiBold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Bold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Bold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Sans Condensed";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-BoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-BoldItalic.woff2") format("woff2");
 }:root {
   --ibm-plex-serif: 'IBM Plex Serif', 'Georgia', Times, serif;
 }.ibm-plex-serif {
@@ -2325,82 +2330,82 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Thin.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Thin.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ThinItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLight.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-ExtraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Light.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Light.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Light.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-LightItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Italic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Italic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Text.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Text.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Text.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 450;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-TextItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-TextItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-TextItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Medium.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Medium.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-MediumItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Bold.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Bold.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.woff2") format("woff2"), url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.woff2") format("woff2");
 }:root {
   --inria-sans: 'Inria Sans', 'Georgia', Times, serif;
 }.inria-sans {
@@ -2409,32 +2414,32 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Inria Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/inria-sans/InriaSans-Light.woff2") format("woff2"), url("/assets/fonts/inria-sans/InriaSans-Light.woff") format("woff");
+  src: url("/assets/fonts/inria-sans/InriaSans-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/inria-sans/InriaSans-LightItalic.woff2") format("woff2"), url("/assets/fonts/inria-sans/InriaSans-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/inria-sans/InriaSans-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/inria-sans/InriaSans-Regular.woff2") format("woff2"), url("/assets/fonts/inria-sans/InriaSans-Regular.woff") format("woff");
+  src: url("/assets/fonts/inria-sans/InriaSans-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/inria-sans/InriaSans-Italic.woff2") format("woff2"), url("/assets/fonts/inria-sans/InriaSans-Italic.woff") format("woff");
+  src: url("/assets/fonts/inria-sans/InriaSans-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/inria-sans/InriaSans-Bold.woff2") format("woff2"), url("/assets/fonts/inria-sans/InriaSans-Bold.woff") format("woff");
+  src: url("/assets/fonts/inria-sans/InriaSans-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/inria-sans/InriaSans-BoldItalic.woff2") format("woff2"), url("/assets/fonts/inria-sans/InriaSans-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/inria-sans/InriaSans-BoldItalic.woff2") format("woff2");
 }:root {
   --inria-serif: 'Inria Serif', 'Georgia', Times, serif;
 }.inria-serif {
@@ -2443,32 +2448,32 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Inria Serif";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/inria-serif/InriaSerif-Light.woff2") format("woff2"), url("/assets/fonts/inria-serif/InriaSerif-Light.woff") format("woff");
+  src: url("/assets/fonts/inria-serif/InriaSerif-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Serif";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/inria-serif/InriaSerif-LightItalic.woff2") format("woff2"), url("/assets/fonts/inria-serif/InriaSerif-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/inria-serif/InriaSerif-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Serif";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/inria-serif/InriaSerif-Regular.woff2") format("woff2"), url("/assets/fonts/inria-serif/InriaSerif-Regular.woff") format("woff");
+  src: url("/assets/fonts/inria-serif/InriaSerif-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Serif";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/inria-serif/InriaSerif-Italic.woff2") format("woff2"), url("/assets/fonts/inria-serif/InriaSerif-Italic.woff") format("woff");
+  src: url("/assets/fonts/inria-serif/InriaSerif-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Serif";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/inria-serif/InriaSerif-Bold.woff2") format("woff2"), url("/assets/fonts/inria-serif/InriaSerif-Bold.woff") format("woff");
+  src: url("/assets/fonts/inria-serif/InriaSerif-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Inria Serif";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/inria-serif/InriaSerif-BoldItalic.woff2") format("woff2"), url("/assets/fonts/inria-serif/InriaSerif-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/inria-serif/InriaSerif-BoldItalic.woff2") format("woff2");
 }:root {
   --instrument-sans: 'Instrument Sans', sans-serif;
 }.instrument-sans {
@@ -2525,7 +2530,7 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Le Murmure";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/le-murmure/Le_Murmure-Regular.woff2") format("woff2"), url("/assets/fonts/le-murmure/Le_Murmure-Regular.woff") format("woff");
+  src: url("/assets/fonts/le-murmure/Le_Murmure-Regular.woff2") format("woff2");
 }:root {
   --libre-franklin: 'Libre Franklin', sans-serif;
 }.libre-franklin {
@@ -2534,92 +2539,92 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-Thin.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-Thin.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-ThinItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraLight.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraLightItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-ExtraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-Light.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-Light.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-LightItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-Regular.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-Regular.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-Italic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-Italic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-Medium.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-Medium.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-MediumItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-SemiBold.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-Bold.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-Bold.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-BoldItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraBold.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraBold.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraBoldItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-ExtraBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-ExtraBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-Black.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-Black.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-Black.woff2") format("woff2");
 }@font-face {
   font-family: "Libre Franklin";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/libre-franklin/LibreFranklin-BlackItalic.woff2") format("woff2"), url("/assets/fonts/libre-franklin/LibreFranklin-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/libre-franklin/LibreFranklin-BlackItalic.woff2") format("woff2");
 }:root {
   --lora: 'Lora', serif;
 }.lora {
@@ -2644,12 +2649,12 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Messapia";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/messapia/Messapia-Regular.woff2") format("woff2"), url("/assets/fonts/messapia/Messapia-Regular.woff") format("woff");
+  src: url("/assets/fonts/messapia/Messapia-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Messapia";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/messapia/Messapia-Bold.woff2") format("woff2"), url("/assets/fonts/messapia/Messapia-Bold.woff") format("woff");
+  src: url("/assets/fonts/messapia/Messapia-Bold.woff2") format("woff2");
 }:root {
   --oswald: 'Oswald', serif;
 }.oswald {
@@ -2658,37 +2663,37 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/oswald/Oswald-ExtraLight.woff2") format("woff2"), url("/assets/fonts/oswald/Oswald-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/oswald/Oswald-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/oswald/Oswald-Light.woff2") format("woff2"), url("/assets/fonts/oswald/Oswald-Light.woff") format("woff");
+  src: url("/assets/fonts/oswald/Oswald-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/oswald/Oswald-Regular.woff2") format("woff2"), url("/assets/fonts/oswald/Oswald-Regular.woff") format("woff");
+  src: url("/assets/fonts/oswald/Oswald-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/oswald/Oswald-Medium.woff2") format("woff2"), url("/assets/fonts/oswald/Oswald-Medium.woff") format("woff");
+  src: url("/assets/fonts/oswald/Oswald-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/oswald/Oswald-SemiBold.woff") format("woff"), url("/assets/fonts/oswald/Oswald-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/oswald/Oswald-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/oswald/Oswald-Bold.woff2") format("woff2"), url("/assets/fonts/oswald/Oswald-Bold.woff") format("woff");
+  src: url("/assets/fonts/oswald/Oswald-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/oswald/OswaldHeavy-Regular.woff2") format("woff2"), url("/assets/fonts/oswald/OswaldHeavy-Regular.woff") format("woff");
+  src: url("/assets/fonts/oswald/OswaldHeavy-Regular.woff2") format("woff2");
 }:root {
   --playfair-display: 'Playfair Display', serif;
 }.playfair-display {
@@ -2697,32 +2702,32 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Black.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-Black.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-Black.woff2") format("woff2");
 }@font-face {
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff2") format("woff2"), url("/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/playfair-display/PlayfairDisplay-BlackItalic.woff2") format("woff2");
 }:root {
   --poppins: 'Poppins', sans-serif;
 }.poppins {
@@ -2731,92 +2736,92 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/fonts/poppins/Poppins-Thin.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-Thin.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-Thin.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/fonts/poppins/Poppins-ThinItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-ThinItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-ThinItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/poppins/Poppins-ExtraLight.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-ExtraLight.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-ExtraLight.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 200;
-  src: url("/assets/fonts/poppins/Poppins-ExtraLightItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-ExtraLightItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-ExtraLightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/poppins/Poppins-Light.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-Light.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/poppins/Poppins-LightItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/poppins/Poppins-Regular.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-Regular.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/poppins/Poppins-Italic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-Italic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/poppins/Poppins-Medium.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-Medium.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/poppins/Poppins-MediumItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/poppins/Poppins-SemiBold.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/poppins/Poppins-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/poppins/Poppins-Bold.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-Bold.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/poppins/Poppins-BoldItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/poppins/Poppins-ExtraBold.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-ExtraBold.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/poppins/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-ExtraBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-ExtraBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/poppins/Poppins-Black.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-Black.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-Black.woff2") format("woff2");
 }@font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/poppins/Poppins-BlackItalic.woff2") format("woff2"), url("/assets/fonts/poppins/Poppins-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/poppins/Poppins-BlackItalic.woff2") format("woff2");
 }:root {
   --rakkas: 'Rakkas', serif;
 }.rakkas {
@@ -2825,7 +2830,7 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Rakkas";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/rakkas/Rakkas-Regular.woff2") format("woff2"), url("/assets/fonts/rakkas/Rakkas-Regular.woff") format("woff");
+  src: url("/assets/fonts/rakkas/Rakkas-Regular.woff2") format("woff2");
 }:root {
   --source-code-pro: 'Source Code Variable', serif;
 }.source-code-pro {
@@ -2835,13 +2840,13 @@ body.monospaced ol li.nav-monospaced a {
   font-stretch: normal;
   font-style: normal;
   font-weight: 200 900;
-  src: url("/assets/fonts/source-code-pro/SourceCodeVF-Upright.ttf.woff2") format("truetype-variations");
+  src: url("/assets/fonts/source-code-pro/SourceCodeVF-Upright.ttf.woff2") format("woff2-variations");
 }@font-face {
   font-family: "Source Code Variable";
   font-stretch: normal;
   font-style: italic;
   font-weight: 200 900;
-  src: url("/assets/fonts/source-code-pro/SourceCodeVF-Italic.ttf.woff2") format("truetype-variations");
+  src: url("/assets/fonts/source-code-pro/SourceCodeVF-Italic.ttf.woff2") format("woff2-variations");
 }:root {
   --source-sans-pro: 'Source Sans Variable', serif;
 }.source-sans-pro {
@@ -2883,7 +2888,7 @@ body.monospaced ol li.nav-monospaced a {
   font-stretch: normal;
   font-style: normal;
   font-weight: 300 700;
-  src: url("/assets/fonts/space-grotesk/SpaceGroteskVariable.ttf") format("truetype-variations");
+  src: url("/assets/fonts/space-grotesk/SpaceGroteskVariable.woff2") format("woff2-variations");
 }:root {
   --space-mono: 'Space Mono', monospace;
 }.space-mono {
@@ -2892,22 +2897,22 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/space-mono/spacemono-regular.woff2") format("woff2"), url("/assets/fonts/space-mono/spacemono-regular.woff") format("woff");
+  src: url("/assets/fonts/space-mono/spacemono-regular.woff2") format("woff2");
 }@font-face {
   font-family: "Space Mono";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/space-mono/spacemono-italic.woff2") format("woff2"), url("/assets/fonts/space-mono/spacemono-italic.woff") format("woff");
+  src: url("/assets/fonts/space-mono/spacemono-italic.woff2") format("woff2");
 }@font-face {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/space-mono/spacemono-bold.woff2") format("woff2"), url("/assets/fonts/space-mono/spacemono-bold.woff") format("woff");
+  src: url("/assets/fonts/space-mono/spacemono-bold.woff2") format("woff2");
 }@font-face {
   font-family: "Space Mono";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/space-mono/spacemono-bolditalic.woff2") format("woff2"), url("/assets/fonts/space-mono/spacemono-bolditalic.woff") format("woff");
+  src: url("/assets/fonts/space-mono/spacemono-bolditalic.woff2") format("woff2");
 }:root {
   --tasa-orbiter: 'TASA Orbiter', sans-serif;
 }.tasa-orbiter {
@@ -2926,62 +2931,62 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Regular.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Regular.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Italic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Italic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Medium.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Medium.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/vollkorn/Vollkorn-MediumItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBold.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Bold.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Bold.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/vollkorn/Vollkorn-BoldItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-BoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBold.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-ExtraBold.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBold.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBoldItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-ExtraBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-ExtraBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/vollkorn/Vollkorn-Black.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-Black.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-Black.woff2") format("woff2");
 }@font-face {
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/fonts/vollkorn/Vollkorn-BlackItalic.woff2") format("woff2"), url("/assets/fonts/vollkorn/Vollkorn-BlackItalic.woff") format("woff");
+  src: url("/assets/fonts/vollkorn/Vollkorn-BlackItalic.woff2") format("woff2");
 }:root {
   --work-sans: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
 }.work-sans {
@@ -2991,13 +2996,13 @@ body.monospaced ol li.nav-monospaced a {
   font-stretch: normal;
   font-style: normal;
   font-weight: 100 900;
-  src: url("/assets/fonts/work-sans/WorkSans-Variable.ttf") format("truetype-variations");
+  src: url("/assets/fonts/work-sans/WorkSans-Variable.woff2") format("woff2-variations");
 }@font-face {
   font-family: "Work Sans";
   font-stretch: normal;
   font-style: italic;
   font-weight: 100 900;
-  src: url("/assets/fonts/work-sans/WorkSans-Italic-Variable.ttf") format("truetype-variations");
+  src: url("/assets/fonts/work-sans/WorkSans-Italic-Variable.woff2") format("woff2-variations");
 }:root {
   --zilla-slab: 'Zilla Slab', serif;
 }.zilla-slab {
@@ -3006,50 +3011,50 @@ body.monospaced ol li.nav-monospaced a {
   font-family: "Zilla Slab";
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-Light.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-Light.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-Light.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-LightItalic.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-LightItalic.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-LightItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-Regular.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-Regular.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-Regular.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-Italic.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-Italic.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-Italic.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-Medium.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-Medium.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-Medium.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-MediumItalic.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-MediumItalic.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-MediumItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-SemiBold.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-SemiBold.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-SemiBold.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: italic;
   font-weight: 600;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-SemiBoldItalic.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-Bold.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-Bold.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-Bold.woff2") format("woff2");
 }@font-face {
   font-family: "Zilla Slab";
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/fonts/zilla-slab/ZillaSlab-BoldItalic.woff2") format("woff2"), url("/assets/fonts/zilla-slab/ZillaSlab-BoldItalic.woff") format("woff");
+  src: url("/assets/fonts/zilla-slab/ZillaSlab-BoldItalic.woff2") format("woff2");
 }
