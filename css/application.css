@@ -1780,13 +1780,13 @@ body.monospaced ol li.nav-monospaced a {
   font-stretch: normal;
   font-style: normal;
   font-weight: 100 900;
-  src: url("/assets/fonts/crimson-pro/CrimsonPro-Roman-VF.ttf") format("truetype-variations");
+  src: url("/assets/fonts/crimson-pro/CrimsonPro-Roman-VF.woff2") format("woff2-variations");
 }@font-face {
   font-family: "Crimson Pro";
   font-stretch: normal;
   font-style: italic;
   font-weight: 100 900;
-  src: url("/assets/fonts/crimson-pro/CrimsonPro-Italic-VF.ttf") format("truetype-variations");
+  src: url("/assets/fonts/crimson-pro/CrimsonPro-Italic-VF.woff2") format("woff2-variations");
 }:root {
   --fira-code: 'Fira Code VF', monospace;
 }.fira-code {
