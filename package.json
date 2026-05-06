@@ -34,7 +34,7 @@
     "@types/react-dom": "^19.0.4",
     "autoprefixer": "^10.4.20",
     "playwright": "^1.51.1",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.14",
     "postcss-import": "^16.1.1",
     "serve": "^14.2.4",
     "tailwindcss": "^3.4.17",
@@ -47,6 +47,7 @@
     "overrides": {
       "brace-expansion": "^1.1.13",
       "picomatch": "^4.0.4",
+      "postcss": "^8.5.14",
       "vite": "^7.3.2"
     }
   }
