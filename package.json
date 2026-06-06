@@ -41,7 +41,7 @@
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "vite": "^7.3.2",
-    "vitest": "^3.0.8"
+    "vitest": "^4.1.8"
   },
   "pnpm": {
     "overrides": {
