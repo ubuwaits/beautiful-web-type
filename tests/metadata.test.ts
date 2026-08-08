@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { describe, expect, it } from "vitest";
 
 import { metadata as displayMetadata } from "@/app/display/page";
@@ -13,7 +14,7 @@ import {
 } from "@/lib/metadata";
 
 function expectCanonicalAndSocialUrl(
-  metadata: Record<string, unknown>,
+  metadata: Metadata,
   path: string,
   imagePath = DEFAULT_SOCIAL_IMAGE_PATH
 ) {

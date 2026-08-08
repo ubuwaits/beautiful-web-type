@@ -22,7 +22,7 @@ test("keeps comparison text in sync on detail pages", async ({ page }) => {
 
   const firstComparison = page.locator("#comparisons h1").first();
   await firstComparison.evaluate((node) => {
-    node.innerText = "synced specimen";
+    (node as HTMLElement).innerText = "synced specimen";
     node.dispatchEvent(new Event("input", { bubbles: true }));
   });
 
