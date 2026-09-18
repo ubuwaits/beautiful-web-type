@@ -90,6 +90,27 @@ Useful commands:
     pnpm build
     pnpm test
 
+## Deployment
+
+The site is exported as static files and deployed to Cloudflare Workers Static Assets.
+
+Run a complete production build and validate the Wrangler configuration without deploying:
+
+    pnpm deploy:check
+
+Deploy from an authenticated local `personal` Wrangler profile:
+
+    pnpm deploy
+
+Cloudflare Workers Builds should use:
+
+- Production branch: `main`
+- Build command: `pnpm build`
+- Deploy command: `pnpm exec wrangler deploy`
+- Non-production deploy command: `pnpm exec wrangler versions upload`
+
+The canonical deployment configuration is in `wrangler.jsonc`.
+
 ## Content authoring
 
 The site's authored content lives in `content/`.

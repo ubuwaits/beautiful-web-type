@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": ">=22.0.0 <23"
+  },
   "scripts": {
     "audit:security": "osv-scanner scan source --lockfile=pnpm-lock.yaml --verbosity=error",
     "audit:typefaces": "tsx scripts/audit-typefaces.ts",
@@ -13,13 +16,14 @@
     "prebuild": "pnpm prepare:static",
     "build": "next build",
     "postbuild": "tsx scripts/verify-export.ts",
+    "deploy": "pnpm build && wrangler deploy --profile personal",
+    "deploy:check": "pnpm build && wrangler deploy --dry-run",
     "start": "serve out -l 3000",
     "test": "pnpm test:unit && pnpm test:e2e",
     "test:unit": "vitest run",
     "test:e2e": "pnpm build && env -u NO_COLOR playwright test"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "js-yaml": "^4.3.0",
     "next": "^16.2.11",
@@ -41,9 +45,15 @@
     "tsx": "^4.22.4",
     "typescript": "^5.8.2",
     "vite": "^7.3.5",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.8",
+    "wrangler": "^4.134.0"
   },
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ],
     "overrides": {
       "brace-expansion": "^1.1.16",
       "fast-uri": "~3.1.5",
