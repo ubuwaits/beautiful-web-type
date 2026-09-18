@@ -93,6 +93,9 @@ Useful commands:
 ## Deployment
 
 The site is exported as static files and deployed to Cloudflare Workers Static Assets.
+The Worker serves `www.beautifulwebtype.com` and `beautifulwebtype.com`; a Cloudflare
+Redirect Rule sends the apex hostname to canonical `www` while preserving the path
+and query string.
 
 Run a complete production build and validate the Wrangler configuration without deploying:
 

@@ -13,6 +13,16 @@
       "persist": true
     }
   },
+  "routes": [
+    {
+      "pattern": "www.beautifulwebtype.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "beautifulwebtype.com",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./out",
     "html_handling": "force-trailing-slash",
