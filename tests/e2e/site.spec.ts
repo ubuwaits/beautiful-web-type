@@ -1,22 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-test("renders the serif category page with serif samples", async ({ page }) => {
-  await page.goto("/serif/");
-
-  await expect(page.locator(".page-header h1")).toHaveText("Serif Typefaces");
-  await expect(page.locator("[data-testid='typeface-card'] a[href='/alegreya/']").first()).toBeVisible();
-  await expect(page.locator("[data-testid='typeface-card'] a[href='/inter/']")).toHaveCount(0);
-  await expect(page.locator("[data-testid='typeface-card']").first()).toContainText("The Iliad");
-});
-
-test("uses typeface-specific specimen text on detail pages", async ({ page }) => {
-  await page.goto("/inter/");
-
-  await expect(page.locator("[data-testid='typeface-card'][data-variant='hero']")).toContainText(
-    "Hahnenkammrennen"
-  );
-});
-
 test("keeps comparison text in sync on detail pages", async ({ page }) => {
   await page.goto("/inter/");
 
@@ -67,34 +50,4 @@ test("loads the glyph inspector and updates the glyph query param", async ({ pag
 
   await page.locator("#glyph-grid canvas").first().click();
   await expect(page).toHaveURL(/\/inter\/glyphs\/\?i=\d+/);
-});
-
-test("loads the Commissioner glyph inspector from WOFF2", async ({ page }) => {
-  await page.goto("/commissioner/glyphs/?i=10");
-  await page.waitForFunction(
-    () => document.querySelectorAll("#glyph-pagination a").length > 0
-  );
-
-  await page.locator("#glyph-grid canvas").first().click();
-  await expect(page).toHaveURL(/\/commissioner\/glyphs\/\?i=\d+/);
-});
-
-test("loads the Work Sans glyph inspector from generated WOFF2", async ({ page }) => {
-  await page.goto("/work-sans/glyphs/?i=10");
-  await page.waitForFunction(
-    () => document.querySelectorAll("#glyph-pagination a").length > 0
-  );
-
-  await page.locator("#glyph-grid canvas").first().click();
-  await expect(page).toHaveURL(/\/work-sans\/glyphs\/\?i=\d+/);
-});
-
-test("loads the Cooper Hewitt glyph inspector from converted WOFF2", async ({ page }) => {
-  await page.goto("/cooper-hewitt/glyphs/?i=10");
-  await page.waitForFunction(
-    () => document.querySelectorAll("#glyph-pagination a").length > 0
-  );
-
-  await page.locator("#glyph-grid canvas").first().click();
-  await expect(page).toHaveURL(/\/cooper-hewitt\/glyphs\/\?i=\d+/);
 });

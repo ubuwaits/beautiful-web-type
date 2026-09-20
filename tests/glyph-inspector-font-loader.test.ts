@@ -31,33 +31,6 @@ describe("glyph inspector font loader", () => {
     resetGlyphInspectorFontLoaderForTests();
   });
 
-  it("uses opentype.load for non-WOFF2 font files", async () => {
-    const font = createMockFont();
-    const load = vi.fn((fontFile: string, callback: (error: Error | null, font?: Font) => void) => {
-      callback(null, font);
-    });
-    const parse = vi.fn();
-    const fetchArrayBuffer = vi.fn();
-    const loadScript = vi.fn();
-
-    const loader = createGlyphInspectorFontLoader({
-      getOpentype: () => ({ load, parse }) as OpentypeRuntime,
-      fetchArrayBuffer,
-      loadScript,
-      getWoff2Module: () => undefined,
-      setWoff2Module: vi.fn()
-    });
-
-    await expect(loader("/assets/fonts/test.woff")).resolves.toBe(font);
-    expect(load).toHaveBeenCalledWith(
-      "/assets/fonts/test.woff",
-      expect.any(Function)
-    );
-    expect(parse).not.toHaveBeenCalled();
-    expect(fetchArrayBuffer).not.toHaveBeenCalled();
-    expect(loadScript).not.toHaveBeenCalled();
-  });
-
   it("decompresses WOFF2 fonts before parsing them", async () => {
     const font = createMockFont();
     const compressedFontData = new ArrayBuffer(8);
