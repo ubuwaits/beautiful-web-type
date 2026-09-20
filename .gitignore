@@ -5,7 +5,5 @@ node_modules
 .next-playwright
 out
 next-env.d.ts
-public/*
-!public/.gitkeep
 playwright-report
 test-results

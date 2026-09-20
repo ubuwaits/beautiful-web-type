@@ -78,7 +78,7 @@ function collectFontReferences() {
 describe("font asset references", () => {
   it("points source font references at checked-in assets", () => {
     const missingReferences = collectFontReferences()
-      .filter((reference) => !existsSync(path.join(ROOT_DIR, reference.url.slice(1))))
+      .filter((reference) => !existsSync(path.join(ROOT_DIR, "public", reference.url.slice(1))))
       .map((reference) => `${reference.filePath}: ${reference.rawUrl}`);
 
     expect(missingReferences).toEqual([]);

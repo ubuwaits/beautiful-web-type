@@ -9,12 +9,8 @@
   "scripts": {
     "audit:security": "osv-scanner scan source --lockfile=pnpm-lock.yaml --verbosity=error",
     "audit:typefaces": "tsx scripts/audit-typefaces.ts",
-    "prepare:static": "tsx scripts/prepare-static.ts",
-    "predev": "pnpm prepare:static",
     "dev": "next dev",
-    "prebuild": "pnpm prepare:static",
     "build": "next build",
-    "postbuild": "tsx scripts/verify-export.ts",
     "deploy": "pnpm build && wrangler deploy --profile personal",
     "deploy:check": "pnpm build && wrangler deploy --dry-run",
     "start": "serve out -l 3000",
