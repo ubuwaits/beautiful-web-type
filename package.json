@@ -9,8 +9,7 @@
   "scripts": {
     "audit:security": "osv-scanner scan source --lockfile=pnpm-lock.yaml --verbosity=error",
     "audit:typefaces": "tsx scripts/audit-typefaces.ts",
-    "build:legacy-css": "tsx scripts/build-legacy-css.ts",
-    "prepare:static": "pnpm build:legacy-css && tsx scripts/prepare-static.ts",
+    "prepare:static": "tsx scripts/prepare-static.ts",
     "predev": "pnpm prepare:static",
     "dev": "next dev",
     "prebuild": "pnpm prepare:static",
@@ -39,7 +38,6 @@
     "autoprefixer": "^10.4.20",
     "playwright": "^1.51.1",
     "postcss": "^8.5.18",
-    "postcss-import": "^16.1.1",
     "serve": "^14.2.4",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.22.4",

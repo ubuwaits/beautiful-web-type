@@ -11,6 +11,7 @@ import {
 } from "@/lib/metadata";
 
 import "./globals.css";
+import "@/css/src/application.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
@@ -32,7 +33,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
         <link
           href="/feed.xml"
           rel="alternate"

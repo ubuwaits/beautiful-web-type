@@ -30,7 +30,6 @@ async function main() {
     "serif/index.html",
     "v1/index.html",
     "google146824b99fdbed48.html",
-    "css/application.css",
     "js/opentype.min.js",
     "js/wawoff2-decompress.js",
     "assets/images/card.png",
