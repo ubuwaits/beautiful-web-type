@@ -69,7 +69,7 @@
   text-transform: uppercase;
 }
 .meta .pairing-list a:first-child::after {
-  content: " &";
+  content: " &\00a0";
 }
 
 .detail .sample:not(.pairing) .meta {
