@@ -8,7 +8,7 @@ import { getAllTypefaces, type Typeface } from "../lib/content";
 const OUTPUT_PATH = path.join(process.cwd(), "reports", "typeface-audit.md");
 const REQUEST_TIMEOUT_MS = 15_000;
 const USER_AGENT =
-  "Mozilla/5.0 (compatible; beautiful-web-type-audit/1.0; +https://github.com/chad/beautiful-web-type)";
+  "Mozilla/5.0 (compatible; beautiful-web-type-audit/1.0; +https://github.com/ubuwaits/beautiful-web-type)";
 const REQUEST_HEADERS = {
   "user-agent": USER_AGENT,
   accept: "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8"

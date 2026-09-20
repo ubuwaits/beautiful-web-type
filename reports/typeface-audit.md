@@ -1,6 +1,6 @@
 # Typeface Audit
 
-Generated: 2026-03-24T07:45:53.248Z
+Generated: 2026-09-20T08:37:18.429Z
 
 Method:
 - Google Fonts and project URLs are checked with live HTTP requests that follow redirects.
@@ -67,7 +67,7 @@ Detailed Results:
   url: github.com/Omnibus-Type/Archivo
 - recorded-release: v1.003 (12 Aug 2018)
 - upstream-release: unknown (no stable tags)
-  latest-commit: 2021-02-01
+  latest-commit: 2026-09-02
   source: github.com/Omnibus-Type/Archivo/commits
 - newer-release: unknown
 - notes:
@@ -150,7 +150,7 @@ Detailed Results:
   url: github.com/Fonthausen/CrimsonPro
 - recorded-release: v1.002 (21 Feb 2019)
 - upstream-release: unknown (no stable tags)
-  latest-commit: 2022-08-30
+  latest-commit: 2026-06-03
   source: github.com/Fonthausen/CrimsonPro/commits
 - newer-release: unknown
 - notes:
