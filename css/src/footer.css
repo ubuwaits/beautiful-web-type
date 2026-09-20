@@ -113,16 +113,32 @@ footer.grid .subscribe-form input[type=submit] {
   padding: 0.75em 1.5em;
 }
 
-.chadwin:before {
-  content: "NEW";
-  display: inline-block;
-  background: #e74c3c;
-  color: #fff;
-  font-size: 0.65em;
-  font-weight: bold;
-  padding: 0.15em 0.5em;
-  margin-right: 0.5em;
-  border-radius: 0.25em;
-  letter-spacing: 0.05em;
-  vertical-align: middle;
+.chadwin-link {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 0.4rem;
+}
+.chadwin-link img {
+  flex: 0 0 auto;
+  height: 1rem;
+  margin-top: 0.125rem;
+  width: 1rem;
+}
+@media screen and (min-width: 721px) {
+  .chadwin-link {
+    display: inline-block;
+    position: relative;
+  }
+  .chadwin-link img {
+    position: absolute;
+    right: calc(100% + 0.4rem);
+    top: 0;
+  }
+}
+.chadwin-copy {
+  display: flex;
+  flex-direction: column;
+}
+.chadwin-copy strong {
+  font-weight: 700;
 }

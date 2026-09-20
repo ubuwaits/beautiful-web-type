@@ -93,18 +93,22 @@ export function SiteFooter() {
         <h3>About Me</h3>
         <ol>
           <li>
-            <a href="https://chad.is" rel="noopener" target="_blank">
+            <a href="https://www.chad.is" rel="noopener" target="_blank">
               Personal site
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/ubuwaits" rel="noopener noreferrer" target="_blank">
-              @ubuwaits
-            </a>
-          </li>
-          <li className="chadwin">
-            <a href="https://chadwin.co" rel="noopener" target="_blank">
-              Chadwin
+            <a
+              className="chadwin-link"
+              href="https://www.chadwin.co"
+              rel="noopener"
+              target="_blank"
+            >
+              <img alt="" height="16" src="/assets/chadwin-icon-logo.png" width="16" />
+              <span className="chadwin-copy">
+                <strong>Chadwin</strong>
+                <span>Financial data for apps and agents</span>
+              </span>
             </a>
           </li>
         </ol>
