@@ -13,6 +13,7 @@ export type Typeface = {
   slug: string;
   name: string;
   dateAdded: string;
+  updatedAt?: string;
   category: CategoryName;
   categorySlug: CategorySlug;
   sampleText?: string;

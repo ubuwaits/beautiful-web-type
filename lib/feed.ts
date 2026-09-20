@@ -12,27 +12,51 @@ function xmlEscape(value: string): string {
     .replace(/'/g, "&apos;");
 }
 
-export function buildAtomFeedXml(
-  typefaces: readonly Typeface[],
-  buildDate = new Date().toISOString()
-): string {
+function toAtomTimestamp(value: string): string {
+  return new Date(value).toISOString();
+}
+
+function absolutizeRootRelativeUrls(html: string): string {
+  return html
+    .replace(
+      /(\b(?:href|src)=)(["'])(\/(?!\/)[^"']*)\2/gi,
+      (_match, attribute: string, quote: string, url: string) =>
+        `${attribute}${quote}${toAbsoluteUrl(url)}${quote}`
+    )
+    .replace(
+      /(\b(?:href|src)=)(\/(?!\/)[^\s>]+)/gi,
+      (_match, attribute: string, url: string) => `${attribute}${toAbsoluteUrl(url)}`
+    );
+}
+
+export function buildAtomFeedXml(typefaces: readonly Typeface[]): string {
+  if (typefaces.length === 0) {
+    throw new Error("Cannot build an Atom feed without typefaces.");
+  }
+
+  const feedUpdated = new Date(
+    Math.max(
+      ...typefaces.map((typeface) =>
+        new Date(typeface.updatedAt ?? typeface.dateAdded).getTime()
+      )
+    )
+  ).toISOString();
   const entries = typefaces
     .map((typeface) => {
       const imageUrl = toAbsoluteUrl(`/assets/images/${typeface.slug}.png`);
       const typefaceUrl = toAbsoluteUrl(getTypefacePath(typeface.slug));
+      const descriptionHtml = absolutizeRootRelativeUrls(typeface.description);
+      const imageAlt = xmlEscape(`${typeface.name} by ${typeface.creator.name}`);
+      const contentHtml = `<p>${descriptionHtml}</p><p><a href="${typefaceUrl}"><img src="${imageUrl}" alt="${imageAlt}"></a></p>`;
 
       return `<entry>
   <title>${xmlEscape(`${typeface.name} by ${typeface.creator.name}`)}</title>
   <link href="${xmlEscape(typefaceUrl)}" />
   <id>${xmlEscape(typefaceUrl)}</id>
-  <updated>${xmlEscape(new Date(typeface.dateAdded).toISOString())}</updated>
-  <summary type="html">${xmlEscape(typeface.description)}</summary>
-  <content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>${xmlEscape(
-    typeface.description
-  )}</p><p><a href="${xmlEscape(typefaceUrl)}"><img src="${xmlEscape(
-    imageUrl
-  )}" alt="${xmlEscape(`${typeface.name} by ${typeface.creator.name}`)}" /></a></p></div>
-  </content>
+  <published>${toAtomTimestamp(typeface.dateAdded)}</published>
+  <updated>${toAtomTimestamp(typeface.updatedAt ?? typeface.dateAdded)}</updated>
+  <summary type="html">${xmlEscape(descriptionHtml)}</summary>
+  <content type="html">${xmlEscape(contentHtml)}</content>
 </entry>`;
     })
     .join("\n");
@@ -43,7 +67,7 @@ export function buildAtomFeedXml(
   <link href="${toAbsoluteUrl("/feed.xml")}" rel="self" />
   <link href="${toAbsoluteUrl("/")}" />
   <id>${toAbsoluteUrl("/")}</id>
-  <updated>${xmlEscape(buildDate)}</updated>
+  <updated>${feedUpdated}</updated>
   <author>
     <name>Chad Mazzola</name>
     <email>ubuwaits@gmail.com</email>

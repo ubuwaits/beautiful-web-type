@@ -204,6 +204,16 @@ function toDateString(value: unknown, key: string, filePath: string): string {
   throw new Error(`Expected "${key}" to be a date-like value in ${filePath}`);
 }
 
+function maybeDateString(
+  value: unknown,
+  key: string,
+  filePath: string
+): string | undefined {
+  return value === undefined || value === null
+    ? undefined
+    : toDateString(value, key, filePath);
+}
+
 function categoryToSlug(category: CategoryName): CategorySlug {
   return CATEGORY_SLUGS[category];
 }
@@ -235,6 +245,7 @@ function loadTypefaceBundles(contentDir: string): {
       slug,
       name: typefaceName,
       dateAdded: toDateString(meta.dateAdded, "dateAdded", metaPath),
+      updatedAt: maybeDateString(meta.updatedAt, "updatedAt", metaPath),
       category,
       categorySlug: categoryToSlug(category),
       sampleText: maybeString(meta.sampleText),
