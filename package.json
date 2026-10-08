@@ -21,21 +21,21 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "js-yaml": "^4.3.2",
-    "next": "^16.3.5",
+    "next": "~16.3.8",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@playwright/test": "^1.51.1",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.13.5",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "autoprefixer": "^10.4.20",
     "playwright": "^1.51.1",
     "postcss": "^8.5.18",
     "serve": "^14.2.4",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.3.3",
     "tsx": "^4.22.4",
     "typescript": "^5.8.2",
     "vite": "^7.3.5",
@@ -51,12 +51,14 @@
     "overrides": {
       "baseline-browser-mapping": "^2.11.25",
       "browserslist": "^4.29.0",
-      "brace-expansion": "^1.1.16",
+      "brace-expansion": "^1.1.21",
+      "compression": "~1.8.2",
       "fast-uri": "~3.1.8",
       "picomatch": "^4.0.4",
       "postcss": "^8.5.18",
-      "postcss-selector-parser": "^6.1.4",
-      "sharp": "^0.35.4",
+      "sharp": "^0.35.5",
+      "source-map-js": "~1.2.2",
+      "undici": "~7.29.1",
       "vite": "^7.3.5",
       "esbuild": "~0.28.1"
     }
