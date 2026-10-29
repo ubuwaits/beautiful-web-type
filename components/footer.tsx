@@ -97,20 +97,6 @@ export function SiteFooter() {
               Personal site
             </a>
           </li>
-          <li>
-            <a
-              className="chadwin-link"
-              href="https://www.chadwin.co"
-              rel="noopener"
-              target="_blank"
-            >
-              <img alt="" height="16" src="/assets/chadwin-icon-logo.png" width="16" />
-              <span className="chadwin-copy">
-                <strong>Chadwin</strong>
-                <span>Financial data for apps and agents</span>
-              </span>
-            </a>
-          </li>
         </ol>
       </div>
     </footer>

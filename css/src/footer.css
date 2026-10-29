@@ -112,33 +112,3 @@ footer.grid .subscribe-form input[type=submit] {
   font-weight: 700;
   padding: 0.75em 1.5em;
 }
-
-.chadwin-link {
-  align-items: flex-start;
-  display: inline-flex;
-  gap: 0.4rem;
-}
-.chadwin-link img {
-  flex: 0 0 auto;
-  height: 1rem;
-  margin-top: 0.125rem;
-  width: 1rem;
-}
-@media screen and (min-width: 721px) {
-  .chadwin-link {
-    display: inline-block;
-    position: relative;
-  }
-  .chadwin-link img {
-    position: absolute;
-    right: calc(100% + 0.4rem);
-    top: 0;
-  }
-}
-.chadwin-copy {
-  display: flex;
-  flex-direction: column;
-}
-.chadwin-copy strong {
-  font-weight: 700;
-}
