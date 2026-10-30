@@ -413,13 +413,11 @@ a {
 }
 
 [contenteditable]:hover {
-  background: rgba(255, 165, 0, 0.1);
   caret-color: var(--red);
   outline: 0 solid transparent;
 }
 
 [contenteditable]:focus {
-  background: rgba(255, 165, 0, 0.1);
   caret-color: var(--red);
   outline: 0 solid transparent;
 }
