@@ -1,28 +1,51 @@
-<div class='type-detail-table gr2 gc6'>
+<div class='type-detail-table gr1 gc6'>
   <div class='meta dark top'>
     <p class='name'>Standard Ligatures</p>
-    <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+    <p class='code'>font-feature-settings: 'liga';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade'>fi</span> <span class='liga'>fi</span></div>
-    <div><span class='fade italic'>fi</span> <span class='liga italic'>fi</span></div>
-    <div><span class='fade'>fl</span> <span class='liga'>fl</span></div>
-    <div><span class='fade italic'>fl</span> <span class='liga italic'>fl</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fi</span> <span class='liga'>fi</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fl</span> <span class='liga'>fl</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "liga" 0;'>fi</span> <span class='liga italic'>fi</span> <p class='code'>'liga' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "liga" 0;'>fl</span> <span class='liga italic'>fl</span> <p class='code'>'liga' · Italic</p></div>
   </div>
 </div>
 
-<div class='type-detail-table examples-figures gr3 gc6'>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Contextual Alternates</p>
+    <p class='code'>font-feature-settings: 'calt';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "calt" 0;'>12:34</span> <span class='calt'>12:34</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "calt" 0;'>12:34</span> <span class='calt italic'>12:34</span> <p class='code'>'calt' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table examples-figures gr2 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='fractions'>1/2 3/4</h1>
+      <h1 style='font-feature-settings: normal; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1234567890</h1>
+      <p class='character-label'>Proportional Lining (default)</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1/2 1/4 3/4</h1>
       <p class='character-label'>Fractions: 'frac'</p>
     </div>
     <div>
-      <h1><span class='fade'>A</span><span class='superscript'>1234</span></h1>
+      <h1 class='italic' style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1/2 1/4 3/4</h1>
+      <p class='character-label'>Fractions · Italic: 'frac'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>1234</h1>
       <p class='character-label'>Superscripts: 'sups'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>1234</h1>
+      <p class='character-label'>Superscripts · Italic: 'sups'</p>
     </div>
   </div>
 </div>
@@ -32,21 +55,73 @@
     <p class='name'>Ordinals</p>
     <p class='code'>font-feature-settings: 'ordn';</p>
   </div>
-  <div class='examples ordinals flow-row'>
-    <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
-    <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
-    <div><span class='fade'>No.</span> <span class='ordinals'>No.</span></div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals'>3a</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals'>4o</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3A</span> <span class='ordinals'>3A</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4O</span> <span class='ordinals'>4O</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>No.</span> <span class='ordinals'>No.</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals italic'>3a</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals italic'>4o</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>3A</span> <span class='ordinals italic'>3A</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>4O</span> <span class='ordinals italic'>4O</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>No.</span> <span class='ordinals italic'>No.</span> <p class='code'>'ordn' · Italic</p></div>
   </div>
 </div>
 
-<div class='type-detail-table gr3 gc6'>
+<div class='type-detail-table gr6 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Additional Alternate Forms</p>
+    <p class='code'>font-feature-settings: 'aalt';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>aiO·</span> <span class='aalt'>aiO·</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ŞşŢţ</span> <span class='aalt'>ŞşŢţ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ДЛФ</span> <span class='aalt'>ДЛФ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>бвгд</span> <span class='aalt'>бвгд</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>жзий</span> <span class='aalt'>жзий</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>клнп</span> <span class='aalt'>клнп</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>тцч</span> <span class='aalt'>тцч</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>шщъ</span> <span class='aalt'>шщъ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ьюѝҒ</span> <span class='aalt'>ьюѝҒ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ғҘҙҪ</span> <span class='aalt'>ғҘҙҪ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ҫ</span> <span class='aalt'>ҫ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>Ҫҫ</span> <span class='aalt' style='font-feature-settings: "aalt" 2;'>Ҫҫ</span> <p class='code'>'aalt' 2</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>aiO·</span> <span class='aalt italic'>aiO·</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ŞşŢţ</span> <span class='aalt italic'>ŞşŢţ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ДЛФ</span> <span class='aalt italic'>ДЛФ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>бвгд</span> <span class='aalt italic'>бвгд</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>жзкл</span> <span class='aalt italic'>жзкл</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>птч</span> <span class='aalt italic'>птч</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>юѓҒғ</span> <span class='aalt italic'>юѓҒғ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ҘҙҪҫ</span> <span class='aalt italic'>ҘҙҪҫ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>Ҫдҫ</span> <span class='aalt italic' style='font-feature-settings: "aalt" 2;'>Ҫдҫ</span> <p class='code'>'aalt' 2 · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Case Sensitive Forms</p>
+    <p class='code'>font-feature-settings: 'case';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>:</span> <span class='case'>:</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>:ˆ˝</span> <span class='case italic'>:ˆ˝</span> <p class='code'>'case' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr2 gc6'>
   <div class='meta dark top flex-row'>
     <p class='name'>Special Characters</p> <a href='glyphs/' class='glyph-explorer'>Explore all characters</a>
   </div>
   <div class='examples flow-row'>
-    <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
-    <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-    <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
-    <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>¶</span> <p class='code'>&amp;para;</p></div>
+    <div><span>§</span> <p class='code'>&amp;sect;</p></div>
+    <div><span>†</span> <p class='code'>&amp;dagger;</p></div>
+    <div><span>‡</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>&#8467;</span> <p class='code'>&amp;#8467;</p></div>
+    <div><span>&#8470;</span> <p class='code'>&amp;#8470;</p></div>
+    <div><span>&#8494;</span> <p class='code'>&amp;#8494;</p></div>
+    <div><span>&#9674;</span> <p class='code'>&amp;#9674;</p></div>
   </div>
 </div>
