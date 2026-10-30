@@ -67,7 +67,7 @@ type TypefaceDetailProps = {
 };
 
 export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: TypefaceDetailProps) {
-  const paragraphText = text.paragraphs[typeface.italic ? 0 : 1];
+  const paragraphText = text.paragraphs.join("\n\n");
 
   return (
     <>
@@ -215,11 +215,12 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               {["text-(length:--ms2)", "text-(length:--ms1)", "text-(length:--ms-1)"].map((size) => (
                 <p
                   key={size}
-                  className={`min-w-0 ${size} leading-[1.4]`}
+                  className={`min-w-0 ${size} leading-[1.4] whitespace-pre-line`}
                   contentEditable
-                  dangerouslySetInnerHTML={{ __html: paragraphText }}
                   suppressContentEditableWarning
-                />
+                >
+                  {paragraphText}
+                </p>
               ))}
             </div>
           </div>
