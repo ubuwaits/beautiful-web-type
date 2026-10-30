@@ -222,8 +222,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
                 />
               ))}
             </div>
-              ))}
-            </div>
           </div>
         ) : null}
 
