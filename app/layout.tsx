@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="font/woff2"
         />
       </head>
-      <body className="min-h-screen" spellCheck={false}>
+      <body className="min-h-screen bg-white" spellCheck={false}>
         <SiteHeader />
         {children}
         <SiteFooter />

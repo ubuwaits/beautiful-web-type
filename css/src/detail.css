@@ -114,7 +114,7 @@
 }
 
 .type-detail-table {
-  background-color: #fff;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,13 +124,13 @@
   display: flex;
   flex-grow: 2;
   justify-content: center;
-  padding: 2rem;
+  gap: 2rem;
 }
-@media screen and (max-width: 720px) {
-  .examples {
-    padding: 1rem !important;
-  }
+
+.type-detail-table > .meta {
+  padding: 0;
 }
+
 .examples.flow-row {
   align-content: center;
   align-items: center;
@@ -142,7 +142,6 @@
 }
 
 .examples > div {
-  padding: 1rem;
   overflow-wrap: break-word;
 }
 .examples h1 {

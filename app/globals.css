@@ -35,6 +35,11 @@ body .standardized-sample[data-variant="grid"] {
   --sample-surface: #fff;
 }
 
+body .standardized-sample[data-variant="grid"] > a,
+body .standardized-sample[data-variant="grid"] .meta {
+  padding: 0;
+}
+
 body .standardized-sample:focus-within {
   outline: 2px solid var(--red);
   outline-offset: 2px;
@@ -221,7 +226,6 @@ body .standardized-sample[data-variant="hero"] .standardized-specimen-fit {
     aspect-ratio: 5 / 3;
     height: auto;
     min-height: 13rem;
-    padding: 1.5rem 1rem;
   }
 
   body .standardized-sample .standardized-specimen-fit {

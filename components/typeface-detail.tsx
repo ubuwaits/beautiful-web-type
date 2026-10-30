@@ -76,7 +76,12 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           <header className="type-detail-header col-span-12 min-[721px]:col-span-6">
             <div>
               <h2>{typeface.name}</h2>
-              <h3>by {typeface.creator.name}</h3>
+              <h3>
+                by{" "}
+                <a className="underline decoration-from-font underline-offset-4 hover:text-(--red)" href={typeface.creator.url} rel="noopener" target="_blank">
+                  {typeface.creator.name}
+                </a>
+              </h3>
             </div>
           </header>
 
@@ -116,13 +121,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
           <div className="type-info col-span-12 min-[721px]:col-span-3">
-            <h3>Designed by</h3>
-            <h4>
-              <a href={typeface.creator.url} rel="noopener" target="_blank">
-                {typeface.creator.name}
-              </a>
-            </h4>
-
             <h3>Category</h3>
             <h4>
               <Link href={`/${typeface.categorySlug}/`}>{typeface.category}</Link>
@@ -156,7 +154,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
                 Explore all characters
               </Link>
             </div>
-            <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 p-4 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6 min-[721px]:p-8">
+            <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6">
               {CHARACTER_EXAMPLES.map((entry) => (
                 <div className="min-w-0 max-w-full wrap-anywhere text-[clamp(2.25rem,5vw,5.5rem)]" key={entry}>
                   <span dangerouslySetInnerHTML={{ __html: entry }} />
@@ -170,7 +168,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               <p className="name">Words</p>
             </div>
 
-            <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 p-4 min-[721px]:grid-cols-2 min-[721px]:gap-y-10 min-[721px]:p-8">
+            <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 min-[721px]:grid-cols-2 min-[721px]:gap-y-10">
               {text.words.slice(0, 6).map((word, index) => (
                 <FittedLine
                   key={`${typeface.slug}-${word}`}
@@ -185,7 +183,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             <div className="meta dark top">
               <p className="name">Headlines</p>
             </div>
-            <div className="space-y-10 p-4 min-[721px]:space-y-16 min-[721px]:p-8">
+            <div className="space-y-10 min-[721px]:space-y-16">
               {typeface.weights.map((weight, index) => (
                 <div key={`${typeface.slug}-headline-${weight.weight}`}>
                   <p className="character-label mb-4">{weight.name} · {weight.weight}</p>
@@ -212,7 +210,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             <p className="name">Paragraphs</p>
             <p className="code">font-weight: 400</p>
           </div>
-          <div className="grid grid-cols-1 gap-8 p-4 min-[721px]:p-8 min-[1105px]:grid-cols-[minmax(0,3fr)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
+          <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[minmax(0,3fr)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
             {["text-(length:--ms2)", "text-(length:--ms1)", "text-(length:--ms-1)"].map((size) => (
               <p
                 key={size}
@@ -235,7 +233,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               [&>.type-detail-table>.meta]:self-start [&>.type-detail-table>.meta]:justify-start!
               [&>.type-detail-table>.meta]:gap-1 [&>.type-detail-table>.meta>.code]:mt-0!
               [&>.type-detail-table>.meta]:shadow-none! [&>.type-detail-table>.meta]:wrap-anywhere
-              min-[721px]:[&>.type-detail-table>.meta]:p-8!
               [&>.type-detail-table>.examples]:min-w-0 [&>.type-detail-table>.examples]:justify-start!
               [&>.type-detail-table>.examples]:flex-row! [&>.type-detail-table>.examples]:flex-wrap!
               [&>.type-detail-table>.examples]:items-center! [&>.type-detail-table>.examples]:content-start!

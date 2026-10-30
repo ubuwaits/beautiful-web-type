@@ -205,7 +205,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
           <div className="min-w-0">
             <canvas className="block h-auto w-full" id="glyph-detail-canvas" ref={detailCanvasRef} aria-label={selectedGlyph ? `Preview of glyph ${selectedGlyph.index}` : "Selected glyph preview"} />
           </div>
-          <dl className="m-0 min-w-0 p-4 font-(family-name:--ui-monospaced) text-base leading-6 wrap-anywhere [&>dt]:leading-4 [&>dt]:font-(family-name:--ui-face) [&>dt]:font-bold [&>dt]:uppercase [&>dd]:m-0 [&>dd]:mb-3" id="glyph-info">
+          <dl className="m-0 min-w-0 font-(family-name:--ui-monospaced) text-base leading-6 wrap-anywhere [&>dt]:leading-4 [&>dt]:font-(family-name:--ui-face) [&>dt]:font-bold [&>dt]:uppercase [&>dd]:m-0 [&>dd]:mb-3" id="glyph-info">
             <dt>Glyph name</dt><dd>{selectedGlyph?.name ?? "Not available"}</dd>
             <dt>Unicode</dt><dd>{codes.map((code) => `U+${code.toString(16).toUpperCase().padStart(4, "0")}`).join(", ") || "Not encoded"}</dd>
             <dt>HTML code</dt><dd>{codes.map((code) => `&#${code};`).join(", ") || "Not available"}</dd>

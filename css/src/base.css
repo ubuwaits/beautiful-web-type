@@ -396,7 +396,6 @@ html {
 }
 
 body {
-  background: #f2f2f2;
   margin: 6em var(--body-margin) var(--body-margin);
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga" on, "clig" on, "dlig" off;
