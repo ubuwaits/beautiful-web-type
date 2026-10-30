@@ -5,19 +5,40 @@ import { useLayoutEffect, useRef, type CSSProperties, type ReactNode } from "rea
 type FittedLineProps = {
   text: string;
   className?: string;
+  lines?: 1 | 2;
 };
 
-export function FittedLine({ text, className = "" }: FittedLineProps) {
+function splitHeadline(text: string): string {
+  const words = text.trim().split(/\s+/);
+  if (words.length < 2) return text;
+  let split = 1;
+  let difference = Infinity;
+  for (let index = 1; index < words.length; index++) {
+    const delta = Math.abs(words.slice(0, index).join(" ").length - words.slice(index).join(" ").length);
+    if (delta < difference) {
+      split = index;
+      difference = delta;
+    }
+  }
+  return `${words.slice(0, split).join(" ")}\n${words.slice(split).join(" ")}`;
+}
+
+export function FittedLine({ text, className = "", lines = 1 }: FittedLineProps) {
   return (
     <div className="@container min-w-0 w-full">
       <h1
-        className={`m-0 w-max max-w-none whitespace-nowrap leading-[1.15] ${className}`}
-        style={{ "--line-scale": 0.9 / Math.max(1, text.length), fontSize: "calc(100cqw * var(--line-scale))" } as CSSProperties}
+        className={`m-0 w-max max-w-none ${lines === 2 ? "whitespace-pre" : "whitespace-nowrap"} leading-[1.15] ${className}`}
+        style={{ "--line-scale": 0.9 / Math.max(1, text.length / lines), fontSize: "calc(100cqw * var(--line-scale))" } as CSSProperties}
         data-fit-line=""
+        data-fit-lines={lines}
+        onBlur={lines === 2 ? (event) => {
+          event.currentTarget.textContent = splitHeadline(event.currentTarget.innerText);
+          event.currentTarget.dispatchEvent(new Event("input", { bubbles: true }));
+        } : undefined}
         contentEditable="plaintext-only"
         suppressContentEditableWarning
       >
-        {text}
+        {lines === 2 ? splitHeadline(text) : text}
       </h1>
     </div>
   );

@@ -187,17 +187,19 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
             <div className="space-y-10 p-4 min-[721px]:space-y-16 min-[721px]:p-8">
               {typeface.weights.map((weight, index) => (
-                <div className="space-y-2" key={`${typeface.slug}-headline-${weight.weight}`}>
+                <div key={`${typeface.slug}-headline-${weight.weight}`}>
                   <p className="character-label mb-4">{weight.name} · {weight.weight}</p>
-                  <FittedLine text={text.headlines[index]} className={`w${weight.weight}`} />
-                  {typeface.italic ? (
-                    <FittedLine text={text.headlines[index]} className={`w${weight.weight} italic`} />
-                  ) : (
-                    <FittedLine text={text.headlines[index]} className={`w${weight.weight} uppercase`} />
-                  )}
-                  {typeface.smallcap ? (
-                    <FittedLine text={text.headlines[index]} className={`w${weight.weight} small-caps`} />
-                  ) : null}
+                  <div className={`grid grid-cols-1 items-center gap-x-12 gap-y-6 ${typeface.smallcap ? "min-[721px]:grid-cols-3" : "min-[721px]:grid-cols-2"}`}>
+                    <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight}`} />
+                    {typeface.italic ? (
+                      <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight} italic`} />
+                    ) : (
+                      <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight} uppercase`} />
+                    )}
+                    {typeface.smallcap ? (
+                      <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight} small-caps`} />
+                    ) : null}
+                  </div>
                 </div>
               ))}
             </div>
