@@ -58,22 +58,22 @@ test("loads every glyph inline and preserves the selected glyph in the URL", asy
   await expect(page.locator("#glyph-detail-canvas")).toHaveAttribute("aria-label", "Preview of glyph 12");
 });
 
-test("places glyphs between standard specimens and OpenType features", async ({ page }) => {
+test("places glyphs after OpenType features and before comparisons", async ({ page }) => {
   await page.goto("/alegreya/");
   const positions = await page.evaluate(() => {
     const glyphs = document.getElementById("glyphs")!;
-    const specimen = glyphs.previousElementSibling!;
-    const features = glyphs.nextElementSibling!;
+    const features = glyphs.previousElementSibling!;
+    const comparisons = glyphs.parentElement!.nextElementSibling!;
     return {
-      afterStandard: specimen.querySelector(".examples-paragraphs") !== null,
-      beforeFeatures: features.querySelector(".type-detail-table") !== null,
-      specimenBottom: specimen.getBoundingClientRect().bottom,
+      afterFeatures: features.querySelector(".type-detail-table") !== null,
+      beforeComparisons: comparisons.id === "comparisons",
+      featuresBottom: features.getBoundingClientRect().bottom,
       glyphTop: glyphs.getBoundingClientRect().top
     };
   });
-  expect(positions.afterStandard).toBe(true);
-  expect(positions.beforeFeatures).toBe(true);
-  expect(positions.glyphTop).toBeGreaterThanOrEqual(positions.specimenBottom);
+  expect(positions.afterFeatures).toBe(true);
+  expect(positions.beforeComparisons).toBe(true);
+  expect(positions.glyphTop).toBeGreaterThanOrEqual(positions.featuresBottom);
   await expect(page.locator("a.glyph-explorer").first()).toHaveAttribute("href", "/alegreya/#glyphs");
 });
 

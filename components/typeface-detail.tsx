@@ -270,13 +270,13 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         </Masonry>
 
-        <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
-
         <Masonry className="mb-(--gutter)">
           {typeface.bodyHtml ? (
             <div className="contents" dangerouslySetInnerHTML={{ __html: typeface.bodyHtml }} />
           ) : null}
         </Masonry>
+
+        <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>
 
       {typeface.comparisonFaces?.length ? (
