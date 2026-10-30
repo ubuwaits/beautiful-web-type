@@ -1,42 +1,90 @@
 <div class='type-detail-table gr3 gc6'>
   <div class='meta dark top'>
     <p class='name'>Standard Ligatures</p>
-    <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+    <p class='code'>font-feature-settings: 'liga';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade'>ff</span> <span class='liga'>ff</span></div>
-    <div><span class='fade italic'>ff</span> <span class='liga italic'>ff</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>ff</span> <span class='liga'>ff</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fi</span> <span class='liga'>fi</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fl</span> <span class='liga'>fl</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>ffi</span> <span class='liga'>ffi</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>ffl</span> <span class='liga'>ffl</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "liga" 0;'>ff</span> <span class='liga italic'>ff</span> <p class='code'>'liga' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "liga" 0;'>fi</span> <span class='liga italic'>fi</span> <p class='code'>'liga' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "liga" 0;'>fl</span> <span class='liga italic'>fl</span> <p class='code'>'liga' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "liga" 0;'>ffi</span> <span class='liga italic'>ffi</span> <p class='code'>'liga' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "liga" 0;'>ffl</span> <span class='liga italic'>ffl</span> <p class='code'>'liga' · Italic</p></div>
   </div>
 </div>
 
-<div class='type-detail-table examples-figures gr7 gc6'>
+<div class='type-detail-table examples-figures gr5 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='oldstyle-proportional'>1234567890</h1>
-      <p class='character-label'>Proportional Oldstyle: 'pnum', 'onum'</p>
+      <h1 style='font-feature-settings: normal; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>1234567890</h1>
+      <p class='character-label'>Tabular Lining (default)</p>
     </div>
     <div>
-      <h1 class='lining-proportional'>1234567890</h1>
-      <p class='character-label'>Proportional Lining (default): 'pnum', 'lnum'</p>
+      <h1 style='font-feature-settings: "onum" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>1234567890</h1>
+      <p class='character-label'>Tabular Oldstyle: 'onum'</p>
     </div>
     <div>
-      <h1><span class='fade'>0</span> <span class='zero'>0</span></h1>
-      <p class='character-label'>Slashed Zero: 'zero'</p>
-    </div>
-    <div>
-      <h1 class='fractions'>1/2 3/4 5/6 7/8 90/123</h1>
+      <h1 style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>1/2 1/4 3/4 90/123</h1>
       <p class='character-label'>Fractions: 'frac'</p>
     </div>
     <div>
-      <h1><span class='fade'>A</span><span class='subscript'>1234567890</span></h1>
+      <h1 class='italic' style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>1/2 1/4 3/4 90/123</h1>
+      <p class='character-label'>Fractions · Italic: 'frac'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "zero" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0</h1>
+      <p class='character-label'>Slashed Zero: 'zero'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "zero" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0</h1>
+      <p class='character-label'>Slashed Zero · Italic: 'zero'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "numr" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789</h1>
+      <p class='character-label'>Numerators: 'numr'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "numr" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789</h1>
+      <p class='character-label'>Numerators · Italic: 'numr'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "dnom" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789</h1>
+      <p class='character-label'>Denominators: 'dnom'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "dnom" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789</h1>
+      <p class='character-label'>Denominators · Italic: 'dnom'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "subs" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789n</h1>
       <p class='character-label'>Subscripts: 'subs'</p>
     </div>
     <div>
-      <h1><span class='fade'>A</span><span class='superscript'>1234567890</span></h1>
+      <h1 class='italic' style='font-feature-settings: "subs" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789n</h1>
+      <p class='character-label'>Subscripts · Italic: 'subs'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "sinf" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789n</h1>
+      <p class='character-label'>Scientific Inferiors: 'sinf'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "sinf" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789n</h1>
+      <p class='character-label'>Scientific Inferiors · Italic: 'sinf'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789</h1>
       <p class='character-label'>Superscripts: 'sups'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>0123456789</h1>
+      <p class='character-label'>Superscripts · Italic: 'sups'</p>
     </div>
   </div>
 </div>
@@ -46,21 +94,135 @@
     <p class='name'>Ordinals</p>
     <p class='code'>font-feature-settings: 'ordn';</p>
   </div>
-  <div class='examples ordinals flow-row'>
-    <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
-    <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
-    <div><span class='fade'>No.</span> <span class='ordinals'>No.</span></div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals'>3a</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals'>4o</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3A</span> <span class='ordinals'>3A</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4O</span> <span class='ordinals'>4O</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>No.</span> <span class='ordinals'>No.</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals italic'>3a</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals italic'>4o</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>3A</span> <span class='ordinals italic'>3A</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>4O</span> <span class='ordinals italic'>4O</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>No.</span> <span class='ordinals italic'>No.</span> <p class='code'>'ordn' · Italic</p></div>
   </div>
 </div>
 
-<div class='type-detail-table gr2 gc6'>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Stylistic Alternates</p>
+    <p class='code'>font-feature-settings: 'salt';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>&amp;</span> <span style='font-feature-settings: "salt" 1;'>&amp;</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>&amp;</span> <span class='italic' style='font-feature-settings: "salt" 1;'>&amp;</span> <p class='code'>'salt' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr11 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Additional Alternate Forms</p>
+    <p class='code'>font-feature-settings: 'aalt';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ai/J</span> <span class='aalt'>ai/J</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>OYj</span> <span class='aalt'>OYj</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>y´·Ó</span> <span class='aalt'>y´·Ó</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>Ýóý</span> <span class='aalt'>Ýóý</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ÿĆć</span> <span class='aalt'>ÿĆć</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ŃńŚ</span> <span class='aalt'>ŃńŚ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>śŞş</span> <span class='aalt'>śŞş</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ŢţŶ</span> <span class='aalt'>ŢţŶ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ŷŸŹ</span> <span class='aalt'>ŷŸŹ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>źȲȳ</span> <span class='aalt'>źȲȳ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ỲỳỸ</span> <span class='aalt'>ỲỳỸ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>ỹ</span> <span class='aalt'>ỹ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>Ȧ</span> <span class='aalt'>Ȧ</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̋</span> <span class='aalt'>A̋</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̒</span> <span class='aalt'>A̒</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̛</span> <span class='aalt'>A̛</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̤</span> <span class='aalt'>A̤</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̦</span> <span class='aalt'>A̦</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̧</span> <span class='aalt'>A̧</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̮</span> <span class='aalt'>A̮</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>A̱</span> <span class='aalt'>A̱</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>·</span> <span class='aalt' style='font-feature-settings: "aalt" 2;'>·</span> <p class='code'>'aalt' 2</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ai/J</span> <span class='aalt italic'>ai/J</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>OYj</span> <span class='aalt italic'>OYj</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>y´·Ó</span> <span class='aalt italic'>y´·Ó</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>Ýóý</span> <span class='aalt italic'>Ýóý</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ÿĆć</span> <span class='aalt italic'>ÿĆć</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ŃńŚ</span> <span class='aalt italic'>ŃńŚ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>śŞş</span> <span class='aalt italic'>śŞş</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ŢţŶ</span> <span class='aalt italic'>ŢţŶ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ŷŸŹ</span> <span class='aalt italic'>ŷŸŹ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>źȲȳ</span> <span class='aalt italic'>źȲȳ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ỲỳỸ</span> <span class='aalt italic'>ỲỳỸ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>ỹ</span> <span class='aalt italic'>ỹ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>Ȧ</span> <span class='aalt italic'>Ȧ</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̋</span> <span class='aalt italic'>A̋</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̒</span> <span class='aalt italic'>A̒</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̛</span> <span class='aalt italic'>A̛</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̤</span> <span class='aalt italic'>A̤</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̦</span> <span class='aalt italic'>A̦</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̧</span> <span class='aalt italic'>A̧</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̮</span> <span class='aalt italic'>A̮</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>A̱</span> <span class='aalt italic'>A̱</span> <p class='code'>'aalt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "aalt" 0;'>·</span> <span class='aalt italic' style='font-feature-settings: "aalt" 2;'>·</span> <p class='code'>'aalt' 2 · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr7 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Case Sensitive Forms</p>
+    <p class='code'>font-feature-settings: 'case';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>9-¡­</span> <span class='case'>9-¡­</span></div>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>¿‑–—</span> <span class='case'>¿‑–—</span></div>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>A̋</span> <span class='case'>A̋</span></div>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>A̛</span> <span class='case'>A̛</span></div>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>A̧</span> <span class='case'>A̧</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>9-¡­</span> <span class='case italic'>9-¡­</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>¿‑–—</span> <span class='case italic'>¿‑–—</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>A̋</span> <span class='case italic'>A̋</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>A̒</span> <span class='case italic'>A̒</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>A̛</span> <span class='case italic'>A̛</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>A̧</span> <span class='case italic'>A̧</span> <p class='code'>'case' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Capital Spacing</p>
+    <p class='code'>font-feature-settings: 'cpsp';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "cpsp" 0; font-size: 32px;'>HAMBURG</span> <span class='cpsp' style='font-size: 32px;'>HAMBURG</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "cpsp" 0; font-size: 32px;'>HAMBURG</span> <span class='cpsp italic' style='font-size: 32px;'>HAMBURG</span> <p class='code'>'cpsp' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr4 gc6'>
   <div class='meta dark top flex-row'>
     <p class='name'>Special Characters</p> <a href='glyphs/' class='glyph-explorer'>Explore all characters</a>
   </div>
   <div class='examples flow-row'>
-    <div class='ms5'><span>&para;</span> <p class='code'>&amp;para;</p></div>
-    <div class='ms5'><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-    <div class='ms5'><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
-    <div class='ms5'><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>¶</span> <p class='code'>&amp;para;</p></div>
+    <div><span>§</span> <p class='code'>&amp;sect;</p></div>
+    <div><span>†</span> <p class='code'>&amp;dagger;</p></div>
+    <div><span>‡</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>&#8467;</span> <p class='code'>&amp;#8467;</p></div>
+    <div><span>&#8470;</span> <p class='code'>&amp;#8470;</p></div>
+    <div><span>&#8471;</span> <p class='code'>&amp;#8471;</p></div>
+    <div><span>&#8494;</span> <p class='code'>&amp;#8494;</p></div>
+    <div><span>&#8592;</span> <p class='code'>&amp;#8592;</p></div>
+    <div><span>&#8593;</span> <p class='code'>&amp;#8593;</p></div>
+    <div><span>&#8594;</span> <p class='code'>&amp;#8594;</p></div>
+    <div><span>&#8595;</span> <p class='code'>&amp;#8595;</p></div>
+    <div><span>&#8596;</span> <p class='code'>&amp;#8596;</p></div>
+    <div><span>&#8597;</span> <p class='code'>&amp;#8597;</p></div>
+    <div><span>&#8616;</span> <p class='code'>&amp;#8616;</p></div>
+    <div><span>&#9674;</span> <p class='code'>&amp;#9674;</p></div>
   </div>
 </div>
