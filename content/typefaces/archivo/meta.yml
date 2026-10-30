@@ -13,8 +13,8 @@ weights:
   - weight: 700
     name: Bold
 latestRelease:
-  version: v1.003
-  date: 12 Aug 2018
+  version: v2.001
+  date: 1 Feb 2021
 projectUrl: https://github.com/Omnibus-Type/Archivo
 gFontsUrl: https://fonts.google.com/specimen/Archivo
 creator:

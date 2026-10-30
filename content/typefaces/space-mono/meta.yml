@@ -9,8 +9,8 @@ weights:
   - weight: 700
     name: Bold
 latestRelease:
-  version: v1.0
-  date: 16 Feb 2017
+  version: v1.003
+  date: 22 Jan 2025
 projectUrl: https://github.com/googlefonts/spacemono
 gFontsUrl: https://fonts.google.com/specimen/Space+Mono
 creator:

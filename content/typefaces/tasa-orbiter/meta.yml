@@ -11,8 +11,8 @@ weights:
     name: SemiBold
   - weight: 700
     name: Bold
-  - weight: 900
-    name: Black
+  - weight: 800
+    name: Extra-Bold
 latestRelease:
   version: 'v2.012'
   date: 16 Oct 2025

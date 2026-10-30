@@ -6,6 +6,11 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 30 Oct 2026
+
+* **Refreshed font files and glyph sets for 20 typefaces:** Alegreya, Archivo, BioRhyme, BioRhyme Expanded, Crimson Pro, IBM Plex Mono, IBM Plex Sans, IBM Plex Sans Condensed, IBM Plex Serif, Inria Sans, Le Murmure, Libre Franklin, Messapia, Oswald, Poppins, Rakkas, Space Mono, TASA Orbiter, Vollkorn, and Work Sans. Updated release metadata and retired unsupported examples.
+* **Expanded Instrument Sans OpenType examples:** arrow ligatures (`->`, `<-`), proportional figures and symbols, uppercase ordinal inputs (`3A`, `4O`), case-sensitive punctuation, and additional accented/stylistic alternates; corrected `ss09`–`ss12` feature rules.
+
 ### 20 Mar 2026
 * **Removed Jost**, as the creator now charges for the variable font.
 

@@ -28,8 +28,8 @@ weights:
   - weight: 900
     name: Heavy
 latestRelease:
-  version: v1.0
-  date: 14 Mar 2018
+  version: v1.001
+  date: 20 Mar 2018
 projectUrl: https://github.com/bBoxType/FiraGO
 creator:
   name: bBox Type

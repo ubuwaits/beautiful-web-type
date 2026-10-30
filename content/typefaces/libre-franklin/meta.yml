@@ -23,8 +23,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v1.045
-  date: 15 Nov 2016
+  version: v3.000
+  date: 27 Aug 2025
 projectUrl: https://github.com/impallari/Libre-Franklin
 gFontsUrl: https://fonts.google.com/specimen/Libre+Franklin
 creator:

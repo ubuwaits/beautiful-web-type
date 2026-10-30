@@ -6,8 +6,8 @@ weights:
   - weight: 400
     name: Regular
 latestRelease:
-  version: v1.1
-  date: 10 Jul 2019
+  version: v1.2
+  date: 23 Mar 2021
 projectUrl: https://velvetyne.fr/fonts/le-murmure/
 creator:
   name: Jérémy Landes

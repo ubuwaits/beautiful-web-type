@@ -21,8 +21,8 @@ weights:
   - weight: 700
     name: Bold
 latestRelease:
-  version: 'v6.4.2'
-  date: 16 May 2024
+  version: v2.0.0
+  date: 4 Dec 2025
 projectUrl: https://github.com/IBM/plex
 gFontsUrl: https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed
 creator:

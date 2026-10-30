@@ -42,9 +42,3 @@
   font-weight: 700;
   src: url("/assets/fonts/oswald/Oswald-Bold.woff2") format("woff2");
 }
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 900;
-  src: url("/assets/fonts/oswald/OswaldHeavy-Regular.woff2") format("woff2");
-}

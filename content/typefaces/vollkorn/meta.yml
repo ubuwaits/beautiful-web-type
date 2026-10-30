@@ -20,8 +20,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v4.105
-  date: 09 May 2018
+  version: v5.001
+  date: 1 Dec 2021
 projectUrl: http://vollkorn-typeface.com/#download
 gFontsUrl: https://fonts.google.com/specimen/Vollkorn
 creator:

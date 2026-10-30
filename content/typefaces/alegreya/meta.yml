@@ -18,8 +18,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v2.008
-  date: 30 Oct 2018
+  version: v2.009
+  date: 8 Jan 2021
 projectUrl: https://github.com/huertatipografica/Alegreya
 gFontsUrl: https://fonts.google.com/specimen/Alegreya
 creator:

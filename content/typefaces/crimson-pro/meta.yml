@@ -21,8 +21,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: v1.002
-  date: 21 Feb 2019
+  version: v1.004
+  date: 8 Oct 2026
 projectUrl: https://github.com/Fonthausen/CrimsonPro
 gFontsUrl: https://fonts.google.com/specimen/Crimson+Pro
 creator:

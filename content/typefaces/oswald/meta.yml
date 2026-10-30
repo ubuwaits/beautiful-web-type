@@ -1,7 +1,7 @@
 name: Oswald
 dateAdded: '2018-10-15'
 category: Display
-styles: 7
+styles: 6
 weights:
   - weight: 200
     name: Extra-Light
@@ -15,11 +15,9 @@ weights:
     name: Semi-Bold
   - weight: 700
     name: Bold
-  - weight: 900
-    name: Heavy
 latestRelease:
-  version: v4.004
-  date: 22 Sep 2017
+  version: v4.103
+  date: 20 Jul 2023
 projectUrl: https://github.com/googlefonts/OswaldFont
 gFontsUrl: https://fonts.google.com/specimen/Oswald
 creator:

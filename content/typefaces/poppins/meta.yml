@@ -23,8 +23,8 @@ weights:
   - weight: 900
     name: Black
 latestRelease:
-  version: 'v4.003'
-  date: 5 Mar 2019
+  version: v4.004
+  date: 23 Jun 2020
 projectUrl: https://github.com/itfoundry/Poppins
 gFontsUrl: https://fonts.google.com/specimen/Poppins
 creator:

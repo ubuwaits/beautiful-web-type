@@ -6,8 +6,8 @@ weights:
   - weight: 400
     name: Regular
 latestRelease:
-  version: v1.001
-  date: 10 Apr 2016
+  version: v2.000
+  date: 31 Oct 2017
 projectUrl: https://github.com/zeynepakay/Rakkas
 gFontsUrl: https://fonts.google.com/specimen/Rakkas
 creator:
