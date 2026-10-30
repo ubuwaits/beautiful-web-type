@@ -226,11 +226,23 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
         </div>
 
-        <Masonry className="mb-(--gutter)">
-          {typeface.bodyHtml ? (
-            <div className="contents" dangerouslySetInnerHTML={{ __html: typeface.bodyHtml }} />
-          ) : null}
-        </Masonry>
+        {typeface.bodyHtml ? (
+          <TrustedHtml
+            className="feature-list mb-(--gutter) space-y-(--gutter)
+              [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start
+              min-[721px]:[&>.type-detail-table]:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]
+              [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col!
+              [&>.type-detail-table>.meta]:self-start [&>.type-detail-table>.meta]:justify-start!
+              [&>.type-detail-table>.meta]:gap-1 [&>.type-detail-table>.meta>.code]:mt-0!
+              [&>.type-detail-table>.meta]:shadow-none! [&>.type-detail-table>.meta]:wrap-anywhere
+              min-[721px]:[&>.type-detail-table>.meta]:p-8!
+              [&>.type-detail-table>.examples]:min-w-0 [&>.type-detail-table>.examples]:justify-start!
+              [&>.type-detail-table>.examples]:flex-row! [&>.type-detail-table>.examples]:flex-wrap!
+              [&>.type-detail-table>.examples]:items-center! [&>.type-detail-table>.examples]:content-start!
+              [&>.type-detail-table>.examples>div]:max-w-full"
+            html={typeface.bodyHtml}
+          />
+        ) : null}
 
         <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>
