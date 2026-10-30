@@ -1,0 +1,3 @@
+# Glyph explorers now live on the typeface pages.
+/:typeface/glyphs/ /:typeface/#glyphs 301
+/:typeface/glyphs /:typeface/#glyphs 301

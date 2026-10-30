@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { GlyphInspector } from "@/components/glyph-inspector";
 import { ComparisonSync } from "@/components/comparison-sync";
 import { Masonry } from "@/components/masonry";
 import { PairingCard } from "@/components/pairing-card";
@@ -58,12 +59,13 @@ const CHARACTER_EXAMPLES = [
 ];
 
 type TypefaceDetailProps = {
+  glyphFontFile: string;
   pairings: Pairing[];
   text: TextData;
   typeface: Typeface;
 };
 
-export function TypefaceDetail({ pairings, text, typeface }: TypefaceDetailProps) {
+export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: TypefaceDetailProps) {
   const secondHeadlineType = typeface.italic ? "italic" : "uppercase";
   const paragraphText = text.paragraphs[typeface.italic ? 0 : 1];
 
@@ -266,6 +268,11 @@ export function TypefaceDetail({ pairings, text, typeface }: TypefaceDetailProps
             </div>
           ) : null}
 
+        </Masonry>
+
+        <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
+
+        <Masonry className="mb-(--gutter)">
           {typeface.bodyHtml ? (
             <div className="contents" dangerouslySetInnerHTML={{ __html: typeface.bodyHtml }} />
           ) : null}

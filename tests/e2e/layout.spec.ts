@@ -77,7 +77,7 @@ test("reflows edited specimens and when switching column counts", async ({ page 
 test("keeps other page layouts within the viewport", async ({ page }) => {
   for (const width of [1440, 900, 390]) {
     await page.setViewportSize({ width, height: 1000 });
-    for (const route of ["/", "/serif/", "/sans-serif/", "/display/", "/monospaced/", "/pairings/", "/inter/glyphs/"]) {
+    for (const route of ["/", "/serif/", "/sans-serif/", "/display/", "/monospaced/", "/pairings/", "/inter/#glyphs"]) {
       await page.goto(route);
       await expectPacked(page);
     }
@@ -126,5 +126,20 @@ test("keeps consistent gutters between index cards", async ({ page }) => {
         for (const gap of spacing.cardGaps) expect(gap).toBeCloseTo(spacing.gap, 1);
       });
     }
+  }
+});
+
+test("loads the complete inline glyph grid for every typeface", async ({ page }) => {
+  test.setTimeout(180_000);
+  for (const slug of readdirSync("content/typefaces")) {
+    await test.step(slug, async () => {
+      await page.goto(`/${slug}/#glyphs`);
+      const grid = page.locator("#glyph-grid");
+      await expect(grid.locator("button").first()).toBeAttached();
+      const count = Number(await grid.getAttribute("data-glyph-count"));
+      expect(count).toBeGreaterThan(0);
+      await expect(grid.locator("button")).toHaveCount(count);
+      await expect(page.locator("#glyphs [role=alert]")).toHaveCount(0);
+    });
   }
 });

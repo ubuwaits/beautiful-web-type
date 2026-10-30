@@ -37,7 +37,7 @@ export function getTypefacePath(typefaceSlug: string): string {
 }
 
 export function getGlyphPath(typefaceSlug: string): string {
-  return `/${typefaceSlug}/glyphs/`;
+  return `/${typefaceSlug}/#glyphs`;
 }
 
 export function toAbsoluteUrl(routePath: string): string {

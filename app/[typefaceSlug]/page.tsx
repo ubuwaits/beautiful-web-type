@@ -6,6 +6,7 @@ import { PageShell } from "@/components/page-shell";
 import { TypefaceDetail } from "@/components/typeface-detail";
 import {
   getAllTypefaceSlugs,
+  getGlyphPageBySlug,
   getPairingsForTypeface,
   getTextData,
   getTypefaceBySlug
@@ -55,8 +56,9 @@ export default async function TypefacePage({
 }) {
   const { typefaceSlug } = await params;
   const typeface = getTypefaceBySlug(typefaceSlug);
+  const glyphSource = getGlyphPageBySlug(typefaceSlug);
 
-  if (!typeface) {
+  if (!typeface || !glyphSource) {
     notFound();
   }
 
@@ -72,7 +74,7 @@ export default async function TypefacePage({
           { name: typeface.name, path: getTypefacePath(typeface.slug) }
         ]}
       />
-      <TypefaceDetail pairings={pairings} text={text} typeface={typeface} />
+      <TypefaceDetail glyphFontFile={glyphSource.fontFile} pairings={pairings} text={text} typeface={typeface} />
     </PageShell>
   );
 }
