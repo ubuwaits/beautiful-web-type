@@ -9,8 +9,3 @@
     --gutter: 1em;
   }
 }
-
-.col-2 {
-  column-count: 2;
-  column-gap: 2em;
-}

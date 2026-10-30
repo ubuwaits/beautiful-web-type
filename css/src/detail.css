@@ -169,22 +169,6 @@
   font-size: var(--ms4);
 }
 
-.paragraph-examples .ms2 {
-  line-height: 2rem;
-}
-.paragraph-examples .ms1 {
-  line-height: 1.75rem;
-}
-.paragraph-examples .ms0 {
-  line-height: 1.5rem;
-}
-.paragraph-examples .ms-1 {
-  line-height: 1.25rem;
-}
-.paragraph-examples .ms-2 {
-  line-height: 1rem;
-}
-
 .examples-figures .examples h1 {
   font-size: var(--ms6);
   font-weight: 400;

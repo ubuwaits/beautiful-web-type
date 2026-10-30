@@ -205,28 +205,35 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         </FittedLines>
 
-        <Masonry className="mb-(--gutter)">
-          {typeface.category !== "Display" ? (
-            <div className="type-detail-table examples-paragraphs">
-              <div className="meta dark top flex-column">
-                <p className="name">Paragraphs</p>
-                <p className="code">font-weight: 400</p>
-              </div>
-              <div className="examples paragraph-examples flow-column">
-                {["ms2", "ms1", "ms0", "ms-1", "ms-2 col-2"].map((className) => (
-                  <div key={`${typeface.slug}-${className}`}>
+        {typeface.category !== "Display" ? (
+          <div className="type-detail-table examples-paragraphs mb-(--gutter)">
+            <div className="meta dark top flex-column">
+              <p className="name">Paragraphs</p>
+              <p className="code">font-weight: 400</p>
+            </div>
+            <div className="grid grid-cols-1 gap-8 p-4 min-[721px]:p-8 min-[1105px]:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)_minmax(0,1fr)]">
+              {[
+                ["text-(length:--ms3)", "text-(length:--ms2)"],
+                ["text-(length:--ms1)", "text-(length:--ms0)"],
+                ["text-(length:--ms-1)", "text-(length:--ms-2)"]
+              ].map((sizes, column) => (
+                <div className="flex min-w-0 flex-col gap-8" key={`${typeface.slug}-paragraph-column-${column}`}>
+                  {sizes.map((size) => (
                     <p
-                      className={className}
+                      key={size}
+                      className={`${size} leading-[1.4]`}
                       contentEditable
                       dangerouslySetInnerHTML={{ __html: paragraphText }}
                       suppressContentEditableWarning
                     />
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              ))}
             </div>
-          ) : null}
+          </div>
+        ) : null}
 
+        <Masonry className="mb-(--gutter)">
           {typeface.bodyHtml ? (
             <div className="contents" dangerouslySetInnerHTML={{ __html: typeface.bodyHtml }} />
           ) : null}
