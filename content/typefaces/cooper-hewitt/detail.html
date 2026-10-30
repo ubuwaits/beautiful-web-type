@@ -1,46 +1,97 @@
-<div class='type-detail-table gr4 gc6'>
-  <div class='meta dark top flex-row'>
-    <p class='name'>Special Characters</p> <a href='glyphs/' class='glyph-explorer'>Explore all characters</a>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Standard Ligatures</p>
+    <p class='code'>font-feature-settings: 'liga';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span>&uarr;</span> <p class='code'>&amp;uarr;</p></div>
-    <div><span>&nearr;</span> <p class='code'>&amp;nearr;</p></div>
-    <div><span>&rarr;</span> <p class='code'>&amp;rarr;</p></div>
-    <div><span>&searr;</span> <p class='code'>&amp;searr;</p></div>
-    <div><span>&darr;</span> <p class='code'>&amp;darr;</p></div>
-    <div><span>&swarr;</span> <p class='code'>&amp;swarr;</p></div>
-    <div><span>&larr;</span> <p class='code'>&amp;larr;</p></div>
-    <div><span>&nwarr;</span> <p class='code'>&amp;nwarr;</p></div>
-    <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
-    <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-    <div><span>&bigstar;</span> <p class='code'>&amp;bigstar;</p></div>
-    <div><span>&#9788;</span> <p class='code'>&amp;#9788;</p></div>
-    <div><span>&#9790;</span> <p class='code'>&amp;#9790;</p></div>
-    <div><span>&numero;</span> <p class='code'>&amp;numero;</p></div>
-    <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
-    <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fi</span> <span class='liga'>fi</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fl</span> <span class='liga'>fl</span></div>
   </div>
 </div>
 
-<div class='type-detail-table examples-figures gr2 gc6'>
+<div class='type-detail-table examples-figures gr1 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='fractions'>1/2 3/4</h1>
+      <h1 style='font-feature-settings: normal; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1234567890</h1>
+      <p class='character-label'>Tabular Lining (default)</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1/2 1/4 3/4</h1>
       <p class='character-label'>Fractions: 'frac'</p>
     </div>
   </div>
 </div>
 
-<div class='type-detail-table gr2 gc6'>
+<div class='type-detail-table gr1 gc6'>
   <div class='meta dark top'>
     <p class='name'>Ordinals</p>
     <p class='code'>font-feature-settings: 'ordn';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
-    <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals'>3a</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals'>4o</span></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Capital Spacing</p>
+    <p class='code'>font-feature-settings: 'cpsp';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "cpsp" 0; font-size: 32px;'>HAMBURG</span> <span class='cpsp' style='font-size: 32px;'>HAMBURG</span></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr11 gc6'>
+  <div class='meta dark top flex-row'>
+    <p class='name'>Special Characters</p> <a href='glyphs/' class='glyph-explorer'>Explore all characters</a>
+  </div>
+  <div class='examples flow-row'>
+    <div><span>↑</span> <p class='code'>&amp;uarr;</p></div>
+    <div><span>↗</span> <p class='code'>&amp;nearr;</p></div>
+    <div><span>→</span> <p class='code'>&amp;rarr;</p></div>
+    <div><span>↘</span> <p class='code'>&amp;searr;</p></div>
+    <div><span>↓</span> <p class='code'>&amp;darr;</p></div>
+    <div><span>↙</span> <p class='code'>&amp;swarr;</p></div>
+    <div><span>←</span> <p class='code'>&amp;larr;</p></div>
+    <div><span>↖</span> <p class='code'>&amp;nwarr;</p></div>
+    <div><span>¶</span> <p class='code'>&amp;para;</p></div>
+    <div><span>§</span> <p class='code'>&amp;sect;</p></div>
+    <div><span>★</span> <p class='code'>&amp;bigstar;</p></div>
+    <div><span>☼</span> <p class='code'>&amp;#9788;</p></div>
+    <div><span>☾</span> <p class='code'>&amp;#9790;</p></div>
+    <div><span>№</span> <p class='code'>&amp;numero;</p></div>
+    <div><span>†</span> <p class='code'>&amp;dagger;</p></div>
+    <div><span>‡</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>&#8471;</span> <p class='code'>&amp;#8471;</p></div>
+    <div><span>&#9632;</span> <p class='code'>&amp;#9632;</p></div>
+    <div><span>&#9633;</span> <p class='code'>&amp;#9633;</p></div>
+    <div><span>&#9642;</span> <p class='code'>&amp;#9642;</p></div>
+    <div><span>&#9643;</span> <p class='code'>&amp;#9643;</p></div>
+    <div><span>&#9650;</span> <p class='code'>&amp;#9650;</p></div>
+    <div><span>&#9658;</span> <p class='code'>&amp;#9658;</p></div>
+    <div><span>&#9660;</span> <p class='code'>&amp;#9660;</p></div>
+    <div><span>&#9668;</span> <p class='code'>&amp;#9668;</p></div>
+    <div><span>&#9675;</span> <p class='code'>&amp;#9675;</p></div>
+    <div><span>&#9679;</span> <p class='code'>&amp;#9679;</p></div>
+    <div><span>&#9698;</span> <p class='code'>&amp;#9698;</p></div>
+    <div><span>&#9699;</span> <p class='code'>&amp;#9699;</p></div>
+    <div><span>&#9700;</span> <p class='code'>&amp;#9700;</p></div>
+    <div><span>&#9701;</span> <p class='code'>&amp;#9701;</p></div>
+    <div><span>&#9711;</span> <p class='code'>&amp;#9711;</p></div>
+    <div><span>&#9746;</span> <p class='code'>&amp;#9746;</p></div>
+    <div><span>&#9824;</span> <p class='code'>&amp;#9824;</p></div>
+    <div><span>&#9827;</span> <p class='code'>&amp;#9827;</p></div>
+    <div><span>&#9829;</span> <p class='code'>&amp;#9829;</p></div>
+    <div><span>&#9830;</span> <p class='code'>&amp;#9830;</p></div>
+    <div><span>&#9851;</span> <p class='code'>&amp;#9851;</p></div>
+    <div><span>&#9852;</span> <p class='code'>&amp;#9852;</p></div>
+    <div><span>&#9853;</span> <p class='code'>&amp;#9853;</p></div>
+    <div><span>&#9898;</span> <p class='code'>&amp;#9898;</p></div>
+    <div><span>&#9899;</span> <p class='code'>&amp;#9899;</p></div>
   </div>
 </div>
