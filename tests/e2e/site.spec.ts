@@ -109,3 +109,35 @@ test("initializes the explorer after client navigation with its script already l
   await page.locator('#glyph-grid button[data-glyph-index="8"]').focus();
   await expect(page.locator('#glyph-grid button[data-glyph-index="8"]')).toHaveAttribute("aria-pressed", "true");
 });
+
+test("draws newly visible glyphs without per-cell layout work", async ({ page }) => {
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send("Network.enable");
+  await cdp.send("Network.setCacheDisabled", { cacheDisabled: true });
+  await cdp.send("Performance.enable");
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/inter/#glyphs");
+  await expect(page.locator("#glyph-grid button canvas").first()).toBeAttached();
+  const settle = () => page.evaluate(() => new Promise<void>((resolve) => {
+    requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+  }));
+  await page.evaluate(() => document.fonts.ready);
+  await settle();
+  const before = await cdp.send("Performance.getMetrics");
+  const target = page.locator('#glyph-grid button[data-glyph-index="1800"]');
+  await target.scrollIntoViewIfNeeded();
+  await expect(target.locator("canvas")).toBeAttached();
+  await settle();
+  const after = await cdp.send("Performance.getMetrics");
+  const layoutCount = (result: typeof before) => result.metrics.find((metric) => metric.name === "LayoutCount")!.value;
+  // One viewport needs hundreds of glyphs. It must not trigger hundreds of layouts.
+  expect(layoutCount(after) - layoutCount(before)).toBeLessThan(30);
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await target.scrollIntoViewIfNeeded();
+  await expect.poll(() => target.evaluate((button) => {
+    const canvas = button.querySelector("canvas")!;
+    return canvas.width === Math.round(button.clientWidth * window.devicePixelRatio);
+  })).toBe(true);
+  await cdp.detach();
+});

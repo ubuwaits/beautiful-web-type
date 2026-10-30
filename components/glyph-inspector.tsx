@@ -111,11 +111,14 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     }
     grid.replaceChildren(fragment);
 
-    // Every glyph has a cell; only its canvas drawing is deferred until near the viewport.
-    const visible = new Set<HTMLElement>();
+    // All cells share a width. Measure once per resize, before any canvas writes;
+    // reading clientWidth for each cell forces a layout after every preceding draw.
+    let cellWidth = (grid.firstElementChild as HTMLElement).clientWidth;
+    let drawKey = `${cellWidth}:${window.devicePixelRatio}`;
+    const nearby = new Set<HTMLElement>();
     const drawCell = (button: HTMLElement) => {
-      const width = button.clientWidth;
-      const key = `${width}:${window.devicePixelRatio}`;
+      const width = cellWidth;
+      const key = drawKey;
       if (button.dataset.drawnAt === key) return;
       const glyph = font.glyphs.get(Number(button.dataset.glyphIndex));
       const canvas = button.querySelector("canvas") ?? document.createElement("canvas");
@@ -130,15 +133,19 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       for (const entry of entries) {
         const button = entry.target as HTMLElement;
         if (entry.isIntersecting) {
-          visible.add(button);
+          nearby.add(button);
           drawCell(button);
         } else {
-          visible.delete(button);
+          nearby.delete(button);
         }
       }
-    }, { rootMargin: "300px" });
+    }, { rootMargin: `${Math.max(1200, window.innerHeight * 2)}px` });
     Array.from(grid.children).forEach((button) => visibilityObserver.observe(button));
-    const resizeObserver = new ResizeObserver(() => visible.forEach(drawCell));
+    const resizeObserver = new ResizeObserver(() => {
+      cellWidth = (grid.firstElementChild as HTMLElement).clientWidth;
+      drawKey = `${cellWidth}:${window.devicePixelRatio}`;
+      nearby.forEach(drawCell);
+    });
     resizeObserver.observe(grid);
 
     const select = (event: Event) => {
