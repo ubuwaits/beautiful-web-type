@@ -211,7 +211,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               <p className="name">Paragraphs</p>
               <p className="code">font-weight: 400</p>
             </div>
-            <div className="grid grid-cols-1 gap-8 p-4 min-[721px]:p-8 min-[1105px]:grid-cols-[minmax(0,4.3fr)_minmax(0,2.1fr)_minmax(0,1fr)]">
+            <div className="grid grid-cols-1 gap-8 p-4 min-[721px]:p-8 min-[1105px]:grid-cols-[minmax(0,4.3fr)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
               {[
                 ["text-(length:--ms3)", "text-(length:--ms2)"],
                 ["text-(length:--ms1)", "text-(length:--ms0)"],
