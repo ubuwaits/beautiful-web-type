@@ -4,71 +4,361 @@
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='oldstyle-tabular'>1234567890</h1>
-      <p class='character-label'>Tabular Oldstyle: 'tnum', 'onum'</p>
+      <h1 style='font-feature-settings: normal; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1234567890</h1>
+      <p class='character-label'>Tabular Lining (default)</p>
     </div>
     <div>
-      <h1 class='lining-tabular'>1234567890</h1>
-      <p class='character-label'>Tabular Lining (default): 'tnum', 'lnum'</p>
+      <h1 style='font-feature-settings: "onum" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1234567890</h1>
+      <p class='character-label'>Tabular Oldstyle: 'onum'</p>
     </div>
     <div>
-      <h1><span class='fade'>0</span> <span class='zero'>0</span></h1>
-      <p class='character-label'>Slashed Zero: 'zero'</p>
-    </div>
-    <div>
-      <h1 class='fractions'><span class='fractions'>1/2</span> <span class='fractions'>3/4</span> <span class='fractions'>5/6</span> <span class='fractions'>7/8</span> <span class='fractions'>90/123</span></h1>
+      <h1 style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1/2 1/4 3/4</h1>
+      <h1 style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>90/123</h1>
       <p class='character-label'>Fractions: 'frac'</p>
     </div>
     <div>
-      <h1><span class='fade'>A</span><span class='subscript'>1234567890</span></h1>
+      <h1 class='italic' style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1/2 1/4 3/4</h1>
+      <h1 class='italic' style='font-feature-settings: "frac" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>90/123</h1>
+      <p class='character-label'>Fractions · Italic: 'frac'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "zero" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>0</h1>
+      <p class='character-label'>Slashed Zero: 'zero'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "zero" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>0</h1>
+      <p class='character-label'>Slashed Zero · Italic: 'zero'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "numr" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 style='font-feature-settings: "numr" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
+      <p class='character-label'>Numerators: 'numr'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "numr" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 class='italic' style='font-feature-settings: "numr" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
+      <p class='character-label'>Numerators · Italic: 'numr'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "dnom" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 style='font-feature-settings: "dnom" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
+      <p class='character-label'>Denominators: 'dnom'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "dnom" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 class='italic' style='font-feature-settings: "dnom" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
+      <p class='character-label'>Denominators · Italic: 'dnom'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "subs" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 style='font-feature-settings: "subs" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
       <p class='character-label'>Subscripts: 'subs'</p>
     </div>
     <div>
-      <h1><span class='fade'>A</span><span class='superscript'>1234567890abc</span></h1>
+      <h1 class='italic' style='font-feature-settings: "subs" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 class='italic' style='font-feature-settings: "subs" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
+      <p class='character-label'>Subscripts · Italic: 'subs'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "sinf" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 style='font-feature-settings: "sinf" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
+      <p class='character-label'>Scientific Inferiors: 'sinf'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "sinf" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),.01234</h1>
+      <h1 class='italic' style='font-feature-settings: "sinf" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>56789</h1>
+      <p class='character-label'>Scientific Inferiors · Italic: 'sinf'</p>
+    </div>
+    <div>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),-.0123</h1>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>456789:ab</h1>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>cdefghijk</h1>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>lmnopqrst</h1>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>uvwxyzèéę</h1>
+      <h1 style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>əɦ–—</h1>
       <p class='character-label'>Superscripts: 'sups'</p>
+    </div>
+    <div>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>(),-.0123</h1>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>456789:ab</h1>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>cdefghijk</h1>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>lmnopqrst</h1>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>uvwxyzèéę</h1>
+      <h1 class='italic' style='font-feature-settings: "sups" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'><span class='fade' style='font-size: inherit; font-feature-settings: normal;'>H</span>əɦ–—</h1>
+      <p class='character-label'>Superscripts · Italic: 'sups'</p>
     </div>
   </div>
 </div>
 
-<div class='type-detail-table gr2 gc6'>
-  <div class='meta dark top'>
-    <p class='name'>Alternate Glyph Forms</p>
-    <p class='code'>font-feature-settings: 'ss--';</p>
-  </div>
-  <div class='examples flow-row'>
-    <div><span class='fade'>a</span> <span class='ss02'>a</span> <p class='code'>'ss02'</p></div>
-    <div><span class='fade'>g</span> <span class='ss03'>g</span> <p class='code'>'ss03'</p></div>
-    <div><span class='fade'>i</span> <span class='ss04'>i</span> <p class='code'>'ss04'</p></div>
-    <div><span class='fade'>l</span> <span class='ss04'>l</span> <p class='code'>'ss04'</p></div>
-  </div>
-</div>
-
-<div class='type-detail-table gr3 gc6'>
+<div class='type-detail-table gr4 gc6'>
   <div class='meta dark top'>
     <p class='name'>Ordinals</p>
     <p class='code'>font-feature-settings: 'ordn';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade'>1st</span> <span class='ordinals'>1st</span></div>
-    <div><span class='fade'>2nd</span> <span class='ordinals'>2nd</span></div>
-    <div><span class='fade'>3a</span> <span class='ordinals'>3a</span></div>
-    <div><span class='fade'>4o</span> <span class='ordinals'>4o</span></div>
-    <div><span class='fade'>No</span> <span class='ordinals'>No</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>1st</span> <span class='ordinals'>1st</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>2nd</span> <span class='ordinals'>2nd</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3rd</span> <span class='ordinals'>3rd</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4th</span> <span class='ordinals'>4th</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals'>3a</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals'>4o</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>No</span> <span class='ordinals'>No</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>No.</span> <span class='ordinals'>No.</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>1st</span> <span class='ordinals italic'>1st</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>2nd</span> <span class='ordinals italic'>2nd</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>3rd</span> <span class='ordinals italic'>3rd</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>4th</span> <span class='ordinals italic'>4th</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals italic'>3a</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals italic'>4o</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>No</span> <span class='ordinals italic'>No</span> <p class='code'>'ordn' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ordn" 0;'>No.</span> <span class='ordinals italic'>No.</span> <p class='code'>'ordn' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr11 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Stylistic Sets</p>
+    <p class='code'>font-feature-settings: 'ss--';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>*­‐</span> <span class='ss01'>*­‐</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>-&gt;</span> <span class='ss01'>-&gt;</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss01" 0;'>*­‐</span> <span class='ss01 italic'>*­‐</span> <p class='code'>'ss01' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss01" 0;'>-&gt;</span> <span class='ss01 italic'>-&gt;</span> <p class='code'>'ss01' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>aªàá</span> <span class='ss02'>aªàá</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>âãäå</span> <span class='ss02'>âãäå</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>āăąǎ</span> <span class='ss02'>āăąǎ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ǻβаӑ</span> <span class='ss02'>ǻβаӑ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ᵃạảấ</span> <span class='ss02'>ᵃạảấ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ầẩẫậ</span> <span class='ss02'>ầẩẫậ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ắằẳẵ</span> <span class='ss02'>ắằẳẵ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ặ</span> <span class='ss02'>ặ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss02" 0;'>aªàá</span> <span class='ss02 italic'>aªàá</span> <p class='code'>'ss02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss02" 0;'>âãäå</span> <span class='ss02 italic'>âãäå</span> <p class='code'>'ss02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss02" 0;'>āăąǎ</span> <span class='ss02 italic'>āăąǎ</span> <p class='code'>'ss02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss02" 0;'>ǻᵃạả</span> <span class='ss02 italic'>ǻᵃạả</span> <p class='code'>'ss02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss02" 0;'>ấầẩẫ</span> <span class='ss02 italic'>ấầẩẫ</span> <p class='code'>'ss02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss02" 0;'>ậắằẳ</span> <span class='ss02 italic'>ậắằẳ</span> <p class='code'>'ss02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss02" 0;'>ẵặ</span> <span class='ss02 italic'>ẵặ</span> <p class='code'>'ss02' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>gĝğġ</span> <span class='ss03'>gĝğġ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>ģǧǵθ</span> <span class='ss03'>ģǧǵθ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>бᵍḡ</span> <span class='ss03'>бᵍḡ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>g̃</span> <span class='ss03'>g̃</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss03" 0;'>gĝğġ</span> <span class='ss03 italic'>gĝğġ</span> <p class='code'>'ss03' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss03" 0;'>ģǧǵᵍ</span> <span class='ss03 italic'>ģǧǵᵍ</span> <p class='code'>'ss03' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss03" 0;'>ḡ</span> <span class='ss03 italic'>ḡ</span> <p class='code'>'ss03' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss03" 0;'>g̃</span> <span class='ss03 italic'>g̃</span> <p class='code'>'ss03' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>ilìí</span> <span class='ss04'>ilìí</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>îïĩī</span> <span class='ss04'>îïĩī</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>ĭįıĺ</span> <span class='ss04'>ĭįıĺ</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>ļľŀł</span> <span class='ss04'>ļľŀł</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>ǐɨɫɬ</span> <span class='ss04'>ǐɨɫɬ</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>іїӏḷ</span> <span class='ss04'>іїӏḷ</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>ḹḻỉị</span> <span class='ss04'>ḹḻỉị</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>ⁱ</span> <span class='ss04'>ⁱ</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>l·l</span> <span class='ss04'>l·l</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss05" 0;'>Ŋφ</span> <span class='ss05'>Ŋφ</span> <p class='code'>'ss05'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss05" 0;'>Ŋ</span> <span class='ss05 italic'>Ŋ</span> <p class='code'>'ss05' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss06" 0;'>$</span> <span class='ss06'>$</span> <p class='code'>'ss06'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss06" 0;'>$</span> <span class='ss06 italic'>$</span> <p class='code'>'ss06' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss07" 0;'>1</span> <span class='ss07'>1</span> <p class='code'>'ss07'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "ss07" 0;'>1</span> <span class='ss07 italic'>1</span> <p class='code'>'ss07' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr12 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Character Variants</p>
+    <p class='code'>font-feature-settings: 'cv--';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "cv01" 0;'>aªàá</span> <span style='font-feature-settings: "cv01" 1;'>aªàá</span> <p class='code'>'cv01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv01" 0;'>âãäå</span> <span style='font-feature-settings: "cv01" 1;'>âãäå</span> <p class='code'>'cv01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv01" 0;'>āăąǎ</span> <span style='font-feature-settings: "cv01" 1;'>āăąǎ</span> <p class='code'>'cv01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv01" 0;'>ǻаӑᵃ</span> <span style='font-feature-settings: "cv01" 1;'>ǻаӑᵃ</span> <p class='code'>'cv01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv01" 0;'>ạảấầ</span> <span style='font-feature-settings: "cv01" 1;'>ạảấầ</span> <p class='code'>'cv01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv01" 0;'>ẩẫậắ</span> <span style='font-feature-settings: "cv01" 1;'>ẩẫậắ</span> <p class='code'>'cv01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv01" 0;'>ằẳẵặ</span> <span style='font-feature-settings: "cv01" 1;'>ằẳẵặ</span> <p class='code'>'cv01'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv01" 0;'>aªàá</span> <span class='italic' style='font-feature-settings: "cv01" 1;'>aªàá</span> <p class='code'>'cv01' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv01" 0;'>âãäå</span> <span class='italic' style='font-feature-settings: "cv01" 1;'>âãäå</span> <p class='code'>'cv01' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv01" 0;'>āăąǎ</span> <span class='italic' style='font-feature-settings: "cv01" 1;'>āăąǎ</span> <p class='code'>'cv01' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv01" 0;'>ǻᵃạả</span> <span class='italic' style='font-feature-settings: "cv01" 1;'>ǻᵃạả</span> <p class='code'>'cv01' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv01" 0;'>ấầẩẫ</span> <span class='italic' style='font-feature-settings: "cv01" 1;'>ấầẩẫ</span> <p class='code'>'cv01' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv01" 0;'>ậắằẳ</span> <span class='italic' style='font-feature-settings: "cv01" 1;'>ậắằẳ</span> <p class='code'>'cv01' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv01" 0;'>ẵặ</span> <span class='italic' style='font-feature-settings: "cv01" 1;'>ẵặ</span> <p class='code'>'cv01' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv02" 0;'>gĝğġ</span> <span style='font-feature-settings: "cv02" 1;'>gĝğġ</span> <p class='code'>'cv02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv02" 0;'>ģǧǵᵍ</span> <span style='font-feature-settings: "cv02" 1;'>ģǧǵᵍ</span> <p class='code'>'cv02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv02" 0;'>ḡ</span> <span style='font-feature-settings: "cv02" 1;'>ḡ</span> <p class='code'>'cv02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv02" 0;'>g̃</span> <span style='font-feature-settings: "cv02" 1;'>g̃</span> <p class='code'>'cv02'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv02" 0;'>gĝğġ</span> <span class='italic' style='font-feature-settings: "cv02" 1;'>gĝğġ</span> <p class='code'>'cv02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv02" 0;'>ģǧǵᵍ</span> <span class='italic' style='font-feature-settings: "cv02" 1;'>ģǧǵᵍ</span> <p class='code'>'cv02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv02" 0;'>ḡ</span> <span class='italic' style='font-feature-settings: "cv02" 1;'>ḡ</span> <p class='code'>'cv02' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv02" 0;'>g̃</span> <span class='italic' style='font-feature-settings: "cv02" 1;'>g̃</span> <p class='code'>'cv02' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>ilìí</span> <span style='font-feature-settings: "cv04" 1;'>ilìí</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>îïĩī</span> <span style='font-feature-settings: "cv04" 1;'>îïĩī</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>ĭįıĺ</span> <span style='font-feature-settings: "cv04" 1;'>ĭįıĺ</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>ļľŀł</span> <span style='font-feature-settings: "cv04" 1;'>ļľŀł</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>ǐɨɫɬ</span> <span style='font-feature-settings: "cv04" 1;'>ǐɨɫɬ</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>іїӏḷ</span> <span style='font-feature-settings: "cv04" 1;'>іїӏḷ</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>ḹḻỉị</span> <span style='font-feature-settings: "cv04" 1;'>ḹḻỉị</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>ⁱ</span> <span style='font-feature-settings: "cv04" 1;'>ⁱ</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv04" 0;'>l·l</span> <span style='font-feature-settings: "cv04" 1;'>l·l</span> <p class='code'>'cv04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv06" 0;'>Ŋ</span> <span style='font-feature-settings: "cv06" 1;'>Ŋ</span> <p class='code'>'cv06'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv06" 0;'>Ŋ</span> <span class='italic' style='font-feature-settings: "cv06" 1;'>Ŋ</span> <p class='code'>'cv06' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv07" 0;'>β</span> <span style='font-feature-settings: "cv07" 1;'>β</span> <p class='code'>'cv07'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv08" 0;'>θ</span> <span style='font-feature-settings: "cv08" 1;'>θ</span> <p class='code'>'cv08'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv09" 0;'>φ</span> <span style='font-feature-settings: "cv09" 1;'>φ</span> <p class='code'>'cv09'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv10" 0;'>б</span> <span style='font-feature-settings: "cv10" 1;'>б</span> <p class='code'>'cv10'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv12" 0;'>0</span> <span style='font-feature-settings: "cv12" 1;'>0</span> <p class='code'>'cv12'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv12" 0;'>0</span> <span class='italic' style='font-feature-settings: "cv12" 1;'>0</span> <p class='code'>'cv12' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv14" 0;'>­‐</span> <span style='font-feature-settings: "cv14" 1;'>­‐</span> <p class='code'>'cv14'</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv14" 0;'>-&gt;</span> <span style='font-feature-settings: "cv14" 1;'>-&gt;</span> <p class='code'>'cv14'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv14" 0;'>­‐</span> <span class='italic' style='font-feature-settings: "cv14" 1;'>­‐</span> <p class='code'>'cv14' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv14" 0;'>-&gt;</span> <span class='italic' style='font-feature-settings: "cv14" 1;'>-&gt;</span> <p class='code'>'cv14' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv15" 0;'>*</span> <span style='font-feature-settings: "cv15" 1;'>*</span> <p class='code'>'cv15'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv15" 0;'>*</span> <span class='italic' style='font-feature-settings: "cv15" 1;'>*</span> <p class='code'>'cv15' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv16" 0;'>$</span> <span style='font-feature-settings: "cv16" 1;'>$</span> <p class='code'>'cv16'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv16" 0;'>$</span> <span class='italic' style='font-feature-settings: "cv16" 1;'>$</span> <p class='code'>'cv16' · Italic</p></div>
+    <div><span class='fade' style='font-feature-settings: "cv17" 0;'>1</span> <span style='font-feature-settings: "cv17" 1;'>1</span> <p class='code'>'cv17'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "cv17" 0;'>1</span> <span class='italic' style='font-feature-settings: "cv17" 1;'>1</span> <p class='code'>'cv17' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr9 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Stylistic Alternates</p>
+    <p class='code'>font-feature-settings: 'salt';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>agil</span> <span style='font-feature-settings: "salt" 1;'>agil</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>01$*</span> <span style='font-feature-settings: "salt" 1;'>01$*</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>-ª­à</span> <span style='font-feature-settings: "salt" 1;'>-ª­à</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>áâãä</span> <span style='font-feature-settings: "salt" 1;'>áâãä</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>åìíî</span> <span style='font-feature-settings: "salt" 1;'>åìíî</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ïāăą</span> <span style='font-feature-settings: "salt" 1;'>ïāăą</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ĝğġģ</span> <span style='font-feature-settings: "salt" 1;'>ĝğġģ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ĩīĭį</span> <span style='font-feature-settings: "salt" 1;'>ĩīĭį</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ıĺļľ</span> <span style='font-feature-settings: "salt" 1;'>ıĺļľ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ŀłŊǎ</span> <span style='font-feature-settings: "salt" 1;'>ŀłŊǎ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ǐǧǵǻ</span> <span style='font-feature-settings: "salt" 1;'>ǐǧǵǻ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ɨɫɬβ</span> <span style='font-feature-settings: "salt" 1;'>ɨɫɬβ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>θφаі</span> <span style='font-feature-settings: "salt" 1;'>θφаі</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>їӏӑᵃ</span> <span style='font-feature-settings: "salt" 1;'>їӏӑᵃ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ᵍḡḷḹ</span> <span style='font-feature-settings: "salt" 1;'>ᵍḡḷḹ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ḻạảấ</span> <span style='font-feature-settings: "salt" 1;'>ḻạảấ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ầẩẫậ</span> <span style='font-feature-settings: "salt" 1;'>ầẩẫậ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ắằẳẵ</span> <span style='font-feature-settings: "salt" 1;'>ắằẳẵ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ặỉị‐</span> <span style='font-feature-settings: "salt" 1;'>ặỉị‐</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ⁱ</span> <span style='font-feature-settings: "salt" 1;'>ⁱ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>g̃</span> <span style='font-feature-settings: "salt" 1;'>g̃</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>l·l</span> <span style='font-feature-settings: "salt" 1;'>l·l</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ag01</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ag01</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>$*-ª</span> <span class='italic' style='font-feature-settings: "salt" 1;'>$*-ª</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>­àáâ</span> <span class='italic' style='font-feature-settings: "salt" 1;'>­àáâ</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ãäåā</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ãäåā</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ăąĝğ</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ăąĝğ</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ġģŊǎ</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ġģŊǎ</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ǧǵǻᵃ</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ǧǵǻᵃ</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ᵍḡạả</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ᵍḡạả</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ấầẩẫ</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ấầẩẫ</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ậắằẳ</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ậắằẳ</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>ẵặ‐</span> <span class='italic' style='font-feature-settings: "salt" 1;'>ẵặ‐</span> <p class='code'>'salt' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "salt" 0;'>g̃</span> <span class='italic' style='font-feature-settings: "salt" 1;'>g̃</span> <p class='code'>'salt' · Italic</p></div>
   </div>
 </div>
 
 <div class='type-detail-table gr2 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Case Sensitive Forms</p>
+    <p class='code'>font-feature-settings: 'case';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>0123</span> <span class='case'>0123</span></div>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>4567</span> <span class='case'>4567</span></div>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>89@·</span> <span class='case'>89@·</span></div>
+    <div><span class='fade' style='font-feature-settings: "case" 0;'>ĳ́</span> <span class='case'>ĳ́</span></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>0123</span> <span class='case italic'>0123</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>4567</span> <span class='case italic'>4567</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>89@</span> <span class='case italic'>89@</span> <p class='code'>'case' · Italic</p></div>
+    <div><span class='fade italic' style='font-feature-settings: "case" 0;'>ĳ́</span> <span class='case italic'>ĳ́</span> <p class='code'>'case' · Italic</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr12 gc6'>
   <div class='meta dark top flex-row'>
     <p class='name'>Special Characters</p> <a href='glyphs/' class='glyph-explorer'>Explore all characters</a>
   </div>
   <div class='examples flow-row'>
-    <div><span>&uarr;</span> <p class='code'>&amp;uarr;</p></div>
-    <div><span>&rarr;</span> <p class='code'>&amp;rarr;</p></div>
-    <div><span>&darr;</span> <p class='code'>&amp;darr;</p></div>
-    <div><span>&larr;</span> <p class='code'>&amp;larr;</p></div>
-    <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
-    <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-    <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
-    <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>↑</span> <p class='code'>&amp;uarr;</p></div>
+    <div><span>→</span> <p class='code'>&amp;rarr;</p></div>
+    <div><span>↓</span> <p class='code'>&amp;darr;</p></div>
+    <div><span>←</span> <p class='code'>&amp;larr;</p></div>
+    <div><span>¶</span> <p class='code'>&amp;para;</p></div>
+    <div><span>§</span> <p class='code'>&amp;sect;</p></div>
+    <div><span>†</span> <p class='code'>&amp;dagger;</p></div>
+    <div><span>‡</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>&#8467;</span> <p class='code'>&amp;#8467;</p></div>
+    <div><span>&#8470;</span> <p class='code'>&amp;#8470;</p></div>
+    <div><span>&#8471;</span> <p class='code'>&amp;#8471;</p></div>
+    <div><span>&#8494;</span> <p class='code'>&amp;#8494;</p></div>
+    <div><span>&#8596;</span> <p class='code'>&amp;#8596;</p></div>
+    <div><span>&#8597;</span> <p class='code'>&amp;#8597;</p></div>
+    <div><span>&#8598;</span> <p class='code'>&amp;#8598;</p></div>
+    <div><span>&#8599;</span> <p class='code'>&amp;#8599;</p></div>
+    <div><span>&#8600;</span> <p class='code'>&amp;#8600;</p></div>
+    <div><span>&#8601;</span> <p class='code'>&amp;#8601;</p></div>
+    <div><span>&#8616;</span> <p class='code'>&amp;#8616;</p></div>
+    <div><span>&#8656;</span> <p class='code'>&amp;#8656;</p></div>
+    <div><span>&#8657;</span> <p class='code'>&amp;#8657;</p></div>
+    <div><span>&#8658;</span> <p class='code'>&amp;#8658;</p></div>
+    <div><span>&#8659;</span> <p class='code'>&amp;#8659;</p></div>
+    <div><span>&#9632;</span> <p class='code'>&amp;#9632;</p></div>
+    <div><span>&#9633;</span> <p class='code'>&amp;#9633;</p></div>
+    <div><span>&#9642;</span> <p class='code'>&amp;#9642;</p></div>
+    <div><span>&#9643;</span> <p class='code'>&amp;#9643;</p></div>
+    <div><span>&#9644;</span> <p class='code'>&amp;#9644;</p></div>
+    <div><span>&#9650;</span> <p class='code'>&amp;#9650;</p></div>
+    <div><span>&#9651;</span> <p class='code'>&amp;#9651;</p></div>
+    <div><span>&#9652;</span> <p class='code'>&amp;#9652;</p></div>
+    <div><span>&#9653;</span> <p class='code'>&amp;#9653;</p></div>
+    <div><span>&#9654;</span> <p class='code'>&amp;#9654;</p></div>
+    <div><span>&#9655;</span> <p class='code'>&amp;#9655;</p></div>
+    <div><span>&#9656;</span> <p class='code'>&amp;#9656;</p></div>
+    <div><span>&#9657;</span> <p class='code'>&amp;#9657;</p></div>
+    <div><span>&#9658;</span> <p class='code'>&amp;#9658;</p></div>
+    <div><span>&#9660;</span> <p class='code'>&amp;#9660;</p></div>
+    <div><span>&#9661;</span> <p class='code'>&amp;#9661;</p></div>
+    <div><span>&#9662;</span> <p class='code'>&amp;#9662;</p></div>
+    <div><span>&#9663;</span> <p class='code'>&amp;#9663;</p></div>
+    <div><span>&#9664;</span> <p class='code'>&amp;#9664;</p></div>
+    <div><span>&#9665;</span> <p class='code'>&amp;#9665;</p></div>
+    <div><span>&#9666;</span> <p class='code'>&amp;#9666;</p></div>
+    <div><span>&#9667;</span> <p class='code'>&amp;#9667;</p></div>
+    <div><span>&#9668;</span> <p class='code'>&amp;#9668;</p></div>
+    <div><span>&#9670;</span> <p class='code'>&amp;#9670;</p></div>
+    <div><span>&#9673;</span> <p class='code'>&amp;#9673;</p></div>
+    <div><span>&#9674;</span> <p class='code'>&amp;#9674;</p></div>
+    <div><span>&#9675;</span> <p class='code'>&amp;#9675;</p></div>
+    <div><span>&#9679;</span> <p class='code'>&amp;#9679;</p></div>
+    <div><span>&#9688;</span> <p class='code'>&amp;#9688;</p></div>
+    <div><span>&#9689;</span> <p class='code'>&amp;#9689;</p></div>
+    <div><span>&#9702;</span> <p class='code'>&amp;#9702;</p></div>
+    <div><span>&#9744;</span> <p class='code'>&amp;#9744;</p></div>
+    <div><span>&#9745;</span> <p class='code'>&amp;#9745;</p></div>
+    <div><span>&#9749;</span> <p class='code'>&amp;#9749;</p></div>
+    <div><span>&#9786;</span> <p class='code'>&amp;#9786;</p></div>
+    <div><span>&#9787;</span> <p class='code'>&amp;#9787;</p></div>
+    <div><span>&#9788;</span> <p class='code'>&amp;#9788;</p></div>
+    <div><span>&#9792;</span> <p class='code'>&amp;#9792;</p></div>
+    <div><span>&#9794;</span> <p class='code'>&amp;#9794;</p></div>
+    <div><span>&#9824;</span> <p class='code'>&amp;#9824;</p></div>
+    <div><span>&#9827;</span> <p class='code'>&amp;#9827;</p></div>
+    <div><span>&#9829;</span> <p class='code'>&amp;#9829;</p></div>
+    <div><span>&#9830;</span> <p class='code'>&amp;#9830;</p></div>
+    <div><span>&#9834;</span> <p class='code'>&amp;#9834;</p></div>
+    <div><span>&#9835;</span> <p class='code'>&amp;#9835;</p></div>
+    <div><span>&#10003;</span> <p class='code'>&amp;#10003;</p></div>
+    <div><span>&#10066;</span> <p class='code'>&amp;#10066;</p></div>
+    <div><span>&#10084;</span> <p class='code'>&amp;#10084;</p></div>
   </div>
 </div>
