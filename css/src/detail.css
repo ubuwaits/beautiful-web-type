@@ -145,31 +145,6 @@
   padding: 1rem;
   overflow-wrap: break-word;
 }
-
-.character-examples > div {
-  padding: 0.5rem 0.25rem;
-}
-
-@media screen and (max-width: 720px) {
-  .character-examples > div {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-  }
-}
-
-.word-examples > div {
-  margin-bottom: 1rem;
-  padding: 0;
-}
-
-@media screen and (max-width: 720px) {
-  .word-examples > div h1 {
-    font-size: var(--ms3) !important;
-  }
-  .word-examples > div:nth-child(6) h1 {
-    font-size: var(--ms2) !important;
-  }
-}
 .examples h1 {
   font-size: var(--ms4);
   line-height: 2.5rem;
@@ -192,33 +167,6 @@
 
 .examples.small-characters span {
   font-size: var(--ms4);
-}
-
-.word-examples h1 {
-  font-size: var(--ms6);
-}
-.word-examples div:nth-child(1) h1 {
-  font-weight: 100;
-}
-.word-examples div:nth-child(2) h1 {
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.word-examples div:nth-child(3) h1 {
-  font-weight: 400;
-}
-.word-examples div:nth-child(4) h1 {
-  font-weight: 500;
-}
-.word-examples div:nth-child(5) h1 {
-  font-weight: 700;
-}
-.word-examples div:nth-child(6) h1 {
-  font-weight: 800;
-  font-size: var(--ms5);
-}
-.word-examples div:nth-child(7) h1 {
-  font-weight: 900;
 }
 
 .paragraph-examples .ms2 {
@@ -282,88 +230,8 @@
   }
 }
 
-.archivo-black .examples-words .word-examples div:nth-child(5) h1 {
-  font-size: var(--ms4);
-}
-
-.biorhyme .examples-headlines .examples h1 {
-  font-size: var(--ms5);
-}
-
-.biorhyme-expanded .examples-characters .examples span {
-  font-size: var(--ms4);
-}
-.biorhyme-expanded .examples-words .word-examples h1 {
-  font-size: var(--ms4);
-}
-.biorhyme-expanded .examples-words .word-examples div:nth-child(5) h1 {
-  font-size: var(--ms2);
-}
-.biorhyme-expanded .examples-headlines-uppercase .examples h1 {
-  font-size: var(--ms3);
-}
-
-.instrument-serif .examples-words .word-examples h1 {
-  font-weight: 400;
-}
-
-.le-murmure .examples-characters .examples span {
-  font-size: var(--ms8);
-}
-.le-murmure .examples-words .word-examples h1 {
-  font-size: var(--ms7);
-}
-.le-murmure .examples-headlines .examples h1,
-.le-murmure .examples-headlines-uppercase .examples h1 {
-  font-size: var(--ms8);
-  line-height: 4.5rem;
-}
-
-.messapia .examples-words .word-examples h1 {
-  font-size: var(--ms6);
-}
-.messapia .examples-words .word-examples div:nth-child(5) h1 {
-  font-size: var(--ms4);
-}
-
-.playfair-display .examples-characters .examples span {
-  font-size: var(--ms7);
-}
-.playfair-display .examples-headlines .examples h1 {
-  font-size: var(--ms7);
-  line-height: 1;
-}
-.playfair-display .examples-headlines-italic .examples h1 {
-  font-size: var(--ms7);
-  line-height: 1;
-}
-.playfair-display .examples-smallcap .examples h1 {
-  font-size: var(--ms7);
-  line-height: 0.9;
-}
-.playfair-display .examples-smallcap-italic .examples h1 {
-  line-height: 0.9;
-}
-
-.rakkas .examples-headlines .examples h1 {
-  font-size: var(--ms8);
-}
-.rakkas .examples-headlines .examples h1 {
-  font-size: var(--ms8);
-  line-height: 4.5rem;
-}
-.rakkas .examples-headlines-uppercase .examples h1 {
-  font-size: var(--ms8);
-  line-height: 4rem;
-}
-
-.space-mono .examples-words .word-examples h1 {
-  font-feature-settings: "liga" off, "clig" off, "dlig" off;
-}
-.space-mono .examples-headlines .examples h1,
-.space-mono .examples-headlines-italic .examples h1 {
-  font-feature-settings: "liga" off, "clig" off, "dlig" off;
-}
+.space-mono .examples-words,
+.space-mono .examples-headlines,
 .space-mono .examples-paragraphs {
   font-feature-settings: "liga" off, "clig" off, "dlig" off;
 }

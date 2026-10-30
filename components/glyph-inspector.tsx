@@ -42,6 +42,7 @@ function initialGlyphIndex(font: Font) {
 
 export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) {
   const sectionRef = useRef<HTMLElement>(null);
+  const initialAnchorRef = useRef(false);
   const detailCanvasRef = useRef<HTMLCanvasElement>(null);
   const glyphGridRef = useRef<HTMLDivElement>(null);
   const [activated, setActivated] = useState(false);
@@ -53,6 +54,8 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
+    initialAnchorRef.current = window.location.hash === "#glyphs";
+    if (initialAnchorRef.current) setActivated(true);
     const observer = new IntersectionObserver((entries) => {
       if (entries.some((entry) => entry.isIntersecting)) {
         setActivated(true);
@@ -61,7 +64,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     }, { rootMargin: "600px" });
     observer.observe(section);
     return () => observer.disconnect();
-  }, []);
+  }, [fontFile]);
 
   useEffect(() => {
     if (!scriptReady) return;
@@ -110,6 +113,12 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       fragment.appendChild(button);
     }
     grid.replaceChildren(fragment);
+    // Specimen fitting can shift a deep link before the grid has loaded. Once its
+    // real height is known, align the requested viewer rather than its placeholder.
+    const anchorFrame = initialAnchorRef.current ? requestAnimationFrame(() => {
+      sectionRef.current?.scrollIntoView({ block: "start" });
+      initialAnchorRef.current = false;
+    }) : 0;
 
     // All cells share a width. Measure once per resize, before any canvas writes;
     // reading clientWidth for each cell forces a layout after every preceding draw.
@@ -164,6 +173,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     grid.addEventListener("focusin", select);
 
     return () => {
+      cancelAnimationFrame(anchorFrame);
       visibilityObserver.disconnect();
       resizeObserver.disconnect();
       grid.removeEventListener("click", select);

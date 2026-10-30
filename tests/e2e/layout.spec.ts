@@ -56,21 +56,29 @@ for (const width of [1440, 900, 390]) {
   });
 }
 
-test("reflows edited specimens and when switching column counts", async ({ page }) => {
+test("fits edited specimens continuously as their container resizes", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/alegreya/");
   await expectPacked(page);
-  const container = page.locator("[data-masonry]").first();
-  const before = (await container.boundingBox())!.height;
-  await page.locator(".examples-words h1").first().evaluate((node) => {
-    node.textContent = "An edited specimen that wraps naturally. ".repeat(30);
+  const line = page.locator(".examples-words h1").first();
+  const before = await line.evaluate((node) => parseFloat(getComputedStyle(node).fontSize));
+  await line.evaluate((node) => {
+    node.textContent = "An edited specimen that fits on one line.";
     node.dispatchEvent(new Event("input", { bubbles: true }));
   });
-  await expect.poll(async () => (await container.boundingBox())!.height).toBeGreaterThan(before);
-  await expectPacked(page);
-  for (const width of [390, 1440]) {
+  await expect.poll(() => line.evaluate((node) => parseFloat(getComputedStyle(node).fontSize))).toBeLessThan(before);
+  for (const width of [390, 900, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     await expectPacked(page);
+    const sizes = await line.evaluate((node) => ({
+      text: node.getBoundingClientRect().width,
+      container: node.parentElement!.clientWidth,
+      height: node.getBoundingClientRect().height,
+      fontSize: parseFloat(getComputedStyle(node).fontSize)
+    }));
+    expect(sizes.text).toBeLessThanOrEqual(sizes.container);
+    expect(sizes.text).toBeGreaterThan(sizes.container * 0.9);
+    expect(sizes.height).toBeLessThan(sizes.fontSize * 1.3);
   }
 });
 
@@ -84,7 +92,7 @@ test("keeps other page layouts within the viewport", async ({ page }) => {
   }
 });
 
-test("provides a readable grid before JavaScript", async ({ browser }) => {
+test("provides readable full-width specimens before JavaScript", async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1440, height: 1000 } });
   const page = await context.newPage();
   await page.goto("/alegreya/");
@@ -95,7 +103,9 @@ test("provides a readable grid before JavaScript", async ({ browser }) => {
   }));
   expect(boxes).toHaveLength(3);
   expect(boxes[0].width).toBeGreaterThan(600);
-  expect(boxes[1].x).toBeGreaterThan(boxes[0].x + boxes[0].width);
+  expect(boxes[1].x).toBe(boxes[0].x);
+  expect(boxes[1].width).toBe(boxes[0].width);
+  expect(boxes[1].y).toBeGreaterThanOrEqual(boxes[0].y + boxes[0].height);
   expect(boxes[2].y).toBeGreaterThanOrEqual(Math.max(boxes[0].y + boxes[0].height, boxes[1].y + boxes[1].height));
   await context.close();
 });

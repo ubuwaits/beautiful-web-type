@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { FittedLine, FittedLines } from "@/components/fitted-lines";
 import { GlyphInspector } from "@/components/glyph-inspector";
 import { ComparisonSync } from "@/components/comparison-sync";
 import { Masonry } from "@/components/masonry";
@@ -66,7 +67,6 @@ type TypefaceDetailProps = {
 };
 
 export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: TypefaceDetailProps) {
-  const secondHeadlineType = typeface.italic ? "italic" : "uppercase";
   const paragraphText = text.paragraphs[typeface.italic ? 0 : 1];
 
   return (
@@ -148,7 +148,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
         </div>
-        <Masonry className="mb-(--gutter)">
+        <FittedLines className="mb-(--gutter) space-y-(--gutter)">
           <div className="type-detail-table examples-characters">
             <div className="meta dark top flex-row">
               <p className="name">Characters</p>
@@ -156,9 +156,9 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
                 Explore all characters
               </Link>
             </div>
-            <div className="examples character-examples flow-row">
+            <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 p-4 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6 min-[721px]:p-8">
               {CHARACTER_EXAMPLES.map((entry) => (
-                <div key={entry}>
+                <div className="min-w-0 max-w-full wrap-anywhere text-[clamp(3rem,7.5vw,8rem)]" key={entry}>
                   <span dangerouslySetInnerHTML={{ __html: entry }} />
                 </div>
               ))}
@@ -170,13 +170,13 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               <p className="name">Words</p>
             </div>
 
-            <div className="examples word-examples flow-column flow-center">
-              {text.words.slice(0, 6).map((word) => (
-                <div key={`${typeface.slug}-${word}`}>
-                  <h1 contentEditable suppressContentEditableWarning>
-                    {word}
-                  </h1>
-                </div>
+            <div className="space-y-6 p-4 min-[721px]:space-y-10 min-[721px]:p-8">
+              {text.words.slice(0, 6).map((word, index) => (
+                <FittedLine
+                  key={`${typeface.slug}-${word}`}
+                  text={word}
+                  className={`w${[100, 300, 400, 500, 700, 800][index]} ${index === 1 ? "uppercase" : ""}`}
+                />
               ))}
             </div>
           </div>
@@ -185,45 +185,27 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             <div className="meta dark top">
               <p className="name">Headlines</p>
             </div>
-
-            <div className="examples flow-column">
+            <div className="space-y-10 p-4 min-[721px]:space-y-16 min-[721px]:p-8">
               {typeface.weights.map((weight, index) => (
-                <div key={`${typeface.slug}-headline-${weight.weight}`}>
-                  <h1
-                    className={`w${weight.weight}`}
-                    contentEditable
-                    suppressContentEditableWarning
-                  >
-                    {text.headlines[index]}
-                  </h1>
-                  <p className="character-label">{weight.weight}</p>
+                <div className="space-y-2" key={`${typeface.slug}-headline-${weight.weight}`}>
+                  <p className="character-label mb-4">{weight.name} · {weight.weight}</p>
+                  <FittedLine text={text.headlines[index]} className={`w${weight.weight}`} />
+                  {typeface.italic ? (
+                    <FittedLine text={text.headlines[index]} className={`w${weight.weight} italic`} />
+                  ) : (
+                    <FittedLine text={text.headlines[index]} className={`w${weight.weight} uppercase`} />
+                  )}
+                  {typeface.smallcap ? (
+                    <FittedLine text={text.headlines[index]} className={`w${weight.weight} small-caps`} />
+                  ) : null}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className={`type-detail-table examples-headlines-${secondHeadlineType}`}>
-            <div className="meta dark top">
-              <p className="name">
-                {secondHeadlineType === "uppercase" ? "Uppercase" : "Italic"} Headlines
-              </p>
-            </div>
-            <div className="examples flow-column">
-              {typeface.weights.map((weight, index) => (
-                <div key={`${typeface.slug}-${secondHeadlineType}-${weight.weight}`}>
-                  <h1
-                    className={`w${weight.weight} ${secondHeadlineType}`}
-                    contentEditable
-                    suppressContentEditableWarning
-                  >
-                    {text.headlines[index]}
-                  </h1>
-                  <p className="character-label">{weight.weight}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        </FittedLines>
 
+        <Masonry className="mb-(--gutter)">
           {typeface.category !== "Display" ? (
             <div className="type-detail-table examples-paragraphs">
               <div className="meta dark top flex-column">
@@ -245,32 +227,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           ) : null}
 
-          {typeface.smallcap ? (
-            <div className="type-detail-table examples-smallcap">
-              <div className="meta dark top flex-column">
-                <p className="name">Smallcap headlines</p>
-                <p className="code">font-feature-settings: 'smcp';</p>
-              </div>
-              <div className="examples flow-column small-caps">
-                {typeface.weights.map((weight, index) => (
-                  <div key={`${typeface.slug}-smallcap-${weight.weight}`}>
-                    <h1
-                      className={`w${weight.weight}`}
-                      contentEditable
-                      suppressContentEditableWarning
-                    >
-                      {text.headlines[index]}
-                    </h1>
-                    <p className="character-label">{weight.weight}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ) : null}
-
-        </Masonry>
-
-        <Masonry className="mb-(--gutter)">
           {typeface.bodyHtml ? (
             <div className="contents" dangerouslySetInnerHTML={{ __html: typeface.bodyHtml }} />
           ) : null}
