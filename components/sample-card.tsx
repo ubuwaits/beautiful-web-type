@@ -16,7 +16,7 @@ export function SampleCard({ specimen, typeface, variant = "grid" }: SampleCardP
 
   return (
     <div
-      className="sample standardized-sample gr6 gc12"
+      className="sample standardized-sample col-span-12"
       data-testid="typeface-card"
       data-variant={variant}
     >

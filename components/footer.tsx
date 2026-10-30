@@ -10,8 +10,8 @@ export function SiteFooter() {
   const monospacedTypefaces = getTypefacesByCategory("monospaced");
 
   return (
-    <footer className="grid">
-      <div className="footer-type-list gr1 gc2">
+    <footer className="layout-grid">
+      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>
           <Link href="/serif/">Serif Typefaces</Link>
         </h3>
@@ -24,7 +24,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list gr1 gc2">
+      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>
           <Link href="/sans-serif/">Sans-Serif Typefaces</Link>
         </h3>
@@ -37,7 +37,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list gr1 gc2">
+      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>
           <Link href="/display/">Display Typefaces</Link>
         </h3>
@@ -50,7 +50,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list gr1 gc2">
+      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>
           <Link href="/monospaced/">Monospaced Typefaces</Link>
         </h3>
@@ -63,7 +63,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list gr1 gc2">
+      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>Additional Info</h3>
         <ol>
           <li>
@@ -89,7 +89,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list gr1 gc2">
+      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>About Me</h3>
         <ol>
           <li>

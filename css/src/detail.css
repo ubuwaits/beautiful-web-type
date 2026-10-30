@@ -119,16 +119,6 @@
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (max-width: 1104px) {
-  .type-detail-table {
-    grid-area: span 1/span 12 !important;
-  }
-}
-@media screen and (max-width: 720px) {
-  .type-detail-table {
-    grid-area: span 1/span 6 !important;
-  }
-}
 
 .examples {
   display: flex;
@@ -288,127 +278,92 @@
   .grid-comparisons h3,
   .grid-pairings h3 {
     font-size: var(--ms3);
-    grid-area: span 1/span 6;
     margin-top: 1rem;
   }
 }
 
-.grid.alegreya .examples-smallcap {
-  grid-area: span 6/span 6;
-}
-
-.grid.alegreya-sans .examples-paragraphs {
-  grid-area: span 5/span 6;
-}
-.grid.alegreya-sans .examples-smallcap {
-  grid-area: span 6/span 6;
-}
-
-.grid.archivo-black .examples-paragraphs {
-  grid-area: span 11/span 6;
-}
-.grid.archivo-black .examples-words .word-examples div:nth-child(5) h1 {
+.archivo-black .examples-words .word-examples div:nth-child(5) h1 {
   font-size: var(--ms4);
 }
 
-.grid.biorhyme .examples-headlines .examples h1 {
+.biorhyme .examples-headlines .examples h1 {
   font-size: var(--ms5);
 }
 
-.grid.biorhyme-expanded .examples-characters .examples span {
+.biorhyme-expanded .examples-characters .examples span {
   font-size: var(--ms4);
 }
-.grid.biorhyme-expanded .examples-words .word-examples h1 {
+.biorhyme-expanded .examples-words .word-examples h1 {
   font-size: var(--ms4);
 }
-.grid.biorhyme-expanded .examples-words .word-examples div:nth-child(5) h1 {
+.biorhyme-expanded .examples-words .word-examples div:nth-child(5) h1 {
   font-size: var(--ms2);
 }
-.grid.biorhyme-expanded .examples-headlines-uppercase .examples h1 {
+.biorhyme-expanded .examples-headlines-uppercase .examples h1 {
   font-size: var(--ms3);
 }
 
-.grid.firago .examples-smallcap {
-  grid-area: span 11/span 6;
-}
-
-.grid.ibm-plex-mono .examples-paragraphs {
-  grid-area: span 9/span 6;
-}
-
-.grid.instrument-serif .examples-words .word-examples h1 {
+.instrument-serif .examples-words .word-examples h1 {
   font-weight: 400;
 }
 
-.grid.le-murmure .examples-characters .examples span {
+.le-murmure .examples-characters .examples span {
   font-size: var(--ms8);
 }
-.grid.le-murmure .examples-words .word-examples h1 {
+.le-murmure .examples-words .word-examples h1 {
   font-size: var(--ms7);
 }
-.grid.le-murmure .examples-headlines .examples h1,
-.grid.le-murmure .examples-headlines-uppercase .examples h1 {
+.le-murmure .examples-headlines .examples h1,
+.le-murmure .examples-headlines-uppercase .examples h1 {
   font-size: var(--ms8);
   line-height: 4.5rem;
 }
 
-.grid.lora .examples-paragraphs {
-  grid-area: span 9/span 6;
-}
-
-.grid.messapia .examples-words .word-examples h1 {
+.messapia .examples-words .word-examples h1 {
   font-size: var(--ms6);
 }
-.grid.messapia .examples-words .word-examples div:nth-child(5) h1 {
+.messapia .examples-words .word-examples div:nth-child(5) h1 {
   font-size: var(--ms4);
 }
 
-.grid.playfair-display .examples-characters .examples span {
+.playfair-display .examples-characters .examples span {
   font-size: var(--ms7);
 }
-.grid.playfair-display .examples-headlines .examples h1 {
-  font-size: var(--ms7);
-  line-height: 1;
-}
-.grid.playfair-display .examples-headlines-italic .examples h1 {
+.playfair-display .examples-headlines .examples h1 {
   font-size: var(--ms7);
   line-height: 1;
 }
-.grid.playfair-display .examples-smallcap .examples h1 {
+.playfair-display .examples-headlines-italic .examples h1 {
+  font-size: var(--ms7);
+  line-height: 1;
+}
+.playfair-display .examples-smallcap .examples h1 {
   font-size: var(--ms7);
   line-height: 0.9;
 }
-.grid.playfair-display .examples-smallcap-italic .examples h1 {
+.playfair-display .examples-smallcap-italic .examples h1 {
   line-height: 0.9;
 }
 
-.grid.rakkas .examples-headlines .examples h1 {
+.rakkas .examples-headlines .examples h1 {
   font-size: var(--ms8);
 }
-.grid.rakkas .examples-headlines .examples h1 {
+.rakkas .examples-headlines .examples h1 {
   font-size: var(--ms8);
   line-height: 4.5rem;
 }
-.grid.rakkas .examples-headlines-uppercase .examples h1 {
+.rakkas .examples-headlines-uppercase .examples h1 {
   font-size: var(--ms8);
   line-height: 4rem;
 }
 
-.grid.space-mono .examples-words .word-examples h1 {
+.space-mono .examples-words .word-examples h1 {
   font-feature-settings: "liga" off, "clig" off, "dlig" off;
 }
-.grid.space-mono .examples-headlines .examples h1,
-.grid.space-mono .examples-headlines-italic .examples h1 {
+.space-mono .examples-headlines .examples h1,
+.space-mono .examples-headlines-italic .examples h1 {
   font-feature-settings: "liga" off, "clig" off, "dlig" off;
 }
-.grid.space-mono .examples-paragraphs {
+.space-mono .examples-paragraphs {
   font-feature-settings: "liga" off, "clig" off, "dlig" off;
-}
-
-.grid.work-sans .examples-smallcap {
-  grid-area: span 10/span 6;
-}
-
-.grid.zilla-slab .examples-smallcap {
-  grid-area: span 6/span 6;
 }

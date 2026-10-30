@@ -241,3 +241,8 @@ body .standardized-sample[data-variant="hero"] .standardized-specimen-fit {
     display: block;
   }
 }
+
+/* Shared page structure: horizontal columns with content-sized rows. */
+@utility layout-grid {
+  @apply grid grid-cols-12 items-start gap-(--gutter) mx-auto mb-(--gutter) max-w-(--wrapper);
+}

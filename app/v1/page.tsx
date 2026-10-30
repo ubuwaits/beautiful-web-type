@@ -67,7 +67,7 @@ export default function LegacyV1Page() {
         header.site-header,
         .mobile-menu,
         .menu-overlay,
-        footer.grid {
+        footer.layout-grid {
           display: none !important;
         }
       `}</style>

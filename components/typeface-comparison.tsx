@@ -16,7 +16,7 @@ export function TypefaceComparison({
   text
 }: TypefaceComparisonProps) {
   return (
-    <div className="type-detail-table gr1 gc12">
+    <div className="type-detail-table col-span-12">
       <div className="examples flow-column typeface-comparison">
         <div>
           <h1 className={typeface.slug} contentEditable suppressContentEditableWarning>

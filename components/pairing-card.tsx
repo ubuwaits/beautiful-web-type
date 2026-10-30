@@ -15,7 +15,7 @@ export function PairingCard({ pairing, currentTypefaceName }: PairingCardProps) 
     : undefined;
 
   return (
-    <div className={`sample pairing ${pairing.slug}-sample gr6 gc6`}>
+    <div className={`sample pairing ${pairing.slug}-sample`}>
       <div className="text" dangerouslySetInnerHTML={{ __html: pairing.bodyHtml }} />
       <div className={`meta ${pairing.sampleShade === "light" ? "dark" : ""}`}>
         {pairedTypefaceName ? (

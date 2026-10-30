@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
+import { Masonry } from "@/components/masonry";
 import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
+import { SampleIndex } from "@/components/sample-index";
 import { getLatestPairings } from "@/lib/content";
 import { createPageMetadata } from "@/lib/metadata";
 
@@ -25,15 +27,17 @@ export default function PairingsPage() {
   return (
     <PageShell bodyClass="pairings">
       <BreadcrumbJsonLd items={[{ name: "Free & Open-Source Fonts", path: "/" }]} />
-      <div className="samples grid">
-        <div className="gr1 gc12 page-header center">
+      <SampleIndex>
+        <div className="col-span-12 page-header center">
           <h1>Recommended Typeface Pairings</h1>
         </div>
 
-        {latestPairings.map((pairing) => (
-          <PairingCard key={pairing.slug} pairing={pairing} />
-        ))}
-      </div>
+        <Masonry className="col-span-12">
+          {latestPairings.map((pairing) => (
+            <PairingCard key={pairing.slug} pairing={pairing} />
+          ))}
+        </Masonry>
+      </SampleIndex>
     </PageShell>
   );
 }

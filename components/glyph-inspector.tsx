@@ -340,8 +340,8 @@ export function GlyphInspector({
         </h2>
       </header>
 
-      <div className="grid">
-        <div className="gr1 gc3" id="glyph-detail">
+      <div className="layout-grid">
+        <div className="col-span-12 min-[721px]:col-span-3" id="glyph-detail">
           <canvas id="glyph-detail-canvas" ref={detailCanvasRef} />
           <div id="glyph-info" ref={glyphInfoRef}>
             <h3>Glyph</h3>
@@ -355,7 +355,7 @@ export function GlyphInspector({
           </div>
         </div>
 
-        <div className="gr1 gc9" id="glyph-grid-container">
+        <div className="col-span-12 min-[721px]:col-span-9" id="glyph-grid-container">
           <div className="pagination-wrapper">
             <div id="glyph-pagination" ref={glyphPaginationRef} />
           </div>

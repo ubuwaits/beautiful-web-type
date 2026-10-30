@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 
 import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
+import { Masonry } from "@/components/masonry";
 import { PairingCard } from "@/components/pairing-card";
 import { PageShell } from "@/components/page-shell";
 import { SampleCard } from "@/components/sample-card";
+import { SampleIndex } from "@/components/sample-index";
 import {
   getTextData,
   getLatestPairings,
@@ -31,8 +33,8 @@ export default function HomePage() {
   return (
     <PageShell>
       <BreadcrumbJsonLd items={[{ name: "Free & Open-Source Fonts", path: "/" }]} />
-      <div className="samples grid">
-        <div className="gr1 gc12 page-header center">
+      <SampleIndex>
+        <div className="col-span-12 page-header center">
           <h1>
             Guide to Only the Best
             <br /> Open-Source Typefaces
@@ -43,11 +45,13 @@ export default function HomePage() {
           return <SampleCard key={typeface.slug} specimen={specimen} typeface={typeface} />;
         })}
 
-        <h2 className="page-subhead gc1 gc12 mt3 ase">Latest pairings</h2>
-        {latestPairings.map((pairing) => (
-          <PairingCard key={pairing.slug} pairing={pairing} />
-        ))}
-      </div>
+        <h2 className="page-subhead col-span-12 mt3 ase">Latest pairings</h2>
+        <Masonry className="col-span-12">
+          {latestPairings.map((pairing) => (
+            <PairingCard key={pairing.slug} pairing={pairing} />
+          ))}
+        </Masonry>
+      </SampleIndex>
     </PageShell>
   );
 }

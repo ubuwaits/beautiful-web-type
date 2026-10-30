@@ -5,11 +5,6 @@
   }
 }
 
-@media screen and (max-width: 1104px) {
-  .pairing {
-    grid-area: span 1/span 12;
-  }
-}
 .archivo-black-and-lora-sample {
   background: #080543;
 }
