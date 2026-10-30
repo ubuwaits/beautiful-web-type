@@ -158,7 +158,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
             <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 p-4 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6 min-[721px]:p-8">
               {CHARACTER_EXAMPLES.map((entry) => (
-                <div className="min-w-0 max-w-full wrap-anywhere text-[clamp(3rem,7.5vw,8rem)]" key={entry}>
+                <div className="min-w-0 max-w-full wrap-anywhere text-[clamp(2.75rem,6.5vw,7rem)]" key={entry}>
                   <span dangerouslySetInnerHTML={{ __html: entry }} />
                 </div>
               ))}
@@ -170,7 +170,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               <p className="name">Words</p>
             </div>
 
-            <div className="space-y-6 p-4 min-[721px]:space-y-10 min-[721px]:p-8">
+            <div className="grid grid-cols-1 gap-x-12 gap-y-6 p-4 min-[721px]:grid-cols-2 min-[721px]:gap-y-10 min-[721px]:p-8">
               {text.words.slice(0, 6).map((word, index) => (
                 <FittedLine
                   key={`${typeface.slug}-${word}`}
