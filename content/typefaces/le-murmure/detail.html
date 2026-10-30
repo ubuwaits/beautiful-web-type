@@ -1,82 +1,165 @@
-<div class='type-detail-table gr3 gc6'>
+<div class='type-detail-table gr2 gc6'>
   <div class='meta dark top'>
     <p class='name'>Standard Ligatures</p>
-    <p class='code'>font-feature-settings: 'liga', 'clig';</p>
+    <p class='code'>font-feature-settings: 'liga';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade ms8'>ff</span> <span class='liga ms8'>ff</span></div>
-    <div><span class='fade ms8'>ffi</span> <span class='liga ms8'>ffi</span></div>
-    <div><span class='fade ms8'>ffl</span> <span class='liga ms8'>ffl</span></div>
-    <div><span class='fade ms8'>fi</span> <span class='liga ms8'>fi</span></div>
-    <div><span class='fade ms8'>fl</span> <span class='liga ms8'>fl</span></div>
-    <div><span class='fade ms8'>VTF</span> <span class='liga ms8'>VTF</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>ff</span> <span class='liga'>ff</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>ffi</span> <span class='liga'>ffi</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>ffl</span> <span class='liga'>ffl</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fi</span> <span class='liga'>fi</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>fl</span> <span class='liga'>fl</span></div>
+    <div><span class='fade' style='font-feature-settings: "liga" 0;'>VTF</span> <span class='liga'>VTF</span></div>
   </div>
 </div>
 
-<div class='type-detail-table examples-figures gr4 gc6'>
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Discretionary Ligatures</p>
+    <p class='code'>font-feature-settings: 'dlig';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "dlig" 0;'>ИЙ</span> <span class='dlig'>ИЙ</span></div>
+    <div><span class='fade' style='font-feature-settings: "dlig" 0;'>ий</span> <span class='dlig'>ий</span></div>
+  </div>
+</div>
+
+<div class='type-detail-table examples-figures gr1 gc6'>
   <div class='meta dark top'>
     <p class='name'>Figures</p>
   </div>
   <div class='examples flow-column flow-center'>
     <div>
-      <h1 class='oldstyle-proportional'>1234567890</h1>
-      <p class='character-label'>Proportional Oldstyle (default): 'pnum', 'onum'</p>
+      <h1 style='font-feature-settings: normal; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1234567890</h1>
+      <p class='character-label'>Proportional Lining (default)</p>
     </div>
     <div>
-      <h1 class='lining-proportional'>1234567890</h1>
-      <p class='character-label'>Proportional Lining: 'pnum', 'lnum'</p>
+      <h1 style='font-feature-settings: "onum" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>1234567890</h1>
+      <p class='character-label'>Proportional Oldstyle: 'onum'</p>
     </div>
     <div>
-      <h1><span class='fade'>0</span> <span class='zero'>0</span></h1>
+      <h1 style='font-feature-settings: "zero" 1; font-size: min(var(--ms6), 7.5vw);' dir='auto'>0</h1>
       <p class='character-label'>Slashed Zero: 'zero'</p>
     </div>
-    <div>
-      <h1 class='fractions'>1/2 3/4 5/6 7/8 90/123</h1>
-      <p class='character-label'>Fractions: 'frac';</p>
-    </div>
+  </div>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Ordinals</p>
+    <p class='code'>font-feature-settings: 'ordn';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3a</span> <span class='ordinals'>3a</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4o</span> <span class='ordinals'>4o</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>3A</span> <span class='ordinals'>3A</span></div>
+    <div><span class='fade' style='font-feature-settings: "ordn" 0;'>4O</span> <span class='ordinals'>4O</span></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr12 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Stylistic Sets</p>
+    <p class='code'>font-feature-settings: 'ss--';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>fjMm</span> <span class='ss01'>fjMm</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>NnSs</span> <span class='ss01'>NnSs</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>ZzŹź</span> <span class='ss01'>ZzŹź</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>ŻżŽž</span> <span class='ss01'>ŻżŽž</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>ΚρφИ</span> <span class='ss01'>ΚρφИ</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>ЙМШЩ</span> <span class='ss01'>ЙМШЩ</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>иймш</span> <span class='ss01'>иймш</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>щ</span> <span class='ss01'>щ</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>ИЙ</span> <span class='ss01'>ИЙ</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss01" 0;'>ий</span> <span class='ss01'>ий</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>MmNn</span> <span class='ss02'>MmNn</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>SZfj</span> <span class='ss02'>SZfj</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>szŹź</span> <span class='ss02'>szŹź</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ŻżŽž</span> <span class='ss02'>ŻżŽž</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>Κέερ</span> <span class='ss02'>Κέερ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>φИЙМ</span> <span class='ss02'>φИЙМ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ШЩий</span> <span class='ss02'>ШЩий</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>мшщ</span> <span class='ss02'>мшщ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ИЙ</span> <span class='ss02'>ИЙ</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss02" 0;'>ий</span> <span class='ss02'>ий</span> <p class='code'>'ss02'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>AÆÀÁ</span> <span class='ss03'>AÆÀÁ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>ÂÃÄÅ</span> <span class='ss03'>ÂÃÄÅ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>ĀĂĄΚ</span> <span class='ss03'>ĀĂĄΚ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss03" 0;'>ΜΝ</span> <span class='ss03'>ΜΝ</span> <p class='code'>'ss03'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss04" 0;'>rŕ</span> <span class='ss04'>rŕ</span> <p class='code'>'ss04'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss05" 0;'>MWЩш</span> <span class='ss05'>MWЩш</span> <p class='code'>'ss05'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss05" 0;'>щ</span> <span class='ss05'>щ</span> <p class='code'>'ss05'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss06" 0;'>CЄСЭ</span> <span class='ss06'>CЄСЭ</span> <p class='code'>'ss06'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss07" 0;'>QRЯ</span> <span class='ss07'>QRЯ</span> <p class='code'>'ss07'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss08" 0;'>KMЖК</span> <span class='ss08'>KMЖК</span> <p class='code'>'ss08'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss08" 0;'>М</span> <span class='ss08'>М</span> <p class='code'>'ss08'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss08" 0;'>ИЙ</span> <span class='ss08'>ИЙ</span> <p class='code'>'ss08'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss08" 0;'>ий</span> <span class='ss08'>ий</span> <p class='code'>'ss08'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss09" 0;'>ф</span> <span class='ss09'>ф</span> <p class='code'>'ss09'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> A</span> <span class="ss10" style=" white-space: pre;"> A</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> C</span> <span class="ss10" style=" white-space: pre;"> C</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> M</span> <span class="ss10" style=" white-space: pre;"> M</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> N</span> <span class="ss10" style=" white-space: pre;"> N</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> S</span> <span class="ss10" style=" white-space: pre;"> S</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> W</span> <span class="ss10" style=" white-space: pre;"> W</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> Z</span> <span class="ss10" style=" white-space: pre;"> Z</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> f</span> <span class="ss10" style=" white-space: pre;"> f</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> j</span> <span class="ss10" style=" white-space: pre;"> j</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> m</span> <span class="ss10" style=" white-space: pre;"> m</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> n</span> <span class="ss10" style=" white-space: pre;"> n</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> s</span> <span class="ss10" style=" white-space: pre;"> s</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> z</span> <span class="ss10" style=" white-space: pre;"> z</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> À</span> <span class="ss10" style=" white-space: pre;"> À</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> Á</span> <span class="ss10" style=" white-space: pre;"> Á</span> <p class="code">'ss10'</p></div>
+    <div><span class="fade" style='font-feature-settings: "ss10" 0; white-space: pre;'> Â</span> <span class="ss10" style=" white-space: pre;"> Â</span> <p class="code">'ss10'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss10" 0;'>ИЙ</span> <span class='ss10'>ИЙ</span> <p class='code'>'ss10'</p></div>
+    <div><span class='fade' style='font-feature-settings: "ss10" 0;'>ий</span> <span class='ss10'>ий</span> <p class='code'>'ss10'</p></div>
   </div>
 </div>
 
 <div class='type-detail-table gr3 gc6'>
   <div class='meta dark top'>
-    <p class='name'>Alternate Glyph Forms</p>
-    <p class='code'>font-feature-settings: 'ss--';</p>
+    <p class='name'>Stylistic Alternates</p>
+    <p class='code'>font-feature-settings: 'salt';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade'>A</span> <span class='ss03'>A</span> <p class='code'>'ss03'</p></div>
-    <div><span class='fade'>Æ</span> <span class='ss03'>Æ</span> <p class='code'>'ss03'</p></div>
-    <div><span class='fade'>C</span> <span class='ss06'>C</span> <p class='code'>'ss06'</p></div>
-    <div><span class='fade'>f</span> <span class='ss01'>f</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>j</span> <span class='ss01'>j</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>M</span> <span class='ss01'>M</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>M</span> <span class='ss02'>M</span> <p class='code'>'ss02'</p></div>
-    <div><span class='fade'>M</span> <span class='ss05'>M</span> <p class='code'>'ss05'</p></div>
-    <div><span class='fade'>m</span> <span class='ss01'>m</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>m</span> <span class='ss02'>m</span> <p class='code'>'ss02'</p></div>
-    <div><span class='fade'>N</span> <span class='ss01'>N</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>N</span> <span class='ss02'>N</span> <p class='code'>'ss02'</p></div>
-    <div><span class='fade'>n</span> <span class='ss01'>n</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>n</span> <span class='ss02'>n</span> <p class='code'>'ss02'</p></div>
-    <div><span class='fade'>Q</span> <span class='ss07'>Q</span> <p class='code'>'ss07'</p></div>
-    <div><span class='fade'>R</span> <span class='ss07'>R</span> <p class='code'>'ss07'</p></div>
-    <div><span class='fade'>r</span> <span class='ss04'>r</span> <p class='code'>'ss04'</p></div>
-    <div><span class='fade'>S</span> <span class='ss01'>S</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>s</span> <span class='ss01'>s</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>W</span> <span class='ss05'>W</span> <p class='code'>'ss05'</p></div>
-    <div><span class='fade'>Z</span> <span class='ss01'>Z</span> <p class='code'>'ss01'</p></div>
-    <div><span class='fade'>z</span> <span class='ss01'>z</span> <p class='code'>'ss01'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>MNSZ</span> <span style='font-feature-settings: "salt" 1;'>MNSZ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>fjmn</span> <span style='font-feature-settings: "salt" 1;'>fjmn</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>szŹź</span> <span style='font-feature-settings: "salt" 1;'>szŹź</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ŻżŽž</span> <span style='font-feature-settings: "salt" 1;'>ŻżŽž</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ИЙМШ</span> <span style='font-feature-settings: "salt" 1;'>ИЙМШ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>Щийм</span> <span style='font-feature-settings: "salt" 1;'>Щийм</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>шщ</span> <span style='font-feature-settings: "salt" 1;'>шщ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ИЙ</span> <span style='font-feature-settings: "salt" 1;'>ИЙ</span> <p class='code'>'salt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "salt" 0;'>ий</span> <span style='font-feature-settings: "salt" 1;'>ий</span> <p class='code'>'salt'</p></div>
+  </div>
+</div>
+
+<div class='type-detail-table gr1 gc6'>
+  <div class='meta dark top'>
+    <p class='name'>Additional Alternate Forms</p>
+    <p class='code'>font-feature-settings: 'aalt';</p>
+  </div>
+  <div class='examples flow-row'>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>KЖК</span> <span class='aalt'>KЖК</span> <p class='code'>'aalt'</p></div>
+    <div><span class='fade' style='font-feature-settings: "aalt" 0;'>mn</span> <span class='aalt' style='font-feature-settings: "aalt" 3;'>mn</span> <p class='code'>'aalt' 3</p></div>
   </div>
 </div>
 
 <div class='type-detail-table gr2 gc6'>
   <div class='meta dark top'>
-    <p class='name'>Case Sensitive Forms</p>
-    <p class='code'>font-feature-settings: 'case';</p>
+    <p class='name'>Titling Alternates</p>
+    <p class='code'>font-feature-settings: 'titl';</p>
   </div>
   <div class='examples flow-row'>
-    <div><span class='fade'>(8)</span> <span class='case'>(8)</span></div>
-    <div><span class='fade'>-</span> <span class='case'>-</span></div>
-    <div><span class='fade'>¿</span> <span class='case'>¿</span></div>
+    <div><span class='fade' style='font-feature-settings: "titl" 0;'>MNSZ</span> <span class='titl'>MNSZ</span></div>
+    <div><span class='fade' style='font-feature-settings: "titl" 0;'>fjmn</span> <span class='titl'>fjmn</span></div>
+    <div><span class='fade' style='font-feature-settings: "titl" 0;'>szŹź</span> <span class='titl'>szŹź</span></div>
+    <div><span class='fade' style='font-feature-settings: "titl" 0;'>ŻżŽž</span> <span class='titl'>ŻżŽž</span></div>
+    <div><span class='fade' style='font-feature-settings: "titl" 0;'>ИЙМШ</span> <span class='titl'>ИЙМШ</span></div>
+    <div><span class='fade' style='font-feature-settings: "titl" 0;'>Щийм</span> <span class='titl'>Щийм</span></div>
+    <div><span class='fade' style='font-feature-settings: "titl" 0;'>шщ</span> <span class='titl'>шщ</span></div>
   </div>
 </div>
 
@@ -85,10 +168,11 @@
     <p class='name'>Special Characters</p> <a href='glyphs/' class='glyph-explorer'>Explore all characters</a>
   </div>
   <div class='examples flow-row'>
-    <div><span>&para;</span> <p class='code'>&amp;para;</p></div>
-    <div><span>&sect;</span> <p class='code'>&amp;sect;</p></div>
-    <div><span>&dagger;</span> <p class='code'>&amp;dagger;</p></div>
-    <div><span>&Dagger;</span> <p class='code'>&amp;Dagger;</p></div>
-    <div><span>&#9889;</span> <p class='code'>&amp;#9889;</p></div>
+    <div><span>¶</span> <p class='code'>&amp;para;</p></div>
+    <div><span>§</span> <p class='code'>&amp;sect;</p></div>
+    <div><span>†</span> <p class='code'>&amp;dagger;</p></div>
+    <div><span>‡</span> <p class='code'>&amp;Dagger;</p></div>
+    <div><span>⚡</span> <p class='code'>&amp;#9889;</p></div>
+    <div><span>&#8470;</span> <p class='code'>&amp;#8470;</p></div>
   </div>
 </div>
