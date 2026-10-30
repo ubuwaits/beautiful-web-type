@@ -175,7 +175,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
                 <FittedLine
                   key={`${typeface.slug}-${word}`}
                   text={word}
-                  className={`w400 ${index === 1 ? "uppercase" : ""}`}
+                  className={`w400 ${index === 3 ? "uppercase" : ""}`}
                 />
               ))}
             </div>
@@ -242,7 +242,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </h3>
           <TypefaceComparison
             comparisonFaces={typeface.comparisonFaces}
-            text={text.words[3]}
+            text={text.words[5]}
             typeface={typeface}
           />
         </div>
