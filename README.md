@@ -133,6 +133,8 @@ sampleClasses: "[font-feature-settings:'smcp']"
 fontFile: /assets/fonts/example/example.woff
 ```
 
+The explorer draws the font's default outlines. When a variable font defaults to a weight other than Regular, run `python3 scripts/prepare-glyph-fonts.py` (requires `fonttools` and `brotli`) to generate a static weight-400 face and update `glyphs.yml`. Keep its variable-source comment so the instance can be regenerated after font updates.
+
 ### Add a pairing
 
 Create `content/pairings/<slug>/` with:
