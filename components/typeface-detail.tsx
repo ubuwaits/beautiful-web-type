@@ -170,7 +170,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               <p className="name">Words</p>
             </div>
 
-            <div className="grid grid-cols-1 gap-x-12 gap-y-6 p-4 min-[721px]:grid-cols-2 min-[721px]:gap-y-10 min-[721px]:p-8">
+            <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 p-4 min-[721px]:grid-cols-2 min-[721px]:gap-y-10 min-[721px]:p-8">
               {text.words.slice(0, 6).map((word, index) => (
                 <FittedLine
                   key={`${typeface.slug}-${word}`}
