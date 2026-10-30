@@ -76,6 +76,10 @@
   margin-right: 0.75rem;
 }
 @media screen and (max-width: 720px) {
+  .type-styles > div {
+    flex-wrap: wrap;
+  }
+
   .type-styles p {
     font-size: var(--ms3);
     line-height: 2.5rem;
@@ -154,6 +158,13 @@
 
 .character-examples > div {
   padding: 0.5rem 0.25rem;
+}
+
+@media screen and (max-width: 720px) {
+  .character-examples > div {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
 }
 
 .word-examples > div {

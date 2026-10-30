@@ -1,3 +1,10 @@
+@media screen and (max-width: 720px) {
+  .pairing .text h1 {
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+  }
+}
+
 @media screen and (max-width: 1104px) {
   .pairing {
     grid-area: span 1/span 12;
