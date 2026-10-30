@@ -209,7 +209,6 @@
   .grid-comparisons h3,
   .grid-pairings h3 {
     font-size: var(--ms3);
-    margin-top: 1rem;
   }
 }
 

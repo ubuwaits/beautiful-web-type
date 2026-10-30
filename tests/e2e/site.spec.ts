@@ -74,7 +74,6 @@ test("places glyphs after OpenType features and before comparisons", async ({ pa
   expect(positions.afterFeatures).toBe(true);
   expect(positions.beforeComparisons).toBe(true);
   expect(positions.glyphTop).toBeGreaterThanOrEqual(positions.featuresBottom);
-  await expect(page.locator("a.glyph-explorer").first()).toHaveAttribute("href", "/alegreya/#glyphs");
 });
 
 for (const width of [1440, 390]) {
@@ -104,7 +103,8 @@ test("initializes the explorer after client navigation with its script already l
   await expect(page.locator("#glyph-grid button").first()).toBeAttached();
   await page.locator('.main-nav a[href="/serif/"]').first().click();
   await page.locator('a[href="/alegreya/"]').first().click();
-  await page.locator("a.glyph-explorer").first().click();
+  await page.evaluate(() => document.fonts.ready);
+  await page.locator("#glyphs").scrollIntoViewIfNeeded();
   await expect(page.locator("#glyph-grid button").first()).toBeAttached();
   await page.locator('#glyph-grid button[data-glyph-index="8"]').focus();
   await expect(page.locator('#glyph-grid button[data-glyph-index="8"]')).toHaveAttribute("aria-pressed", "true");

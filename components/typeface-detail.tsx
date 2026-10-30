@@ -10,7 +10,7 @@ import { TrustedHtml } from "@/components/trusted-html";
 import { TypefaceComparison } from "@/components/typeface-comparison";
 import type { Pairing, TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
-import { getGlyphPath, getTypefacePath } from "@/lib/routes";
+import { getTypefacePath } from "@/lib/routes";
 
 const CHARACTER_EXAMPLES = [
   "Aa",
@@ -72,7 +72,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
   return (
     <>
       <div className={typeface.slug}>
-        <div className="layout-grid">
+        <div className="layout-grid mb-16 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16">
           <header className="type-detail-header col-span-12 min-[721px]:col-span-6">
             <div>
               <h2>{typeface.name}</h2>
@@ -146,14 +146,9 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
         </div>
-        <FittedLines className="mb-(--gutter) space-y-(--gutter)">
+        <FittedLines className="mb-16 space-y-16 min-[721px]:mb-24 min-[721px]:space-y-24">
           <div className="type-detail-table examples-characters">
-            <div className="meta dark top flex-row">
-              <p className="name">Characters</p>
-              <Link className="glyph-explorer" href={getGlyphPath(typeface.slug)}>
-                Explore all characters
-              </Link>
-            </div>
+            <h2 className="sr-only">Characters</h2>
             <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6">
               {CHARACTER_EXAMPLES.map((entry) => (
                 <div className="min-w-0 max-w-full wrap-anywhere text-[clamp(2.25rem,5vw,5.5rem)]" key={entry}>
@@ -164,9 +159,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
           <div className="type-detail-table examples-words">
-            <div className="meta dark top">
-              <p className="name">Words</p>
-            </div>
+            <h2 className="sr-only">Words</h2>
 
             <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 min-[721px]:grid-cols-2 min-[721px]:gap-y-10">
               {text.words.slice(0, 6).map((word, index) => (
@@ -180,9 +173,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
           <div className="type-detail-table examples-headlines">
-            <div className="meta dark top">
-              <p className="name">Headlines</p>
-            </div>
+            <h2 className="sr-only">Headlines</h2>
             <div className="space-y-10 min-[721px]:space-y-16">
               {typeface.weights.map((weight, index) => (
                 <div key={`${typeface.slug}-headline-${weight.weight}`}>
@@ -205,11 +196,8 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         </FittedLines>
 
-        <div className="type-detail-table examples-paragraphs mb-(--gutter)">
-          <div className="meta dark top flex-column">
-            <p className="name">Paragraphs</p>
-            <p className="code">font-weight: 400</p>
-          </div>
+        <div className="type-detail-table examples-paragraphs mb-16 min-[721px]:mb-24">
+          <h2 className="sr-only">Paragraphs</h2>
           <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[minmax(0,3fr)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
             {["text-(length:--ms2)", "text-(length:--ms1)", "text-(length:--ms-1)"].map((size) => (
               <p
@@ -226,7 +214,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         {typeface.bodyHtml ? (
           <TrustedHtml
-            className="feature-list mb-(--gutter) space-y-(--gutter)
+            className="feature-list mb-16 space-y-12 min-[721px]:mb-24 min-[721px]:space-y-16
               [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start
               min-[721px]:[&>.type-detail-table]:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]
               [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col!
@@ -245,9 +233,9 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       </div>
 
       {typeface.comparisonFaces?.length ? (
-        <div className="layout-grid grid-comparisons" id="comparisons">
+        <div className="layout-grid grid-comparisons mb-16 min-[721px]:mb-24" id="comparisons">
           <ComparisonSync />
-          <h3 className="col-span-12 ase mt3">
+          <h3 className="col-span-12">
             {typeface.name} compared with other typefaces
           </h3>
           <TypefaceComparison
@@ -259,8 +247,8 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       ) : null}
 
       {pairings.length ? (
-        <div className="layout-grid grid-pairings" id="pairings">
-          <h3 className="col-span-12 ase mt3">Recommended Pairings for {typeface.name}</h3>
+        <div className="layout-grid grid-pairings mb-16 min-[721px]:mb-24" id="pairings">
+          <h3 className="col-span-12">Recommended Pairings for {typeface.name}</h3>
           <Masonry className="col-span-12">
             {pairings.map((pairing) => (
               <PairingCard currentTypefaceName={typeface.name} key={pairing.slug} pairing={pairing} />
