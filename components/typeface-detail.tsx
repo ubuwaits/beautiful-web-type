@@ -69,10 +69,6 @@ type TypefaceDetailProps = {
 
 export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: TypefaceDetailProps) {
   const paragraphText = text.paragraphs.join("\n\n");
-  const weightColumns = [
-    typeface.weights.slice(0, Math.ceil(typeface.weights.length / 2)),
-    typeface.weights.slice(Math.ceil(typeface.weights.length / 2))
-  ].filter((column) => column.length);
   const metadata = [
     { label: "Designed by", value: <a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
@@ -114,38 +110,32 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <dl className="typeface-metadata col-span-12 m-0 min-w-0 font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3
-            [&>div]:grid [&>div]:grid-cols-2 min-[721px]:[&>div]:grid-cols-4 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:gap-y-3 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
-            [&>div+div]:border-t [&>div+div]:border-t-neutral-200 [&>div+div]:[border-top-style:solid]
-            [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
-            [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
-            [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
-            {Array.from({ length: Math.ceil(metadata.length / 2) }, (_, index) => metadata.slice(index * 2, index * 2 + 2)).map((row, index) => (
-              <div key={index}>
-                {row.flatMap(({ label, value }) => [
-                  <dt key={`${label}-label`}>{label}</dt>,
-                  <dd className={row.length === 1 ? "min-[721px]:col-span-3" : undefined} key={`${label}-value`}>{value}</dd>
-                ])}
-              </div>
-            ))}
-          </dl>
+          <div className="col-span-12 grid min-w-0 items-start gap-12 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:grid-cols-2">
+            <dl className="typeface-metadata m-0 min-w-0 font-(family-name:--ui-face)
+              [&>div]:grid [&>div]:grid-cols-2 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
+              [&>div+div]:border-t [&>div+div]:border-t-neutral-200 [&>div+div]:[border-top-style:solid]
+              [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
+              [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
+              [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
+              {metadata.map(({ label, value }) => (
+                <div key={label}>
+                  <dt>{label}</dt>
+                  <dd>{value}</dd>
+                </div>
+              ))}
+            </dl>
 
-          <div className="type-weight-list col-span-12 grid w-full min-w-0 grid-cols-1 gap-x-6 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:grid-cols-2">
-            {weightColumns.map((weights, index) => (
-              <div className={`type-styles min-w-0 [&>div]:flex-wrap [&>div]:gap-x-3 [&>div>p]:mr-0! ${index === 1 ? "min-[721px]:text-right min-[721px]:[&>div]:justify-end min-[721px]:[&>div>.weight]:order-first" : ""} ${weightColumns.length === 1 ? "col-span-full justify-self-center" : ""}`} key={index}>
-                {weights.map((weight) => (
-                  <div key={`${typeface.slug}-${weight.weight}`}>
-                    <p className={`w${weight.weight}`}>{weight.name}</p>
-                    {typeface.italic ? (
-                      <p className={`w${weight.weight}`}>
-                        <em>Italic</em>
-                      </p>
-                    ) : null}
-                    <p className="weight">{weight.weight}</p>
-                  </div>
-                ))}
-              </div>
-            ))}
+            <div className="type-weight-list type-styles min-w-0 text-left [&>div]:flex-wrap [&>div]:justify-start [&>div]:gap-x-3 [&>div>p]:mr-0!">
+              {typeface.weights.map((weight) => (
+                <div key={`${typeface.slug}-${weight.weight}`}>
+                  <p className={`w${weight.weight}`}>{weight.name}</p>
+                  {typeface.italic ? (
+                    <p className={`w${weight.weight}`}><em>Italic</em></p>
+                  ) : null}
+                  <p className="weight">{weight.weight}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>
