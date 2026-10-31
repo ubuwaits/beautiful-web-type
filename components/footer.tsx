@@ -11,11 +11,11 @@ export function SiteFooter() {
 
   return (
     <footer className="layout-grid">
-      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
+      <div className="footer-type-list col-span-12 min-[721px]:col-span-8 min-[1105px]:col-span-4">
         <h3>
           <Link href="/sans-serif/">Sans-Serif Typefaces</Link>
         </h3>
-        <ol>
+        <ol className="columns-2 gap-x-6 min-[721px]:gap-x-(--gutter) [&>li]:break-inside-avoid">
           {sansSerifTypefaces.map((typeface) => (
             <li key={typeface.slug}>
               <Link href={getTypefacePath(typeface.slug)}>{typeface.name}</Link>
@@ -67,6 +67,11 @@ export function SiteFooter() {
         <h3>Additional Info</h3>
         <ol>
           <li>
+            <a href="https://www.chad.is" rel="noopener" target="_blank">
+              Personal site
+            </a>
+          </li>
+          <li>
             <a href="https://github.com/ubuwaits/beautiful-web-type" rel="noopener" target="_blank">
               Source on GitHub
             </a>
@@ -89,16 +94,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
-        <h3>About Me</h3>
-        <ol>
-          <li>
-            <a href="https://www.chad.is" rel="noopener" target="_blank">
-              Personal site
-            </a>
-          </li>
-        </ol>
-      </div>
+
     </footer>
   );
 }
