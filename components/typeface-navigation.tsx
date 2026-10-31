@@ -61,7 +61,7 @@ export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }:
     }
   }, [active]);
 
-  const actionClass = "shrink-0 rounded-md bg-neutral-100 px-3 py-1.5 text-sm leading-5 font-semibold text-neutral-700 hover:bg-neutral-200 hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black";
+  const actionClass = "shrink-0 rounded-full bg-neutral-900 px-4 py-1.5 text-sm leading-5 font-semibold text-white hover:bg-neutral-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900";
 
   return (
     <nav aria-label="On this page" className="fixed inset-x-0 top-16 z-30 h-12 bg-white/95 font-(family-name:--ui-face) backdrop-blur-[2px]">
