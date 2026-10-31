@@ -268,9 +268,6 @@ function loadTypefaceBundles(contentDir: string): {
       familyFaces: Array.isArray(meta.familyFaces)
         ? assertStringArray(meta.familyFaces, "familyFaces", metaPath)
         : undefined,
-      comparisonFaces: Array.isArray(meta.comparisonFaces)
-        ? assertStringArray(meta.comparisonFaces, "comparisonFaces", metaPath)
-        : undefined,
       bodyHtml: readRequiredTextFile(detailPath),
       bodyClass: `${categoryToSlug(category)} detail`
     });

@@ -35,10 +35,5 @@ description: |-
   Typographically, Alegreya Sans is furnished with the civilizing refinements seldom granted to unserifed designs. In place of mechanically slanted obliques, del Peral provides a true cursive italic—a vibrant, dancing script whose steep incline and calligraphic joins offer genuine emphasis and dialogic texture alongside the roman. Complemented by a dedicated family of small capitals, proportional figures, and broad linguistic coverage, the design approaches the page not as a decorative interloper, but as a fully enfranchised citizen of book typography. It stands as a rare achievement within the open commons: a workhorse that satisfies the practical rigors of the screen while preserving the ancient, quiet dignity of the book.
 familyFaces:
   - Alegreya
-comparisonFaces:
-  - Alegreya
-  - FiraGO
-  - IBM Plex Sans
-  - Inria Sans
 sampleText: "FREE BEER"
 sampleClasses: "font-[900] tracking-tight"

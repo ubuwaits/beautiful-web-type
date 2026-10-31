@@ -32,13 +32,6 @@ function validateContentGraph(graph: ContentGraph): void {
       }
     }
 
-    for (const relatedName of typeface.comparisonFaces ?? []) {
-      if (!graph.typefaceByName.has(relatedName)) {
-        throw new Error(
-          `Missing comparison face "${relatedName}" referenced by "${typeface.name}"`
-        );
-      }
-    }
   }
 
   for (const sample of graph.samples) {

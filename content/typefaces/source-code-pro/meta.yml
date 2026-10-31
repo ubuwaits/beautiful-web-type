@@ -30,9 +30,5 @@ description: Source Code Pro is part of the Source Pro family of typefaces from 
 familyFaces:
   - Source Sans Pro
   - Source Serif Pro
-comparisonFaces:
-  - IBM Plex Mono
-  - Source Sans Pro
-  - Source Serif Pro
 sampleText: 'Inauguración'
 sampleClasses: 'font-[400] tracking-tight'

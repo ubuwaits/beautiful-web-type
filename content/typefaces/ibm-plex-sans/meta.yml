@@ -33,11 +33,6 @@ familyFaces:
   - IBM Plex Mono
   - IBM Plex Sans Condensed
   - IBM Plex Serif
-comparisonFaces:
-  - IBM Plex Serif
-  - Libre Franklin
-  - Source Sans Pro
-  - Work Sans
 sampleText: 'Multi-Vitamin'
 sampleClasses: 'font-[300] italic'
 

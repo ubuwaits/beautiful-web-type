@@ -28,8 +28,3 @@ creator:
 description: Alegreya is a contemporary interpretation of a calligraphic face, designed for long-form literary texts. It offers five weights, a carefully designed italic, small caps, and good OpenType support. This rich typographic palette makes it a versatile and expressive typeface.
 familyFaces:
   - Alegreya Sans
-comparisonFaces:
-  - Alegreya Sans
-  - IBM Plex Serif
-  - Source Serif Pro
-  - Vollkorn

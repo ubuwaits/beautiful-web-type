@@ -23,9 +23,5 @@ creator:
 description: Archivo is a grotesque san-serif inspired by late 19<span class=ordinals>th</span> century American typefaces. Its letterforms are low contrast with a large x-height. It’s part of the Archivo family, which includes Black and Narrow styles.
 familyFaces:
   - Archivo Black
-comparisonFaces:
-  - FiraGO
-  - IBM Plex Sans
-  - Source Sans Pro
 sampleText: 'Bauhaus-Archiv'
 sampleClasses: 'font-[600] tracking-tight'

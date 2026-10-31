@@ -23,9 +23,5 @@ creator:
 description: Instrument Sans is a variable sans-serif which balances an abundance of precision with subtle notes of playfulness.
 familyFaces:
   - Instrument Serif
-comparisonFaces:
-  - Instrument Serif
-  - Inter
-  - IBM Plex Sans
 sampleText: 'Otsuka MV'
 sampleClasses: 'font-[700]'

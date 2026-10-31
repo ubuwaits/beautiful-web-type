@@ -35,10 +35,5 @@ creator:
   name: bBox Type
   url: https://bboxtype.com
 description: FiraGO is the successor to Fira Sans and serves as the corporate typeface for Here. It is a versatile sans-serif and includes eleven weights, a well-designed italic, small caps, and good OpenType support. It works well for both long stretches of body copy and headlines.
-comparisonFaces:
-  - Alegreya Sans
-  - IBM Plex Sans
-  - Inria Sans
-  - Source Sans Pro
 sampleText: 'Minimum'
 sampleClasses: 'font-[800] tracking-tight uppercase'

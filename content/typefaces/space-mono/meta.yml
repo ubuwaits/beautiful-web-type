@@ -19,9 +19,5 @@ creator:
 description: Space Mono is a monospaced typeface built on a geometric foundation with grotesque details. It’s suitable for both general purpose uses and display settings.
 familyFaces:
   - Space Grotesk
-comparisonFaces:
-  - IBM Plex Mono
-  - Source Code Pro
-  - Space Grotesk
 sampleText: '78% ECUADOR'
 sampleClasses: 'font-[400] tracking-tight'

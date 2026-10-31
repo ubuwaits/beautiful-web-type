@@ -33,9 +33,5 @@ familyFaces:
   - IBM Plex Mono
   - IBM Plex Sans
   - IBM Plex Serif
-comparisonFaces:
-  - IBM Plex Serif
-  - FiraGO
-  - Inria Sans
 sampleText: 'Cyanocobalamin'
 sampleClasses: 'font-[400]'

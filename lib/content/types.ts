@@ -34,7 +34,6 @@ export type Typeface = {
   italic?: boolean;
   smallcap?: boolean;
   familyFaces?: string[];
-  comparisonFaces?: string[];
   bodyHtml: string;
   bodyClass: string;
 };

@@ -33,10 +33,5 @@ description: Source Sans Pro is a versatile typeface designed particularly for u
 familyFaces:
   - Source Code Pro
   - Source Serif Pro
-comparisonFaces:
-  - Source Serif Pro
-  - Archivo
-  - FiraGO
-  - Inria Sans
 sampleText: 'Café de la Paix'
 sampleClasses: 'font-[700] tracking-tight'

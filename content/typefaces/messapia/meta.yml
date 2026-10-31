@@ -15,8 +15,5 @@ creator:
   name: Luca Marsano
   url: http://www.shuluq.com
 description: 'From the Colllectttivo site: “Messapia is a type family with two styles: the first is inspired by an old font from the 19th century, the second is a sans serif bold extended.”'
-comparisonFaces:
-  - BioRhyme
-  - Le Murmure
 sampleText: 'Fierce People'
 sampleClasses: 'font-[400] tracking-tight'

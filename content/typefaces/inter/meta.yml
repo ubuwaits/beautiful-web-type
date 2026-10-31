@@ -31,8 +31,5 @@ creator:
   name: Rasmus Andersson
   url: https://rsms.me/
 description: Inter is a versatile typeface designed especially for screens. It’s an excellent choice for general user interface needs, but can also work well for body copy and headlines.
-comparisonFaces:
-  - Cooper Hewitt
-  - Libre Franklin
 sampleText: 'Hahnenkammrennen'
 sampleClasses: 'font-[500]'

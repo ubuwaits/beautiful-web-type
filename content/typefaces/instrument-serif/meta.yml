@@ -19,8 +19,3 @@ creator:
 description: A condensed, display serif designed for the Instrument brand
 familyFaces:
   - Instrument Sans
-comparisonFaces:
-  - Instrument Sans
-  - Inria Serif
-  - IBM Plex Serif
-  - Source Serif Pro

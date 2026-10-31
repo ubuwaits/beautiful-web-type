@@ -28,9 +28,5 @@ creator:
 description: Fivo Sans is a neo-grotesque face inspired by the International Typographic Style.
 familyFaces:
   - Fivo Sans Modern
-comparisonFaces:
-  - Fivo Sans Modern
-  - Archivo
-  - Cooper Hewitt
 sampleText: 'Bluthochzeit'
 sampleClasses: 'font-[700] tracking-tighter'

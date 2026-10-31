@@ -20,8 +20,5 @@ creator:
   name: iA
   url: https://ia.net
 description: iA Writer Quattro is based on the monospaced version of IBM Plex, but gives extra width to some characters (such as m and w), while reducing the width of other characters (such as f, i, l, r and s). This variability in width, while still retaining the overall feel of a monospaced face, provides a unique, hybrid feel. More information is available on the <a href=https://ia.net/writer/blog/a-typographic-christmas>iA site</a>.
-comparisonFaces:
-  - IBM Plex Mono
-  - IBM Plex Sans
 sampleText: 'System/360'
 sampleClasses: 'font-[600]'

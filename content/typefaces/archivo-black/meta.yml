@@ -17,7 +17,5 @@ creator:
 description: Archivo Black is a grotesque san-serif inspired by late 19<span class=ordinals>th</span> century American typefaces. Its letterforms are low contrast with a large x-height. It’s part of the Archivo family, which includes normal and Narrow styles.
 familyFaces:
   - Archivo
-comparisonFaces:
-  - Archivo
 sampleText: "Gesammelte Werke"
 sampleClasses: "font-[400] tracking-tight"

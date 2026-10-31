@@ -20,10 +20,5 @@ creator:
 description: Inria Sans, along with <a href='/inria-serif/'>Inria Serif</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Sans has a contemporary feel, suitable for both body copy and headlines.
 familyFaces:
   - Inria Serif
-comparisonFaces:
-  - Inria Serif
-  - FiraGO
-  - IBM Plex Sans
-  - Source Sans Pro
 sampleText: 'Guggenheim'
 sampleClasses: 'font-[700] tracking-tighter'

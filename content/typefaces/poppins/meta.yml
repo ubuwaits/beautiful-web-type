@@ -31,8 +31,5 @@ creator:
   name: Indian Type Foundry
   url: https://www.indiantypefoundry.com
 description: Poppins is a geometric sans-serif with a fairly high x-height. It supports both Latin and Devanagari chararacter sets.
-comparisonFaces:
-  - Archivo
-  - Cooper Hewitt
 sampleText: 'Objects & Methods'
 sampleClasses: 'font-[400] tracking-tight'

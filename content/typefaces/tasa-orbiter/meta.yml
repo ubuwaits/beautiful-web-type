@@ -21,9 +21,5 @@ creator:
   name: Local Remote
   url: https://localremote.co
 description: Bespoke typeface designed for the rebrand of Taiwan Space Agency. Neo-Grotesques and right-angled strokes designed for versatility across a broad range of applications for everyday use.
-comparisonFaces:
-  - Archivo
-  - Fivo Sans
-  - iA Writer Quattro
 sampleText: 'Artikulation'
 sampleClasses: 'font-[600] tracking-tight'

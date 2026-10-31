@@ -24,7 +24,5 @@ creator:
 description: BioRhyme Expanded takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme Expanded and its sister face BioRhyme take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
 familyFaces:
   - BioRhyme
-comparisonFaces:
-  - BioRhyme
 sampleText: 'fat burger'
 sampleClasses: 'font-[800] uppercase'

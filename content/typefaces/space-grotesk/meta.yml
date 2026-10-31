@@ -23,7 +23,5 @@ creator:
 description: Space Grotesk is a sans-serif variation of the fixed-width Space Mono. It retains some of the angular quirkiness of Space Mono while still offering a functional face suitable for many uses.
 familyFaces:
   - Space Mono
-comparisonFaces:
-  - Space Mono
 sampleText: 'Certificate'
 sampleClasses: 'font-[600] tracking-tight'

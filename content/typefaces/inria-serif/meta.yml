@@ -22,7 +22,3 @@ creator:
 description: Inria Serif, along with <a href='/inria-sans/'>Inria Sans</a>, was specially designed for Inria, a French institute for research in computer science and automation. The Serif has a literary feel, suitable for both body copy and headlines.
 familyFaces:
   - Inria Sans
-comparisonFaces:
-  - Inria Sans
-  - IBM Plex Serif
-  - Source Serif Pro

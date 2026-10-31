@@ -31,10 +31,5 @@ creator:
   name: Kostas Bartsokas
   url: https://kostasbartsokas.com/
 description: Commissioner is a low-contrast humanist sans-serif with almost classical proportions, conceived as a variable family. The family consists of three “voices”. The default style is a grotesque with straight stems. As the flare axis grows the straight grotesque terminals develop a swelling and become almost glyphic serifs while joints become more idiosyncratic. The volume axis transforms the glyphic serifs to wedge-like ones.
-comparisonFaces:
-  - Archivo
-  - Fivo Sans
-  - Libre Franklin
-  - Source Sans Pro
 sampleText: 'Albert Ayler'
 sampleClasses: 'font-[900]'

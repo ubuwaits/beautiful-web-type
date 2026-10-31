@@ -31,10 +31,5 @@ creator:
   name: Impallari Type
   url: https://github.com/impallari
 description: Libre Franklin is an interpretation and expansion of the classic Franklin Gothic typeface. It’s a versatile sans-serif, suitable for both long-form text and headlines. At large sizes, the distinctive rounded corners of the characters become apparent.
-comparisonFaces:
-  - IBM Plex Sans
-  - Inria Sans
-  - Source Sans Pro
-  - Work Sans
 sampleText: 'Public Lecture'
 sampleClasses: 'font-[800]'

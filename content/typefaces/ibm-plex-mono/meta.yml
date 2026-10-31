@@ -33,10 +33,5 @@ familyFaces:
   - IBM Plex Sans
   - IBM Plex Sans Condensed
   - IBM Plex Serif
-comparisonFaces:
-  - Source Code Pro
-  - IBM Plex Sans
-  - IBM Plex Sans Condensed
-  - IBM Plex Serif
 sampleText: 'Mathematical'
 sampleClasses: 'font-[500] italic tracking-tight'

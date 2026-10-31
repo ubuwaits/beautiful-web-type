@@ -32,10 +32,5 @@ creator:
   name: Wei Huang
   url: https://twitter.com/w__h_
 description: Work Sans is a sans-serif inspired by early Grotesque faces. It recently received a major update, adding an italic style and a wide selection of OpenType features. The face has a slightly playful feel, especially at heavier weights.
-comparisonFaces:
-  - Archivo
-  - Cooper Hewitt
-  - Poppins
-  - Source Sans Pro
 sampleText: 'Sam-I-Am!'
 sampleClasses: 'font-[600] tracking-tight'

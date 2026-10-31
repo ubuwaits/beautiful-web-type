@@ -24,7 +24,5 @@ creator:
 description: BioRhyme takes inspiration from older slab serifs, but adds a friendly, playful personality. It works best at large sizes, both for headlines and short bursts of body copy. BioRhyme and its sister face BioRhyme Expanded take advantage of OpenType enhancements including alternative glyph forms, swashes and emoticons.
 familyFaces:
   - BioRhyme Expanded
-comparisonFaces:
-  - BioRhyme Expanded
 sampleText: 'nyfiken?'
 sampleClasses: 'font-[400]'
