@@ -74,7 +74,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   };
 
   return (
-    <section id="tester" aria-label="Font tester" className="mb-(--section-gap) min-w-0 scroll-mt-20 [--ui-face:var(--ui-monospaced)] font-(family-name:--ui-face)">
+    <section id="tester" aria-label="Font tester" className="mb-(--section-gap) min-w-0 scroll-mt-20 py-8 min-[721px]:py-12 [--ui-face:var(--ui-monospaced)] font-(family-name:--ui-face)">
         <div className="relative mb-12 flex min-w-0 items-center gap-6 overflow-x-auto py-3 scrollbar-thin *:first:ml-auto *:last:mr-auto" aria-label="Font tester controls">
             {!hasWeightAxis && weights.length > 1 && (
               <div className="w-36 shrink-0">
