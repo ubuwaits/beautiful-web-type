@@ -6,12 +6,9 @@ import clsx from "clsx";
 type Section = { id: string; label: string };
 type TypefaceNavigationProps = {
   sections: Section[];
-  embedUrl?: string;
-  downloadUrl: string;
-  release: string;
 };
 
-export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }: TypefaceNavigationProps) {
+export function TypefaceNavigation({ sections }: TypefaceNavigationProps) {
   const [active, setActive] = useState(sections[0].id);
   const linksRef = useRef<HTMLDivElement>(null);
 
@@ -61,28 +58,20 @@ export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }:
     }
   }, [active]);
 
-  const actionClass = "shrink-0 rounded-full bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 px-4 py-1.5 text-sm leading-5 font-semibold text-white hover:bg-neutral-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-neutral-100";
-
   return (
     <nav aria-label="On this page" className="fixed inset-x-0 top-16 z-30 h-16 bg-white/95 dark:bg-neutral-950/95 font-(family-name:--ui-face) backdrop-blur-[2px]">
       <div className="relative h-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" ref={linksRef}>
-        <div className="mx-auto flex h-full w-max items-center gap-12 px-4">
-          <div className="flex items-center gap-5">
-            {sections.map(({ id, label }) => (
-              <a
-                key={id}
-                href={`#${id}`}
-                aria-current={active === id ? "location" : undefined}
-                className={clsx("shrink-0 py-3 text-sm leading-5 font-semibold focus-visible:outline-2 focus-visible:outline-offset-[-2px]", active === id ? "text-(--red)" : "text-neutral-500 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white")}
-              >
-                {label}
-              </a>
-            ))}
-          </div>
-          <div className="flex shrink-0 items-center gap-2">
-            {embedUrl ? <a className={actionClass} href={embedUrl} target="_blank" rel="noopener">Get on Google Fonts <span className="relative -top-[3px] ml-1 inline-block" aria-hidden="true">↗</span></a> : null}
-            <a className={actionClass} href={downloadUrl} target="_blank" rel="noopener" title={`Download ${release}`}>Download <span className="relative -top-[3px] ml-1 inline-block" aria-hidden="true">↗</span></a>
-          </div>
+        <div className="mx-auto flex h-full w-max items-center gap-5 px-4">
+          {sections.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              aria-current={active === id ? "location" : undefined}
+              className={clsx("shrink-0 py-3 text-sm leading-5 font-semibold focus-visible:outline-2 focus-visible:outline-offset-[-2px]", active === id ? "text-(--red)" : "text-neutral-500 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white")}
+            >
+              {label}
+            </a>
+          ))}
         </div>
       </div>
     </nav>

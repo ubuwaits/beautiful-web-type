@@ -65,6 +65,11 @@ type TypefaceDetailProps = {
 
 export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetailProps) {
   const paragraphText = text.paragraphs.join("\n\n");
+  const actions = [
+    { label: "Download", href: typeface.projectUrl, title: `Download ${typeface.latestRelease.version} (${typeface.latestRelease.date})` },
+    ...(typeface.gFontsUrl ? [{ label: "Get on Google Fonts", href: typeface.gFontsUrl, title: "Get on Google Fonts" }] : [])
+  ];
+  const actionClass = "flex w-full items-center justify-center gap-2 rounded-full bg-neutral-900 px-4 py-1.5 text-sm leading-5 font-semibold text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
   const metadata = [
     { label: "Designed by", value: <a className="no-underline!" href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
@@ -91,12 +96,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
   return (
     <div className="pt-16 [--section-gap:6rem] min-[721px]:[--section-gap:10rem]">
-      <TypefaceNavigation
-        sections={sections}
-        embedUrl={typeface.gFontsUrl}
-        downloadUrl={typeface.projectUrl}
-        release={`${typeface.latestRelease.version} (${typeface.latestRelease.date})`}
-      />
+      <TypefaceNavigation sections={sections} />
       <div className={typeface.slug}>
         <div className="layout-grid mb-(--section-gap) scroll-mt-32 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
           <section className="standardized-sample col-span-12 flex min-h-[14rem] flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-[28rem] min-[721px]:py-8">
@@ -112,6 +112,16 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
               [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
               [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
               [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
+              {actions.map(({ label, href, title }, index) => (
+                <div className={`grid-cols-1! ${index > 0 ? "border-t-0! pt-0!" : ""}`} key={label}>
+                  <dt className="sr-only">{label}</dt>
+                  <dd>
+                    <a className={actionClass} href={href} title={title} target="_blank" rel="noopener">
+                      {label}<span className="relative -top-[3px]" aria-hidden="true">↗</span>
+                    </a>
+                  </dd>
+                </div>
+              ))}
               {metadata.map(({ label, value }) => (
                 <div key={label}>
                   <dt>{label}</dt>
