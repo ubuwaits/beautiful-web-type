@@ -73,6 +73,17 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
     typeface.weights.slice(0, Math.ceil(typeface.weights.length / 2)),
     typeface.weights.slice(Math.ceil(typeface.weights.length / 2))
   ].filter((column) => column.length);
+  const metadata = [
+    { label: "Designed by", value: <a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
+    { label: "Category", value: typeface.category },
+    { label: "No. of styles", value: typeface.styles },
+    ...(typeface.familyFaces?.length ? [{
+      label: "Other faces in family",
+      value: <span className="flex flex-wrap justify-end gap-x-3">{typeface.familyFaces.map((familyFace) => (
+        <Link href={getTypefacePath(resolveTypefaceSlugByName(familyFace))} key={familyFace}>{familyFace}</Link>
+      ))}</span>
+    }] : [])
+  ];
   const sections = [
     { id: "overview", label: "Overview" },
     { id: "characters", label: "Characters" },
@@ -104,33 +115,19 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </section>
 
           <dl className="typeface-metadata col-span-12 m-0 min-w-0 font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:col-span-6 min-[1105px]:col-start-4
-            [&>div]:grid [&>div]:grid-cols-2 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
+            [&>div]:grid [&>div]:grid-cols-2 min-[721px]:[&>div]:grid-cols-4 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:gap-y-3 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
             [&>div+div]:border-t [&>div+div]:border-t-neutral-200 [&>div+div]:[border-top-style:solid]
             [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
             [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
             [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
-            <div>
-              <dt>Designed by</dt>
-              <dd><a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a></dd>
-            </div>
-            <div>
-              <dt>Category</dt>
-              <dd><Link href={`/${typeface.categorySlug}/`}>{typeface.category}</Link></dd>
-            </div>
-            <div>
-              <dt>No. of styles</dt>
-              <dd>{typeface.styles}</dd>
-            </div>
-            {typeface.familyFaces?.length ? (
-              <div>
-                <dt>Other faces in family</dt>
-                <dd className="flex flex-wrap justify-end gap-x-3">
-                  {typeface.familyFaces.map((familyFace) => (
-                    <Link href={getTypefacePath(resolveTypefaceSlugByName(familyFace))} key={familyFace}>{familyFace}</Link>
-                  ))}
-                </dd>
+            {[metadata.slice(0, 2), metadata.slice(2)].map((row, index) => (
+              <div key={index}>
+                {row.flatMap(({ label, value }) => [
+                  <dt key={`${label}-label`}>{label}</dt>,
+                  <dd key={`${label}-value`}>{value}</dd>
+                ])}
               </div>
-            ) : null}
+            ))}
           </dl>
 
           <div className="type-weight-list col-span-12 grid w-full max-w-3xl min-w-0 grid-cols-1 justify-self-center gap-x-(--gutter) min-[721px]:grid-cols-2 min-[1105px]:col-span-6 min-[1105px]:col-start-4">
