@@ -6500,6 +6500,59 @@
       }
     ]
   },
+  "tiktok-sans": {
+    "family": "TikTok Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 12,
+            "max": 36,
+            "default": 36
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 150,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 900,
+            "default": 300
+          },
+          {
+            "tag": "slnt",
+            "name": "Slant",
+            "min": -6,
+            "max": 0,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Bulgarian Forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "Serbian/Macednian Forms"
+          },
+          {
+            "tag": "ss06",
+            "name": "Disambiguation forms"
+          }
+        ]
+      }
+    ]
+  },
   "vollkorn": {
     "family": "Vollkorn",
     "faces": [

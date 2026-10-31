@@ -1,0 +1,15 @@
+:root {
+  --tiktok-sans: 'TikTok Sans', sans-serif;
+}
+
+.tiktok-sans {
+  font-family: var(--tiktok-sans) !important;
+}
+
+@font-face {
+  font-family: "TikTok Sans";
+  font-style: normal;
+  font-weight: 300 900;
+  font-stretch: 75% 150%;
+  src: url("/assets/fonts/tiktok-sans/TikTokSans.woff2") format("woff2");
+}

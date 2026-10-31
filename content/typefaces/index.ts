@@ -40,6 +40,7 @@ import spaceGrotesk from "./space-grotesk/data";
 import spaceMono from "./space-mono/data";
 import strichpunktSans from "./strichpunkt-sans/data";
 import tasaOrbiter from "./tasa-orbiter/data";
+import tiktokSans from "./tiktok-sans/data";
 import vollkorn from "./vollkorn/data";
 import workSans from "./work-sans/data";
 import zillaSlab from "./zilla-slab/data";
@@ -85,6 +86,7 @@ export const typefaceData: TypefaceData[] = [
   spaceMono,
   strichpunktSans,
   tasaOrbiter,
+  tiktokSans,
   vollkorn,
   workSans,
   zillaSlab,

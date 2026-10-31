@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 31 Oct 2026
 
+* **Added [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)** by Grilli Type, Contrast Foundry, and Type Network.
 * **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
 * **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
 
@@ -85,6 +86,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Space Mono](https://beautifulwebtype.com/space-mono/)
 * [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)
 * [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/)
+* [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/)
 * [Zilla Slab](https://beautifulwebtype.com/zilla-slab/)

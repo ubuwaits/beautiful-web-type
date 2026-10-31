@@ -2,6 +2,7 @@
 
 ## 31 Oct 2026
 
+* **Added [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)** by Grilli Type, Contrast Foundry, and Type Network.
 * **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
 * **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
 
