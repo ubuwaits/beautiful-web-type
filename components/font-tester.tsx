@@ -107,10 +107,10 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
           )}
           <RangeControl label="Size" value={size} min={16} max={160} onChange={setSize} />
           {face.axes.filter((axis) => axis.tag === "wght").map((axis) => <RangeControl key={axis.tag} label={axis.name} value={axisValue(axis)} min={axis.min} max={axis.max} onChange={(value) => setAxisValues((current) => ({ ...current, [axis.tag]: value }))} />)}
-          <RangeControl label="Spacing" value={spacing} min={-10} max={20} unit="%" onChange={setSpacing} />
+          <RangeControl label="Letter spacing" value={spacing} min={-10} max={20} unit="%" onChange={setSpacing} />
           {face.axes.some((axis) => axis.tag !== "wght") && (
             <div className="flex shrink-0 items-center gap-6" role="group" aria-label="Variable font axes">
-              {face.axes.filter((axis) => axis.tag !== "wght").map((axis) => <RangeControl key={axis.tag} label={axis.name} value={axisValue(axis)} min={axis.min} max={axis.max} step={Math.min(1, (axis.max - axis.min) / 100)} unit={axis.tag === "wdth" ? "%" : ""} onChange={(value) => setAxisValues((current) => ({ ...current, [axis.tag]: value }))} />)}
+              {face.axes.filter((axis) => axis.tag !== "wght").map((axis) => <RangeControl key={axis.tag} label={axis.tag === "SPCG" ? "Font spacing" : axis.name} value={axisValue(axis)} min={axis.min} max={axis.max} step={Math.min(1, (axis.max - axis.min) / 100)} unit={axis.tag === "wdth" ? "%" : ""} onChange={(value) => setAxisValues((current) => ({ ...current, [axis.tag]: value }))} />)}
             </div>
           )}
           <Button className="size-10 min-h-0! shrink-0 rounded-md bg-transparent! p-0!" onClick={reset} aria-label="Reset font tester" title="Reset">
