@@ -11,15 +11,7 @@ const latestTypefaces = getLatestTypefaces().slice(0, 10);
 const title = "In-Depth Guide to the Best Free Fonts";
 const description = DEFAULT_SITE_DESCRIPTION;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  ...createPageMetadata({
-    title,
-    description,
-    path: "/"
-  })
-};
+export const metadata: Metadata = createPageMetadata({ title, description, path: "/" });
 
 export default function HomePage() {
   return (

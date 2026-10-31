@@ -10,7 +10,7 @@ import { getTypefacesByCategory, type CategorySlug } from "@/lib/content";
 export function CategoryPage({ categorySlug }: { categorySlug: CategorySlug }) {
   const { name } = categories[categorySlug];
   return (
-    <PageShell bodyClass={categorySlug}>
+    <PageShell>
       <BreadcrumbJsonLd items={[
         { name: "Free & Open-Source Fonts", path: "/" },
         { name, path: `/${categorySlug}/` }
@@ -52,9 +52,5 @@ const categories: Record<CategorySlug, { name: string; title: string; descriptio
 
 export function getCategoryMetadata(categorySlug: CategorySlug): Metadata {
   const { title, description } = categories[categorySlug];
-  return {
-    title,
-    description,
-    ...createPageMetadata({ title, description, path: `/${categorySlug}/` })
-  };
+  return createPageMetadata({ title, description, path: `/${categorySlug}/` });
 }

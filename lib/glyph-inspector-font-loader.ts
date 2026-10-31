@@ -51,9 +51,6 @@ type GlyphInspectorFontLoaderDeps = {
 
 const WAWOFF2_DECOMPRESSOR_SRC = "/js/wawoff2-decompress.js";
 
-const scriptPromises = new Map<string, Promise<void>>();
-let woff2ModulePromise: Promise<ReadyWawoff2Module> | null = null;
-
 declare global {
   interface Window {
     Module?: Wawoff2Module;
@@ -96,104 +93,93 @@ function loadOpentypeFont(opentype: OpentypeRuntime, fontFile: string) {
   });
 }
 
-function loadScriptFromDocument(src: string) {
-  const cachedPromise = scriptPromises.get(src);
-
-  if (cachedPromise) {
-    return cachedPromise;
-  }
-
-  const promise = new Promise<void>((resolve, reject) => {
-    const existingScript = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`);
-
-    const handleLoad = () => resolve();
-    const handleError = () => reject(new Error(`Failed to load script: ${src}`));
-
-    if (existingScript) {
-      if (existingScript.dataset.loaded === "true") {
-        resolve();
-        return;
-      }
-
-      existingScript.addEventListener("load", handleLoad, { once: true });
-      existingScript.addEventListener("error", handleError, { once: true });
+function loadScriptFromDocument(src: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`);
+    if (existing?.dataset.loaded === "true") {
+      resolve();
       return;
     }
-
-    const script = document.createElement("script");
-    script.src = src;
-    script.async = true;
-    script.dataset.loaded = "false";
-    script.addEventListener(
-      "load",
-      () => {
-        script.dataset.loaded = "true";
-        resolve();
-      },
-      { once: true }
-    );
-    script.addEventListener("error", handleError, { once: true });
-    document.head.appendChild(script);
-  }).catch((error) => {
-    scriptPromises.delete(src);
-    throw error;
+    const script = existing ?? document.createElement("script");
+    script.addEventListener("load", () => {
+      script.dataset.loaded = "true";
+      resolve();
+    }, { once: true });
+    script.addEventListener("error", () => {
+      script.remove();
+      reject(new Error(`Failed to load script: ${src}`));
+    }, { once: true });
+    if (!existing) {
+      script.src = src;
+      script.async = true;
+      document.head.appendChild(script);
+    }
   });
-
-  scriptPromises.set(src, promise);
-
-  return promise;
 }
 
-async function ensureWoff2Module(
-  deps: GlyphInspectorFontLoaderDeps
-): Promise<ReadyWawoff2Module> {
-  if (woff2ModulePromise) {
+export function createGlyphInspectorFontLoader(deps: GlyphInspectorFontLoaderDeps) {
+  let woff2ModulePromise: Promise<ReadyWawoff2Module> | null = null;
+
+  async function ensureWoff2Module(): Promise<ReadyWawoff2Module> {
+    if (woff2ModulePromise) {
+      return woff2ModulePromise;
+    }
+
+    const existingModule = deps.getWoff2Module();
+
+    if (existingModule?.decompress) {
+      return existingModule as ReadyWawoff2Module;
+    }
+
+    woff2ModulePromise = new Promise<ReadyWawoff2Module>((resolve, reject) => {
+      const previousModule = deps.getWoff2Module();
+      const previousOnRuntimeInitialized = previousModule?.onRuntimeInitialized;
+
+      const finalizeModule = () => {
+        const readyModule = deps.getWoff2Module();
+
+        if (!readyModule?.decompress) {
+          reject(new Error("WOFF2 decompressor did not initialize."));
+          return;
+        }
+
+        resolve(readyModule as ReadyWawoff2Module);
+      };
+
+      deps.setWoff2Module({
+        ...(previousModule ?? {}),
+        onRuntimeInitialized: () => {
+          previousOnRuntimeInitialized?.();
+          finalizeModule();
+        }
+      });
+
+      deps.loadScript(WAWOFF2_DECOMPRESSOR_SRC)
+        .then(() => {
+          if (deps.getWoff2Module()?.decompress) {
+            finalizeModule();
+          }
+        })
+        .catch((error) => {
+          reject(error instanceof Error ? error : new Error(String(error)));
+        });
+    }).catch((error) => {
+      woff2ModulePromise = null;
+      throw error;
+    });
+
     return woff2ModulePromise;
   }
 
-  const existingModule = deps.getWoff2Module();
+  return async (fontFile: string): Promise<Font> => {
+    const opentype = deps.getOpentype();
+    if (!opentype) throw new Error("opentype.js is not available.");
+    if (!isWoff2FontFile(fontFile)) return loadOpentypeFont(opentype, fontFile);
 
-  if (existingModule?.decompress) {
-    return existingModule as ReadyWawoff2Module;
-  }
-
-  woff2ModulePromise = new Promise<ReadyWawoff2Module>((resolve, reject) => {
-    const previousModule = deps.getWoff2Module();
-    const previousOnRuntimeInitialized = previousModule?.onRuntimeInitialized;
-
-    const finalizeModule = () => {
-      const readyModule = deps.getWoff2Module();
-
-      if (!readyModule?.decompress) {
-        woff2ModulePromise = null;
-        reject(new Error("WOFF2 decompressor did not initialize."));
-        return;
-      }
-
-      resolve(readyModule as ReadyWawoff2Module);
-    };
-
-    deps.setWoff2Module({
-      ...(previousModule ?? {}),
-      onRuntimeInitialized: () => {
-        previousOnRuntimeInitialized?.();
-        finalizeModule();
-      }
-    });
-
-    deps.loadScript(WAWOFF2_DECOMPRESSOR_SRC)
-      .then(() => {
-        if (deps.getWoff2Module()?.decompress) {
-          finalizeModule();
-        }
-      })
-      .catch((error) => {
-        woff2ModulePromise = null;
-        reject(error instanceof Error ? error : new Error(String(error)));
-      });
-  });
-
-  return woff2ModulePromise;
+    const woff2Module = await ensureWoff2Module();
+    const fontData = await deps.fetchArrayBuffer(fontFile);
+    return opentype.parse(normalizeDecompressedFontData(woff2Module.decompress(fontData)));
+  };
 }
 
 const browserGlyphInspectorFontLoaderDeps: GlyphInspectorFontLoaderDeps = {
@@ -214,32 +200,5 @@ const browserGlyphInspectorFontLoaderDeps: GlyphInspectorFontLoaderDeps = {
   }
 };
 
-export async function loadGlyphInspectorFont(
-  fontFile: string,
-  deps: GlyphInspectorFontLoaderDeps = browserGlyphInspectorFontLoaderDeps
-) {
-  const opentype = deps.getOpentype();
-
-  if (!opentype) {
-    throw new Error("opentype.js is not available.");
-  }
-
-  if (!isWoff2FontFile(fontFile)) {
-    return loadOpentypeFont(opentype, fontFile);
-  }
-
-  const woff2Module = await ensureWoff2Module(deps);
-  const fontData = await deps.fetchArrayBuffer(fontFile);
-  const decompressedFontData = normalizeDecompressedFontData(woff2Module.decompress(fontData));
-
-  return opentype.parse(decompressedFontData);
-}
-
-export function createGlyphInspectorFontLoader(deps: GlyphInspectorFontLoaderDeps) {
-  return (fontFile: string) => loadGlyphInspectorFont(fontFile, deps);
-}
-
-export function resetGlyphInspectorFontLoaderForTests() {
-  scriptPromises.clear();
-  woff2ModulePromise = null;
-}
+// Reuse one loader across glyph viewers and client-side navigation.
+export const loadGlyphInspectorFont = createGlyphInspectorFontLoader(browserGlyphInspectorFontLoaderDeps);

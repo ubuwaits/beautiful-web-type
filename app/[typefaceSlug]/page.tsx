@@ -6,7 +6,6 @@ import { PageShell } from "@/components/layout/page-shell";
 import { TypefaceDetail } from "@/components/font-detail/typeface-detail";
 import {
   getAllTypefaceSlugs,
-  getGlyphPageBySlug,
   getTextData,
   getTypefaceBySlug
 } from "@/lib/content";
@@ -36,16 +35,7 @@ export async function generateMetadata({
   const imagePath = `/assets/images/${typeface.slug}.png`;
   const path = getTypefacePath(typeface.slug);
 
-  return {
-    title,
-    description,
-    ...createPageMetadata({
-      title,
-      description,
-      path,
-      imagePath
-    })
-  };
+  return createPageMetadata({ title, description, path, imagePath });
 }
 
 export default async function TypefacePage({
@@ -55,16 +45,15 @@ export default async function TypefacePage({
 }) {
   const { typefaceSlug } = await params;
   const typeface = getTypefaceBySlug(typefaceSlug);
-  const glyphSource = getGlyphPageBySlug(typefaceSlug);
 
-  if (!typeface || !glyphSource) {
+  if (!typeface) {
     notFound();
   }
 
   const text = getTextData();
 
   return (
-    <PageShell bodyClass={typeface.bodyClass}>
+    <PageShell>
       <BreadcrumbJsonLd
         items={[
           { name: "Free & Open-Source Fonts", path: "/" },
@@ -72,7 +61,7 @@ export default async function TypefacePage({
           { name: typeface.name, path: getTypefacePath(typeface.slug) }
         ]}
       />
-      <TypefaceDetail glyphFontFile={glyphSource.fontFile} text={text} typeface={typeface} />
+      <TypefaceDetail glyphFontFile={typeface.fontFile} text={text} typeface={typeface} />
     </PageShell>
   );
 }

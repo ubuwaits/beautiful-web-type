@@ -121,4 +121,4 @@ For OpenType features, use Tailwind arbitrary properties such as `[font-feature-
 
 ### Shared site text
 
-`content/site/text.ts` exports the typed shared specimen copy and reusable words, headlines, and paragraphs.
+`content/site/text.ts` exports the typed reusable words, headlines, and paragraphs.

@@ -1,7 +1,7 @@
 import { getTypefacePath, toAbsoluteUrl } from "./routes";
 import type { Typeface } from "./content/types";
 
-const SITE_NAME = "Beautiful Web Type";
+import { SITE_NAME } from "./metadata";
 
 function xmlEscape(value: string): string {
   return value

@@ -32,38 +32,16 @@ export type Typeface = {
   smallcap?: boolean;
   familyFaces?: string[];
   bodyHtml: string;
-  bodyClass: string;
+  fontFile: string;
 };
 
 /** Authored font data; page markup and derived route fields are added by the loader. */
-export type TypefaceData = Omit<Typeface, "bodyHtml" | "bodyClass" | "categorySlug"> & {
-  fontFile: string;
+export type TypefaceData = Omit<Typeface, "bodyHtml" | "categorySlug"> & {
   glyphSource?: string;
 };
 
-export type GlyphPage = {
-  slug: string;
-  typefaceName: string;
-  fontFile: string;
-  bodyClass: string;
-};
-
 export type TextData = {
-  specimen: {
-    primary: string;
-  };
   words: string[];
   headlines: string[];
   paragraphs: string[];
-};
-
-export type ContentGraph = {
-  typefaces: Typeface[];
-  typefaceBySlug: Map<string, Typeface>;
-  typefaceByName: Map<string, Typeface>;
-  glyphPages: GlyphPage[];
-  glyphPageBySlug: Map<string, GlyphPage>;
-  glyphPageByTypefaceName: Map<string, GlyphPage>;
-  latestTypefaces: Typeface[];
-  text: TextData;
 };

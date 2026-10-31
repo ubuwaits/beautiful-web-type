@@ -1,8 +1,7 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import {
   createGlyphInspectorFontLoader,
-  resetGlyphInspectorFontLoaderForTests,
   type Font,
   type OpentypeRuntime,
   type Wawoff2Module
@@ -27,10 +26,6 @@ function createMockFont(): Font {
 }
 
 describe("glyph inspector font loader", () => {
-  beforeEach(() => {
-    resetGlyphInspectorFontLoaderForTests();
-  });
-
   it("decompresses WOFF2 fonts before parsing them", async () => {
     const font = createMockFont();
     const compressedFontData = new ArrayBuffer(8);
@@ -71,7 +66,7 @@ describe("glyph inspector font loader", () => {
     expect(Array.from(new Uint8Array(parsedFontData))).toEqual(Array.from(decompressedFontData));
   });
 
-  it("initializes the WOFF2 decompressor only once", async () => {
+  it("shares WOFF2 initialization across concurrent loads", async () => {
     const font = createMockFont();
     const parse = vi.fn().mockReturnValue(font);
     const fetchArrayBuffer = vi.fn().mockResolvedValue(new ArrayBuffer(8));
@@ -101,12 +96,36 @@ describe("glyph inspector font loader", () => {
       }
     });
 
-    await loader("/assets/fonts/test-a.woff2");
-    await loader("/assets/fonts/test-b.woff2");
+    await Promise.all([
+      loader("/assets/fonts/test-a.woff2"),
+      loader("/assets/fonts/test-b.woff2")
+    ]);
 
     expect(loadScript).toHaveBeenCalledTimes(1);
     expect(fetchArrayBuffer).toHaveBeenCalledTimes(2);
     expect(parse).toHaveBeenCalledTimes(2);
     expect(decompress).toHaveBeenCalledTimes(2);
+  });
+
+  it("allows retrying initialization after a script load fails", async () => {
+    const font = createMockFont();
+    let module: Wawoff2Module | undefined;
+    const loadScript = vi.fn()
+      .mockRejectedValueOnce(new Error("Script unavailable"))
+      .mockImplementationOnce(async () => {
+        module = { ...module, decompress: () => new ArrayBuffer(8) };
+        module.onRuntimeInitialized?.();
+      });
+    const loader = createGlyphInspectorFontLoader({
+      getOpentype: () => ({ load: vi.fn(), parse: () => font }),
+      fetchArrayBuffer: async () => new ArrayBuffer(8),
+      loadScript,
+      getWoff2Module: () => module,
+      setWoff2Module: (value) => { module = value; }
+    });
+
+    await expect(loader("/assets/fonts/test.woff2")).rejects.toThrow("Script unavailable");
+    await expect(loader("/assets/fonts/test.woff2")).resolves.toBe(font);
+    expect(loadScript).toHaveBeenCalledTimes(2);
   });
 });

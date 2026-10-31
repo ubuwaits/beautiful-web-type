@@ -22,15 +22,8 @@ function extractBodyHtml(html: string): string {
 const legacyBodyHtml = extractBodyHtml(fs.readFileSync(LEGACY_V1_PATH, "utf8"));
 
 export const metadata: Metadata = {
-  title: {
-    absolute: title
-  },
-  description,
-  ...createPageMetadata({
-    title,
-    description,
-    path: "/v1/"
-  })
+  ...createPageMetadata({ title, description, path: "/v1/" }),
+  title: { absolute: title }
 };
 
 export default function LegacyV1Page() {

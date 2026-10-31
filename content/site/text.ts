@@ -1,9 +1,6 @@
 import type { TextData } from "@/lib/content/types";
 
 export const specimenText = {
-  specimen: {
-    primary: "Signal & Shape"
-  },
   words: [
     "Questography",
     "difficult waffles",

@@ -19,8 +19,10 @@ export function createPageMetadata({
   description,
   path,
   imagePath = DEFAULT_SOCIAL_IMAGE_PATH
-}: PageMetadataOptions): Pick<Metadata, "alternates" | "openGraph" | "twitter"> {
+}: PageMetadataOptions): Metadata {
   return {
+    title,
+    description,
     alternates: {
       canonical: path
     },

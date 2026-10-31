@@ -1,4 +1,4 @@
-export const SITE_ORIGIN = "https://www.beautifulwebtype.com";
+import { SITE_ORIGIN } from "./metadata";
 
 export const STATIC_SITEMAP_PATHS = [
   "/",
@@ -33,10 +33,6 @@ export function getReservedTopLevelSlugs(): Set<string> {
 
 export function getTypefacePath(typefaceSlug: string): string {
   return `/${typefaceSlug}/`;
-}
-
-export function getGlyphPath(typefaceSlug: string): string {
-  return `/${typefaceSlug}/#glyphs`;
 }
 
 export function toAbsoluteUrl(routePath: string): string {

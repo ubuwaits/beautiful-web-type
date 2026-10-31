@@ -1,14 +1,8 @@
-import clsx from "clsx";
 import type { ReactNode } from "react";
 
-type PageShellProps = {
-  bodyClass?: string;
-  children: ReactNode;
-};
-
-export function PageShell({ bodyClass, children }: PageShellProps) {
+export function PageShell({ children }: { children: ReactNode }) {
   return (
-    <main className={clsx(bodyClass, "min-h-[calc(100vh-4rem)]")}>
+    <main className="min-h-[calc(100vh-4rem)]">
       <section className="w-full">{children}</section>
     </main>
   );

@@ -4,8 +4,8 @@ import { tmpdir } from "node:os";
 
 import { describe, expect, it } from "vitest";
 
-import { buildContentGraphFromContentDir } from "@/lib/content/graph";
-import type { TypefaceData, TextData } from "@/lib/content/types";
+import { loadTypefaces } from "@/lib/content";
+import type { TypefaceData } from "@/lib/content/types";
 
 const font: TypefaceData = {
   slug: "test-sans",
@@ -20,12 +20,6 @@ const font: TypefaceData = {
   creator: { name: "Example Foundry", url: "https://example.com" },
   description: "Example typeface",
   fontFile: "/assets/fonts/test.woff"
-};
-const text: TextData = {
-  specimen: { primary: "Signal & Shape" },
-  words: ["Questography"],
-  headlines: ["Example headline"],
-  paragraphs: ["Example paragraph"]
 };
 
 function createContentRoot(): string {
@@ -43,11 +37,10 @@ describe("content validation", () => {
   it("loads font metadata and feature markup from typed content", () => {
     const root = createContentRoot();
     try {
-      const graph = buildContentGraphFromContentDir(root, [font], text);
-      const typeface = graph.typefaceBySlug.get(font.slug);
+      const [typeface] = loadTypefaces(root, [font]);
       expect(typeface?.glyphCount).toBe(123);
       expect(typeface?.bodyHtml).toBe("<p>Detail body</p>");
-      expect(graph.glyphPageBySlug.get(font.slug)?.fontFile).toBe(font.fontFile);
+      expect(typeface.fontFile).toBe(font.fontFile);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
@@ -57,7 +50,7 @@ describe("content validation", () => {
     const root = createContentRoot();
     try {
       rmSync(path.join(root, "typefaces", font.slug, "detail.html"));
-      expect(() => buildContentGraphFromContentDir(root, [font], text)).toThrow("Expected file to exist");
+      expect(() => loadTypefaces(root, [font])).toThrow("Expected file to exist");
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
@@ -66,9 +59,21 @@ describe("content validation", () => {
   it("requires glyph font assets referenced by content", () => {
     const root = createContentRoot();
     try {
-      expect(() => buildContentGraphFromContentDir(root, [{ ...font, fontFile: "/assets/fonts/missing.woff" }], text)).toThrow(
+      expect(() => loadTypefaces(root, [{ ...font, fontFile: "/assets/fonts/missing.woff" }])).toThrow(
         'Expected "fontFile" asset to exist'
       );
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
+  it.each([
+    { data: { ...font, slug: "serif" }, error: "collides with a reserved route" },
+    { data: { ...font, familyFaces: ["Missing Font"] }, error: 'Missing family face "Missing Font"' }
+  ])("rejects invalid route or family references: $error", ({ data, error }) => {
+    const root = createContentRoot();
+    try {
+      expect(() => loadTypefaces(root, [data])).toThrow(error);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
