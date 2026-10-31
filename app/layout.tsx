@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import type { ReactNode } from "react";
 
+import { FontPreloads } from "@/components/font-preloads";
 import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/site-header";
 import { getAllTypefaces } from "@/lib/content";
@@ -35,33 +37,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <FontPreloads />
+        <Script id="bwt-theme-init" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <link
           href="/feed.xml"
           rel="alternate"
           title="Typefaces"
           type="application/atom+xml"
-        />
-        <link
-          as="font"
-          crossOrigin="anonymous"
-          href="/assets/fonts/alegreya-sans/AlegreyaSans-BlackItalic.woff2"
-          rel="preload"
-          type="font/woff2"
-        />
-        <link
-          as="font"
-          crossOrigin="anonymous"
-          href="/assets/fonts/alegreya-sans/AlegreyaSans-Italic.woff2"
-          rel="preload"
-          type="font/woff2"
-        />
-        <link
-          as="font"
-          crossOrigin="anonymous"
-          href="/assets/fonts/source-sans-pro/SourceSansVariable-Roman.ttf.woff2"
-          rel="preload"
-          type="font/woff2"
         />
       </head>
       <body className="min-h-screen bg-white text-neutral-950 dark:bg-neutral-950 dark:text-neutral-100" spellCheck={false}>
