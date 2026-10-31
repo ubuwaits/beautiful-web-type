@@ -15,7 +15,7 @@ export function SampleCard({ typeface }: SampleCardProps) {
       data-testid="typeface-card"
       data-variant="grid"
     >
-      <Link className="h-[16rem]! rounded-xl transition-[background-color] hover:bg-neutral-100 focus-visible:bg-neutral-100 dark:hover:bg-neutral-900 dark:focus-visible:bg-neutral-900 max-[1104px]:h-[14rem]! max-[720px]:aspect-[2/1]! max-[720px]:h-auto! max-[720px]:min-h-[11rem]!" href={getTypefacePath(typeface.slug)}>
+      <Link className="h-[16rem]! rounded-xl transition-[background-color] hover:bg-neutral-100 focus-visible:bg-neutral-100 dark:hover:bg-neutral-900 dark:focus-visible:bg-neutral-900 max-[1104px]:h-[14rem]! max-[720px]:aspect-[5/2]! max-[720px]:h-auto! max-[720px]:min-h-[9rem]! max-[720px]:rounded-md" href={getTypefacePath(typeface.slug)}>
         <FittedSpecimenText typeface={typeface} />
       </Link>
     </div>
