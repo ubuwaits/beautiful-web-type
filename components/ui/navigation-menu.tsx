@@ -12,7 +12,7 @@ export function NavigationMenu({ className, children, ...props }: Primitive.Root
         <Primitive.Positioner
           sideOffset={8}
           collisionPadding={16}
-          className="isolate z-[80] h-(--positioner-height) w-(--positioner-width) max-w-(--available-width)"
+          className="isolate z-80 h-(--positioner-height) w-(--positioner-width) max-w-(--available-width)"
         >
           <Primitive.Popup className="relative h-(--popup-height) w-(--popup-width) max-w-(--available-width) origin-(--transform-origin) rounded-lg bg-white text-neutral-950 shadow-xl ring-1 ring-black/10 dark:bg-neutral-900 dark:text-neutral-100 dark:ring-white/10 transition-[opacity,transform] duration-150 outline-none data-starting-style:scale-95 data-starting-style:opacity-0 data-ending-style:scale-95 data-ending-style:opacity-0 motion-reduce:transition-none">
             <Primitive.Viewport className="relative size-full overflow-hidden" />

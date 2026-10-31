@@ -89,8 +89,8 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
     <div className="[--section-gap:4rem] min-[721px]:[--section-gap:8rem]">
       <div className={typeface.slug}>
         <div className="layout-grid mb-(--section-gap) scroll-mt-20 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
-          <section className="standardized-sample col-span-12 flex min-h-[14rem] flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-[28rem] min-[721px]:py-8">
-            <div className="h-[12rem] w-full [--sample-fit-width:0.75] min-[721px]:h-[22rem] max-[720px]:[--sample-fit-height:0.9] max-[1104px]:[--sample-fit-width:0.9]">
+          <section className="standardized-sample col-span-12 flex min-h-56 flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-112 min-[721px]:py-8">
+            <div className="h-48 w-full [--sample-fit-width:0.75] min-[721px]:h-88 max-[720px]:[--sample-fit-height:0.9] max-[1104px]:[--sample-fit-width:0.9]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
             </div>
           </section>
@@ -108,7 +108,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
                   {actions.map(({ label, href, title }) => (
                     <a className={actionClass} href={href} title={title} target="_blank" rel="noopener" key={label}>
                       <span className="relative min-w-0">
-                        {label}<span className="absolute -top-[3px] left-full ml-1 @min-[21rem]:ml-2" aria-hidden="true">↗</span>
+                        {label}<span className="absolute -top-0.75 left-full ml-1 @min-[21rem]:ml-2" aria-hidden="true">↗</span>
                       </span>
                     </a>
                   ))}
