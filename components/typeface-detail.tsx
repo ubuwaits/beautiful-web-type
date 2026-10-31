@@ -106,7 +106,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       <div className={typeface.slug}>
         <div className="layout-grid mb-16 scroll-mt-32 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16" id="overview">
           <section className="standardized-sample col-span-12 flex min-h-[24rem] flex-col items-center justify-center gap-5 py-8 min-[721px]:min-h-[28rem]">
-            <div className="h-[15rem] w-full [--sample-fit-width:0.65] min-[721px]:h-[18rem] max-[1104px]:[--sample-fit-width:0.85]">
+            <div className="h-[18rem] w-full [--sample-fit-width:0.75] min-[721px]:h-[22rem] max-[1104px]:[--sample-fit-width:0.9]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
             </div>
           </section>
