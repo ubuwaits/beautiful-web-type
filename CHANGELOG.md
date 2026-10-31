@@ -2,6 +2,7 @@
 
 ## 31 Oct 2026
 
+* **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
 * **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
 
 Site refresh, 30–31 October:

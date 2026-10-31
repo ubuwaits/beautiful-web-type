@@ -1333,6 +1333,57 @@
       }
     ]
   },
+  "familjen-grotesk": {
+    "family": "Familjen Grotesk",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss02",
+            "name": "Arrow Bullet"
+          },
+          {
+            "tag": "ss05",
+            "name": "Lining Registered"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss02",
+            "name": "Arrow Bullet"
+          },
+          {
+            "tag": "ss05",
+            "name": "Lining Registered"
+          }
+        ]
+      }
+    ]
+  },
   "fira-code": {
     "family": "Fira Code VF",
     "faces": [

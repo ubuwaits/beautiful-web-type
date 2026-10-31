@@ -1,0 +1,21 @@
+:root {
+  --familjen-grotesk: 'Familjen Grotesk', sans-serif;
+}
+
+.familjen-grotesk {
+  font-family: var(--familjen-grotesk) !important;
+}
+
+@font-face {
+  font-family: "Familjen Grotesk";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("/assets/fonts/familjen-grotesk/FamiljenGrotesk.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Familjen Grotesk";
+  font-style: italic;
+  font-weight: 400 700;
+  src: url("/assets/fonts/familjen-grotesk/FamiljenGrotesk-Italic.woff2") format("woff2");
+}

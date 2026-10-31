@@ -9,6 +9,7 @@ import biorhymeExpanded from "./biorhyme-expanded/data";
 import commissioner from "./commissioner/data";
 import cooperHewitt from "./cooper-hewitt/data";
 import crimsonPro from "./crimson-pro/data";
+import familjenGrotesk from "./familjen-grotesk/data";
 import firaCode from "./fira-code/data";
 import firago from "./firago/data";
 import fivoSans from "./fivo-sans/data";
@@ -53,6 +54,7 @@ export const typefaceData: TypefaceData[] = [
   commissioner,
   cooperHewitt,
   crimsonPro,
+  familjenGrotesk,
   firaCode,
   firago,
   fivoSans,

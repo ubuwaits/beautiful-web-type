@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 31 Oct 2026
 
+* **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
 * **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
 
 * **Refreshed the design:** improved font cards, specimen layouts, mobile navigation, and light and dark themes.
@@ -53,6 +54,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Commissioner](https://beautifulwebtype.com/commissioner/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)
+* [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)
 * [Fira Code](https://beautifulwebtype.com/fira-code/)
 * [FiraGo](https://beautifulwebtype.com/firago/)
 * [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)
