@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 
 import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/site-header";
+import { getAllTypefaces } from "@/lib/content";
 import {
   DEFAULT_SITE_DESCRIPTION,
   SITE_NAME,
@@ -62,7 +63,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="min-h-screen bg-white" spellCheck={false}>
-        <SiteHeader />
+        <SiteHeader typefaces={getAllTypefaces().map(({ slug, name, creator, categorySlug }) => ({
+          slug, name, creator: creator.name, categorySlug
+        }))} />
         {children}
         <SiteFooter />
       </body>

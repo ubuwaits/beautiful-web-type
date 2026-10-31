@@ -101,8 +101,8 @@ for (const width of [1440, 390]) {
 test("initializes the explorer after client navigation with its script already loaded", async ({ page }) => {
   await page.goto("/inter/#glyphs");
   await expect(page.locator("#glyph-grid button").first()).toBeAttached();
-  await page.locator('.main-nav a[href="/serif/"]').first().click();
-  await page.locator('a[href="/alegreya/"]').first().click();
+  await page.getByRole("navigation", { name: "Main navigation", exact: true }).getByRole("button", { name: "Serif", exact: true }).click();
+  await page.locator('[data-slot="navigation-menu-content"] a[href="/alegreya/"]').click();
   await page.evaluate(() => document.fonts.ready);
   await page.locator("#glyphs").scrollIntoViewIfNeeded();
   await expect(page.locator("#glyph-grid button").first()).toBeAttached();

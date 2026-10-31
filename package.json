@@ -19,6 +19,7 @@
     "test:e2e": "pnpm build && env -u NO_COLOR playwright test"
   },
   "dependencies": {
+    "@base-ui/react": "^1.9.0",
     "clsx": "^2.1.1",
     "js-yaml": "^4.3.2",
     "next": "~16.4.1",
