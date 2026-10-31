@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "le-murmure",
   name: "Le Murmure",
   dateAdded: "2018-11-25",

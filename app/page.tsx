@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 
 import { BreadcrumbJsonLd } from "@/components/layout/breadcrumb-jsonld";
 import { PageShell } from "@/components/layout/page-shell";
-import { SampleCard } from "@/components/font-listing/sample-card";
-import { SampleIndex } from "@/components/font-listing/sample-index";
+import { FontCard } from "@/components/font-listing/font-card";
+import { FontGrid } from "@/components/font-listing/font-grid";
 import { getLatestTypefaces } from "@/lib/content";
 import { DEFAULT_SITE_DESCRIPTION, createPageMetadata } from "@/lib/metadata";
 
@@ -17,7 +17,7 @@ export default function HomePage() {
   return (
     <PageShell>
       <BreadcrumbJsonLd items={[{ name: "Free & Open-Source Fonts", path: "/" }]} />
-      <SampleIndex>
+      <FontGrid>
         <div className="col-span-12 page-header mt-6 mb-8 text-center max-[1104px]:mt-4 max-[1104px]:mb-6">
           <h1 className="font-(family-name:--alegreya-sans) text-7xl leading-16 font-normal italic max-[1104px]:text-4xl max-[1104px]:leading-8">
             Guide to Only the Best
@@ -26,9 +26,9 @@ export default function HomePage() {
         </div>
 
         {latestTypefaces.map((typeface) => {
-          return <SampleCard key={typeface.slug} typeface={typeface} />;
+          return <FontCard key={typeface.slug} typeface={typeface} />;
         })}
-      </SampleIndex>
+      </FontGrid>
     </PageShell>
   );
 }

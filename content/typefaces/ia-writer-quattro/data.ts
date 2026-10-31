@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "ia-writer-quattro",
   name: "iA Writer Quattro",
   dateAdded: "2019-01-30",

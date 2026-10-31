@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "messapia",
   name: "Messapia",
   dateAdded: "2020-05-23",

@@ -7,3 +7,5 @@ out
 next-env.d.ts
 playwright-report
 test-results
+
+.pnpm-store/

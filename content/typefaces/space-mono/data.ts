@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "space-mono",
   name: "Space Mono",
   dateAdded: "2019-01-08",

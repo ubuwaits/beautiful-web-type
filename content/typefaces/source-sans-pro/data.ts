@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "source-sans-pro",
   name: "Source Sans Pro",
   dateAdded: "2018-11-27",

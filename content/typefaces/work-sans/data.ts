@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "work-sans",
   name: "Work Sans",
   dateAdded: "2018-11-26",

@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "fivo-sans-modern",
   name: "Fivo Sans Modern",
   dateAdded: "2019-01-03",

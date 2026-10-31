@@ -62,7 +62,7 @@ def main():
     for bundle in sorted((ROOT / "content/typefaces").iterdir()):
         if not bundle.is_dir():
             continue
-        css = (ROOT / "css/src/typefaces" / f"{bundle.name}.css").read_text()
+        css = (ROOT / "app/fonts" / f"{bundle.name}.css").read_text()
         family = re.search(r"font-family:\s*[\"']([^\"']+)", css).group(1)
         faces = [face for block in re.findall(r"@font-face\s*\{([^}]+)\}", css)
                  if (face := read_face(block, family))]

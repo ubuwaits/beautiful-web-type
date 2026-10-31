@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "source-code-pro",
   name: "Source Code Pro",
   dateAdded: "2018-12-18",

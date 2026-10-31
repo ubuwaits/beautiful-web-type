@@ -9,7 +9,7 @@ import type { CategoryName, CategorySlug, TextData, Typeface, TypefaceData } fro
 
 export type { CategoryName, CategorySlug, TextData, Typeface, Weight } from "./types";
 
-const CONTENT_DIR = path.join(process.cwd(), "content");
+const PUBLIC_DIR = path.join(process.cwd(), "public");
 const RESERVED_SLUGS = getReservedTopLevelSlugs();
 const CATEGORY_SLUGS: Record<CategoryName, CategorySlug> = {
   Display: "display",
@@ -18,8 +18,8 @@ const CATEGORY_SLUGS: Record<CategoryName, CategorySlug> = {
   Serif: "serif"
 };
 
-/** Load authored data and feature markup, validating their cross-file references. */
-export function loadTypefaces(contentDir = CONTENT_DIR, fonts: TypefaceData[] = typefaceData): Typeface[] {
+/** Validate authored font data and its references before generating pages. */
+export function loadTypefaces(fonts: TypefaceData[] = typefaceData, publicDir = PUBLIC_DIR): Typeface[] {
   const names = new Set(fonts.map((font) => font.name));
   return fonts.map(({ glyphSource: _glyphSource, ...font }) => {
     if (RESERVED_SLUGS.has(font.slug)) {
@@ -30,20 +30,14 @@ export function loadTypefaces(contentDir = CONTENT_DIR, fonts: TypefaceData[] = 
     }
 
     const assetPath = font.fontFile.replace(/^\/+/, "");
-    const candidates = [
-      path.join(contentDir, "public", assetPath),
-      path.join(path.dirname(contentDir), "public", assetPath)
-    ];
-    if (!candidates.some((candidate) => fs.existsSync(candidate))) {
-      throw new Error(`Expected "fontFile" asset to exist: ${candidates[0]}`);
+    const fontPath = path.join(publicDir, assetPath);
+    if (!fs.existsSync(fontPath)) {
+      throw new Error(`Expected "fontFile" asset to exist: ${fontPath}`);
     }
-    const detailPath = path.join(contentDir, "typefaces", font.slug, "detail.html");
-    if (!fs.existsSync(detailPath)) throw new Error(`Expected file to exist: ${detailPath}`);
 
     return {
       ...font,
-      categorySlug: CATEGORY_SLUGS[font.category],
-      bodyHtml: fs.readFileSync(detailPath, "utf8").trim()
+      categorySlug: CATEGORY_SLUGS[font.category]
     };
   });
 }

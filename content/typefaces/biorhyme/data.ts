@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "biorhyme",
   name: "BioRhyme",
   dateAdded: "2018-10-15",

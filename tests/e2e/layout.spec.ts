@@ -90,7 +90,7 @@ test("keeps consistent gutters between index cards", async ({ page }) => {
       await test.step(`${route} at ${width}px`, async () => {
         await page.goto(route);
         await expectWithinViewport(page);
-        const spacing = await page.locator(".samples").evaluate((container) => {
+        const spacing = await page.getByTestId("font-grid").evaluate((container) => {
           const style = getComputedStyle(container);
           const cards = Array.from(container.querySelectorAll<HTMLElement>("[data-testid='typeface-card']"));
           const boxes = cards.map((card) => card.getBoundingClientRect());

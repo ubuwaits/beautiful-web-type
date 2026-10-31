@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "fira-code",
   name: "Fira Code",
   dateAdded: "2019-01-21",

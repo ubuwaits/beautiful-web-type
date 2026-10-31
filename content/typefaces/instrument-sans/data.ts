@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "instrument-sans",
   name: "Instrument Sans",
   dateAdded: "2025-06-05",

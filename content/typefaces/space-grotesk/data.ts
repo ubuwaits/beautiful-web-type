@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "space-grotesk",
   name: "Space Grotesk",
   dateAdded: "2019-02-01",

@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "tasa-orbiter",
   name: "TASA Orbiter",
   dateAdded: "2023-10-22",

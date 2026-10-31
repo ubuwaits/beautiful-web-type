@@ -15,7 +15,7 @@ import {
 } from "@/lib/metadata";
 
 import "./globals.css";
-import "@/css/src/application.css";
+import "./fonts.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),

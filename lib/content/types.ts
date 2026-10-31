@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export type CategoryName = "Display" | "Monospaced" | "Sans-Serif" | "Serif";
 
 export type CategorySlug = "display" | "monospaced" | "sans-serif" | "serif";
@@ -31,12 +33,12 @@ export type Typeface = {
   italic?: boolean;
   smallcap?: boolean;
   familyFaces?: string[];
-  bodyHtml: string;
+  features: ReactNode;
   fontFile: string;
 };
 
 /** Authored font data; page markup and derived route fields are added by the loader. */
-export type TypefaceData = Omit<Typeface, "bodyHtml" | "categorySlug"> & {
+export type TypefaceData = Omit<Typeface, "categorySlug"> & {
   glyphSource?: string;
 };
 

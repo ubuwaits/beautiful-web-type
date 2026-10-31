@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "inter",
   name: "Inter",
   dateAdded: "2020-11-21",

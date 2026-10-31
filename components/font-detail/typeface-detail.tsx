@@ -8,7 +8,6 @@ import { TypefaceWeights } from "@/components/font-detail/typeface-weights";
 import { FittedSpecimenText } from "@/components/typography/fitted-specimen-text";
 import { FontTester } from "@/components/font-detail/font-tester";
 import { getFontTesterData } from "@/lib/font-tester";
-import { TrustedHtml } from "@/components/layout/trusted-html";
 import type { TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
 import { getTypefacePath } from "@/lib/routes";
@@ -93,7 +92,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
         <div className="layout-grid mb-(--section-gap) scroll-mt-20 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
           <section className="col-span-12 flex min-h-56 flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-112 min-[721px]:py-8">
             <div className="h-48 w-full [--sample-fit-width:0.75] min-[721px]:h-88 max-[720px]:[--sample-fit-height:0.9] max-[1104px]:[--sample-fit-width:0.9]">
-              <FittedSpecimenText typeface={typeface} showCreator={false} />
+              <FittedSpecimenText typeface={{ slug: typeface.slug, name: typeface.name, creator: { name: typeface.creator.name } }} showCreator={false} />
             </div>
           </section>
 
@@ -145,7 +144,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
             <div className="typeface-description col-span-12 min-w-0 text-base leading-7 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 min-[721px]:text-xl min-[721px]:leading-8 gap-x-12 [&>p]:mb-7 [&>p]:text-pretty [&>p]:[orphans:2] [&>p]:[widows:2] [&>p:last-child]:mb-0">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
-                <TrustedHtml as="p" html={paragraph} key={`${typeface.slug}-description-${index}`} />
+                <p dangerouslySetInnerHTML={{ __html: paragraph }} key={`${typeface.slug}-description-${index}`} />
               ))}
             </div>
           </section>
@@ -206,7 +205,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         <FontTester key={typeface.slug} data={getFontTesterData(typeface.slug)} name={typeface.name} weights={typeface.weights} />
 
-        {typeface.bodyHtml ? <FontFeatures html={typeface.bodyHtml} /> : null}
+        <FontFeatures>{typeface.features}</FontFeatures>
 
         <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>

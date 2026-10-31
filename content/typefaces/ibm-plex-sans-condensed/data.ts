@@ -1,6 +1,8 @@
 import type { TypefaceData } from "@/lib/content/types";
+import features from "./features";
 
 export default {
+  features,
   slug: "ibm-plex-sans-condensed",
   name: "IBM Plex Sans Condensed",
   dateAdded: "2018-11-01",

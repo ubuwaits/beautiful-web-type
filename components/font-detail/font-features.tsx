@@ -1,11 +1,10 @@
-import { TrustedHtml } from "@/components/layout/trusted-html";
+import type { ReactNode } from "react";
 
 /** Layout and typography for the authored OpenType feature specimens. */
-export function FontFeatures({ html }: { html: string }) {
+export function FontFeatures({ children }: { children: ReactNode }) {
   return (
-    <TrustedHtml
+    <div
       id="features"
-      html={html}
       className="feature-list max-[720px]:text-center scroll-mt-20 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
         [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-200/60 dark:[&>.type-detail-table:first-child]:border-t-neutral-800/80
         [&>.type-detail-table:first-child]:[border-top-style:solid]
@@ -71,6 +70,8 @@ export function FontFeatures({ html }: { html: string }) {
         [&_.ss10]:[font-feature-settings:'ss10']
         [&_.ss11]:[font-feature-settings:'ss11']
         [&_.ss12]:[font-feature-settings:'ss12']"
-    />
+    >
+      {children}
+    </div>
   );
 }

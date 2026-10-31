@@ -8,8 +8,6 @@ const FONT_REFERENCE_ROOTS = [
   "app",
   "components",
   "content",
-  "css/application.css",
-  "css/src",
   "lib",
   "scripts",
   "v1"
@@ -23,8 +21,7 @@ const TEXT_EXTENSIONS = new Set([
   ".md",
   ".ts",
   ".tsx",
-  ".yaml",
-  ".yml"
+  ".py"
 ]);
 
 type FontReference = {
@@ -53,7 +50,7 @@ function listTextFiles(entryPath: string): string[] {
   return readdirSync(absolutePath, { withFileTypes: true }).flatMap((entry) => {
     const childPath = path.join(entryPath, entry.name);
 
-    return entry.isDirectory() ? listTextFiles(childPath) : listTextFiles(childPath);
+    return listTextFiles(childPath);
   });
 }
 
@@ -85,7 +82,7 @@ describe("font asset references", () => {
   });
 
   it("uses matching CSS format hints for font-face URLs", () => {
-    const cssFiles = ["css/application.css", "css/src"].flatMap(listTextFiles);
+    const cssFiles = listTextFiles("app/fonts");
     const invalidFormatHints: string[] = [];
 
     for (const filePath of cssFiles) {

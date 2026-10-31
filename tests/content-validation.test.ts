@@ -19,38 +19,26 @@ const font: TypefaceData = {
   projectUrl: "https://example.com/test-sans",
   creator: { name: "Example Foundry", url: "https://example.com" },
   description: "Example typeface",
+  features: "Example feature specimens",
   fontFile: "/assets/fonts/test.woff"
 };
 
 function createContentRoot(): string {
   const root = mkdtempSync(path.join(tmpdir(), "beautiful-web-type-content-"));
-  const typefaceDir = path.join(root, "typefaces", font.slug);
   const fontsDir = path.join(root, "public", "assets", "fonts");
-  mkdirSync(typefaceDir, { recursive: true });
   mkdirSync(fontsDir, { recursive: true });
-  writeFileSync(path.join(typefaceDir, "detail.html"), "<p>Detail body</p>\n");
   writeFileSync(path.join(fontsDir, "test.woff"), "font-data\n");
   return root;
 }
 
 describe("content validation", () => {
-  it("loads font metadata and feature markup from typed content", () => {
+  it("loads font metadata and feature examples from typed modules", () => {
     const root = createContentRoot();
     try {
-      const [typeface] = loadTypefaces(root, [font]);
+      const [typeface] = loadTypefaces([font], path.join(root, "public"));
       expect(typeface?.glyphCount).toBe(123);
-      expect(typeface?.bodyHtml).toBe("<p>Detail body</p>");
+      expect(typeface?.features).toBe(font.features);
       expect(typeface.fontFile).toBe(font.fontFile);
-    } finally {
-      rmSync(root, { recursive: true, force: true });
-    }
-  });
-
-  it("requires the feature HTML file", () => {
-    const root = createContentRoot();
-    try {
-      rmSync(path.join(root, "typefaces", font.slug, "detail.html"));
-      expect(() => loadTypefaces(root, [font])).toThrow("Expected file to exist");
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
@@ -59,7 +47,7 @@ describe("content validation", () => {
   it("requires glyph font assets referenced by content", () => {
     const root = createContentRoot();
     try {
-      expect(() => loadTypefaces(root, [{ ...font, fontFile: "/assets/fonts/missing.woff" }])).toThrow(
+      expect(() => loadTypefaces([{ ...font, fontFile: "/assets/fonts/missing.woff" }], path.join(root, "public"))).toThrow(
         'Expected "fontFile" asset to exist'
       );
     } finally {
@@ -73,7 +61,7 @@ describe("content validation", () => {
   ])("rejects invalid route or family references: $error", ({ data, error }) => {
     const root = createContentRoot();
     try {
-      expect(() => loadTypefaces(root, [data])).toThrow(error);
+      expect(() => loadTypefaces([data], path.join(root, "public"))).toThrow(error);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

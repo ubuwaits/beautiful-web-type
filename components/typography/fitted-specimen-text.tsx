@@ -6,7 +6,7 @@ import { setFitScale, useTextFit } from "./use-text-fit";
 import type { Typeface } from "@/lib/content";
 
 type FittedSpecimenTextProps = {
-  typeface: Pick<Typeface, "slug" | "name" | "creator">;
+  typeface: Pick<Typeface, "slug" | "name"> & { creator: Pick<Typeface["creator"], "name"> };
   showCreator?: boolean;
 };
 
