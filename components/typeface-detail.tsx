@@ -74,18 +74,18 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       <div className={typeface.slug}>
         <div className="layout-grid mb-16 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16">
           <section className="standardized-sample col-span-12 flex min-h-[24rem] flex-col items-center justify-center gap-5 py-8 min-[721px]:min-h-[28rem]">
-            <div className="h-[12rem] w-full min-[721px]:h-[15rem]">
+            <div className="h-[15rem] w-full [--sample-fit-width:0.65] min-[721px]:h-[18rem] max-[1104px]:[--sample-fit-width:0.85]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3 font-(family-name:--ui-face)">
               {typeface.gFontsUrl ? (
-                <a className="rounded-xl bg-black px-5 py-2.5 text-center text-sm leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.gFontsUrl} rel="noopener" target="_blank">
-                  Embed <span className="block text-xs font-normal normal-case opacity-80">using Google Fonts</span>
+                <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.gFontsUrl} rel="noopener" target="_blank">
+                  Embed <span className="block text-sm font-normal normal-case opacity-80">using Google Fonts</span>
                 </a>
               ) : null}
-              <a className="rounded-xl bg-black px-5 py-2.5 text-center text-sm leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.projectUrl} rel="noopener" target="_blank">
+              <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.projectUrl} rel="noopener" target="_blank">
                 Download
-                <span className="block text-xs font-normal normal-case opacity-80">
+                <span className="block text-sm font-normal normal-case opacity-80">
                   {typeface.latestRelease.version} ({typeface.latestRelease.date})
                 </span>
               </a>
