@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-import { FittedLine, FittedLines } from "@/components/fitted-lines";
-import { GlyphInspector } from "@/components/glyph-inspector";
-import { TypefaceWeights } from "@/components/typeface-weights";
-import { FittedSpecimenText } from "@/components/fitted-specimen-text";
-import { FontTester } from "@/components/font-tester";
+import { FittedLine, FittedLines } from "@/components/typography/fitted-lines";
+import { GlyphInspector } from "@/components/font-detail/glyph-inspector";
+import { TypefaceWeights } from "@/components/font-detail/typeface-weights";
+import { FittedSpecimenText } from "@/components/typography/fitted-specimen-text";
+import { FontTester } from "@/components/font-detail/font-tester";
 import { getFontTesterData } from "@/lib/font-tester";
-import { TrustedHtml } from "@/components/trusted-html";
+import { TrustedHtml } from "@/components/layout/trusted-html";
 import type { TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
 import { getTypefacePath } from "@/lib/routes";

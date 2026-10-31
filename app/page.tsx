@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
-import { PageShell } from "@/components/page-shell";
-import { SampleCard } from "@/components/sample-card";
-import { SampleIndex } from "@/components/sample-index";
+import { BreadcrumbJsonLd } from "@/components/layout/breadcrumb-jsonld";
+import { PageShell } from "@/components/layout/page-shell";
+import { SampleCard } from "@/components/font-listing/sample-card";
+import { SampleIndex } from "@/components/font-listing/sample-index";
 import { getLatestTypefaces } from "@/lib/content";
 import { DEFAULT_SITE_DESCRIPTION, createPageMetadata } from "@/lib/metadata";
 

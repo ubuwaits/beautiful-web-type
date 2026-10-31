@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import type { ReactNode } from "react";
 
-import { FontPreloads } from "@/components/font-preloads";
-import { SiteFooter } from "@/components/footer";
-import { SiteHeader } from "@/components/site-header";
+import { FontPreloads } from "@/components/layout/font-preloads";
+import { SiteFooter } from "@/components/layout/footer";
+import { SiteHeader } from "@/components/layout/site-header";
 import { getAllTypefaces } from "@/lib/content";
 import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import {

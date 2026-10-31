@@ -1,5 +1,5 @@
-import { SampleCard } from "@/components/sample-card";
-import { SampleIndex } from "@/components/sample-index";
+import { SampleCard } from "@/components/font-listing/sample-card";
+import { SampleIndex } from "@/components/font-listing/sample-index";
 import type { Typeface } from "@/lib/content";
 
 type CategoryPageProps = {

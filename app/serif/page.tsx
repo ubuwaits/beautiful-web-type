@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { CategoryRoutePage } from "@/components/category-route-page";
+import { CategoryRoutePage } from "@/components/font-listing/category-route-page";
 import { createPageMetadata } from "@/lib/metadata";
 
 const title = "In-Depth Guide to the Best Free Serif Fonts";

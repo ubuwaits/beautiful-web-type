@@ -1,6 +1,6 @@
-import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
-import { CategoryPage } from "@/components/category-page";
-import { PageShell } from "@/components/page-shell";
+import { BreadcrumbJsonLd } from "@/components/layout/breadcrumb-jsonld";
+import { CategoryPage } from "@/components/font-listing/category-page";
+import { PageShell } from "@/components/layout/page-shell";
 import { getTypefacesByCategory } from "@/lib/content";
 import type { CategorySlug } from "@/lib/content";
 

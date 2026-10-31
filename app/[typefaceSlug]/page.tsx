@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { BreadcrumbJsonLd } from "@/components/breadcrumb-jsonld";
-import { PageShell } from "@/components/page-shell";
-import { TypefaceDetail } from "@/components/typeface-detail";
+import { BreadcrumbJsonLd } from "@/components/layout/breadcrumb-jsonld";
+import { PageShell } from "@/components/layout/page-shell";
+import { TypefaceDetail } from "@/components/font-detail/typeface-detail";
 import {
   getAllTypefaceSlugs,
   getGlyphPageBySlug,
