@@ -11,11 +11,11 @@ type SampleCardProps = {
 export function SampleCard({ typeface }: SampleCardProps) {
   return (
     <div
-      className="sample standardized-sample col-span-12 min-[721px]:col-span-6"
+      className="sample standardized-sample col-span-12 [--sample-fit-width:0.8]! min-[721px]:col-span-6 max-[720px]:[--sample-fit-width:0.85]!"
       data-testid="typeface-card"
       data-variant="grid"
     >
-      <Link href={getTypefacePath(typeface.slug)}>
+      <Link className="h-[20rem]! rounded-xl transition-colors hover:bg-neutral-100 focus-visible:bg-neutral-100 max-[1104px]:h-[18rem]! max-[720px]:h-auto!" href={getTypefacePath(typeface.slug)}>
         <FittedSpecimenText typeface={typeface} />
       </Link>
     </div>
