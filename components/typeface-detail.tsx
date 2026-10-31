@@ -86,7 +86,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
   ];
 
   return (
-    <div className="[--section-gap:6rem] min-[721px]:[--section-gap:10rem]">
+    <div className="[--section-gap:4rem] min-[721px]:[--section-gap:8rem]">
       <div className={typeface.slug}>
         <div className="layout-grid mb-(--section-gap) scroll-mt-20 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
           <section className="standardized-sample col-span-12 flex min-h-[14rem] flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-[28rem] min-[721px]:py-8">
@@ -207,7 +207,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
         {typeface.bodyHtml ? (
           <TrustedHtml
             id="features"
-            className="feature-list scroll-mt-20 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
+            className="feature-list max-[720px]:text-center scroll-mt-20 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
               [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-200/60 dark:[&>.type-detail-table:first-child]:border-t-neutral-800/80
               [&>.type-detail-table:first-child]:[border-top-style:solid]
               [&>.type-detail-table:first-child]:pt-6 min-[721px]:[&>.type-detail-table:first-child]:pt-8
@@ -218,13 +218,16 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
               [&>.type-detail-table+.type-detail-table]:[border-top-style:solid]
               [&>.type-detail-table+.type-detail-table]:pt-6 min-[721px]:[&>.type-detail-table+.type-detail-table]:pt-8
               [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start [&>.type-detail-table]:gap-(--gutter)!
+              max-[720px]:[&>.type-detail-table]:gap-y-8!
               min-[721px]:[&>.type-detail-table]:grid-cols-12
               min-[721px]:[&>.type-detail-table>.meta]:col-span-3 min-[721px]:[&>.type-detail-table>.examples]:col-span-9
               [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col!
               [&>.type-detail-table>.meta]:self-start [&>.type-detail-table>.meta]:justify-start!
+              max-[720px]:[&>.type-detail-table>.meta]:items-center max-[720px]:[&>.type-detail-table>.meta]:text-center
               [&>.type-detail-table>.meta]:gap-1 [&>.type-detail-table>.meta>.code]:mt-0!
               [&>.type-detail-table>.meta]:shadow-none! [&>.type-detail-table>.meta]:wrap-anywhere
               [&>.type-detail-table>.examples]:min-w-0 [&>.type-detail-table>.examples]:justify-start!
+              max-[720px]:[&>.type-detail-table>.examples]:justify-center!
               [&>.type-detail-table>.examples]:flex-row! [&>.type-detail-table>.examples]:flex-wrap!
               [&>.type-detail-table>.examples]:items-start! [&>.type-detail-table>.examples]:content-start!
               [&>.type-detail-table>.examples>div]:max-w-full
