@@ -193,7 +193,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             {["text-(length:--ms2)", "text-(length:--ms1)", "text-(length:--ms-1)"].map((size) => (
               <p
                 key={size}
-                className={`min-w-0 ${size} leading-[1.4] whitespace-pre-line`}
+                className={`min-w-0 ${size} leading-[1.4] whitespace-pre-line text-pretty [orphans:3] [widows:3]`}
                 contentEditable
                 suppressContentEditableWarning
               >
