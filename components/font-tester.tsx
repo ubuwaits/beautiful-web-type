@@ -23,7 +23,7 @@ function RangeControl({ label, value, min, max, step = 1, unit = "", onChange }:
   label: string; value: number; min: number; max: number; step?: number; unit?: string; onChange: (value: number) => void;
 }) {
   return (
-    <div className="w-28 shrink-0">
+    <div className="w-32 shrink-0">
       <div className="mb-2 flex h-4 items-baseline justify-between gap-2 font-(family-name:--ui-face) text-xs whitespace-nowrap">
         <span>{label}</span>
         <span className="text-neutral-500 tabular-nums dark:text-neutral-400">{Number(value.toFixed(2))}{unit}</span>
@@ -77,7 +77,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   };
 
   return (
-    <section id="tester" aria-label="Font tester" className="mb-(--section-gap) min-w-0 scroll-mt-20 font-(family-name:--ui-face)">
+    <section id="tester" aria-label="Font tester" className="mb-(--section-gap) min-w-0 scroll-mt-20 [--ui-face:var(--ui-monospaced)] font-(family-name:--ui-face)">
         <div className="relative mb-12 flex min-w-0 items-center gap-6 overflow-x-auto py-3 [scrollbar-width:thin] [&>:first-child]:ml-auto [&>:last-child]:mr-auto" aria-label="Font tester controls">
             {!hasWeightAxis && weights.length > 1 && (
               <div className="w-36 shrink-0">
@@ -117,7 +117,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 3v4h4 M3.5 6.5a5 5 0 1 1-.2 4.2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </Button>
         </div>
-        <Textarea aria-label={`Try ${name}`} spellCheck={false} value={text} onChange={(event) => setText(event.target.value)} style={previewStyle} placeholder="Type your own text…" className="min-h-[24rem] resize-none rounded-none border-0 bg-white px-0 py-4 wrap-anywhere dark:bg-neutral-950 focus-visible:ring-0!" />
+        <Textarea aria-label={`Try ${name}`} rows={2} spellCheck={false} value={text} onChange={(event) => setText(event.target.value)} style={previewStyle} placeholder="Type your own text…" className="min-h-[calc(2lh+2rem)] resize-none rounded-none border-0 bg-white px-0 py-4 wrap-anywhere dark:bg-neutral-950 focus-visible:ring-0!" />
     </section>
   );
 }
