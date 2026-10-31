@@ -99,7 +99,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <div className="type-styles col-span-12 min-w-0 min-[721px]:col-span-6 [&>div]:flex-wrap">
+          <div className="type-styles col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-4 min-[1105px]:col-start-3 [&>div]:flex-wrap">
             {typeface.weights.map((weight) => (
               <div key={`${typeface.slug}-${weight.weight}`}>
                 <p className={`w${weight.weight}`}>{weight.name}</p>
@@ -113,7 +113,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             ))}
           </div>
 
-          <div className="type-info col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-3">
+          <div className="type-info col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-4 min-[1105px]:col-start-7">
             <h3>Designed by</h3>
             <h4>
               <a className="underline decoration-from-font underline-offset-4 hover:text-(--red)" href={typeface.creator.url} rel="noopener" target="_blank">
