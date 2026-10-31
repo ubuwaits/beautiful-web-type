@@ -1,0 +1,23 @@
+:root {
+  --zalando-sans: 'Zalando Sans', sans-serif;
+}
+
+.zalando-sans {
+  font-family: var(--zalando-sans) !important;
+}
+
+@font-face {
+  font-family: "Zalando Sans";
+  font-style: normal;
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  src: url("/assets/fonts/zalando-sans/ZalandoSans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Zalando Sans";
+  font-style: italic;
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  src: url("/assets/fonts/zalando-sans/ZalandoSans-Italic.woff2") format("woff2");
+}

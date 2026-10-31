@@ -7125,6 +7125,86 @@
       }
     ]
   },
+  "zalando-sans": {
+    "family": "Zalando Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 125,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "slnt",
+            "name": "Slant",
+            "min": -10,
+            "max": 0,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Editorial quotation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Strikethrough numbers"
+          },
+          {
+            "tag": "ss03",
+            "name": "Horizontal arrows aligned to cap height"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 125,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Editorial quotation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Strikethrough numbers"
+          },
+          {
+            "tag": "ss03",
+            "name": "Horizontal arrows aligned to cap height"
+          }
+        ]
+      }
+    ]
+  },
   "zilla-slab": {
     "family": "Zilla Slab",
     "faces": [

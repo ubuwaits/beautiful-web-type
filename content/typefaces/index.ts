@@ -43,6 +43,7 @@ import tasaOrbiter from "./tasa-orbiter/data";
 import tiktokSans from "./tiktok-sans/data";
 import vollkorn from "./vollkorn/data";
 import workSans from "./work-sans/data";
+import zalandoSans from "./zalando-sans/data";
 import zillaSlab from "./zilla-slab/data";
 
 export const typefaceData: TypefaceData[] = [
@@ -89,5 +90,6 @@ export const typefaceData: TypefaceData[] = [
   tiktokSans,
   vollkorn,
   workSans,
+  zalandoSans,
   zillaSlab,
 ];

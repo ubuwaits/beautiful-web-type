@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 31 Oct 2026
 
+* **Added [Zalando Sans](https://beautifulwebtype.com/zalando-sans/)** by Jakob Ekelund of KH Type.
 * **Added [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)** by Grilli Type, Contrast Foundry, and Type Network.
 * **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
 * **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
@@ -89,6 +90,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/)
+* [Zalando Sans](https://beautifulwebtype.com/zalando-sans/)
 * [Zilla Slab](https://beautifulwebtype.com/zilla-slab/)
 
 ## Suggesting Typefaces
