@@ -103,6 +103,31 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
+          <dl className="typeface-metadata col-span-12 m-0 flex flex-wrap justify-center gap-x-10 gap-y-6 text-center font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase [&_dd]:m-0 [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
+            <div>
+              <dt>Designed by</dt>
+              <dd><a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a></dd>
+            </div>
+            <div>
+              <dt>Category</dt>
+              <dd><Link href={`/${typeface.categorySlug}/`}>{typeface.category}</Link></dd>
+            </div>
+            <div>
+              <dt>No. of styles</dt>
+              <dd>{typeface.styles}</dd>
+            </div>
+            {typeface.familyFaces?.length ? (
+              <div>
+                <dt>Other faces in family</dt>
+                <dd className="flex flex-wrap justify-center gap-x-3">
+                  {typeface.familyFaces.map((familyFace) => (
+                    <Link href={getTypefacePath(resolveTypefaceSlugByName(familyFace))} key={familyFace}>{familyFace}</Link>
+                  ))}
+                </dd>
+              </div>
+            ) : null}
+          </dl>
+
           <div className="type-weight-list col-span-12 grid w-full max-w-3xl min-w-0 grid-cols-1 justify-self-center gap-x-(--gutter) min-[721px]:grid-cols-2 min-[1105px]:col-span-6 min-[1105px]:col-start-4">
             {weightColumns.map((weights, index) => (
               <div className={`type-styles min-w-0 [&>div]:flex-wrap ${weightColumns.length === 1 ? "col-span-full justify-self-center" : ""}`} key={index}>
@@ -135,30 +160,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
           <section className="grid scroll-mt-32 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
-            <dl className="typeface-metadata col-span-12 mb-10 flex flex-wrap justify-center gap-x-10 gap-y-6 text-center font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase [&_dd]:m-0 [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
-              <div>
-                <dt>Designed by</dt>
-                <dd><a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a></dd>
-              </div>
-              <div>
-                <dt>Category</dt>
-                <dd><Link href={`/${typeface.categorySlug}/`}>{typeface.category}</Link></dd>
-              </div>
-              <div>
-                <dt>No. of styles</dt>
-                <dd>{typeface.styles}</dd>
-              </div>
-              {typeface.familyFaces?.length ? (
-                <div>
-                  <dt>Other faces in family</dt>
-                  <dd className="flex flex-wrap justify-center gap-x-3">
-                    {typeface.familyFaces.map((familyFace) => (
-                      <Link href={getTypefacePath(resolveTypefaceSlugByName(familyFace))} key={familyFace}>{familyFace}</Link>
-                    ))}
-                  </dd>
-                </div>
-              ) : null}
-            </dl>
+
             <div className="typeface-description col-span-12 min-w-0 font-(family-name:--ui-face) text-(length:--ms1) leading-relaxed min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 gap-x-12 [&>p]:mb-5 [&>p:last-child]:mb-0 [&_a]:underline [&_a]:underline-offset-4">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
                 <TrustedHtml as="p" html={paragraph} key={`${typeface.slug}-description-${index}`} />
