@@ -4,6 +4,8 @@ import { FittedLine, FittedLines } from "@/components/fitted-lines";
 import { GlyphInspector } from "@/components/glyph-inspector";
 import { TypefaceWeights } from "@/components/typeface-weights";
 import { FittedSpecimenText } from "@/components/fitted-specimen-text";
+import { FontTester } from "@/components/font-tester";
+import { getFontTesterData } from "@/lib/font-tester";
 import { TrustedHtml } from "@/components/trusted-html";
 import type { TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
@@ -199,6 +201,8 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             ))}
           </div>
         </div>
+
+        <FontTester key={typeface.slug} data={getFontTesterData(typeface.slug)} name={typeface.name} weights={typeface.weights} />
 
         {typeface.bodyHtml ? (
           <TrustedHtml

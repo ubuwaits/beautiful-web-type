@@ -1,0 +1,7063 @@
+{
+  "alegreya": {
+    "family": "Alegreya",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry ico"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangle"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      }
+    ]
+  },
+  "alegreya-sans": {
+    "family": "Alegreya Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Roman numerals"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows, triangles and circles"
+          },
+          {
+            "tag": "ss03",
+            "name": "Foundry icon"
+          },
+          {
+            "tag": "ss04",
+            "name": "Dynamic arrows and triangles"
+          },
+          {
+            "tag": "ss05",
+            "name": "Greek adscript iota"
+          }
+        ]
+      }
+    ]
+  },
+  "archivo": {
+    "family": "Archivo",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "archivo-black": {
+    "family": "Archivo Black",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "biorhyme": {
+    "family": "BioRhyme",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      }
+    ]
+  },
+  "biorhyme-expanded": {
+    "family": "BioRhyme Expanded",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "t and f broken spine forms"
+          },
+          {
+            "tag": "ss02",
+            "name": "single storey a, g"
+          },
+          {
+            "tag": "ss03",
+            "name": "flip diagonal and looped forms"
+          },
+          {
+            "tag": "ss04",
+            "name": "G, z curved to straight forms"
+          },
+          {
+            "tag": "ss05",
+            "name": "emotion to emoticon"
+          },
+          {
+            "tag": "ss06",
+            "name": "emotion to emoticon reversed out"
+          },
+          {
+            "tag": "ss07",
+            "name": "ss07"
+          },
+          {
+            "tag": "ss08",
+            "name": "ss08"
+          }
+        ]
+      }
+    ]
+  },
+  "commissioner": {
+    "family": "Commissioner",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 100
+          },
+          {
+            "tag": "FLAR",
+            "name": "Flare",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          },
+          {
+            "tag": "VOLM",
+            "name": "Volume",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 100
+          },
+          {
+            "tag": "FLAR",
+            "name": "Flare",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          },
+          {
+            "tag": "VOLM",
+            "name": "Volume",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          }
+        ]
+      }
+    ]
+  },
+  "cooper-hewitt": {
+    "family": "Cooper Hewitt",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "crimson-pro": {
+    "family": "Crimson Pro",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "j alternate"
+          }
+        ]
+      }
+    ]
+  },
+  "fira-code": {
+    "family": "Fira Code VF",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 700,
+            "default": 300
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic set 06"
+          },
+          {
+            "tag": "ss07",
+            "name": "Stylistic set 07"
+          },
+          {
+            "tag": "ss08",
+            "name": "Stylistic set 08"
+          },
+          {
+            "tag": "ss09",
+            "name": "Stylistic set 09"
+          },
+          {
+            "tag": "ss10",
+            "name": "Stylistic set 10"
+          }
+        ]
+      }
+    ]
+  },
+  "firago": {
+    "family": "FiraGO",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 250,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 250,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 350,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 350,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic variant a"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic variant g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic variants Bulgarian, Georgian, different African languages"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic variants Liberian"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic variant ampersand"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic variant four"
+          }
+        ]
+      }
+    ]
+  },
+  "fivo-sans": {
+    "family": "Fivo Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "fivo-sans-modern": {
+    "family": "Fivo Sans Modern",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "fraunces": {
+    "family": "Fraunces",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 9,
+            "max": 144,
+            "default": 9
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 900
+          },
+          {
+            "tag": "SOFT",
+            "name": "Softness",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          },
+          {
+            "tag": "WONK",
+            "name": "Wonky",
+            "min": 0,
+            "max": 1,
+            "default": 1
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 9,
+            "max": 144,
+            "default": 9
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 900
+          },
+          {
+            "tag": "SOFT",
+            "name": "Softness",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          },
+          {
+            "tag": "WONK",
+            "name": "Wonky",
+            "min": 0,
+            "max": 1,
+            "default": 1
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          }
+        ]
+      }
+    ]
+  },
+  "ia-writer-quattro": {
+    "family": "iA Writer Quattro",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          },
+          {
+            "tag": "SPCG",
+            "name": "Spacing",
+            "min": 0,
+            "max": 150,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          },
+          {
+            "tag": "SPCG",
+            "name": "Spacing",
+            "min": 0,
+            "max": 150,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          }
+        ]
+      }
+    ]
+  },
+  "ibm-plex-mono": {
+    "family": "IBM Plex Mono",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss08",
+            "name": "alternate lowercase l"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "plain number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate number sign"
+          },
+          {
+            "tag": "ss07",
+            "name": "Bulgarian Cyrillic forms"
+          },
+          {
+            "tag": "ss09",
+            "name": "alternate comma and quotes"
+          }
+        ]
+      }
+    ]
+  },
+  "ibm-plex-sans": {
+    "family": "IBM Plex Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      }
+    ]
+  },
+  "ibm-plex-sans-condensed": {
+    "family": "IBM Plex Sans Condensed",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      }
+    ]
+  },
+  "ibm-plex-serif": {
+    "family": "IBM Plex Serif",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 450,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "simple lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "alternate lowercase a"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple lowercase g"
+          },
+          {
+            "tag": "ss03",
+            "name": "slashed number zero"
+          },
+          {
+            "tag": "ss04",
+            "name": "dotted number zero"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate lowercase eszett"
+          },
+          {
+            "tag": "ss06",
+            "name": "Bulgarian Cyrillic forms"
+          }
+        ]
+      }
+    ]
+  },
+  "inria-sans": {
+    "family": "Inria Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      }
+    ]
+  },
+  "inria-serif": {
+    "family": "Inria Serif",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows"
+          }
+        ]
+      }
+    ]
+  },
+  "instrument-sans": {
+    "family": "Instrument Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 100,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Round dots"
+          },
+          {
+            "tag": "ss02",
+            "name": "Single Story a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate y"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternate K"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alternate R"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alternate M"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alternate G"
+          },
+          {
+            "tag": "ss08",
+            "name": "Alternate J"
+          },
+          {
+            "tag": "ss09",
+            "name": "Alternate Q"
+          },
+          {
+            "tag": "ss10",
+            "name": "Alternate 2"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Ampersand"
+          },
+          {
+            "tag": "ss12",
+            "name": "Alternate Currency"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 100,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Round dots"
+          },
+          {
+            "tag": "ss02",
+            "name": "Single Story a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate y"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternate K"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alternate R"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alternate M"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alternate G"
+          },
+          {
+            "tag": "ss08",
+            "name": "Alternate J"
+          },
+          {
+            "tag": "ss09",
+            "name": "Alternate Q"
+          },
+          {
+            "tag": "ss10",
+            "name": "Alternate 2"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Ampersand"
+          },
+          {
+            "tag": "ss12",
+            "name": "Alternate Currency"
+          }
+        ]
+      }
+    ]
+  },
+  "instrument-serif": {
+    "family": "Instrument Serif",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Text Version"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Text Version"
+          }
+        ]
+      }
+    ]
+  },
+  "inter": {
+    "family": "Inter var",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 14,
+            "max": 32,
+            "default": 14
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Open digits"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Round quotes & commas"
+          },
+          {
+            "tag": "ss04",
+            "name": "Disambiguation (no slashed zero)"
+          },
+          {
+            "tag": "ss05",
+            "name": "Circled characters"
+          },
+          {
+            "tag": "ss06",
+            "name": "Squared characters"
+          },
+          {
+            "tag": "ss07",
+            "name": "Square punctuation"
+          },
+          {
+            "tag": "ss08",
+            "name": "Square quotes"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 14,
+            "max": 32,
+            "default": 14
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Open digits"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Round quotes & commas"
+          },
+          {
+            "tag": "ss04",
+            "name": "Disambiguation (no slashed zero)"
+          },
+          {
+            "tag": "ss05",
+            "name": "Circled characters"
+          },
+          {
+            "tag": "ss06",
+            "name": "Squared characters"
+          },
+          {
+            "tag": "ss07",
+            "name": "Square punctuation"
+          },
+          {
+            "tag": "ss08",
+            "name": "Square quotes"
+          }
+        ]
+      }
+    ]
+  },
+  "le-murmure": {
+    "family": "Le Murmure",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Zig Zags"
+          },
+          {
+            "tag": "ss02",
+            "name": "Zig Zag Zags"
+          },
+          {
+            "tag": "ss03",
+            "name": "Crossbarless A"
+          },
+          {
+            "tag": "ss04",
+            "name": "Simpler r"
+          },
+          {
+            "tag": "ss05",
+            "name": "Highway M + W"
+          },
+          {
+            "tag": "ss06",
+            "name": "Straight C"
+          },
+          {
+            "tag": "ss07",
+            "name": "Long tailed R + Q"
+          },
+          {
+            "tag": "ss08",
+            "name": "Mutants"
+          },
+          {
+            "tag": "ss09",
+            "name": "Cyrillic F"
+          },
+          {
+            "tag": "ss10",
+            "name": "Randomize all alternates"
+          }
+        ]
+      }
+    ]
+  },
+  "libre-franklin": {
+    "family": "Libre Franklin",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "lora": {
+    "family": "Lora",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "messapia": {
+    "family": "Messapia",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "oswald": {
+    "family": "Oswald",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "playfair-display": {
+    "family": "Playfair Display",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 5,
+            "max": 1200,
+            "default": 5
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 88,
+            "max": 113,
+            "default": 88
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss05",
+            "name": "Alternate g"
+          },
+          {
+            "tag": "ss10",
+            "name": "Th ligature"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Sterling symbol"
+          },
+          {
+            "tag": "ss14",
+            "name": "Tabular punctuation"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 5,
+            "max": 1200,
+            "default": 5
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 88,
+            "max": 113,
+            "default": 88
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternate p"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternate E"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate Cyrillic ѫ"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternate Cyrillic м"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alternate g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alternate y"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alternate T"
+          },
+          {
+            "tag": "ss08",
+            "name": "Th ligature straight"
+          },
+          {
+            "tag": "ss09",
+            "name": "Th ligature swash"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Sterling symbol"
+          },
+          {
+            "tag": "ss12",
+            "name": "Alternate Z, Ʒ and z, ʒ"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternate X and x"
+          },
+          {
+            "tag": "ss14",
+            "name": "Tabular punctuation"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 5,
+            "max": 1200,
+            "default": 5
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 88,
+            "max": 113,
+            "default": 88
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss05",
+            "name": "Alternate g"
+          },
+          {
+            "tag": "ss10",
+            "name": "Th ligature"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Sterling symbol"
+          },
+          {
+            "tag": "ss14",
+            "name": "Tabular punctuation"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 5,
+            "max": 1200,
+            "default": 5
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 88,
+            "max": 113,
+            "default": 88
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternate p"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternate E"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate Cyrillic ѫ"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternate Cyrillic м"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alternate g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alternate y"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alternate T"
+          },
+          {
+            "tag": "ss08",
+            "name": "Th ligature straight"
+          },
+          {
+            "tag": "ss09",
+            "name": "Th ligature swash"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Sterling symbol"
+          },
+          {
+            "tag": "ss12",
+            "name": "Alternate Z, Ʒ and z, ʒ"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternate X and x"
+          },
+          {
+            "tag": "ss14",
+            "name": "Tabular punctuation"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 5,
+            "max": 1200,
+            "default": 5
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 88,
+            "max": 113,
+            "default": 88
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss05",
+            "name": "Alternate g"
+          },
+          {
+            "tag": "ss10",
+            "name": "Th ligature"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Sterling symbol"
+          },
+          {
+            "tag": "ss14",
+            "name": "Tabular punctuation"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 5,
+            "max": 1200,
+            "default": 5
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 88,
+            "max": 113,
+            "default": 88
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternate p"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternate E"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate Cyrillic ѫ"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternate Cyrillic м"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alternate g"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alternate y"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alternate T"
+          },
+          {
+            "tag": "ss08",
+            "name": "Th ligature straight"
+          },
+          {
+            "tag": "ss09",
+            "name": "Th ligature swash"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternate Sterling symbol"
+          },
+          {
+            "tag": "ss12",
+            "name": "Alternate Z, Ʒ and z, ʒ"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternate X and x"
+          },
+          {
+            "tag": "ss14",
+            "name": "Tabular punctuation"
+          }
+        ]
+      }
+    ]
+  },
+  "poppins": {
+    "family": "Poppins",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots in punctuation marks"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative ampersand"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative 2, 3, 6, 9"
+          }
+        ]
+      }
+    ]
+  },
+  "rakkas": {
+    "family": "Rakkas",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic set 06"
+          },
+          {
+            "tag": "ss07",
+            "name": "Stylistic set 07"
+          },
+          {
+            "tag": "ss08",
+            "name": "Stylistic set 08"
+          },
+          {
+            "tag": "ss09",
+            "name": "Stylistic set 09"
+          }
+        ]
+      }
+    ]
+  },
+  "source-code-pro": {
+    "family": "Source Code Variable",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "typographic alternates [-,*]"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple a, cursive β"
+          },
+          {
+            "tag": "ss03",
+            "name": "simple g, cursive θ, Serbian б"
+          },
+          {
+            "tag": "ss04",
+            "name": "serifed i & l"
+          },
+          {
+            "tag": "ss05",
+            "name": "Sami Ŋ, cursive φ"
+          },
+          {
+            "tag": "ss06",
+            "name": "slashed dollar sign [$]"
+          },
+          {
+            "tag": "ss07",
+            "name": "alternate numeral one [1]"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "typographic alternates [-,*]"
+          },
+          {
+            "tag": "ss02",
+            "name": "simple a"
+          },
+          {
+            "tag": "ss03",
+            "name": "simple g"
+          },
+          {
+            "tag": "ss05",
+            "name": "Sami Ŋ"
+          },
+          {
+            "tag": "ss06",
+            "name": "slashed dollar sign [$]"
+          },
+          {
+            "tag": "ss07",
+            "name": "alternate numeral one [1]"
+          }
+        ]
+      }
+    ]
+  },
+  "source-sans-pro": {
+    "family": "Source Sans Variable",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Serifed I (▲ i)"
+          },
+          {
+            "tag": "ss02",
+            "name": "Simple a g l"
+          },
+          {
+            "tag": "ss03",
+            "name": "Simple a"
+          },
+          {
+            "tag": "ss04",
+            "name": "Simple g"
+          },
+          {
+            "tag": "ss05",
+            "name": "Simple l (▼ L)"
+          },
+          {
+            "tag": "ss06",
+            "name": "Serifed a"
+          },
+          {
+            "tag": "ss07",
+            "name": "Centered ogoneks [ Ą Ę ą ę ų ] (Na-Dené)"
+          },
+          {
+            "tag": "ss08",
+            "name": "N-shaped Eng [ Ŋ ] (Sami)"
+          },
+          {
+            "tag": "ss09",
+            "name": "Capital figures"
+          },
+          {
+            "tag": "ss10",
+            "name": "Dotted zero [ 0 ]"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Serifed I (▲ i)"
+          },
+          {
+            "tag": "ss02",
+            "name": "Simple a g l"
+          },
+          {
+            "tag": "ss03",
+            "name": "Simple a"
+          },
+          {
+            "tag": "ss04",
+            "name": "Simple g"
+          },
+          {
+            "tag": "ss05",
+            "name": "Simple l (▼ L)"
+          },
+          {
+            "tag": "ss06",
+            "name": "Serifed a"
+          },
+          {
+            "tag": "ss07",
+            "name": "Centered ogoneks [ Ą Ę ą ę ų ] (Na-Dené)"
+          },
+          {
+            "tag": "ss08",
+            "name": "N-shaped Eng [ Ŋ ] (Sami)"
+          },
+          {
+            "tag": "ss09",
+            "name": "Capital figures"
+          },
+          {
+            "tag": "ss10",
+            "name": "Dotted zero [ 0 ]"
+          }
+        ]
+      }
+    ]
+  },
+  "source-serif-pro": {
+    "family": "Source Serif Variable",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 8,
+            "max": 60,
+            "default": 20
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Cyrillic: Bulgarian alternates"
+          },
+          {
+            "tag": "ss02",
+            "name": "Cyrillic: Serbian and Macedonian alternates"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 8,
+            "max": 60,
+            "default": 20
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Cyrillic: Bulgarian alternates"
+          },
+          {
+            "tag": "ss02",
+            "name": "Cyrillic: Serbian and Macedonian alternates"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          }
+        ]
+      }
+    ]
+  },
+  "space-grotesk": {
+    "family": "Space Grotesk",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 700,
+            "default": 300
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          }
+        ]
+      }
+    ]
+  },
+  "space-mono": {
+    "family": "Space Mono",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "ss01"
+          },
+          {
+            "tag": "ss02",
+            "name": "ss02"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "ss01"
+          },
+          {
+            "tag": "ss02",
+            "name": "ss02"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "ss01"
+          },
+          {
+            "tag": "ss02",
+            "name": "ss02"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "ss01"
+          },
+          {
+            "tag": "ss02",
+            "name": "ss02"
+          }
+        ]
+      }
+    ]
+  },
+  "tasa-orbiter": {
+    "family": "TASA Orbiter",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 800,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Disambiguation Set"
+          }
+        ]
+      }
+    ]
+  },
+  "vollkorn": {
+    "family": "Vollkorn",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternative Figure Three"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternative Figure Three"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternative Figure Three"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternative Figure Three"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternative Figure Three"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss13",
+            "name": "Alternative Figure Three"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Letters"
+          },
+          {
+            "tag": "ss02",
+            "name": "Polish"
+          },
+          {
+            "tag": "ss03",
+            "name": "Dutch"
+          },
+          {
+            "tag": "ss04",
+            "name": "Bulgarian"
+          },
+          {
+            "tag": "ss05",
+            "name": "Serbian"
+          },
+          {
+            "tag": "ss11",
+            "name": "Alternative Figure One"
+          },
+          {
+            "tag": "ss14",
+            "name": "Alternative Figure Four"
+          },
+          {
+            "tag": "ss17",
+            "name": "Alternative Figure Seven"
+          }
+        ]
+      }
+    ]
+  },
+  "work-sans": {
+    "family": "Work Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic set 06"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          }
+        ]
+      }
+    ]
+  },
+  "zilla-slab": {
+    "family": "Zilla Slab",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  }
+}
