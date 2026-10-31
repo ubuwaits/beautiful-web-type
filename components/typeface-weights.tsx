@@ -40,8 +40,8 @@ export function TypefaceWeights({ weights, italic }: { weights: Weight[]; italic
   }, [weights, italic]);
 
   return (
-    <div className="type-weight-list @container w-full min-w-0 text-left [--weight-max-size:var(--ms3)] min-[721px]:[--weight-max-size:var(--ms5)]" ref={ref} style={{ "--weight-scale": 0.07 } as CSSProperties}>
-      <div className="text-[length:min(var(--weight-max-size),calc(100cqw*var(--weight-scale)))] leading-[1.2]">
+    <div className="type-weight-list @container w-full min-w-0 text-left" ref={ref} style={{ "--weight-scale": 0.07 } as CSSProperties}>
+      <div className="text-[length:calc(100cqw*var(--weight-scale))] leading-[1.2]">
         {weights.map((weight) => (
           <div className="flex w-max items-baseline gap-x-[0.3em] whitespace-nowrap" data-weight-row="" key={weight.weight}>
             <p className={`w${weight.weight}`}>{weight.name}</p>
