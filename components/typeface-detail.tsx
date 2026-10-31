@@ -74,7 +74,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
     { label: "Designed by", value: <a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
     { label: "No. of styles", value: typeface.styles },
-    { label: "Updated", value: typeface.latestRelease.date },
+    { label: "Last Updated", value: typeface.latestRelease.date },
     ...(typeface.familyFaces?.length ? [{
       label: "Other faces in family",
       value: <span className="flex flex-wrap justify-end gap-x-3">{typeface.familyFaces.map((familyFace) => (
@@ -96,7 +96,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
   ];
 
   return (
-    <div className="pt-12">
+    <div className="pt-12 [--section-gap:6rem] min-[721px]:[--section-gap:10rem]">
       <TypefaceNavigation
         sections={sections}
         embedUrl={typeface.gFontsUrl}
@@ -104,7 +104,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
         release={`${typeface.latestRelease.version} (${typeface.latestRelease.date})`}
       />
       <div className={typeface.slug}>
-        <div className="layout-grid mb-16 scroll-mt-32 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16" id="overview">
+        <div className="layout-grid mb-(--section-gap) scroll-mt-32 gap-y-(--section-gap)" id="overview">
           <section className="standardized-sample col-span-12 flex min-h-[24rem] flex-col items-center justify-center gap-5 py-8 min-[721px]:min-h-[28rem]">
             <div className="h-[18rem] w-full [--sample-fit-width:0.75] min-[721px]:h-[22rem] max-[1104px]:[--sample-fit-width:0.9]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
@@ -131,7 +131,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
         </div>
-        <FittedLines className="mb-16 space-y-16 min-[721px]:mb-24 min-[721px]:space-y-24">
+        <FittedLines className="mb-(--section-gap) space-y-(--section-gap)">
           <div className="type-detail-table examples-characters scroll-mt-32" id="characters">
             <h2 className="sr-only">Characters</h2>
             <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6">
@@ -190,7 +190,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         </FittedLines>
 
-        <div className="type-detail-table examples-paragraphs mb-16 scroll-mt-32 min-[721px]:mb-24" id="paragraphs">
+        <div className="type-detail-table examples-paragraphs mb-(--section-gap) scroll-mt-32" id="paragraphs">
           <h2 className="sr-only">Paragraphs</h2>
           <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[calc(50%_-_1.5rem)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
             {["text-(length:--ms2)", "text-(length:--ms1)", "text-(length:--ms-1)"].map((size) => (
@@ -209,7 +209,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
         {typeface.bodyHtml ? (
           <TrustedHtml
             id="features"
-            className="feature-list scroll-mt-32 mb-16 space-y-6 min-[721px]:mb-24 min-[721px]:space-y-8
+            className="feature-list scroll-mt-32 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
               [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-300
               [&>.type-detail-table:first-child]:[border-top-style:solid]
               [&>.type-detail-table:first-child]:pt-6 min-[721px]:[&>.type-detail-table:first-child]:pt-8
@@ -243,7 +243,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       </div>
 
       {typeface.comparisonFaces?.length ? (
-        <div className="layout-grid grid-comparisons mb-16 scroll-mt-32 min-[721px]:mb-24" id="comparisons">
+        <div className="layout-grid grid-comparisons mb-(--section-gap) scroll-mt-32" id="comparisons">
           <ComparisonSync />
           <h3 className="col-span-12">
             {typeface.name} compared with other typefaces
@@ -257,7 +257,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       ) : null}
 
       {pairings.length ? (
-        <div className="layout-grid grid-pairings mb-16 scroll-mt-32 min-[721px]:mb-24" id="pairings">
+        <div className="layout-grid grid-pairings mb-(--section-gap) scroll-mt-32" id="pairings">
           <h3 className="col-span-12">Recommended Pairings for {typeface.name}</h3>
           <Masonry className="col-span-12">
             {pairings.map((pairing) => (

@@ -66,7 +66,7 @@ export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }:
   return (
     <nav aria-label="On this page" className="fixed inset-x-0 top-16 z-30 h-12 bg-white/95 font-(family-name:--ui-face) backdrop-blur-[2px]">
       <div className="relative h-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" ref={linksRef}>
-        <div className="mx-auto flex w-max items-center gap-5 px-4">
+        <div className="mx-auto flex w-max items-center gap-12 px-4">
           <div className="flex items-center gap-5">
             {sections.map(({ id, label }) => (
               <a
@@ -80,8 +80,8 @@ export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }:
             ))}
           </div>
           <div className="flex shrink-0 items-center gap-2">
-            {embedUrl ? <a className={actionClass} href={embedUrl} target="_blank" rel="noopener">Get on Google Fonts <span aria-hidden="true">↗</span></a> : null}
-            <a className={actionClass} href={downloadUrl} target="_blank" rel="noopener" title={`Download ${release}`}>Download <span aria-hidden="true">↗</span></a>
+            {embedUrl ? <a className={actionClass} href={embedUrl} target="_blank" rel="noopener">Get on Google Fonts <span className="relative -top-[3px] ml-1 inline-block" aria-hidden="true">↗</span></a> : null}
+            <a className={actionClass} href={downloadUrl} target="_blank" rel="noopener" title={`Download ${release}`}>Download <span className="relative -top-[3px] ml-1 inline-block" aria-hidden="true">↗</span></a>
           </div>
         </div>
       </div>

@@ -195,7 +195,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
 
   const codes = selectedGlyph?.unicodes ?? [];
   return (
-    <section className="mb-16 min-[721px]:mb-24 scroll-mt-32" id="glyphs" ref={sectionRef} aria-label={`${typefaceName} glyph explorer`}>
+    <section className="mb-(--section-gap) scroll-mt-32" id="glyphs" ref={sectionRef} aria-label={`${typefaceName} glyph explorer`}>
       {activated ? <Script src="/js/opentype.min.js" strategy="afterInteractive" onReady={() => setScriptReady(true)} onError={() => setError(true)} /> : null}
       <p className="sr-only" role="status">{error ? "Could not load glyphs" : font ? "Glyphs ready" : "Loading glyphs…"}</p>
       <noscript><p className="mb-4">Enable JavaScript to explore the glyphs.</p></noscript>
