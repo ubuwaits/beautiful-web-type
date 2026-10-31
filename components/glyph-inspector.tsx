@@ -200,8 +200,8 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       <p className="sr-only" role="status">{error ? "Could not load glyphs" : font ? "Glyphs ready" : "Loading glyphs…"}</p>
       <noscript><p className="mb-4">Enable JavaScript to explore the glyphs.</p></noscript>
       {error ? <p role="alert">The font could not be loaded. Reload the page to try again.</p> : null}
-      <div className="grid grid-cols-1 items-start gap-(--gutter) min-[721px]:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]">
-        <div className="sticky top-32 z-10 grid max-h-[calc(100dvh-10rem)] grid-cols-2 items-start overflow-y-auto bg-white min-[721px]:block" id="glyph-detail">
+      <div className="grid grid-cols-1 items-start gap-(--gutter) min-[721px]:grid-cols-12">
+        <div className="sticky top-32 z-10 grid max-h-[calc(100dvh-10rem)] grid-cols-2 items-start overflow-y-auto bg-white min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
           <div className="min-w-0">
             <canvas className="block h-auto w-full" id="glyph-detail-canvas" ref={detailCanvasRef} aria-label={selectedGlyph ? `Preview of glyph ${selectedGlyph.index}` : "Selected glyph preview"} />
           </div>
@@ -212,7 +212,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
             <dt>CSS code</dt><dd>{codes.map(formatCssCode).join(", ") || "Not available"}</dd>
           </dl>
         </div>
-        <div className="min-w-0" id="glyph-grid-container" aria-busy={!font && !error}>
+        <div className="min-w-0 min-[721px]:col-span-9" id="glyph-grid-container" aria-busy={!font && !error}>
           <div className="grid grid-cols-6 bg-white min-[721px]:grid-cols-10 min-[1105px]:grid-cols-16" id="glyph-grid" ref={glyphGridRef} data-glyph-count={font?.numGlyphs} />
         </div>
       </div>

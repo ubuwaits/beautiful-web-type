@@ -213,8 +213,9 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
               [&>.type-detail-table+.type-detail-table]:border-t [&>.type-detail-table+.type-detail-table]:border-t-neutral-200/60
               [&>.type-detail-table+.type-detail-table]:[border-top-style:solid]
               [&>.type-detail-table+.type-detail-table]:pt-6 min-[721px]:[&>.type-detail-table+.type-detail-table]:pt-8
-              [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start
-              min-[721px]:[&>.type-detail-table]:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]
+              [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start [&>.type-detail-table]:gap-(--gutter)!
+              min-[721px]:[&>.type-detail-table]:grid-cols-12
+              min-[721px]:[&>.type-detail-table>.meta]:col-span-3 min-[721px]:[&>.type-detail-table>.examples]:col-span-9
               [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col!
               [&>.type-detail-table>.meta]:self-start [&>.type-detail-table>.meta]:justify-start!
               [&>.type-detail-table>.meta]:gap-1 [&>.type-detail-table>.meta>.code]:mt-0!
