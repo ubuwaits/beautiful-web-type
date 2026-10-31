@@ -79,7 +79,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <div className="type-styles col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-3 [&>div]:flex-wrap">
+          <div className="type-styles col-span-12 min-w-0 min-[721px]:col-span-6 [&>div]:flex-wrap">
             {typeface.weights.map((weight) => (
               <div key={`${typeface.slug}-${weight.weight}`}>
                 <p className={`w${weight.weight}`}>{weight.name}</p>
@@ -91,11 +91,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
                 <p className="weight">{weight.weight}</p>
               </div>
             ))}
-          </div>
-
-          <div className="type-info col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-3">
-            <h3>Description</h3>
-            <TrustedHtml as="h4" html={typeface.description} />
           </div>
 
           <div className="type-info col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-3">
@@ -156,6 +151,14 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               ))}
             </div>
           </div>
+
+          <section className="grid grid-cols-12 gap-x-(--gutter)" aria-label="About the typeface">
+            <div className="typeface-description col-span-12 min-w-0 font-(family-name:--ui-face) text-(length:--ms1) leading-relaxed min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 gap-x-12 [&>p]:mb-5 [&>p:last-child]:mb-0 [&_a]:underline [&_a]:underline-offset-4">
+              {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
+                <TrustedHtml as="p" html={paragraph} key={`${typeface.slug}-description-${index}`} />
+              ))}
+            </div>
+          </section>
 
           <div className="type-detail-table examples-words">
             <h2 className="sr-only">Words</h2>
