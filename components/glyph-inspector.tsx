@@ -218,7 +218,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       <noscript><p className="mb-4">Enable JavaScript to explore the glyphs.</p></noscript>
       {error ? <p role="alert">The font could not be loaded. Reload the page to try again.</p> : null}
       <div className="grid grid-cols-1 items-start gap-(--gutter) min-[721px]:grid-cols-12">
-        <div className="sticky top-20 z-10 grid max-h-[calc(100dvh-7rem)] grid-cols-2 items-start overflow-y-auto bg-white dark:bg-neutral-950 min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
+        <div className="sticky top-16 z-10 grid max-h-[calc(100dvh-6rem)] min-[721px]:top-20 min-[721px]:max-h-[calc(100dvh-7rem)] grid-cols-2 items-start overflow-y-auto bg-white dark:bg-neutral-950 min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
           <div className="min-w-0">
             <canvas className="block h-auto w-full" id="glyph-detail-canvas" ref={detailCanvasRef} aria-label={selectedGlyph ? `Preview of glyph ${selectedGlyph.index}` : "Selected glyph preview"} />
           </div>
