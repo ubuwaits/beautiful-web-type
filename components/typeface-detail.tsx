@@ -89,6 +89,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
         embedUrl={typeface.gFontsUrl}
         downloadUrl={typeface.projectUrl}
         release={`${typeface.latestRelease.version} (${typeface.latestRelease.date})`}
+        releaseDate={typeface.latestRelease.date}
       />
       <div className={typeface.slug}>
         <div className="layout-grid mb-16 scroll-mt-32 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16" id="overview">
