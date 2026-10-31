@@ -141,7 +141,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
           <section className="grid scroll-mt-20 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
 
-            <div className="typeface-description col-span-12 min-w-0 text-base leading-7 min-[721px]:text-(length:--ms1) min-[721px]:leading-8 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 gap-x-12 [&>p]:mb-7 min-[721px]:[&>p]:mb-8 [&>p]:text-pretty [&>p]:[orphans:3] [&>p]:[widows:3] [&>p:last-child]:mb-0 [&_a]:underline [&_a]:underline-offset-4">
+            <div className="typeface-description col-span-12 min-w-0 text-base leading-7 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 min-[721px]:text-(length:--ms1) min-[721px]:leading-8 gap-x-12 [&>p]:mb-7 [&>p]:text-pretty [&>p]:[orphans:2] [&>p]:[widows:2] [&>p:last-child]:mb-0">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
                 <TrustedHtml as="p" html={paragraph} key={`${typeface.slug}-description-${index}`} />
               ))}
@@ -188,7 +188,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         <div className="type-detail-table examples-paragraphs mb-(--section-gap) scroll-mt-20" id="paragraphs">
           <h2 className="sr-only">Paragraphs</h2>
-          <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[calc(50%_-_1.5rem)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
+          <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[3fr_2fr_1fr] min-[1105px]:gap-x-12">
             {["text-(length:--ms1) min-[721px]:text-(length:--ms2)", "text-base min-[721px]:text-(length:--ms1)", "text-xs min-[721px]:text-(length:--ms-1)"].map((size) => (
               <p
                 key={size}
