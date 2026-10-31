@@ -106,7 +106,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     for (let index = 0; index < font.numGlyphs; index++) {
       const button = document.createElement("button");
       button.type = "button";
-      button.className = "glyph-container relative aspect-square min-w-0 cursor-pointer border-0 bg-white p-0 hover:bg-orange-50 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-(--red) data-[selected=true]:bg-orange-100";
+      button.className = "glyph-container relative aspect-square min-w-0 cursor-pointer border-0 bg-white p-0 hover:bg-neutral-100 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-(--red) data-[selected=true]:bg-neutral-200";
       button.dataset.glyphIndex = String(index);
       button.setAttribute("aria-label", `Select glyph ${index}`);
       button.setAttribute("aria-pressed", "false");

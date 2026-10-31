@@ -60,7 +60,6 @@
 
 .character-label,
 .code {
-  color: #a7a7a7;
   font: normal 600 var(--ms-1)/1 var(--ibm-plex-mono);
   font-feature-settings: "liga" off;
   font-variant: normal;

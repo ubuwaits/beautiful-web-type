@@ -10,7 +10,7 @@ export function SiteFooter() {
   const monospacedTypefaces = getTypefacesByCategory("monospaced");
 
   return (
-    <footer className="layout-grid">
+    <footer className="layout-grid border-t border-neutral-200/60 [border-top-style:solid] [&_h3]:text-neutral-500">
       <div className="footer-type-list col-span-12 min-[721px]:col-span-8 min-[1105px]:col-span-4">
         <h3>
           <Link href="/sans-serif/">Sans-Serif Typefaces</Link>

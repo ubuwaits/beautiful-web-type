@@ -7,10 +7,20 @@
 @source "../content";
 @source "../lib";
 
+.fade {
+  @apply text-neutral-300;
+}
+
+.character-label,
+.code,
+.meta.code {
+  @apply text-neutral-400;
+}
+
 body .standardized-sample {
   --sample-fit-width: 0.5;
-  --sample-ink: #111;
-  --sample-surface: #fff;
+  --sample-ink: var(--color-neutral-950);
+  --sample-surface: var(--color-white);
   background: var(--sample-surface);
 }
 

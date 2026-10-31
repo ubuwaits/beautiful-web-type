@@ -25,7 +25,6 @@ footer.layout-grid .subscribe-form input[type=submit]::-moz-focus-inner {
 }
 
 footer.layout-grid {
-  box-shadow: 0 -1px 0 rgba(215, 215, 215, 0.4);
   margin-top: 2rem;
   padding-top: 2rem;
 }
@@ -35,7 +34,6 @@ footer.layout-grid {
   }
 }
 footer.layout-grid h3 {
-  color: #797979;
   font: 700 var(--ms0)/1.25rem var(--ui-face);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -88,7 +86,7 @@ footer.layout-grid .subscribe-form label {
 }
 footer.layout-grid .subscribe-form input[type=text] {
   -webkit-appearance: none;
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
   border-radius: 0;
   border-right: 0;
   flex-grow: 2;
@@ -97,8 +95,8 @@ footer.layout-grid .subscribe-form input[type=text] {
   min-width: 100px;
 }
 footer.layout-grid .subscribe-form input[type=submit] {
-  background: #000;
-  color: #FFF;
+  background: var(--color-black);
+  color: var(--color-white);
   font-weight: 700;
   padding: 0.75em 1.5em;
 }
