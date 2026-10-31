@@ -114,7 +114,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <dl className="typeface-metadata col-span-12 m-0 min-w-0 font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:col-span-6 min-[1105px]:col-start-4
+          <dl className="typeface-metadata col-span-12 m-0 min-w-0 font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3
             [&>div]:grid [&>div]:grid-cols-2 min-[721px]:[&>div]:grid-cols-4 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:gap-y-3 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
             [&>div+div]:border-t [&>div+div]:border-t-neutral-200 [&>div+div]:[border-top-style:solid]
             [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
@@ -130,7 +130,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             ))}
           </dl>
 
-          <div className="type-weight-list col-span-12 grid w-full min-w-0 grid-cols-1 gap-x-6 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:grid-cols-2 min-[1105px]:col-span-6 min-[1105px]:col-start-4">
+          <div className="type-weight-list col-span-12 grid w-full min-w-0 grid-cols-1 gap-x-6 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:grid-cols-2">
             {weightColumns.map((weights, index) => (
               <div className={`type-styles min-w-0 [&>div]:flex-wrap [&>div]:gap-x-3 [&>div>p]:mr-0! ${index === 1 ? "min-[721px]:text-right min-[721px]:[&>div]:justify-end min-[721px]:[&>div>.weight]:order-first" : ""} ${weightColumns.length === 1 ? "col-span-full justify-self-center" : ""}`} key={index}>
                 {weights.map((weight) => (
