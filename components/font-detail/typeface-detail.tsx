@@ -71,7 +71,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
     { label: "Download", href: typeface.projectUrl, title: `Download ${typeface.latestRelease.version} (${typeface.latestRelease.date})` },
     ...(typeface.gFontsUrl ? [{ label: "Google Fonts", href: typeface.gFontsUrl, title: "Google Fonts" }] : [])
   ];
-  const actionClass = "flex min-w-0 items-center justify-center rounded-full bg-neutral-900 px-4 py-2 min-[721px]:py-1.5 text-center text-xs leading-5 max-[720px]:@min-[21rem]:text-sm min-[721px]:text-xl min-[721px]:leading-7 font-semibold text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
+  const actionClass = "flex min-w-0 items-center justify-center rounded-full bg-neutral-900 px-4 py-2 min-[721px]:py-1.5 text-center text-xs leading-5 max-[720px]:@min-[21rem]:text-sm min-[721px]:text-lg min-[721px]:leading-7 font-semibold text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
   const metadata = [
     { label: "Designed by", value: <a className="no-underline!" href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
@@ -101,7 +101,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
               [&>div]:grid [&>div]:grid-cols-2 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
               [&>div+div]:border-t [&>div+div]:border-t-neutral-200/60 dark:[&>div+div]:border-t-neutral-800/80 [&>div+div]:[border-top-style:solid]
               [&_dt]:min-w-0 [&_dt]:text-xs max-[720px]:@min-[21rem]:[&_dt]:text-sm min-[721px]:[&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
-              [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-xs max-[720px]:@min-[21rem]:[&_dd]:text-sm min-[721px]:[&_dd]:text-xl [&_dd]:leading-7 [&_dd]:wrap-anywhere
+              [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-xs max-[720px]:@min-[21rem]:[&_dd]:text-sm min-[721px]:[&_dd]:text-lg [&_dd]:leading-7 [&_dd]:wrap-anywhere
               [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
               <div className="grid-cols-1!">
                 <dt className="sr-only">Get the font</dt>
