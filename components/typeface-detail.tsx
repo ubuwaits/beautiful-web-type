@@ -225,7 +225,16 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
         {typeface.bodyHtml ? (
           <TrustedHtml
             id="features"
-            className="feature-list scroll-mt-32 mb-16 space-y-12 min-[721px]:mb-24 min-[721px]:space-y-16
+            className="feature-list scroll-mt-32 mb-16 space-y-6 min-[721px]:mb-24 min-[721px]:space-y-8
+              [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-300
+              [&>.type-detail-table:first-child]:[border-top-style:solid]
+              [&>.type-detail-table:first-child]:pt-6 min-[721px]:[&>.type-detail-table:first-child]:pt-8
+              [&>.type-detail-table:last-child]:border-b-2 [&>.type-detail-table:last-child]:border-b-neutral-300
+              [&>.type-detail-table:last-child]:[border-bottom-style:solid]
+              [&>.type-detail-table:last-child]:pb-6 min-[721px]:[&>.type-detail-table:last-child]:pb-8
+              [&>.type-detail-table+.type-detail-table]:border-t [&>.type-detail-table+.type-detail-table]:border-t-neutral-200
+              [&>.type-detail-table+.type-detail-table]:[border-top-style:solid]
+              [&>.type-detail-table+.type-detail-table]:pt-6 min-[721px]:[&>.type-detail-table+.type-detail-table]:pt-8
               [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start
               min-[721px]:[&>.type-detail-table]:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]
               [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col!
@@ -234,8 +243,14 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               [&>.type-detail-table>.meta]:shadow-none! [&>.type-detail-table>.meta]:wrap-anywhere
               [&>.type-detail-table>.examples]:min-w-0 [&>.type-detail-table>.examples]:justify-start!
               [&>.type-detail-table>.examples]:flex-row! [&>.type-detail-table>.examples]:flex-wrap!
-              [&>.type-detail-table>.examples]:items-center! [&>.type-detail-table>.examples]:content-start!
-              [&>.type-detail-table>.examples>div]:max-w-full"
+              [&>.type-detail-table>.examples]:items-start! [&>.type-detail-table>.examples]:content-start!
+              [&>.type-detail-table>.examples>div]:max-w-full
+              [&>.type-detail-table>.meta>.name]:[text-box-trim:trim-start] [&>.type-detail-table>.meta>.name]:[text-box-edge:cap_alphabetic]
+              [&>.type-detail-table>.examples>div:has(>span)]:grid [&>.type-detail-table>.examples>div:has(>span)]:grid-cols-[max-content_max-content]
+              [&>.type-detail-table>.examples>div:has(>span)]:items-start [&>.type-detail-table>.examples>div:has(>span)]:gap-x-1
+              [&>.type-detail-table>.examples>div:has(>span)>p]:col-span-full
+              [&>.type-detail-table>.examples>div>span]:[text-box-trim:trim-start] [&>.type-detail-table>.examples>div>span]:[text-box-edge:cap_alphabetic]
+              [&>.type-detail-table>.examples_h1]:[text-box-trim:trim-start] [&>.type-detail-table>.examples_h1]:[text-box-edge:cap_alphabetic]"
             html={typeface.bodyHtml}
           />
         ) : null}
