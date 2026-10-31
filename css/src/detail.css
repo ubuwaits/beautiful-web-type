@@ -58,18 +58,6 @@
   font-weight: 400;
 }
 
-.examples.typeface-comparison h1 {
-  font-size: var(--ms7);
-  font-weight: 400;
-  line-height: 3.5rem;
-}
-@media screen and (max-width: 720px) {
-  .examples.typeface-comparison h1 {
-    font-size: var(--ms3);
-    line-height: 2.5rem;
-  }
-}
-
 .character-label,
 .code {
   color: #a7a7a7;
@@ -86,12 +74,10 @@
   margin-top: 0;
 }
 
-.grid-comparisons h3,
 .grid-pairings h3 {
   font: italic 400 var(--ms5)/1.2 var(--alegreya-sans);
 }
 @media screen and (max-width: 720px) {
-  .grid-comparisons h3,
   .grid-pairings h3 {
     font-size: var(--ms3);
   }

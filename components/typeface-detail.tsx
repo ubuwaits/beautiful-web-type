@@ -2,14 +2,12 @@ import Link from "next/link";
 
 import { FittedLine, FittedLines } from "@/components/fitted-lines";
 import { GlyphInspector } from "@/components/glyph-inspector";
-import { ComparisonSync } from "@/components/comparison-sync";
 import { Masonry } from "@/components/masonry";
 import { PairingCard } from "@/components/pairing-card";
 import { TypefaceWeights } from "@/components/typeface-weights";
 import { TypefaceNavigation } from "@/components/typeface-navigation";
 import { FittedSpecimenText } from "@/components/fitted-specimen-text";
 import { TrustedHtml } from "@/components/trusted-html";
-import { TypefaceComparison } from "@/components/typeface-comparison";
 import type { Pairing, TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
 import { getTypefacePath } from "@/lib/routes";
@@ -91,7 +89,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
     { id: "paragraphs", label: "Paragraphs" },
     ...(typeface.bodyHtml ? [{ id: "features", label: "Features" }] : []),
     { id: "glyphs", label: "Glyphs" },
-    ...(typeface.comparisonFaces?.length ? [{ id: "comparisons", label: "Compare" }] : []),
     ...(pairings.length ? [{ id: "pairings", label: "Pairings" }] : [])
   ];
 
@@ -241,20 +238,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>
-
-      {typeface.comparisonFaces?.length ? (
-        <div className="layout-grid grid-comparisons mb-(--section-gap) scroll-mt-32" id="comparisons">
-          <ComparisonSync />
-          <h3 className="col-span-12">
-            {typeface.name} compared with other typefaces
-          </h3>
-          <TypefaceComparison
-            comparisonFaces={typeface.comparisonFaces}
-            text={text.words[5]}
-            typeface={typeface}
-          />
-        </div>
-      ) : null}
 
       {pairings.length ? (
         <div className="layout-grid grid-pairings mb-(--section-gap) scroll-mt-32" id="pairings">

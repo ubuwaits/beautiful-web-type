@@ -1,17 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-test("keeps comparison text in sync on detail pages", async ({ page }) => {
-  await page.goto("/inter/");
-
-  const firstComparison = page.locator("#comparisons h1").first();
-  await firstComparison.evaluate((node) => {
-    (node as HTMLElement).innerText = "synced specimen";
-    node.dispatchEvent(new Event("input", { bubbles: true }));
-  });
-
-  await expect(page.locator("#comparisons h1").nth(1)).toHaveText("synced specimen");
-});
-
 test("opens the mobile navigation overlay", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
@@ -58,21 +46,22 @@ test("loads every glyph inline and preserves the selected glyph in the URL", asy
   await expect(page.locator("#glyph-detail-canvas")).toHaveAttribute("aria-label", "Preview of glyph 12");
 });
 
-test("places glyphs after OpenType features and before comparisons", async ({ page }) => {
+test("places glyphs after OpenType features at the end of specimens", async ({ page }) => {
   await page.goto("/alegreya/");
   const positions = await page.evaluate(() => {
     const glyphs = document.getElementById("glyphs")!;
     const features = glyphs.previousElementSibling!;
-    const comparisons = glyphs.parentElement!.nextElementSibling!;
     return {
       afterFeatures: features.querySelector(".type-detail-table") !== null,
-      beforeComparisons: comparisons.id === "comparisons",
+      lastSpecimen: glyphs.nextElementSibling === null,
       featuresBottom: features.getBoundingClientRect().bottom,
       glyphTop: glyphs.getBoundingClientRect().top
     };
   });
   expect(positions.afterFeatures).toBe(true);
-  expect(positions.beforeComparisons).toBe(true);
+  expect(positions.lastSpecimen).toBe(true);
+  await expect(page.locator("#comparisons")).toHaveCount(0);
+  await expect(page.getByRole("navigation", { name: "On this page" }).getByRole("link", { name: "Compare", exact: true })).toHaveCount(0);
   expect(positions.glyphTop).toBeGreaterThanOrEqual(positions.featuresBottom);
 });
 
