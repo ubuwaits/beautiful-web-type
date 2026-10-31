@@ -14,7 +14,7 @@ function formatCssCode(unicode: number): string {
   return `content: '\\${unicode.toString(16).toUpperCase().padStart(4, "0")}';`;
 }
 
-function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, showBaseline = false) {
+function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showBaseline = false) {
   const ratio = window.devicePixelRatio || 1;
   canvas.width = Math.round(width * ratio);
   canvas.height = Math.round(height * ratio);
@@ -29,10 +29,14 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
   const baseline = (height - maxHeight * scale) / 2 + head.yMax * scale;
   const x = (width - glyph.advanceWidth * scale) / 2;
   if (showBaseline) {
-    context.fillStyle = "#F9C4C4";
+    context.fillStyle = ink;
+    context.globalAlpha = 0.25;
     context.fillRect(16, baseline, Math.max(0, width - 32), 1);
+    context.globalAlpha = 1;
   }
-  glyph.draw(context, x, baseline, scale * font.unitsPerEm);
+  const path = glyph.getPath(x, baseline, scale * font.unitsPerEm);
+  path.fill = ink;
+  path.draw(context);
 }
 
 function initialGlyphIndex(font: Font) {
@@ -91,12 +95,17 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     if (!font || !selectedGlyph || !canvas || !parent) return;
     const draw = () => {
       const width = parent.clientWidth;
-      drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, true);
+      drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, getComputedStyle(canvas).color, true);
     };
     const observer = new ResizeObserver(draw);
     observer.observe(parent);
+    const themeObserver = new MutationObserver(draw);
+    themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
     draw();
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      themeObserver.disconnect();
+    };
   }, [font, selectedGlyph]);
 
   useEffect(() => {
@@ -106,7 +115,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     for (let index = 0; index < font.numGlyphs; index++) {
       const button = document.createElement("button");
       button.type = "button";
-      button.className = "glyph-container relative aspect-square min-w-0 cursor-pointer border-0 bg-white p-0 hover:bg-neutral-100 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-(--red) data-[selected=true]:bg-neutral-200";
+      button.className = "glyph-container relative aspect-square min-w-0 cursor-pointer border-0 bg-white dark:bg-neutral-950 text-neutral-950 dark:text-neutral-100 p-0 hover:bg-neutral-100 dark:hover:bg-neutral-900 focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-(--red) data-[selected=true]:bg-neutral-200 dark:data-[selected=true]:bg-neutral-800";
       button.dataset.glyphIndex = String(index);
       button.setAttribute("aria-label", `Select glyph ${index}`);
       button.setAttribute("aria-pressed", "false");
@@ -123,7 +132,8 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     // All cells share a width. Measure once per resize, before any canvas writes;
     // reading clientWidth for each cell forces a layout after every preceding draw.
     let cellWidth = (grid.firstElementChild as HTMLElement).clientWidth;
-    let drawKey = `${cellWidth}:${window.devicePixelRatio}`;
+    let ink = getComputedStyle(grid).color;
+    let drawKey = `${cellWidth}:${window.devicePixelRatio}:${ink}`;
     const nearby = new Set<HTMLElement>();
     const drawCell = (button: HTMLElement) => {
       const width = cellWidth;
@@ -133,7 +143,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       const canvas = button.querySelector("canvas") ?? document.createElement("canvas");
       canvas.className = "pointer-events-none block h-full w-full";
       canvas.setAttribute("aria-hidden", "true");
-      drawGlyph(canvas, font, glyph, width, width);
+      drawGlyph(canvas, font, glyph, width, width, ink);
       button.appendChild(canvas);
       button.dataset.drawnAt = key;
       button.setAttribute("aria-label", `Select glyph ${glyph.index}${glyph.name ? `: ${glyph.name}` : ""}`);
@@ -152,10 +162,16 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     Array.from(grid.children).forEach((button) => visibilityObserver.observe(button));
     const resizeObserver = new ResizeObserver(() => {
       cellWidth = (grid.firstElementChild as HTMLElement).clientWidth;
-      drawKey = `${cellWidth}:${window.devicePixelRatio}`;
+      drawKey = `${cellWidth}:${window.devicePixelRatio}:${ink}`;
       nearby.forEach(drawCell);
     });
     resizeObserver.observe(grid);
+    const themeObserver = new MutationObserver(() => {
+      ink = getComputedStyle(grid).color;
+      drawKey = `${cellWidth}:${window.devicePixelRatio}:${ink}`;
+      nearby.forEach(drawCell);
+    });
+    themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
 
     const select = (event: Event) => {
       const button = (event.target as HTMLElement).closest<HTMLElement>("[data-glyph-index]");
@@ -176,6 +192,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       cancelAnimationFrame(anchorFrame);
       visibilityObserver.disconnect();
       resizeObserver.disconnect();
+      themeObserver.disconnect();
       grid.removeEventListener("click", select);
       grid.removeEventListener("focusin", select);
       grid.replaceChildren();
@@ -201,7 +218,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       <noscript><p className="mb-4">Enable JavaScript to explore the glyphs.</p></noscript>
       {error ? <p role="alert">The font could not be loaded. Reload the page to try again.</p> : null}
       <div className="grid grid-cols-1 items-start gap-(--gutter) min-[721px]:grid-cols-12">
-        <div className="sticky top-32 z-10 grid max-h-[calc(100dvh-10rem)] grid-cols-2 items-start overflow-y-auto bg-white min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
+        <div className="sticky top-32 z-10 grid max-h-[calc(100dvh-10rem)] grid-cols-2 items-start overflow-y-auto bg-white dark:bg-neutral-950 min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
           <div className="min-w-0">
             <canvas className="block h-auto w-full" id="glyph-detail-canvas" ref={detailCanvasRef} aria-label={selectedGlyph ? `Preview of glyph ${selectedGlyph.index}` : "Selected glyph preview"} />
           </div>
@@ -213,7 +230,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
           </dl>
         </div>
         <div className="min-w-0 min-[721px]:col-span-9" id="glyph-grid-container" aria-busy={!font && !error}>
-          <div className="grid grid-cols-6 bg-white min-[721px]:grid-cols-10 min-[1105px]:grid-cols-16" id="glyph-grid" ref={glyphGridRef} data-glyph-count={font?.numGlyphs} />
+          <div className="grid grid-cols-6 bg-white dark:bg-neutral-950 min-[721px]:grid-cols-10 min-[1105px]:grid-cols-16" id="glyph-grid" ref={glyphGridRef} data-glyph-count={font?.numGlyphs} />
         </div>
       </div>
     </section>

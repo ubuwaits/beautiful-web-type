@@ -46,7 +46,7 @@ export function TypefaceWeights({ weights, italic }: { weights: Weight[]; italic
           <div className="flex w-max items-baseline gap-x-[0.3em] whitespace-nowrap" data-weight-row="" key={weight.weight}>
             <p className={`w${weight.weight}`}>{weight.name}</p>
             {italic ? <p className={`w${weight.weight}`}><em>Italic</em></p> : null}
-            <p className="text-[0.55em] font-normal text-neutral-500">{weight.weight}</p>
+            <p className="text-[0.55em] font-normal text-neutral-500 dark:text-neutral-400">{weight.weight}</p>
           </div>
         ))}
       </div>

@@ -4,12 +4,11 @@ export type Glyph = {
   unicodes: number[];
   name?: string;
   advanceWidth: number;
-  draw: (
-    context: CanvasRenderingContext2D,
+  getPath: (
     x: number,
     y: number,
     fontSize: number
-  ) => void;
+  ) => { fill: string; draw: (context: CanvasRenderingContext2D) => void };
 };
 
 export type Font = {

@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/site-header";
 import { getAllTypefaces } from "@/lib/content";
+import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import {
   DEFAULT_SITE_DESCRIPTION,
   SITE_NAME,
@@ -32,8 +33,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <link
           href="/feed.xml"
           rel="alternate"
@@ -62,7 +64,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="font/woff2"
         />
       </head>
-      <body className="min-h-screen bg-white" spellCheck={false}>
+      <body className="min-h-screen bg-white text-neutral-950 dark:bg-neutral-950 dark:text-neutral-100" spellCheck={false}>
         <SiteHeader typefaces={getAllTypefaces().map(({ slug, name, creator, categorySlug }) => ({
           slug, name, creator: creator.name, categorySlug
         }))} />

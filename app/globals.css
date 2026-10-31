@@ -2,13 +2,15 @@
 @import "tailwindcss/theme.css";
 @import "tailwindcss/utilities.css" source(none);
 
+@custom-variant dark (&:where(html.dark, html.dark *));
+
 @source "./";
 @source "../components";
 @source "../content";
 @source "../lib";
 
 .fade {
-  @apply text-neutral-300;
+  @apply text-neutral-300 dark:text-neutral-600;
 }
 
 .character-label,
@@ -17,11 +19,28 @@
   @apply text-neutral-400;
 }
 
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+html.dark .meta.dark {
+  color: var(--color-neutral-100);
+}
+
 body .standardized-sample {
   --sample-fit-width: 0.5;
   --sample-ink: var(--color-neutral-950);
   --sample-surface: var(--color-white);
   background: var(--sample-surface);
+}
+
+html.dark body .standardized-sample {
+  --sample-ink: var(--color-neutral-100);
+  --sample-surface: var(--color-neutral-950);
 }
 
 body .standardized-sample[data-variant="grid"] > a {

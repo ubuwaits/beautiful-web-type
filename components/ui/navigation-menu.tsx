@@ -14,7 +14,7 @@ export function NavigationMenu({ className, children, ...props }: Primitive.Root
           collisionPadding={16}
           className="isolate z-[80] h-(--positioner-height) w-(--positioner-width) max-w-(--available-width)"
         >
-          <Primitive.Popup className="relative h-(--popup-height) w-(--popup-width) max-w-(--available-width) origin-(--transform-origin) rounded-lg bg-white text-black shadow-xl ring-1 ring-black/10 transition-[opacity,transform] duration-150 outline-none data-starting-style:scale-95 data-starting-style:opacity-0 data-ending-style:scale-95 data-ending-style:opacity-0 motion-reduce:transition-none">
+          <Primitive.Popup className="relative h-(--popup-height) w-(--popup-width) max-w-(--available-width) origin-(--transform-origin) rounded-lg bg-white text-neutral-950 shadow-xl ring-1 ring-black/10 dark:bg-neutral-900 dark:text-neutral-100 dark:ring-white/10 transition-[opacity,transform] duration-150 outline-none data-starting-style:scale-95 data-starting-style:opacity-0 data-ending-style:scale-95 data-ending-style:opacity-0 motion-reduce:transition-none">
             <Primitive.Viewport className="relative size-full overflow-hidden" />
           </Primitive.Popup>
         </Primitive.Positioner>
@@ -31,7 +31,7 @@ export function NavigationMenuItem(props: Primitive.Item.Props) {
   return <Primitive.Item data-slot="navigation-menu-item" {...props} />;
 }
 
-export const navigationMenuTriggerStyle = "inline-flex cursor-pointer items-center justify-center gap-1.5 rounded-md border-0 bg-transparent px-4 py-3 text-base leading-5 font-bold uppercase hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black data-popup-open:bg-neutral-100";
+export const navigationMenuTriggerStyle = "inline-flex cursor-pointer items-center justify-center gap-1.5 rounded-md border-0 bg-transparent px-4 py-3 text-base leading-5 font-bold uppercase hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:data-popup-open:bg-neutral-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-950 dark:focus-visible:outline-neutral-100 data-popup-open:bg-neutral-100";
 
 export function NavigationMenuTrigger({ className, children, ...props }: Primitive.Trigger.Props) {
   return (
@@ -51,5 +51,5 @@ export function NavigationMenuContent({ className, ...props }: Primitive.Content
 }
 
 export function NavigationMenuLink({ className, ...props }: Primitive.Link.Props) {
-  return <Primitive.Link data-slot="navigation-menu-link" className={clsx("rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black", className)} {...props} />;
+  return <Primitive.Link data-slot="navigation-menu-link" className={clsx("rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-950 dark:focus-visible:outline-neutral-100", className)} {...props} />;
 }

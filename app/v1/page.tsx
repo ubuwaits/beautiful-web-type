@@ -57,6 +57,11 @@ export default function LegacyV1Page() {
       />
       <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500|Vidaloka" rel="stylesheet" />
       <style>{`
+        .legacy-v1 {
+          color: #000;
+          color-scheme: light;
+        }
+
         .legacy-v1,
         .legacy-v1 *,
         .legacy-v1 *::before,

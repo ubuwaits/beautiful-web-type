@@ -61,10 +61,10 @@ export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }:
     }
   }, [active]);
 
-  const actionClass = "shrink-0 rounded-full bg-neutral-900 px-4 py-1.5 text-sm leading-5 font-semibold text-white hover:bg-neutral-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900";
+  const actionClass = "shrink-0 rounded-full bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 px-4 py-1.5 text-sm leading-5 font-semibold text-white hover:bg-neutral-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:focus-visible:outline-neutral-100";
 
   return (
-    <nav aria-label="On this page" className="fixed inset-x-0 top-16 z-30 h-12 bg-white/95 font-(family-name:--ui-face) backdrop-blur-[2px]">
+    <nav aria-label="On this page" className="fixed inset-x-0 top-16 z-30 h-12 bg-white/95 dark:bg-neutral-950/95 font-(family-name:--ui-face) backdrop-blur-[2px]">
       <div className="relative h-full overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" ref={linksRef}>
         <div className="mx-auto flex w-max items-center gap-12 px-4">
           <div className="flex items-center gap-5">
@@ -73,7 +73,7 @@ export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }:
                 key={id}
                 href={`#${id}`}
                 aria-current={active === id ? "location" : undefined}
-                className={clsx("shrink-0 py-3 text-sm leading-5 font-semibold focus-visible:outline-2 focus-visible:outline-offset-[-2px]", active === id ? "text-(--red)" : "text-neutral-500 hover:text-black")}
+                className={clsx("shrink-0 py-3 text-sm leading-5 font-semibold focus-visible:outline-2 focus-visible:outline-offset-[-2px]", active === id ? "text-(--red)" : "text-neutral-500 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white")}
               >
                 {label}
               </a>

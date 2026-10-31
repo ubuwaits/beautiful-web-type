@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 import {
   NavigationMenu,
@@ -66,9 +67,9 @@ function MainNavigation({ typefaces, mobile = false, onNavigate }: {
               <ul className={clsx("m-0 grid list-none grid-cols-1 gap-1 p-0", category.slug === "sans-serif" ? "min-[721px]:grid-cols-3" : "min-[721px]:grid-cols-2")}>
                 {typefaces.filter((typeface) => typeface.categorySlug === category.slug).map((typeface) => (
                   <li key={typeface.slug}>
-                    <NavigationMenuLink active={pathname === getTypefacePath(typeface.slug)} className="flex flex-col gap-0.5 px-2.5 py-2 hover:bg-neutral-100 data-active:bg-neutral-100" render={<Link href={getTypefacePath(typeface.slug)} />} onClick={navigate}>
+                    <NavigationMenuLink active={pathname === getTypefacePath(typeface.slug)} className="flex flex-col gap-0.5 px-2.5 py-2 hover:bg-neutral-100 data-active:bg-neutral-100 dark:hover:bg-neutral-800 dark:data-active:bg-neutral-800" render={<Link href={getTypefacePath(typeface.slug)} />} onClick={navigate}>
                       <span className="text-lg leading-6 font-normal">{typeface.name}</span>
-                      <span className="text-sm leading-5 text-neutral-500">{typeface.creator}</span>
+                      <span className="text-sm leading-5 text-neutral-500 dark:text-neutral-400">{typeface.creator}</span>
                     </NavigationMenuLink>
                   </li>
                 ))}
@@ -95,27 +96,28 @@ export function SiteHeader({ typefaces }: { typefaces: NavigationTypeface[] }) {
   if (pathname.startsWith("/v1")) return null;
 
   return (
-    <header className="site-header fixed inset-x-0 top-0 z-40 flex h-16 items-center bg-white/95 px-4 backdrop-blur-[2px] min-[1105px]:px-6">
-      <Link href="/" className="mr-auto shrink-0 font-(family-name:--alegreya-sans) text-(length:--ms1) leading-none font-black italic uppercase hover:text-(--red) focus-visible:outline-2 focus-visible:outline-offset-4">
+    <header className="site-header fixed inset-x-0 top-0 z-40 flex h-16 items-center bg-white/95 px-4 backdrop-blur-[2px] dark:bg-neutral-950/95 min-[1105px]:px-6">
+      <Link href="/" className="mr-auto shrink-0 font-(family-name:--alegreya-sans) text-(length:--ms1) leading-none font-black italic uppercase hover:text-(--red) focus-visible:outline-2 focus-visible:outline-offset-4 max-[360px]:text-base">
         Beautiful Web Type
       </Link>
       <div className="hidden min-[1105px]:absolute min-[1105px]:left-1/2 min-[1105px]:block min-[1105px]:-translate-x-1/2">
         <MainNavigation typefaces={typefaces} />
       </div>
       <Dialog.Root open={menuOpen} onOpenChange={setMenuOpen}>
-        <Dialog.Trigger className="menu-link flex size-12 cursor-pointer items-center justify-center rounded-md border-0 bg-transparent min-[1105px]:hidden" aria-label="Toggle navigation menu">
+        <Dialog.Trigger className="menu-link flex size-12 shrink-0 cursor-pointer items-center justify-center rounded-md border-0 bg-transparent text-inherit min-[1105px]:hidden" aria-label="Toggle navigation menu">
           <MenuIcon />
         </Dialog.Trigger>
         <Dialog.Portal>
-          <Dialog.Popup className="menu-overlay open fixed inset-0 z-50 flex h-dvh w-screen items-center justify-center bg-white p-4 outline-none">
+          <Dialog.Popup className="menu-overlay open fixed inset-0 z-50 flex h-dvh w-screen items-center justify-center bg-white p-4 outline-none dark:bg-neutral-950">
             <Dialog.Title className="sr-only">Navigation</Dialog.Title>
-            <Dialog.Close className="absolute top-2 right-4 flex size-12 cursor-pointer items-center justify-center rounded-md border-0 bg-transparent" aria-label="Close navigation menu">
+            <Dialog.Close className="absolute top-2 right-4 flex size-12 cursor-pointer items-center justify-center rounded-md border-0 bg-transparent text-inherit" aria-label="Close navigation menu">
               <MenuIcon close />
             </Dialog.Close>
             <MainNavigation typefaces={typefaces} mobile onNavigate={() => setMenuOpen(false)} />
           </Dialog.Popup>
         </Dialog.Portal>
       </Dialog.Root>
+      <ThemeSwitcher />
     </header>
   );
 }
