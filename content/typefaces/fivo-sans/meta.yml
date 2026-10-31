@@ -25,7 +25,12 @@ projectUrl: https://www.behance.net/gallery/53653425/Fivo-Sans-Free-Font-Family
 creator:
   name: Alex Slobzheninov
   url: https://www.behance.net/slobzheninov
-description: Fivo Sans is a neo-grotesque face inspired by the International Typographic Style.
+description: |-
+  Fivo Sans enters the typographic landscape as a conscious reclamation of the mid-century International Typographic Style, pursuing that austere, disciplined ideal of objective communication. Conceived by designer Alexander Slobzheninov, the family sets out to be, in its author’s own pragmatic phrase, "Swiss enough"—a deliberate embrace of the neo-grotesque heritage forged in Basel and Zurich by the mid-century progenitors of <em>Univers</em> and <em>Neue Haas Grotesk</em>. Yet where those twentieth-century archetypes were cast within the physical strictures of hot metal and mechanical photo-typesetting, Fivo Sans translates the gospel of rational neutrality into the fluid grammar of contemporary digital design, offering an unadorned, egalitarian instrument freely accessible within the open commons.
+
+  Anatomically, the face is governed by the cool restraint of the caliper rather than the kinetic sweep of the broad pen. Its stroke modulation is held to a near-monolinear uniformity, while its apertures curve inward with tight, disciplined composure, yielding compact, self-contained letterforms. Terminals are sheared flush against the horizontal and vertical axes, establishing an orderly, rectilinear rhythm that allows words to assemble like precision-milled tiles. Across reading sizes, its generous x-height and hospitable interior counters ensure that the line does not clog into darkness; instead, it casts an even, pale-grey texture that refuses to editorialize or impose its own emotional weather upon the author’s text.
+
+  Arranged across seven balanced weights—from the gossamer draughtsmanship of Thin to the authoritative mass of Black, each attended by an analytical oblique—the family functions as an adaptable workhorse for poster, page, and interface alike. While Slobzheninov would later indulge in sculptural theatricality with <em>Fivo Sans Modern</em> and its cavernous ink traps, the original Fivo Sans remains devoted to quiet architectural utility. In a digital commons frequently crowded with eccentric display faces, it stands as a testament to the enduring virtue of mid-century reticence: a clean, impartial medium whose highest ambition is to step aside and let the message speak for itself.
 familyFaces:
   - Fivo Sans Modern
 sampleText: 'Bluthochzeit'
