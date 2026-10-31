@@ -1,0 +1,15 @@
+:root {
+  --strichpunkt-sans: 'Strichpunkt Sans', sans-serif;
+}
+
+.strichpunkt-sans {
+  font-family: var(--strichpunkt-sans) !important;
+}
+
+@font-face {
+  font-family: "Strichpunkt Sans";
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 100% 200%;
+  src: url("/assets/fonts/strichpunkt-sans/StrichpunktSans.woff2") format("woff2");
+}

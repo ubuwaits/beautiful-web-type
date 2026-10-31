@@ -6399,6 +6399,32 @@
       }
     ]
   },
+  "strichpunkt-sans": {
+    "family": "Strichpunkt Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 100,
+            "max": 200,
+            "default": 100
+          }
+        ],
+        "stylisticSets": []
+      }
+    ]
+  },
   "tasa-orbiter": {
     "family": "TASA Orbiter",
     "faces": [

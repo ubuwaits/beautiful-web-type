@@ -8,6 +8,8 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 31 Oct 2026
 
+* **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
+
 * **Refreshed the design:** improved font cards, specimen layouts, mobile navigation, and light and dark themes.
 * **Expanded typeface descriptions** with background, design details, and suggested uses.
 * **Improved the glyph viewer** with a complete inline grid and a persistent selected-glyph preview.
@@ -79,6 +81,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)
 * [Space Grotesk](https://beautifulwebtype.com/space-grotesk/)
 * [Space Mono](https://beautifulwebtype.com/space-mono/)
+* [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)
 * [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/)
 * [Vollkorn](https://beautifulwebtype.com/vollkorn/)
 * [Work Sans](https://beautifulwebtype.com/work-sans/)

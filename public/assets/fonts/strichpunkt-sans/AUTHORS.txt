@@ -1,0 +1,8 @@
+# This is the official list of project authors for copyright purposes. The first name in the list (if there are several authors), will appear as "Principal design" in the "about" section of the font specimen on Google Fonts.
+# This file is distinct from the CONTRIBUTORS.txt file.
+# See the latter for an explanation.
+#
+# Names should be added to this file as:
+# Name or Organization <email address>
+
+René Bieder <contact@renebieder.com>

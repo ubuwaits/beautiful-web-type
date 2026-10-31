@@ -2,6 +2,8 @@
 
 ## 31 Oct 2026
 
+* **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
+
 Site refresh, 30–31 October:
 
 * **Refreshed the design:** improved font cards, specimen layouts, mobile navigation, and light and dark themes.

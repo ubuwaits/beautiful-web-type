@@ -37,6 +37,7 @@ import sourceSansPro from "./source-sans-pro/data";
 import sourceSerifPro from "./source-serif-pro/data";
 import spaceGrotesk from "./space-grotesk/data";
 import spaceMono from "./space-mono/data";
+import strichpunktSans from "./strichpunkt-sans/data";
 import tasaOrbiter from "./tasa-orbiter/data";
 import vollkorn from "./vollkorn/data";
 import workSans from "./work-sans/data";
@@ -80,6 +81,7 @@ export const typefaceData: TypefaceData[] = [
   sourceSerifPro,
   spaceGrotesk,
   spaceMono,
+  strichpunktSans,
   tasaOrbiter,
   vollkorn,
   workSans,
