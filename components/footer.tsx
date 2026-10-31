@@ -15,7 +15,7 @@ export function SiteFooter() {
         <h3>
           <Link href="/sans-serif/">Sans-Serif Typefaces</Link>
         </h3>
-        <ol className="columns-2 gap-x-6 min-[721px]:gap-x-(--gutter) [&>li]:break-inside-avoid">
+        <ol className="columns-1 gap-x-6 min-[721px]:columns-2 min-[721px]:gap-x-(--gutter) [&>li]:break-inside-avoid">
           {sansSerifTypefaces.map((typeface) => (
             <li key={typeface.slug}>
               <Link href={getTypefacePath(typeface.slug)}>{typeface.name}</Link>
@@ -24,7 +24,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
+      <div className="footer-type-list col-span-12 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>
           <Link href="/serif/">Serif Typefaces</Link>
         </h3>
@@ -37,7 +37,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
+      <div className="footer-type-list col-span-12 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>
           <Link href="/display/">Display Typefaces</Link>
         </h3>
@@ -50,7 +50,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
+      <div className="footer-type-list col-span-12 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>
           <Link href="/monospaced/">Monospaced Typefaces</Link>
         </h3>
@@ -63,7 +63,7 @@ export function SiteFooter() {
         </ol>
       </div>
 
-      <div className="footer-type-list col-span-6 min-[721px]:col-span-4 min-[1105px]:col-span-2">
+      <div className="footer-type-list col-span-12 min-[721px]:col-span-4 min-[1105px]:col-span-2">
         <h3>Additional Info</h3>
         <ol>
           <li>
