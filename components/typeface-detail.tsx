@@ -111,7 +111,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           <div className="col-span-12 grid min-w-0 items-start gap-12 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:col-span-6 min-[1105px]:col-start-4 min-[1105px]:grid-cols-2">
             <dl className="typeface-metadata m-0 min-w-0 font-(family-name:--ui-face)
               [&>div]:grid [&>div]:grid-cols-2 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
-              [&>div+div]:border-t [&>div+div]:border-t-neutral-200 [&>div+div]:[border-top-style:solid]
+              [&>div+div]:border-t [&>div+div]:border-t-[rgba(215,215,215,0.4)] [&>div+div]:[border-top-style:solid]
               [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
               [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
               [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
@@ -213,7 +213,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               [&>.type-detail-table:last-child]:border-b-2 [&>.type-detail-table:last-child]:border-b-neutral-300
               [&>.type-detail-table:last-child]:[border-bottom-style:solid]
               [&>.type-detail-table:last-child]:pb-6 min-[721px]:[&>.type-detail-table:last-child]:pb-8
-              [&>.type-detail-table+.type-detail-table]:border-t [&>.type-detail-table+.type-detail-table]:border-t-neutral-200
+              [&>.type-detail-table+.type-detail-table]:border-t [&>.type-detail-table+.type-detail-table]:border-t-[rgba(215,215,215,0.4)]
               [&>.type-detail-table+.type-detail-table]:[border-top-style:solid]
               [&>.type-detail-table+.type-detail-table]:pt-6 min-[721px]:[&>.type-detail-table+.type-detail-table]:pt-8
               [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start
