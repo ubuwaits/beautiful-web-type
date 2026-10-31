@@ -103,7 +103,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <div className="type-weight-list col-span-12 grid min-w-0 grid-cols-1 gap-x-(--gutter) min-[721px]:grid-cols-2 min-[1105px]:col-span-8 min-[1105px]:col-start-3">
+          <div className="type-weight-list col-span-12 grid w-full max-w-3xl min-w-0 grid-cols-1 justify-self-center gap-x-(--gutter) min-[721px]:grid-cols-2 min-[1105px]:col-span-6 min-[1105px]:col-start-4">
             {weightColumns.map((weights, index) => (
               <div className={`type-styles min-w-0 [&>div]:flex-wrap ${weightColumns.length === 1 ? "col-span-full justify-self-center" : ""}`} key={index}>
                 {weights.map((weight) => (
