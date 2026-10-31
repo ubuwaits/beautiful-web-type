@@ -9,10 +9,9 @@ type TypefaceNavigationProps = {
   embedUrl?: string;
   downloadUrl: string;
   release: string;
-  releaseDate: string;
 };
 
-export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release, releaseDate }: TypefaceNavigationProps) {
+export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release }: TypefaceNavigationProps) {
   const [active, setActive] = useState(sections[0].id);
   const linksRef = useRef<HTMLDivElement>(null);
 
@@ -80,7 +79,6 @@ export function TypefaceNavigation({ sections, embedUrl, downloadUrl, release, r
               </a>
             ))}
           </div>
-          <span className="shrink-0 text-xs text-neutral-500">Updated {releaseDate}</span>
           <div className="flex shrink-0 items-center gap-2">
             {embedUrl ? <a className={actionClass} href={embedUrl} target="_blank" rel="noopener">Get on Google Fonts <span aria-hidden="true">↗</span></a> : null}
             <a className={actionClass} href={downloadUrl} target="_blank" rel="noopener" title={`Download ${release}`}>Download <span aria-hidden="true">↗</span></a>

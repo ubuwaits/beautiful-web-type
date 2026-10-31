@@ -77,6 +77,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
     { label: "Designed by", value: <a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
     { label: "No. of styles", value: typeface.styles },
+    { label: "Updated", value: typeface.latestRelease.date },
     ...(typeface.familyFaces?.length ? [{
       label: "Other faces in family",
       value: <span className="flex flex-wrap justify-end gap-x-3">{typeface.familyFaces.map((familyFace) => (
@@ -104,7 +105,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
         embedUrl={typeface.gFontsUrl}
         downloadUrl={typeface.projectUrl}
         release={`${typeface.latestRelease.version} (${typeface.latestRelease.date})`}
-        releaseDate={typeface.latestRelease.date}
       />
       <div className={typeface.slug}>
         <div className="layout-grid mb-16 scroll-mt-32 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16" id="overview">
@@ -120,11 +120,11 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
             [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
             [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
-            {[metadata.slice(0, 2), metadata.slice(2)].map((row, index) => (
+            {Array.from({ length: Math.ceil(metadata.length / 2) }, (_, index) => metadata.slice(index * 2, index * 2 + 2)).map((row, index) => (
               <div key={index}>
                 {row.flatMap(({ label, value }) => [
                   <dt key={`${label}-label`}>{label}</dt>,
-                  <dd key={`${label}-value`}>{value}</dd>
+                  <dd className={row.length === 1 ? "min-[721px]:col-span-3" : undefined} key={`${label}-value`}>{value}</dd>
                 ])}
               </div>
             ))}
