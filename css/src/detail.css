@@ -1,28 +1,3 @@
-.type-styles > div {
-  align-items: baseline;
-  display: flex;
-}
-.type-styles p {
-  font-size: var(--ms5);
-  line-height: 3rem;
-  margin-right: 0.75rem;
-}
-@media screen and (max-width: 720px) {
-  .type-styles > div {
-    flex-wrap: wrap;
-  }
-
-  .type-styles p {
-    font-size: var(--ms3);
-    line-height: 2.5rem;
-  }
-}
-.type-styles .weight {
-  font-size: var(--ms2);
-  color: #878787;
-  line-height: 1;
-}
-
 .type-detail-table {
   gap: 1.5rem;
   display: flex;

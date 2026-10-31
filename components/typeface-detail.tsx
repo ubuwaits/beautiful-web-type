@@ -5,6 +5,7 @@ import { GlyphInspector } from "@/components/glyph-inspector";
 import { ComparisonSync } from "@/components/comparison-sync";
 import { Masonry } from "@/components/masonry";
 import { PairingCard } from "@/components/pairing-card";
+import { TypefaceWeights } from "@/components/typeface-weights";
 import { TypefaceNavigation } from "@/components/typeface-navigation";
 import { FittedSpecimenText } from "@/components/fitted-specimen-text";
 import { TrustedHtml } from "@/components/trusted-html";
@@ -110,7 +111,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <div className="col-span-12 grid min-w-0 items-start gap-12 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:grid-cols-2">
+          <div className="col-span-12 grid min-w-0 items-start gap-12 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:col-span-6 min-[1105px]:col-start-4 min-[1105px]:grid-cols-2">
             <dl className="typeface-metadata m-0 min-w-0 font-(family-name:--ui-face)
               [&>div]:grid [&>div]:grid-cols-2 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
               [&>div+div]:border-t [&>div+div]:border-t-neutral-200 [&>div+div]:[border-top-style:solid]
@@ -125,17 +126,8 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
               ))}
             </dl>
 
-            <div className="type-weight-list type-styles min-w-0 text-left [&>div]:flex-wrap [&>div]:justify-start [&>div]:gap-x-3 [&>div>p]:mr-0!">
-              {typeface.weights.map((weight) => (
-                <div key={`${typeface.slug}-${weight.weight}`}>
-                  <p className={`w${weight.weight}`}>{weight.name}</p>
-                  {typeface.italic ? (
-                    <p className={`w${weight.weight}`}><em>Italic</em></p>
-                  ) : null}
-                  <p className="weight">{weight.weight}</p>
-                </div>
-              ))}
-            </div>
+            <TypefaceWeights weights={typeface.weights} italic={typeface.italic} />
+
           </div>
 
         </div>
