@@ -207,10 +207,10 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           <TrustedHtml
             id="features"
             className="feature-list scroll-mt-32 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
-              [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-300
+              [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-[rgba(215,215,215,0.4)]
               [&>.type-detail-table:first-child]:[border-top-style:solid]
               [&>.type-detail-table:first-child]:pt-6 min-[721px]:[&>.type-detail-table:first-child]:pt-8
-              [&>.type-detail-table:last-child]:border-b-2 [&>.type-detail-table:last-child]:border-b-neutral-300
+              [&>.type-detail-table:last-child]:border-b-2 [&>.type-detail-table:last-child]:border-b-[rgba(215,215,215,0.4)]
               [&>.type-detail-table:last-child]:[border-bottom-style:solid]
               [&>.type-detail-table:last-child]:pb-6 min-[721px]:[&>.type-detail-table:last-child]:pb-8
               [&>.type-detail-table+.type-detail-table]:border-t [&>.type-detail-table+.type-detail-table]:border-t-[rgba(215,215,215,0.4)]
