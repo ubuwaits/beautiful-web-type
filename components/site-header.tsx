@@ -51,7 +51,13 @@ function MainNavigation({ typefaces, mobile = false, onNavigate }: {
       <NavigationMenuList className={clsx("main-nav", mobile && "flex-col gap-3")}>
         {categories.map((category) => (
           <NavigationMenuItem key={category.slug} value={category.slug}>
-            <NavigationMenuTrigger className={clsx(activeSection === category.slug && "text-(--red)")}>
+            <NavigationMenuTrigger
+              nativeButton={false}
+              render={<Link href={`/${category.slug}/`} />}
+              role="link"
+              onClick={navigate}
+              className={clsx(activeSection === category.slug && "text-(--red)")}
+            >
               {category.name}
             </NavigationMenuTrigger>
             <NavigationMenuContent>
