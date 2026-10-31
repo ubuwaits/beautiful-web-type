@@ -2,55 +2,23 @@ import { readdirSync } from "node:fs";
 
 import { expect, test, type Page } from "@playwright/test";
 
-async function expectPacked(page: Page) {
-  await page.waitForFunction(() =>
-    Array.from(document.querySelectorAll<HTMLElement>("[data-masonry]")).every(
-      (node) => node.dataset.masonryReady === "true"
-    ) && document.fonts.status === "loaded"
-  );
+async function expectWithinViewport(page: Page) {
+  await page.evaluate(() => document.fonts.ready);
   // Allow font-driven ResizeObserver updates to reach the next paint.
   await page.evaluate(() => new Promise<void>((resolve) =>
     requestAnimationFrame(() => requestAnimationFrame(() => resolve()))
   ));
-  const errors = await page.locator("[data-masonry]").evaluateAll((containers) => {
-    const errors: string[] = [];
-    for (const container of containers) {
-      const bounds = container.getBoundingClientRect();
-      const gap = parseFloat(getComputedStyle(container).columnGap);
-      const columns = window.innerWidth >= 1105 ? 2 : 1;
-      const width = (bounds.width - gap * (columns - 1)) / columns;
-      const bottoms = Array.from({ length: columns }, () => 0);
-      const items = Array.from(container.children).flatMap((child) =>
-        child.classList.contains("contents") ? Array.from(child.children) : [child]
-      );
-      for (const item of items) {
-        const box = item.getBoundingClientRect();
-        const column = columns === 1 || bottoms[0] <= bottoms[1] ? 0 : 1;
-        if (Math.abs(box.x - bounds.x - column * (width + gap)) > 1 ||
-            Math.abs(box.y - bounds.y - bottoms[column]) > 1 ||
-            Math.abs(box.width - width) > 1) {
-          errors.push(`Incorrect packing: ${item.className}`);
-        }
-        bottoms[column] += box.height + gap;
-      }
-      if (Math.abs(bounds.height - Math.max(...bottoms) + (items.length ? gap : 0)) > 1) {
-        errors.push("Container does not end at the last card");
-      }
-    }
-    return errors;
-  });
-  expect(errors).toEqual([]);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
 }
 
 for (const width of [1440, 900, 390]) {
-  test(`packs all typeface specimens at ${width}px`, async ({ page }) => {
+  test(`keeps all typeface specimens within the viewport at ${width}px`, async ({ page }) => {
     test.setTimeout(180_000);
     await page.setViewportSize({ width, height: 1000 });
     for (const slug of readdirSync("content/typefaces")) {
       await test.step(slug, async () => {
         await page.goto(`/${slug}/`);
-        await expectPacked(page);
+        await expectWithinViewport(page);
       });
     }
   });
@@ -59,7 +27,7 @@ for (const width of [1440, 900, 390]) {
 test("fits edited specimens continuously as their container resizes", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/alegreya/");
-  await expectPacked(page);
+  await expectWithinViewport(page);
   const line = page.locator(".examples-words h1").first();
   const before = await line.evaluate((node) => parseFloat(getComputedStyle(node).fontSize));
   await line.evaluate((node) => {
@@ -69,7 +37,7 @@ test("fits edited specimens continuously as their container resizes", async ({ p
   await expect.poll(() => line.evaluate((node) => parseFloat(getComputedStyle(node).fontSize))).toBeLessThan(before);
   for (const width of [390, 900, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
-    await expectPacked(page);
+    await expectWithinViewport(page);
     const sizes = await line.evaluate((node) => ({
       text: node.getBoundingClientRect().width,
       container: node.parentElement!.clientWidth,
@@ -85,9 +53,9 @@ test("fits edited specimens continuously as their container resizes", async ({ p
 test("keeps other page layouts within the viewport", async ({ page }) => {
   for (const width of [1440, 900, 390]) {
     await page.setViewportSize({ width, height: 1000 });
-    for (const route of ["/", "/serif/", "/sans-serif/", "/display/", "/monospaced/", "/pairings/", "/inter/#glyphs"]) {
+    for (const route of ["/", "/serif/", "/sans-serif/", "/display/", "/monospaced/", "/inter/#glyphs"]) {
       await page.goto(route);
-      await expectPacked(page);
+      await expectWithinViewport(page);
     }
   }
 });
@@ -114,10 +82,10 @@ test("provides readable full-width specimens before JavaScript", async ({ browse
 test("keeps consistent gutters between index cards", async ({ page }) => {
   for (const width of [1440, 900, 390]) {
     await page.setViewportSize({ width, height: 1000 });
-    for (const route of ["/", "/display/", "/serif/", "/sans-serif/", "/monospaced/", "/pairings/"]) {
+    for (const route of ["/", "/display/", "/serif/", "/sans-serif/", "/monospaced/"]) {
       await test.step(`${route} at ${width}px`, async () => {
         await page.goto(route);
-        await expectPacked(page);
+        await expectWithinViewport(page);
         const spacing = await page.locator(".samples").evaluate((container) => {
           const style = getComputedStyle(container);
           const cards = Array.from(container.querySelectorAll<HTMLElement>("[data-testid='typeface-card']"));
@@ -132,7 +100,7 @@ test("keeps consistent gutters between index cards", async ({ page }) => {
         expect(spacing.display).toBe("grid");
         expect(spacing.gap).toBeGreaterThan(0);
         expect(spacing.gap).toBeCloseTo(spacing.expectedGap, 1);
-        if (route !== "/pairings/") expect(spacing.cardGaps.length).toBeGreaterThan(0);
+        expect(spacing.cardGaps.length).toBeGreaterThan(0);
         for (const gap of spacing.cardGaps) expect(gap).toBeCloseTo(spacing.gap, 1);
       });
     }

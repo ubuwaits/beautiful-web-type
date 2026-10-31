@@ -1,6 +1,6 @@
 # [Beautiful Web Type](https://beautifulwebtype.com)
 
-In October 2018 I released a completely re-thought and re-designed version of this project. The new version aims to provide a complete look at each typeface, cataloging all the available weights and styles, the full glyph set, the kerning quality, OpenType features, recommended pairings and more. I will highlight only typefaces that show a high level of quality.
+In October 2018 I released a completely re-thought and re-designed version of this project. The new version aims to provide a complete look at each typeface, cataloging all the available weights and styles, the full glyph set, the kerning quality, OpenType features, and more. I will highlight only typefaces that show a high level of quality.
 
 The original version of the site is archived here: https://beautifulwebtype.com/v1/
 
@@ -29,8 +29,6 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 22 Nov 2020
 * **Added [Fraunces](https://beautifulwebtype.com/fraunces/)**.
-* **Added pairing example** for Fraunces and Libre Franklin.
-* **Added pairing example** for Messapia and Inter.
 
 **[Read full Changelog](./CHANGELOG.md)**
 
@@ -134,17 +132,6 @@ fontFile: /assets/fonts/example/example.woff
 ```
 
 The explorer draws the font's default outlines. When a variable font defaults to a weight other than Regular, run `python3 scripts/prepare-glyph-fonts.py` (requires `fonttools` and `brotli`) to generate a static weight-400 face and update `glyphs.yml`. Keep its variable-source comment so the instance can be regenerated after font updates. The script also refreshes `glyphCount` in every font’s metadata. This counts all glyphs in the regular explorer face, including unencoded alternates and `.notdef`, matching the explorer’s total.
-
-### Add a pairing
-
-Create `content/pairings/<slug>/` with:
-
-- `meta.yml`
-- `sample.html`
-
-`meta.yml` must include `name`, `dateAdded`, `typefaces`, and optional `sampleShade`.
-
-`sample.html` is the trusted HTML fragment rendered on pairing cards.
 
 ### Shared site text
 

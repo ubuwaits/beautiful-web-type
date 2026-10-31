@@ -12,8 +12,7 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle
+  NavigationMenuTrigger
 } from "@/components/ui/navigation-menu";
 import type { CategorySlug } from "@/lib/content";
 import { getTypefacePath } from "@/lib/routes";
@@ -74,11 +73,6 @@ function MainNavigation({ typefaces, mobile = false, onNavigate }: {
             </NavigationMenuContent>
           </NavigationMenuItem>
         ))}
-        <NavigationMenuItem>
-          <NavigationMenuLink active={activeSection === "pairings"} className={clsx(navigationMenuTriggerStyle, activeSection === "pairings" && "text-(--red)")} render={<Link href="/pairings/" />} onClick={navigate}>
-            Pairings
-          </NavigationMenuLink>
-        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );

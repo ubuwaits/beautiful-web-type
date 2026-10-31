@@ -2,13 +2,11 @@ import Link from "next/link";
 
 import { FittedLine, FittedLines } from "@/components/fitted-lines";
 import { GlyphInspector } from "@/components/glyph-inspector";
-import { Masonry } from "@/components/masonry";
-import { PairingCard } from "@/components/pairing-card";
 import { TypefaceWeights } from "@/components/typeface-weights";
 import { TypefaceNavigation } from "@/components/typeface-navigation";
 import { FittedSpecimenText } from "@/components/fitted-specimen-text";
 import { TrustedHtml } from "@/components/trusted-html";
-import type { Pairing, TextData, Typeface } from "@/lib/content";
+import type { TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
 import { getTypefacePath } from "@/lib/routes";
 
@@ -61,12 +59,11 @@ const CHARACTER_EXAMPLES = [
 
 type TypefaceDetailProps = {
   glyphFontFile: string;
-  pairings: Pairing[];
   text: TextData;
   typeface: Typeface;
 };
 
-export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: TypefaceDetailProps) {
+export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetailProps) {
   const paragraphText = text.paragraphs.join("\n\n");
   const metadata = [
     { label: "Designed by", value: <a className="no-underline!" href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
@@ -89,8 +86,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
     { id: "headlines", label: "Headlines" },
     { id: "paragraphs", label: "Paragraphs" },
     ...(typeface.bodyHtml ? [{ id: "features", label: "Features" }] : []),
-    { id: "glyphs", label: "Glyphs" },
-    ...(pairings.length ? [{ id: "pairings", label: "Pairings" }] : [])
+    { id: "glyphs", label: "Glyphs" }
   ];
 
   return (
@@ -239,17 +235,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>
-
-      {pairings.length ? (
-        <div className="layout-grid grid-pairings mb-(--section-gap) scroll-mt-32" id="pairings">
-          <h3 className="col-span-12">Recommended Pairings for {typeface.name}</h3>
-          <Masonry className="col-span-12">
-            {pairings.map((pairing) => (
-              <PairingCard currentTypefaceName={typeface.name} key={pairing.slug} pairing={pairing} />
-            ))}
-          </Masonry>
-        </div>
-      ) : null}
     </div>
   );
 }

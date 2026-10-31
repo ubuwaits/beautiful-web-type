@@ -2,7 +2,7 @@ import { cache } from "react";
 
 import { getReservedTopLevelSlugs } from "../routes";
 import { DEFAULT_CONTENT_DIR, loadContentSource } from "./source";
-import type { ContentGraph, Pairing } from "./types";
+import type { ContentGraph } from "./types";
 
 const RESERVED_TOP_LEVEL_SLUGS = getReservedTopLevelSlugs();
 
@@ -31,7 +31,6 @@ function validateContentGraph(graph: ContentGraph): void {
         throw new Error(`Missing family face "${relatedName}" referenced by "${typeface.name}"`);
       }
     }
-
   }
 
   for (const sample of graph.samples) {
@@ -41,18 +40,10 @@ function validateContentGraph(graph: ContentGraph): void {
       );
     }
   }
-
-  for (const pairing of graph.pairings) {
-    for (const typefaceName of pairing.typefaces) {
-      if (!graph.typefaceByName.has(typefaceName)) {
-        throw new Error(`Pairing "${pairing.name}" references missing typeface "${typefaceName}"`);
-      }
-    }
-  }
 }
 
 export function buildContentGraphFromContentDir(contentDir: string): ContentGraph {
-  const { typefaces, glyphPages, samples, pairings, text } = loadContentSource(contentDir);
+  const { typefaces, glyphPages, samples, text } = loadContentSource(contentDir);
   const typefaceBySlug = new Map(typefaces.map((entry) => [entry.slug, entry]));
   const typefaceByName = new Map(typefaces.map((entry) => [entry.name, entry]));
   const glyphPageBySlug = new Map(glyphPages.map((entry) => [entry.slug, entry]));
@@ -60,15 +51,6 @@ export function buildContentGraphFromContentDir(contentDir: string): ContentGrap
     glyphPages.map((entry) => [entry.typefaceName, entry])
   );
   const sampleByTypefaceName = new Map(samples.map((entry) => [entry.typefaceName, entry]));
-  const pairingsByTypefaceName = new Map<string, Pairing[]>();
-
-  for (const pairing of pairings) {
-    for (const typefaceName of pairing.typefaces) {
-      const currentEntries = pairingsByTypefaceName.get(typefaceName) ?? [];
-      currentEntries.push(pairing);
-      pairingsByTypefaceName.set(typefaceName, currentEntries);
-    }
-  }
 
   const graph: ContentGraph = {
     typefaces,
@@ -79,10 +61,7 @@ export function buildContentGraphFromContentDir(contentDir: string): ContentGrap
     glyphPageByTypefaceName,
     samples,
     sampleByTypefaceName,
-    pairings,
-    pairingsByTypefaceName,
     latestTypefaces: sortByDateDesc(typefaces),
-    latestPairings: sortByDateDesc(pairings),
     text
   };
 

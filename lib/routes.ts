@@ -5,8 +5,7 @@ export const STATIC_SITEMAP_PATHS = [
   "/display/",
   "/monospaced/",
   "/sans-serif/",
-  "/serif/",
-  "/pairings/"
+  "/serif/"
 ] as const;
 
 const NON_TYPEFACE_TOP_LEVEL_PATHS = [

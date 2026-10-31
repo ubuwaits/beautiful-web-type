@@ -1,7 +1,6 @@
 import type {
   CategorySlug,
   GlyphPage,
-  Pairing,
   Sample,
   TextData,
   Typeface
@@ -20,10 +19,6 @@ export function getLatestTypefaces(): Typeface[] {
   return getContentGraph().latestTypefaces;
 }
 
-export function getLatestPairings(): Pairing[] {
-  return getContentGraph().latestPairings;
-}
-
 export function getTypefacesByCategory(categorySlug: CategorySlug): Typeface[] {
   return getAllTypefaces().filter((typeface) => typeface.categorySlug === categorySlug);
 }
@@ -38,10 +33,6 @@ export function getGlyphPageBySlug(typefaceSlug: string): GlyphPage | undefined 
 
 export function getSampleForTypeface(typefaceName: string): Sample | undefined {
   return getContentGraph().sampleByTypefaceName.get(typefaceName);
-}
-
-export function getPairingsForTypeface(typefaceName: string): Pairing[] {
-  return getContentGraph().pairingsByTypefaceName.get(typefaceName) ?? [];
 }
 
 export function getTextData(): TextData {

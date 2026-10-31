@@ -7,9 +7,7 @@ import type {
   CategoryName,
   CategorySlug,
   GlyphPage,
-  Pairing,
   Sample,
-  SampleShade,
   TextData,
   Typeface,
   Weight
@@ -21,7 +19,6 @@ type ContentSource = {
   typefaces: Typeface[];
   glyphPages: GlyphPage[];
   samples: Sample[];
-  pairings: Pairing[];
   text: TextData;
 };
 
@@ -179,22 +176,6 @@ function assertWeights(value: unknown, filePath: string): Weight[] {
   });
 }
 
-function assertSampleShade(
-  value: unknown,
-  key: string,
-  filePath: string
-): SampleShade | undefined {
-  if (value === undefined || value === null) {
-    return undefined;
-  }
-
-  if (value === "light" || value === "dark") {
-    return value;
-  }
-
-  throw new Error(`Expected "${key}" to be "light" or "dark" in ${filePath}`);
-}
-
 function toDateString(value: unknown, key: string, filePath: string): string {
   if (value instanceof Date) {
     return value.toISOString().slice(0, 10);
@@ -297,29 +278,6 @@ function loadTypefaceBundles(contentDir: string): {
   return { typefaces, glyphPages, samples };
 }
 
-function loadPairings(contentDir: string): Pairing[] {
-  const pairings: Pairing[] = [];
-  const pairingDirectories = listDirectories(path.join(contentDir, "pairings"));
-
-  for (const directory of pairingDirectories) {
-    const slug = path.basename(directory);
-    const metaPath = path.join(directory, "meta.yml");
-    const samplePath = path.join(directory, "sample.html");
-    const meta = readYamlFile(metaPath);
-
-    pairings.push({
-      slug,
-      name: assertString(meta.name, "name", metaPath),
-      dateAdded: toDateString(meta.dateAdded, "dateAdded", metaPath),
-      typefaces: assertStringArray(meta.typefaces, "typefaces", metaPath),
-      sampleShade: assertSampleShade(meta.sampleShade, "sampleShade", metaPath),
-      bodyHtml: readRequiredTextFile(samplePath)
-    });
-  }
-
-  return pairings;
-}
-
 function loadTextData(contentDir: string): TextData {
   const textPath = path.join(contentDir, "site", "text.yml");
   const parsed = readYamlFile(textPath);
@@ -342,7 +300,6 @@ export function loadContentSource(contentDir = DEFAULT_CONTENT_DIR): ContentSour
     typefaces,
     glyphPages,
     samples,
-    pairings: loadPairings(contentDir),
     text: loadTextData(contentDir)
   };
 }

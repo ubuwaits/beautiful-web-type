@@ -7,7 +7,6 @@ import { TypefaceDetail } from "@/components/typeface-detail";
 import {
   getAllTypefaceSlugs,
   getGlyphPageBySlug,
-  getPairingsForTypeface,
   getTextData,
   getTypefaceBySlug
 } from "@/lib/content";
@@ -33,7 +32,7 @@ export async function generateMetadata({
   }
 
   const title = `Complete Guide to ${typeface.name}`;
-  const description = `Complete guide to the free font ${typeface.name}. See beautiful examples, recommended pairings, OpenType features, and more.`;
+  const description = `Complete guide to the free font ${typeface.name}. See beautiful examples, OpenType features, and more.`;
   const imagePath = `/assets/images/${typeface.slug}.png`;
   const path = getTypefacePath(typeface.slug);
 
@@ -62,7 +61,6 @@ export default async function TypefacePage({
     notFound();
   }
 
-  const pairings = getPairingsForTypeface(typeface.name);
   const text = getTextData();
 
   return (
@@ -74,7 +72,7 @@ export default async function TypefacePage({
           { name: typeface.name, path: getTypefacePath(typeface.slug) }
         ]}
       />
-      <TypefaceDetail glyphFontFile={glyphSource.fontFile} pairings={pairings} text={text} typeface={typeface} />
+      <TypefaceDetail glyphFontFile={glyphSource.fontFile} text={text} typeface={typeface} />
     </PageShell>
   );
 }

@@ -5,7 +5,7 @@ import { createPageMetadata } from "@/lib/metadata";
 
 const title = "In-Depth Guide to the Best Free Headline & Display Fonts";
 const description =
-  "Explore the best free display and headline fonts, with specimens, pairings, and detailed guides.";
+  "Explore the best free display and headline fonts, with specimens, and detailed guides.";
 
 export const metadata: Metadata = {
   title,

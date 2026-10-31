@@ -9,12 +9,10 @@ import { buildContentGraphFromContentDir } from "@/lib/content/graph";
 function createContentRoot(): string {
   const root = mkdtempSync(path.join(tmpdir(), "beautiful-web-type-content-"));
   const typefaceDir = path.join(root, "typefaces", "test-sans");
-  const pairingsDir = path.join(root, "pairings");
   const fontsDir = path.join(root, "public", "assets", "fonts");
   const siteDir = path.join(root, "site");
 
   mkdirSync(typefaceDir, { recursive: true });
-  mkdirSync(pairingsDir, { recursive: true });
   mkdirSync(fontsDir, { recursive: true });
   mkdirSync(siteDir, { recursive: true });
 
@@ -76,34 +74,6 @@ describe("content validation", () => {
       expect(typeface?.glyphCount).toBe(123);
       expect(typeface?.sampleText).toBe("Bespoke Sample");
       expect(typeface?.sampleClasses).toBe("[--sample-fit-width:0.78] tracking-tight");
-    } finally {
-      rmSync(root, { recursive: true, force: true });
-    }
-  });
-
-  it("rejects invalid pairing sampleShade values", () => {
-    const root = createContentRoot();
-
-    try {
-      const pairingDir = path.join(root, "pairings", "test-pairing");
-
-      mkdirSync(pairingDir, { recursive: true });
-      writeFileSync(
-        path.join(pairingDir, "meta.yml"),
-        [
-          "name: Test Pairing",
-          "dateAdded: '2024-01-01'",
-          "sampleShade: neon",
-          "typefaces:",
-          "  - Test Sans"
-        ].join("\n"),
-        "utf8"
-      );
-      writeFileSync(path.join(pairingDir, "sample.html"), "<p>Pairing sample</p>\n", "utf8");
-
-      expect(() => buildContentGraphFromContentDir(root)).toThrow(
-        'Expected "sampleShade" to be "light" or "dark"'
-      );
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

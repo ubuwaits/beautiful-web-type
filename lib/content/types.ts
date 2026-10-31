@@ -7,8 +7,6 @@ export type Weight = {
   name: string;
 };
 
-export type SampleShade = "light" | "dark";
-
 export type Typeface = {
   slug: string;
   name: string;
@@ -52,15 +50,6 @@ export type Sample = {
   bodyHtml: string;
 };
 
-export type Pairing = {
-  slug: string;
-  name: string;
-  dateAdded: string;
-  typefaces: string[];
-  sampleShade?: SampleShade;
-  bodyHtml: string;
-};
-
 export type TextData = {
   specimen: {
     primary: string;
@@ -79,9 +68,6 @@ export type ContentGraph = {
   glyphPageByTypefaceName: Map<string, GlyphPage>;
   samples: Sample[];
   sampleByTypefaceName: Map<string, Sample>;
-  pairings: Pairing[];
-  pairingsByTypefaceName: Map<string, Pairing[]>;
   latestTypefaces: Typeface[];
-  latestPairings: Pairing[];
   text: TextData;
 };
