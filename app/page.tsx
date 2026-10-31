@@ -7,7 +7,7 @@ import { FontGrid } from "@/components/font-listing/font-grid";
 import { getLatestTypefaces } from "@/lib/content";
 import { DEFAULT_SITE_DESCRIPTION, createPageMetadata } from "@/lib/metadata";
 
-const latestTypefaces = getLatestTypefaces().slice(0, 10);
+const latestTypefaces = getLatestTypefaces().slice(0, 20);
 const title = "In-Depth Guide to the Best Free Fonts";
 const description = DEFAULT_SITE_DESCRIPTION;
 
