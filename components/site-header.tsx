@@ -62,8 +62,8 @@ function MainNavigation({ typefaces, mobile = false, onNavigate }: {
             >
               {category.name}
             </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="m-0 grid list-none grid-cols-1 gap-1 p-0 min-[721px]:grid-cols-2">
+            <NavigationMenuContent className={clsx(category.slug === "sans-serif" && "min-[721px]:[--navigation-menu-width:43rem]")}>
+              <ul className={clsx("m-0 grid list-none grid-cols-1 gap-1 p-0", category.slug === "sans-serif" ? "min-[721px]:grid-cols-3" : "min-[721px]:grid-cols-2")}>
                 {typefaces.filter((typeface) => typeface.categorySlug === category.slug).map((typeface) => (
                   <li key={typeface.slug}>
                     <NavigationMenuLink active={pathname === getTypefacePath(typeface.slug)} className="flex flex-col gap-0.5 px-2.5 py-2 hover:bg-neutral-100 data-active:bg-neutral-100" render={<Link href={getTypefacePath(typeface.slug)} />} onClick={navigate}>

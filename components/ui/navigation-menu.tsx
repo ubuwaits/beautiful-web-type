@@ -47,7 +47,7 @@ export function NavigationMenuTrigger({ className, children, ...props }: Primiti
 }
 
 export function NavigationMenuContent({ className, ...props }: Primitive.Content.Props) {
-  return <Primitive.Content data-slot="navigation-menu-content" className={clsx("max-h-[min(36rem,calc(100dvh-8rem),calc(var(--available-height)-1rem))] w-[min(34rem,calc(100vw-2rem))] overflow-y-auto p-2 font-(family-name:--ui-face)", className)} {...props} />;
+  return <Primitive.Content data-slot="navigation-menu-content" className={clsx("max-h-[min(36rem,calc(100dvh-8rem),calc(var(--available-height)-1rem))] w-[min(var(--navigation-menu-width,29rem),calc(100vw-2rem))] overflow-y-auto p-2 font-(family-name:--ui-face)", className)} {...props} />;
 }
 
 export function NavigationMenuLink({ className, ...props }: Primitive.Link.Props) {
