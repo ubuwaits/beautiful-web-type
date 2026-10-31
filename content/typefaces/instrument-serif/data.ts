@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "instrument-serif",
   name: "Instrument Serif",
   dateAdded: "2025-06-05",
@@ -34,5 +32,47 @@ In its cursive italic, the design casts off all remaining reserve. Raking forwar
   familyFaces: [
     "Instrument Sans"
   ],
-  fontFile: "/assets/fonts/instrument-serif/InstrumentSerif-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/instrument-serif/InstrumentSerif-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ffi", "ffl", "fi", "fl"]
+    },
+    {
+      type: "comparison",
+      title: "Discretionary Ligatures",
+      code: "font-feature-settings: 'dlig';",
+      before: { features: { dlig: 0 } },
+      after: { features: { dlig: 1 } },
+      examples: ["fb", "fh", "qj"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto", features: "normal" },
+      examples: [{ text: "1234567890", label: "Proportional Lining (default)" }]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o"]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      before: { features: { ss01: 0 } },
+      after: { features: { ss01: 1 } },
+      examples: [{ text: "agcd", label: "'ss01'" }]
+    }
+  ],
+};
+
+export default typeface;

@@ -53,7 +53,7 @@ test("places glyphs after OpenType features at the end of specimens", async ({ p
     const glyphs = document.getElementById("glyphs")!;
     const features = glyphs.previousElementSibling!;
     return {
-      afterFeatures: features.querySelector(".type-detail-table") !== null,
+      afterFeatures: features.querySelector("[data-font-feature]") !== null,
       lastSpecimen: glyphs.nextElementSibling === null,
       featuresBottom: features.getBoundingClientRect().bottom,
       glyphTop: glyphs.getBoundingClientRect().top

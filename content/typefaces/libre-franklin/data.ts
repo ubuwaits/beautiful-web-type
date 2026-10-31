@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "libre-franklin",
   name: "Libre Franklin",
   dateAdded: "2018-10-15",
@@ -63,5 +61,39 @@ export default {
 Where the historical foundry metal was cast predominantly in authoritative, heavyweight display cuts, Libre Franklin undertakes the meticulous optical task of distributing Benton’s DNA across a nine-weight spectrum, descending from a dense, thunderous Black to an ethereal, draughtsman-like Thin. Its anatomy retains the vital quirks of the classical nineteenth-century American gothic: the double-storey <em>a</em> and loop-and-tail <em>g</em> lend running prose a recognizable, bookish cadence, while subtle modulations in stroke weight keep junctions from clogging into unsightly ink-traps. The apertures remain hospitable and open, allowing white space to circulate freely through the interior counters. Along the measure, the typeface settles into a sturdy, resolute stride—neither brisk nor nervous—casting an even, warm-grey color that anchors the eye without imposing decorative distractions.
 
 Typographically, Libre Franklin’s democratic virtues extend far beyond the Latin alphabet, incorporating a resonant Cyrillic script designed by Alexei Vanyashin alongside a full complement of tabular and proportional figures. It has proved so structurally sound and civic-minded that the United States Web Design System chose its outlines as the foundational bedrock for <em>Public Sans</em>, the digital face of American federal governance. Released freely under the SIL Open Font License, Libre Franklin stands as an indispensable civic utility—a design proving that the unvarnished vernacular of the early-twentieth-century composing room can find a purposeful, dignified home across the infinite margins of the modern screen.`,
-  fontFile: "/assets/fonts/libre-franklin/LibreFranklin-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/libre-franklin/LibreFranklin-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ff", "fi", "fl", "ffi", "ffl"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Lining (default)", options: { features: "normal" } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "123", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "123", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Subscripts: 'subs'", reference: "H", options: { features: { subs: 1 } } },
+        { text: "123", label: "Scientific Inferiors: 'sinf'", reference: "H", options: { features: { sinf: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o", "No."]
+    }
+  ],
+};
+
+export default typeface;

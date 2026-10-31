@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "commissioner",
   name: "Commissioner",
   dateAdded: "2025-06-06",
@@ -64,5 +62,64 @@ The brilliance of Commissioner resides in its polyphonic versatility—specifica
 
 On the page or screen, Commissioner derives its poise from its classical cadence. The majuscules do not yield to twentieth-century geometric uniformity; they honor the varied widths of classical stone-cut inscriptions, establishing a stately, open architecture that anchors the brisk movement of the lowercase. Generous counters and hospitable apertures invite light into the interior of each character, preserving clarity across dense compositions while granting larger display settings an exuberant, sculptural presence. In an open commons often crowded with derivative grotesques, Commissioner stands apart as a design of exceptional conceptual courage—a digital instrument that allows a text to speak in several distinct voices without ever losing its foundational soul.`,
   fontFile: "/assets/fonts/commissioner/glyphs-regular.woff2",
-  glyphSource: "/assets/fonts/commissioner/Commissioner[FLAR,VOLM,wght].woff2"
-} satisfies TypefaceData;
+  glyphSource: "/assets/fonts/commissioner/Commissioner[FLAR,VOLM,wght].woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ff", "fi", "fl", "ffi", "ffl"]
+    },
+    {
+      type: "comparison",
+      title: "Contextual Alternates",
+      code: "font-feature-settings: 'calt';",
+      before: { features: { calt: 0 } },
+      after: { features: { calt: 1 } },
+      examples: ["fb", "ßA", "ΆΆ"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Lining (default)", options: { features: "normal" } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "123", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "123", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Subscripts: 'subs'", reference: "H", options: { features: { subs: 1 } } },
+        { text: "123", label: "Scientific Inferiors: 'sinf'", reference: "H", options: { features: { sinf: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o", "No."]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "G", label: "'ss01'", before: { features: { ss01: 0 } }, after: { features: { ss01: 1 } } },
+        { text: "б", label: "'ss02'", before: { features: { ss02: 0 } }, after: { features: { ss02: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      before: { features: { case: 0 } },
+      after: { features: { case: 1 } },
+      examples: ["()-@", "[]{}", "«·»΄"]
+    }
+  ],
+};
+
+export default typeface;

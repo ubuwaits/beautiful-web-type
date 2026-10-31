@@ -104,8 +104,7 @@ Useful commands:
 
 Create `content/typefaces/<slug>/` with:
 
-- `data.ts`: metadata, description, weights, and glyph font configuration, checked with `satisfies TypefaceData`.
-- `features.tsx`: the font’s OpenType examples, exported as JSX and imported by `data.ts`.
+- `data.ts`: typed font metadata, description, weights, glyph configuration, and OpenType feature examples.
 
 Import the new data module in `content/typefaces/index.ts`. Use an existing font as a template.
 

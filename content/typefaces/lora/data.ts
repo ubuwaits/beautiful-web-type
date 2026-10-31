@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "lora",
   name: "Lora",
   dateAdded: "2018-10-15",
@@ -43,5 +41,51 @@ export default {
 The anatomy of the letterform is animated by a captivating counterpoint: the organic warmth of brushed curves balanced against the crisp, driving horizontal footing of its serifs. Karpushina endowed the strokes with a moderate, supple contrast, allowing stems to swell and taper with the living breath of the hand. Terminals on letters such as <em>c</em>, <em>r</em>, and <em>f</em> curve with a distinct, chirographic inflection, arriving like poised droplets of ink rather than mechanically sheared boundaries. Counters are broad and hospitable, welcoming ambient light deep into the interior of each character, while a generous x-height ensures that the word-silhouette remains intact across low-resolution displays. Along the running measure, Lora weaves a warm, harmonious grey that avoids the blinding dazzle of the Didones, settling instead into an unhurried, rhythmic cadence.
 
 It is in the italic that Lora’s calligraphic lineage sings with unreserved joy. Refusing the perfunctory expedient of a slanted roman, the cursive hand rakes forward with brisk, dancing energy—its fluid loops, asymmetrical entries, and lively exits introducing an authentic polyphonic contrast alongside the upright text. Supported by native fluency across both Latin and Cyrillic scripts and matured into a responsive variable architecture, the family avoids the sterile uniformity of modern corporate types. Released under the SIL Open Font License, Lora endures as one of the true literary workhorses of the digital commons: an alphabet proving that the contemplative dignity of the printed page can thrive upon the luminous canvas of the screen.`,
-  fontFile: "/assets/fonts/lora/Lora-VF.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/lora/Lora-VF.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["fi", "fl"]
+    },
+    {
+      type: "comparison",
+      title: "Contextual Alternates",
+      code: "font-feature-settings: 'calt';",
+      before: { features: { calt: 0 } },
+      after: { features: { calt: 1 } },
+      examples: ["12:34"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Lining (default)", options: { features: "normal" } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o", "No."]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      before: { features: { case: 0 } },
+      after: { features: { case: 1 } },
+      examples: [":"]
+    }
+  ],
+};
+
+export default typeface;

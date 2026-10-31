@@ -24,7 +24,7 @@ def update_field(text, field, value):
     pattern = rf"^  {field}:.*$"
     if re.search(pattern, text, re.M):
         return re.sub(pattern, lambda _: replacement, text, flags=re.M)
-    return text.replace("\n} satisfies TypefaceData;", f"\n{replacement}\n}} satisfies TypefaceData;")
+    return text.replace("\n};\n\nexport default typeface;", f"\n{replacement}\n}};\n\nexport default typeface;")
 
 
 for config in sorted((ROOT / "content/typefaces").glob("*/data.ts")):

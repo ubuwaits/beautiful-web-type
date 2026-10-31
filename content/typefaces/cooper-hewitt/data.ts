@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "cooper-hewitt",
   name: "Cooper Hewitt",
   dateAdded: "2018-10-15",
@@ -54,5 +52,42 @@ export default {
 Anatomically, Cooper Hewitt occupies a thoughtful middle ground between the absolute geometry of the compass and the pragmatic demands of architectural signage. Its letterforms are shaped by modified-geometric curves—arches and shoulders that resist mechanical circularity to adopt a subtly flattened, muscular contour, lending the forms an upright, tectonic stability. Apertures remain wide and hospitable, welcoming ambient light into the interior of the glyphs, while terminals are sheared with clean horizontal and vertical decisiveness that locks characters into an orderly, legible stride. At display sizes across museum vitrines and exterior façades, it commands space with quiet, architectural self-assurance; set in running text, its generous proportions and even stroke distribution yield a clean, unhurried texture that informs without hectoring.
 
 Across its seven weights and accompanying obliques—from the gossamer draughtsmanship of the Thin to the solid, block-like presence of the Heavy—the family maintains an unwavering institutional poise. It does not chase the calligraphic idiosyncrasies of a humanist book hand, nor does it collapse into the antiseptic anonymity that so often haunts twentieth-century corporate grotesques. Instead, it offers a distilled, contemporary clarity rooted in the American industrial vernacular yet calibrated for the digital screen. By distributing not merely compiled font binaries but the raw design sources to the global commons, Jenkins and the museum affirmed an enduring typographic principle: that the tools of civic communication belong rightfully to the public that reads them.`,
-  fontFile: "/assets/fonts/cooper-hewitt/CooperHewitt-Book.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/cooper-hewitt/CooperHewitt-Book.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["fi", "fl"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Tabular Lining (default)", options: { features: "normal" } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o"]
+    },
+    {
+      type: "comparison",
+      title: "Capital Spacing",
+      code: "font-feature-settings: 'cpsp';",
+      before: { features: { cpsp: 0 }, size: "compact" },
+      after: { features: { cpsp: 1 }, size: "compact" },
+      examples: ["HAMBURG"]
+    }
+  ],
+};
+
+export default typeface;

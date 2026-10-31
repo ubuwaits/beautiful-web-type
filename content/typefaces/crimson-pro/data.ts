@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "crimson-pro",
   name: "Crimson Pro",
   dateAdded: "2020-05-23",
@@ -55,5 +53,58 @@ export default {
 The anatomy of the letterform is rooted firmly in the Garalde tradition, guided by the organic cadence of the broad-nib pen rather than the geometric precision of the compass. Its strokes exhibit a gentle diagonal stress and moderate modulation, avoiding the optical vibration common to sharper, high-contrast transitional and Didone models. Serifs are subtly cupped along the baseline and softly bracketed, providing a steady footing that carries the reader’s gaze smoothly along the line. Apertures remain hospitably open, interior counters welcome ambient light into dense paragraphs, and terminals on letters like <em>c</em>, <em>f</em>, and <em>r</em> resolve into graceful, teardrop forms. In running text, Crimson Pro weaves an even, warm-grey texture that sits comfortably on both uncoated paper and illuminated screens.
 
 Technically, Le Bailly re-engineered the family into an adaptable variable system with continuous axes for weight and optical size. The optical size axis is particularly vital to its literary utility: at smaller text grades, hairlines are reinforced, spacing is relaxed, and proportions widen to preserve legibility at micro-sizes; at larger display settings, the stroke contrast sharpens and details tighten into a more formal editorial voice. Its true cursive italic departs briskly from the upright roman, rolling forward with fluid entry and exit strokes that provide genuine vocal contrast for citations and dialogue. Furnished with true small capitals, fractions, oldstyle and lining figures, and comprehensive linguistic coverage across extended Latin, Crimson Pro operates as a dependable workhorse for academic monographs, literary journals, and long-form digital essays. Within the open catalog, it stands as a faithful and disciplined continuation of the humanist printing tradition.`,
-  fontFile: "/assets/fonts/crimson-pro/CrimsonPro-Roman-VF.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/crimson-pro/CrimsonPro-Roman-VF.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ffi", "fl"]
+    },
+    {
+      type: "comparison",
+      title: "Discretionary Ligatures",
+      code: "font-feature-settings: 'dlig';",
+      before: { features: { dlig: 0 } },
+      after: { features: { dlig: 1 } },
+      examples: ["fj", "Th", "fĳ"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Lining (default)", options: { features: "normal" } },
+        { text: "1234567890", label: "Tabular Lining: 'lnum', 'tnum'", options: { features: { lnum: 1, tnum: 1 } } },
+        { text: "1234567890", label: "Proportional Oldstyle: 'onum'", options: { features: { onum: 1 } } },
+        { text: "1234567890", label: "Tabular Oldstyle: 'onum', 'tnum'", options: { features: { onum: 1, tnum: 1 } } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "123", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "123", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Subscripts: 'subs'", reference: "H", options: { features: { subs: 1 } } },
+        { text: "123", label: "Scientific Inferiors: 'sinf'", reference: "H", options: { features: { sinf: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o", "No."]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      before: { italic: true, features: { ss01: 0 } },
+      after: { features: { ss01: 1 }, italic: true },
+      examples: [{ text: "j", label: "'ss01' · Italic" }]
+    }
+  ],
+};
+
+export default typeface;

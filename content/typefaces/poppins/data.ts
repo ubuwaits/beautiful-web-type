@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "poppins",
   name: "Poppins",
   dateAdded: "2018-11-19",
@@ -65,5 +63,26 @@ The anatomy of the face is grounded in the pure geometric shapes that defined mi
 Because of its geometric foundations, Poppins carries a wide horizontal footprint. Characters like <em>m</em>, <em>w</em>, <em>c</em>, and <em>d</em> demand generous lateral breathing room, which establishes an unhurried, rhythmic pace along the line. Spanning nine deliberate weights—from a skeletal Thin to a dense, impactful Black, complete with matching oblique cuts—the family shifts character smoothly across scales. In its lighter iterations, it casts an airy, minimalist tone; in its heavier weights, it adopts the punchy, block-like presence of mid-century advertising display faces.
 
 That same wide stance clearly delineates its functional territory. In long, unbroken columns of narrative prose, Poppins’s strict circular geometry can produce visual monotony, fatiguing the reading eye and creating erratic line rags in narrow measures. It finds its natural domain instead in modern digital interfaces, navigation bars, short editorial headers, wayfinding signage, and bilingual branding, where its balanced geometry and clear letter recognition communicate with immediate clarity. Within the open catalog, Poppins stands as a thoughtful study in script harmonization: an alphabet demonstrating that the universal geometry of the circle can bridge distinct linguistic traditions without compromising the structural integrity of either.`,
-  fontFile: "/assets/fonts/poppins/Poppins-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/poppins/Poppins-Regular.woff2",
+  features: [
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto", features: "normal" },
+      examples: [{ text: "1234567890", label: "Proportional Lining (default)" }]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "!?,.", label: "'ss01'", before: { features: { ss01: 0 } }, after: { features: { ss01: 1 } } },
+        { text: "a", label: "'ss02'", before: { features: { ss02: 0 } }, after: { features: { ss02: 1 } } },
+        { text: "&", label: "'ss03'", before: { features: { ss03: 0 } }, after: { features: { ss03: 1 } } },
+        { text: "3692", label: "'ss04'", before: { features: { ss04: 0 } }, after: { features: { ss04: 1 } } }
+      ]
+    }
+  ],
+};
+
+export default typeface;

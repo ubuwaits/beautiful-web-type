@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "ibm-plex-sans",
   name: "IBM Plex Sans",
   dateAdded: "2018-10-31",
@@ -64,5 +62,54 @@ Typographically, Plex Sans refuses the perfunctory compromises that so often dis
     "IBM Plex Sans Condensed",
     "IBM Plex Serif"
   ],
-  fontFile: "/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["fi"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Tabular Lining (default)", options: { features: "normal" } },
+        { text: "1234567890", label: "Tabular Oldstyle: 'onum'", options: { features: { onum: 1 } } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "0", label: "Slashed Zero: 'zero'", options: { features: { zero: 1 } } },
+        { text: "123", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "123", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Subscripts: 'subs'", reference: "H", options: { features: { subs: 1 } } },
+        { text: "123", label: "Scientific Inferiors: 'sinf'", reference: "H", options: { features: { sinf: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o"]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "a", label: "'ss01'", before: { features: { ss01: 0 } }, after: { features: { ss01: 1 } } },
+        { text: "g", label: "'ss02'", before: { features: { ss02: 0 } }, after: { features: { ss02: 1 } } },
+        { text: "0", label: "'ss03'", before: { features: { ss03: 0 } }, after: { features: { ss03: 1 } } },
+        { text: "0", label: "'ss04'", before: { features: { ss04: 0 } }, after: { features: { ss04: 1 } } },
+        { text: "ß", label: "'ss05'", before: { features: { ss05: 0 } }, after: { features: { ss05: 1 } } },
+        { text: "ДЖК", label: "'ss06'", before: { features: { ss06: 0 } }, after: { features: { ss06: 1 } } }
+      ]
+    }
+  ],
+};
+
+export default typeface;

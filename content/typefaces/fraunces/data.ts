@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "fraunces",
   name: "Fraunces",
   dateAdded: "2020-11-22",
@@ -65,5 +63,42 @@ What distinguishes Fraunces technically is its multidimensional parametric frame
 
 Fraunces divides its utility cleanly across scales. In its heavier, characterful display settings, it finds a natural home on packaging, book jackets, cultural publications, and editorial mastheads, where its vintage warmth can set a deliberate tone. In smaller text cuts, with the Wonk parameter dialed back, it behaves with measured discipline across short-to-medium editorial passages. Within the open-source catalog, it remains a thoughtful study in parametric revival, demonstrating how the eccentricities of pre-digital advertising type can be methodically adapted to modern screen environments.`,
   fontFile: "/assets/fonts/fraunces/glyphs-regular.woff2",
-  glyphSource: "/assets/fonts/fraunces/Fraunces.woff2"
-} satisfies TypefaceData;
+  glyphSource: "/assets/fonts/fraunces/Fraunces.woff2",
+  features: [
+    { type: "axis", title: "Wonk", axis: "WONK", text: "mnhs&", values: [0, 1] },
+    { type: "axis", title: "Softness", axis: "SOFT", text: "Softness", values: [0, 50, 100] },
+    { type: "axis", title: "Optical Size", axis: "opsz", text: "Optical", values: [9, 68, 144] },
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ff", "fi", "fl", "ffi", "ffl"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto", features: "normal" },
+      examples: [{ text: "1234567890", label: "Proportional Lining (default)" }]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      before: { features: { case: 0 } },
+      after: { features: { case: 1 } },
+      examples: ["agil"]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Set 01",
+      code: "font-feature-settings: 'ss01';",
+      before: { features: { ss01: 0 }, axes: { opsz: 72, WONK: 1 }, opticalSizing: "none" },
+      after: { features: { ss01: 1 }, axes: { opsz: 72, WONK: 1 }, opticalSizing: "none" },
+      examples: [{ text: "&hm", label: "'ss01' · opsz 72 · WONK 1" }]
+    }
+  ],
+};
+
+export default typeface;

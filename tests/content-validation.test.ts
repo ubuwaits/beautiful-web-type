@@ -19,7 +19,7 @@ const font: TypefaceData = {
   projectUrl: "https://example.com/test-sans",
   creator: { name: "Example Foundry", url: "https://example.com" },
   description: "Example typeface",
-  features: "Example feature specimens",
+  features: [{ type: "comparison", title: "Ligatures", examples: ["fi"] }],
   fontFile: "/assets/fonts/test.woff"
 };
 

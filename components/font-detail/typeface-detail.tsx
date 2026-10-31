@@ -205,7 +205,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         <FontTester key={typeface.slug} data={getFontTesterData(typeface.slug)} name={typeface.name} weights={typeface.weights} />
 
-        <FontFeatures>{typeface.features}</FontFeatures>
+        <FontFeatures features={typeface.features} />
 
         <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>

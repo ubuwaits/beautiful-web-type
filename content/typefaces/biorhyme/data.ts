@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "biorhyme",
   name: "BioRhyme",
   dateAdded: "2018-10-15",
@@ -49,5 +47,67 @@ Spanning a variable spectrum across weight and width—progressing from a skelet
   familyFaces: [
     "BioRhyme Expanded"
   ],
-  fontFile: "/assets/fonts/biorhyme/BioRhyme-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/biorhyme/BioRhyme-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["fi", "fl"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Lining (default)", options: { features: "normal" } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "0", label: "Slashed Zero: 'zero'", options: { features: { zero: 1 } } },
+        { text: "13", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "2", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o"]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "ft", label: "'ss01'", before: { features: { ss01: 0 } }, after: { features: { ss01: 1 } } },
+        { text: "ag", label: "'ss02'", before: { features: { ss02: 0 } }, after: { features: { ss02: 1 } } },
+        { text: "kx2", label: "'ss03'", before: { features: { ss03: 0 } }, after: { features: { ss03: 1 } } },
+        { text: "Gz", label: "'ss04'", before: { features: { ss04: 0 } }, after: { features: { ss04: 1 } } },
+        { text: "A", label: "'ss07'", before: { features: { ss07: 0 } }, after: { features: { ss07: 1 } } },
+        { text: "dua", label: "'ss08'", before: { features: { ss08: 0 } }, after: { features: { ss08: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Swashes",
+      code: "font-feature-settings: 'swsh';",
+      before: { features: { swsh: 0 } },
+      after: { features: { swsh: 1 } },
+      examples: ["QR&", "ŔŖŘ"]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      before: { language: "ca", features: { case: 0 } },
+      after: { features: { case: 1 }, language: "ca" },
+      examples: [{ text: "l·l", label: "Catalan · 'case'" }]
+    }
+  ],
+};
+
+export default typeface;

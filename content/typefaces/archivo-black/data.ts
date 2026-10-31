@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "archivo-black",
   name: "Archivo Black",
   dateAdded: "2018-10-19",
@@ -34,5 +32,65 @@ In contemporary practice, Archivo Black thrives in roles where typographic mass 
   familyFaces: [
     "Archivo"
   ],
-  fontFile: "/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ff", "fi", "fl", "ffi", "ffl"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Tabular Lining (default)", reference: "H", options: { features: "normal" } },
+        { text: "1234567890", label: "Tabular Oldstyle: 'onum'", reference: "H", options: { features: { onum: 1 } } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "0", label: "Slashed Zero: 'zero'", reference: "H", options: { features: { zero: 1 } } },
+        { text: "123", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "123", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Subscripts: 'subs'", reference: "H", options: { features: { subs: 1 } } },
+        { text: "123", label: "Scientific Inferiors: 'sinf'", reference: "H", options: { features: { sinf: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o", "No."]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Alternates",
+      code: "font-feature-settings: 'salt';",
+      before: { features: { salt: 0 } },
+      after: { features: { salt: 1 } },
+      examples: [{ text: "&", label: "'salt'" }]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      before: { features: { case: 0 } },
+      after: { features: { case: 1 } },
+      examples: ["9-¡­", "¿‑–—"]
+    },
+    {
+      type: "comparison",
+      title: "Capital Spacing",
+      code: "font-feature-settings: 'cpsp';",
+      before: { features: { cpsp: 0 }, size: "compact" },
+      after: { features: { cpsp: 1 }, size: "compact" },
+      examples: ["HAMBURG"]
+    }
+  ],
+};
+
+export default typeface;

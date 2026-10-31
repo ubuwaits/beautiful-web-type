@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "fivo-sans-modern",
   name: "Fivo Sans Modern",
   dateAdded: "2019-01-03",
@@ -49,5 +47,23 @@ The family spans five weights ranging from Regular to Extra Black, paired with m
   familyFaces: [
     "Fivo Sans"
   ],
-  fontFile: "/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff2",
+  features: [
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto", features: "normal" },
+      examples: [{ text: "1234567890", label: "Proportional Lining (default)" }]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Alternates",
+      code: "font-feature-settings: 'salt';",
+      before: { features: { salt: 0 } },
+      after: { features: { salt: 1 } },
+      examples: [{ text: "a", label: "'salt'" }]
+    }
+  ],
+};
+
+export default typeface;

@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "oswald",
   name: "Oswald",
   dateAdded: "2018-10-15",
@@ -50,5 +48,43 @@ export default {
 Anatomically, the design is governed by compact proportions, flat-sided stems, and a prominent x-height. Curves resolve with brisk discipline rather than sweeping geometry, and the interior counters remain tight yet defined. Adams adjusted the classic American gothic framework to modern rendering engines by opening the apertures slightly and softening interior junctions, preventing the letterforms from congealing into solid blocks of black at smaller headline sizes. Set along the line, Oswald establishes a firm, vertical cadence. It moves with a clipped, efficient stride, producing a dense texture that commands attention without sprawling laterally across the measure.
 
 That same compact geometry naturally delineates its proper domain. Oswald is unsuited for sustained narrative text; its condensed proportions and narrow counters crowd the reading eye across extended measures, quickly inducing fatigue. Instead, it thrives in headlines, section headers, navigation bars, and poster settings where short bursts of language need to land with immediate clarity. Over subsequent years, designers Kalapi Gajjar and Alexei Vanyashin expanded Adams’s foundational work, broadening the family into a continuous variable weight axis (from Extra Light to Bold) alongside extensive Cyrillic and Vietnamese language support. Within the open catalog, Oswald remains an enduring utility—a practical, well-tempered display face that brings the sturdy economy of the American newsroom to the modern screen.`,
-  fontFile: "/assets/fonts/oswald/Oswald-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/oswald/Oswald-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ffi", "ffl", "fi", "fl", "ff"]
+    },
+    {
+      type: "comparison",
+      title: "Discretionary Ligatures",
+      code: "font-feature-settings: 'dlig';",
+      before: { features: { dlig: 0 } },
+      after: { features: { dlig: 1 } },
+      examples: ["fĳ", "ffĳ"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Lining (default)", options: { features: "normal" } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o", "No."]
+    }
+  ],
+};
+
+export default typeface;

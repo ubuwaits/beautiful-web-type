@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "messapia",
   name: "Messapia",
   dateAdded: "2020-05-23",
@@ -33,5 +31,43 @@ export default {
 The anatomy of the face is shaped by acute stroke contrast and chiseled, angular transitions. Rather than resting on soft, gradual bracketing, its serifs emerge as sharp, triangular spurs and wedges that jut outward like carved incisions in limestone. The vertical stems carry a dense, statuesque presence, offset by taut hairline crossbars and terminals that taper into clean, razor-like points. Bolognini introduced distinctive eccentricities across the glyph set: deeply pinched joints, idiosyncratic arches that break the expected curve of traditional transitional models, and an energetic tension between open, light-filled counters and compact character widths. Along a display line, Messapia establishes a syncopated, chiseled rhythm that catches the eye through the friction of its sharp corners and geometric cuts.
 
 Because of this dramatic modulation and assertive detailing, Messapia’s domain is strictly defined. Deployed at text sizes, its delicate hairlines easily deteriorate under rasterization, while its pointed spurs and pinched junctions create visual noise that disrupts the calm cadence required for extended reading. It finds its rightful territory instead at display scales—exhibition identities, cultural monographs, packaging, and literary mastheads—where short passages or isolated titles can afford an outspoken, architectural presence. Within the open catalog, Messapia serves as an engaging example of regional display craft, proving that open-source type can accommodate singular, historically situated voices alongside general-purpose utilities.`,
-  fontFile: "/assets/fonts/messapia/Messapia-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/messapia/Messapia-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ff", "fi", "fl"]
+    },
+    {
+      type: "comparison",
+      title: "Discretionary Ligatures",
+      code: "font-feature-settings: 'dlig';",
+      before: { features: { dlig: 0 } },
+      after: { features: { dlig: 1 } },
+      examples: ["fh"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Lining (default)", options: { features: "normal" } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o"]
+    }
+  ],
+};
+
+export default typeface;

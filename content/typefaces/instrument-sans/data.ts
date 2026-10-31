@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "instrument-sans",
   name: "Instrument Sans",
   dateAdded: "2025-06-05",
@@ -46,5 +44,61 @@ Where the family truly distinguishes itself within the open commons is in its st
   familyFaces: [
     "Instrument Serif"
   ],
-  fontFile: "/assets/fonts/instrument-sans/InstrumentSans.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/instrument-sans/InstrumentSans.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga', 'clig';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ffi", "ffl", "fi", "fl", "->"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      responsive: false,
+      examples: [
+        {
+          text: "1234567890",
+          label: "Proportional Lining (default): 'pnum'",
+          options: { features: { lnum: 1, pnum: 1 } }
+        },
+        { text: "1234567890", label: "Tabular Lining: 'tnum'", options: { features: { lnum: 1, tnum: 1 } } },
+        { text: "+−×÷=", label: "Proportional Symbols: 'pnum'", options: { features: { lnum: 1, pnum: 1 } } },
+        { text: "+−×÷=", label: "Tabular Symbols: 'tnum'", options: { features: { lnum: 1, tnum: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      after: { features: { ordn: 1 } },
+      examples: ["3a", "4o"]
+    },
+    {
+      type: "comparison",
+      title: "Alternate Glyph Forms",
+      code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "ffi", label: "'ss01'", after: { features: { ss01: 1 } } },
+        { text: "a", label: "'ss02'", after: { features: { ss02: 1 } } },
+        { text: "y", label: "'ss03'", after: { features: { ss03: 1 } } },
+        { text: "Kk", label: "'ss04'", after: { features: { ss04: 1 } } },
+        { text: "M", label: "'ss06'", after: { features: { ss06: 1 } } },
+        { text: "J", label: "'ss08'", after: { features: { ss08: 1 } } },
+        { text: "Q", label: "'ss09'", after: { features: { ss09: 1 } } },
+        { text: "2", label: "'ss10'", after: { features: { ss10: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      after: { features: { case: 1 } },
+      examples: ["(A)", "{A}", "[A]"]
+    }
+  ],
+};
+
+export default typeface;

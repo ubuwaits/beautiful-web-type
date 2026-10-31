@@ -1,77 +1,104 @@
-import type { ReactNode } from "react";
+import type { CSSProperties } from "react";
+import clsx from "clsx";
 
-/** Layout and typography for the authored OpenType feature specimens. */
-export function FontFeatures({ children }: { children: ReactNode }) {
+import type { FeatureSampleOptions, FeatureSettings, FontFeature } from "@/lib/content/types";
+
+const DISABLED_FEATURES = { calt: 0, liga: 0, clig: 0, dlig: 0, subs: 0, sups: 0 };
+const TRIM = "[text-box-trim:trim-start] [text-box-edge:cap_alphabetic]";
+
+function settings(value?: FeatureSettings): string | undefined {
+  if (value === undefined || value === "normal") return value;
+  return Object.entries(value).map(([tag, setting]) => `"${tag}" ${setting}`).join(", ");
+}
+
+function sampleStyle(options: FeatureSampleOptions): CSSProperties {
+  return {
+    fontFeatureSettings: settings(options.features),
+    fontVariationSettings: settings(options.axes),
+    fontStyle: options.italic ? "italic" : undefined,
+    fontOpticalSizing: options.opticalSizing
+  };
+}
+
+function FeatureLabel({ text, heading = false }: { text: string; heading?: boolean }) {
   return (
-    <div
-      id="features"
-      className="feature-list max-[720px]:text-center scroll-mt-20 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
-        [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-200/60 dark:[&>.type-detail-table:first-child]:border-t-neutral-800/80
-        [&>.type-detail-table:first-child]:[border-top-style:solid]
-        [&>.type-detail-table:first-child]:pt-6 min-[721px]:[&>.type-detail-table:first-child]:pt-8
-        [&>.type-detail-table:last-child]:border-b-2 [&>.type-detail-table:last-child]:border-b-neutral-200/60 dark:[&>.type-detail-table:last-child]:border-b-neutral-800/80
-        [&>.type-detail-table:last-child]:[border-bottom-style:solid]
-        [&>.type-detail-table:last-child]:pb-6 min-[721px]:[&>.type-detail-table:last-child]:pb-8
-        [&>.type-detail-table+.type-detail-table]:border-t [&>.type-detail-table+.type-detail-table]:border-t-neutral-200/60 dark:[&>.type-detail-table+.type-detail-table]:border-t-neutral-800/80
-        [&>.type-detail-table+.type-detail-table]:[border-top-style:solid]
-        [&>.type-detail-table+.type-detail-table]:pt-6 min-[721px]:[&>.type-detail-table+.type-detail-table]:pt-8
-        [&>.type-detail-table]:grid [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start [&>.type-detail-table]:gap-(--gutter)
-        max-[720px]:[&>.type-detail-table]:gap-y-8
-        min-[721px]:[&>.type-detail-table]:grid-cols-12
-        min-[721px]:[&>.type-detail-table>.meta]:col-span-3 min-[721px]:[&>.type-detail-table>.examples]:col-span-9
-        [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col
-        [&>.type-detail-table>.meta]:self-start [&>.type-detail-table>.meta]:justify-start
-        max-[720px]:[&>.type-detail-table>.meta]:items-center max-[720px]:[&>.type-detail-table>.meta]:text-center
-        [&>.type-detail-table>.meta]:gap-1 [&>.type-detail-table>.meta>.code]:mt-0
-        [&>.type-detail-table>.meta]:shadow-none [&>.type-detail-table>.meta]:wrap-anywhere
-        [&>.type-detail-table>.examples]:min-w-0 [&>.type-detail-table>.examples]:justify-start
-        max-[720px]:[&>.type-detail-table>.examples]:justify-center
-        [&>.type-detail-table>.examples]:flex-row [&>.type-detail-table>.examples]:flex-wrap
-        [&>.type-detail-table>.examples]:items-start [&>.type-detail-table>.examples]:content-start
-        [&>.type-detail-table>.examples>div]:max-w-full
-        [&>.type-detail-table>.meta>.name]:[text-box-trim:trim-start] [&>.type-detail-table>.meta>.name]:[text-box-edge:cap_alphabetic]
-        [&>.type-detail-table>.examples>div:has(>span)]:grid [&>.type-detail-table>.examples>div:has(>span)]:grid-cols-[max-content_max-content]
-        [&>.type-detail-table>.examples>div:has(>span)]:items-start [&>.type-detail-table>.examples>div:has(>span)]:gap-x-1
-        [&>.type-detail-table>.examples>div:has(>span)>p]:col-span-full
-        [&>.type-detail-table>.examples>div>span]:[text-box-trim:trim-start] [&>.type-detail-table>.examples>div>span]:[text-box-edge:cap_alphabetic]
-        [&>.type-detail-table>.examples_h1]:[text-box-trim:trim-start] [&>.type-detail-table>.examples_h1]:[text-box-edge:cap_alphabetic]
-        [&_.meta]:flex [&_.meta]:p-0 [&_.meta]:font-(family-name:--ui-face) [&_.meta]:text-base [&_.meta]:leading-4 [&_.meta]:font-bold [&_.meta]:text-neutral-700 dark:[&_.meta]:text-neutral-100 [&_.meta]:text-left
-        [&_.examples]:flex [&_.examples]:grow-2 [&_.examples]:gap-8 [&_.examples]:text-center
-        [&_.examples>div]:wrap-break-word
-        [&_.examples_h1]:mb-2 max-[720px]:[&_.examples_h1]:mb-0 [&_.examples_h1]:text-4xl [&_.examples_h1]:leading-10 [&_.examples_h1]:font-bold
-        [&_.examples_p]:leading-6 [&_.examples_span]:text-5xl [&_.examples_span]:leading-14
-        [&_.examples.small-characters_span]:text-4xl
-        [&_.examples-figures_h1]:text-5xl [&_.examples-figures_h1]:font-normal
-        [&_.code]:mt-2 [&_.character-label]:mt-2 [&_.code]:p-0 [&_.character-label]:p-0
-        [&_:is(.code,.character-label)]:font-(family-name:--ui-monospaced) [&_:is(.code,.character-label)]:text-sm [&_:is(.code,.character-label)]:font-semibold [&_:is(.code,.character-label)]:not-italic [&_:is(.code,.character-label)]:normal-case [&_:is(.code,.character-label)]:text-neutral-400 [&_:is(.code,.character-label)]:[font-feature-settings:'liga'_off]
-        [&_.meta_.code]:leading-4 [&_.character-label+.code]:mt-0
-        [&_.fade]:text-neutral-300 dark:[&_.fade]:text-neutral-600 [&_.fade]:[font-feature-settings:'calt'_off,'liga'_off,'clig'_off,'dlig'_off,'subs'_off,'sups'_off]
-        [&_.liga]:[font-feature-settings:'liga','clig']
-        [&_.ordinals]:[font-feature-settings:'ordn']!
-        [&_.lining-proportional]:[font-feature-settings:'lnum','pnum']
-        [&_.lining-tabular]:[font-feature-settings:'lnum','tnum']
-        [&_.small-caps]:[font-feature-settings:'smcp']
-        [&_.calt]:[font-feature-settings:'calt']
-        [&_.case]:[font-feature-settings:'case']
-        [&_.cpsp]:[font-feature-settings:'cpsp']
-        [&_.cswh]:[font-feature-settings:'cswh']
-        [&_.dlig]:[font-feature-settings:'dlig']
-        [&_.titl]:[font-feature-settings:'titl']
-        [&_.swsh]:[font-feature-settings:'swsh']
-        [&_.ss01]:[font-feature-settings:'ss01']
-        [&_.ss02]:[font-feature-settings:'ss02']
-        [&_.ss03]:[font-feature-settings:'ss03']
-        [&_.ss04]:[font-feature-settings:'ss04']
-        [&_.ss05]:[font-feature-settings:'ss05']
-        [&_.ss06]:[font-feature-settings:'ss06']
-        [&_.ss07]:[font-feature-settings:'ss07']
-        [&_.ss08]:[font-feature-settings:'ss08']
-        [&_.ss09]:[font-feature-settings:'ss09']
-        [&_.ss10]:[font-feature-settings:'ss10']
-        [&_.ss11]:[font-feature-settings:'ss11']
-        [&_.ss12]:[font-feature-settings:'ss12']"
+    <p className={clsx("p-0 font-(family-name:--ui-monospaced) text-sm font-semibold not-italic normal-case text-neutral-400 [font-feature-settings:'liga'_off]", heading ? "leading-4" : "col-span-full mt-2 leading-6")}>
+      {text}
+    </p>
+  );
+}
+
+function Sample({ text, options = {}, faded = false }: { text: string; options?: FeatureSampleOptions; faded?: boolean }) {
+  return (
+    <span
+      className={clsx(TRIM, "leading-14", options.size === "compact" ? "text-[2rem]" : "text-5xl", faded && "text-neutral-300 dark:text-neutral-600")}
+      style={sampleStyle(options)} lang={options.language} dir={options.direction}
     >
-      {children}
+      {text}
+    </span>
+  );
+}
+
+function FeatureExamples({ feature }: { feature: FontFeature }) {
+  const pairClass = "grid max-w-full grid-cols-[max-content_max-content] items-start gap-x-1 wrap-break-word";
+  if (feature.type === "comparison") {
+    return feature.examples.map((example, index) => {
+      const item = typeof example === "string" ? { text: example } : example;
+      return (
+        <div className={pairClass} key={index}>
+          <Sample text={item.text} faded options={{ features: DISABLED_FEATURES, ...feature.before, ...item.before }} />
+          <Sample text={item.text} options={{ ...feature.after, ...item.after }} />
+          {item.label ? <FeatureLabel text={item.label} /> : null}
+        </div>
+      );
+    });
+  }
+  if (feature.type === "axis") {
+    return feature.values.map((value) => (
+      <div className={pairClass} key={value}>
+        <Sample text={feature.text} options={{ axes: { [feature.axis]: value } }} />
+        <FeatureLabel text={`'${feature.axis}' ${value}`} />
+      </div>
+    ));
+  }
+  return feature.examples.map((example, index) => {
+    const options = { ...feature.options, ...example.options };
+    return (
+      <div className="max-w-full wrap-break-word" key={index}>
+        <h1
+          className={clsx(TRIM, "mb-2 text-5xl leading-10 font-normal max-[720px]:mb-0")}
+          style={{ ...sampleStyle(options), fontSize: feature.responsive === false ? undefined : "min(var(--text-5xl), 7.5vw)" }}
+          lang={options.language} dir={options.direction}
+        >
+          {example.reference ? <span className="leading-14 text-neutral-300 dark:text-neutral-600" style={{ fontSize: "inherit", fontFeatureSettings: "normal" }}>{example.reference}</span> : null}
+          {example.text}
+        </h1>
+        <FeatureLabel text={example.label} />
+      </div>
+    );
+  });
+}
+
+export function FontFeatures({ features }: { features: FontFeature[] }) {
+  return (
+    <div id="features" className="feature-list mb-(--section-gap) scroll-mt-20 space-y-6 max-[720px]:text-center min-[721px]:space-y-8">
+      {features.map((feature, index) => {
+        const code = feature.type === "axis" ? `font-variation-settings: '${feature.axis}';` : feature.type === "comparison" ? feature.code : undefined;
+        return (
+          <section
+            data-font-feature={feature.type} key={index}
+            className="grid grid-cols-1 items-start gap-(--gutter) border-t border-neutral-200/60 pt-6 first:border-t-2 last:border-b-2 last:pb-6 dark:border-neutral-800/80 max-[720px]:gap-y-8 min-[721px]:grid-cols-12 min-[721px]:pt-8 min-[721px]:last:pb-8"
+          >
+            <div className="flex min-w-0 flex-col items-start justify-start gap-1 self-start text-left font-(family-name:--ui-face) text-base leading-4 font-bold text-neutral-700 wrap-anywhere dark:text-neutral-100 max-[720px]:items-center max-[720px]:text-center min-[721px]:col-span-3">
+              <p className={TRIM}>{feature.title}</p>
+              {code ? <FeatureLabel text={code} heading /> : null}
+            </div>
+            <div className="flex min-w-0 grow-2 flex-wrap content-start items-start justify-start gap-8 text-center max-[720px]:justify-center min-[721px]:col-span-9">
+              <FeatureExamples feature={feature} />
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }

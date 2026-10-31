@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "source-code-pro",
   name: "Source Code Pro",
   dateAdded: "2018-12-18",
@@ -62,5 +60,72 @@ The family’s domain is well-defined. Its rigid spacing and enlarged punctuatio
     "Source Serif Pro"
   ],
   fontFile: "/assets/fonts/source-code-pro/glyphs-regular.woff2",
-  glyphSource: "/assets/fonts/source-code-pro/SourceCodeVF-Upright.ttf.woff2"
-} satisfies TypefaceData;
+  glyphSource: "/assets/fonts/source-code-pro/SourceCodeVF-Upright.ttf.woff2",
+  features: [
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Tabular Lining (default)", options: { features: "normal" } },
+        { text: "1234567890", label: "Tabular Oldstyle: 'onum'", options: { features: { onum: 1 } } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "0", label: "Slashed Zero: 'zero'", options: { features: { zero: 1 } } },
+        { text: "123", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "123", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Subscripts: 'subs'", reference: "H", options: { features: { subs: 1 } } },
+        { text: "123", label: "Scientific Inferiors: 'sinf'", reference: "H", options: { features: { sinf: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["1st", "3a"]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "->", label: "'ss01'", before: { features: { ss01: 0 } }, after: { features: { ss01: 1 } } },
+        { text: "a", label: "'ss02'", before: { features: { ss02: 0 } }, after: { features: { ss02: 1 } } },
+        { text: "g", label: "'ss03'", before: { features: { ss03: 0 } }, after: { features: { ss03: 1 } } },
+        { text: "l·l", label: "'ss04'", before: { features: { ss04: 0 } }, after: { features: { ss04: 1 } } },
+        { text: "Ŋφ", label: "'ss05'", before: { features: { ss05: 0 } }, after: { features: { ss05: 1 } } },
+        { text: "$", label: "'ss06'", before: { features: { ss06: 0 } }, after: { features: { ss06: 1 } } },
+        { text: "1", label: "'ss07'", before: { features: { ss07: 0 } }, after: { features: { ss07: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Character Variants",
+      code: "font-feature-settings: 'cv--';",
+      examples: [
+        { text: "0", label: "'cv12'", before: { features: { cv12: 0 } }, after: { features: { cv12: 1 } } },
+        { text: "*", label: "'cv15'", before: { features: { cv15: 0 } }, after: { features: { cv15: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Alternates",
+      code: "font-feature-settings: 'salt';",
+      before: { features: { salt: 0 } },
+      after: { features: { salt: 1 } },
+      examples: [{ text: "agil", label: "'salt'" }]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      before: { features: { case: 0 } },
+      after: { features: { case: 1 } },
+      examples: ["0123", "89@·"]
+    }
+  ],
+};
+
+export default typeface;

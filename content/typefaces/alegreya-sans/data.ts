@@ -1,8 +1,6 @@
 import type { TypefaceData } from "@/lib/content/types";
-import features from "./features";
 
-export default {
-  features,
+const typeface: TypefaceData = {
   slug: "alegreya-sans",
   name: "Alegreya Sans",
   dateAdded: "2018-10-15",
@@ -59,5 +57,68 @@ Typographically, Alegreya Sans is furnished with the civilizing refinements seld
   familyFaces: [
     "Alegreya"
   ],
-  fontFile: "/assets/fonts/alegreya-sans/AlegreyaSans-Regular.woff2"
-} satisfies TypefaceData;
+  fontFile: "/assets/fonts/alegreya-sans/AlegreyaSans-Regular.woff2",
+  features: [
+    {
+      type: "comparison",
+      title: "Standard Ligatures",
+      code: "font-feature-settings: 'liga';",
+      before: { features: { liga: 0 } },
+      after: { features: { liga: 1, clig: 1 } },
+      examples: ["ff", "ffi", "ffj", "ffl", "fi"]
+    },
+    {
+      type: "figures",
+      title: "Figures",
+      options: { direction: "auto" },
+      examples: [
+        { text: "1234567890", label: "Proportional Oldstyle (default)", options: { features: "normal" } },
+        { text: "1234567890", label: "Proportional Lining: 'lnum'", options: { features: { lnum: 1 } } },
+        { text: "1234567890", label: "Tabular Lining: 'lnum', 'tnum'", options: { features: { lnum: 1, tnum: 1 } } },
+        { text: "1234567890", label: "Tabular Oldstyle: 'onum', 'tnum'", options: { features: { onum: 1, tnum: 1 } } },
+        { text: "1/2 3/4", label: "Fractions: 'frac'", options: { features: { frac: 1 } } },
+        { text: "123", label: "Numerators: 'numr'", reference: "H", options: { features: { numr: 1 } } },
+        { text: "123", label: "Denominators: 'dnom'", reference: "H", options: { features: { dnom: 1 } } },
+        { text: "123", label: "Subscripts: 'subs'", reference: "H", options: { features: { subs: 1 } } },
+        { text: "123", label: "Scientific Inferiors: 'sinf'", reference: "H", options: { features: { sinf: 1 } } },
+        { text: "123", label: "Superscripts: 'sups'", reference: "H", options: { features: { sups: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Ordinals",
+      code: "font-feature-settings: 'ordn';",
+      before: { features: { ordn: 0 } },
+      after: { features: { ordn: 1 } },
+      examples: ["1st", "3a"]
+    },
+    {
+      type: "comparison",
+      title: "Stylistic Sets",
+      code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "XVLIII", label: "'ss01'", before: { features: { ss01: 0 } }, after: { features: { ss01: 1 } } },
+        { text: "agil", label: "'ss02'", before: { features: { ss02: 0 } }, after: { features: { ss02: 1 } } },
+        { text: "ht", label: "'ss03'", before: { features: { ss03: 0 } }, after: { features: { ss03: 1 } } }
+      ]
+    },
+    {
+      type: "comparison",
+      title: "Case Sensitive Forms",
+      code: "font-feature-settings: 'case';",
+      before: { features: { case: 0 } },
+      after: { features: { case: 1 } },
+      examples: ["0123", "89()", "-/@["]
+    },
+    {
+      type: "comparison",
+      title: "Capital Spacing",
+      code: "font-feature-settings: 'cpsp';",
+      before: { features: { cpsp: 0 }, size: "compact" },
+      after: { features: { cpsp: 1 }, size: "compact" },
+      examples: ["HAMBURG"]
+    }
+  ],
+};
+
+export default typeface;
