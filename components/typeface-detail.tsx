@@ -5,7 +5,7 @@ import { GlyphInspector } from "@/components/glyph-inspector";
 import { ComparisonSync } from "@/components/comparison-sync";
 import { Masonry } from "@/components/masonry";
 import { PairingCard } from "@/components/pairing-card";
-import { SampleCard } from "@/components/sample-card";
+import { FittedSpecimenText } from "@/components/fitted-specimen-text";
 import { TrustedHtml } from "@/components/trusted-html";
 import { TypefaceComparison } from "@/components/typeface-comparison";
 import type { Pairing, TextData, Typeface } from "@/lib/content";
@@ -73,33 +73,24 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
     <>
       <div className={typeface.slug}>
         <div className="layout-grid mb-16 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16">
-          <header className="type-detail-header col-span-12 min-[721px]:col-span-6">
-            <div>
-              <h2>{typeface.name}</h2>
-              <h3>
-                by{" "}
-                <a className="underline decoration-from-font underline-offset-4 hover:text-(--red)" href={typeface.creator.url} rel="noopener" target="_blank">
-                  {typeface.creator.name}
-                </a>
-              </h3>
+          <section className="standardized-sample col-span-12 flex min-h-[24rem] flex-col items-center justify-center gap-5 py-8 min-[721px]:min-h-[28rem]">
+            <div className="h-[12rem] w-full min-[721px]:h-[15rem]">
+              <FittedSpecimenText typeface={typeface} showCreator={false} />
             </div>
-          </header>
-
-          <div className="font-download col-span-12 min-[721px]:col-span-6">
-            {typeface.gFontsUrl ? (
-              <a href={typeface.gFontsUrl} rel="noopener" target="_blank">
-                Embed <span>using Google Fonts</span>
+            <div className="flex flex-wrap items-center justify-center gap-3 font-(family-name:--ui-face)">
+              {typeface.gFontsUrl ? (
+                <a className="rounded-xl bg-black px-5 py-2.5 text-center text-sm leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.gFontsUrl} rel="noopener" target="_blank">
+                  Embed <span className="block text-xs font-normal normal-case opacity-80">using Google Fonts</span>
+                </a>
+              ) : null}
+              <a className="rounded-xl bg-black px-5 py-2.5 text-center text-sm leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.projectUrl} rel="noopener" target="_blank">
+                Download
+                <span className="block text-xs font-normal normal-case opacity-80">
+                  {typeface.latestRelease.version} ({typeface.latestRelease.date})
+                </span>
               </a>
-            ) : null}
-            <a href={typeface.projectUrl} rel="noopener" target="_blank">
-              Download{" "}
-              <span>
-                {typeface.latestRelease.version} ({typeface.latestRelease.date})
-              </span>
-            </a>
-          </div>
-
-          <SampleCard typeface={typeface} variant="hero" />
+            </div>
+          </section>
 
           <div className="type-styles col-span-12 min-[721px]:col-span-6">
             {typeface.weights.map((weight) => (
@@ -121,6 +112,13 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </div>
 
           <div className="type-info col-span-12 min-[721px]:col-span-3">
+            <h3>Designed by</h3>
+            <h4>
+              <a className="underline decoration-from-font underline-offset-4 hover:text-(--red)" href={typeface.creator.url} rel="noopener" target="_blank">
+                {typeface.creator.name}
+              </a>
+            </h4>
+
             <h3>Category</h3>
             <h4>
               <Link href={`/${typeface.categorySlug}/`}>{typeface.category}</Link>

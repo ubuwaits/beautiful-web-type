@@ -6,15 +6,14 @@ import { getTypefacePath } from "@/lib/routes";
 
 type SampleCardProps = {
   typeface: Typeface;
-  variant?: "grid" | "hero";
 };
 
-export function SampleCard({ typeface, variant = "grid" }: SampleCardProps) {
+export function SampleCard({ typeface }: SampleCardProps) {
   return (
     <div
       className="sample standardized-sample col-span-12"
       data-testid="typeface-card"
-      data-variant={variant}
+      data-variant="grid"
     >
       <Link href={getTypefacePath(typeface.slug)}>
         <FittedSpecimenText typeface={typeface} />

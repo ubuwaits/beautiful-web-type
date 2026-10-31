@@ -6,9 +6,10 @@ import type { Typeface } from "@/lib/content";
 
 type FittedSpecimenTextProps = {
   typeface: Pick<Typeface, "slug" | "name" | "creator">;
+  showCreator?: boolean;
 };
 
-export function FittedSpecimenText({ typeface }: FittedSpecimenTextProps) {
+export function FittedSpecimenText({ typeface, showCreator = true }: FittedSpecimenTextProps) {
   const stageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
@@ -40,7 +41,7 @@ export function FittedSpecimenText({ typeface }: FittedSpecimenTextProps) {
       observer.disconnect();
       document.fonts.removeEventListener("loadingdone", schedule);
     };
-  }, [typeface.name, typeface.creator.name, typeface.slug]);
+  }, [typeface.name, typeface.creator.name, typeface.slug, showCreator]);
 
   return (
     <div className="text standardized-specimen overflow-hidden" ref={stageRef}>
@@ -52,9 +53,11 @@ export function FittedSpecimenText({ typeface }: FittedSpecimenTextProps) {
         <h1 className="m-0 whitespace-nowrap text-[1em] font-normal not-italic leading-[1.1]">
           {typeface.name}
         </h1>
-        <p className="m-0 whitespace-nowrap text-[0.25em] font-normal not-italic leading-[1.3] text-neutral-500">
-          {typeface.creator.name}
-        </p>
+        {showCreator ? (
+          <p className="m-0 whitespace-nowrap text-[0.25em] font-normal not-italic leading-[1.3] text-neutral-500">
+            {typeface.creator.name}
+          </p>
+        ) : null}
       </div>
     </div>
   );

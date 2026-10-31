@@ -27,7 +27,6 @@ body .standardized-sample {
   background: var(--sample-surface);
 }
 
-
 body .standardized-sample[data-variant="grid"] > a {
   padding: 0;
 }
@@ -58,10 +57,6 @@ body :where(.standardized-sample .standardized-specimen) {
   width: 100%;
 }
 
-body .standardized-sample[data-variant="hero"] > a {
-  height: 28rem;
-}
-
 @media screen and (max-width: 1104px) {
   body .standardized-sample {
     --sample-fit-width: 0.75;
@@ -72,9 +67,6 @@ body .standardized-sample[data-variant="hero"] > a {
     padding: 2.5rem 1.5rem;
   }
 
-  body .standardized-sample[data-variant="hero"] > a {
-    height: 24.5rem;
-  }
 }
 
 @media screen and (max-width: 1104px) {
@@ -154,9 +146,6 @@ body .standardized-sample[data-variant="hero"] > a {
     min-height: 13rem;
   }
 
-  body .standardized-sample[data-variant="hero"] > a {
-    height: 21rem;
-  }
 }
 
 /* Shared page structure: horizontal columns with content-sized rows. */
