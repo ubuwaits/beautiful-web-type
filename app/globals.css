@@ -21,6 +21,7 @@ body.menu-open {
 }
 
 body .standardized-sample {
+  --sample-fit-width: 0.5;
   --sample-ink: #fff;
   --sample-surface: #000;
   background: var(--sample-surface);
@@ -66,6 +67,10 @@ body .standardized-sample[data-variant="hero"] > a {
 }
 
 @media screen and (max-width: 1104px) {
+  body .standardized-sample {
+    --sample-fit-width: 0.75;
+  }
+
   body .standardized-sample > a {
     height: 20rem;
     padding: 2.5rem 1.5rem;
