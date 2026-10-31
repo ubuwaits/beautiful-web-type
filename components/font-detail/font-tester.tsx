@@ -42,7 +42,6 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   const [text, setText] = useState(DEFAULT_TEXT);
   const [size, setSize] = useState(128);
   useLayoutEffect(() => setSize(defaultSize()), []);
-  const [spacing, setSpacing] = useState(0);
   const [alignment, setAlignment] = useState<"left" | "center" | "right">("center");
   const [axisValues, setAxisValues] = useState<Record<string, number>>({});
   const [selectedSets, setSelectedSets] = useState<string[]>([]);
@@ -61,7 +60,6 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
     fontOpticalSizing: face.axes.some((axis) => axis.tag === "opsz") ? "none" : "auto",
     fontVariationSettings: face.axes.map((axis) => `"${axis.tag}" ${axisValue(axis)}`).join(", ") || "normal",
     fontFeatureSettings: activeSets.map((tag) => `"${tag}" 1`).join(", ") || "normal",
-    letterSpacing: `${spacing / 100}em`,
     lineHeight: 1.1,
     textAlign: alignment,
   };
@@ -70,7 +68,6 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
     setWeight(defaultFace.weight);
     setText(DEFAULT_TEXT);
     setSize(defaultSize());
-    setSpacing(0);
     setAlignment("center");
     setAxisValues({});
     setSelectedSets([]);
@@ -107,7 +104,6 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
           )}
           <RangeControl label="Size" value={size} min={16} max={160} onChange={setSize} />
           {face.axes.filter((axis) => axis.tag === "wght").map((axis) => <RangeControl key={axis.tag} label={axis.name} value={axisValue(axis)} min={axis.min} max={axis.max} onChange={(value) => setAxisValues((current) => ({ ...current, [axis.tag]: value }))} />)}
-          <RangeControl label="Letter spacing" value={spacing} min={-10} max={20} unit="%" onChange={setSpacing} />
           {face.axes.some((axis) => axis.tag !== "wght") && (
             <div className="flex shrink-0 items-center gap-6" role="group" aria-label="Variable font axes">
               {face.axes.filter((axis) => axis.tag !== "wght").map((axis) => <RangeControl key={axis.tag} label={axis.tag === "SPCG" ? "Font spacing" : axis.name} value={axisValue(axis)} min={axis.min} max={axis.max} step={Math.min(1, (axis.max - axis.min) / 100)} unit={axis.tag === "wdth" ? "%" : ""} onChange={(value) => setAxisValues((current) => ({ ...current, [axis.tag]: value }))} />)}
