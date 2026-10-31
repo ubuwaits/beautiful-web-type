@@ -26,8 +26,8 @@ export type NavigationTypeface = {
 };
 
 const categories = [
-  { slug: "serif", name: "Serif" },
   { slug: "sans-serif", name: "Sans-Serif" },
+  { slug: "serif", name: "Serif" },
   { slug: "display", name: "Display" },
   { slug: "monospaced", name: "Monospaced" }
 ] as const;
