@@ -3,7 +3,6 @@ import Link from "next/link";
 import { FittedLine, FittedLines } from "@/components/fitted-lines";
 import { GlyphInspector } from "@/components/glyph-inspector";
 import { TypefaceWeights } from "@/components/typeface-weights";
-import { TypefaceNavigation } from "@/components/typeface-navigation";
 import { FittedSpecimenText } from "@/components/fitted-specimen-text";
 import { TrustedHtml } from "@/components/trusted-html";
 import type { TextData, Typeface } from "@/lib/content";
@@ -83,22 +82,11 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
       ))}</span>
     }] : [])
   ];
-  const sections = [
-    { id: "overview", label: "Overview" },
-    { id: "characters", label: "Characters" },
-    { id: "about", label: "About" },
-    { id: "words", label: "Words" },
-    { id: "headlines", label: "Headlines" },
-    { id: "paragraphs", label: "Paragraphs" },
-    ...(typeface.bodyHtml ? [{ id: "features", label: "Features" }] : []),
-    { id: "glyphs", label: "Glyphs" }
-  ];
 
   return (
-    <div className="pt-16 [--section-gap:6rem] min-[721px]:[--section-gap:10rem]">
-      <TypefaceNavigation sections={sections} />
+    <div className="[--section-gap:6rem] min-[721px]:[--section-gap:10rem]">
       <div className={typeface.slug}>
-        <div className="layout-grid mb-(--section-gap) scroll-mt-32 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
+        <div className="layout-grid mb-(--section-gap) scroll-mt-20 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
           <section className="standardized-sample col-span-12 flex min-h-[14rem] flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-[28rem] min-[721px]:py-8">
             <div className="h-[12rem] w-full [--sample-fit-width:0.75] min-[721px]:h-[22rem] max-[720px]:[--sample-fit-height:0.9] max-[1104px]:[--sample-fit-width:0.9]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
@@ -136,7 +124,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         </div>
         <FittedLines className="mb-(--section-gap) space-y-(--section-gap)">
-          <div className="type-detail-table examples-characters scroll-mt-32" id="characters">
+          <div className="type-detail-table examples-characters scroll-mt-20" id="characters">
             <h2 className="sr-only">Characters</h2>
             <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6">
               {CHARACTER_EXAMPLES.map((entry) => (
@@ -147,7 +135,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             </div>
           </div>
 
-          <section className="grid scroll-mt-32 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
+          <section className="grid scroll-mt-20 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
 
             <div className="typeface-description col-span-12 min-w-0 text-base leading-7 min-[721px]:text-(length:--ms1) min-[721px]:leading-8 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 gap-x-12 [&>p]:mb-7 min-[721px]:[&>p]:mb-8 [&>p]:text-pretty [&>p]:[orphans:3] [&>p]:[widows:3] [&>p:last-child]:mb-0 [&_a]:underline [&_a]:underline-offset-4">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
@@ -156,7 +144,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             </div>
           </section>
 
-          <div className="type-detail-table examples-words scroll-mt-32" id="words">
+          <div className="type-detail-table examples-words scroll-mt-20" id="words">
             <h2 className="sr-only">Words</h2>
 
             <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 min-[721px]:grid-cols-2 min-[721px]:gap-y-10">
@@ -170,7 +158,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             </div>
           </div>
 
-          <div className="type-detail-table examples-headlines scroll-mt-32" id="headlines">
+          <div className="type-detail-table examples-headlines scroll-mt-20" id="headlines">
             <h2 className="sr-only">Headlines</h2>
             <div className="space-y-10 min-[721px]:space-y-16">
               {typeface.weights.map((weight, index) => (
@@ -194,7 +182,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         </FittedLines>
 
-        <div className="type-detail-table examples-paragraphs mb-(--section-gap) scroll-mt-32" id="paragraphs">
+        <div className="type-detail-table examples-paragraphs mb-(--section-gap) scroll-mt-20" id="paragraphs">
           <h2 className="sr-only">Paragraphs</h2>
           <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[calc(50%_-_1.5rem)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
             {["text-(length:--ms1) min-[721px]:text-(length:--ms2)", "text-base min-[721px]:text-(length:--ms1)", "text-xs min-[721px]:text-(length:--ms-1)"].map((size) => (
@@ -213,7 +201,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
         {typeface.bodyHtml ? (
           <TrustedHtml
             id="features"
-            className="feature-list scroll-mt-32 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
+            className="feature-list scroll-mt-20 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
               [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-200/60 dark:[&>.type-detail-table:first-child]:border-t-neutral-800/80
               [&>.type-detail-table:first-child]:[border-top-style:solid]
               [&>.type-detail-table:first-child]:pt-6 min-[721px]:[&>.type-detail-table:first-child]:pt-8

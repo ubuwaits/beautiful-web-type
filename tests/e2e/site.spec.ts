@@ -62,7 +62,7 @@ test("places glyphs after OpenType features at the end of specimens", async ({ p
   expect(positions.afterFeatures).toBe(true);
   expect(positions.lastSpecimen).toBe(true);
   await expect(page.locator("#comparisons")).toHaveCount(0);
-  await expect(page.getByRole("navigation", { name: "On this page" }).getByRole("link", { name: "Compare", exact: true })).toHaveCount(0);
+  await expect(page.getByRole("navigation", { name: "On this page" })).toHaveCount(0);
   expect(positions.glyphTop).toBeGreaterThanOrEqual(positions.featuresBottom);
 });
 
