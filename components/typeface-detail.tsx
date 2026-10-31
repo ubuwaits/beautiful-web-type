@@ -130,9 +130,9 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             ))}
           </dl>
 
-          <div className="type-weight-list col-span-12 grid w-full max-w-3xl min-w-0 grid-cols-1 justify-self-center gap-x-(--gutter) min-[721px]:grid-cols-2 min-[1105px]:col-span-6 min-[1105px]:col-start-4">
+          <div className="type-weight-list col-span-12 grid w-full min-w-0 grid-cols-1 gap-x-6 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:grid-cols-2 min-[1105px]:col-span-6 min-[1105px]:col-start-4">
             {weightColumns.map((weights, index) => (
-              <div className={`type-styles min-w-0 [&>div]:flex-wrap ${weightColumns.length === 1 ? "col-span-full justify-self-center" : ""}`} key={index}>
+              <div className={`type-styles min-w-0 [&>div]:flex-wrap [&>div]:gap-x-3 [&>div>p]:mr-0! ${index === 1 ? "min-[721px]:text-right min-[721px]:[&>div]:justify-end min-[721px]:[&>div>.weight]:order-first" : ""} ${weightColumns.length === 1 ? "col-span-full justify-self-center" : ""}`} key={index}>
                 {weights.map((weight) => (
                   <div key={`${typeface.slug}-${weight.weight}`}>
                     <p className={`w${weight.weight}`}>{weight.name}</p>
