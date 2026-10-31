@@ -3,7 +3,7 @@
 }
 
 .biorhyme-expanded {
-  font-family: "BioRhyme Expanded", serif !important;
+  font-family: var(--biorhyme-expanded) !important;
 }
 
 @font-face {

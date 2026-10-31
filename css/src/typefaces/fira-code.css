@@ -3,7 +3,7 @@
 }
 
 .fira-code {
-  font-family: "Fira Code VF", monospace !important;
+  font-family: var(--fira-code) !important;
 }
 
 @font-face {

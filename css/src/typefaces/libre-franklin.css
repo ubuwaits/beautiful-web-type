@@ -3,7 +3,7 @@
 }
 
 .libre-franklin {
-  font-family: "Libre Franklin", sans-serif !important;
+  font-family: var(--libre-franklin) !important;
 }
 
 @font-face {

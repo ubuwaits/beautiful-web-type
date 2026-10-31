@@ -3,7 +3,7 @@
 }
 
 .ibm-plex-mono {
-  font-family: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace !important;
+  font-family: var(--ibm-plex-mono) !important;
 }
 
 @font-face {

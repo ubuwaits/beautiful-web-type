@@ -3,7 +3,7 @@
 }
 
 .source-serif-pro {
-  font-family: "Source Serif Variable", serif !important;
+  font-family: var(--source-serif-pro) !important;
 }
 
 @font-face {

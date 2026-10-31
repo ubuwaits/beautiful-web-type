@@ -3,7 +3,7 @@
 }
 
 .lora {
-  font-family: "Lora", serif !important;
+  font-family: var(--lora) !important;
 }
 
 @font-face {

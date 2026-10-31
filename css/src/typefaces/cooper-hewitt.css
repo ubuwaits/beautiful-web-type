@@ -3,7 +3,7 @@
 }
 
 .cooper-hewitt {
-  font-family: "Cooper Hewitt", sans-serif !important;
+  font-family: var(--cooper-hewitt) !important;
 }
 
 @font-face {

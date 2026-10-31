@@ -3,7 +3,7 @@
 }
 
 .zilla-slab {
-  font-family: "Zilla Slab", serif !important;
+  font-family: var(--zilla-slab) !important;
 }
 
 @font-face {

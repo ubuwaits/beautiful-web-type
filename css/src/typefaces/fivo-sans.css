@@ -3,7 +3,7 @@
 }
 
 .fivo-sans {
-  font-family: "Fivo Sans", sans-serif !important;
+  font-family: var(--fivo-sans) !important;
 }
 
 @font-face {

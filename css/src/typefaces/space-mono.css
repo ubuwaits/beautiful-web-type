@@ -3,7 +3,7 @@
 }
 
 .space-mono {
-  font-family: "Space Mono", monospace !important;
+  font-family: var(--space-mono) !important;
 }
 
 @font-face {

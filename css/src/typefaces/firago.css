@@ -3,7 +3,7 @@
 }
 
 .firago {
-  font-family: "FiraGO", serif !important;
+  font-family: var(--firago) !important;
 }
 
 @font-face {

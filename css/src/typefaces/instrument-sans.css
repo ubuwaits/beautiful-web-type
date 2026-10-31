@@ -3,7 +3,7 @@
 }
 
 .instrument-sans {
-  font-family: "Instrument Sans", sans-serif;
+  font-family: var(--instrument-sans) !important;
 }
 
 @font-face {

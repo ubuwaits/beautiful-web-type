@@ -3,7 +3,7 @@
 }
 
 .ibm-plex-sans {
-  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-family: var(--ibm-plex-sans) !important;
 }
 
 @font-face {

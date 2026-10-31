@@ -3,7 +3,7 @@
 }
 
 .ia-writer-quattro {
-  font-family: "iA Writer Quattro", "Helvetica Neue", Arial, sans-serif !important;
+  font-family: var(--ia-writer-quattro) !important;
 }
 
 @font-face {

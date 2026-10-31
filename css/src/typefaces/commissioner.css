@@ -3,7 +3,7 @@
 }
 
 .commissioner {
-  font-family: "Commissioner", sans-serif !important;
+  font-family: var(--commissioner) !important;
 }
 
 @font-face {

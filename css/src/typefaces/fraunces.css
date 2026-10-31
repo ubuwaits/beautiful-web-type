@@ -3,7 +3,7 @@
 }
 
 .fraunces {
-  font-family: "Fraunces", serif !important;
+  font-family: var(--fraunces) !important;
 }
 
 @font-face {

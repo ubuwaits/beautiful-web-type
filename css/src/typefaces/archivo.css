@@ -3,7 +3,7 @@
 }
 
 .archivo {
-  font-family: "Archivo", sans-serif !important;
+  font-family: var(--archivo) !important;
 }
 
 @font-face {

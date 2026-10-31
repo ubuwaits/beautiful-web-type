@@ -3,7 +3,7 @@
 }
 
 .messapia {
-  font-family: "Messapia", display !important;
+  font-family: var(--messapia) !important;
 }
 
 @font-face {

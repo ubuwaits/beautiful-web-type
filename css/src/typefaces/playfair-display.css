@@ -3,7 +3,7 @@
 }
 
 .playfair-display {
-  font-family: "Playfair Display", serif !important;
+  font-family: var(--playfair-display) !important;
 }
 
 @font-face {

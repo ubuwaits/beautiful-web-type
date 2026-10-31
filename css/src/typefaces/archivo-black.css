@@ -3,7 +3,7 @@
 }
 
 .archivo-black {
-  font-family: "Archivo Black", sans-serif !important;
+  font-family: var(--archivo-black) !important;
 }
 
 @font-face {

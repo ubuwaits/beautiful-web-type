@@ -3,7 +3,7 @@
 }
 
 .source-sans-pro {
-  font-family: "Source Sans Variable", serif !important;
+  font-family: var(--source-sans-pro) !important;
 }
 
 @font-face {

@@ -3,7 +3,7 @@
 }
 
 .source-code-pro {
-  font-family: "Source Code Variable", serif !important;
+  font-family: var(--source-code-pro) !important;
 }
 
 @font-face {

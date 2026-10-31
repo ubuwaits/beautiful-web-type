@@ -3,7 +3,7 @@
 }
 
 .work-sans {
-  font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-family: var(--work-sans) !important;
 }
 
 @font-face {

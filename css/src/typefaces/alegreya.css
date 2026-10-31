@@ -3,7 +3,7 @@
 }
 
 .alegreya {
-  font-family: "Alegreya", serif !important;
+  font-family: var(--alegreya) !important;
 }
 
 @font-face {

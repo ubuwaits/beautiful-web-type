@@ -3,7 +3,7 @@
 }
 
 .ibm-plex-serif {
-  font-family: "IBM Plex Serif", "Georgia", Times, serif !important;
+  font-family: var(--ibm-plex-serif) !important;
 }
 
 @font-face {

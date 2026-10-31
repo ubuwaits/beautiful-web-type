@@ -3,7 +3,7 @@
 }
 
 .crimson-pro {
-  font-family: "Crimson Pro", serif !important;
+  font-family: var(--crimson-pro) !important;
 }
 
 @font-face {

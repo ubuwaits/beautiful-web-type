@@ -3,7 +3,7 @@
 }
 
 .poppins {
-  font-family: "Poppins", sans-serif !important;
+  font-family: var(--poppins) !important;
 }
 
 @font-face {

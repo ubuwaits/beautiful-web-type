@@ -3,7 +3,7 @@
 }
 
 .inter {
-  font-family: "Inter var", sans-serif !important;
+  font-family: var(--inter) !important;
 }
 
 @font-face {

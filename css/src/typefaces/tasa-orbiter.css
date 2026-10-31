@@ -3,7 +3,7 @@
 }
 
 .tasa-orbiter {
-  font-family: "TASA Orbiter", sans-serif !important;
+  font-family: var(--tasa-orbiter) !important;
 }
 
 @font-face {

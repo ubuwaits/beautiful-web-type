@@ -1,9 +1,9 @@
 :root {
-  --oswald: 'Oswald', serif;
+  --oswald: 'Oswald', sans-serif;
 }
 
 .oswald {
-  font-family: "Oswald", sans-serif !important;
+  font-family: var(--oswald) !important;
 }
 
 @font-face {

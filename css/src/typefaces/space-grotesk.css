@@ -3,7 +3,7 @@
 }
 
 .space-grotesk {
-  font-family: "Space Grotesk", sans-serif !important;
+  font-family: var(--space-grotesk) !important;
 }
 
 @font-face {

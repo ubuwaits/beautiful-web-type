@@ -3,7 +3,7 @@
 }
 
 .alegreya-sans {
-  font-family: "Alegreya Sans", serif !important;
+  font-family: var(--alegreya-sans) !important;
 }
 
 @font-face {

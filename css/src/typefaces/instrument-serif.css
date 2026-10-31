@@ -3,7 +3,7 @@
 }
 
 .instrument-serif {
-  font-family: "Instrument Serif", "Georgia", Times, serif !important;
+  font-family: var(--instrument-serif) !important;
 }
 
 @font-face {

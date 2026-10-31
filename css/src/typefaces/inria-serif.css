@@ -3,7 +3,7 @@
 }
 
 .inria-serif {
-  font-family: "Inria Serif", "Georgia", Times, serif !important;
+  font-family: var(--inria-serif) !important;
 }
 
 @font-face {
