@@ -74,7 +74,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
     ...(typeface.familyFaces?.length ? [{
       label: "Other faces in family",
       value: <span className="flex flex-wrap justify-end gap-x-3">{typeface.familyFaces.map((familyFace) => (
-        <Link href={getTypefacePath(resolveTypefaceSlugByName(familyFace))} key={familyFace}>{familyFace}</Link>
+        <Link className="no-underline!" href={getTypefacePath(resolveTypefaceSlugByName(familyFace))} key={familyFace}>{familyFace}</Link>
       ))}</span>
     }] : [])
   ];
