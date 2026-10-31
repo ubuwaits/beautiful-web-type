@@ -142,7 +142,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
           <section className="grid scroll-mt-32 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
 
-            <div className="typeface-description col-span-12 min-w-0 text-(length:--ms1) leading-relaxed min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 gap-x-12 [&>p]:mb-5 [&>p:last-child]:mb-0 [&_a]:underline [&_a]:underline-offset-4">
+            <div className="typeface-description col-span-12 min-w-0 text-(length:--ms1) leading-relaxed min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 gap-x-12 [&>p]:mb-5 [&>p]:text-pretty [&>p]:[orphans:3] [&>p]:[widows:3] [&>p:last-child]:mb-0 [&_a]:underline [&_a]:underline-offset-4">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
                 <TrustedHtml as="p" html={paragraph} key={`${typeface.slug}-description-${index}`} />
               ))}
