@@ -54,7 +54,10 @@ function MainNavigation({ typefaces, mobile = false, onNavigate }: {
               nativeButton={false}
               render={<Link href={`/${category.slug}/`} />}
               role="link"
-              onClick={navigate}
+              onClick={(event) => {
+                event.preventBaseUIHandler();
+                navigate();
+              }}
               className={clsx(activeSection === category.slug && "text-(--red)")}
             >
               {category.name}
