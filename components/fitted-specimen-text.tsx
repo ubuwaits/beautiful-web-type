@@ -21,10 +21,12 @@ export function FittedSpecimenText({ typeface, showCreator = true }: FittedSpeci
 
     let frame = 0;
     const measure = () => {
-      const widthRatio = Number.parseFloat(getComputedStyle(stage).getPropertyValue("--sample-fit-width"));
+      const style = getComputedStyle(stage);
+      const widthRatio = Number.parseFloat(style.getPropertyValue("--sample-fit-width"));
+      const heightRatio = Number.parseFloat(style.getPropertyValue("--sample-fit-height")) || 0.65;
       setScale(Math.min(
         stage.clientWidth * widthRatio / text.offsetWidth,
-        stage.clientHeight * 0.65 / text.offsetHeight
+        stage.clientHeight * heightRatio / text.offsetHeight
       ));
     };
     const schedule = () => {
