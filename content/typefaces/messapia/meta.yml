@@ -2,6 +2,7 @@ name: Messapia
 dateAdded: '2020-05-23'
 category: Display
 styles: 2
+glyphCount: 348
 weights:
   - weight: 400
     name: Regular

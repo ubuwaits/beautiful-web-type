@@ -72,6 +72,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
     { label: "Designed by", value: <a className="no-underline!" href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
     { label: "No. of styles", value: typeface.styles },
+    { label: "Glyphs", value: typeface.glyphCount.toLocaleString("en-US") },
     { label: "Last Updated", value: typeface.latestRelease.date },
     ...(typeface.familyFaces?.length ? [{
       label: "Other faces in family",

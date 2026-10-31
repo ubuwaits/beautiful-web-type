@@ -2,6 +2,7 @@ name: Instrument Serif
 dateAdded: '2025-06-05'
 category: Serif
 styles: 1
+glyphCount: 377
 italic: true
 sampleText: "Superfluous"
 sampleClasses: "font-[400]"

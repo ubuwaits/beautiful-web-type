@@ -2,6 +2,7 @@ name: Instrument Sans
 dateAdded: '2025-06-05'
 category: Sans-Serif
 styles: Variable
+glyphCount: 501
 italic: true
 weights:
   - weight: 400

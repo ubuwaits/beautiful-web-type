@@ -2,6 +2,7 @@ name: Space Mono
 dateAdded: '2019-01-08'
 category: Monospaced
 styles: 4
+glyphCount: 765
 italic: true
 weights:
   - weight: 400

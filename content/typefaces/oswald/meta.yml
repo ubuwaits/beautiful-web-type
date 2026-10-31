@@ -2,6 +2,7 @@ name: Oswald
 dateAdded: '2018-10-15'
 category: Display
 styles: 6
+glyphCount: 771
 weights:
   - weight: 200
     name: Extra-Light

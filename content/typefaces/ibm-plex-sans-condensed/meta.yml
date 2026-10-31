@@ -2,6 +2,7 @@ name: IBM Plex Sans Condensed
 dateAdded: '2018-11-01'
 category: Sans-Serif
 styles: 16
+glyphCount: 1024
 italic: true
 weights:
   - weight: 100

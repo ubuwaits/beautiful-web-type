@@ -2,6 +2,7 @@ name: Rakkas
 dateAdded: '2018-10-22'
 category: Display
 styles: 1
+glyphCount: 926
 weights:
   - weight: 400
     name: Regular

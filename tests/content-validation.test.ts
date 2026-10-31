@@ -40,6 +40,7 @@ function createContentRoot(): string {
       "dateAdded: '2024-01-01'",
       "category: Sans-Serif",
       "styles: 2",
+      "glyphCount: 123",
       "sampleText: Bespoke Sample",
       'sampleClasses: "[--sample-fit-width:0.78] tracking-tight"',
       "weights:",
@@ -72,6 +73,7 @@ describe("content validation", () => {
       const graph = buildContentGraphFromContentDir(root);
       const typeface = graph.typefaceBySlug.get("test-sans");
 
+      expect(typeface?.glyphCount).toBe(123);
       expect(typeface?.sampleText).toBe("Bespoke Sample");
       expect(typeface?.sampleClasses).toBe("[--sample-fit-width:0.78] tracking-tight");
     } finally {

@@ -19,6 +19,7 @@ export type Typeface = {
   sampleText?: string;
   sampleClasses?: string;
   styles: string | number;
+  glyphCount: number;
   weights: Weight[];
   latestRelease: {
     version: string;

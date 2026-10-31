@@ -74,6 +74,13 @@ function assertString(value: unknown, key: string, filePath: string): string {
   return value;
 }
 
+function assertPositiveInteger(value: unknown, key: string, filePath: string): number {
+  if (typeof value !== "number" || !Number.isSafeInteger(value) || value <= 0) {
+    throw new Error(`Expected "${key}" to be a positive integer in ${filePath}`);
+  }
+  return value;
+}
+
 function assertPublicAssetPath(
   value: unknown,
   key: string,
@@ -251,6 +258,7 @@ function loadTypefaceBundles(contentDir: string): {
       sampleText: maybeString(meta.sampleText),
       sampleClasses: maybeString(meta.sampleClasses),
       styles: assertStringOrNumber(meta.styles, "styles", metaPath),
+      glyphCount: assertPositiveInteger(meta.glyphCount, "glyphCount", metaPath),
       weights: assertWeights(meta.weights, metaPath),
       latestRelease: {
         version: assertStringValue(latestRelease.version, "latestRelease.version", metaPath),

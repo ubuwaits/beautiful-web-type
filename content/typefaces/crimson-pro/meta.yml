@@ -2,6 +2,7 @@ name: Crimson Pro
 dateAdded: '2020-05-23'
 category: Serif
 styles: Variable
+glyphCount: 833
 italic: true
 sampleText: "excellent"
 sampleClasses: "tracking-tighter font-[600]"

@@ -2,6 +2,7 @@ name: IBM Plex Mono
 dateAdded: '2018-11-02'
 category: Monospaced
 styles: 16
+glyphCount: 1207
 italic: true
 weights:
   - weight: 100

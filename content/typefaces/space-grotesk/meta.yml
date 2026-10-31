@@ -2,6 +2,7 @@ name: Space Grotesk
 dateAdded: '2019-02-01'
 category: Sans-Serif
 styles: Variable
+glyphCount: 1001
 weights:
   - weight: 300
     name: Light

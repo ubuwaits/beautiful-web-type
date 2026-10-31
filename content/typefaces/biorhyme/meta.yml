@@ -2,6 +2,7 @@ name: BioRhyme
 dateAdded: '2018-10-15'
 category: Display
 styles: 5
+glyphCount: 494
 weights:
   - weight: 200
     name: Extra-Light

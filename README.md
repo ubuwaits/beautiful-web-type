@@ -108,7 +108,7 @@ Create `content/typefaces/<slug>/` with:
 - `sample.html`
 - `glyphs.yml`
 
-`meta.yml` holds the typeface metadata used by the app, including `name`, `dateAdded`, `category`, `styles`, `weights`, `latestRelease`, `projectUrl`, `creator`, `description`, and optional fields like `gFontsUrl`, `italic`, `smallcap`, `sampleText`, `sampleClasses`, and `familyFaces`.
+`meta.yml` holds the typeface metadata used by the app, including `name`, `dateAdded`, `category`, `styles`, `glyphCount`, `weights`, `latestRelease`, `projectUrl`, `creator`, `description`, and optional fields like `gFontsUrl`, `italic`, `smallcap`, `sampleText`, `sampleClasses`, and `familyFaces`.
 
 `detail.html` is the trusted HTML fragment rendered on the typeface detail page.
 
@@ -133,7 +133,7 @@ sampleClasses: "[font-feature-settings:'smcp']"
 fontFile: /assets/fonts/example/example.woff
 ```
 
-The explorer draws the font's default outlines. When a variable font defaults to a weight other than Regular, run `python3 scripts/prepare-glyph-fonts.py` (requires `fonttools` and `brotli`) to generate a static weight-400 face and update `glyphs.yml`. Keep its variable-source comment so the instance can be regenerated after font updates.
+The explorer draws the font's default outlines. When a variable font defaults to a weight other than Regular, run `python3 scripts/prepare-glyph-fonts.py` (requires `fonttools` and `brotli`) to generate a static weight-400 face and update `glyphs.yml`. Keep its variable-source comment so the instance can be regenerated after font updates. The script also refreshes `glyphCount` in every font’s metadata. This counts all glyphs in the regular explorer face, including unencoded alternates and `.notdef`, matching the explorer’s total.
 
 ### Add a pairing
 

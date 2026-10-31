@@ -2,6 +2,7 @@ name: Fraunces
 dateAdded: '2020-11-22'
 category: Display
 styles: Variable
+glyphCount: 698
 italic: true
 weights:
   - weight: 100

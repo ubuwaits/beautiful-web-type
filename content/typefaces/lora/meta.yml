@@ -2,6 +2,7 @@ name: Lora
 dateAdded: '2018-10-15'
 category: Serif
 styles: Variable
+glyphCount: 892
 italic: true
 sampleText: "Middlemarch"
 sampleClasses: "font-[500]"

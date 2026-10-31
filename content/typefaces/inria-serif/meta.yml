@@ -2,6 +2,7 @@ name: Inria Serif
 dateAdded: '2018-12-03'
 category: Serif
 styles: 6
+glyphCount: 597
 italic: true
 sampleText: "The Beast"
 sampleClasses: "tracking-tight font-[700] uppercase"

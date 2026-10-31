@@ -2,6 +2,7 @@ name: Playfair Display
 dateAdded: '2018-10-15'
 category: Display
 styles: 6
+glyphCount: 2304
 italic: true
 smallcap: true
 weights:

@@ -2,6 +2,7 @@ name: Fivo Sans
 dateAdded: '2019-01-03'
 category: Sans-Serif
 styles: 14
+glyphCount: 361
 italic: true
 weights:
   - weight: 100

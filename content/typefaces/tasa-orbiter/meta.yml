@@ -2,6 +2,7 @@ name: TASA Orbiter
 dateAdded: '2023-10-22'
 category: Sans-Serif
 styles: Variable
+glyphCount: 698
 weights:
   - weight: 400
     name: Regular

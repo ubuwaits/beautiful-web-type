@@ -2,6 +2,7 @@ name: iA Writer Quattro
 dateAdded: '2019-01-30'
 category: Sans-Serif
 styles: Variable
+glyphCount: 1182
 italic: true
 weights:
   - weight: 400
