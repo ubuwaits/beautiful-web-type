@@ -1,5 +1,5 @@
 :root {
-  --body-margin: 2em;
+  --body-margin: 3em;
   --wrapper: calc(100vw - (2 * var(--body-margin)));
   --gutter: 2em;
 }
