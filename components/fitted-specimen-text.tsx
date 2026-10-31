@@ -54,7 +54,7 @@ export function FittedSpecimenText({ typeface, showCreator = true }: FittedSpeci
           {typeface.name}
         </h1>
         {showCreator ? (
-          <p className="m-0 whitespace-nowrap text-[0.25em] font-normal not-italic leading-[1.3] text-neutral-500 dark:text-neutral-400">
+          <p className="m-0 whitespace-nowrap text-[0.25em] font-normal not-italic leading-[1.3] text-neutral-500 dark:text-neutral-400 max-[720px]:text-[0.32em]">
             {typeface.creator.name}
           </p>
         ) : null}
