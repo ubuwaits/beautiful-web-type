@@ -90,11 +90,14 @@ test("keeps consistent gutters between index cards", async ({ page }) => {
           const style = getComputedStyle(container);
           const cards = Array.from(container.querySelectorAll<HTMLElement>("[data-testid='typeface-card']"));
           const boxes = cards.map((card) => card.getBoundingClientRect());
+          const columns = window.innerWidth > 720 ? 2 : 1;
           return {
             display: style.display,
             gap: parseFloat(style.rowGap),
             expectedGap: parseFloat(style.getPropertyValue("--gutter")) * parseFloat(style.fontSize),
-            cardGaps: boxes.slice(1).map((box, i) => box.top - boxes[i].bottom)
+            cardGaps: boxes.slice(columns).map((box, i) => box.top - boxes[i].bottom),
+            columnGaps: columns === 2 ? boxes.filter((_, i) => i % 2 === 1).map((box, i) => box.left - boxes[i * 2].right) : [],
+            centerOffsets: columns === 2 ? boxes.filter((_, i) => i % 2 === 1).map((box, i) => box.top + box.height / 2 - boxes[i * 2].top - boxes[i * 2].height / 2) : []
           };
         });
         expect(spacing.display).toBe("grid");
@@ -102,6 +105,8 @@ test("keeps consistent gutters between index cards", async ({ page }) => {
         expect(spacing.gap).toBeCloseTo(spacing.expectedGap, 1);
         expect(spacing.cardGaps.length).toBeGreaterThan(0);
         for (const gap of spacing.cardGaps) expect(gap).toBeCloseTo(spacing.gap, 1);
+        for (const gap of spacing.columnGaps) expect(gap).toBeCloseTo(spacing.gap, 1);
+        for (const offset of spacing.centerOffsets) expect(offset).toBeCloseTo(0, 1);
       });
     }
   }

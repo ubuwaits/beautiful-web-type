@@ -11,7 +11,7 @@ type SampleCardProps = {
 export function SampleCard({ typeface }: SampleCardProps) {
   return (
     <div
-      className="sample standardized-sample col-span-12"
+      className="sample standardized-sample col-span-12 min-[721px]:col-span-6"
       data-testid="typeface-card"
       data-variant="grid"
     >
