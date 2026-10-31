@@ -15,7 +15,7 @@ export function AccordionItem({ className, ...props }: Primitive.Item.Props) {
 export function AccordionTrigger({ className, children, ...props }: Primitive.Trigger.Props) {
   return (
     <Primitive.Header className="m-0 flex">
-      <Primitive.Trigger data-slot="accordion-trigger" className={clsx("group flex w-full cursor-pointer items-center justify-between gap-4 rounded-md border-0 bg-transparent px-0 py-3 text-left text-lg font-bold uppercase text-inherit hover:text-(--red) focus-visible:outline-2 focus-visible:outline-offset-2", className)} {...props}>
+      <Primitive.Trigger data-slot="accordion-trigger" className={clsx("group flex w-full cursor-pointer items-center justify-between gap-4 rounded-md border-0 bg-transparent px-0 py-3 text-left text-lg font-bold uppercase text-inherit hover:text-red-500 focus-visible:outline-2 focus-visible:outline-offset-2", className)} {...props}>
         {children}
         <span className="flex size-11 shrink-0 items-center justify-center">
           <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" className="group-aria-expanded:rotate-180">

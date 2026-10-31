@@ -30,7 +30,7 @@ export function FittedLine({ text, className = "", lines = 1, weight = 400 }: Fi
   return (
     <div className="@container min-w-0 w-full">
       <h1
-        className={`m-0 w-max max-w-none ${lines === 2 ? "whitespace-pre" : "whitespace-nowrap"} leading-[1.15] caret-(--red) outline-none ${className}`}
+        className={`m-0 w-max max-w-none ${lines === 2 ? "whitespace-pre" : "whitespace-nowrap"} leading-[1.15] caret-red-500 outline-none ${className}`}
         style={{ "--line-scale": 0.9 / Math.max(1, text.length / lines), fontSize: "calc(100cqw * var(--line-scale))", fontWeight: weight } as CSSProperties}
         data-fit-line=""
         data-fit-lines={lines}

@@ -14,7 +14,7 @@ export function SiteFooter() {
   return (
     <footer className="layout-grid mt-8 pt-8 font-(family-name:--ui-face) max-[720px]:gap-6
       [&_h3]:mb-2 [&_h3]:text-base [&_h3]:leading-5 [&_h3]:font-bold [&_h3]:uppercase
-      [&_li]:mb-2 [&_li]:text-base [&_li]:leading-5 [&_li]:font-normal [&_li_a:hover]:text-(--red) border-t border-neutral-200/60 dark:border-neutral-800/80 [border-top-style:solid] [&_h3]:text-neutral-500 dark:[&_h3]:text-neutral-400">
+      [&_li]:mb-2 [&_li]:text-base [&_li]:leading-5 [&_li]:font-normal [&_li_a:hover]:text-red-500 border-t border-neutral-200/60 dark:border-neutral-800/80 [border-top-style:solid] [&_h3]:text-neutral-500 dark:[&_h3]:text-neutral-400">
       {categories.map(({ slug, name }) => (
         <div className={slug === "sans-serif"
           ? "col-span-12 min-[721px]:col-span-8 min-[1105px]:col-span-4"

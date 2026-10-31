@@ -102,7 +102,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
               [&>div+div]:border-t [&>div+div]:border-t-neutral-200/60 dark:[&>div+div]:border-t-neutral-800/80 [&>div+div]:[border-top-style:solid]
               [&_dt]:min-w-0 [&_dt]:text-xs max-[720px]:@min-[21rem]:[&_dt]:text-sm min-[721px]:[&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
               [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-xs max-[720px]:@min-[21rem]:[&_dd]:text-sm min-[721px]:[&_dd]:text-lg [&_dd]:leading-7 [&_dd]:wrap-anywhere
-              [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
+              [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-red-500">
               <div className="grid-cols-1!">
                 <dt className="sr-only">Get the font</dt>
                 <dd className={`grid gap-2 ${actions.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
@@ -193,7 +193,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             {["text-xl min-[721px]:text-2xl", "text-base min-[721px]:text-xl", "text-xs min-[721px]:text-sm"].map((size) => (
               <p
                 key={size}
-                className={`min-w-0 caret-(--red) outline-none ${size} leading-[1.4] whitespace-pre-line text-pretty [orphans:3] [widows:3]`}
+                className={`min-w-0 caret-red-500 outline-none ${size} leading-[1.4] whitespace-pre-line text-pretty [orphans:3] [widows:3]`}
                 contentEditable
                 suppressContentEditableWarning
               >
