@@ -195,13 +195,13 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
 
   const codes = selectedGlyph?.unicodes ?? [];
   return (
-    <section className="mb-16 min-[721px]:mb-24 scroll-mt-24" id="glyphs" ref={sectionRef} aria-label={`${typefaceName} glyph explorer`}>
+    <section className="mb-16 min-[721px]:mb-24 scroll-mt-32" id="glyphs" ref={sectionRef} aria-label={`${typefaceName} glyph explorer`}>
       {activated ? <Script src="/js/opentype.min.js" strategy="afterInteractive" onReady={() => setScriptReady(true)} onError={() => setError(true)} /> : null}
       <p className="sr-only" role="status">{error ? "Could not load glyphs" : font ? "Glyphs ready" : "Loading glyphs…"}</p>
       <noscript><p className="mb-4">Enable JavaScript to explore the glyphs.</p></noscript>
       {error ? <p role="alert">The font could not be loaded. Reload the page to try again.</p> : null}
       <div className="grid grid-cols-1 items-start gap-(--gutter) min-[721px]:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]">
-        <div className="sticky top-16 z-10 grid max-h-[calc(100dvh-6rem)] grid-cols-2 items-start overflow-y-auto bg-white min-[721px]:top-20 min-[721px]:block" id="glyph-detail">
+        <div className="sticky top-32 z-10 grid max-h-[calc(100dvh-10rem)] grid-cols-2 items-start overflow-y-auto bg-white min-[721px]:block" id="glyph-detail">
           <div className="min-w-0">
             <canvas className="block h-auto w-full" id="glyph-detail-canvas" ref={detailCanvasRef} aria-label={selectedGlyph ? `Preview of glyph ${selectedGlyph.index}` : "Selected glyph preview"} />
           </div>

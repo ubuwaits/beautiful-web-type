@@ -5,6 +5,7 @@ import { GlyphInspector } from "@/components/glyph-inspector";
 import { ComparisonSync } from "@/components/comparison-sync";
 import { Masonry } from "@/components/masonry";
 import { PairingCard } from "@/components/pairing-card";
+import { TypefaceNavigation } from "@/components/typeface-navigation";
 import { FittedSpecimenText } from "@/components/fitted-specimen-text";
 import { TrustedHtml } from "@/components/trusted-html";
 import { TypefaceComparison } from "@/components/typeface-comparison";
@@ -68,11 +69,29 @@ type TypefaceDetailProps = {
 
 export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: TypefaceDetailProps) {
   const paragraphText = text.paragraphs.join("\n\n");
+  const sections = [
+    { id: "overview", label: "Overview" },
+    { id: "characters", label: "Characters" },
+    { id: "about", label: "About" },
+    { id: "words", label: "Words" },
+    { id: "headlines", label: "Headlines" },
+    { id: "paragraphs", label: "Paragraphs" },
+    ...(typeface.bodyHtml ? [{ id: "features", label: "Features" }] : []),
+    { id: "glyphs", label: "Glyphs" },
+    ...(typeface.comparisonFaces?.length ? [{ id: "comparisons", label: "Compare" }] : []),
+    ...(pairings.length ? [{ id: "pairings", label: "Pairings" }] : [])
+  ];
 
   return (
-    <>
+    <div className="pt-12">
+      <TypefaceNavigation
+        sections={sections}
+        embedUrl={typeface.gFontsUrl}
+        downloadUrl={typeface.projectUrl}
+        release={`${typeface.latestRelease.version} (${typeface.latestRelease.date})`}
+      />
       <div className={typeface.slug}>
-        <div className="layout-grid mb-16 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16">
+        <div className="layout-grid mb-16 scroll-mt-32 gap-y-12 min-[721px]:mb-24 min-[721px]:gap-y-16" id="overview">
           <section className="standardized-sample col-span-12 flex min-h-[24rem] flex-col items-center justify-center gap-5 py-8 min-[721px]:min-h-[28rem]">
             <div className="h-[15rem] w-full [--sample-fit-width:0.65] min-[721px]:h-[18rem] max-[1104px]:[--sample-fit-width:0.85]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
@@ -125,23 +144,10 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             ) : null}
           </div>
 
-          <div className="col-span-12 flex min-w-0 flex-col items-stretch gap-3 font-(family-name:--ui-face) min-[721px]:col-span-6 min-[1105px]:col-span-3">
-            {typeface.gFontsUrl ? (
-              <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.gFontsUrl} rel="noopener" target="_blank">
-                Embed <span className="block text-sm font-normal normal-case opacity-80">using Google Fonts</span>
-              </a>
-            ) : null}
-            <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.projectUrl} rel="noopener" target="_blank">
-              Download
-              <span className="block text-sm font-normal normal-case opacity-80">
-                {typeface.latestRelease.version} ({typeface.latestRelease.date})
-              </span>
-            </a>
-          </div>
 
         </div>
         <FittedLines className="mb-16 space-y-16 min-[721px]:mb-24 min-[721px]:space-y-24">
-          <div className="type-detail-table examples-characters">
+          <div className="type-detail-table examples-characters scroll-mt-32" id="characters">
             <h2 className="sr-only">Characters</h2>
             <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6">
               {CHARACTER_EXAMPLES.map((entry) => (
@@ -152,7 +158,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </div>
 
-          <section className="grid grid-cols-12 gap-x-(--gutter)" aria-label="About the typeface">
+          <section className="grid scroll-mt-32 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
             <div className="typeface-description col-span-12 min-w-0 font-(family-name:--ui-face) text-(length:--ms1) leading-relaxed min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 gap-x-12 [&>p]:mb-5 [&>p:last-child]:mb-0 [&_a]:underline [&_a]:underline-offset-4">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
                 <TrustedHtml as="p" html={paragraph} key={`${typeface.slug}-description-${index}`} />
@@ -160,7 +166,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <div className="type-detail-table examples-words">
+          <div className="type-detail-table examples-words scroll-mt-32" id="words">
             <h2 className="sr-only">Words</h2>
 
             <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 min-[721px]:grid-cols-2 min-[721px]:gap-y-10">
@@ -174,7 +180,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </div>
 
-          <div className="type-detail-table examples-headlines">
+          <div className="type-detail-table examples-headlines scroll-mt-32" id="headlines">
             <h2 className="sr-only">Headlines</h2>
             <div className="space-y-10 min-[721px]:space-y-16">
               {typeface.weights.map((weight, index) => (
@@ -198,7 +204,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         </FittedLines>
 
-        <div className="type-detail-table examples-paragraphs mb-16 min-[721px]:mb-24">
+        <div className="type-detail-table examples-paragraphs mb-16 scroll-mt-32 min-[721px]:mb-24" id="paragraphs">
           <h2 className="sr-only">Paragraphs</h2>
           <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[calc(50%_-_1.5rem)_minmax(0,2.1fr)_minmax(0,1fr)] min-[1105px]:gap-x-12">
             {["text-(length:--ms2)", "text-(length:--ms1)", "text-(length:--ms-1)"].map((size) => (
@@ -216,7 +222,8 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
 
         {typeface.bodyHtml ? (
           <TrustedHtml
-            className="feature-list mb-16 space-y-12 min-[721px]:mb-24 min-[721px]:space-y-16
+            id="features"
+            className="feature-list scroll-mt-32 mb-16 space-y-12 min-[721px]:mb-24 min-[721px]:space-y-16
               [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start
               min-[721px]:[&>.type-detail-table]:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]
               [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col!
@@ -235,7 +242,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       </div>
 
       {typeface.comparisonFaces?.length ? (
-        <div className="layout-grid grid-comparisons mb-16 min-[721px]:mb-24" id="comparisons">
+        <div className="layout-grid grid-comparisons mb-16 scroll-mt-32 min-[721px]:mb-24" id="comparisons">
           <ComparisonSync />
           <h3 className="col-span-12">
             {typeface.name} compared with other typefaces
@@ -249,7 +256,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
       ) : null}
 
       {pairings.length ? (
-        <div className="layout-grid grid-pairings mb-16 min-[721px]:mb-24" id="pairings">
+        <div className="layout-grid grid-pairings mb-16 scroll-mt-32 min-[721px]:mb-24" id="pairings">
           <h3 className="col-span-12">Recommended Pairings for {typeface.name}</h3>
           <Masonry className="col-span-12">
             {pairings.map((pairing) => (
@@ -258,6 +265,6 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
           </Masonry>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }
