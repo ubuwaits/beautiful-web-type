@@ -2,14 +2,12 @@
 
 ## 31 Oct 2026
 
-Site refresh completed over 30–31 October:
+Site refresh, 30–31 October:
 
-* **Redesigned the site:** cleaner two-column font indexes, larger specimens, consistent grids and spacing, and more compact layouts on mobile. Reworked mobile navigation and simplified the footer.
-* **Added light and dark themes:** a neutral gray palette throughout, with an icon-based theme switcher and a saved preference.
-* **Expanded typeface descriptions:** detailed accounts of each design’s origins, letterforms, and intended uses, displayed in the featured typeface with improved paragraph wrapping and column rhythm.
-* **Rebuilt the glyph viewer:** the complete glyph grid now sits on each typeface page, with a sticky selected-glyph preview, Unicode and HTML/CSS details, and links to individual glyphs. Improved scrolling performance and regular-weight outlines for variable fonts.
-* **Refined font details and OpenType examples:** clearer metadata with glyph counts and release dates, better-aligned weight samples, and adjacent download and Google Fonts buttons. Audited feature examples against the font files and removed unsupported or redundant demonstrations.
-* **Simplified the catalog:** removed pairings pages, recommendations, comparison sections, and their navigation to focus on individual typefaces.
+* **Refreshed the design:** improved font cards, specimen layouts, mobile navigation, and light and dark themes.
+* **Expanded typeface descriptions** with background, design details, and suggested uses.
+* **Improved the glyph viewer** with a complete inline grid and a persistent selected-glyph preview.
+* **Simplified font pages:** clearer metadata and OpenType examples; removed pairings and comparisons.
 
 ## 30 Oct 2026
 
