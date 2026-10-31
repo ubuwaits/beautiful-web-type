@@ -2,6 +2,10 @@ import { readdirSync } from "node:fs";
 
 import { expect, test, type Page } from "@playwright/test";
 
+const typefaceSlugs = readdirSync("content/typefaces", { withFileTypes: true })
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => entry.name);
+
 async function expectWithinViewport(page: Page) {
   await page.evaluate(() => document.fonts.ready);
   // Allow font-driven ResizeObserver updates to reach the next paint.
@@ -15,7 +19,7 @@ for (const width of [1440, 900, 390]) {
   test(`keeps all typeface specimens within the viewport at ${width}px`, async ({ page }) => {
     test.setTimeout(180_000);
     await page.setViewportSize({ width, height: 1000 });
-    for (const slug of readdirSync("content/typefaces")) {
+    for (const slug of typefaceSlugs) {
       await test.step(slug, async () => {
         await page.goto(`/${slug}/`);
         await expectWithinViewport(page);
@@ -114,7 +118,7 @@ test("keeps consistent gutters between index cards", async ({ page }) => {
 
 test("loads the complete inline glyph grid for every typeface", async ({ page }) => {
   test.setTimeout(180_000);
-  for (const slug of readdirSync("content/typefaces")) {
+  for (const slug of typefaceSlugs) {
     await test.step(slug, async () => {
       await page.goto(`/${slug}/#glyphs`);
       const grid = page.locator("#glyph-grid");

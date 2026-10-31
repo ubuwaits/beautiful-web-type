@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="font-[initial] leading-[1.15]" suppressHydrationWarning>
       <head>
         <FontPreloads />
         <Script id="bwt-theme-init" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           type="application/atom+xml"
         />
       </head>
-      <body className="min-h-screen bg-white text-neutral-950 dark:bg-neutral-950 dark:text-neutral-100" spellCheck={false}>
+      <body className="mx-(--body-margin) mt-24 mb-(--body-margin) antialiased [text-rendering:optimizeLegibility] [font-feature-settings:'liga'_on,'clig'_on,'dlig'_off] max-[720px]:mt-22 min-h-screen bg-white text-neutral-950 dark:bg-neutral-950 dark:text-neutral-100" spellCheck={false}>
         <SiteHeader typefaces={getAllTypefaces().map(({ slug, name, creator, categorySlug }) => ({
           slug, name, creator: creator.name, categorySlug
         }))} />

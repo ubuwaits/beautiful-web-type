@@ -8,6 +8,7 @@ type FittedLineProps = {
   text: string;
   className?: string;
   lines?: 1 | 2;
+  weight?: number;
 };
 
 function splitHeadline(text: string): string {
@@ -25,12 +26,12 @@ function splitHeadline(text: string): string {
   return `${words.slice(0, split).join(" ")}\n${words.slice(split).join(" ")}`;
 }
 
-export function FittedLine({ text, className = "", lines = 1 }: FittedLineProps) {
+export function FittedLine({ text, className = "", lines = 1, weight = 400 }: FittedLineProps) {
   return (
     <div className="@container min-w-0 w-full">
       <h1
-        className={`m-0 w-max max-w-none ${lines === 2 ? "whitespace-pre" : "whitespace-nowrap"} leading-[1.15] ${className}`}
-        style={{ "--line-scale": 0.9 / Math.max(1, text.length / lines), fontSize: "calc(100cqw * var(--line-scale))" } as CSSProperties}
+        className={`m-0 w-max max-w-none ${lines === 2 ? "whitespace-pre" : "whitespace-nowrap"} leading-[1.15] caret-(--red) outline-none ${className}`}
+        style={{ "--line-scale": 0.9 / Math.max(1, text.length / lines), fontSize: "calc(100cqw * var(--line-scale))", fontWeight: weight } as CSSProperties}
         data-fit-line=""
         data-fit-lines={lines}
         onKeyDown={(event) => { if (event.key === "Enter") event.preventDefault(); }}

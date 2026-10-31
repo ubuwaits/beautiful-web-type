@@ -16,12 +16,12 @@ test("uses the system theme until a manual choice is saved", async ({ page }) =>
   const light = page.getByRole("tab", { name: "Light theme" });
   const dark = page.getByRole("tab", { name: "Dark theme" });
   await expect(dark).toHaveAttribute("aria-selected", "true");
-  await expect(page.locator("html")).toHaveClass("dark");
+  await expect(page.locator("html")).toHaveClass(/\bdark\b/);
 
   await dark.focus();
   await dark.press("ArrowLeft");
   await expect(light).toHaveAttribute("aria-selected", "true");
-  await expect(page.locator("html")).not.toHaveClass("dark");
+  await expect(page.locator("html")).not.toHaveClass(/\bdark\b/);
   expect(await page.evaluate(() => localStorage.getItem("bwt-theme"))).toBe("light");
   await page.emulateMedia({ colorScheme: "light" });
   await page.emulateMedia({ colorScheme: "dark" });
@@ -33,7 +33,7 @@ test("uses the system theme until a manual choice is saved", async ({ page }) =>
   await expect(page).toHaveURL(/\/serif\/$/);
   await expect(dark).toHaveAttribute("aria-selected", "true");
   await page.reload();
-  await expect(page.locator("html")).toHaveClass("dark");
+  await expect(page.locator("html")).toHaveClass(/\bdark\b/);
 });
 
 test("redraws glyph canvases when the theme changes without resetting selection", async ({ page }) => {

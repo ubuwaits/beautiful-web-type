@@ -27,7 +27,7 @@ export function FittedSpecimenText({ typeface, showCreator = true }: FittedSpeci
   useTextFit(stageRef, fit);
 
   return (
-    <div className="text standardized-specimen min-w-0 overflow-hidden" ref={stageRef}>
+    <div className="standardized-specimen m-0 flex h-full w-full min-w-0 max-w-none items-center justify-center overflow-hidden text-center" ref={stageRef}>
       <div
         className={`${typeface.slug} flex w-max shrink-0 flex-col items-center gap-[0.12em] text-center text-[10rem] font-normal not-italic leading-none`}
         ref={textRef}

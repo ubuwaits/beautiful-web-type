@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { FontFeatures } from "@/components/font-detail/font-features";
+
 import { FittedLine, FittedLines } from "@/components/typography/fitted-lines";
 import { GlyphInspector } from "@/components/font-detail/glyph-inspector";
 import { TypefaceWeights } from "@/components/font-detail/typeface-weights";
@@ -70,7 +72,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
     { label: "Download", href: typeface.projectUrl, title: `Download ${typeface.latestRelease.version} (${typeface.latestRelease.date})` },
     ...(typeface.gFontsUrl ? [{ label: "Google Fonts", href: typeface.gFontsUrl, title: "Google Fonts" }] : [])
   ];
-  const actionClass = "flex min-w-0 items-center justify-center rounded-full bg-neutral-900 px-4 py-2 min-[721px]:py-1.5 text-center text-xs leading-5 max-[720px]:@min-[21rem]:text-sm min-[721px]:text-(length:--ms1) min-[721px]:leading-7 font-semibold text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
+  const actionClass = "flex min-w-0 items-center justify-center rounded-full bg-neutral-900 px-4 py-2 min-[721px]:py-1.5 text-center text-xs leading-5 max-[720px]:@min-[21rem]:text-sm min-[721px]:text-xl min-[721px]:leading-7 font-semibold text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
   const metadata = [
     { label: "Designed by", value: <a className="no-underline!" href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
@@ -87,9 +89,9 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
   return (
     <div className="[--section-gap:4rem] min-[721px]:[--section-gap:8rem]">
-      <div className={typeface.slug}>
+      <div className={`${typeface.slug} [&.space-mono_:is(.examples-words,.examples-headlines,.examples-paragraphs)]:[font-feature-settings:'liga'_off,'clig'_off,'dlig'_off]`}>
         <div className="layout-grid mb-(--section-gap) scroll-mt-20 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
-          <section className="standardized-sample col-span-12 flex min-h-56 flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-112 min-[721px]:py-8">
+          <section className="col-span-12 flex min-h-56 flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-112 min-[721px]:py-8">
             <div className="h-48 w-full [--sample-fit-width:0.75] min-[721px]:h-88 max-[720px]:[--sample-fit-height:0.9] max-[1104px]:[--sample-fit-width:0.9]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
             </div>
@@ -100,7 +102,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
               [&>div]:grid [&>div]:grid-cols-2 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
               [&>div+div]:border-t [&>div+div]:border-t-neutral-200/60 dark:[&>div+div]:border-t-neutral-800/80 [&>div+div]:[border-top-style:solid]
               [&_dt]:min-w-0 [&_dt]:text-xs max-[720px]:@min-[21rem]:[&_dt]:text-sm min-[721px]:[&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
-              [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-xs max-[720px]:@min-[21rem]:[&_dd]:text-sm min-[721px]:[&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
+              [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-xs max-[720px]:@min-[21rem]:[&_dd]:text-sm min-[721px]:[&_dd]:text-xl [&_dd]:leading-7 [&_dd]:wrap-anywhere
               [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
               <div className="grid-cols-1!">
                 <dt className="sr-only">Get the font</dt>
@@ -128,7 +130,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         </div>
         <FittedLines className="mb-(--section-gap) space-y-(--section-gap)">
-          <div className="type-detail-table examples-characters scroll-mt-20" id="characters">
+          <div className="flex flex-col justify-center gap-6 examples-characters scroll-mt-20" id="characters">
             <h2 className="sr-only">Characters</h2>
             <div className="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-3 leading-[1.15] min-[721px]:gap-x-8 min-[721px]:gap-y-6">
               {CHARACTER_EXAMPLES.map((entry) => (
@@ -141,14 +143,14 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
           <section className="grid scroll-mt-20 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
 
-            <div className="typeface-description col-span-12 min-w-0 text-base leading-7 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 min-[721px]:text-(length:--ms1) min-[721px]:leading-8 gap-x-12 [&>p]:mb-7 [&>p]:text-pretty [&>p]:[orphans:2] [&>p]:[widows:2] [&>p:last-child]:mb-0">
+            <div className="typeface-description col-span-12 min-w-0 text-base leading-7 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 min-[721px]:text-xl min-[721px]:leading-8 gap-x-12 [&>p]:mb-7 [&>p]:text-pretty [&>p]:[orphans:2] [&>p]:[widows:2] [&>p:last-child]:mb-0">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
                 <TrustedHtml as="p" html={paragraph} key={`${typeface.slug}-description-${index}`} />
               ))}
             </div>
           </section>
 
-          <div className="type-detail-table examples-words scroll-mt-20" id="words">
+          <div className="flex flex-col justify-center gap-6 examples-words scroll-mt-20" id="words">
             <h2 className="sr-only">Words</h2>
 
             <div className="grid grid-cols-1 items-center gap-x-12 gap-y-6 min-[721px]:grid-cols-2 min-[721px]:gap-y-10">
@@ -156,27 +158,27 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
                 <FittedLine
                   key={`${typeface.slug}-${word}`}
                   text={word}
-                  className={`w400 ${index === 2 ? "uppercase" : ""}`}
+                  className={index === 2 ? "uppercase" : ""}
                 />
               ))}
             </div>
           </div>
 
-          <div className="type-detail-table examples-headlines scroll-mt-20" id="headlines">
+          <div className="flex flex-col justify-center gap-6 examples-headlines scroll-mt-20" id="headlines">
             <h2 className="sr-only">Headlines</h2>
             <div className="space-y-10 min-[721px]:space-y-16">
               {typeface.weights.map((weight, index) => (
                 <div key={`${typeface.slug}-headline-${weight.weight}`}>
-                  <p className="character-label mb-4">{weight.name} · {weight.weight}</p>
+                  <p className="character-label mt-2 mb-4 p-0 font-(family-name:--ui-monospaced) text-sm leading-4 font-semibold normal-case text-neutral-400 [font-feature-settings:'liga'_off]">{weight.name} · {weight.weight}</p>
                   <div className={`grid grid-cols-1 items-center gap-x-12 gap-y-6 ${typeface.smallcap ? "min-[721px]:grid-cols-3" : "min-[721px]:grid-cols-2"}`}>
-                    <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight}`} />
+                    <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} />
                     {typeface.italic ? (
-                      <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight} italic`} />
+                      <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} className="italic" />
                     ) : (
-                      <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight} uppercase`} />
+                      <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} className="uppercase" />
                     )}
                     {typeface.smallcap ? (
-                      <FittedLine text={text.headlines[index]} lines={2} className={`w${weight.weight} small-caps`} />
+                      <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} className="[font-feature-settings:'smcp']" />
                     ) : null}
                   </div>
                 </div>
@@ -186,13 +188,13 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         </FittedLines>
 
-        <div className="type-detail-table examples-paragraphs mb-(--section-gap) scroll-mt-20" id="paragraphs">
+        <div className="flex flex-col justify-center gap-6 examples-paragraphs mb-(--section-gap) scroll-mt-20" id="paragraphs">
           <h2 className="sr-only">Paragraphs</h2>
           <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[3fr_2fr_1fr] min-[1105px]:gap-x-12">
-            {["text-(length:--ms1) min-[721px]:text-(length:--ms2)", "text-base min-[721px]:text-(length:--ms1)", "text-xs min-[721px]:text-(length:--ms-1)"].map((size) => (
+            {["text-xl min-[721px]:text-2xl", "text-base min-[721px]:text-xl", "text-xs min-[721px]:text-sm"].map((size) => (
               <p
                 key={size}
-                className={`min-w-0 ${size} leading-[1.4] whitespace-pre-line text-pretty [orphans:3] [widows:3]`}
+                className={`min-w-0 caret-(--red) outline-none ${size} leading-[1.4] whitespace-pre-line text-pretty [orphans:3] [widows:3]`}
                 contentEditable
                 suppressContentEditableWarning
               >
@@ -204,42 +206,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         <FontTester key={typeface.slug} data={getFontTesterData(typeface.slug)} name={typeface.name} weights={typeface.weights} />
 
-        {typeface.bodyHtml ? (
-          <TrustedHtml
-            id="features"
-            className="feature-list max-[720px]:text-center scroll-mt-20 mb-(--section-gap) space-y-6 min-[721px]:space-y-8
-              [&>.type-detail-table:first-child]:border-t-2 [&>.type-detail-table:first-child]:border-t-neutral-200/60 dark:[&>.type-detail-table:first-child]:border-t-neutral-800/80
-              [&>.type-detail-table:first-child]:[border-top-style:solid]
-              [&>.type-detail-table:first-child]:pt-6 min-[721px]:[&>.type-detail-table:first-child]:pt-8
-              [&>.type-detail-table:last-child]:border-b-2 [&>.type-detail-table:last-child]:border-b-neutral-200/60 dark:[&>.type-detail-table:last-child]:border-b-neutral-800/80
-              [&>.type-detail-table:last-child]:[border-bottom-style:solid]
-              [&>.type-detail-table:last-child]:pb-6 min-[721px]:[&>.type-detail-table:last-child]:pb-8
-              [&>.type-detail-table+.type-detail-table]:border-t [&>.type-detail-table+.type-detail-table]:border-t-neutral-200/60 dark:[&>.type-detail-table+.type-detail-table]:border-t-neutral-800/80
-              [&>.type-detail-table+.type-detail-table]:[border-top-style:solid]
-              [&>.type-detail-table+.type-detail-table]:pt-6 min-[721px]:[&>.type-detail-table+.type-detail-table]:pt-8
-              [&>.type-detail-table]:grid! [&>.type-detail-table]:grid-cols-1 [&>.type-detail-table]:items-start [&>.type-detail-table]:gap-(--gutter)!
-              max-[720px]:[&>.type-detail-table]:gap-y-8!
-              min-[721px]:[&>.type-detail-table]:grid-cols-12
-              min-[721px]:[&>.type-detail-table>.meta]:col-span-3 min-[721px]:[&>.type-detail-table>.examples]:col-span-9
-              [&>.type-detail-table>.meta]:min-w-0 [&>.type-detail-table>.meta]:flex-col!
-              [&>.type-detail-table>.meta]:self-start [&>.type-detail-table>.meta]:justify-start!
-              max-[720px]:[&>.type-detail-table>.meta]:items-center max-[720px]:[&>.type-detail-table>.meta]:text-center
-              [&>.type-detail-table>.meta]:gap-1 [&>.type-detail-table>.meta>.code]:mt-0!
-              [&>.type-detail-table>.meta]:shadow-none! [&>.type-detail-table>.meta]:wrap-anywhere
-              [&>.type-detail-table>.examples]:min-w-0 [&>.type-detail-table>.examples]:justify-start!
-              max-[720px]:[&>.type-detail-table>.examples]:justify-center!
-              [&>.type-detail-table>.examples]:flex-row! [&>.type-detail-table>.examples]:flex-wrap!
-              [&>.type-detail-table>.examples]:items-start! [&>.type-detail-table>.examples]:content-start!
-              [&>.type-detail-table>.examples>div]:max-w-full
-              [&>.type-detail-table>.meta>.name]:[text-box-trim:trim-start] [&>.type-detail-table>.meta>.name]:[text-box-edge:cap_alphabetic]
-              [&>.type-detail-table>.examples>div:has(>span)]:grid [&>.type-detail-table>.examples>div:has(>span)]:grid-cols-[max-content_max-content]
-              [&>.type-detail-table>.examples>div:has(>span)]:items-start [&>.type-detail-table>.examples>div:has(>span)]:gap-x-1
-              [&>.type-detail-table>.examples>div:has(>span)>p]:col-span-full
-              [&>.type-detail-table>.examples>div>span]:[text-box-trim:trim-start] [&>.type-detail-table>.examples>div>span]:[text-box-edge:cap_alphabetic]
-              [&>.type-detail-table>.examples_h1]:[text-box-trim:trim-start] [&>.type-detail-table>.examples_h1]:[text-box-edge:cap_alphabetic]"
-            html={typeface.bodyHtml}
-          />
-        ) : null}
+        {typeface.bodyHtml ? <FontFeatures html={typeface.bodyHtml} /> : null}
 
         <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>
