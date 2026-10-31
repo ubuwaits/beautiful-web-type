@@ -21,7 +21,6 @@
   "dependencies": {
     "@base-ui/react": "^1.9.0",
     "clsx": "^2.1.1",
-    "js-yaml": "^4.3.2",
     "next": "~16.4.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
@@ -29,7 +28,6 @@
   "devDependencies": {
     "@playwright/test": "^1.51.1",
     "@tailwindcss/postcss": "^4.3.3",
-    "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.13.5",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

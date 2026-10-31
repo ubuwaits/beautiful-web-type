@@ -14,8 +14,6 @@ export type Typeface = {
   updatedAt?: string;
   category: CategoryName;
   categorySlug: CategorySlug;
-  sampleText?: string;
-  sampleClasses?: string;
   styles: string | number;
   glyphCount: number;
   weights: Weight[];
@@ -37,17 +35,17 @@ export type Typeface = {
   bodyClass: string;
 };
 
+/** Authored font data; page markup and derived route fields are added by the loader. */
+export type TypefaceData = Omit<Typeface, "bodyHtml" | "bodyClass" | "categorySlug"> & {
+  fontFile: string;
+  glyphSource?: string;
+};
+
 export type GlyphPage = {
   slug: string;
   typefaceName: string;
   fontFile: string;
   bodyClass: string;
-};
-
-export type Sample = {
-  slug: string;
-  typefaceName: string;
-  bodyHtml: string;
 };
 
 export type TextData = {
@@ -66,8 +64,6 @@ export type ContentGraph = {
   glyphPages: GlyphPage[];
   glyphPageBySlug: Map<string, GlyphPage>;
   glyphPageByTypefaceName: Map<string, GlyphPage>;
-  samples: Sample[];
-  sampleByTypefaceName: Map<string, Sample>;
   latestTypefaces: Typeface[];
   text: TextData;
 };

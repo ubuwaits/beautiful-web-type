@@ -1,7 +1,6 @@
 import type {
   CategorySlug,
   GlyphPage,
-  Sample,
   TextData,
   Typeface
 } from "./types";
@@ -29,10 +28,6 @@ export function getTypefaceBySlug(typefaceSlug: string): Typeface | undefined {
 
 export function getGlyphPageBySlug(typefaceSlug: string): GlyphPage | undefined {
   return getContentGraph().glyphPageBySlug.get(typefaceSlug);
-}
-
-export function getSampleForTypeface(typefaceName: string): Sample | undefined {
-  return getContentGraph().sampleByTypefaceName.get(typefaceName);
 }
 
 export function getTextData(): TextData {

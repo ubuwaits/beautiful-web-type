@@ -3,7 +3,6 @@ export {
   getAllTypefaces,
   getGlyphPageBySlug,
   getLatestTypefaces,
-  getSampleForTypeface,
   getTextData,
   getTypefaceBySlug,
   getTypefacesByCategory,
@@ -14,7 +13,6 @@ export type {
   CategoryName,
   CategorySlug,
   GlyphPage,
-  Sample,
   TextData,
   Typeface,
   Weight

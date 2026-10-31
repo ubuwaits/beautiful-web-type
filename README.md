@@ -110,38 +110,15 @@ The site's authored content lives in `content/`.
 
 Create `content/typefaces/<slug>/` with:
 
-- `meta.yml`
-- `detail.html`
-- `sample.html`
-- `glyphs.yml`
+- `data.ts`: metadata, description, weights, and glyph font configuration, checked with `satisfies TypefaceData`.
+- `detail.html`: the trusted HTML fragment for OpenType feature examples.
 
-`meta.yml` holds the typeface metadata used by the app, including `name`, `dateAdded`, `category`, `styles`, `glyphCount`, `weights`, `latestRelease`, `projectUrl`, `creator`, `description`, and optional fields like `gFontsUrl`, `italic`, `smallcap`, `sampleText`, `sampleClasses`, and `familyFaces`.
+Import the new data module in `content/typefaces/index.ts`. Use an existing font as a template.
 
-`detail.html` is the trusted HTML fragment rendered on the typeface detail page.
+The `fontFile` field selects the glyph explorer font. `glyphSource`, when present, preserves the original variable font used to generate its regular instance. Run `python3 scripts/prepare-glyph-fonts.py` after changing font assets to refresh glyph counts and regular instances (requires `fonttools` and `brotli`).
 
-`sample.html` is retained as authored specimen source content. Listing cards and the top specimen on detail pages use shared specimen copy from `content/site/text.yml`, unless a typeface overrides it with `sampleText` in `meta.yml`.
-
-`sampleClasses` can be used for per-typeface Tailwind overrides on the specimen stage. Quote the string when using responsive variants or arbitrary properties, for example:
-
-```yml
-sampleText: "Sharp & Quiet"
-sampleClasses: "[--sample-fit-width:0.78] tracking-tight text-[#b42318] md:[--sample-fit-width:0.82]"
-```
-
-For OpenType features, use Tailwind arbitrary properties rather than `font-features-*`. For example, small caps should be:
-
-```yml
-sampleClasses: "[font-feature-settings:'smcp']"
-```
-
-`glyphs.yml` supplies the font for the embedded glyph explorer on the typeface page and must include:
-
-```yml
-fontFile: /assets/fonts/example/example.woff
-```
-
-The explorer draws the font's default outlines. When a variable font defaults to a weight other than Regular, run `python3 scripts/prepare-glyph-fonts.py` (requires `fonttools` and `brotli`) to generate a static weight-400 face and update `glyphs.yml`. Keep its variable-source comment so the instance can be regenerated after font updates. The script also refreshes `glyphCount` in every font’s metadata. This counts all glyphs in the regular explorer face, including unencoded alternates and `.notdef`, matching the explorer’s total.
+For OpenType features, use Tailwind arbitrary properties such as `[font-feature-settings:'smcp']`.
 
 ### Shared site text
 
-`content/site/text.yml` holds the shared `specimen` copy plus the reusable `words`, `headlines`, and `paragraphs` arrays used across specimen pages.
+`content/site/text.ts` exports the typed shared specimen copy and reusable words, headlines, and paragraphs.

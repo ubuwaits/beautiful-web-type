@@ -5,6 +5,7 @@ Requires fonttools and brotli. Run again after updating the source font assets.
 
 from pathlib import Path
 import re
+import json
 
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
@@ -13,33 +14,31 @@ ROOT = Path(__file__).resolve().parent.parent
 REGULAR_AXES = {"wght": 400, "ital": 0, "slnt": 0}
 
 
-def update_glyph_count(config, count):
-    metadata_path = config.parent / "meta.yml"
-    metadata = metadata_path.read_text()
-    field = f"glyphCount: {count}"
-    if re.search(r"^glyphCount:", metadata, re.M):
-        updated = re.sub(r"^glyphCount:.*$", field, metadata, flags=re.M)
-    else:
-        updated, replacements = re.subn(
-            r"(^styles:.*$)",
-            lambda match: match.group(1) + "\n" + field,
-            metadata,
-            count=1,
-            flags=re.M,
-        )
-        if replacements != 1:
-            raise ValueError(f"Missing styles field in {metadata_path}")
-    if updated != metadata:
-        metadata_path.write_text(updated)
+def read_string_field(text, field):
+    match = re.search(rf'^  {field}: ("(?:[^"\\]|\\.)*")', text, re.M)
+    return json.loads(match.group(1)) if match else None
 
 
-for config in sorted((ROOT / "content/typefaces").glob("*/glyphs.yml")):
-    text = config.read_text()
-    current_url = re.search(r"^fontFile:\s*(\S+)", text, re.M).group(1)
-    provenance = re.search(r"^# Variable source:\s*(\S+)", text, re.M)
-    source_url = provenance.group(1) if provenance else current_url
+def update_field(text, field, value):
+    replacement = f"  {field}: {json.dumps(value, ensure_ascii=False)},"
+    pattern = rf"^  {field}:.*$"
+    if re.search(pattern, text, re.M):
+        return re.sub(pattern, lambda _: replacement, text, flags=re.M)
+    return text.replace("\n} satisfies TypefaceData;", f"\n{replacement}\n}} satisfies TypefaceData;")
+
+
+for config in sorted((ROOT / "content/typefaces").glob("*/data.ts")):
+    original = config.read_text()
+    text = original
+    current_url = read_string_field(text, "fontFile")
+    if not current_url:
+        raise ValueError(f"Missing fontFile in {config}")
+    provenance = read_string_field(text, "glyphSource")
+    source_url = provenance or current_url
     with TTFont(ROOT / "public" / source_url.lstrip("/"), recalcTimestamp=False) as font:
-        update_glyph_count(config, len(font.getGlyphOrder()))
+        text = update_field(text, "glyphCount", len(font.getGlyphOrder()))
+        if text != original:
+            config.write_text(text)
         if "fvar" not in font:
             continue
         axes = {axis.axisTag: axis.defaultValue for axis in font["fvar"].axes}
@@ -53,5 +52,7 @@ for config in sorted((ROOT / "content/typefaces").glob("*/glyphs.yml")):
         output_url = str(Path(source_url).parent / "glyphs-regular.woff2")
         regular.flavor = "woff2"
         regular.save(ROOT / "public" / output_url.lstrip("/"))
-        config.write_text(f"# Variable source: {source_url}\nfontFile: {output_url}\n")
+        text = update_field(text, "fontFile", output_url)
+        text = update_field(text, "glyphSource", source_url)
+        config.write_text(text)
         print(f"{config.parent.name}: regular upright, {len(regular.getGlyphOrder())} glyphs")

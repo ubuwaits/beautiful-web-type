@@ -1,0 +1,67 @@
+import type { TypefaceData } from "@/lib/content/types";
+
+export default {
+  slug: "inter",
+  name: "Inter",
+  dateAdded: "2020-11-21",
+  category: "Sans-Serif",
+  styles: "Variable",
+  glyphCount: 2937,
+  italic: true,
+  weights: [
+    {
+      weight: 100,
+      name: "Thin"
+    },
+    {
+      weight: 200,
+      name: "Extra Light"
+    },
+    {
+      weight: 300,
+      name: "Light"
+    },
+    {
+      weight: 400,
+      name: "Regular"
+    },
+    {
+      weight: 500,
+      name: "Medium"
+    },
+    {
+      weight: 600,
+      name: "Semi Bold"
+    },
+    {
+      weight: 700,
+      name: "Bold"
+    },
+    {
+      weight: 800,
+      name: "Extra Bold"
+    },
+    {
+      weight: 900,
+      name: "Black"
+    }
+  ],
+  latestRelease: {
+    version: "v4.1",
+    date: "16 Nov 2024"
+  },
+  projectUrl: "https://rsms.me/inter/",
+  gFontsUrl: "https://fonts.google.com/specimen/Inter",
+  creator: {
+    name: "Rasmus Andersson",
+    url: "https://rsms.me/"
+  },
+  description: `Inter was designed by Swedish designer and technologist Rasmus Andersson to solve a specific, contemporary interface problem: crafting a digital neo-grotesque engineered from the pixel up for computer screens across varying display densities. Begun in 2016 under the initial working title <em>Interface</em>, the project grew directly out of Andersson’s work in software design, addressing the optical deficiencies that emerge when print-era grotesques are forced into complex application layouts. Released freely under the SIL Open Font License, Inter functions as a foundational utility of the modern web, approaching screen legibility not through decorative novelty, but through systematic optical engineering.
+
+The anatomy of the face draws from the mid-century Swiss tradition—most visibly the measured, neutral lineage of Akzidenz-Grotesk and Helvetica—while incorporating pragmatic concessions for raster environments. It features a prominent x-height paired with short ascenders and descenders, proportions calibrated to maximize letter recognition within compact UI elements like buttons, tables, and navigation bars without triggering vertical clipping. Apertures remain wide and open, preventing interior chambers in letters such as <em>c</em>, <em>e</em>, and <em>s</em> from congealing at micro-sizes. At stroke junctions, Andersson introduced subtle optical tapers that function like digital ink traps, shedding excess weight where curves meet vertical stems to prevent dark pixel clumping. Along the line, Inter sets a balanced, neutral grey that preserves clear word silhouettes across both standard displays and high-density screens.
+
+Beyond its default letterforms, Inter’s strength lies in its extensive programmatic architecture. Built as a variable font with continuous axes for weight and slant, it includes an expansive suite of OpenType features tailored to technical and UI demands: tabular numbers for financial ledgers, case-sensitive punctuation aligned to capital letters, and glyph disambiguation options that add crossbars to the capital <em>I</em> or curve the tail of the lowercase <em>l</em> to prevent confusion with the numeral <em>1</em>. To ensure the design scales beyond small interface text, dedicated cuts such as <em>Inter Display</em> subtly adjust proportions, tightening the tracking and refining stroke transitions so that the typeface can step up to headline duties without feeling coarse.
+
+Inter’s domain is firmly anchored in functional digital spaces: user interfaces, mobile operating systems, data dashboards, and responsive web layouts. While its deliberate neutrality makes it less suited to expressive display tasks or literary book design, it performs its intended role with exceptional discipline. Within the open-source commons, it stands as a prime example of utilitarian craft: an alphabet re-engineering the sober clarity of the grotesque for the technical demands of the screen.`,
+  fontFile: "/assets/fonts/inter/Inter-roman.var.woff2"
+} satisfies TypefaceData;

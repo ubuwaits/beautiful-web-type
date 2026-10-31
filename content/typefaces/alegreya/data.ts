@@ -1,0 +1,53 @@
+import type { TypefaceData } from "@/lib/content/types";
+
+export default {
+  slug: "alegreya",
+  name: "Alegreya",
+  dateAdded: "2018-10-15",
+  category: "Serif",
+  styles: 10,
+  glyphCount: 2172,
+  italic: true,
+  smallcap: true,
+  weights: [
+    {
+      weight: 400,
+      name: "Regular"
+    },
+    {
+      weight: 500,
+      name: "Medium"
+    },
+    {
+      weight: 700,
+      name: "Bold"
+    },
+    {
+      weight: 800,
+      name: "Extra-Bold"
+    },
+    {
+      weight: 900,
+      name: "Black"
+    }
+  ],
+  latestRelease: {
+    version: "v2.009",
+    date: "8 Jan 2021"
+  },
+  projectUrl: "https://github.com/huertatipografica/Alegreya",
+  gFontsUrl: "https://fonts.google.com/specimen/Alegreya",
+  creator: {
+    name: "Huerta Tipográfica",
+    url: "https://huertatipografica.com/en"
+  },
+  description: `Alegreya is an act of deep literary devotion, cast in the conviction that continuous reading is not a passive reception of symbols, but an intimate, musical journey. Designed by Juan Pablo del Peral of the Argentine foundry Huerta Tipográfica—and celebrated at ATypI’s <em>Letter.2</em> competition as one of the defining text designs of its era—the typeface turns its back on the antiseptic, mechanical regularity that so frequently numbs the digital page. Del Peral sought instead to recover the living cadence of the human voice. Rooted in the humanist lineage that reaches back through the master printers of Renaissance Venice and sixteenth-century France, Alegreya refuses the cold embalming of antiquarian pastiche; it takes the structural wisdom of historical punchcutting and animates it with the agile, contemporary spirit of South American design.
+
+The anatomy of the face is propelled by the dynamic, asymmetrical memory of the broad-edged pen. Rather than forcing letterforms into an unyielding geometric mold, del Peral allows stems and arches to modulate with subtle optical elasticity. Counters are generous and hospitable, keeping the interior chambers flooded with light, while the serifs—crisp, angled, and lightly faceted—provide a decisive footing along the baseline without anchoring the eye too heavily into the paper. On the page, Alegreya produces a warm, luminous color and a supple horizontal momentum. It does not march in uniform, industrial lockstep; it moves with an unhurried, natural stride, gathering characters into harmonious words and carrying the reader across lengthy narrative landscapes without friction or eye strain.
+
+Where many digital romans treat their italic as an obedient, tilted concession, Alegreya’s cursive is an exuberant counterpoint—a dancing script of remarkable calligraphic vigor. Steeply inclined, rhythmic, and bristling with angled joins, it weaves through the text like a second vocal register, offering true dramatic friction and polyphonic contrast alongside the roman. Supported by an exhaustive classical apparatus—including true small capitals, delicate ligatures, and proportional oldstyle figures—Alegreya functions as a fully enfranchised citizen of book typography. In the open commons, it stands as an enduring monument to typographic craft: a workhorse of quiet nobility, demonstrating that the digital screen can sustain the ancient, contemplative dignity of literature.`,
+  familyFaces: [
+    "Alegreya Sans"
+  ],
+  fontFile: "/assets/fonts/alegreya/Alegreya-Regular.woff2"
+} satisfies TypefaceData;
