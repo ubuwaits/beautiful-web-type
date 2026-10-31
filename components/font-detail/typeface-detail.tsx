@@ -165,20 +165,20 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
           <div className="flex flex-col justify-center gap-6 examples-headlines scroll-mt-20" id="headlines">
             <h2 className="sr-only">Headlines</h2>
-            <div className="space-y-10 min-[721px]:space-y-16">
+            <div className={`grid grid-cols-1 gap-x-12 gap-y-10 min-[721px]:gap-y-16 ${!typeface.italic && !typeface.smallcap ? "min-[721px]:grid-cols-2" : ""}`}>
               {typeface.weights.map((weight, index) => (
                 <div key={`${typeface.slug}-headline-${weight.weight}`}>
-                  <p className="character-label mt-2 mb-4 p-0 font-(family-name:--ui-monospaced) text-sm leading-4 font-semibold normal-case text-neutral-400 [font-feature-settings:'liga'_off]">{weight.name} · {weight.weight}</p>
-                  <div className={`grid grid-cols-1 items-center gap-x-12 gap-y-6 ${typeface.smallcap ? "min-[721px]:grid-cols-3" : "min-[721px]:grid-cols-2"}`}>
-                    <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} />
-                    {typeface.italic ? (
-                      <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} className="italic" />
-                    ) : (
-                      <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} className="uppercase" />
-                    )}
-                    {typeface.smallcap ? (
-                      <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} className="[font-feature-settings:'smcp']" />
-                    ) : null}
+                  <div className={`grid grid-cols-1 items-start gap-x-12 gap-y-6 ${typeface.italic && typeface.smallcap ? "min-[721px]:grid-cols-3" : typeface.italic || typeface.smallcap ? "min-[721px]:grid-cols-2" : ""}`}>
+                    {[
+                      { style: "", className: "" },
+                      ...(typeface.italic ? [{ style: "Italic", className: "italic" }] : []),
+                      ...(typeface.smallcap ? [{ style: "Small Caps", className: "[font-feature-settings:'smcp']" }] : [])
+                    ].map(({ style, className }) => (
+                      <div className="min-w-0" key={style}>
+                        <p className="character-label mt-2 mb-4 p-0 font-(family-name:--ui-monospaced) text-sm leading-4 font-semibold normal-case text-neutral-400 [font-feature-settings:'liga'_off]">{weight.name}{style ? ` ${style}` : ""} · {weight.weight}</p>
+                        <FittedLine text={text.headlines[index]} lines={2} weight={weight.weight} className={className} />
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
