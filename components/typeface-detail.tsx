@@ -68,7 +68,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
   const paragraphText = text.paragraphs.join("\n\n");
   const actions = [
     { label: "Download", href: typeface.projectUrl, title: `Download ${typeface.latestRelease.version} (${typeface.latestRelease.date})` },
-    ...(typeface.gFontsUrl ? [{ label: "Get on Google Fonts", href: typeface.gFontsUrl, title: "Get on Google Fonts" }] : [])
+    ...(typeface.gFontsUrl ? [{ label: "Google Fonts", href: typeface.gFontsUrl, title: "Google Fonts" }] : [])
   ];
   const actionClass = "flex min-w-0 items-center justify-center rounded-full bg-neutral-900 px-4 py-1.5 text-center text-xs leading-5 max-[720px]:@min-[21rem]:text-sm min-[721px]:text-(length:--ms1) min-[721px]:leading-7 font-semibold text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
   const metadata = [
