@@ -1,0 +1,21 @@
+:root {
+  --newsreader: 'Newsreader', serif;
+}
+
+.newsreader {
+  font-family: var(--newsreader) !important;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  src: url("/assets/fonts/newsreader/Newsreader.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 200 800;
+  src: url("/assets/fonts/newsreader/Newsreader-Italic.woff2") format("woff2");
+}

@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 31 Oct 2026
 
+* **Added [Newsreader](https://beautifulwebtype.com/newsreader/)** by Production Type.
 * **Added [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/)** by Bakken & Bæck.
 * **Added [Zalando Sans](https://beautifulwebtype.com/zalando-sans/)** by Jakob Ekelund of KH Type.
 * **Added [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)** by Grilli Type, Contrast Foundry, and Type Network.
@@ -77,6 +78,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
 * [Lora](https://beautifulwebtype.com/lora/)
 * [Messapia](https://beautifulwebtype.com/messapia/)
+* [Newsreader](https://beautifulwebtype.com/newsreader/)
 * [Oswald](https://beautifulwebtype.com/oswald/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)
 * [Poppins](https://beautifulwebtype.com/poppins/)

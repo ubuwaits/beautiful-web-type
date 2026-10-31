@@ -5225,6 +5225,53 @@
       }
     ]
   },
+  "newsreader": {
+    "family": "Newsreader",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 800,
+            "default": 400
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 6,
+            "max": 72,
+            "default": 18
+          }
+        ],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 800,
+            "default": 400
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 6,
+            "max": 72,
+            "default": 18
+          }
+        ],
+        "stylisticSets": []
+      }
+    ]
+  },
   "oswald": {
     "family": "Oswald",
     "faces": [

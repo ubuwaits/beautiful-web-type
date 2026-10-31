@@ -29,6 +29,7 @@ import leMurmure from "./le-murmure/data";
 import libreFranklin from "./libre-franklin/data";
 import lora from "./lora/data";
 import messapia from "./messapia/data";
+import newsreader from "./newsreader/data";
 import oswald from "./oswald/data";
 import playfairDisplay from "./playfair-display/data";
 import poppins from "./poppins/data";
@@ -77,6 +78,7 @@ export const typefaceData: TypefaceData[] = [
   libreFranklin,
   lora,
   messapia,
+  newsreader,
   oswald,
   playfairDisplay,
   poppins,
