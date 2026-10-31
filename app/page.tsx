@@ -7,7 +7,6 @@ import { PageShell } from "@/components/page-shell";
 import { SampleCard } from "@/components/sample-card";
 import { SampleIndex } from "@/components/sample-index";
 import {
-  getTextData,
   getLatestPairings,
   getLatestTypefaces
 } from "@/lib/content";
@@ -15,7 +14,6 @@ import { DEFAULT_SITE_DESCRIPTION, createPageMetadata } from "@/lib/metadata";
 
 const latestTypefaces = getLatestTypefaces().slice(0, 10);
 const latestPairings = getLatestPairings();
-const specimen = getTextData().specimen;
 const title = "In-Depth Guide to the Best Free Fonts";
 const description = DEFAULT_SITE_DESCRIPTION;
 
@@ -42,7 +40,7 @@ export default function HomePage() {
         </div>
 
         {latestTypefaces.map((typeface) => {
-          return <SampleCard key={typeface.slug} specimen={specimen} typeface={typeface} />;
+          return <SampleCard key={typeface.slug} typeface={typeface} />;
         })}
 
         <h2 className="page-subhead col-span-12 mt3 ase">Latest pairings</h2>

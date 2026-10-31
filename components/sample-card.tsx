@@ -1,42 +1,30 @@
 import Link from "next/link";
 
-import { FittedSpecimenText } from "@/components/fitted-specimen-text";
-import type { TextData, Typeface } from "@/lib/content";
+import type { Typeface } from "@/lib/content";
 import { getTypefacePath } from "@/lib/routes";
 
 type SampleCardProps = {
-  specimen: TextData["specimen"];
   typeface: Typeface;
   variant?: "grid" | "hero";
 };
 
-export function SampleCard({ specimen, typeface, variant = "grid" }: SampleCardProps) {
-  const typefacePath = getTypefacePath(typeface.slug);
-  const sampleText = typeface.sampleText ?? specimen.primary;
-
+export function SampleCard({ typeface, variant = "grid" }: SampleCardProps) {
   return (
     <div
       className="sample standardized-sample col-span-12"
       data-testid="typeface-card"
       data-variant={variant}
     >
-      <Link href={typefacePath}>
-        <div className="text standardized-specimen">
-          <FittedSpecimenText
-            sampleClassName={typeface.sampleClasses}
-            text={sampleText}
-            typefaceClassName={typeface.slug}
-            variant={variant}
-          />
+      <Link href={getTypefacePath(typeface.slug)}>
+        <div className={`text standardized-specimen ${typeface.slug} flex flex-col items-center justify-center gap-3 text-center font-normal not-italic`}>
+          <h1 className="m-0 text-(length:--ms4) leading-tight font-normal not-italic min-[721px]:text-(length:--ms5)">
+            {typeface.name}
+          </h1>
+          <p className={`m-0 text-(length:--ms1) leading-snug font-normal not-italic min-[721px]:text-(length:--ms2) ${variant === "hero" ? "text-neutral-400" : "text-neutral-500"}`}>
+            {typeface.creator.name}
+          </p>
         </div>
       </Link>
-      <div className="meta">
-        <p className="name">
-          <Link href={typefacePath}>
-            {typeface.name} by {typeface.creator.name}
-          </Link>
-        </p>
-      </div>
     </div>
   );
 }

@@ -99,7 +99,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </a>
           </div>
 
-          <SampleCard specimen={text.specimen} typeface={typeface} variant="hero" />
+          <SampleCard typeface={typeface} variant="hero" />
 
           <div className="type-styles col-span-12 min-[721px]:col-span-6">
             {typeface.weights.map((weight) => (
