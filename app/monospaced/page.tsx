@@ -1,30 +1,7 @@
-import type { Metadata } from "next";
+import { CategoryPage, getCategoryMetadata } from "@/components/font-listing/category-page";
 
-import { CategoryRoutePage } from "@/components/font-listing/category-route-page";
-import { createPageMetadata } from "@/lib/metadata";
-
-const title = "In-Depth Guide to the Best Free Monospaced Fonts";
-const description =
-  "Explore the best free monospaced fonts, with specimens, OpenType features, and detailed guides.";
-
-export const metadata: Metadata = {
-  title,
-  description,
-  ...createPageMetadata({
-    title,
-    description,
-    path: "/monospaced/"
-  })
-};
+export const metadata = getCategoryMetadata("monospaced");
 
 export default function MonospacedPage() {
-  return (
-    <CategoryRoutePage
-      bodyClass="monospaced"
-      breadcrumbLabel="Monospaced"
-      categorySlug="monospaced"
-      heading="Monospaced Typefaces"
-      path="/monospaced/"
-    />
-  );
+  return <CategoryPage categorySlug="monospaced" />;
 }
