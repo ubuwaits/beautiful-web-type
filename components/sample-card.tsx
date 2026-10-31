@@ -17,7 +17,7 @@ export function SampleCard({ typeface, variant = "grid" }: SampleCardProps) {
       data-variant={variant}
     >
       <Link href={getTypefacePath(typeface.slug)}>
-        <FittedSpecimenText typeface={typeface} variant={variant} />
+        <FittedSpecimenText typeface={typeface} />
       </Link>
     </div>
   );

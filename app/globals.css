@@ -22,15 +22,11 @@ body.menu-open {
 
 body .standardized-sample {
   --sample-fit-width: 0.5;
-  --sample-ink: #fff;
-  --sample-surface: #000;
+  --sample-ink: #111;
+  --sample-surface: #fff;
   background: var(--sample-surface);
 }
 
-body .standardized-sample[data-variant="grid"] {
-  --sample-ink: #111;
-  --sample-surface: #fff;
-}
 
 body .standardized-sample[data-variant="grid"] > a {
   padding: 0;
