@@ -30,7 +30,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `Complete Guide to ${typeface.name}`;
+  const title = typeface.name;
   const description = `Complete guide to the free font ${typeface.name}. See beautiful examples, OpenType features, and more.`;
   const imagePath = `/assets/images/${typeface.slug}.png`;
   const path = getTypefacePath(typeface.slug);
