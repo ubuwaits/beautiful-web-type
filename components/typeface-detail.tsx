@@ -103,7 +103,12 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             </div>
           </section>
 
-          <dl className="typeface-metadata col-span-12 m-0 flex flex-wrap justify-center gap-x-10 gap-y-6 text-center font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase [&_dd]:m-0 [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
+          <dl className="typeface-metadata col-span-12 m-0 min-w-0 font-(family-name:--ui-face) min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:col-span-6 min-[1105px]:col-start-4
+            [&>div]:grid [&>div]:grid-cols-2 [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
+            [&>div+div]:border-t [&>div+div]:border-t-neutral-200 [&>div+div]:[border-top-style:solid]
+            [&_dt]:min-w-0 [&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
+            [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-(length:--ms1) [&_dd]:leading-7 [&_dd]:wrap-anywhere
+            [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-(--red)">
             <div>
               <dt>Designed by</dt>
               <dd><a href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a></dd>
@@ -119,7 +124,7 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             {typeface.familyFaces?.length ? (
               <div>
                 <dt>Other faces in family</dt>
-                <dd className="flex flex-wrap justify-center gap-x-3">
+                <dd className="flex flex-wrap justify-end gap-x-3">
                   {typeface.familyFaces.map((familyFace) => (
                     <Link href={getTypefacePath(resolveTypefaceSlugByName(familyFace))} key={familyFace}>{familyFace}</Link>
                   ))}
