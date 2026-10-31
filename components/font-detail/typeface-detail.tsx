@@ -71,7 +71,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
     { label: "Download", href: typeface.projectUrl, title: `Download ${typeface.latestRelease.version} (${typeface.latestRelease.date})` },
     ...(typeface.gFontsUrl ? [{ label: "Google Fonts", href: typeface.gFontsUrl, title: "Google Fonts" }] : [])
   ];
-  const actionClass = "flex min-w-0 items-center justify-center rounded-full bg-neutral-900 px-4 py-2 min-[721px]:py-1.5 text-center text-xs leading-5 max-[720px]:@min-[21rem]:text-sm min-[721px]:text-lg min-[721px]:leading-7 font-semibold text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
+  const actionClass = "flex min-w-0 items-center justify-center rounded-full bg-neutral-900 px-4 py-2 min-[721px]:py-1.5 text-center text-xs leading-5 max-[720px]:@min-[21rem]:text-sm min-[721px]:text-lg min-[721px]:leading-7 font-semibold whitespace-nowrap text-white no-underline! hover:bg-neutral-800 hover:text-white! focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:hover:text-neutral-900! dark:focus-visible:outline-neutral-100";
   const metadata = [
     { label: "Designed by", value: <a className="no-underline!" href={typeface.creator.url} rel="noopener" target="_blank">{typeface.creator.name}</a> },
     { label: "Category", value: typeface.category },
@@ -96,7 +96,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             </div>
           </section>
 
-          <div className="col-span-12 grid min-w-0 items-start gap-12 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:col-span-6 min-[1105px]:col-start-4 min-[1105px]:grid-cols-2">
+          <div className="col-span-12 grid min-w-0 items-start gap-12 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[1105px]:grid-cols-2 2xl:col-span-6 2xl:col-start-4">
             <dl className="typeface-metadata @container m-0 min-w-0 font-(family-name:--ui-face)
               [&>div]:grid [&>div]:grid-cols-[auto_minmax(0,1fr)] [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
               [&>div+div]:border-t [&>div+div]:border-t-neutral-200/60 dark:[&>div+div]:border-t-neutral-800/80 [&>div+div]:[border-top-style:solid]
