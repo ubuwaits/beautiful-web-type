@@ -1,33 +1,34 @@
 import { expect, test } from "@playwright/test";
 
-test("opens the mobile navigation overlay", async ({ page }) => {
+test("uses inline category lists in the mobile navigation sheet", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
-  await page.locator(".menu-link").click();
+  const trigger = page.getByRole("button", { name: "Toggle navigation menu" });
+  await trigger.click();
+  const sheet = page.getByRole("dialog", { name: "Navigation", exact: true });
+  const nav = sheet.getByRole("navigation", { name: "Mobile navigation" });
+  await expect(sheet).toBeVisible();
+  await expect(sheet).toHaveCSS("background-color", "rgb(255, 255, 255)");
+  await expect(nav).toHaveCSS("overflow-y", "auto");
+  const expand = nav.getByRole("button", { name: "Sans-Serif", exact: true });
+  await expand.click();
+  await expect(expand).toHaveAttribute("aria-expanded", "true");
+  await expect(page).toHaveURL("/");
+  await expect(nav.getByRole("link", { name: "All Sans-Serif fonts" })).toBeVisible();
+  await expect(page.locator('[data-slot="navigation-menu-content"]')).toHaveCount(0);
+  await nav.getByRole("link", { name: "Work Sans", exact: false }).click();
+  await expect(page).toHaveURL(/\/work-sans\/$/);
+  await expect(sheet).not.toBeVisible();
 
-  const overlay = page.locator(".menu-overlay");
-  const nav = page.locator(".menu-overlay .main-nav");
-
-  await expect(overlay).toHaveClass(/open/);
-  await expect(overlay).toHaveCSS("background-color", "rgb(255, 255, 255)");
-
-  const overlayBox = await overlay.boundingBox();
-  const navBox = await nav.boundingBox();
-
-  expect(overlayBox).not.toBeNull();
-  expect(navBox).not.toBeNull();
-
-  expect(Math.round(overlayBox!.x)).toBe(0);
-  expect(Math.round(overlayBox!.y)).toBe(0);
-  expect(Math.round(overlayBox!.height)).toBeGreaterThanOrEqual(844);
-
-  const overlayCenterX = overlayBox!.x + overlayBox!.width / 2;
-  const overlayCenterY = overlayBox!.y + overlayBox!.height / 2;
-  const navCenterX = navBox!.x + navBox!.width / 2;
-  const navCenterY = navBox!.y + navBox!.height / 2;
-
-  expect(Math.abs(navCenterX - overlayCenterX)).toBeLessThan(24);
-  expect(Math.abs(navCenterY - overlayCenterY)).toBeLessThan(48);
+  await trigger.click();
+  await page.getByRole("navigation", { name: "Mobile navigation" }).getByRole("button", { name: "Serif", exact: true }).click();
+  await page.getByRole("navigation", { name: "Mobile navigation" }).getByRole("link", { name: "All Serif fonts", exact: true }).click();
+  await expect(page).toHaveURL(/\/serif\/$/);
+  await expect(sheet).not.toBeVisible();
+  await trigger.click();
+  await page.keyboard.press("Escape");
+  await expect(sheet).not.toBeVisible();
+  await expect(trigger).toBeFocused();
 });
 
 test("loads every glyph inline and preserves the selected glyph in the URL", async ({ page }) => {
