@@ -77,22 +77,9 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             <div className="h-[15rem] w-full [--sample-fit-width:0.65] min-[721px]:h-[18rem] max-[1104px]:[--sample-fit-width:0.85]">
               <FittedSpecimenText typeface={typeface} showCreator={false} />
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-3 font-(family-name:--ui-face)">
-              {typeface.gFontsUrl ? (
-                <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.gFontsUrl} rel="noopener" target="_blank">
-                  Embed <span className="block text-sm font-normal normal-case opacity-80">using Google Fonts</span>
-                </a>
-              ) : null}
-              <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.projectUrl} rel="noopener" target="_blank">
-                Download
-                <span className="block text-sm font-normal normal-case opacity-80">
-                  {typeface.latestRelease.version} ({typeface.latestRelease.date})
-                </span>
-              </a>
-            </div>
           </section>
 
-          <div className="type-styles col-span-12 min-[721px]:col-span-6">
+          <div className="type-styles col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-3 [&>div]:flex-wrap">
             {typeface.weights.map((weight) => (
               <div key={`${typeface.slug}-${weight.weight}`}>
                 <p className={`w${weight.weight}`}>{weight.name}</p>
@@ -106,12 +93,12 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
             ))}
           </div>
 
-          <div className="type-info col-span-12 min-[721px]:col-span-3">
+          <div className="type-info col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-3">
             <h3>Description</h3>
             <TrustedHtml as="h4" html={typeface.description} />
           </div>
 
-          <div className="type-info col-span-12 min-[721px]:col-span-3">
+          <div className="type-info col-span-12 min-w-0 min-[721px]:col-span-6 min-[1105px]:col-span-3">
             <h3>Designed by</h3>
             <h4>
               <a className="underline decoration-from-font underline-offset-4 hover:text-(--red)" href={typeface.creator.url} rel="noopener" target="_blank">
@@ -141,6 +128,20 @@ export function TypefaceDetail({ glyphFontFile, pairings, text, typeface }: Type
                 </ul>
               </>
             ) : null}
+          </div>
+
+          <div className="col-span-12 flex min-w-0 flex-col items-stretch gap-3 font-(family-name:--ui-face) min-[721px]:col-span-6 min-[1105px]:col-span-3">
+            {typeface.gFontsUrl ? (
+              <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.gFontsUrl} rel="noopener" target="_blank">
+                Embed <span className="block text-sm font-normal normal-case opacity-80">using Google Fonts</span>
+              </a>
+            ) : null}
+            <a className="rounded-md bg-black px-6 py-3 text-center text-base leading-5 font-semibold text-white uppercase transition-colors hover:bg-(--red)" href={typeface.projectUrl} rel="noopener" target="_blank">
+              Download
+              <span className="block text-sm font-normal normal-case opacity-80">
+                {typeface.latestRelease.version} ({typeface.latestRelease.date})
+              </span>
+            </a>
           </div>
 
         </div>
