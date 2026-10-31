@@ -23,28 +23,6 @@
   line-height: 1;
 }
 
-.type-info h3 {
-  font: 700 var(--ms0)/1.75rem var(--ui-face);
-  text-transform: uppercase;
-}
-.type-info h4, .type-info li {
-  font: 400 var(--ms1)/1.75rem var(--ui-face);
-  margin-bottom: 0.875rem;
-}
-.type-info h4:last-child, .type-info li:last-child {
-  margin-bottom: 0;
-}
-.type-info ul {
-  list-style: none;
-  padding: 0;
-}
-.type-info ul li {
-  margin-bottom: 0;
-}
-.type-info a {
-  text-decoration: underline;
-}
-
 .type-detail-table {
   gap: 1.5rem;
   display: flex;
