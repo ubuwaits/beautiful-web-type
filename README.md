@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 31 Oct 2026
 
+* **Added [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/)** by Bakken & Bæck.
 * **Added [Zalando Sans](https://beautifulwebtype.com/zalando-sans/)** by Jakob Ekelund of KH Type.
 * **Added [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)** by Grilli Type, Contrast Foundry, and Type Network.
 * **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
@@ -80,6 +81,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)
 * [Poppins](https://beautifulwebtype.com/poppins/)
 * [Rakkas](https://beautifulwebtype.com/rakkas/)
+* [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/)
 * [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)
 * [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)
 * [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/)

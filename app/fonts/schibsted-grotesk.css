@@ -1,0 +1,21 @@
+:root {
+  --schibsted-grotesk: 'Schibsted Grotesk', sans-serif;
+}
+
+.schibsted-grotesk {
+  font-family: var(--schibsted-grotesk) !important;
+}
+
+@font-face {
+  font-family: "Schibsted Grotesk";
+  font-style: normal;
+  font-weight: 400 900;
+  src: url("/assets/fonts/schibsted-grotesk/SchibstedGrotesk.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Schibsted Grotesk";
+  font-style: italic;
+  font-weight: 400 900;
+  src: url("/assets/fonts/schibsted-grotesk/SchibstedGrotesk-Italic.woff2") format("woff2");
+}

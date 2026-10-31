@@ -2,6 +2,7 @@
 
 ## 31 Oct 2026
 
+* **Added [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/)** by Bakken & Bæck.
 * **Added [Zalando Sans](https://beautifulwebtype.com/zalando-sans/)** by Jakob Ekelund of KH Type.
 * **Added [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)** by Grilli Type, Contrast Foundry, and Type Network.
 * **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
