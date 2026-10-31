@@ -90,7 +90,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
   ];
 
   return (
-    <div className="pt-12 [--section-gap:6rem] min-[721px]:[--section-gap:10rem]">
+    <div className="pt-16 [--section-gap:6rem] min-[721px]:[--section-gap:10rem]">
       <TypefaceNavigation
         sections={sections}
         embedUrl={typeface.gFontsUrl}
