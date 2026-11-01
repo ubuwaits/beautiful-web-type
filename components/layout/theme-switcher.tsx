@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { THEME_STORAGE_KEY } from "@/lib/theme";
@@ -8,27 +8,26 @@ import { THEME_STORAGE_KEY } from "@/lib/theme";
 export function ThemeSwitcher() {
   const [theme, setTheme] = useState("light");
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const root = document.documentElement;
-    const sync = () => setTheme(root.classList.contains("dark") ? "dark" : "light");
-    const observer = new MutationObserver(sync);
-    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
-    sync();
-
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     const restore = () => {
       let saved;
       try { saved = localStorage.getItem(THEME_STORAGE_KEY); } catch {}
-      root.classList.toggle("dark", saved === "dark" || (saved !== "light" && media.matches));
+      const dark = saved === "dark" || (saved !== "light" && media.matches);
+      root.classList.toggle("dark", dark);
+      setTheme(dark ? "dark" : "light");
     };
+    restore();
     const storage = (event: StorageEvent) => {
       if (event.key === THEME_STORAGE_KEY || event.key === null) restore();
     };
     window.addEventListener("storage", storage);
+    window.addEventListener("pageshow", restore);
     media.addEventListener("change", restore);
     return () => {
-      observer.disconnect();
       window.removeEventListener("storage", storage);
+      window.removeEventListener("pageshow", restore);
       media.removeEventListener("change", restore);
     };
   }, []);

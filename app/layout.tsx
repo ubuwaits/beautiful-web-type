@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import type { ReactNode } from "react";
 
 import { FontPreloads } from "@/components/layout/font-preloads";
@@ -38,7 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" className="font-[initial] leading-[1.15]" suppressHydrationWarning>
       <head>
         <FontPreloads />
-        <Script id="bwt-theme-init" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script id="bwt-theme-init" dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <link
           href="/feed.xml"
           rel="alternate"
