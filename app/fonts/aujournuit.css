@@ -1,0 +1,15 @@
+:root {
+  --aujournuit: 'Aujournuit', serif;
+}
+
+.aujournuit {
+  font-family: var(--aujournuit) !important;
+}
+
+@font-face {
+  font-family: "Aujournuit";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 50% 200%;
+  src: url("/assets/fonts/aujournuit/Aujournuit.woff2") format("woff2");
+}

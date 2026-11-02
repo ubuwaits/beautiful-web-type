@@ -4,6 +4,7 @@ import alegreya from "./alegreya/data";
 import alegreyaSans from "./alegreya-sans/data";
 import archivo from "./archivo/data";
 import archivoBlack from "./archivo-black/data";
+import aujournuit from "./aujournuit/data";
 import biorhyme from "./biorhyme/data";
 import biorhymeExpanded from "./biorhyme-expanded/data";
 import bricolageGrotesque from "./bricolage-grotesque/data";
@@ -62,6 +63,7 @@ export const typefaceData: TypefaceData[] = [
   alegreyaSans,
   archivo,
   archivoBlack,
+  aujournuit,
   biorhyme,
   biorhymeExpanded,
   bricolageGrotesque,

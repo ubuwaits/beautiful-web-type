@@ -727,6 +727,30 @@
       }
     ]
   },
+  "aujournuit": {
+    "family": "Aujournuit",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 50,
+            "max": 200,
+            "default": 50
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          }
+        ]
+      }
+    ]
+  },
   "biorhyme": {
     "family": "BioRhyme",
     "faces": [

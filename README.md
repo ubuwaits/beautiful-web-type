@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 2 Nov 2026
 
+* **Added [Aujournuit](https://beautifulwebtype.com/aujournuit/)** by Teo Gaudet.
 * **Added [Piazzolla](https://beautifulwebtype.com/piazzolla/)** by Juan Pablo del Peral.
 * **Added [Luperca](https://beautifulwebtype.com/luperca/)** by Ariel Martín Pérez.
 * **Added [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/)** by Pablo Impallari and Rodrigo Fuenzalida.
@@ -64,6 +65,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/)
 * [Archivo](https://beautifulwebtype.com/archivo/)
 * [Archivo Black](https://beautifulwebtype.com/archivo-black/)
+* [Aujournuit](https://beautifulwebtype.com/aujournuit/)
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/)
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
 * [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)
