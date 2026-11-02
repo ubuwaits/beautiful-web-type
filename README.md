@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 2 Nov 2026
 
+* **Added [Luperca](https://beautifulwebtype.com/luperca/)** by Ariel Martín Pérez.
 * **Added [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/)** by Pablo Impallari and Rodrigo Fuenzalida.
 * **Added [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/)** by Pablo Impallari and Rodrigo Fuenzalida.
 * **Added [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/)** by Ertekin Erdin.
@@ -92,6 +93,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
 * [Lora](https://beautifulwebtype.com/lora/)
+* [Luperca](https://beautifulwebtype.com/luperca/)
 * [Messapia](https://beautifulwebtype.com/messapia/)
 * [Mona Sans](https://beautifulwebtype.com/mona-sans/)
 * [Newsreader](https://beautifulwebtype.com/newsreader/)

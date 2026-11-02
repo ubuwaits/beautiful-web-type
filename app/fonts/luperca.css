@@ -1,0 +1,14 @@
+:root {
+  --luperca: 'Luperca', serif;
+}
+
+.luperca {
+  font-family: var(--luperca) !important;
+}
+
+@font-face {
+  font-family: "Luperca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/luperca/Luperca.woff2") format("woff2");
+}

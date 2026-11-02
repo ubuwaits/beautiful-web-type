@@ -1,0 +1,44 @@
+import type { TypefaceData } from "@/lib/content/types";
+
+const typeface: TypefaceData = {
+  slug: "luperca",
+  name: "Luperca",
+  dateAdded: "2026-11-02",
+  category: "Display",
+  styles: "Variable",
+  glyphCount: 337,
+  weights: [{ weight: 400, name: "Regular" }],
+  latestRelease: { version: "v1.000", date: "17 Dec 2025" },
+  projectUrl: "https://www.tunera.xyz/fonts/luperca/",
+  creator: { name: "Ariel Martín Pérez", url: "https://tainome.com/" },
+  description: `Luperca was conceived by Paris-based designer and art director Ariel Martín Pérez—founder of the Tainome studio and co-founder of Tunera Type Foundry—initially drafted in 2023 for the eleventh issue of the French publication <em>Cercle</em> magazine, which was dedicated to the theme of "Mythology". Formally released into the open commons under the SIL Open Font License through Tunera, the face takes its name from the mythical Capitoline she-wolf that nursed Romulus and Remus. Rather than offering another dutiful, museum-grade replica of the imperial <em>capitalis monumentalis</em> found on the Column of Trajan, Pérez envisioned a speculative evolution of the monumental Roman capital, cross-pollinating the rigid epigraphy of antiquity with the physical ductus of calligraphy and the sharp mannerisms of modern editorial design.
+
+Anatomically, the design is structured as an all-caps titling face defined by the ongoing friction between the chiseled incised letter and the fluid gesture of a flat pen. While it honors classical Roman proportions—contrasting expansive circular characters like <em>O</em>, <em>C</em>, and <em>D</em> against slender, compact forms like <em>E</em>, <em>B</em>, and <em>S</em>—it consistently subverts historical orthodoxy through unexpected ductal choices. Most notably, the crossbar of the <em>E</em> is formed through the physical rotation of a broad-nib pen, introducing an organic, swelling curve into what is traditionally a static horizontal beam. Terminals taper into acute, razor-sharp wedges that evoke inscriptional stonecutting, while internal joints pinch tightly to admit crisp light into character counters. Distributed across five dedicated optical display grades, the family modulates its stroke modulation and weight distribution so that its architectural spurs and calligraphic contours retain graphic tension whether locked into compact lines or scaled across massive display formats.
+
+This pronounced inscriptional character clearly stakes out its functional domain. As an all-caps display instrument with strong mythic resonance, Luperca is deliberately unsuited for continuous narrative prose or utilitarian interface design, where its acute contrast and lack of a lowercase character set would rapidly exhaust the reading eye. It commands the page instead in cultural publishing, exhibition identities, book covers, packaging, and cinematic titling—environments where the gravity of ancient epigraphy and the expressive flair of contemporary display craft can intersect. Within the open-source catalog, Luperca stands as a daring conceptual entry, proving that the libre commons can nurture specialized, historically subversive titling types alongside pragmatic digital workhorses.`,
+  fontFile: "/assets/fonts/luperca/Luperca.woff2",
+  features: [
+    { type: "axis", title: "Optical Size", axis: "opsz", text: "ROMAN", values: [12, 30, 42, 60, 90] },
+    {
+      type: "comparison", title: "Discretionary Ligatures", code: "font-feature-settings: 'dlig';",
+      before: { features: { dlig: 0 } }, after: { features: { dlig: 1 } }, examples: ["AA", "CAS", "CO", "LAS", "QU", "ST"]
+    },
+    {
+      type: "comparison", title: "Contextual Alternates", code: "font-feature-settings: 'calt';",
+      before: { features: { calt: 0 } }, after: { features: { calt: 1 } }, examples: ["RA", "AR", "KAR"]
+    },
+    {
+      type: "comparison", title: "Stylistic Sets", code: "font-feature-settings: 'ss--';",
+      examples: [
+        { text: "A", label: "'ss01'", before: { features: { ss01: 0 } }, after: { features: { ss01: 1 } } },
+        { text: "AJN", label: "'ss02'", before: { features: { ss02: 0 } }, after: { features: { ss02: 1 } } },
+        { text: "FLT", label: "'ss03'", before: { features: { ss03: 0 } }, after: { features: { ss03: 1 } } },
+        { text: "Q", label: "'ss04'", before: { features: { ss04: 0 } }, after: { features: { ss04: 1 } } },
+        { text: "L", label: "'ss05'", before: { features: { ss05: 0 } }, after: { features: { ss05: 1 } } },
+        { text: "Y", label: "'ss06'", before: { features: { ss06: 0 } }, after: { features: { ss06: 1 } } }
+      ]
+    }
+  ]
+};
+
+export default typeface;

@@ -5495,6 +5495,50 @@
       }
     ]
   },
+  "luperca": {
+    "family": "Luperca",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 12,
+            "max": 90,
+            "default": 90
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternate A"
+          },
+          {
+            "tag": "ss02",
+            "name": "Swash letters"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate A"
+          },
+          {
+            "tag": "ss04",
+            "name": "Short Q"
+          },
+          {
+            "tag": "ss05",
+            "name": "Sunken L"
+          },
+          {
+            "tag": "ss06",
+            "name": "Angular punctuation"
+          }
+        ]
+      }
+    ]
+  },
   "messapia": {
     "family": "Messapia",
     "faces": [

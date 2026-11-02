@@ -34,6 +34,7 @@ import libreCaslonDisplay from "./libre-caslon-display/data";
 import libreCaslonText from "./libre-caslon-text/data";
 import libreFranklin from "./libre-franklin/data";
 import lora from "./lora/data";
+import luperca from "./luperca/data";
 import messapia from "./messapia/data";
 import monaSans from "./mona-sans/data";
 import newsreader from "./newsreader/data";
@@ -90,6 +91,7 @@ export const typefaceData: TypefaceData[] = [
   libreCaslonText,
   libreFranklin,
   lora,
+  luperca,
   messapia,
   monaSans,
   newsreader,
