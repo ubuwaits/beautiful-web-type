@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 2 Nov 2026
 
+* **Added [EB Garamond](https://beautifulwebtype.com/eb-garamond/)** by Georg Duffner and Octavio Pardo.
 * **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.
 
 ### 31 Oct 2026
@@ -63,6 +64,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Commissioner](https://beautifulwebtype.com/commissioner/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)
+* [EB Garamond](https://beautifulwebtype.com/eb-garamond/)
 * [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)
 * [Fira Code](https://beautifulwebtype.com/fira-code/)
 * [FiraGo](https://beautifulwebtype.com/firago/)

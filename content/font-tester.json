@@ -1366,6 +1366,97 @@
       }
     ]
   },
+  "eb-garamond": {
+    "family": "EB Garamond",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 800,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic set 06"
+          },
+          {
+            "tag": "ss07",
+            "name": "Stylistic set 07"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 800,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic set 06"
+          },
+          {
+            "tag": "ss07",
+            "name": "Stylistic set 07"
+          }
+        ]
+      }
+    ]
+  },
   "familjen-grotesk": {
     "family": "Familjen Grotesk",
     "faces": [

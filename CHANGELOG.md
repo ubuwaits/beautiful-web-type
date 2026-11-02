@@ -1,5 +1,10 @@
 # Changelog
 
+## 2 Nov 2026
+
+* **Added [EB Garamond](https://beautifulwebtype.com/eb-garamond/)** by Georg Duffner and Octavio Pardo.
+* **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.
+
 ## 31 Oct 2026
 
 * **Added [Newsreader](https://beautifulwebtype.com/newsreader/)** by Production Type.

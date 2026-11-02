@@ -10,6 +10,7 @@ import bricolageGrotesque from "./bricolage-grotesque/data";
 import commissioner from "./commissioner/data";
 import cooperHewitt from "./cooper-hewitt/data";
 import crimsonPro from "./crimson-pro/data";
+import ebGaramond from "./eb-garamond/data";
 import familjenGrotesk from "./familjen-grotesk/data";
 import firaCode from "./fira-code/data";
 import firago from "./firago/data";
@@ -60,6 +61,7 @@ export const typefaceData: TypefaceData[] = [
   commissioner,
   cooperHewitt,
   crimsonPro,
+  ebGaramond,
   familjenGrotesk,
   firaCode,
   firago,
