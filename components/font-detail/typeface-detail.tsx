@@ -171,7 +171,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
                   <div className={`grid grid-cols-1 items-start gap-x-12 gap-y-6 ${typeface.italic && typeface.smallcap ? "min-[721px]:grid-cols-3" : typeface.italic || typeface.smallcap ? "min-[721px]:grid-cols-2" : ""}`}>
                     {[
                       { style: "", className: "" },
-                      ...(typeface.italic ? [{ style: "Italic", className: "italic" }] : []),
+                      ...(typeface.italic && weight.italic !== false ? [{ style: "Italic", className: "italic" }] : []),
                       ...(typeface.smallcap ? [{ style: "Small Caps", className: "[font-feature-settings:'smcp']" }] : [])
                     ].map(({ style, className }) => (
                       <div className="min-w-0" key={style}>

@@ -1,0 +1,14 @@
+:root {
+  --libre-caslon-display: 'Libre Caslon Display', serif;
+}
+
+.libre-caslon-display {
+  font-family: var(--libre-caslon-display) !important;
+}
+
+@font-face {
+  font-family: "Libre Caslon Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-display/LibreCaslonDisplay-Regular.woff2") format("woff2");
+}

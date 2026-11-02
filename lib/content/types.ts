@@ -5,6 +5,7 @@ export type CategorySlug = "display" | "monospaced" | "sans-serif" | "serif";
 export type Weight = {
   weight: number;
   name: string;
+  italic?: boolean;
 };
 
 export type Typeface = {

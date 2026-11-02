@@ -29,6 +29,9 @@ import instrumentSans from "./instrument-sans/data";
 import instrumentSerif from "./instrument-serif/data";
 import inter from "./inter/data";
 import leMurmure from "./le-murmure/data";
+import libreCaslonCondensed from "./libre-caslon-condensed/data";
+import libreCaslonDisplay from "./libre-caslon-display/data";
+import libreCaslonText from "./libre-caslon-text/data";
 import libreFranklin from "./libre-franklin/data";
 import lora from "./lora/data";
 import messapia from "./messapia/data";
@@ -82,6 +85,9 @@ export const typefaceData: TypefaceData[] = [
   instrumentSerif,
   inter,
   leMurmure,
+  libreCaslonCondensed,
+  libreCaslonDisplay,
+  libreCaslonText,
   libreFranklin,
   lora,
   messapia,

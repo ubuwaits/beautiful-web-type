@@ -1,0 +1,28 @@
+:root {
+  --libre-caslon-text: 'Libre Caslon Text', serif;
+}
+
+.libre-caslon-text {
+  font-family: var(--libre-caslon-text) !important;
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-text/LibreCaslonText-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/fonts/libre-caslon-text/LibreCaslonText-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/libre-caslon-text/LibreCaslonText-Bold.woff2") format("woff2");
+}

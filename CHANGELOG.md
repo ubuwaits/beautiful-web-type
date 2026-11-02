@@ -2,6 +2,9 @@
 
 ## 2 Nov 2026
 
+* **Added [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/)** by Pablo Impallari and Rodrigo Fuenzalida.
+* **Added [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/)** by Pablo Impallari and Rodrigo Fuenzalida.
+* **Added [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/)** by Ertekin Erdin.
 * **Added [Mona Sans](https://beautifulwebtype.com/mona-sans/) and [Hubot Sans](https://beautifulwebtype.com/hubot-sans/)** by GitHub and Degarism.
 * **Added [EB Garamond](https://beautifulwebtype.com/eb-garamond/)** by Georg Duffner and Octavio Pardo.
 * **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.

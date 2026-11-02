@@ -23,7 +23,7 @@ export function TypefaceWeights({ weights, italic }: { weights: Weight[]; italic
         {weights.map((weight) => (
           <div className="flex w-max items-baseline gap-x-[0.3em] pb-[0.35cap] whitespace-nowrap" data-weight-row="" key={weight.weight}>
             <p style={{ fontWeight: weight.weight }}>{weight.name}</p>
-            {italic ? <p style={{ fontWeight: weight.weight }}><em>Italic</em></p> : null}
+            {italic && weight.italic !== false ? <p style={{ fontWeight: weight.weight }}><em>Italic</em></p> : null}
             <p className="text-[0.55em] font-normal text-neutral-500 dark:text-neutral-400">{weight.weight}</p>
           </div>
         ))}

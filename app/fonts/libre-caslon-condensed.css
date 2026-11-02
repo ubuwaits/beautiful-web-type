@@ -1,0 +1,21 @@
+:root {
+  --libre-caslon-condensed: 'Libre Caslon Condensed', serif;
+}
+
+.libre-caslon-condensed {
+  font-family: var(--libre-caslon-condensed) !important;
+}
+
+@font-face {
+  font-family: "Libre Caslon Condensed";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("/assets/fonts/libre-caslon-condensed/LibreCaslonCondensed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Libre Caslon Condensed";
+  font-style: italic;
+  font-weight: 400 700;
+  src: url("/assets/fonts/libre-caslon-condensed/LibreCaslonCondensed-Italic.woff2") format("woff2");
+}

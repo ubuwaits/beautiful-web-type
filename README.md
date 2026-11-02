@@ -8,6 +8,9 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 2 Nov 2026
 
+* **Added [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/)** by Pablo Impallari and Rodrigo Fuenzalida.
+* **Added [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/)** by Pablo Impallari and Rodrigo Fuenzalida.
+* **Added [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/)** by Ertekin Erdin.
 * **Added [Mona Sans](https://beautifulwebtype.com/mona-sans/) and [Hubot Sans](https://beautifulwebtype.com/hubot-sans/)** by GitHub and Degarism.
 * **Added [EB Garamond](https://beautifulwebtype.com/eb-garamond/)** by Georg Duffner and Octavio Pardo.
 * **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.
@@ -84,6 +87,9 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Instrument Serif](https://beautifulwebtype.com/instrument-serif/)
 * [Inter](https://beautifulwebtype.com/inter/)
 * [Le Murmure](https://beautifulwebtype.com/le-murmure/)
+* [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/)
+* [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/)
+* [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/)
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
 * [Lora](https://beautifulwebtype.com/lora/)
 * [Messapia](https://beautifulwebtype.com/messapia/)

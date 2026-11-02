@@ -1,0 +1,92 @@
+FONTLOG for the Libre Caslon fonts
+
+This file provides detailed information on the Libre Caslon Font Software.
+
+This information should be distributed along with the Libre Caslon fonts and any derivative works.
+
+Basic Font Information
+
+The Libre Caslon fonts are unique Caslons. They are different to all other caslons out there.
+
+When we were faced with the challenge of making a new Caslon, we asked ourselves: How can we make them different, to bring something new to the table?
+We realized that most Caslon revivals were based on 18 Century's specimens, and that there was a whole genre of Caslons that has been so far ignored: The alluring hand-lettered American Caslons of 1960's.
+
+This was a captivating subject to investigate. Caslon was the very first alphabet that lettering artists learned to draw, so they all were very familiar with it. Our wonder led us to find countless examples of beautifully crafted and elegant vintage ads and hand lettering books. Among those many books, there were two that outshine the rest: One is "Lettering for Advertising" by Mortimer Leach, and the other one is "How to Render Roman Letter Forms" by Tommy Thompson. Both of these books are excelent, highly recommended for all those who want to learn lettering.
+
+So, insted of making just another revival of the types of William Caslon, we preffered to pay homage to 60's lettering artist's caslon interpretations. And that's how Libre Caslon become different to all other caslons. (Not better or worse, just different.)
+
+We also decided to make two size-specific subfamilies:
+- Libre Caslon Display(https://github.com/impallari/Libre-Caslon-Display/), a sexy caslon for big headlines.
+- And Libre Caslon Text(https://github.com/impallari/Libre-Caslon-Text/), specifically optimized for web body text.
+
+Libre Caslon Text also include some nice, extra Open Type features:
+- 17 ligatures on the regular styles, and 20 ligatures on the italic styles
+- Lining Proportional Numbers (Default style).
+- Lining Tabular Numbers and punctuation.
+- Old Style Prortional Numbers.
+- Inferiors, Superiors, Numerators, Denominators.
+- Fractions.
+- Ordinals.
+- The italic style includes an alternate Ampersand (ss01)
+
+The Libre Caslon Fonts covers all 104 Latin Languages: Afar, Afrikaans, Albanian, Azerbaijani, Basque, Belarusian, Bislama, Bosnian, Breton, Catalan, Chamorro, Chichewa, Comorian, Croatian, Czech, Danish, Dutch, English, Esperanto, Estonian, Faroese, Fijian, Filipino/Tagalog, Finnish, Flemish, French, Gaelic (Irish / Manx / Scottish), Gagauz, German, Gikuyu, Gilbertese/Kiribati, Greenlandic, Guarani, Haitian_Creole, Hawaiian, Hungarian, Icelandic, Igo/Igbo, Indonesian, Irish, Italian, Javanese, Kashubian, Kinyarwanda, Kirundi, Latin, Latvian, Lithuanian, Luba/Ciluba/Kasai, Luxembourgish, Malagasy, Malay, Maltese, Maori, Marquesan, Marshallese, Moldovan/Moldovian/Romanian, Montenegrin, Nauruan, Ndebele, Norwegian, Oromo, Palauan/Belauan, Polish, Portuguese, Quechua, Romanian, Romansh, Sami, Samoan, Sango, Serbian, Sesotho, Setswana/Sitswana/Tswana, Seychellois_Creole, SiSwati/Swati/Swazi, Silesian, Slovak, Slovenian, Somali, Sorbian, Sotho, Spanish, Swahili, Swedish, Tahitian, Tetum, Tok_Pisin, Tongan, Tsonga, Tswana, Tuareg/Berber, Turkish, Turkmen, Tuvaluan, Uzbek/Usbek, Wallisian, Walloon, Welsh, Xhosa, Yoruba, Zulu.
+
+
+Join the project at:
+https://github.com/impallari/Libre-Caslon-Text
+
+Documentation can be found at www.impallari.com
+
+To contribute to the project contact Pablo Impallari at impallari@gmail.com
+
+ChangeLog
+
+25 Jul 2016 (Pablo Impallari, Rodrigo Fuenzalida) Libre Caslon Text v1.002
+- Fixing Naming and Metadata bugs
+
+27 Jul 2015 (Pablo Impallari, Rodrigo Fuenzalida) Libre Caslon Text v1.001
+- Removed RFN
+- Rehinted using latest ttfautohint version (v1.3)
+
+14 Mar 2013 (Pablo Impallari, Rodrigo Fuenzalida) Libre Caslon Text v1.00
+- Ikerned and TTF Hinted
+- Added Tabular Numbers
+
+07 Mar 2013 (Pablo Impallari, Rodrigo Fuenzalida) Libre Caslon v0.34
+- Completed charset on the Text styles
+- Normalized Vertical Metrics
+- Lots of bugs fixed
+- Text Styles (Regular, Italic and Bold) are ready for iKern
+
+06 Dec 2012 (Pablo Impallari, Rodrigo Fuenzalida) Libre Caslon Text Italic v0.03
+- First draft of the Text Italic version.
+
+19 Nov 2012 (Pablo Impallari, Rodrigo Fuenzalida) Libre Caslon v 0.22
+- Lower and Uppercase
+- Text Bold Style added
+- Some tentative kerning in the Display version
+- OT features calt and ss01
+
+08 Nov 2012 (Pablo Impallari, Rodrigo Fuenzalida) Libre Caslon v0.03
+- Initial release
+- a-z lowercase only
+- Display and Text styles
+
+Acknowledgements
+
+If you make modifications be sure to add your name (N), 
+email (E), web-address (if you have one) (W) and 
+description (D). This list is in alphabetical order.
+
+N: Pablo Impallari
+E: impallari@gmail.com
+W: http://www.impallari.com
+D: Designer
+
+N: Rodrigo Fuenzalida
+E: hello@rfuenzalida.com
+W: http://www.rfuenzalida.com
+D: Designer
+
+
+

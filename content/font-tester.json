@@ -5267,6 +5267,88 @@
       }
     ]
   },
+  "libre-caslon-condensed": {
+    "family": "Libre Caslon Condensed",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Ampersand"
+          }
+        ]
+      }
+    ]
+  },
+  "libre-caslon-display": {
+    "family": "Libre Caslon Display",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          }
+        ]
+      }
+    ]
+  },
+  "libre-caslon-text": {
+    "family": "Libre Caslon Text",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
   "libre-franklin": {
     "family": "Libre Franklin",
     "faces": [
