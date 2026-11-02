@@ -1,0 +1,23 @@
+:root {
+  --hubot-sans: 'Hubot Sans', sans-serif;
+}
+
+.hubot-sans {
+  font-family: var(--hubot-sans) !important;
+}
+
+@font-face {
+  font-family: "Hubot Sans";
+  font-style: normal;
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  src: url("/assets/fonts/hubot-sans/HubotSans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hubot Sans";
+  font-style: italic;
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  src: url("/assets/fonts/hubot-sans/HubotSans-Italic.woff2") format("woff2");
+}

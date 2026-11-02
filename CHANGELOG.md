@@ -2,6 +2,7 @@
 
 ## 2 Nov 2026
 
+* **Added [Mona Sans](https://beautifulwebtype.com/mona-sans/) and [Hubot Sans](https://beautifulwebtype.com/hubot-sans/)** by GitHub and Degarism.
 * **Added [EB Garamond](https://beautifulwebtype.com/eb-garamond/)** by Georg Duffner and Octavio Pardo.
 * **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.
 

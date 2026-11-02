@@ -2406,6 +2406,87 @@
       }
     ]
   },
+  "hubot-sans": {
+    "family": "Hubot Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 125,
+            "default": 75
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Rounded dots"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternate lowercase l"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate r"
+          },
+          {
+            "tag": "ss04",
+            "name": "Serifless uppercase I"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 125,
+            "default": 75
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Rounded dots"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternate lowercase l"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternate r"
+          },
+          {
+            "tag": "ss04",
+            "name": "Serifless uppercase I"
+          }
+        ]
+      }
+    ]
+  },
   "ia-writer-quattro": {
     "family": "iA Writer Quattro",
     "faces": [
@@ -5346,6 +5427,149 @@
         "weight": 700,
         "axes": [],
         "stylisticSets": []
+      }
+    ]
+  },
+  "mona-sans": {
+    "family": "Mona Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 125,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots"
+          },
+          {
+            "tag": "ss02",
+            "name": "Wider uppercase I"
+          },
+          {
+            "tag": "ss03",
+            "name": "Lowercase l with tail"
+          },
+          {
+            "tag": "ss04",
+            "name": "Lowercase l with top serif"
+          },
+          {
+            "tag": "ss05",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss06",
+            "name": "Double-storey g"
+          },
+          {
+            "tag": "ss07",
+            "name": "Square G"
+          },
+          {
+            "tag": "ss08",
+            "name": "Tabular zero with straight bar"
+          },
+          {
+            "tag": "ss09",
+            "name": "Q with diagonal arm"
+          },
+          {
+            "tag": "ss10",
+            "name": "J with bowl"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 125,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 200
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Square dots"
+          },
+          {
+            "tag": "ss02",
+            "name": "Wider uppercase I"
+          },
+          {
+            "tag": "ss03",
+            "name": "Lowercase l with tail"
+          },
+          {
+            "tag": "ss04",
+            "name": "Lowercase l with top serif"
+          },
+          {
+            "tag": "ss05",
+            "name": "Double-storey a"
+          },
+          {
+            "tag": "ss06",
+            "name": "Double-storey g"
+          },
+          {
+            "tag": "ss07",
+            "name": "Square G"
+          },
+          {
+            "tag": "ss08",
+            "name": "Tabular zero with straight bar"
+          },
+          {
+            "tag": "ss09",
+            "name": "Q with diagonal arm"
+          },
+          {
+            "tag": "ss10",
+            "name": "J with bowl"
+          }
+        ]
       }
     ]
   },

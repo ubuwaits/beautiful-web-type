@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 2 Nov 2026
 
+* **Added [Mona Sans](https://beautifulwebtype.com/mona-sans/) and [Hubot Sans](https://beautifulwebtype.com/hubot-sans/)** by GitHub and Degarism.
 * **Added [EB Garamond](https://beautifulwebtype.com/eb-garamond/)** by Georg Duffner and Octavio Pardo.
 * **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.
 
@@ -71,6 +72,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)
 * [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)
 * [Fraunces](https://beautifulwebtype.com/fraunces/)
+* [Hubot Sans](https://beautifulwebtype.com/hubot-sans/)
 * [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)
 * [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)
 * [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/)
@@ -85,6 +87,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Libre Franklin](https://beautifulwebtype.com/libre-franklin/)
 * [Lora](https://beautifulwebtype.com/lora/)
 * [Messapia](https://beautifulwebtype.com/messapia/)
+* [Mona Sans](https://beautifulwebtype.com/mona-sans/)
 * [Newsreader](https://beautifulwebtype.com/newsreader/)
 * [Oswald](https://beautifulwebtype.com/oswald/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)

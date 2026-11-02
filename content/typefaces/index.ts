@@ -17,6 +17,7 @@ import firago from "./firago/data";
 import fivoSans from "./fivo-sans/data";
 import fivoSansModern from "./fivo-sans-modern/data";
 import fraunces from "./fraunces/data";
+import hubotSans from "./hubot-sans/data";
 import iaWriterQuattro from "./ia-writer-quattro/data";
 import ibmPlexMono from "./ibm-plex-mono/data";
 import ibmPlexSans from "./ibm-plex-sans/data";
@@ -31,6 +32,7 @@ import leMurmure from "./le-murmure/data";
 import libreFranklin from "./libre-franklin/data";
 import lora from "./lora/data";
 import messapia from "./messapia/data";
+import monaSans from "./mona-sans/data";
 import newsreader from "./newsreader/data";
 import oswald from "./oswald/data";
 import playfairDisplay from "./playfair-display/data";
@@ -68,6 +70,7 @@ export const typefaceData: TypefaceData[] = [
   fivoSans,
   fivoSansModern,
   fraunces,
+  hubotSans,
   iaWriterQuattro,
   ibmPlexMono,
   ibmPlexSans,
@@ -82,6 +85,7 @@ export const typefaceData: TypefaceData[] = [
   libreFranklin,
   lora,
   messapia,
+  monaSans,
   newsreader,
   oswald,
   playfairDisplay,
