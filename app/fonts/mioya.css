@@ -1,0 +1,42 @@
+:root {
+  --mioya: 'Mioya', serif;
+}
+
+.mioya {
+  font-family: var(--mioya) !important;
+}
+
+@font-face {
+  font-family: "Mioya Variable";
+  font-style: normal;
+  font-weight: 100 1000;
+  src: url("/assets/fonts/mioya/MioyaVF.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Mioya";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/fonts/mioya/Mioya-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Mioya";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/mioya/Mioya-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Mioya";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/mioya/Mioya-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Mioya";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/mioya/Mioya-Black.woff2") format("woff2");
+}

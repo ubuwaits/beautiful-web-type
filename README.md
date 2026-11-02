@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 2 Nov 2026
 
+* **Added [Mioya](https://beautifulwebtype.com/mioya/)** by Sora Sagano.
 * **Added [Aujournuit](https://beautifulwebtype.com/aujournuit/)** by Teo Gaudet.
 * **Added [Piazzolla](https://beautifulwebtype.com/piazzolla/)** by Juan Pablo del Peral.
 * **Added [Luperca](https://beautifulwebtype.com/luperca/)** by Ariel Martín Pérez.
@@ -98,6 +99,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Lora](https://beautifulwebtype.com/lora/)
 * [Luperca](https://beautifulwebtype.com/luperca/)
 * [Messapia](https://beautifulwebtype.com/messapia/)
+* [Mioya](https://beautifulwebtype.com/mioya/)
 * [Mona Sans](https://beautifulwebtype.com/mona-sans/)
 * [Newsreader](https://beautifulwebtype.com/newsreader/)
 * [Oswald](https://beautifulwebtype.com/oswald/)

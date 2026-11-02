@@ -2,6 +2,7 @@
 
 ## 2 Nov 2026
 
+* **Added [Mioya](https://beautifulwebtype.com/mioya/)** by Sora Sagano.
 * **Added [Aujournuit](https://beautifulwebtype.com/aujournuit/)** by Teo Gaudet.
 * **Added [Piazzolla](https://beautifulwebtype.com/piazzolla/)** by Juan Pablo del Peral.
 * **Added [Luperca](https://beautifulwebtype.com/luperca/)** by Ariel Martín Pérez.

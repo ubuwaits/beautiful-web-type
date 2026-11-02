@@ -5580,6 +5580,25 @@
       }
     ]
   },
+  "mioya": {
+    "family": "Mioya Variable",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 1000,
+            "default": 100
+          }
+        ],
+        "stylisticSets": []
+      }
+    ]
+  },
   "mona-sans": {
     "family": "Mona Sans",
     "faces": [
