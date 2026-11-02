@@ -16,7 +16,7 @@ export function CategoryPage({ categorySlug }: { categorySlug: CategorySlug }) {
         { name, path: `/${categorySlug}/` }
       ]} />
       <FontGrid>
-        <div className="col-span-12 page-header mt-6 mb-8 text-center max-[1104px]:mt-4 max-[1104px]:mb-6">
+        <div className="col-span-12 page-header mt-6 mb-16 text-center max-[1104px]:mt-4 max-[1104px]:mb-6">
           <h1 className="font-(family-name:--alegreya-sans) text-7xl leading-16 font-normal italic max-[1104px]:text-4xl max-[1104px]:leading-8">{name} Typefaces</h1>
         </div>
         {getTypefacesByCategory(categorySlug).map((typeface) => (
