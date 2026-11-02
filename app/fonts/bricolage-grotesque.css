@@ -1,0 +1,15 @@
+:root {
+  --bricolage-grotesque: 'Bricolage Grotesque', sans-serif;
+}
+
+.bricolage-grotesque {
+  font-family: var(--bricolage-grotesque) !important;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 200 800;
+  font-stretch: 75% 100%;
+  src: url("/assets/fonts/bricolage-grotesque/BricolageGrotesque.woff2") format("woff2");
+}

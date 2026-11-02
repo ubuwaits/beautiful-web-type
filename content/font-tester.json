@@ -1127,6 +1127,39 @@
       }
     ]
   },
+  "bricolage-grotesque": {
+    "family": "Bricolage Grotesque",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 12,
+            "max": 96,
+            "default": 96
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 800,
+            "default": 800
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 100,
+            "default": 100
+          }
+        ],
+        "stylisticSets": []
+      }
+    ]
+  },
   "commissioner": {
     "family": "Commissioner",
     "faces": [

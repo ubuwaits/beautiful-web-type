@@ -6,6 +6,10 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 2 Nov 2026
+
+* **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.
+
 ### 31 Oct 2026
 
 * **Added [Newsreader](https://beautifulwebtype.com/newsreader/)** by Production Type.
@@ -55,6 +59,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Archivo Black](https://beautifulwebtype.com/archivo-black/)
 * [BioRhyme](https://beautifulwebtype.com/biorhyme/)
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
+* [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)
 * [Commissioner](https://beautifulwebtype.com/commissioner/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)

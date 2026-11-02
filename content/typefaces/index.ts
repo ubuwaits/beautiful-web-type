@@ -6,6 +6,7 @@ import archivo from "./archivo/data";
 import archivoBlack from "./archivo-black/data";
 import biorhyme from "./biorhyme/data";
 import biorhymeExpanded from "./biorhyme-expanded/data";
+import bricolageGrotesque from "./bricolage-grotesque/data";
 import commissioner from "./commissioner/data";
 import cooperHewitt from "./cooper-hewitt/data";
 import crimsonPro from "./crimson-pro/data";
@@ -55,6 +56,7 @@ export const typefaceData: TypefaceData[] = [
   archivoBlack,
   biorhyme,
   biorhymeExpanded,
+  bricolageGrotesque,
   commissioner,
   cooperHewitt,
   crimsonPro,
