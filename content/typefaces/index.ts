@@ -39,6 +39,7 @@ import messapia from "./messapia/data";
 import monaSans from "./mona-sans/data";
 import newsreader from "./newsreader/data";
 import oswald from "./oswald/data";
+import piazzolla from "./piazzolla/data";
 import playfairDisplay from "./playfair-display/data";
 import poppins from "./poppins/data";
 import rakkas from "./rakkas/data";
@@ -96,6 +97,7 @@ export const typefaceData: TypefaceData[] = [
   monaSans,
   newsreader,
   oswald,
+  piazzolla,
   playfairDisplay,
   poppins,
   rakkas,

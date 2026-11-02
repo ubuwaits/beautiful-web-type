@@ -5787,6 +5787,87 @@
       }
     ]
   },
+  "piazzolla": {
+    "family": "Piazzolla",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 100
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 8,
+            "max": 30,
+            "default": 30
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 100
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 8,
+            "max": 30,
+            "default": 30
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          }
+        ]
+      }
+    ]
+  },
   "playfair-display": {
     "family": "Playfair Display",
     "faces": [

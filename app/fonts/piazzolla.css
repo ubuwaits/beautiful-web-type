@@ -1,0 +1,21 @@
+:root {
+  --piazzolla: 'Piazzolla', serif;
+}
+
+.piazzolla {
+  font-family: var(--piazzolla) !important;
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/assets/fonts/piazzolla/Piazzolla.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Piazzolla";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("/assets/fonts/piazzolla/Piazzolla-Italic.woff2") format("woff2");
+}

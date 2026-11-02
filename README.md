@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 2 Nov 2026
 
+* **Added [Piazzolla](https://beautifulwebtype.com/piazzolla/)** by Juan Pablo del Peral.
 * **Added [Luperca](https://beautifulwebtype.com/luperca/)** by Ariel Martín Pérez.
 * **Added [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/)** by Pablo Impallari and Rodrigo Fuenzalida.
 * **Added [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/)** by Pablo Impallari and Rodrigo Fuenzalida.
@@ -98,6 +99,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Mona Sans](https://beautifulwebtype.com/mona-sans/)
 * [Newsreader](https://beautifulwebtype.com/newsreader/)
 * [Oswald](https://beautifulwebtype.com/oswald/)
+* [Piazzolla](https://beautifulwebtype.com/piazzolla/)
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)
 * [Poppins](https://beautifulwebtype.com/poppins/)
 * [Rakkas](https://beautifulwebtype.com/rakkas/)
