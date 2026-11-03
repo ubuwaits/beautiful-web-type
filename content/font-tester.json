@@ -2577,6 +2577,129 @@
       }
     ]
   },
+  "geist-sans": {
+    "family": "Geist",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "No tail a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alt a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alt l"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alt R"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alt I"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alt G"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alt arrows"
+          },
+          {
+            "tag": "ss08",
+            "name": "Rounded dot"
+          },
+          {
+            "tag": "ss09",
+            "name": "Alt numbers"
+          },
+          {
+            "tag": "ss10",
+            "name": "Alternative enclosing shapes"
+          },
+          {
+            "tag": "ss11",
+            "name": "Contextual brand styles"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "No tail a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alt a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alt l"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alt R"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alt I"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alt G"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alt arrows"
+          },
+          {
+            "tag": "ss08",
+            "name": "Rounded dot"
+          },
+          {
+            "tag": "ss09",
+            "name": "Alt numbers"
+          },
+          {
+            "tag": "ss10",
+            "name": "Alternative enclosing shapes"
+          },
+          {
+            "tag": "ss11",
+            "name": "Contextual brand styles"
+          }
+        ]
+      }
+    ]
+  },
   "hubot-sans": {
     "family": "Hubot Sans",
     "faces": [

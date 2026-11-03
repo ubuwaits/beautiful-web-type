@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 3 Nov 2026
 
+* **Added [Geist Sans](https://beautifulwebtype.com/geist-sans/)** by Vercel and Basement Studio.
 * **Added [DM Sans](https://beautifulwebtype.com/dm-sans/), [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/), and [DM Serif Text](https://beautifulwebtype.com/dm-serif-text/)** by Colophon Foundry.
 * **Added [Roboto](https://beautifulwebtype.com/roboto/)** by Christian Robertson.
 
@@ -88,6 +89,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Fivo Sans](https://beautifulwebtype.com/fivo-sans/)
 * [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/)
 * [Fraunces](https://beautifulwebtype.com/fraunces/)
+* [Geist Sans](https://beautifulwebtype.com/geist-sans/)
 * [Hubot Sans](https://beautifulwebtype.com/hubot-sans/)
 * [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/)
 * [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/)

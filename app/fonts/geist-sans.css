@@ -1,0 +1,21 @@
+:root {
+  --geist-sans: 'Geist', sans-serif;
+}
+
+.geist-sans {
+  font-family: var(--geist-sans) !important;
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/assets/fonts/geist-sans/Geist.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("/assets/fonts/geist-sans/Geist-Italic.woff2") format("woff2");
+}
