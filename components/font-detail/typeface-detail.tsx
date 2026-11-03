@@ -100,7 +100,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             <dl className="typeface-metadata @container m-0 min-w-0 font-(family-name:--ui-face)
               [&>div]:grid [&>div]:grid-cols-[auto_minmax(0,1fr)] [&>div]:items-baseline [&>div]:gap-x-6 [&>div]:py-3 [&>div:first-child]:pt-0 [&>div:last-child]:pb-0
               [&>div+div]:border-t [&>div+div]:border-t-neutral-200/60 dark:[&>div+div]:border-t-neutral-800/80 [&>div+div]:[border-top-style:solid]
-              [&_dt]:min-w-0 [&_dt]:text-xs max-[720px]:@min-[21rem]:[&_dt]:text-sm min-[721px]:[&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-bold [&_dt]:uppercase
+              [&_dt]:min-w-0 [&_dt]:text-xs max-[720px]:@min-[21rem]:[&_dt]:text-sm min-[721px]:[&_dt]:text-base [&_dt]:leading-7 [&_dt]:font-semibold [&_dt]:uppercase
               [&_dd]:m-0 [&_dd]:min-w-0 [&_dd]:text-right [&_dd]:text-xs max-[720px]:@min-[21rem]:[&_dd]:text-sm min-[721px]:[&_dd]:text-lg [&_dd]:leading-7 [&_dd]:wrap-anywhere
               [&_a]:underline [&_a]:underline-offset-4 [&_a:hover]:text-red-500">
               <div className="grid-cols-1!">

@@ -3,6 +3,7 @@
 import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 
+import { Button } from "@/components/ui/button";
 import { loadGlyphInspectorFont, type Font, type Glyph } from "@/lib/glyph-inspector-font-loader";
 
 type GlyphInspectorProps = {
@@ -10,8 +11,8 @@ type GlyphInspectorProps = {
   typefaceName: string;
 };
 
-function formatCssCode(unicode: number): string {
-  return `content: '\\${unicode.toString(16).toUpperCase().padStart(4, "0")}';`;
+function formatCssEscape(unicode: number): string {
+  return `\\${unicode.toString(16).toUpperCase().padStart(4, "0")}`;
 }
 
 function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showGuides = false) {
@@ -43,19 +44,53 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
       if (value === undefined || !Number.isFinite(value) || (label !== "baseline" && value <= 0)) continue;
       const y = baseline - value * scale;
       context.globalAlpha = 0.18;
-      context.fillRect(16, y, Math.max(0, width - 32), 1);
+      context.fillRect(0, y, width, 1);
       context.globalAlpha = 0.5;
       const closeToCapHeight = label === "x-height" && metrics?.sCapHeight !== undefined
         && Math.abs(metrics.sCapHeight - value) * scale < 14;
       context.textAlign = closeToCapHeight ? "right" : "left";
       context.textBaseline = closeToCapHeight ? "top" : "bottom";
-      context.fillText(label, closeToCapHeight ? width - 16 : 16, y + (closeToCapHeight ? 4 : -3));
+      context.fillText(label, closeToCapHeight ? width : 0, y + (closeToCapHeight ? 4 : -3));
     }
     context.restore();
   }
   const path = glyph.getPath(x, baseline, scale * font.unitsPerEm);
   path.fill = ink;
   path.draw(context);
+  return baseline;
+}
+
+function CopyValue({ label, value }: { label: string; value: string }) {
+  const [status, setStatus] = useState<"idle" | "copied" | "error">("idle");
+
+  useEffect(() => {
+    if (status === "idle") return;
+    const timer = window.setTimeout(() => setStatus("idle"), 2000);
+    return () => window.clearTimeout(timer);
+  }, [status]);
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(value);
+      setStatus("copied");
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  return (
+    <>
+      <Button
+        className="size-7 min-h-0! shrink-0 rounded-sm bg-transparent! p-0! text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100"
+        onClick={copy} aria-label={`Copy ${label.toLowerCase()}`} title={status === "copied" ? "Copied" : `Copy ${label.toLowerCase()}`}
+      >
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.25" aria-hidden="true">
+          {status === "copied" ? <path d="m3 8 3 3 7-7" /> : <><rect x="5.5" y="5.5" width="8" height="8" rx="1.5" /><path d="M10.5 3.5v-1A1 1 0 0 0 9.5 1.5h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h1" /></>}
+        </svg>
+      </Button>
+      <span className="sr-only left-0 top-0" role="status">{status === "copied" ? `${label} copied` : status === "error" ? "Could not copy. Select and copy the value manually." : ""}</span>
+    </>
+  );
 }
 
 function initialGlyphIndex(font: Font) {
@@ -67,6 +102,8 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
   const sectionRef = useRef<HTMLElement>(null);
   const initialAnchorRef = useRef(false);
   const detailCanvasRef = useRef<HTMLCanvasElement>(null);
+  const infoTableRef = useRef<HTMLTableElement>(null);
+  const infoBaselineRef = useRef<HTMLSpanElement>(null);
   const glyphGridRef = useRef<HTMLDivElement>(null);
   const [activated, setActivated] = useState(false);
   const [scriptReady, setScriptReady] = useState(false);
@@ -114,10 +151,18 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     if (!font || !selectedGlyph || !canvas || !parent) return;
     const draw = () => {
       const width = parent.clientWidth;
-      drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, getComputedStyle(canvas).color, true);
+      const baseline = drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, getComputedStyle(canvas).color, true);
+      const table = infoTableRef.current;
+      const marker = infoBaselineRef.current;
+      if (table && marker && baseline !== undefined) {
+        const textBaseline = marker.getBoundingClientRect().top - table.getBoundingClientRect().top;
+        table.style.setProperty("--glyph-info-offset", `${Math.max(0, baseline - textBaseline)}px`);
+        parent.style.setProperty("--glyph-preview-offset", `${Math.max(0, textBaseline - baseline)}px`);
+      }
     };
     const observer = new ResizeObserver(draw);
     observer.observe(parent);
+    if (infoTableRef.current) observer.observe(infoTableRef.current);
     const themeObserver = new MutationObserver(draw);
     themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
     draw();
@@ -230,6 +275,12 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
   }, [font, selectedGlyph]);
 
   const codes = selectedGlyph?.unicodes ?? [];
+  const details = [
+    { label: "Glyph name", value: selectedGlyph?.name, unavailable: "Not available" },
+    { label: "Unicode", value: codes.map((code) => `U+${code.toString(16).toUpperCase().padStart(4, "0")}`).join(", "), unavailable: "Not encoded" },
+    { label: "HTML entity", value: codes.map((code) => `&#${code};`).join(", "), unavailable: "Not available" },
+    { label: "CSS escape", value: codes.map(formatCssEscape).join(", "), unavailable: "Not available" }
+  ];
   return (
     <section className="mb-(--section-gap) scroll-mt-20" id="glyphs" ref={sectionRef} aria-label={`${typefaceName} glyph explorer`}>
       {activated ? <Script src="/js/opentype.min.js" strategy="afterInteractive" onReady={() => setScriptReady(true)} onError={() => setError(true)} /> : null}
@@ -237,16 +288,26 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       <noscript><p className="mb-4">Enable JavaScript to explore the glyphs.</p></noscript>
       {error ? <p role="alert">The font could not be loaded. Reload the page to try again.</p> : null}
       <div className="grid grid-cols-1 items-start gap-(--gutter) min-[721px]:grid-cols-12">
-        <div className="sticky top-16 z-10 grid max-h-[calc(100dvh-6rem)] min-[721px]:top-20 min-[721px]:max-h-[calc(100dvh-7rem)] grid-cols-2 items-start overflow-y-auto bg-white dark:bg-neutral-950 min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
-          <div className="min-w-0">
+        <div className="sticky top-16 z-10 grid max-h-[calc(100dvh-6rem)] min-[721px]:top-20 min-[721px]:max-h-[calc(100dvh-7rem)] grid-cols-2 items-start gap-x-4 min-[721px]:gap-x-0 overflow-y-auto bg-white dark:bg-neutral-950 min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
+          <div className="min-w-0 pt-(--glyph-preview-offset) min-[721px]:pt-0">
             <canvas className="block h-auto w-full" id="glyph-detail-canvas" ref={detailCanvasRef} aria-label={selectedGlyph ? `Preview of glyph ${selectedGlyph.index}` : "Selected glyph preview"} />
           </div>
-          <dl className="m-0 min-w-0 font-(family-name:--ui-monospaced) text-base leading-6 wrap-anywhere [&>dt]:leading-4 [&>dt]:font-(family-name:--ui-face) [&>dt]:font-bold [&>dt]:uppercase [&>dd]:m-0 [&>dd]:mb-3" id="glyph-info">
-            <dt>Glyph name</dt><dd>{selectedGlyph?.name ?? "Not available"}</dd>
-            <dt>Unicode</dt><dd>{codes.map((code) => `U+${code.toString(16).toUpperCase().padStart(4, "0")}`).join(", ") || "Not encoded"}</dd>
-            <dt>HTML code</dt><dd>{codes.map((code) => `&#${code};`).join(", ") || "Not available"}</dd>
-            <dt>CSS code</dt><dd>{codes.map(formatCssCode).join(", ") || "Not available"}</dd>
-          </dl>
+          <table className="w-full min-w-0 self-start translate-y-(--glyph-info-offset) min-[721px]:translate-y-0 table-fixed border-collapse [&_tr:first-child>*]:pt-0 [&_tr:last-child>*]:pb-0 text-xs leading-6 min-[721px]:text-sm" id="glyph-info" ref={infoTableRef}>
+            <caption className="sr-only">Selected glyph details</caption>
+            <tbody>
+              {details.map(({ label, value, unavailable }) => (
+                <tr className="border-neutral-200/60 min-[721px]:border-t first:border-t-0 dark:border-neutral-800/80" key={label}>
+                  <th scope="row" className="w-2/5 py-0 min-[721px]:py-3 pr-2 text-left align-top font-(family-name:--ui-face) font-semibold uppercase">{label}</th>
+                  <td className="py-0 min-[721px]:py-3 text-right align-top font-(family-name:--ui-monospaced)">
+                    <div className="relative flex min-w-0 items-start justify-end gap-1">
+                      <span className="min-w-0 truncate" title={value || unavailable}>{value || unavailable}{label === "CSS escape" ? <span className="inline-block size-0 align-baseline" ref={infoBaselineRef} aria-hidden="true" /> : null}</span>
+                      {value ? <CopyValue key={`${label}:${value}`} label={label} value={value} /> : <span className="size-7 shrink-0" aria-hidden="true" />}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
         <div className="min-w-0 min-[721px]:col-span-9" id="glyph-grid-container" aria-busy={!font && !error}>
           <div className="grid grid-cols-6 bg-white dark:bg-neutral-950 min-[721px]:grid-cols-10 min-[1105px]:grid-cols-16" id="glyph-grid" ref={glyphGridRef} data-glyph-count={font?.numGlyphs} />
