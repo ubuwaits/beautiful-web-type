@@ -11,6 +11,9 @@ import bricolageGrotesque from "./bricolage-grotesque/data";
 import commissioner from "./commissioner/data";
 import cooperHewitt from "./cooper-hewitt/data";
 import crimsonPro from "./crimson-pro/data";
+import dmSans from "./dm-sans/data";
+import dmSerifText from "./dm-serif-text/data";
+import dmSerifDisplay from "./dm-serif-display/data";
 import ebGaramond from "./eb-garamond/data";
 import familjenGrotesk from "./familjen-grotesk/data";
 import firaCode from "./fira-code/data";
@@ -72,6 +75,9 @@ export const typefaceData: TypefaceData[] = [
   commissioner,
   cooperHewitt,
   crimsonPro,
+  dmSans,
+  dmSerifDisplay,
+  dmSerifText,
   ebGaramond,
   familjenGrotesk,
   firaCode,

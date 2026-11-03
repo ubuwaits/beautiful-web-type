@@ -1,0 +1,21 @@
+:root {
+  --dm-serif-display: 'DM Serif Display', serif;
+}
+
+.dm-serif-display {
+  font-family: var(--dm-serif-display) !important;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/dm-serif-display/DMSerifDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/fonts/dm-serif-display/DMSerifDisplay-Italic.woff2") format("woff2");
+}

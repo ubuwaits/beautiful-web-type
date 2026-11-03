@@ -2,6 +2,7 @@
 
 ## 3 Nov 2026
 
+* **Added [DM Sans](https://beautifulwebtype.com/dm-sans/), [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/), and [DM Serif Text](https://beautifulwebtype.com/dm-serif-text/)** by Colophon Foundry.
 * **Added [Roboto](https://beautifulwebtype.com/roboto/)** by Christian Robertson.
 
 ## 2 Nov 2026

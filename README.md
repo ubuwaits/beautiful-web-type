@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 3 Nov 2026
 
+* **Added [DM Sans](https://beautifulwebtype.com/dm-sans/), [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/), and [DM Serif Text](https://beautifulwebtype.com/dm-serif-text/)** by Colophon Foundry.
 * **Added [Roboto](https://beautifulwebtype.com/roboto/)** by Christian Robertson.
 
 ### 2 Nov 2026
@@ -77,6 +78,9 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Commissioner](https://beautifulwebtype.com/commissioner/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)
+* [DM Sans](https://beautifulwebtype.com/dm-sans/)
+* [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/)
+* [DM Serif Text](https://beautifulwebtype.com/dm-serif-text/)
 * [EB Garamond](https://beautifulwebtype.com/eb-garamond/)
 * [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)
 * [Fira Code](https://beautifulwebtype.com/fira-code/)

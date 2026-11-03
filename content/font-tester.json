@@ -1390,6 +1390,153 @@
       }
     ]
   },
+  "dm-sans": {
+    "family": "DM Sans",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 9,
+            "max": 40,
+            "default": 9
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 1000,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Punctuation"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternative a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative g"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative u"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alternative y"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alternative Q"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alternative Numbers"
+          },
+          {
+            "tag": "ss08",
+            "name": "Roundel Glyphs"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 9,
+            "max": 40,
+            "default": 9
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 1000,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative Punctuation"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternative a"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative g"
+          },
+          {
+            "tag": "ss04",
+            "name": "Alternative u"
+          },
+          {
+            "tag": "ss05",
+            "name": "Alternative y"
+          },
+          {
+            "tag": "ss06",
+            "name": "Alternative Q"
+          },
+          {
+            "tag": "ss07",
+            "name": "Alternative Numbers"
+          },
+          {
+            "tag": "ss08",
+            "name": "Roundel Glyphs"
+          }
+        ]
+      }
+    ]
+  },
+  "dm-serif-display": {
+    "family": "DM Serif Display",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
+  "dm-serif-text": {
+    "family": "DM Serif Text",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": []
+      }
+    ]
+  },
   "eb-garamond": {
     "family": "EB Garamond",
     "faces": [
