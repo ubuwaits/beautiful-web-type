@@ -6,6 +6,10 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 3 Nov 2026
+
+* **Added [Roboto](https://beautifulwebtype.com/roboto/)** by Christian Robertson.
+
 ### 2 Nov 2026
 
 * **Added [Mioya](https://beautifulwebtype.com/mioya/)** by Sora Sagano.
@@ -107,6 +111,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [Playfair Display](https://beautifulwebtype.com/playfair-display/)
 * [Poppins](https://beautifulwebtype.com/poppins/)
 * [Rakkas](https://beautifulwebtype.com/rakkas/)
+* [Roboto](https://beautifulwebtype.com/roboto/)
 * [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/)
 * [Source Code Pro](https://beautifulwebtype.com/source-code-pro/)
 * [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/)

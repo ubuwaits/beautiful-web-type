@@ -1,5 +1,9 @@
 # Changelog
 
+## 3 Nov 2026
+
+* **Added [Roboto](https://beautifulwebtype.com/roboto/)** by Christian Robertson.
+
 ## 2 Nov 2026
 
 * **Added [Mioya](https://beautifulwebtype.com/mioya/)** by Sora Sagano.

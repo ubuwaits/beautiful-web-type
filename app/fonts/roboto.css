@@ -1,0 +1,23 @@
+:root {
+  --roboto: 'Roboto', sans-serif;
+}
+
+.roboto {
+  font-family: var(--roboto) !important;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  src: url("/assets/fonts/roboto/Roboto.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  src: url("/assets/fonts/roboto/Roboto-Italic.woff2") format("woff2");
+}

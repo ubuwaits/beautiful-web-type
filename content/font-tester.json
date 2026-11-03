@@ -6719,6 +6719,111 @@
       }
     ]
   },
+  "roboto": {
+    "family": "Roboto",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 100,
+            "default": 100
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic set 06"
+          },
+          {
+            "tag": "ss07",
+            "name": "Stylistic set 07"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 75,
+            "max": 100,
+            "default": 100
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          },
+          {
+            "tag": "ss06",
+            "name": "Stylistic set 06"
+          },
+          {
+            "tag": "ss07",
+            "name": "Stylistic set 07"
+          }
+        ]
+      }
+    ]
+  },
   "schibsted-grotesk": {
     "family": "Schibsted Grotesk",
     "faces": [
