@@ -14,7 +14,7 @@ function formatCssCode(unicode: number): string {
   return `content: '\\${unicode.toString(16).toUpperCase().padStart(4, "0")}';`;
 }
 
-function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showBaseline = false) {
+function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showGuides = false) {
   const ratio = window.devicePixelRatio || 1;
   canvas.width = Math.round(width * ratio);
   canvas.height = Math.round(height * ratio);
@@ -28,11 +28,30 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
   const scale = Math.min(width / maxWidth, height / maxHeight);
   const baseline = (height - maxHeight * scale) / 2 + head.yMax * scale;
   const x = (width - glyph.advanceWidth * scale) / 2;
-  if (showBaseline) {
+  if (showGuides) {
+    const metrics = font.tables.os2;
+    const guides = [
+      { label: "baseline", value: 0 },
+      { label: "x-height", value: metrics?.sxHeight },
+      { label: "cap height", value: metrics?.sCapHeight }
+    ];
+    context.save();
     context.fillStyle = ink;
-    context.globalAlpha = 0.25;
-    context.fillRect(16, baseline, Math.max(0, width - 32), 1);
-    context.globalAlpha = 1;
+    context.font = `10px ${getComputedStyle(canvas).getPropertyValue("--ui-monospaced") || "monospace"}`;
+    context.textBaseline = "bottom";
+    for (const { label, value } of guides) {
+      if (value === undefined || !Number.isFinite(value) || (label !== "baseline" && value <= 0)) continue;
+      const y = baseline - value * scale;
+      context.globalAlpha = 0.18;
+      context.fillRect(16, y, Math.max(0, width - 32), 1);
+      context.globalAlpha = 0.5;
+      const closeToCapHeight = label === "x-height" && metrics?.sCapHeight !== undefined
+        && Math.abs(metrics.sCapHeight - value) * scale < 14;
+      context.textAlign = closeToCapHeight ? "right" : "left";
+      context.textBaseline = closeToCapHeight ? "top" : "bottom";
+      context.fillText(label, closeToCapHeight ? width - 16 : 16, y + (closeToCapHeight ? 4 : -3));
+    }
+    context.restore();
   }
   const path = glyph.getPath(x, baseline, scale * font.unitsPerEm);
   path.fill = ink;

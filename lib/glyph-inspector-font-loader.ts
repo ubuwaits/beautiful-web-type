@@ -18,6 +18,10 @@ export type Font = {
     get: (glyphIndex: number) => Glyph;
   };
   tables: {
+    os2?: {
+      sxHeight?: number;
+      sCapHeight?: number;
+    };
     head: {
       xMax: number;
       xMin: number;
