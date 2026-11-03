@@ -13,6 +13,7 @@ const typeface: TypefaceData = {
   projectUrl: "https://github.com/googlefonts/dm-fonts",
   gFontsUrl: "https://fonts.google.com/specimen/DM+Serif+Text",
   creator: { name: "Colophon Foundry", url: "https://github.com/googlefonts/dm-fonts" },
+  summary: "DM Serif Text is Colophon Foundry’s lower-contrast companion to DM Serif Display, with reinforced details and an italic for subheadings and shorter passages.",
   description: `DM Serif Text was developed by Colophon Foundry for DeepMind under the creative direction of MultiAdaptor and released in 2019. Derived from the Latin portion of Frank Grießhammer’s <em>Source Serif Pro</em> for Adobe, it carries the transitional influence of Pierre-Simon Fournier into a contemporary editorial family. Where <em>DM Serif Display</em> emphasizes strong stroke contrast for large titles, Text is the lower-contrast optical counterpart, intended for smaller subheadings and text settings.
 
 The design reinforces crossbars, bracketed serifs, and fine strokes while retaining the upright structure and rounded terminals of its display sibling. The lowercase combines open counters with teardrop details on letters such as <em>c</em>, <em>f</em>, and <em>r</em>, balancing a firm baseline with calligraphic accents. Its spacing is more relaxed than Display’s, helping separate character forms in continuous lines. The italic changes the rhythm through cursive construction, flowing strokes, and single-storey forms, providing emphasis without adding another weight.

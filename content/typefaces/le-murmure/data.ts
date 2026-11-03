@@ -22,6 +22,7 @@ const typeface: TypefaceData = {
     name: "Jérémy Landes",
     url: "http://studiotriple.fr"
   },
+  summary: "Le Murmure is Jérémy Landes’s condensed display face, with unusual proportions and alternate glyphs for exhibition identities, posters, and editorial titles.",
   description: `Le Murmure was conceived not as an obedient vehicle for continuous reading, but as an outspoken graphic signature. Commissioned in 2018 for the rebranding of the French design agency Murmure and drafted by Jérémy Landes of Studio Triple, the face was subsequently published by Velvetyne Type Foundry. Le Murmure treats words as graphic forms, using unusual proportions and alternates to give short titles a distinct character.
 
 Anatomically, the design takes its initial cue from the tightly compressed proportions of twentieth-century magazine titling and condensed poster grotesques, yet it promptly subverts their mechanical regularity. Landes introduces calculated friction into the line through structural mismatches and idiosyncratic details. Stems rise tall and narrow, but the expected cadence is disrupted by unexpected graphic flourishes: doubled strokes in glyphs like M and N, asymmetrical junctions, and calligraphic gestures embedded directly into the rigid sans-serif skeleton. To further resist industrial uniformity, the typeface incorporates an extensive set of alternate glyphs governed by an OpenType randomization feature, ensuring that adjacent or recurring letters shift subtly in posture rather than locking into a predictable pattern.

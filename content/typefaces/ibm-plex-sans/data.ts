@@ -52,6 +52,7 @@ const typeface: TypefaceData = {
     name: "Mike Abbink & Bold Monday",
     url: "https://boldmonday.com"
   },
+  summary: "IBM Plex Sans combines industrial details with humanist curves and true italics, offering eight weights for interfaces, documentation, and editorial layouts.",
   description: `IBM Plex Sans was conceived to give IBM a distinct typographic identity in place of <em>Helvetica</em>. Directed by Mike Abbink in partnership with the Dutch foundry Bold Monday, the family was forged around an explicit philosophical dialectic—the dialogue between human craftsmanship and the disciplined precision of the machine.
 
 The architecture of Plex Sans navigates this tension between the organic and the engineered through its letterforms. While its proportions pay homage to the frank, nineteenth-century grotesque, its skeleton is animated by calligraphic memory and industrial wit. The junctures where curves meet stems do not dissolve into seamless, homogenized arcs; instead, they acknowledge the seam through subtle, chiseled transitions and engineered chamfers, quietly evoking the mechanical ancestry of the typewriter ball and punch card. Apertures remain wide and hospitable, inviting light into the interior chambers of the glyphs, while the x-height is generously scaled to withstand the low-resolution rasterization of code editors and embedded displays. On the page, it yields an orderly, legible fabric—temperate enough for corporate ledgers and technical documentation, yet sustained by a brisk, rhythmic friction.

@@ -36,6 +36,7 @@ const typeface: TypefaceData = {
     name: "Rodrigo Fuenzalida",
     url: "https://www.instagram.com/erre.efe"
   },
+  summary: "Instrument Sans is a variable grotesque by Rodrigo Fuenzalida, balancing restrained forms with stylistic alternatives for interfaces and editorial layouts.",
   description: `Conceived for the design agency Instrument by Chilean type designer Rodrigo Fuenzalida under the creative direction of Jordan Egstad, Instrument Sans combines a restrained grotesque structure with more informal details. The family was designed for both modern interfaces and editorial spaces.
 
 Underneath its disciplined grotesque exterior beats an agile, subtly playful heart. The letterforms are drafted with generous, hospitable proportions and wide apertures that welcome ambient light into the line, preventing the dense, claustrophobic pooling of pixels that so often handicaps utilitarian screen types. Terminals are cut with deliberate, razor-sharp certainty, yet the curves evade dogmatic geometry; they swell and resolve with an organic elasticity that catches the eye without disrupting the reading cadence. Along the running measure, Instrument Sans produces a porous, even-textured grey—orderly and confident enough to govern dense software hierarchies and technical captions, while retaining enough variation for continuous prose.

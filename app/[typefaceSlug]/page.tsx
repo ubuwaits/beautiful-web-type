@@ -31,7 +31,7 @@ export async function generateMetadata({
   }
 
   const title = typeface.name;
-  const description = `Complete guide to the free font ${typeface.name}. See beautiful examples, OpenType features, and more.`;
+  const description = typeface.summary;
   const imagePath = `/assets/images/${typeface.slug}.png`;
   const path = getTypefacePath(typeface.slug);
 

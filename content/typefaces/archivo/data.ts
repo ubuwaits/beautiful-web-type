@@ -36,6 +36,7 @@ const typeface: TypefaceData = {
     name: "Omnibus-Type",
     url: "https://www.omnibus-type.com"
   },
+  summary: "Archivo is a variable sans serif rooted in American commercial gothics, combining compact proportions with a broad weight range for text and headlines.",
   description: `Archivo speaks with the candid, muscular voice of the late nineteenth-century commercial vernacular. Conceived by Héctor Gatti and shaped alongside the Omnibus-Type collective in Buenos Aires, the typeface looks not to the cool, antiseptic neutrality of mid-century Swiss modernism, but back to the hearty American gothics that once anchored broadsides, trade catalogs, and the front pages of the industrial press. Originally cast to command attention across headlines and technical captions, it has since grown into a broad typographic system—recognized at the Tipos Latinos biennial and matured into an expansive variable continuum bridging light weights with heavy display forms.
 
 Its anatomy is defined by compact discipline and a robust horizontal drive. Gatti preserves the blunt, physical candor of the historic grotesque: horizontal strokes shear off cleanly, the curves carry subtle optical adjustments rather than rigid geometry, and the apertures close down into a determined, slightly rectangular silhouette. Yet Archivo avoids the claustrophobia that often handicaps display types at smaller scales. At reading sizes, its generous x-height, hospitable interior counters, and steady baseline rhythm assemble into a legible, even-textured grey suited to dense text.

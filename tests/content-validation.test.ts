@@ -18,6 +18,7 @@ const font: TypefaceData = {
   latestRelease: { version: "v1.0", date: "1 Jan 2024" },
   projectUrl: "https://example.com/test-sans",
   creator: { name: "Example Foundry", url: "https://example.com" },
+  summary: "A sans serif for testing content validation.",
   description: "Example typeface",
   features: [{ type: "comparison", title: "Ligatures", examples: ["fi"] }],
   fontFile: "/assets/fonts/test.woff"

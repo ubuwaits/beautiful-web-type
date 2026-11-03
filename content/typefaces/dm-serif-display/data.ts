@@ -13,6 +13,7 @@ const typeface: TypefaceData = {
   projectUrl: "https://github.com/googlefonts/dm-fonts",
   gFontsUrl: "https://fonts.google.com/specimen/DM+Serif+Display",
   creator: { name: "Colophon Foundry", url: "https://github.com/googlefonts/dm-fonts" },
+  summary: "DM Serif Display is a high-contrast serif by Colophon Foundry, with fine hairlines and flowing italics for editorial mastheads, posters, and web headings.",
   description: `DM Serif Display was developed by Colophon Foundry for DeepMind under the creative direction of MultiAdaptor and released through Google Fonts in 2019. While <em>DM Sans</em> began with Jonny Pinhorn’s <em>Poppins</em>, the serif families drew on the Latin portion of Frank Grießhammer’s <em>Source Serif Pro</em> for Adobe. Colophon reworked that design’s transitional structure, rooted in the eighteenth-century types of Pierre-Simon Fournier, into a higher-contrast face for large headlines and poster typography.
 
 Pronounced stroke modulation sets heavy vertical stems against fine crossbars and hairlines. Bracketed serifs establish a firm horizontal baseline, while rounded terminals on letters such as <em>c</em>, <em>f</em>, and <em>r</em> soften the otherwise upright structure. Close spacing gives short titles a dense rhythm, with the contrast between thick strokes and delicate joins becoming more visible as the size increases. The companion italic introduces cursive forms, single-storey constructions, and flowing strokes that provide a distinct second voice within the same display setting.

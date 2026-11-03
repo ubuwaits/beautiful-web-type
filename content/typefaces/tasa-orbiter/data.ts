@@ -38,6 +38,7 @@ const typeface: TypefaceData = {
     name: "Local Remote",
     url: "https://localremote.co"
   },
+  summary: "TASA Orbiter is a sans serif developed for the Taiwan Space Agency, with open counters and elliptical curves for interfaces, technical text, and identities.",
   description: `TASA Orbiter was drawn by the design studio Five Metal Shop for the rebranding of the Taiwan Space Agency (TASA). The family follows the tradition of lettering developed for space agencies, with a more restrained approach than the aerodynamic display types associated with the mid-twentieth-century space race.
 
 Anatomically, the design is governed by the calm geometries of orbital mechanics and the unyielding precision of telemetry instrumentation. Orbiter occupies a poised space between the rational structure of the industrial neo-grotesque and the aerodynamic grace of modern industrial design. Its curves sweep through subtle, elliptical paths—evoking planetary trajectories and parabolic curves rather than the unyielding circularity of the compass—while its terminals are cut with sharp, orthogonal certainty. Apertures remain wide and hospitable, inviting ambient light deep into the counters to ensure that glyphs do not choke into illegible clots when rendered at micro-scales on dense mission interfaces or against the luminous glare of digital monitors. The strokes exhibit a lean, tensile strength, shedding decorative surplus to survive the unforgiving economy of the screen.

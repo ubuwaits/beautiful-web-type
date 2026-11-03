@@ -28,6 +28,7 @@ export type Typeface = {
     name: string;
     url: string;
   };
+  summary: string;
   description: string;
   italic?: boolean;
   smallcap?: boolean;
