@@ -5,6 +5,7 @@ node_modules
 .next-playwright
 out
 next-env.d.ts
+*.tsbuildinfo
 playwright-report
 test-results
 

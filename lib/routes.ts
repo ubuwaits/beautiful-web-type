@@ -10,7 +10,6 @@ export const STATIC_SITEMAP_PATHS = [
 
 const NON_TYPEFACE_TOP_LEVEL_PATHS = [
   "assets",
-  "css",
   "feed.xml",
   "google146824b99fdbed48.html",
   "js",

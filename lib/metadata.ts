@@ -4,7 +4,7 @@ export const SITE_NAME = "Beautiful Web Type";
 export const SITE_ORIGIN = "https://www.beautifulwebtype.com";
 export const DEFAULT_SITE_DESCRIPTION =
   "Discover the best free fonts from Google and across the web. See beautiful examples, OpenType features, and more.";
-export const DEFAULT_SOCIAL_IMAGE_PATH = "/assets/images/card.png";
+const DEFAULT_SOCIAL_IMAGE_PATH = "/assets/images/card.png";
 export const TWITTER_CREATOR = "@ubuwaits";
 
 type PageMetadataOptions = {

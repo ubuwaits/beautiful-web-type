@@ -62,7 +62,6 @@ export default function LegacyV1Page() {
           box-sizing: content-box;
         }
 
-        header.site-header,
         footer.layout-grid {
           display: none !important;
         }

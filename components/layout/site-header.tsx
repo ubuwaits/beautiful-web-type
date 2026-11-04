@@ -45,7 +45,7 @@ function MainNavigation({ typefaces }: {
 
   return (
     <NavigationMenu aria-label="Main navigation" value={value} onValueChange={setValue}>
-      <NavigationMenuList className="main-nav">
+      <NavigationMenuList>
         {categories.map((category) => (
           <NavigationMenuItem key={category.slug} value={category.slug}>
             <NavigationMenuTrigger
@@ -84,7 +84,7 @@ export function SiteHeader({ typefaces }: { typefaces: NavigationTypeface[] }) {
   if (pathname.startsWith("/v1")) return null;
 
   return (
-    <header className="site-header fixed inset-x-0 top-0 z-40 flex h-16 items-center bg-white/95 px-4 backdrop-blur-[2px] dark:bg-neutral-950/95 min-[1105px]:px-6">
+    <header className="fixed inset-x-0 top-0 z-40 flex h-16 items-center bg-white/95 px-4 backdrop-blur-[2px] dark:bg-neutral-950/95 min-[1105px]:px-6">
       <Link href="/" className="mr-auto shrink-0 font-(family-name:--alegreya-sans) text-xl leading-none font-black italic uppercase hover:text-neutral-500 dark:hover:text-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 max-[360px]:text-sm">
         Beautiful Web Type
       </Link>

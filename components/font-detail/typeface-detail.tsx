@@ -142,7 +142,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
           <section className="grid scroll-mt-20 grid-cols-12 gap-x-(--gutter)" id="about" aria-label="About the typeface">
 
-            <div className="typeface-description col-span-12 min-w-0 text-base leading-7 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 min-[721px]:text-xl min-[721px]:leading-8 gap-x-12 [&_code]:[font:inherit] [&>p]:mb-[1lh] [&>p]:text-pretty [&>p]:[orphans:2] [&>p]:[widows:2] [&>p:last-child]:mb-0">
+            <div className="col-span-12 min-w-0 text-base leading-7 min-[721px]:col-span-8 min-[721px]:col-start-3 min-[721px]:columns-2 min-[721px]:text-xl min-[721px]:leading-8 gap-x-12 [&_code]:[font:inherit] [&>p]:mb-[1lh] [&>p]:text-pretty [&>p]:[orphans:2] [&>p]:[widows:2] [&>p:last-child]:mb-0">
               {typeface.description.split(/\n\s*\n/).map((paragraph, index) => (
                 <p dangerouslySetInnerHTML={{ __html: paragraph }} key={`${typeface.slug}-description-${index}`} />
               ))}

@@ -33,7 +33,6 @@ export function FittedLine({ text, className = "", lines = 1, weight = 400 }: Fi
         className={`m-0 w-max max-w-none ${lines === 2 ? "whitespace-pre" : "whitespace-nowrap"} leading-[1.15] caret-current outline-none ${className}`}
         style={{ "--line-scale": 0.9 / Math.max(1, text.length / lines), fontSize: "calc(100cqw * var(--line-scale))", fontWeight: weight } as CSSProperties}
         data-fit-line=""
-        data-fit-lines={lines}
         onKeyDown={(event) => { if (event.key === "Enter") event.preventDefault(); }}
         onBlur={lines === 2 ? (event) => {
           event.currentTarget.textContent = splitHeadline(event.currentTarget.innerText);
@@ -63,7 +62,6 @@ export function FittedLines({ children, className = "" }: { children: ReactNode;
     lines.forEach((line, index) => {
       const scale = scales[index];
       if (scale !== null) setFitScale(line, "--line-scale", scale);
-      line.dataset.fitReady = "true";
     });
   }, [children]);
   useTextFit(ref, fit);
