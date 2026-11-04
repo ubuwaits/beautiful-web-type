@@ -10,17 +10,14 @@ import {
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
   const typefaces = getAllTypefaces();
 
   return [
     ...STATIC_SITEMAP_PATHS.map((path) => ({
-      url: toAbsoluteUrl(path),
-      lastModified
+      url: toAbsoluteUrl(path)
     })),
     ...typefaces.map((typeface) => ({
-      url: toAbsoluteUrl(getTypefacePath(typeface.slug)),
-      lastModified
+      url: toAbsoluteUrl(getTypefacePath(typeface.slug))
     }))
   ];
 }

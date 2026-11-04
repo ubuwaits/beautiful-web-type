@@ -14,6 +14,7 @@ const NON_TYPEFACE_TOP_LEVEL_PATHS = [
   "feed.xml",
   "google146824b99fdbed48.html",
   "js",
+  "robots.txt",
   "sitemap.xml",
   "v1"
 ] as const;
