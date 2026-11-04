@@ -15,7 +15,7 @@ export function FontCard({ typeface }: FontCardProps) {
       data-testid="typeface-card"
     >
       <Link className="group/card flex min-w-0 w-full grow flex-col content-center justify-center p-0 text-inherit h-64 outline-none max-[1104px]:h-56 max-[720px]:aspect-3/1 max-[720px]:h-auto max-[720px]:min-h-28" href={getTypefacePath(typeface.slug)}>
-        <FittedSpecimenText typeface={{ slug: typeface.slug, name: typeface.name, creator: { name: typeface.creator.name } }} />
+        <FittedSpecimenText typeface={{ slug: typeface.slug, name: typeface.name, creator: { name: typeface.creator.name } }} fontFamily={`"BWT Preview ${typeface.slug}"`} />
       </Link>
     </div>
   );

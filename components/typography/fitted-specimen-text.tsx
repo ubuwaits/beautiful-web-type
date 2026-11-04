@@ -8,9 +8,10 @@ import type { Typeface } from "@/lib/content";
 type FittedSpecimenTextProps = {
   typeface: Pick<Typeface, "slug" | "name"> & { creator: Pick<Typeface["creator"], "name"> };
   showCreator?: boolean;
+  fontFamily?: string;
 };
 
-export function FittedSpecimenText({ typeface, showCreator = true }: FittedSpecimenTextProps) {
+export function FittedSpecimenText({ typeface, showCreator = true, fontFamily }: FittedSpecimenTextProps) {
   const stageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const fit = useCallback((stage: HTMLDivElement) => {
@@ -23,15 +24,15 @@ export function FittedSpecimenText({ typeface, showCreator = true }: FittedSpeci
       stage.clientWidth * widthRatio / text.offsetWidth,
       stage.clientHeight * heightRatio / text.offsetHeight
     ));
-  }, [typeface.name, typeface.creator.name, typeface.slug, showCreator]);
+  }, [typeface.name, typeface.creator.name, typeface.slug, showCreator, fontFamily]);
   useTextFit(stageRef, fit);
 
   return (
     <div className="m-0 flex h-full w-full min-w-0 max-w-none items-center justify-center overflow-hidden text-center" ref={stageRef}>
       <div
-        className={`${typeface.slug} flex w-max shrink-0 flex-col items-center gap-[0.12em] text-center text-[10rem] font-normal not-italic leading-none`}
+        className={`${fontFamily ? "" : typeface.slug} flex w-max shrink-0 flex-col items-center gap-[0.12em] text-center text-[10rem] font-normal not-italic leading-none`}
         ref={textRef}
-        style={{ transform: "scale(var(--specimen-scale, 1))" }}
+        style={{ fontFamily, transform: "scale(var(--specimen-scale, 1))" }}
       >
         <h1 className="m-0 whitespace-nowrap text-[1em] font-normal not-italic leading-[1.1]">
           {typeface.name}

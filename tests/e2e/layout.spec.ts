@@ -130,3 +130,20 @@ test("loads the complete inline glyph grid for every typeface", async ({ page })
     });
   }
 });
+
+test("uses preview subsets on indexes and full fonts for specimens", async ({ page }) => {
+  const uiFamilies = new Set(["Alegreya Sans", "Source Sans Variable"]);
+  for (const route of ["/", "/sans-serif/", "/serif/", "/display/", "/monospaced/"]) {
+    await page.goto(route);
+    await expectWithinViewport(page);
+    const loadedFamilies = await page.evaluate(() => Array.from(document.fonts)
+      .filter((face) => face.status === "loaded").map((face) => face.family.replace(/["']/g, "")));
+    expect(loadedFamilies.some((family) => family.startsWith("BWT Preview "))).toBe(true);
+    expect(loadedFamilies.filter((family) => !family.startsWith("BWT Preview ") && !uiFamilies.has(family))).toEqual([]);
+  }
+  await page.goto("/inter/");
+  await expectWithinViewport(page);
+  await expect(page.locator("#overview h1")).toHaveCSS("font-family", /Inter/);
+  expect(await page.evaluate(() => Array.from(document.fonts)
+    .some((face) => face.status === "loaded" && face.family.includes("Inter")))).toBe(true);
+});

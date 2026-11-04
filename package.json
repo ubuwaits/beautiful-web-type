@@ -9,6 +9,7 @@
   "scripts": {
     "audit:security": "osv-scanner scan source --lockfile=pnpm-lock.yaml --verbosity=error",
     "audit:typefaces": "tsx scripts/audit-typefaces.ts",
+    "prepare:font-previews": "python3 scripts/prepare-font-previews.py",
     "dev": "next dev",
     "build": "next build",
     "deploy": "pnpm build && wrangler deploy --profile personal",
