@@ -48,7 +48,7 @@ test("handles empty results, Escape, shortcuts, pointer navigation, and resettin
   await expect(dialog).not.toBeVisible();
 });
 
-test("keeps the search accessible and contained on a narrow screen", async ({ page }) => {
+test("provides search and footer navigation on a narrow screen", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 568 });
   await page.goto("/");
   const trigger = page.getByRole("button", { name: "Search fonts", exact: true });
@@ -65,4 +65,6 @@ test("keeps the search accessible and contained on a narrow screen", async ({ pa
   await dialog.getByRole("button", { name: "Close search" }).click();
   await expect(dialog).not.toBeVisible();
   await expect(trigger).toBeFocused();
+  await page.locator("footer").getByRole("link", { name: "Serif Typefaces", exact: true }).click();
+  await expect(page).toHaveURL(/\/serif\/$/);
 });

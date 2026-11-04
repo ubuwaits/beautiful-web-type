@@ -1,36 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-test("uses inline category lists in the mobile navigation sheet", async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
-  const trigger = page.getByRole("button", { name: "Toggle navigation menu" });
-  await trigger.click();
-  const sheet = page.getByRole("dialog", { name: "Navigation", exact: true });
-  const nav = sheet.getByRole("navigation", { name: "Mobile navigation" });
-  await expect(sheet).toBeVisible();
-  await expect(sheet).toHaveCSS("background-color", "rgb(255, 255, 255)");
-  await expect(nav).toHaveCSS("overflow-y", "auto");
-  const expand = nav.getByRole("button", { name: "Sans-Serif", exact: true });
-  await expand.click();
-  await expect(expand).toHaveAttribute("aria-expanded", "true");
-  await expect(page).toHaveURL("/");
-  await expect(nav.getByRole("link", { name: "All Sans-Serif fonts" })).toBeVisible();
-  await expect(page.locator('[data-slot="navigation-menu-content"]')).toHaveCount(0);
-  await nav.getByRole("link", { name: "Work Sans", exact: false }).click();
-  await expect(page).toHaveURL(/\/work-sans\/$/);
-  await expect(sheet).not.toBeVisible();
-
-  await trigger.click();
-  await page.getByRole("navigation", { name: "Mobile navigation" }).getByRole("button", { name: "Serif", exact: true }).click();
-  await page.getByRole("navigation", { name: "Mobile navigation" }).getByRole("link", { name: "All Serif fonts", exact: true }).click();
-  await expect(page).toHaveURL(/\/serif\/$/);
-  await expect(sheet).not.toBeVisible();
-  await trigger.click();
-  await page.keyboard.press("Escape");
-  await expect(sheet).not.toBeVisible();
-  await expect(trigger).toBeFocused();
-});
-
 test("loads every glyph inline and preserves the selected glyph in the URL", async ({ page }) => {
   await page.goto("/inter/?i=10#glyphs");
   const grid = page.locator("#glyph-grid");
