@@ -58,7 +58,7 @@ function MainNavigation({ typefaces }: {
                 event.preventBaseUIHandler();
                 navigate();
               }}
-              className={clsx(activeSection === category.slug && "text-red-500")}
+              className={clsx(activeSection === category.slug && "text-neutral-800 dark:text-neutral-300")}
             >
               {category.name}
             </NavigationMenuTrigger>
@@ -94,7 +94,7 @@ function MobileNavigation({ typefaces, onNavigate }: {
       <Accordion defaultValue={categories.some(({ slug }) => slug === activeSection) ? [activeSection] : []}>
         {categories.map((category) => (
           <AccordionItem key={category.slug} value={category.slug}>
-            <AccordionTrigger className={clsx(activeSection === category.slug && "text-red-500")}>
+            <AccordionTrigger className={clsx(activeSection === category.slug && "text-neutral-800 dark:text-neutral-300")}>
               {category.name}
             </AccordionTrigger>
             <AccordionContent>
@@ -144,7 +144,7 @@ export function SiteHeader({ typefaces }: { typefaces: NavigationTypeface[] }) {
 
   return (
     <header className="site-header fixed inset-x-0 top-0 z-40 flex h-16 items-center bg-white/95 px-4 backdrop-blur-[2px] dark:bg-neutral-950/95 min-[1105px]:px-6">
-      <Link href="/" className="mr-auto shrink-0 font-(family-name:--alegreya-sans) text-xl leading-none font-black italic uppercase hover:text-red-500 focus-visible:outline-2 focus-visible:outline-offset-4 max-[360px]:text-sm">
+      <Link href="/" className="mr-auto shrink-0 font-(family-name:--alegreya-sans) text-xl leading-none font-black italic uppercase hover:text-neutral-600 dark:hover:text-neutral-400 focus-visible:outline-2 focus-visible:outline-offset-4 max-[360px]:text-sm">
         Beautiful Web Type
       </Link>
       <div className="flex items-center gap-1 min-[1105px]:absolute min-[1105px]:left-1/2 min-[1105px]:-translate-x-1/2">
