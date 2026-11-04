@@ -13,23 +13,8 @@
 :root {
   --ui-face: var(--source-sans-pro);
   --ui-monospaced: var(--ibm-plex-mono);
-  --body-margin: 3em;
-  --wrapper: calc(100vw - (2 * var(--body-margin)));
-  --gutter: 2em;
-  color-scheme: light;
-}
-
-:root.dark {
-  color-scheme: dark;
-}
-
-@media (max-width: 1104px) {
-  :root {
-    --body-margin: 1em;
-    --gutter: 1em;
-  }
 }
 
 @utility layout-grid {
-  @apply grid grid-cols-12 items-start gap-(--gutter) mx-auto mb-(--gutter) max-w-(--wrapper);
+  @apply grid grid-cols-12 items-start gap-(--gutter) mx-auto mb-(--gutter);
 }
