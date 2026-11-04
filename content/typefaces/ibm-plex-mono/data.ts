@@ -59,7 +59,7 @@ The anatomy of the letterform is governed by the unrelenting constraint of the f
 
 A notable feature of the family is its italic. Where many monospaced faces settle for a mechanical slant, Bold Monday drafted a true cursive hand. It leans forward with an authentic calligraphic ductus—visible in the single-storey <em>a</em>, the curved stem of the <em>f</em>, and fluid terminal exits—providing genuine structural contrast against the upright roman while remaining strictly locked to the monospaced pitch. Spanning eight deliberate weights from Thin to Bold, and later adapted into an agile variable format, Plex Mono carries broad linguistic support across extended Latin and Cyrillic, complemented by specialized mathematical and technical symbols.
 
-Plex Mono finds its natural home in environments where spatial predictability and rapid scanning are paramount: software terminals, code editors, financial ledgers, and technical manuals. While its rigid cadence makes it unsuitable for sustained literary prose, it excels in editorial and branding roles as an articulate accent—lending structure to captions, footnotes, and tabular data.`,
+Plex Mono suits environments where spatial predictability and rapid scanning matter: software terminals, code editors, financial ledgers, and technical manuals. Its industrial details and cursive italic also give editorial and branding layouts a recognizable accent, lending structure to captions, footnotes, and tabular data.`,
   familyFaces: [
     "IBM Plex Sans",
     "IBM Plex Sans Condensed",

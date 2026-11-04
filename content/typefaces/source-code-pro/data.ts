@@ -55,7 +55,7 @@ The anatomy of the face is shaped by careful optical concessions made to fit a f
 
 Typographically, Source Code Pro matured well beyond the utilitarian confines of an everyday terminal font. Originally launched in upright styles spanning six weights, the family was subsequently expanded to include true cursive italics—where letters like <em>a</em> transition to a single-storey hand—alongside a continuous variable font axis that runs from ExtraLight to Black. Its linguistic coverage is similarly comprehensive, providing stable support for extended Latin, Cyrillic, and Greek character sets. Along the measure, it sets a steady, open cadence that resists optical crowding even at punishingly small point sizes.
 
-The family’s domain is well-defined. Its fixed spacing and enlarged punctuation give prose a more mechanical rhythm than a proportional text face. Instead, it thrives in code editors, command-line interfaces, data tables, and technical manuals. In contemporary editorial design, it also serves as an articulate accent for captions, indices, and financial sidebars.`,
+Source Code Pro suits code editors, command-line interfaces, data tables, and technical manuals, where its fixed spacing and differentiated punctuation support structured information. In editorial layouts, it also provides a monospaced accent for captions, indices, and financial sidebars. Its range of weights and cursive italics offer ways to distinguish layers of information within the same grid.`,
   familyFaces: [
     "Source Sans Pro",
     "Source Serif Pro"

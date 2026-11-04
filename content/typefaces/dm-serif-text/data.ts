@@ -18,7 +18,7 @@ const typeface: TypefaceData = {
 
 The design reinforces crossbars, bracketed serifs, and fine strokes while retaining the upright structure and rounded terminals of its display sibling. The lowercase combines open counters with teardrop details on letters such as <em>c</em>, <em>f</em>, and <em>r</em>, balancing a firm baseline with calligraphic accents. Its spacing is more relaxed than Display’s, helping separate character forms in continuous lines. The italic changes the rhythm through cursive construction, flowing strokes, and single-storey forms, providing emphasis without adding another weight.
 
-DM Serif Text is available in Regular and Italic, so layouts that require bold references or a more extensive weight hierarchy need a complementary family. Its serif details also call for care in very small labels and densely packed interface elements. It is well suited to article introductions, chapter openers, quotations, shorter essays, and book subheadings. Within the DM suite, it bridges the large-scale titling of <em>DM Serif Display</em> and the supporting information set in <em>DM Sans</em>, offering a consistent serif voice at more moderate sizes.`,
+DM Serif Text is well suited to article introductions, chapter openers, quotations, shorter essays, and book subheadings. Its Regular and Italic styles offer a simple hierarchy through changes in size and posture. Within the DM suite, it bridges the large-scale titling of <em>DM Serif Display</em> and the supporting information set in <em>DM Sans</em>, offering a consistent serif voice at more moderate sizes.`,
   familyFaces: ["DM Sans", "DM Serif Display"],
   fontFile: "/assets/fonts/dm-serif-text/DMSerifText-Regular.woff2",
   features: [

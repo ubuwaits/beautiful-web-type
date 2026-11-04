@@ -63,7 +63,7 @@ The anatomy of the face is grounded in the pure geometric shapes that defined mi
 
 Because of its geometric foundations, Poppins carries a wide horizontal footprint. Characters like <em>m</em>, <em>w</em>, <em>c</em>, and <em>d</em> demand generous lateral breathing room, which establishes an unhurried, rhythmic pace along the line. Spanning nine deliberate weights—from a skeletal Thin to a dense, impactful Black, complete with matching oblique cuts—the family shifts character smoothly across scales. In its lighter iterations, it casts an airy, minimalist tone; in its heavier weights, it adopts the punchy, block-like presence of mid-century advertising display faces.
 
-That same wide stance clearly delineates its functional territory. In long, unbroken columns of narrative prose, Poppins’s strict circular geometry produces a repetitive texture, while its wide proportions can create uneven line endings in narrow measures. It finds its natural domain instead in modern digital interfaces, navigation bars, short editorial headers, wayfinding signage, and bilingual branding, where its balanced geometry and clear letter recognition communicate with immediate clarity.`,
+Poppins suits digital interfaces, navigation, short editorial headings, wayfinding, and bilingual branding. Its circular forms give layouts a consistent geometric character, while the broad weight range supports changes of emphasis from supporting text to prominent titles. The coordinated Latin and Devanagari designs offer a shared visual framework for multilingual compositions.`,
   fontFile: "/assets/fonts/poppins/Poppins-Regular.woff2",
   features: [
     {

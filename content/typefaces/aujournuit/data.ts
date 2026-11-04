@@ -16,7 +16,7 @@ const typeface: TypefaceData = {
 
 Anatomically, the design is defined by acute stroke modulation, elastic contours, and visible calligraphic gestures. Stems alternate between fine hairlines and heavy, swelling strokes that taper into rounded, droplet-like terminals. Rather than expanding across a conventional weight spectrum, the family is engineered entirely around an extreme horizontal Width axis. Distributed as a continuous variable font alongside five static instances—Condensed, Densed, Regular, Wide, and Airy—the glyphs transition from tightly packed vertical silhouettes into broad, low-density horizontal structures. As the measure expands, interior counters open up and the contrast sharpens, establishing an animated, syncopated cadence along the baseline.
 
-Because of this radical modulation and calligraphic structure, Aujournuit is strictly confined to display settings. Deployed in running text, caption sizes, or user interfaces, its hairlines break apart and its heavy terminals quickly clot, rendering passages illegible. Its functional domain is limited to large-scale titling: editorial mastheads, book jackets, poster typography, cultural identity systems, and packaging where typographic silhouette and distinct period resonance lead the layout.`,
+Aujournuit’s calligraphic structure comes into focus in large-scale titling: editorial mastheads, book jackets, posters, cultural identities, and packaging. Its variable width lets a title shift from a compact vertical silhouette to a broad horizontal gesture, making the letterforms an active part of the composition.`,
   fontFile: "/assets/fonts/aujournuit/glyphs-regular.woff2",
   glyphSource: "/assets/fonts/aujournuit/Aujournuit.woff2",
   features: [

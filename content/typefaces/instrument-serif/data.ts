@@ -29,7 +29,7 @@ const typeface: TypefaceData = {
 
 The anatomy of the face is governed by the tension between slender horizontal compression and acute stroke contrast. Rather than subjecting a classical book face to mechanical distortion, Fuenzalida sculpted the forms from the inside out, crafting characters that relish their narrow measure. Stems rise like slender architectural columns, finely bracketed serifs taper into razor-sharp terminations, and drop terminals blossom with sudden, chirographic wit. The counters are tall and vaulted, allowing glyphs to lock together into tightly kerned, musical assemblies where deep downstrokes and delicate hairline incisions balance on a knife's edge. Along the display line, Instrument Serif casts an aristocratic, syncopated rhythm—taut, luminous, and brimming with graphic poise.
 
-In its cursive italic, the design casts off all remaining reserve. Raking forward with a steep, kinetic incline, the italic sings with the rapid, dancing flourish of a pointed pen, providing an exuberant foil to the upright architecture of the roman. Though its gossamer hairlines and compact geometry rightfully recuse it from the quiet marathon of running body text, Instrument Serif is best used for titles, mastheads, and other short display settings.`,
+In its cursive italic, the design casts off all remaining reserve. Raking forward with a steep, kinetic incline, the italic sings with the rapid, dancing flourish of a pointed pen, providing an exuberant foil to the upright architecture of the roman. Titles, mastheads, and short display settings give its fine hairlines and compact geometry a prominent role, with the two styles offering a lively contrast in posture.`,
   familyFaces: [
     "Instrument Sans"
   ],

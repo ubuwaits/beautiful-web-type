@@ -41,7 +41,7 @@ Underneath its programmatic machinery lies the solid, legible architecture of Sp
 
 The technical core of Fira Code is its extensive implementation of contextual alternates (<code>calt</code>). Sequences of two or more characters are visually merged into smooth arrows, aligned equality signs, and clean comparison brackets, transforming awkward ASCII approximations into cohesive, legible glyphs. Crucially, this behavior remains non-destructive: copying or compiling the text preserves the original character sequence intact. Over successive releases, Prokopov and the open-source community expanded the project into a continuous variable weight axis (spanning Light to Bold), accompanied by numerous OpenType stylistic sets that allow developers to tailor specific glyphs—such as alternate zeroes, ampersands, or script forms—to personal taste.
 
-Fira Code’s domain is precise. Its rigid, monospaced pitch and specialized programming ligatures make it unsuitable for continuous literary prose or conventional display headlines. Instead, it thrives in code editors, command-line interfaces, technical documentation, and data tables—environments where strict alignment and unambiguous character recognition are paramount.`,
+Fira Code suits code editors, command-line interfaces, technical documentation, and data tables, where fixed spacing keeps columns aligned and differentiated characters support rapid scanning. Its programming ligatures give operators and arrows a unified shape while preserving the underlying text, making them useful in both working code and published examples.`,
   fontFile: "/assets/fonts/fira-code/glyphs-regular.woff2",
   glyphSource: "/assets/fonts/fira-code/FiraCode-VF.woff2",
   features: [
