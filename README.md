@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 4 Nov 2026
 
+* Removed BioRhyme, BioRhyme Expanded, and Rakkas from the collection.
 * **Improved the feed:** publication timestamps, images before descriptions, and preserved paragraphs.
 * **Added font search** with live filtering and keyboard navigation.
 * **Added [Commit Mono](https://beautifulwebtype.com/commit-mono/)** by Eigil Nikolajsen.
@@ -57,8 +58,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 | --- | --- |
 | [Alegreya](https://beautifulwebtype.com/alegreya/) | [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/) |
 | [Archivo](https://beautifulwebtype.com/archivo/) | [Archivo Black](https://beautifulwebtype.com/archivo-black/) |
-| [Aujournuit](https://beautifulwebtype.com/aujournuit/) | [BioRhyme](https://beautifulwebtype.com/biorhyme/) |
-| [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/) | [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/) |
+| [Aujournuit](https://beautifulwebtype.com/aujournuit/) | [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/) |
 | [Commissioner](https://beautifulwebtype.com/commissioner/) | [Commit Mono](https://beautifulwebtype.com/commit-mono/) |
 | [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) | [Crimson Pro](https://beautifulwebtype.com/crimson-pro/) |
 | [DM Sans](https://beautifulwebtype.com/dm-sans/) | [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/) |
@@ -79,14 +79,14 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 | [Mioya](https://beautifulwebtype.com/mioya/) | [Mona Sans](https://beautifulwebtype.com/mona-sans/) |
 | [Newsreader](https://beautifulwebtype.com/newsreader/) | [Oswald](https://beautifulwebtype.com/oswald/) |
 | [Piazzolla](https://beautifulwebtype.com/piazzolla/) | [Playfair Display](https://beautifulwebtype.com/playfair-display/) |
-| [Poppins](https://beautifulwebtype.com/poppins/) | [Rakkas](https://beautifulwebtype.com/rakkas/) |
-| [Roboto](https://beautifulwebtype.com/roboto/) | [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/) |
-| [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) | [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) |
-| [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) | [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) |
-| [Space Mono](https://beautifulwebtype.com/space-mono/) | [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/) |
-| [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/) | [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/) |
-| [Vollkorn](https://beautifulwebtype.com/vollkorn/) | [Work Sans](https://beautifulwebtype.com/work-sans/) |
-| [Zalando Sans](https://beautifulwebtype.com/zalando-sans/) | [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) |
+| [Poppins](https://beautifulwebtype.com/poppins/) | [Roboto](https://beautifulwebtype.com/roboto/) |
+| [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/) | [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) |
+| [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) | [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) |
+| [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) | [Space Mono](https://beautifulwebtype.com/space-mono/) |
+| [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/) | [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/) |
+| [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/) | [Vollkorn](https://beautifulwebtype.com/vollkorn/) |
+| [Work Sans](https://beautifulwebtype.com/work-sans/) | [Zalando Sans](https://beautifulwebtype.com/zalando-sans/) |
+| [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) |  |
 
 ## Suggesting Typefaces
 

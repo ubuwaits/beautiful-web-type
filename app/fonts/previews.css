@@ -37,20 +37,6 @@
 }
 
 @font-face {
-  font-family: "BWT Preview biorhyme";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/font-previews/biorhyme.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "BWT Preview biorhyme-expanded";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/font-previews/biorhyme-expanded.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "BWT Preview bricolage-grotesque";
   font-style: normal;
   font-weight: 200 800;
@@ -347,13 +333,6 @@
   font-style: normal;
   font-weight: 400;
   src: url("/assets/font-previews/poppins.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "BWT Preview rakkas";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/font-previews/rakkas.woff2") format("woff2");
 }
 
 @font-face {

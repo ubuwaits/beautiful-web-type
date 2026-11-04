@@ -44,24 +44,6 @@
     "toolVersion": "4.60.2",
     "previewHash": "830bff6415e0c310d95650eed236e9d7e4557abf84c39debb40e5325bedf67e0"
   },
-  "biorhyme": {
-    "source": "/assets/fonts/biorhyme/BioRhyme-Regular.woff2",
-    "sourceHash": "adb3813366f09cc028462e2979f1c66350667a6a8e1cce039c81f0697806ea02",
-    "text": "BioRhyme\nAoife Mooney",
-    "cssHash": "e66eebf932d5c50fc7ef7188f9efe45d7fbe842eea64fbdb1f9aea9e7297201c",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
-    "toolVersion": "4.60.2",
-    "previewHash": "dfde8918cb7d9122eb8bbb322ff74dcdccbe115ce555e2062260083b297e3c5b"
-  },
-  "biorhyme-expanded": {
-    "source": "/assets/fonts/biorhyme-expanded/BioRhymeExpanded-Regular.woff2",
-    "sourceHash": "eff64ac11edb136e7915e95e562a64e402162f3a5d669b83c84822466b16b3aa",
-    "text": "BioRhyme Expanded\nAoife Mooney",
-    "cssHash": "1a5f2bde4b6841ea8fa6215c2141aed55a520dbbdce833a972ebedb897386bb5",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
-    "toolVersion": "4.60.2",
-    "previewHash": "d6fb553e0c902b2a8c9f7527eb46b3faf76f7c033394749029a3018216ac21a8"
-  },
   "bricolage-grotesque": {
     "source": "/assets/fonts/bricolage-grotesque/BricolageGrotesque.woff2",
     "sourceHash": "b51a8ebd169637e47cb7db430431ab3e122d2f09b03ee2a03ea06f4cb46f1a8e",
@@ -439,15 +421,6 @@
     "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
     "toolVersion": "4.60.2",
     "previewHash": "16133138c18b6f0c4c99601d4e5c54d37d90fd66ec480efb8bf9fd82f7bdee92"
-  },
-  "rakkas": {
-    "source": "/assets/fonts/rakkas/Rakkas-Regular.woff2",
-    "sourceHash": "767f05b190578fb571fba5e6347f003b92c1de7204e5b849a0a7c908094fa44a",
-    "text": "Rakkas\nZeynep Akay",
-    "cssHash": "1ba7e8ad9c1b930ec5c940c990e84ae9b52fdda0c096dac151061e135882f626",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
-    "toolVersion": "4.60.2",
-    "previewHash": "b4f64e98ae5847cc68adad7897a412d294470b863e02dbaaa8cf3b234d5a61f7"
   },
   "roboto": {
     "source": "/assets/fonts/roboto/Roboto.woff2",

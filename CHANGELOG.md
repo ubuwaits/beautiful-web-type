@@ -2,6 +2,7 @@
 
 ## 4 Nov 2026
 
+* Removed BioRhyme, BioRhyme Expanded, and Rakkas from the collection.
 * **Improved the feed:** publication timestamps, images before descriptions, and preserved paragraphs.
 * **Added font search** with live filtering and keyboard navigation.
 * **Added [Commit Mono](https://beautifulwebtype.com/commit-mono/)** by Eigil Nikolajsen.

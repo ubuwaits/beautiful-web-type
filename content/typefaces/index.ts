@@ -5,8 +5,6 @@ import alegreyaSans from "./alegreya-sans/data";
 import archivo from "./archivo/data";
 import archivoBlack from "./archivo-black/data";
 import aujournuit from "./aujournuit/data";
-import biorhyme from "./biorhyme/data";
-import biorhymeExpanded from "./biorhyme-expanded/data";
 import bricolageGrotesque from "./bricolage-grotesque/data";
 import commitMono from "./commit-mono/data";
 import commissioner from "./commissioner/data";
@@ -49,7 +47,6 @@ import oswald from "./oswald/data";
 import piazzolla from "./piazzolla/data";
 import playfairDisplay from "./playfair-display/data";
 import poppins from "./poppins/data";
-import rakkas from "./rakkas/data";
 import roboto from "./roboto/data";
 import schibstedGrotesk from "./schibsted-grotesk/data";
 import sourceCodePro from "./source-code-pro/data";
@@ -71,8 +68,6 @@ export const typefaceData: TypefaceData[] = [
   archivo,
   archivoBlack,
   aujournuit,
-  biorhyme,
-  biorhymeExpanded,
   bricolageGrotesque,
   commitMono,
   commissioner,
@@ -115,7 +110,6 @@ export const typefaceData: TypefaceData[] = [
   piazzolla,
   playfairDisplay,
   poppins,
-  rakkas,
   roboto,
   schibstedGrotesk,
   sourceCodePro,
