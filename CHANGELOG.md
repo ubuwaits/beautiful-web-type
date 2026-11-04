@@ -2,6 +2,7 @@
 
 ## 4 Nov 2026
 
+* **Added font search** with live filtering and keyboard navigation.
 * **Added [Commit Mono](https://beautifulwebtype.com/commit-mono/)** by Eigil Nikolajsen.
 
 ## 3 Nov 2026

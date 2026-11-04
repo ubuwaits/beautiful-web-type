@@ -41,14 +41,14 @@ export function ThemeSwitcher() {
     }}>
       <TabsList aria-label="Color theme" activateOnFocus>
         <TabsTrigger value="light" aria-label="Light theme" title="Light theme">
-          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-            <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" />
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+            <circle cx="12" cy="12" r="3.5" />
+            <path d="M12 4v2m0 12v2M4 12h2m12 0h2M6.5 6.5 8 8m8 8 1.5 1.5m-11 0L8 16m8-8 1.5-1.5" />
           </svg>
         </TabsTrigger>
         <TabsTrigger value="dark" aria-label="Dark theme" title="Dark theme">
-          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z" />
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19 13A7 7 0 0 1 11 5a7 7 0 1 0 8 8Z" />
           </svg>
         </TabsTrigger>
       </TabsList>

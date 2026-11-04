@@ -13,7 +13,7 @@ export function TabsList({ className, ...props }: Primitive.List.Props) {
 }
 
 export function TabsTrigger({ className, ...props }: Primitive.Tab.Props) {
-  return <Primitive.Tab data-slot="tabs-trigger" className={clsx("inline-flex h-7 cursor-pointer items-center justify-center gap-1.5 rounded-full border-0 bg-transparent px-2 text-sm leading-5 font-semibold text-neutral-500 hover:text-neutral-950 data-active:bg-neutral-900 data-active:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-500 dark:text-neutral-400 dark:hover:text-white dark:data-active:bg-neutral-100 dark:data-active:text-neutral-950 min-[1280px]:px-3", className)} {...props} />;
+  return <Primitive.Tab data-slot="tabs-trigger" className={clsx("inline-flex h-7 cursor-pointer items-center justify-center gap-1.5 rounded-full border-0 bg-transparent px-1.5 text-sm leading-5 font-semibold text-neutral-500 hover:text-neutral-950 data-active:bg-neutral-900 data-active:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-500 dark:text-neutral-400 dark:hover:text-white dark:data-active:bg-neutral-100 dark:data-active:text-neutral-950 min-[1280px]:px-2.5", className)} {...props} />;
 }
 
 export function TabsContent({ className, ...props }: Primitive.Panel.Props) {

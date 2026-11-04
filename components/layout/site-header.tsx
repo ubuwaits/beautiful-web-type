@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FontSearch } from "@/components/layout/font-search";
 import { ThemeSwitcher } from "@/components/layout/theme-switcher";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -143,11 +144,14 @@ export function SiteHeader({ typefaces }: { typefaces: NavigationTypeface[] }) {
 
   return (
     <header className="site-header fixed inset-x-0 top-0 z-40 flex h-16 items-center bg-white/95 px-4 backdrop-blur-[2px] dark:bg-neutral-950/95 min-[1105px]:px-6">
-      <Link href="/" className="mr-auto shrink-0 font-(family-name:--alegreya-sans) text-xl leading-none font-black italic uppercase hover:text-red-500 focus-visible:outline-2 focus-visible:outline-offset-4 max-[360px]:text-base">
+      <Link href="/" className="mr-auto shrink-0 font-(family-name:--alegreya-sans) text-xl leading-none font-black italic uppercase hover:text-red-500 focus-visible:outline-2 focus-visible:outline-offset-4 max-[360px]:text-sm">
         Beautiful Web Type
       </Link>
-      <div className="hidden min-[1105px]:absolute min-[1105px]:left-1/2 min-[1105px]:block min-[1105px]:-translate-x-1/2">
-        <MainNavigation typefaces={typefaces} />
+      <div className="flex items-center gap-1 min-[1105px]:absolute min-[1105px]:left-1/2 min-[1105px]:-translate-x-1/2">
+        <div className="hidden min-[1105px]:block">
+          <MainNavigation typefaces={typefaces} />
+        </div>
+        <FontSearch typefaces={typefaces} categories={categories} />
       </div>
       <ThemeSwitcher />
       <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
