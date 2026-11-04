@@ -3,10 +3,10 @@
 import { useLayoutEffect, type RefObject } from "react";
 
 /** Recalibrate fitted text after layout, font loading, or text edits. */
-export function useTextFit(ref: RefObject<HTMLDivElement | null>, measure: (root: HTMLDivElement) => void) {
+export function useTextFit(ref: RefObject<HTMLDivElement | null>, measure: (root: HTMLDivElement) => void, enabled = true) {
   useLayoutEffect(() => {
     const root = ref.current;
-    if (!root) return;
+    if (!root || !enabled) return;
 
     let frame = 0;
     let disposed = false;
@@ -32,7 +32,7 @@ export function useTextFit(ref: RefObject<HTMLDivElement | null>, measure: (root
       root.removeEventListener("input", schedule);
       document.fonts.removeEventListener("loadingdone", schedule);
     };
-  }, [ref, measure]);
+  }, [ref, measure, enabled]);
 }
 
 export function setFitScale(element: HTMLElement, property: string, scale: number) {

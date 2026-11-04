@@ -147,3 +147,42 @@ test("uses preview subsets on indexes and full fonts for specimens", async ({ pa
   expect(await page.evaluate(() => Array.from(document.fonts)
     .some((face) => face.status === "loaded" && face.family.includes("Inter")))).toBe(true);
 });
+
+test("activates a distant card's preview font when it receives keyboard focus", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  await expectWithinViewport(page);
+  const card = page.getByTestId("typeface-card").last();
+  const link = card.getByRole("link");
+  const slug = (await link.getAttribute("href"))!.split("/").filter(Boolean)[0];
+  const family = `BWT Preview ${slug}`;
+  const fontLoaded = () => page.evaluate((family) => Array.from(document.fonts)
+    .some((face) => face.family.replace(/["']/g, "") === family && face.status === "loaded"), family);
+  expect(await fontLoaded()).toBe(false);
+  const height = await page.evaluate(() => document.documentElement.scrollHeight);
+  await expect(link).toHaveAccessibleName(/\S/);
+
+  let releaseFont!: () => void;
+  let fontRequested!: () => void;
+  const blocked = new Promise<void>((resolve) => { releaseFont = resolve; });
+  const requested = new Promise<void>((resolve) => { fontRequested = resolve; });
+  await page.route(`**/assets/font-previews/${slug}.woff2`, async (route) => {
+    fontRequested();
+    await blocked;
+    await route.continue();
+  });
+  await link.focus();
+  await requested;
+  try {
+    await expect(card.locator("[data-font-preview]")).toHaveCSS("opacity", "0");
+  } finally {
+    releaseFont();
+  }
+  await expect.poll(fontLoaded).toBe(true);
+  await expect(card.locator("[data-font-preview]")).toHaveCSS("opacity", "1");
+  await expect.poll(() => card.locator("h1").evaluate((heading) =>
+    heading.parentElement!.getBoundingClientRect().width / heading.closest("a")!.getBoundingClientRect().width
+  )).toBeLessThanOrEqual(0.86);
+  expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBe(height);
+  await expect(link).toBeFocused();
+});

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
 
 import { setFitScale, useTextFit } from "./use-text-fit";
 import type { Typeface } from "@/lib/content";
@@ -9,11 +9,36 @@ type FittedSpecimenTextProps = {
   typeface: Pick<Typeface, "slug" | "name"> & { creator: Pick<Typeface["creator"], "name"> };
   showCreator?: boolean;
   fontFamily?: string;
+  defer?: boolean;
 };
 
-export function FittedSpecimenText({ typeface, showCreator = true, fontFamily }: FittedSpecimenTextProps) {
+export function FittedSpecimenText({ typeface, showCreator = true, fontFamily, defer = false }: FittedSpecimenTextProps) {
   const stageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
+  const [activated, setActivated] = useState(false);
+  const ready = !defer || activated;
+  useEffect(() => {
+    const stage = stageRef.current;
+    if (ready || !stage) return;
+    let cancelled = false;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        observer.disconnect();
+        const loaded = fontFamily
+          ? document.fonts.load(`400 160px ${fontFamily}`, `${typeface.name} ${typeface.creator.name}`)
+          : Promise.resolve([]);
+        void loaded.catch(() => []).then(() => {
+          if (!cancelled) setActivated(true);
+        });
+      }
+    }, { rootMargin: "1200px" });
+    // The card's box stays measurable when content-visibility skips its contents.
+    observer.observe(stage.parentElement ?? stage);
+    return () => {
+      cancelled = true;
+      observer.disconnect();
+    };
+  }, [ready, fontFamily, typeface.name, typeface.creator.name]);
   const fit = useCallback((stage: HTMLDivElement) => {
     const text = textRef.current;
     if (!text || !text.offsetWidth || !text.offsetHeight) return;
@@ -25,14 +50,15 @@ export function FittedSpecimenText({ typeface, showCreator = true, fontFamily }:
       stage.clientHeight * heightRatio / text.offsetHeight
     ));
   }, [typeface.name, typeface.creator.name, typeface.slug, showCreator, fontFamily]);
-  useTextFit(stageRef, fit);
+  useTextFit(stageRef, fit, ready);
 
   return (
     <div className="m-0 flex h-full w-full min-w-0 max-w-none items-center justify-center overflow-hidden text-center" ref={stageRef}>
       <div
         className={`${fontFamily ? "" : typeface.slug} flex w-max shrink-0 flex-col items-center gap-[0.12em] text-center text-[10rem] font-normal not-italic leading-none`}
+        data-font-preview={fontFamily ? "" : undefined}
         ref={textRef}
-        style={{ fontFamily, transform: "scale(var(--specimen-scale, 1))" }}
+        style={{ "--preview-family": fontFamily, fontFamily: ready ? fontFamily : undefined, opacity: ready ? undefined : 0, transform: "scale(var(--specimen-scale, 1))" } as CSSProperties}
       >
         <h1 className="m-0 whitespace-nowrap text-[1em] font-normal not-italic leading-[1.1]">
           {typeface.name}

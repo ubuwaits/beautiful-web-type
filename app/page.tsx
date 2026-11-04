@@ -7,7 +7,7 @@ import { FontGrid } from "@/components/font-listing/font-grid";
 import { getLatestTypefaces } from "@/lib/content";
 import { DEFAULT_SITE_DESCRIPTION, createPageMetadata } from "@/lib/metadata";
 
-const latestTypefaces = getLatestTypefaces().slice(0, 20);
+const latestTypefaces = getLatestTypefaces();
 const title = "In-Depth Guide to the Best Free Fonts";
 const description = DEFAULT_SITE_DESCRIPTION;
 
@@ -25,8 +25,8 @@ export default function HomePage() {
           </h1>
         </div>
 
-        {latestTypefaces.map((typeface) => {
-          return <FontCard key={typeface.slug} typeface={typeface} />;
+        {latestTypefaces.map((typeface, index) => {
+          return <FontCard key={typeface.slug} typeface={typeface} eager={index < 8} />;
         })}
       </FontGrid>
     </PageShell>
