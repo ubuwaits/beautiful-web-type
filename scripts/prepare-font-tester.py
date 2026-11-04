@@ -11,7 +11,7 @@ from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parent.parent
 AXIS_NAMES = {
-    "wght": "Weight", "wdth": "Width", "opsz": "Optical size",
+    "wght": "Weight", "wdth": "Width", "opsz": "Optical size", "WONK": "Wonk",
     "slnt": "Slant", "ital": "Italic",
 }
 

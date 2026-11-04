@@ -140,7 +140,7 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
           </div>
           <p className={`${muted} mb-5 text-base leading-6`}>Walk through the first website concepts with the team.</p>
           <div className="mt-auto flex items-center gap-3"><span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-neutral-200 text-xs dark:bg-neutral-800">MK</span><div className="text-sm leading-5"><p>Morgan Kim</p><p className={muted}>Meeting organizer</p></div></div>
-          <button type="button" aria-pressed={attending} onClick={() => setAttending(!attending)} className="mt-4 w-full rounded-lg bg-neutral-900 px-3 py-2 text-sm text-neutral-100 hover:bg-neutral-700 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-300">{attending ? "Attending · Undo" : "Accept invitation"}</button>
+          <button type="button" aria-pressed={attending} onClick={() => setAttending(!attending)} className="mt-4 w-full rounded-lg bg-neutral-900 px-3 py-2 text-sm text-neutral-100 hover:bg-neutral-700 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-300">{attending ? "Attending" : "Accept invitation"}</button>
         </article>
       </div>
     </section>

@@ -2197,7 +2197,7 @@
           },
           {
             "tag": "WONK",
-            "name": "Wonky",
+            "name": "Wonk",
             "min": 0,
             "max": 1,
             "default": 1
@@ -2237,7 +2237,7 @@
           },
           {
             "tag": "WONK",
-            "name": "Wonky",
+            "name": "Wonk",
             "min": 0,
             "max": 1,
             "default": 1
