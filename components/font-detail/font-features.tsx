@@ -89,7 +89,7 @@ export function FontFeatures({ features }: { features: FontFeature[] }) {
             data-font-feature={feature.type} key={index}
             className="grid grid-cols-1 items-start gap-(--gutter) border-t border-neutral-200/60 pt-6 first:border-t-2 last:border-b-2 last:pb-6 dark:border-neutral-800/80 max-[720px]:gap-y-8 min-[721px]:grid-cols-12 min-[721px]:pt-8 min-[721px]:last:pb-8"
           >
-            <div className="flex min-w-0 flex-col items-start justify-start gap-1 self-start text-left font-(family-name:--ui-face) text-base leading-4 font-bold text-neutral-700 wrap-anywhere dark:text-neutral-100 max-[720px]:items-center max-[720px]:text-center min-[721px]:col-span-3">
+            <div className="flex min-w-0 flex-col items-start justify-start gap-1 self-start text-left font-(family-name:--ui-face) text-base leading-4 font-bold wrap-anywhere max-[720px]:items-center max-[720px]:text-center min-[721px]:col-span-3">
               <p className={TRIM}>{feature.title}</p>
               {code ? <FeatureLabel text={code} heading /> : null}
             </div>

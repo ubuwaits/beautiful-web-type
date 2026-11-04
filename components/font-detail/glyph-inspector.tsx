@@ -81,7 +81,7 @@ function CopyValue({ label, value }: { label: string; value: string }) {
   return (
     <>
       <Button
-        className="size-7 min-h-0! shrink-0 rounded-sm bg-transparent! p-0! text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100"
+        className="size-7 min-h-0! shrink-0 rounded-sm bg-transparent! p-0!"
         onClick={copy} aria-label={`Copy ${label.toLowerCase()}`} title={status === "copied" ? "Copied" : `Copy ${label.toLowerCase()}`}
       >
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.25" aria-hidden="true">

@@ -10,5 +10,5 @@ export function ToggleGroup({ className, ...props }: Primitive.Props) {
 }
 
 export function ToggleGroupItem({ className, ...props }: Toggle.Props) {
-  return <Toggle data-slot="toggle-group-item" className={clsx("inline-flex h-8 w-10 shrink-0 cursor-pointer items-center justify-center rounded-sm border-0 bg-transparent px-0 py-0 font-(family-name:--ui-face) text-xs font-normal text-neutral-600 uppercase hover:text-neutral-950 data-pressed:bg-neutral-900 data-pressed:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-500 dark:text-neutral-400 dark:hover:text-neutral-100 dark:data-pressed:bg-neutral-100 dark:data-pressed:text-neutral-950", className)} {...props} />;
+  return <Toggle data-slot="toggle-group-item" className={clsx("inline-flex h-8 w-10 shrink-0 cursor-pointer items-center justify-center rounded-sm border-0 bg-transparent px-0 py-0 font-(family-name:--ui-face) text-xs font-normal text-neutral-500 uppercase hover:text-neutral-950 data-pressed:bg-neutral-900 data-pressed:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-500 dark:text-neutral-400 dark:hover:text-neutral-100 dark:data-pressed:bg-neutral-100 dark:data-pressed:text-neutral-950", className)} {...props} />;
 }

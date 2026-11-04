@@ -14,7 +14,7 @@ export function FontCard({ typeface }: FontCardProps) {
       className="flex flex-col justify-center bg-white dark:bg-neutral-950 min-w-0 col-span-12 [--sample-fit-width:0.8] min-[721px]:col-span-6 max-[720px]:[--sample-fit-width:0.85]"
       data-testid="typeface-card"
     >
-      <Link className="flex min-w-0 w-full grow flex-col content-center justify-center p-0 text-inherit h-64 rounded-xl border-2 border-transparent transition-colors hover:border-neutral-100 focus-visible:border-neutral-100 dark:hover:border-neutral-900 dark:focus-visible:border-neutral-900 max-[1104px]:h-56 max-[720px]:aspect-3/1 max-[720px]:h-auto max-[720px]:min-h-28 max-[720px]:rounded-md" href={getTypefacePath(typeface.slug)}>
+      <Link className="group/card flex min-w-0 w-full grow flex-col content-center justify-center p-0 text-inherit h-64 outline-none max-[1104px]:h-56 max-[720px]:aspect-3/1 max-[720px]:h-auto max-[720px]:min-h-28" href={getTypefacePath(typeface.slug)}>
         <FittedSpecimenText typeface={{ slug: typeface.slug, name: typeface.name, creator: { name: typeface.creator.name } }} />
       </Link>
     </div>
