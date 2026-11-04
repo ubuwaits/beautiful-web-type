@@ -3,7 +3,7 @@ import { websiteTextStyle } from "@/lib/website-typography";
 
 const TEXT_CLASSES = {
   wordmark: "font-semibold text-[length:var(--website-size,24px)] leading-7 -tracking-[0.025em] min-[1105px]:text-[length:var(--website-desktop-size,var(--website-size,24px))]",
-  headline: "font-medium text-[length:var(--website-size,clamp(2.25rem,6.3cqw,5.875rem))] leading-[1.02] -tracking-[0.045em] min-[1105px]:text-[length:var(--website-desktop-size,var(--website-size,clamp(2.25rem,6.3cqw,5.875rem)))]",
+  headline: "font-medium text-[length:var(--website-size,clamp(2.25rem,6.3cqw,5.875rem))] leading-[1.02] -tracking-[0.025em] min-[1105px]:text-[length:var(--website-desktop-size,var(--website-size,clamp(2.25rem,6.3cqw,5.875rem)))]",
   description: "font-normal text-[length:var(--website-size,16px)] min-[1105px]:text-[length:var(--website-desktop-size,18px)] leading-7",
   action: "font-normal text-[length:var(--website-size,14px)] leading-6 min-[1105px]:text-[length:var(--website-desktop-size,var(--website-size,14px))]",
   caseLocation: "font-normal text-[length:var(--website-size,12px)] leading-5 tracking-[0.025em] uppercase min-[1105px]:text-[length:var(--website-desktop-size,var(--website-size,12px))]",
