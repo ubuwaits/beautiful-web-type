@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { FontFeatures } from "@/components/font-detail/font-features";
+import { InterfaceSpecimens } from "@/components/font-detail/interface-specimens";
 
 import { FittedLine, FittedLines } from "@/components/typography/fitted-lines";
 import { GlyphInspector } from "@/components/font-detail/glyph-inspector";
@@ -186,6 +187,8 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
           </div>
 
         </FittedLines>
+
+        <InterfaceSpecimens weights={typeface.weights} />
 
         <div className="flex flex-col justify-center gap-6 examples-paragraphs mb-(--section-gap) scroll-mt-20" id="paragraphs">
           <h2 className="sr-only">Paragraphs</h2>

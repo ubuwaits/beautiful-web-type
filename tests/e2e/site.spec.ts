@@ -1,5 +1,28 @@
 import { expect, test } from "@playwright/test";
 
+for (const width of [1440, 390]) {
+  test(`keeps font pages at the top until the inline command is used at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    const expectTopAfterHydration = async () => {
+      await page.waitForLoadState("networkidle");
+      await expect(page.locator("#interfaces [cmdk-item][aria-selected=true]")).toHaveCount(0);
+      expect(await page.evaluate(() => window.scrollY)).toBe(0);
+    };
+
+    await page.goto("/dm-sans/");
+    await expectTopAfterHydration();
+    await page.goto("/");
+    await page.locator('[data-testid="font-grid"] a[href="/dm-sans/"]').click();
+    await expect(page).toHaveURL(/\/dm-sans\/$/);
+    await expectTopAfterHydration();
+
+    const input = page.getByRole("combobox", { name: "Search example workspace" });
+    await input.fill("Shared files");
+    await input.press("Enter");
+    await expect(page.locator("#interface-files h3")).toBeFocused();
+  });
+}
+
 test("loads every glyph inline and preserves the selected glyph in the URL", async ({ page }) => {
   await page.goto("/inter/?i=10#glyphs");
   const grid = page.locator("#glyph-grid");
