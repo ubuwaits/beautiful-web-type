@@ -55,7 +55,26 @@ test("provides search and footer navigation on a narrow screen", async ({ page }
   await expect(trigger).toBeInViewport();
   await trigger.tap();
   const dialog = page.getByRole("dialog", { name: "Search fonts", exact: true });
-  await expect(dialog.getByRole("combobox")).toBeFocused();
+  const input = dialog.getByRole("combobox");
+  const list = dialog.getByRole("listbox");
+  await expect(dialog).toBeFocused();
+  await expect(input).not.toBeFocused();
+  await input.tap();
+  await expect(input).toBeFocused();
+  // A touch gesture in the results dismisses the keyboard without cancelling scrolling.
+  const scrollAllowed = await list.evaluate((element) => element.dispatchEvent(new PointerEvent("pointerdown", {
+    pointerType: "touch", bubbles: true, cancelable: true,
+  })));
+  expect(scrollAllowed).toBe(true);
+  await expect(list).toBeFocused();
+  await expect(input).not.toBeFocused();
+  await input.tap();
+  await input.fill("libre caslon");
+  await expect(dialog.getByRole("option")).toHaveCount(3);
+  await dialog.getByRole("option", { name: /Libre Caslon Display/ }).tap();
+  await expect(page).toHaveURL(/\/libre-caslon-display\/$/);
+  await trigger.tap();
+  await expect(dialog).toBeFocused();
   const bounds = await dialog.boundingBox();
   expect(bounds!.x).toBeGreaterThanOrEqual(8);
   expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(312);

@@ -33,7 +33,6 @@ export function FontSearch({ typefaces, categories }: {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const inputRef = useRef<HTMLInputElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   function changeOpen(next: boolean) {
@@ -60,18 +59,22 @@ export function FontSearch({ typefaces, categories }: {
       <DialogTrigger ref={triggerRef} aria-label="Search fonts" title="Search fonts (⌘K / Ctrl+K)" className="flex size-9 shrink-0 cursor-pointer items-center justify-center rounded-full border-0 bg-transparent p-0 text-inherit outline-none hover:bg-neutral-100 focus-visible:bg-neutral-100 dark:hover:bg-neutral-800 dark:focus-visible:bg-neutral-800">
         <SearchIcon />
       </DialogTrigger>
-      <DialogContent initialFocus={inputRef} finalFocus={triggerRef}>
+      <DialogContent finalFocus={triggerRef}>
         <DialogTitle className="sr-only">Search fonts</DialogTitle>
         <DialogDescription className="sr-only">Search by font name, designer, or category. Use the arrow keys to choose a result and Enter to open it.</DialogDescription>
-        <Command label="Fonts" filter={filterFont} loop className="max-h-[calc(100dvh-2rem)]">
+        <Command tabIndex={undefined} label="Fonts" filter={filterFont} loop className="max-h-[calc(100dvh-2rem)]">
           <div className="flex shrink-0 items-center gap-3 border-b border-neutral-200/60 px-4 dark:border-neutral-800/80">
             <SearchIcon className="shrink-0 text-neutral-500 dark:text-neutral-400" />
-            <CommandInput ref={inputRef} value={query} onValueChange={setQuery} placeholder="Search fonts…" aria-label="Search fonts" autoComplete="off" autoCorrect="off" spellCheck={false} />
+            <CommandInput value={query} onValueChange={setQuery} placeholder="Search fonts…" aria-label="Search fonts" autoComplete="off" autoCorrect="off" spellCheck={false} />
             <DialogClose aria-label="Close search" className="-mr-1 flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-md border-0 bg-transparent p-0 text-neutral-500 hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:text-neutral-400 dark:hover:bg-neutral-800">
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="m5 5 10 10M15 5 5 15" /></svg>
             </DialogClose>
           </div>
-          <CommandList aria-label="Font results">
+          <CommandList aria-label="Font results" onPointerDown={(event) => {
+            if (event.pointerType === "touch") {
+              event.currentTarget.focus({ preventScroll: true });
+            }
+          }}>
             <CommandEmpty>No fonts found.</CommandEmpty>
             {typefaces.map((font) => (
               <CommandItem key={font.slug} value={font.name} keywords={[font.creator, font.slug, font.categorySlug]} onSelect={() => {
