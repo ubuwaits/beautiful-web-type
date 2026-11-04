@@ -220,6 +220,14 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
           drawCell(button);
         } else {
           nearby.delete(button);
+          const canvas = button.querySelector("canvas");
+          if (canvas) {
+            // Release the pixel buffer immediately, including in Safari.
+            canvas.width = 0;
+            canvas.height = 0;
+            canvas.remove();
+            delete button.dataset.drawnAt;
+          }
         }
       }
     }, { rootMargin: `${Math.max(1200, window.innerHeight * 2)}px` });

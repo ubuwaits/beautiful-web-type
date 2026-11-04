@@ -62,9 +62,45 @@ test("initializes the explorer after client navigation with its script already l
   await expect(page.locator("#glyph-grid button").first()).toBeAttached();
   await page.getByRole("navigation", { name: "Main navigation", exact: true }).getByRole("link", { name: "Serif", exact: true }).press("ArrowDown");
   await page.locator('[data-slot="navigation-menu-content"] a[href="/alegreya/"]').click();
+  await expect(page).toHaveURL(/\/alegreya\/$/);
   await page.evaluate(() => document.fonts.ready);
   await page.locator("#glyphs").scrollIntoViewIfNeeded();
   await expect(page.locator("#glyph-grid button").first()).toBeAttached();
   await page.locator('#glyph-grid button[data-glyph-index="8"]').focus();
   await expect(page.locator('#glyph-grid button[data-glyph-index="8"]')).toHaveAttribute("aria-pressed", "true");
+});
+
+test("releases off-screen glyph canvases and redraws them on return", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/eb-garamond/#glyphs");
+  const grid = page.locator("#glyph-grid");
+  const first = grid.locator("button").first();
+  const last = grid.locator("button").last();
+  await expect(first.locator("canvas")).toBeAttached();
+  const count = await grid.locator("button").count();
+  const sample = grid.locator('[data-glyph-index="5"]');
+  await sample.click();
+  const label = await sample.getAttribute("aria-label");
+  const originalCanvas = await sample.locator("canvas").elementHandle();
+  const originalImage = await originalCanvas!.evaluate((canvas) => (canvas as HTMLCanvasElement).toDataURL());
+  const bounds = await grid.evaluate((element) => ({ top: element.getBoundingClientRect().top + scrollY, height: element.scrollHeight }));
+
+  // Traverse the grid so every region is drawn, rather than jumping past cells.
+  for (let y = bounds.top; y < bounds.top + bounds.height; y += 1600) {
+    await page.evaluate((top) => window.scrollTo(0, top), y);
+    await page.evaluate(() => new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
+  }
+  await last.scrollIntoViewIfNeeded();
+  await expect(last.locator("canvas")).toBeAttached();
+  await expect(sample.locator("canvas")).toHaveCount(0);
+  expect(await originalCanvas!.evaluate((canvas) => [(canvas as HTMLCanvasElement).width, (canvas as HTMLCanvasElement).height])).toEqual([0, 0]);
+  await expect(sample).toHaveAttribute("aria-pressed", "true");
+  await expect(sample).toHaveAttribute("aria-label", label!);
+  await expect(grid.locator("button")).toHaveCount(count);
+  await expect.poll(() => grid.locator("canvas").count()).toBeLessThan(count / 4);
+
+  await sample.scrollIntoViewIfNeeded();
+  await expect(sample.locator("canvas")).toBeAttached();
+  expect(await sample.locator("canvas").evaluate((canvas) => (canvas as HTMLCanvasElement).toDataURL())).toBe(originalImage);
+  await expect(sample).toHaveAttribute("aria-pressed", "true");
 });
