@@ -6,6 +6,6 @@ import "@/app/fonts/previews.css";
 export function FontGrid({ children }: { children: ReactNode }) {
   return <>
     <noscript><style>{`[data-font-preview] { font-family: var(--preview-family) !important; opacity: 1 !important; }`}</style></noscript>
-    <div className="layout-grid items-center" data-testid="font-grid">{children}</div>
+    <div className="layout-grid items-center pb-12 min-[721px]:pb-20" data-testid="font-grid">{children}</div>
   </>;
 }
