@@ -13,7 +13,7 @@ function ArrowUpRight({ className }: { className?: string }) {
 }
 
 const muted = "text-neutral-500 dark:text-neutral-400";
-const panel = "min-w-0 rounded-2xl border border-neutral-200 bg-neutral-50 p-5 dark:border-neutral-800 dark:bg-neutral-900/50 min-[721px]:p-6";
+const panel = "min-w-0 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800 min-[721px]:p-6";
 
 /** Interface compositions inherit the specimen face, including its actual available weights. */
 export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
@@ -36,7 +36,7 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
         <article id="interface-project" className={`${panel} col-span-12 flex flex-col min-[721px]:col-span-6 min-[721px]:row-span-2 min-[1105px]:col-span-4`}>
           <div className="mb-4 flex items-center justify-between gap-3">
             <div className="flex -space-x-2" aria-label="Project team: Alex Lee, Morgan Kim, and Jamie Smith">
-              {["AL", "MK", "JS"].map((initials, index) => <span key={initials} className={`flex size-9 items-center justify-center rounded-full border-2 border-neutral-50 text-[10px] dark:border-neutral-900 ${index === 1 ? "bg-neutral-800 text-neutral-100 dark:bg-neutral-200 dark:text-neutral-900" : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"}`}>{initials}</span>)}
+              {["AL", "MK", "JS"].map((initials, index) => <span key={initials} className={`flex size-9 items-center justify-center rounded-full border-2 border-white text-[10px] dark:border-neutral-950 ${index === 1 ? "bg-neutral-800 text-neutral-100 dark:bg-neutral-200 dark:text-neutral-900" : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"}`}>{initials}</span>)}
             </div>
             <span className="rounded-full border border-neutral-200 px-2 text-[10px] tracking-wide dark:border-neutral-700">PRJ–024</span>
           </div>
@@ -55,7 +55,7 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
             ))}
           </div>
           <div className="flex flex-1 flex-col justify-center py-5">
-          <div className="rounded-xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900">
+          <div className="rounded-xl border border-neutral-200 p-4 dark:border-neutral-800">
             <div className="mb-2 flex items-center gap-2.5">
               <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-neutral-200 text-[10px] dark:bg-neutral-700">MK</span>
               <span className="text-sm">Morgan Kim</span>
@@ -78,7 +78,7 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
           <div className="mb-4 flex flex-wrap items-center justify-between gap-2"><div><h3 className="text-sm">Website traffic</h3><p className={`${muted} text-xs`}>studio.example</p></div><span className={`${muted} text-xs`}>Last 7 days</span></div>
           <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
             <span className="text-[2.75rem] leading-none tracking-tight tabular-nums">24,608</span>
-            <span className="mb-0.5 inline-flex items-center gap-1 rounded-full bg-neutral-200/70 px-2 py-0.5 text-xs dark:bg-neutral-800"><ArrowUpRight className="size-3" /><span className="sr-only">Increase of </span>12.8%</span>
+            <span className="mb-0.5 inline-flex items-center gap-1 rounded-full bg-neutral-200 px-2 py-0.5 text-xs dark:bg-neutral-800"><ArrowUpRight className="size-3" /><span className="sr-only">Increase of </span>12.8%</span>
           </div>
           <p className={`${muted} mt-2 text-xs`}>Unique visitors · compared with the previous 7 days</p>
           <div className="mt-auto pt-4">

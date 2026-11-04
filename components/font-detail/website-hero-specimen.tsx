@@ -59,7 +59,7 @@ export function WebsiteHeroSpecimen({ typography = {} }: { typography?: WebsiteT
   return (
     <section id="website-hero" aria-label="Website hero specimen" className="@container mb-(--section-gap) scroll-mt-20" style={{ fontSynthesis: "none", fontStyle: "normal", fontFeatureSettings: "normal", fontVariationSettings: "normal", fontOpticalSizing: "auto" }}>
       <h2 className="sr-only">Website hero</h2>
-      <div className="overflow-hidden rounded-xl border border-neutral-200 bg-neutral-50 p-6 min-[721px]:p-12 dark:border-neutral-800 dark:bg-neutral-900/40">
+      <div className="overflow-hidden rounded-xl border border-neutral-200 p-6 min-[721px]:p-12 dark:border-neutral-800">
         <p className={TEXT_CLASSES.wordmark} data-web-text="wordmark" style={text("wordmark")}>Reframe.</p>
 
         <div className="grid grid-cols-12 gap-x-4 gap-y-6 py-10 min-[721px]:gap-x-8 min-[1105px]:[align-items:last_baseline]">
