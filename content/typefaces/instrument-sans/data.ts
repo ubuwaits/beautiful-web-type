@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "instrument-sans",
   name: "Instrument Sans",
-  dateAdded: "2025-06-05",
+  dateAdded: "2025-06-05T20:19:58+02:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 501,

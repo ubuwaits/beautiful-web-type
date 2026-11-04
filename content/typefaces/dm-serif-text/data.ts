@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "dm-serif-text",
   name: "DM Serif Text",
-  dateAdded: "2026-11-03",
+  dateAdded: "2026-11-03T10:03:53+01:00",
   category: "Serif",
   styles: 2,
   glyphCount: 355,

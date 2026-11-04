@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "biorhyme-expanded",
   name: "BioRhyme Expanded",
-  dateAdded: "2018-10-28",
+  dateAdded: "2018-10-28T11:24:10+01:00",
   category: "Display",
   styles: 5,
   glyphCount: 494,

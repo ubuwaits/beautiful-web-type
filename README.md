@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 4 Nov 2026
 
+* **Improved the feed:** publication timestamps, images before descriptions, and preserved paragraphs.
 * **Added font search** with live filtering and keyboard navigation.
 * **Added [Commit Mono](https://beautifulwebtype.com/commit-mono/)** by Eigil Nikolajsen.
 

@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "zalando-sans",
   name: "Zalando Sans",
-  dateAdded: "2026-10-31",
+  dateAdded: "2026-10-31T21:40:37+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 606,

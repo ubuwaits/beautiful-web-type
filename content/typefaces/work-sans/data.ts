@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "work-sans",
   name: "Work Sans",
-  dateAdded: "2018-11-26",
+  dateAdded: "2018-11-26T17:29:25+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 1349,

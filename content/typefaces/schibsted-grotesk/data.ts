@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "schibsted-grotesk",
   name: "Schibsted Grotesk",
-  dateAdded: "2026-10-31",
+  dateAdded: "2026-10-31T21:47:33+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 583,

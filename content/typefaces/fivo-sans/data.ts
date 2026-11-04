@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "fivo-sans",
   name: "Fivo Sans",
-  dateAdded: "2019-01-03",
+  dateAdded: "2019-01-03T18:38:04+01:00",
   category: "Sans-Serif",
   styles: 14,
   glyphCount: 361,

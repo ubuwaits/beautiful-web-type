@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "space-mono",
   name: "Space Mono",
-  dateAdded: "2019-01-08",
+  dateAdded: "2019-01-08T18:47:58+01:00",
   category: "Monospaced",
   styles: 4,
   glyphCount: 765,

@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "tiktok-sans",
   name: "TikTok Sans",
-  dateAdded: "2026-10-31",
+  dateAdded: "2026-10-31T21:29:01+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 1181,

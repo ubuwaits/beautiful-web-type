@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "commissioner",
   name: "Commissioner",
-  dateAdded: "2025-06-06",
+  dateAdded: "2025-06-06T10:15:37+02:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 1172,

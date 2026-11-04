@@ -45,9 +45,13 @@ export function buildAtomFeedXml(typefaces: readonly Typeface[]): string {
     .map((typeface) => {
       const imageUrl = toAbsoluteUrl(`/assets/images/${typeface.slug}.png`);
       const typefaceUrl = toAbsoluteUrl(getTypefacePath(typeface.slug));
-      const descriptionHtml = absolutizeRootRelativeUrls(typeface.description);
+      const descriptionHtml = absolutizeRootRelativeUrls(
+        typeface.description.trim().split(/\r?\n\s*\r?\n/)
+          .map((paragraph) => `<p>${paragraph.trim()}</p>`)
+          .join("\n")
+      );
       const imageAlt = xmlEscape(`${typeface.name} by ${typeface.creator.name}`);
-      const contentHtml = `<p>${descriptionHtml}</p><p><a href="${typefaceUrl}"><img src="${imageUrl}" alt="${imageAlt}"></a></p>`;
+      const contentHtml = `<p><a href="${typefaceUrl}"><img src="${imageUrl}" alt="${imageAlt}"></a></p>\n${descriptionHtml}`;
 
       return `<entry>
   <title>${xmlEscape(`${typeface.name} by ${typeface.creator.name}`)}</title>

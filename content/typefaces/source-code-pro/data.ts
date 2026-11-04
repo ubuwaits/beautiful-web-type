@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "source-code-pro",
   name: "Source Code Pro",
-  dateAdded: "2018-12-18",
+  dateAdded: "2018-12-18T14:48:34+01:00",
   category: "Monospaced",
   styles: "Variable",
   glyphCount: 1568,

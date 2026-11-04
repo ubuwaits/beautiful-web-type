@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "dm-sans",
   name: "DM Sans",
-  dateAdded: "2026-11-03",
+  dateAdded: "2026-11-03T10:03:53+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 486,

@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "commit-mono",
   name: "Commit Mono",
-  dateAdded: "2026-11-04",
+  dateAdded: "2026-11-04T09:47:24+01:00",
   category: "Monospaced",
   styles: "Variable",
   glyphCount: 1932,

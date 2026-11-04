@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "crimson-pro",
   name: "Crimson Pro",
-  dateAdded: "2020-05-23",
+  dateAdded: "2020-05-23T18:23:36+02:00",
   category: "Serif",
   styles: "Variable",
   glyphCount: 833,

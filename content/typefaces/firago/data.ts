@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "firago",
   name: "FiraGO",
-  dateAdded: "2018-10-23",
+  dateAdded: "2018-10-23T14:56:49+02:00",
   category: "Sans-Serif",
   styles: 22,
   glyphCount: 4577,

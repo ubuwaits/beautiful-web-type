@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "le-murmure",
   name: "Le Murmure",
-  dateAdded: "2018-11-25",
+  dateAdded: "2018-11-25T14:44:44+01:00",
   category: "Display",
   styles: 1,
   glyphCount: 655,

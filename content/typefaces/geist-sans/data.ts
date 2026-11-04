@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "geist-sans",
   name: "Geist Sans",
-  dateAdded: "2026-11-03",
+  dateAdded: "2026-11-03T19:50:13+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 975,

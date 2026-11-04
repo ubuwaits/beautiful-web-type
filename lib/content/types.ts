@@ -11,6 +11,7 @@ export type Weight = {
 export type Typeface = {
   slug: string;
   name: string;
+  /** ISO publication timestamp with timezone; date-only for legacy entries with unknown times. */
   dateAdded: string;
   updatedAt?: string;
   category: CategoryName;

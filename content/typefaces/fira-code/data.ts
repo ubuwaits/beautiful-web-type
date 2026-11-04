@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "fira-code",
   name: "Fira Code",
-  dateAdded: "2019-01-21",
+  dateAdded: "2019-01-21T15:53:30+01:00",
   category: "Monospaced",
   styles: "Variable",
   glyphCount: 2030,

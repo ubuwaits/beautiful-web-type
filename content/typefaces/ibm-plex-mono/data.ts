@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "ibm-plex-mono",
   name: "IBM Plex Mono",
-  dateAdded: "2018-11-02",
+  dateAdded: "2018-11-02T13:52:39+01:00",
   category: "Monospaced",
   styles: 16,
   glyphCount: 1207,

@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "ibm-plex-sans",
   name: "IBM Plex Sans",
-  dateAdded: "2018-10-31",
+  dateAdded: "2018-10-31T12:37:32+01:00",
   category: "Sans-Serif",
   styles: 16,
   glyphCount: 1025,

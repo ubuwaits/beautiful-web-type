@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "familjen-grotesk",
   name: "Familjen Grotesk",
-  dateAdded: "2026-10-31",
+  dateAdded: "2026-10-31T21:18:48+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 698,

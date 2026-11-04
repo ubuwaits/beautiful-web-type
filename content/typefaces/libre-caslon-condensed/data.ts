@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "libre-caslon-condensed",
   name: "Libre Caslon Condensed",
-  dateAdded: "2026-11-02",
+  dateAdded: "2026-11-02T21:02:14+01:00",
   category: "Serif",
   styles: "Variable",
   glyphCount: 561,

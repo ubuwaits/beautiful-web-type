@@ -49,7 +49,7 @@ export function getAllTypefaceSlugs(): string[] {
 }
 
 export function getLatestTypefaces(): Typeface[] {
-  return [...getAllTypefaces()].sort((left, right) => right.dateAdded.localeCompare(left.dateAdded));
+  return [...getAllTypefaces()].sort((left, right) => new Date(right.dateAdded).getTime() - new Date(left.dateAdded).getTime());
 }
 
 export function getTypefacesByCategory(categorySlug: CategorySlug): Typeface[] {

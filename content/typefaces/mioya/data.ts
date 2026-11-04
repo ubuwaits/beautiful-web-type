@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "mioya",
   name: "Mioya",
-  dateAdded: "2026-11-02",
+  dateAdded: "2026-11-02T22:37:53+01:00",
   category: "Display",
   styles: "Variable",
   glyphCount: 451,

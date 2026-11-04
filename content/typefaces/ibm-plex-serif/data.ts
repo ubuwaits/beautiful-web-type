@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "ibm-plex-serif",
   name: "IBM Plex Serif",
-  dateAdded: "2018-10-30",
+  dateAdded: "2018-10-30T16:54:09+01:00",
   category: "Serif",
   styles: 16,
   glyphCount: 1054,

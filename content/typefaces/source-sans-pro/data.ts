@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "source-sans-pro",
   name: "Source Sans Pro",
-  dateAdded: "2018-11-27",
+  dateAdded: "2018-11-27T14:43:08+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 2478,

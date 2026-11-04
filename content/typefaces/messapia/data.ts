@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "messapia",
   name: "Messapia",
-  dateAdded: "2020-05-23",
+  dateAdded: "2020-05-23T22:24:20+02:00",
   category: "Display",
   styles: 2,
   glyphCount: 348,

@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "hubot-sans",
   name: "Hubot Sans",
-  dateAdded: "2026-11-02",
+  dateAdded: "2026-11-02T20:46:38+01:00",
   category: "Display",
   styles: "Variable",
   glyphCount: 736,

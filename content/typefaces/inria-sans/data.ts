@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "inria-sans",
   name: "Inria Sans",
-  dateAdded: "2018-12-03",
+  dateAdded: "2018-12-03T16:48:18+01:00",
   category: "Sans-Serif",
   styles: 6,
   glyphCount: 591,

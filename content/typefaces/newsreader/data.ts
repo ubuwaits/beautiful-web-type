@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "newsreader",
   name: "Newsreader",
-  dateAdded: "2026-10-31",
+  dateAdded: "2026-10-31T22:00:54+01:00",
   category: "Serif",
   styles: "Variable",
   glyphCount: 658,

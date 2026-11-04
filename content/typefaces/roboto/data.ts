@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "roboto",
   name: "Roboto",
-  dateAdded: "2026-11-03",
+  dateAdded: "2026-11-03T09:44:01+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 3409,

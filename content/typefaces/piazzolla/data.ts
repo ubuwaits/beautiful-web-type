@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "piazzolla",
   name: "Piazzolla",
-  dateAdded: "2026-11-02",
+  dateAdded: "2026-11-02T21:58:42+01:00",
   category: "Serif",
   styles: "Variable",
   glyphCount: 2328,

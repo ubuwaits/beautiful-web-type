@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "ia-writer-quattro",
   name: "iA Writer Quattro",
-  dateAdded: "2019-01-30",
+  dateAdded: "2019-01-30T19:09:35+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 1182,

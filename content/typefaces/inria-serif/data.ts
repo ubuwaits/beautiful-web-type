@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "inria-serif",
   name: "Inria Serif",
-  dateAdded: "2018-12-03",
+  dateAdded: "2018-12-03T16:48:18+01:00",
   category: "Serif",
   styles: 6,
   glyphCount: 597,

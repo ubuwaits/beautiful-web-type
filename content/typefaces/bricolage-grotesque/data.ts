@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "bricolage-grotesque",
   name: "Bricolage Grotesque",
-  dateAdded: "2026-11-02",
+  dateAdded: "2026-11-02T19:06:30+01:00",
   category: "Display",
   styles: "Variable",
   glyphCount: 597,

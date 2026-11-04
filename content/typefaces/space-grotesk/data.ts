@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "space-grotesk",
   name: "Space Grotesk",
-  dateAdded: "2019-02-01",
+  dateAdded: "2019-02-01T16:14:15+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 1001,

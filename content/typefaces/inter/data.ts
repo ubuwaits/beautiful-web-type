@@ -3,7 +3,7 @@ import type { TypefaceData } from "@/lib/content/types";
 const typeface: TypefaceData = {
   slug: "inter",
   name: "Inter",
-  dateAdded: "2020-11-21",
+  dateAdded: "2020-11-21T13:42:00+01:00",
   category: "Sans-Serif",
   styles: "Variable",
   glyphCount: 2937,
