@@ -13,6 +13,17 @@ const typeface: TypefaceData = {
       name: "Regular"
     }
   ],
+  websiteHero: {
+    wordmark: { weight: 400, size: 34, lineHeight: "38px", letterSpacing: "-0.025em" },
+    headline: { weight: 400, size: "clamp(3rem, 8.4cqw, 7.875rem)", lineHeight: 1.02, letterSpacing: "-0.045em" },
+    description: { weight: 400, size: 22, desktopSize: 24, lineHeight: "34px" },
+    action: { weight: 400, size: 20, lineHeight: "28px" },
+    caseLocation: { weight: 400, size: 16, lineHeight: "24px", letterSpacing: "0.025em", textTransform: "uppercase" },
+    caseTitle: { weight: 400, size: 34, lineHeight: 1.15, letterSpacing: "-0.025em" },
+    caseBody: { weight: 400, size: 20, lineHeight: "30px" },
+    tableLabel: { weight: 400, size: 20, lineHeight: "26px" },
+    tableValue: { weight: 400, size: 20, lineHeight: "26px", features: { lnum: 1, tnum: 1 } },
+  },
   latestRelease: {
     version: "v1.2",
     date: "23 Mar 2021"

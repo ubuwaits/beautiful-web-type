@@ -1,3 +1,4 @@
+import specimenTypeface from "@/content/typefaces/alegreya-sans/data";
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { tmpdir } from "node:os";
@@ -15,6 +16,7 @@ const font: TypefaceData = {
   styles: 2,
   glyphCount: 123,
   weights: [{ weight: 400, name: "Regular" }],
+  websiteHero: specimenTypeface.websiteHero,
   latestRelease: { version: "v1.0", date: "1 Jan 2024" },
   projectUrl: "https://example.com/test-sans",
   creator: { name: "Example Foundry", url: "https://example.com" },
