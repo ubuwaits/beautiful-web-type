@@ -6,6 +6,10 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 4 Nov 2026
+
+* **Added [Commit Mono](https://beautifulwebtype.com/commit-mono/)** by Eigil Nikolajsen.
+
 ### 3 Nov 2026
 
 * **Added [Geist Sans](https://beautifulwebtype.com/geist-sans/)** by Vercel and Basement Studio.
@@ -77,6 +81,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 * [BioRhyme Expanded](https://beautifulwebtype.com/biorhyme-expanded/)
 * [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)
 * [Commissioner](https://beautifulwebtype.com/commissioner/)
+* [Commit Mono](https://beautifulwebtype.com/commit-mono/)
 * [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/)
 * [Crimson Pro](https://beautifulwebtype.com/crimson-pro/)
 * [DM Sans](https://beautifulwebtype.com/dm-sans/)

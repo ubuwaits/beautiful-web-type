@@ -8,6 +8,7 @@ import aujournuit from "./aujournuit/data";
 import biorhyme from "./biorhyme/data";
 import biorhymeExpanded from "./biorhyme-expanded/data";
 import bricolageGrotesque from "./bricolage-grotesque/data";
+import commitMono from "./commit-mono/data";
 import commissioner from "./commissioner/data";
 import cooperHewitt from "./cooper-hewitt/data";
 import crimsonPro from "./crimson-pro/data";
@@ -73,6 +74,7 @@ export const typefaceData: TypefaceData[] = [
   biorhyme,
   biorhymeExpanded,
   bricolageGrotesque,
+  commitMono,
   commissioner,
   cooperHewitt,
   crimsonPro,

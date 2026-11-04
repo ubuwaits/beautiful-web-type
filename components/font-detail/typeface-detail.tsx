@@ -193,7 +193,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
             {["text-xl min-[721px]:text-2xl", "text-base min-[721px]:text-xl", "text-xs min-[721px]:text-sm"].map((size) => (
               <p
                 key={size}
-                className={`min-w-0 caret-red-500 outline-none ${size} leading-[1.4] whitespace-pre-line text-pretty [orphans:3] [widows:3]`}
+                className={`min-w-0 caret-red-500 outline-none ${size} leading-[1.4] whitespace-pre-line ${typeface.category === "Monospaced" ? "text-wrap" : "text-pretty"} [orphans:3] [widows:3]`}
                 contentEditable
                 suppressContentEditableWarning
               >

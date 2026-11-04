@@ -1,0 +1,21 @@
+:root {
+  --commit-mono: 'Commit Mono', monospace;
+}
+
+.commit-mono {
+  font-family: var(--commit-mono) !important;
+}
+
+@font-face {
+  font-family: "Commit Mono";
+  font-style: normal;
+  font-weight: 200 700;
+  src: url("/assets/fonts/commit-mono/CommitMono.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Commit Mono";
+  font-style: italic;
+  font-weight: 200 700;
+  src: url("/assets/fonts/commit-mono/CommitMono-Italic.woff2") format("woff2");
+}

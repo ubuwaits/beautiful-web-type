@@ -1,5 +1,9 @@
 # Changelog
 
+## 4 Nov 2026
+
+* **Added [Commit Mono](https://beautifulwebtype.com/commit-mono/)** by Eigil Nikolajsen.
+
 ## 3 Nov 2026
 
 * **Added [Geist Sans](https://beautifulwebtype.com/geist-sans/)** by Vercel and Basement Studio.
