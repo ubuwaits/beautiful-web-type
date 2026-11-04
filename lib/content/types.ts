@@ -9,13 +9,13 @@ export type Weight = {
 };
 
 export type WebsiteTextStyle = {
-  weight: number;
+  weight?: number;
   /** Numbers are pixels; strings accept CSS sizes such as clamp(...). */
-  size: number | string;
+  size?: number | string;
   /** Optional size at the shared desktop breakpoint (1105px). */
   desktopSize?: number | string;
   /** Unitless ratio, or a CSS length such as "24px". */
-  lineHeight: number | string;
+  lineHeight?: number | string;
   letterSpacing?: string;
   italic?: boolean;
   features?: FeatureSettings;
@@ -24,11 +24,11 @@ export type WebsiteTextStyle = {
   textTransform?: "none" | "uppercase" | "lowercase" | "capitalize";
 };
 
-export type WebsiteTypography = Record<
+export type WebsiteTypography = Partial<Record<
   "wordmark" | "headline" | "description" | "action"
   | "caseLocation" | "caseTitle" | "caseBody" | "tableLabel" | "tableValue",
   WebsiteTextStyle
->;
+>>;
 
 export type Typeface = {
   slug: string;
@@ -41,7 +41,7 @@ export type Typeface = {
   styles: string | number;
   glyphCount: number;
   weights: Weight[];
-  websiteHero: WebsiteTypography;
+  websiteHero?: WebsiteTypography;
   latestRelease: {
     version: string;
     date: string;

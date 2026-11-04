@@ -1,4 +1,3 @@
-import specimenTypeface from "@/content/typefaces/alegreya-sans/data";
 import { describe, expect, it } from "vitest";
 import { buildAtomFeedXml } from "@/lib/feed";
 import type { Typeface } from "@/lib/content/types";
@@ -12,7 +11,6 @@ const font: Typeface = {
   styles: 1,
   glyphCount: 100,
   weights: [{ name: "Regular", weight: 400 }],
-  websiteHero: specimenTypeface.websiteHero,
   latestRelease: { version: "1.0", date: "1 Nov 2026" },
   projectUrl: "https://example.com/font",
   creator: { name: "Test & Foundry", url: "https://example.com" },

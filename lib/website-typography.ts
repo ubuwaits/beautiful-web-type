@@ -1,27 +1,25 @@
 import type { CSSProperties } from "react";
 import type { FeatureSettings, WebsiteTextStyle } from "@/lib/content/types";
 
-export const WEBSITE_TEXT_CLASS = "text-[length:var(--website-size)] min-[1105px]:text-[length:var(--website-desktop-size)]";
-
-function settings(value?: FeatureSettings): string {
-  if (value === undefined || value === "normal") return "normal";
+function settings(value?: FeatureSettings): string | undefined {
+  if (value === undefined || value === "normal") return value;
   return Object.entries(value).map(([tag, setting]) => `"${tag}" ${setting}`).join(", ") || "normal";
 }
 
-const size = (value: number | string) => typeof value === "number" ? `${value}px` : value;
+const size = (value?: number | string) => typeof value === "number" ? `${value}px` : value;
 
-/** Render authored text roles without inferring typography in the component. */
-export function websiteTextStyle(style: WebsiteTextStyle): CSSProperties {
+/** Apply only authored overrides; shared defaults live in the specimen's classes. */
+export function websiteTextStyle(style: WebsiteTextStyle = {}): CSSProperties {
   return {
     "--website-size": size(style.size),
     "--website-desktop-size": size(style.desktopSize ?? style.size),
     fontWeight: style.weight,
     lineHeight: style.lineHeight,
-    letterSpacing: style.letterSpacing ?? "normal",
-    fontStyle: style.italic ? "italic" : "normal",
+    letterSpacing: style.letterSpacing,
+    fontStyle: style.italic === undefined ? undefined : style.italic ? "italic" : "normal",
     fontFeatureSettings: settings(style.features),
     fontVariationSettings: settings(style.axes),
-    fontOpticalSizing: style.opticalSizing ?? "auto",
-    textTransform: style.textTransform ?? "none"
+    fontOpticalSizing: style.opticalSizing,
+    textTransform: style.textTransform
   } as CSSProperties;
 }
