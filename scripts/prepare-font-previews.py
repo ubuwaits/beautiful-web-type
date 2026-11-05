@@ -1,6 +1,6 @@
 """Generate index-only WOFF2 subsets; full specimen fonts are never modified.
 
-Requires fonttools and brotli. Run after adding a font, changing its name/creator,
+Requires fonttools and brotli. Run after adding a font, changing its name,
 or updating its CSS/font assets. Generated assets are committed, so site builds
 need neither Python nor fonttools. Unchanged inputs reuse the existing subset.
 """
@@ -69,7 +69,7 @@ def main():
     records = json.loads(subprocess.check_output([
         "node", "--import", "tsx", "-e",
         'const {typefaceData}=require("./content/typefaces");'
-        'console.log(JSON.stringify(typefaceData.map(({slug,name,creator})=>({slug,name,creator:creator.name}))));',
+        'console.log(JSON.stringify(typefaceData.map(({slug,name})=>({slug,name}))));',
     ], cwd=ROOT, text=True))
     OUTPUT.mkdir(parents=True, exist_ok=True)
     previous = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
@@ -81,7 +81,7 @@ def main():
     preview_bytes = 0
     for record in sorted(records, key=lambda entry: entry["slug"]):
         slug = record["slug"]
-        text = f'{record["name"]}\n{record["creator"]}'
+        text = record["name"]
         url, properties, css_path = regular_face(slug)
         source = ROOT / "public" / url.lstrip("/")
         target = OUTPUT / f"{slug}.woff2"

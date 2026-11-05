@@ -2,550 +2,550 @@
   "alegreya": {
     "source": "/assets/fonts/alegreya/Alegreya-Regular.woff2",
     "sourceHash": "c75756cec05ec16b14f1193fe42b926ca9e1cf6cd29c4fd83d47fb736097ebe1",
-    "text": "Alegreya\nHuerta Tipográfica",
+    "text": "Alegreya",
     "cssHash": "5e6a9bc0f8d65d84048fee34f46512cb02203c84341f14238a45322c9a058b53",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "25a4c14e5cdc28f723cc3d95f0c9c972590db202c038243b5295633d94118d12"
+    "previewHash": "cc070d5fe369ff93c9e5aad9d31ecacddd35fabf35dd6a21fe19ff241fddab85"
   },
   "alegreya-sans": {
     "source": "/assets/fonts/alegreya-sans/AlegreyaSans-Regular.woff2",
     "sourceHash": "241822dcf389a77db3f0ad2f675d69983a4a392c31b52600f804a3e94cb57dc0",
-    "text": "Alegreya Sans\nHuerta Tipográfica",
+    "text": "Alegreya Sans",
     "cssHash": "e39d7e87d26f2851e44bcdec856b5f34f500bd6b4d082b3c6949dbb48d280a8f",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "4f1acf932a14c5875591be1110dba029c542c3ca05eb4dfc2082bc153c208835"
+    "previewHash": "58bcbf3b7f9be9c5f3b90675cbbcf895ae0fe3703ae9c47a1b9dae589c0f65c5"
   },
   "archivo": {
     "source": "/assets/fonts/archivo/Archivo-Regular.woff2",
     "sourceHash": "d6f68072989fe093de8966bf4d339994b6db2b8f699e6b4d8b1b164255ff2cff",
-    "text": "Archivo\nOmnibus-Type",
+    "text": "Archivo",
     "cssHash": "ce6f610c09fca422a5c7eee1ccd0a0ed174dce4b9bc3732ffc8cc7012cac3dbe",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "fda1fb3297b76f4714a546b98b67845a444d62c1c31205120307d35b9f612f13"
+    "previewHash": "f3c7d1dc076aa94b9b25d6db480c8e275c58b9371e5c1f059926b0dc6c7e954c"
   },
   "archivo-black": {
     "source": "/assets/fonts/archivo-black/ArchivoBlack-Regular.woff2",
     "sourceHash": "0dbc82a813545033b262ec997055417e05375b78f73f4b7779e31895ee02fe92",
-    "text": "Archivo Black\nOmnibus-Type",
+    "text": "Archivo Black",
     "cssHash": "868fdfbbf2d96be1efdb5cd1168f2dfbe333dd6ed6aebbefee3bd9697f38eb9b",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "939975d9d76d6076ef1a79694682dfe258cebe391267644bb03c67bf5e45d751"
+    "previewHash": "dcb3b795ac56d58492be12b5899c96583cd72381f8dca9bddba1ccd6edc6afa7"
   },
   "aujournuit": {
     "source": "/assets/fonts/aujournuit/Aujournuit.woff2",
     "sourceHash": "6e90b89ae2df4cd8331beae9835b08ab0de19f45cb3be9493b1122e140a369f6",
-    "text": "Aujournuit\nTeo Gaudet",
+    "text": "Aujournuit",
     "cssHash": "44b7704fbe5d7dfae9e23b5d0b0379e820e42cb44908fe420f6336c6c9d920b2",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "830bff6415e0c310d95650eed236e9d7e4557abf84c39debb40e5325bedf67e0"
+    "previewHash": "8161fd14471357bfe5c92138a1b7b24422282918201d316ba35e6829fd0c75c3"
   },
   "bricolage-grotesque": {
     "source": "/assets/fonts/bricolage-grotesque/BricolageGrotesque.woff2",
     "sourceHash": "b51a8ebd169637e47cb7db430431ab3e122d2f09b03ee2a03ea06f4cb46f1a8e",
-    "text": "Bricolage Grotesque\nMathieu Triay",
+    "text": "Bricolage Grotesque",
     "cssHash": "b4141804a2029469554ccaeb4a34ae9be02e04a12d4f43a9c31e8a71a8abc91f",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "0d3e01f14fd6d2bd6968c43eab7175c952f051601bc91634a1d97a7ecabab272"
+    "previewHash": "c3afd566ef02f9ae80a5b17472d48222b90355de58d3a1ecd78d84f3431f96b0"
   },
   "commissioner": {
     "source": "/assets/fonts/commissioner/Commissioner[FLAR,VOLM,wght].woff2",
     "sourceHash": "732adefe634514fdf729866cd28e20f80989a5c2012d61b78b86a0820ab0c30a",
-    "text": "Commissioner\nKostas Bartsokas",
+    "text": "Commissioner",
     "cssHash": "faa8c9f016ec28efea18cc815134b1a832077878d487a457a6be697fd19dcd33",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "1e99251bca4be01688e2a667bfc4f149fa18a26e142fe83848e1484dc13e19ec"
+    "previewHash": "a7c45e4868707c23a8c1969fb8a30835a9f8da25e00433c47de7368903c959f4"
   },
   "commit-mono": {
     "source": "/assets/fonts/commit-mono/CommitMono.woff2",
     "sourceHash": "65ec30ce6a4be4cf5f17652cccfebd1bc798aaa63ece8793aeae9cc2ed69fdc1",
-    "text": "Commit Mono\nEigil Nikolajsen",
+    "text": "Commit Mono",
     "cssHash": "5e43656e6fc952b1f6ca4f689bd349381c1f3d29590dfa8b597a81992f222174",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "9cb945935596fe47097f156e44b858f25dc0e1637dc9b151ecada52d80eda599"
+    "previewHash": "204de8593973fd27a4e75172468748bcf2207f3a705c0fca850570dc4c4a87c6"
   },
   "cooper-hewitt": {
     "source": "/assets/fonts/cooper-hewitt/CooperHewitt-Book.woff2",
     "sourceHash": "a0b9266358fad501f968a53a4612a9bf8103f289c1d3069f4c91a3c2989f8cc5",
-    "text": "Cooper Hewitt\nChester Jenkins",
+    "text": "Cooper Hewitt",
     "cssHash": "e3a5b30d3303fd43dbf4ccd8f0bf46dc2c1c9ac5fcc96f07d97c2c0081efea2b",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "d7df8f34c9ece837058bc63881532b1ba0cab762fc5538a5ca7d1170b5bdff77"
+    "previewHash": "912fb645aa6acf34169837de8e062c7b72ef8e89626b6c9b9f9e9756c7944eca"
   },
   "crimson-pro": {
     "source": "/assets/fonts/crimson-pro/CrimsonPro-Roman-VF.woff2",
     "sourceHash": "fbaafded8762ad493132ab9d52b7cd27c374aaebc71b72f05ae9e4c08dd2c8c2",
-    "text": "Crimson Pro\nJacques Le Bailly",
+    "text": "Crimson Pro",
     "cssHash": "178d1644673def8f97c6e5aeca037394c871923c14c06ea42555e488b46de5e2",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "030dc4684dfe5f1cf207abea00fc5a1df412392c8a2fef133cc142468d3fbc43"
+    "previewHash": "824f6a27993587bc328af0436c68a760aace46fc197eadcea138269436ef2178"
   },
   "dm-sans": {
     "source": "/assets/fonts/dm-sans/DMSans.woff2",
     "sourceHash": "c47c3f13b90082987cd5fd4bd68642e740aa76f6bc38363d23757be2546d9110",
-    "text": "DM Sans\nColophon Foundry",
+    "text": "DM Sans",
     "cssHash": "3c6aab621e38bbb7ea1403f9ad3a7e9d916279a582ab1aaa6bfc4ceb21252003",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "f27c1447c2a837fa56bfb9d2bc31b31d1e297593fa4307beb7ed4641f2f70ee9"
+    "previewHash": "cd30a8931f18216be9569b19b93a8270c7ca72ca30ead5c7574f633aca88f036"
   },
   "dm-serif-display": {
     "source": "/assets/fonts/dm-serif-display/DMSerifDisplay-Regular.woff2",
     "sourceHash": "0fcf512319c7a1294806764aa1d1d4f19a66113b9a1eadbfc3e0f9a98f229a2c",
-    "text": "DM Serif Display\nColophon Foundry",
+    "text": "DM Serif Display",
     "cssHash": "ea4b3f7c3cd43a6fb6fc1ae69b6a52e4203364cbb558f5d91e4b2d078502d425",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "11fbb3abcf62666bf3a744d84a5544584c15dd3b71c6b86b952f4df03e3c0ccb"
+    "previewHash": "ac423c86f0b28ae6964dd29a59a9fc571081b7d69107ae3fbcc24ea9edbcfc3c"
   },
   "dm-serif-text": {
     "source": "/assets/fonts/dm-serif-text/DMSerifText-Regular.woff2",
     "sourceHash": "00d8b0440711406240ae8d568cc5052eccd44c5452e50e384031c378fc6569a6",
-    "text": "DM Serif Text\nColophon Foundry",
+    "text": "DM Serif Text",
     "cssHash": "9737f1d1742d3e1cd7dca544ba0783a41704a08562f41f2e9ccce4ab210a3ea2",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "9cd164b8e120018cea81284ac367ebcf6b76ce19b45570e81a677d8d2e6c55a1"
+    "previewHash": "38bb544043979387a6e1c75dbf38efc3e657d81153f2067d81ff2903a9595c88"
   },
   "eb-garamond": {
     "source": "/assets/fonts/eb-garamond/EBGaramond.woff2",
     "sourceHash": "7667eac47b012e7f92c14e2ec8b41d3b850e1e8d49e0db45f7417517866fb78a",
-    "text": "EB Garamond\nGeorg Duffner & Octavio Pardo",
+    "text": "EB Garamond",
     "cssHash": "30ea6d842fadfd94fe077e92952d658e142e353137d3920439066de2edd4d69e",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "13a196b04bf6762d9898e6783b042bce39fc7e71b40cae744738b01b73639e97"
+    "previewHash": "d468e5c9512af0a4dee156b16ee88a96999d32e7da03ff00b5eddf324abe7ec3"
   },
   "familjen-grotesk": {
     "source": "/assets/fonts/familjen-grotesk/FamiljenGrotesk.woff2",
     "sourceHash": "e57d30ada89f84276fd5fea7bb71114ba77efd8d73020ec5348392093016790f",
-    "text": "Familjen Grotesk\nFamiljen STHLM",
+    "text": "Familjen Grotesk",
     "cssHash": "35116f9787ac40b898985a2463949b7890db11368ce182a13dee0641aaa3659a",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "778708fd101f41a3832f0493e1d8d13bbd211726c0577b23c4eed93f5c9e1e86"
+    "previewHash": "d7abf317b1af75e5cc0cd575620598bf0be55618b155e699cd9b4ef0b7c267b8"
   },
   "fira-code": {
     "source": "/assets/fonts/fira-code/FiraCode-VF.woff2",
     "sourceHash": "408e876a202f15ea6ee307a70a65cf40ceb222c589a0b17e0a3a371db96dd49f",
-    "text": "Fira Code\nNikita Prokopov",
+    "text": "Fira Code",
     "cssHash": "991b8504152176e457b267c3f75854790b19f6d015915218765dee86edbbe37a",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "022663e044f6fbae20b0a7cb4b75602072922b5696d8c1fb218f66ed656cdbf1"
+    "previewHash": "8fc2c188f5d8bf28b0bb8ddf1557bb8f75db24879d3e6052bab245dc892e62d1"
   },
   "firago": {
     "source": "/assets/fonts/firago/FiraGO-Regular.woff2",
     "sourceHash": "0badb625b6ed398c105f512e723dc7341bc64b1228262ae822060a26a676dc9d",
-    "text": "FiraGO\nbBox Type",
+    "text": "FiraGO",
     "cssHash": "7af7c293aba1d21c915ef5bb68f54a8cf7b83dfd0451bcd2d511226d88f7e4b1",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "1f4e302509e09a0649ad1dcffc0f8aebeea9ba266dc6c3ab2e027c5386889cf0"
+    "previewHash": "2d7954fc3c6a64aad65a02d5d3a75ef69116243c224cfd1ce8a2874d289b0e57"
   },
   "fivo-sans": {
     "source": "/assets/fonts/fivo-sans/fivosans-regular.woff2",
     "sourceHash": "86a54e9127fd6b85d60a4e1e212cfc806ac6723a20a3f1c13d78e9fdd6bec2e1",
-    "text": "Fivo Sans\nAlex Slobzheninov",
+    "text": "Fivo Sans",
     "cssHash": "c050c2f66d4872e23737d9451cf106dcc5d883b3a12a7a1f2544c12cb37edba2",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "81773853fb8ac1d97564ebfd2c004762df7ea9149fceaf0017077f1853484c3c"
+    "previewHash": "300dd2faecd9c3cda67e1df30ecfa12c1e28fbf5d6d005a6cc4346e6a6b252ce"
   },
   "fivo-sans-modern": {
     "source": "/assets/fonts/fivo-sans-modern/fivosansmodern-regular.woff2",
     "sourceHash": "2fab802e45baceb8ba9182a0914cb99f4d37e364f0724ec6276cabeb4e8a7654",
-    "text": "Fivo Sans Modern\nAlex Slobzheninov",
+    "text": "Fivo Sans Modern",
     "cssHash": "7f1821eb86965f5a95e9d87ca3a413cfeb6ed7ac058984b21bbd5c7d5471632d",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "c97382c3a0b50ad439dc865e461aa777ec8c6e93869c3284c1f13bf6fa901401"
+    "previewHash": "4f5780fc9bb7f7fbbfcebff354e44b646d69e84c5a1416f8b28f395f3cc43af0"
   },
   "fraunces": {
     "source": "/assets/fonts/fraunces/Fraunces.woff2",
     "sourceHash": "25e420d8c154303e08322ea77f08997c4aade75653ef18425772ada5abacd0ce",
-    "text": "Fraunces\nUndercase Type",
+    "text": "Fraunces",
     "cssHash": "0b4c439f192a1a73d1a4592744e3a12bad0d73ff8cad9d82eeea4819301349ea",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "5049b58125afd0c4f0fa25945371d96918e313ed414aeb4a6a7432887a96a08b"
+    "previewHash": "4f85cc400a1cb989fe5296b3ea1015fb7a583c57420d6f7a7b0f40537210b6d0"
   },
   "geist-sans": {
     "source": "/assets/fonts/geist-sans/Geist.woff2",
     "sourceHash": "5c5588027e59e74e205b9d6c7fd877b261091cee367f6bb3a8d505da14cae512",
-    "text": "Geist Sans\nVercel & Basement Studio",
+    "text": "Geist Sans",
     "cssHash": "c840390a540799dba3258b6cd0317abe1e92cccf57e8b982dfc1bdd52f1656ba",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "a9b5ceaac835cf56eaa590cff60ff292734de54052679b7951468fd74a1f27c2"
+    "previewHash": "ce20639452dc61ca183aa1501de697f139ef2375e857ee391553145e2915fa63"
   },
   "hubot-sans": {
     "source": "/assets/fonts/hubot-sans/HubotSans.woff2",
     "sourceHash": "a3ab09069f6de2e4a82b9894c83d57d9b6704e8ed0b35fc9ac82f10361ea2525",
-    "text": "Hubot Sans\nGitHub & Degarism",
+    "text": "Hubot Sans",
     "cssHash": "ccf465267b035331bdc152efa5cdb38eb0a9a1d7fef67687297efeae5c9a0941",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "f11837e9d61abcf27aa9301a295b9412084d486c0d0aa36c1000000cab1e20ab"
+    "previewHash": "ee5ba489c63f29ad5cba0186191ca766ae2e10a36af3a9949c4c2b6645fafa83"
   },
   "ia-writer-quattro": {
     "source": "/assets/fonts/ia-writer-quattro/iAWriterQuattroV.woff2",
     "sourceHash": "9b78bc97444f95aecae070168f8f69a82df2fb06de754f8e7ae01066766bdb2c",
-    "text": "iA Writer Quattro\niA",
+    "text": "iA Writer Quattro",
     "cssHash": "96dc398014fb823d2be0a1006b84ee08d8754678d06665f8a1dc87c3903c8183",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "7dbb12e47454618428c96855308c42db8f3ef3108c6e9f78035c3d5a0a6d52b2"
+    "previewHash": "39edf1910e21af2d14923c1d0cbc251213d27dbbbc77596b168034bdaca3f134"
   },
   "ibm-plex-mono": {
     "source": "/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2",
     "sourceHash": "23a1ef0f84874adf9e3e4cd1521ed79ae55620cc137219e962824ec58f63b8ca",
-    "text": "IBM Plex Mono\nMike Abbink & Bold Monday",
+    "text": "IBM Plex Mono",
     "cssHash": "194c5cd24882ad6a8647a9e809e8c81ecf26ccb2ddd6ac5bc77bac623fc037a8",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "63aa4bc6d2af4b511c42bcc485653edea897149aeb6ed2d70ac2981d45381d62"
+    "previewHash": "308b43f12898389abc37dc332040f8eb3c7443bbb6d3dd4a29545396170564fd"
   },
   "ibm-plex-sans": {
     "source": "/assets/fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2",
     "sourceHash": "d48e878d2242da78d4656e0d450ba384cb8d3d60c0f961b07cf22cd63153389b",
-    "text": "IBM Plex Sans\nMike Abbink & Bold Monday",
+    "text": "IBM Plex Sans",
     "cssHash": "b7d6e17c4a0fd974539453db820b1d5b78cd66b8c7113c83fd3f5c942a7c9372",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "8c8f70da84b9471d36feede8c0c8e2ae5e3cb094d15127250a175e505af1c540"
+    "previewHash": "8cac378740627938d49104e5d97f836c16d08a6dc64cdc08d8be4d3481a9a354"
   },
   "ibm-plex-sans-condensed": {
     "source": "/assets/fonts/ibm-plex-sans-condensed/IBMPlexSansCondensed-Regular.woff2",
     "sourceHash": "8df5c75297601edafad0d4a149d612fa1c478de8222b552b25549bd59165aff5",
-    "text": "IBM Plex Sans Condensed\nMike Abbink & Bold Monday",
+    "text": "IBM Plex Sans Condensed",
     "cssHash": "75e8970d2dab05b83702cb228287d156c7a33d07daeb6c3092cfe9322db9407d",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "057cdf880ba707ea39d7d6725a4283df47fed350ffdd0972ef484554643aacd7"
+    "previewHash": "0325e3357d390ba54efa87098c0a0c88dc4dab3a5c75eee16f1eb7d4bf5e39cb"
   },
   "ibm-plex-serif": {
     "source": "/assets/fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff2",
     "sourceHash": "5281713e40da5a0a962690dcead5f80fbe23bbf89736838ffceb2ee641537b72",
-    "text": "IBM Plex Serif\nMike Abbink & Bold Monday",
+    "text": "IBM Plex Serif",
     "cssHash": "838e1c3d3e35778eb98decaf31c6bdbaab10f00808ef55a7892fe76d8f3abbf8",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "51192ad3b1e5edb8988adcde187fa8a3776373b0b67d500855ad34cada481a42"
+    "previewHash": "6d7e16576a64ca94fad3eff5e3357763a14ad49d42a04b000f07d973368cd1ed"
   },
   "inria-sans": {
     "source": "/assets/fonts/inria-sans/InriaSans-Regular.woff2",
     "sourceHash": "b84c60866ebdb58f98bee07efecc7c266e2a169620c2d58c0de5eae1d05b112f",
-    "text": "Inria Sans\nBlackFoundry",
+    "text": "Inria Sans",
     "cssHash": "e57540228e32b98f6573b9b4c0535fc485462694e9e819e49d9d276b1e0ab5ff",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "5beb377f66067beed6dbea7c2e9411949081d0b7799b7ad005ee2de40d996e4a"
+    "previewHash": "3bec5d5587e212a63a5c9e7afecdada06a3e8c2704866f24050b067c8ca78056"
   },
   "inria-serif": {
     "source": "/assets/fonts/inria-serif/InriaSerif-Regular.woff2",
     "sourceHash": "efcc41e2a270ee729d17ba66cedbcd1172e61b718473a00536c2dad7f110cd2e",
-    "text": "Inria Serif\nBlackFoundry",
+    "text": "Inria Serif",
     "cssHash": "3a59ce2f60ac5d2c0b9a272c7650f5fad5007e4441e229ec991b50563a8db2b7",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "96e97a2d2c0e286d72489af731772779936c78f5850721671f29d2256126881c"
+    "previewHash": "5011dbe1ab4783ca4214d850133c0c41fda9c774855a7b0e0d30bee42f5bcbaf"
   },
   "instrument-sans": {
     "source": "/assets/fonts/instrument-sans/InstrumentSans.woff2",
     "sourceHash": "aa72922aafcc0dc18f36ec1d805b0212057dabe8b9d5b8b57f67035aea1b826d",
-    "text": "Instrument Sans\nRodrigo Fuenzalida",
+    "text": "Instrument Sans",
     "cssHash": "646c60420a4e1fe1a2e4d79fbe01e582de2afe53ae6af82ad4bc818fe09044b3",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "620f4c0fc8d297eaffaa778f9eef5d790a9ca4917c8a08d2b69d8e86c53f1a7a"
+    "previewHash": "c1f5c0cce3ec78e3d395767d0d638e11171a1903ee86b3a4c61bef04bd6d31e8"
   },
   "instrument-serif": {
     "source": "/assets/fonts/instrument-serif/InstrumentSerif-Regular.woff2",
     "sourceHash": "ca21b99b0d6b88a0dc34cebfe48104611e5c7f8f92746bed26c37aa470174322",
-    "text": "Instrument Serif\nRodrigo Fuenzalida",
+    "text": "Instrument Serif",
     "cssHash": "1b2a99b4983ebba8ddcee44fd5f9f8eb691cefe9de9e46f4e47362fab308b263",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "40775b16bd8b72cfb65caefaf60d3baf052f1b756b8264abc54193e49f0abcff"
+    "previewHash": "1453dd8ef40ab043b835e5bcf3749e7ec2412e511ed5f977efec34f304252e20"
   },
   "inter": {
     "source": "/assets/fonts/inter/Inter-roman.var.woff2",
     "sourceHash": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
-    "text": "Inter\nRasmus Andersson",
+    "text": "Inter",
     "cssHash": "df2f526218d1a320091c2e79539ad13fdeba5668866cfc3e949bd7e24cfb7a54",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "1c064fe18a8e80bfb2b5b8b1879df19c51302ca74169ff911148cda58beb53ab"
+    "previewHash": "8028fc3bbc86983569052b9c46204695fa659261d8349eedf370f311a90261ff"
   },
   "le-murmure": {
     "source": "/assets/fonts/le-murmure/Le_Murmure-Regular.woff2",
     "sourceHash": "a9ffaa290f34c995976b506a2483662ad1442ccade2f3c00359b1b76d08855f6",
-    "text": "Le Murmure\nJérémy Landes",
+    "text": "Le Murmure",
     "cssHash": "9b07eb6ffe9c723ea3785d5685520986d18aa08c80de98f2c41460ac3fdf07b9",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "ef6a618a8ab48ecd24a8469b3cef7dec983bbb989d1e476b2ce99819fe997abc"
+    "previewHash": "038e14dd0f278f11b16071ddc74299517574ee4bbf2d96edf953e30c8c01175a"
   },
   "libre-caslon-condensed": {
     "source": "/assets/fonts/libre-caslon-condensed/LibreCaslonCondensed.woff2",
     "sourceHash": "05aac714de6e905c1246a811b3b7e99525031f4fa618baa29fe5f9de27ddee12",
-    "text": "Libre Caslon Condensed\nErtekin Erdin",
+    "text": "Libre Caslon Condensed",
     "cssHash": "bdcd6b718a24568e5f2368409acbc4be8b83a82be89d35c922f4dbfa81e2c8cf",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "415a3f81a3ef5fa4371332e311847ec33441b86a7653d1001ce3b1882d9a59ca"
+    "previewHash": "ed6308238d2382e90ef41bde291db47c29b6a9c0e011665a282a87629f847338"
   },
   "libre-caslon-display": {
     "source": "/assets/fonts/libre-caslon-display/LibreCaslonDisplay-Regular.woff2",
     "sourceHash": "6d8a5c924a51f8201f07e5b99a18cbe5d774c1a66ebba0d51a9774e92f7d1db6",
-    "text": "Libre Caslon Display\nImpallari & Fuenzalida",
+    "text": "Libre Caslon Display",
     "cssHash": "52da5ddf2cb0edcc7bc9c0f2485e823cc052e151a2cf409adb84dbef30f8da18",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "81d372a0232a321e97b9d616dac79bd03e449b7fc46f6228ec7226695a4eb717"
+    "previewHash": "a3f2bfe77aac34ad5bac89a90040fb5e65ca772b4f4d393c048527c390d3643b"
   },
   "libre-caslon-text": {
     "source": "/assets/fonts/libre-caslon-text/LibreCaslonText-Regular.woff2",
     "sourceHash": "9c4f91f18e5c6ea98e93b527aa0424cb7460e5cba72ce79580c9d55b2c3fd9e6",
-    "text": "Libre Caslon Text\nImpallari & Fuenzalida",
+    "text": "Libre Caslon Text",
     "cssHash": "092dadb1790318817c0533572a40a58eb36787a9caae7cb5de2f3f9474d5c212",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "8a21fed6700a2f08638d7c2384c9c65df46bbabe0ca5c461e0f8cc4d30ca6ffd"
+    "previewHash": "8422371d0222c388d08a4cfae189d6f79f0f09c79a7d6fa9f7d485637aedd562"
   },
   "libre-franklin": {
     "source": "/assets/fonts/libre-franklin/LibreFranklin-Regular.woff2",
     "sourceHash": "044a7add11cc851035ffac7df33412f15d16529fc973404c64c6bb7f71291dab",
-    "text": "Libre Franklin\nImpallari Type",
+    "text": "Libre Franklin",
     "cssHash": "a3caae4d0b70675d1a8c188d0493b5346781d8a949b672cfefddc1091eaf9cd2",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "2fe5e2389d1f8782cba5f8ae54d12d772a10103aef4dbc4ec281e35aa1f231ba"
+    "previewHash": "e9f6e72cb38b690fcf405442f416622ef1a59c1b2a82019f660f964b9a58d762"
   },
   "lora": {
     "source": "/assets/fonts/lora/Lora-VF.woff2",
     "sourceHash": "e4359fb64060d178a1a2d14e56e6dcba97a79361328e0492b67891e7a454e1e3",
-    "text": "Lora\nCyreal",
+    "text": "Lora",
     "cssHash": "8f8ddb11351fa1689b4b2cc18abb3be34bd15029861d129d166dfe9356df6103",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "b2d26f49861cf19dd3ec2cd2eae1e846c53048bcc4aefc9bc2de10254f868fcc"
+    "previewHash": "bfc7146ef93f56e45f683fd6942e40b2e36aa1772c034f50302d6608be40e83f"
   },
   "luperca": {
     "source": "/assets/fonts/luperca/Luperca.woff2",
     "sourceHash": "245aca1678af0ceabc3fa36ed33e017760acee5f65619951b3cfdb4ae6c2d550",
-    "text": "Luperca\nAriel Martín Pérez",
+    "text": "Luperca",
     "cssHash": "433135ffbe2de344e59abcebbcaffef6db06fbda9b3c12e540cace4fd5574e4b",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "367ba55aeacabcc834fa60d31e5763c0b4f72eb92f5fce7ccf29b2ffbd3cb4ff"
+    "previewHash": "5d79795f0ef39e2f7474bc60dc6e9632ed64ca36c6ec0c23c32ade1a52ceca07"
   },
   "messapia": {
     "source": "/assets/fonts/messapia/Messapia-Regular.woff2",
     "sourceHash": "d4e15af043fb342908730f8c689492ee9a6ff4812e90a74441636daf90a8efef",
-    "text": "Messapia\nLuca Marsano",
+    "text": "Messapia",
     "cssHash": "649c98ae0da2be100683a4be2ecd60ed8abe6bab8a15bc3226e3b4e32ce1d4b3",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "02094f6c6017e5abdadcf838c738fa8f9d00e0a48a26a04e131c9c7b84f4f7a6"
+    "previewHash": "60ab1c12fe3874c287e64390f0e397ddc2061a16edae85d12a71375e4641ca7d"
   },
   "mioya": {
     "source": "/assets/fonts/mioya/Mioya-Regular.woff2",
     "sourceHash": "6205b930b566917f388027b6b3c438bce2e5b331a324311736f9ae86a80e2ed1",
-    "text": "Mioya\nSora Sagano",
+    "text": "Mioya",
     "cssHash": "2dd07dd2b00fbbe56026ad4d877f57096d986afec1992cdd278c3b10ff6b32dd",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "c4f810a9c2222eb130c19df4726dc0c9dd273a265e59dd35ba9f3a5da32f79cf"
+    "previewHash": "32a8545798bcde9529b66b85e03e263a391985c3e64e51815c11c7f05e7a3919"
   },
   "mona-sans": {
     "source": "/assets/fonts/mona-sans/MonaSans.woff2",
     "sourceHash": "f9576230e85cb458c1b802a20725ca2799f4ab555bd8d92e5ce5a265f3fcfd08",
-    "text": "Mona Sans\nGitHub & Degarism",
+    "text": "Mona Sans",
     "cssHash": "eadd1877ff74f470e85080067715cd6d1e7795a5379a7a1147d90455f0495535",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "94da7e65688cf6b0d0af8aaa6d1a19abb83b7f76f067bb9bbbf27edf136ba91e"
+    "previewHash": "c12b71f36ed608477f6890aaf1090f4a8c891fc0f0cd5fd9649d2ce2f8edaa64"
   },
   "newsreader": {
     "source": "/assets/fonts/newsreader/Newsreader.woff2",
     "sourceHash": "70dbdd4598f213b445d5c4637db7dd1e83dc68ea4888ccef0683200fe90b1543",
-    "text": "Newsreader\nProduction Type",
+    "text": "Newsreader",
     "cssHash": "aa302fb0a60f424a514999653c89393ae6bd383f04e5feab6591bba7e373e3c9",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "24a27c9f9158ede8ecc5e2c54d4dcbbd51dad3a5353c6c830e1e4ad4d23c8c15"
+    "previewHash": "3ecc0717b1f996d80ea467ac451eca73a27e926bd628a5b36bf6394cd8a97e93"
   },
   "oswald": {
     "source": "/assets/fonts/oswald/Oswald-Regular.woff2",
     "sourceHash": "49253b14fa2a476f3e243a9859fa84d41e734f449a55d25040f45783c9fafaf6",
-    "text": "Oswald\nVernon Adams",
+    "text": "Oswald",
     "cssHash": "c9561c64f09540d461dbbb3bf70b5ad6f7cb3b6158021e61a46c85e86137087d",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "28a1ad2eca72fabfff882aa5e396001f19904f11228312ad792fd0d8947bb2aa"
+    "previewHash": "c54b24e5113f76126b49005ed5fb0e4bc0233b490d0bb3529919943298d44d5a"
   },
   "piazzolla": {
     "source": "/assets/fonts/piazzolla/Piazzolla.woff2",
     "sourceHash": "9bf8fba7efc1eaa37382ed26ce9e9eb65b4172977d82d1a0bd6cc9f10a72bd08",
-    "text": "Piazzolla\nJuan Pablo del Peral",
+    "text": "Piazzolla",
     "cssHash": "64e31230d88352c2012a897a1220c373b1dde78293a978b0bdddab894f32d9a4",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "63a5cc3a1b0bc1c7bce779e3f04f0214c2b9733187450947c3e443c856a31684"
+    "previewHash": "d9630bf443723084ead370aa8ae23f077437c7ed47b71677690b55d89f158aad"
   },
   "playfair-display": {
     "source": "/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2",
     "sourceHash": "447ef186d2e95471cf6f531ba2be784fbb725b10054e3a95447696f6cb3acb97",
-    "text": "Playfair Display\nClaus Eggers Sørensen",
+    "text": "Playfair Display",
     "cssHash": "de3d0b8f979cea6f62d640f2d53cb280dc9bad74abb60c0a64a079ecd974d604",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "da5163817c0eb87a7f8f8618a16f7cb5a26c445464f9879f7a822a14d97da4fe"
+    "previewHash": "011cf867a682cb6699c3ba9258fd6a59be270a056b2c00be71f126d471cd5339"
   },
   "poppins": {
     "source": "/assets/fonts/poppins/Poppins-Regular.woff2",
     "sourceHash": "9384e96b2e3c51f1d3a7750b7ede558706cb873de6277bb94a44904d088f913b",
-    "text": "Poppins\nIndian Type Foundry",
+    "text": "Poppins",
     "cssHash": "c090e9001c5b0dd56c4dd011ebb1dcc305ee4a821605bf12efbfa629ac9bb441",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "16133138c18b6f0c4c99601d4e5c54d37d90fd66ec480efb8bf9fd82f7bdee92"
+    "previewHash": "41db96191d09d210eb8828c51bc0ce33371188804f04923f151418013a191882"
   },
   "roboto": {
     "source": "/assets/fonts/roboto/Roboto.woff2",
     "sourceHash": "3ca486650a56fb8a74f9bc591a6b830b507789f0d7389df1d382a1346450504c",
-    "text": "Roboto\nChristian Robertson",
+    "text": "Roboto",
     "cssHash": "d2c23c99d942c64a371d19e6124a6141599380effa16656630173b8ce0c7739f",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "8ae0e6a6446beaff5b0466a06fb6214bbd7be285d4ec596308cd06f96569101d"
+    "previewHash": "86dd8e8d5b8d6893e10700c2351d79a1e410723802adeb1cd375961da7f3f3ea"
   },
   "schibsted-grotesk": {
     "source": "/assets/fonts/schibsted-grotesk/SchibstedGrotesk.woff2",
     "sourceHash": "8b77a34cdd59455aa3434e949597e99346204d40357905fd918df20ed1139ac1",
-    "text": "Schibsted Grotesk\nBakken & Bæck",
+    "text": "Schibsted Grotesk",
     "cssHash": "ffb17bf54989ee650e31cb7f8310b3cb5aff329f6b1c9f8fa9cb37e2dd4f1333",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "426075acab20f8a2be838e3c68d9d780365e87a684d41b5715d01454c314c195"
+    "previewHash": "458a65f14e60685d65ac50756a4228c49478d18463b32946ffa2d4fe8d3da8b6"
   },
   "source-code-pro": {
     "source": "/assets/fonts/source-code-pro/SourceCodeVF-Upright.ttf.woff2",
     "sourceHash": "d95dc751b4d82141259f5c00c9838addaadd3b4eac30dd7db4a0da4921d77792",
-    "text": "Source Code Pro\nPaul D. Hunt",
+    "text": "Source Code Pro",
     "cssHash": "3a8e20e06abcb39307a4050ca9cc4446d79a3342e3247a2d23dedfb9cd50536e",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "008947ee180dff5f40751ef22f89d38d0820f297e767dc53eb37372ef2418e9e"
+    "previewHash": "3796250a1e17a9af7197a9ee877a20f1b626cd34974a69f41417461214bddca3"
   },
   "source-sans-pro": {
     "source": "/assets/fonts/source-sans-pro/SourceSansVariable-Roman.ttf.woff2",
     "sourceHash": "5f16566f7a40d39b339ad26be151fa5a1ab1f0c2574c7a2e619765584a1acbd8",
-    "text": "Source Sans Pro\nPaul D. Hunt",
+    "text": "Source Sans Pro",
     "cssHash": "448a4a1530afa4a84e31b03c5d31ad612f687c30775bb4658d0a123f998bb961",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "47351419a44bb8920239e26c6e58409b371cf8dd9b96f0ec485dada577d53aa3"
+    "previewHash": "4a5f51ba14a81e7835d01b18fdf5dbcab05b9a493ed461fa9f4129906bf70090"
   },
   "source-serif-pro": {
     "source": "/assets/fonts/source-serif-pro/SourceSerifVariable-Roman.ttf.woff2",
     "sourceHash": "940a76eda1388de39d38c8e7a79bf6ea058a387faee0a9f33c8d25c6ba05e1be",
-    "text": "Source Serif Pro\nFrank Grießhammer",
+    "text": "Source Serif Pro",
     "cssHash": "59e37dd127ed127bb3f22f3847f637bc920cc4df97063e8fef37465ab31ca8d2",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "8a447e044b601cef3e5d86aca26322f70e913a7b680e9c2a798bcc0ed01a8359"
+    "previewHash": "9ee7ae9141724db60bc79413d6e804a4370478eb857284c4631c6c57e66fbb3a"
   },
   "space-grotesk": {
     "source": "/assets/fonts/space-grotesk/SpaceGroteskVariable.woff2",
     "sourceHash": "8e085aa438094f11487a836652edd5c054fa6a96f63fc7c282105ee3a4b08c07",
-    "text": "Space Grotesk\nFlorian Karsten",
+    "text": "Space Grotesk",
     "cssHash": "480a0687c66626b41d334c0d1a809499e41401a791743b1a84ae4ea5990e658e",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "bfdb45b554802a986b70ca22ce0eb58dbcade466ba6c206212ac5fa7522e3221"
+    "previewHash": "26f9a4ae1c96d543e2ffce1cffb9ea4f9de452fadfd9cb9c260bce7d4900d72b"
   },
   "space-mono": {
     "source": "/assets/fonts/space-mono/spacemono-regular.woff2",
     "sourceHash": "2778932c066141cec4f3882708ea24a8d9a197b7f418d28951473561700d0320",
-    "text": "Space Mono\nColophon Foundry",
+    "text": "Space Mono",
     "cssHash": "d912759e8210b100fd8d9feb410a4b9a54a8aa831062a257dc5cad0a9fb055c9",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "d528ccf398f3969b8d8068cdeb0ce79dab4242a74ca1fd3e569ceb85998a496a"
+    "previewHash": "b44b45561da6ed4110b728601bda6f8986247961837e8647ad30eaeb70938f90"
   },
   "strichpunkt-sans": {
     "source": "/assets/fonts/strichpunkt-sans/StrichpunktSans.woff2",
     "sourceHash": "36e2c0772aacf6e2ff351b085d396c000151e1c7c3a4cda917ce804988988ce4",
-    "text": "Strichpunkt Sans\nRené Bieder",
+    "text": "Strichpunkt Sans",
     "cssHash": "8622995026e0e1e54ecacbe90daeeb2329a39324c67b2e73321de5a6aac36357",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "86a8cf6b262f4c5b3d884e9ee18586c4bf994f259cf94a462e8bee023e9ac935"
+    "previewHash": "be800f2e331c6a43f911fd5cf793de1bac4a0a24770a7dbe5cb90b59c9d85180"
   },
   "tasa-orbiter": {
     "source": "/assets/fonts/tasa-orbiter/TASAOrbiter[wght].woff2",
     "sourceHash": "3011d92f4591213e3772723eb5a3a542318e842fc0c5d2e6e22e43bbb3a1d1e8",
-    "text": "TASA Orbiter\nLocal Remote",
+    "text": "TASA Orbiter",
     "cssHash": "e82aafd301d02988693544a75ba1bbaa5875a5530794584a8ed32e9b4213e4f2",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "ca70d383b9e3da1be7fdbbd091c2bd9cabe7da6cc2b86c2f65a092936dd0c33d"
+    "previewHash": "d674f8c9f4934737eb9a6fa871d2480b58dc3450796589d3e4a2442aa44ab23f"
   },
   "tiktok-sans": {
     "source": "/assets/fonts/tiktok-sans/TikTokSans.woff2",
     "sourceHash": "18a0fb1c1a097f94f254df1a97ac16ea2e5ebc0cf2eb70c9445450f43394e406",
-    "text": "TikTok Sans\nGrilli Type, Contrast Foundry & Type Network",
+    "text": "TikTok Sans",
     "cssHash": "a4e9474c890c6fae8c724a88dcb6e36831acf8b196265ffdc0d9c16b801e324a",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "d93f5e5b59d15fec9c99219d05768ce157ce167d3266b458e104c8ac10a5a890"
+    "previewHash": "4168908aef5925046b9229701aa7ed727867ca39b1d50581f621de3405905a9f"
   },
   "vollkorn": {
     "source": "/assets/fonts/vollkorn/Vollkorn-Regular.woff2",
     "sourceHash": "72ebe7620922853ac5857eeb1af7bc7aaeb3e49e138f5ff473388cc28cdf90ae",
-    "text": "Vollkorn\nFriedrich Althausen",
+    "text": "Vollkorn",
     "cssHash": "a62086d207b86054a2f3ff1b9964fdd41c264544b596d4959a1272082866a17a",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "bad07408120341ba572a008b44897027123e1c390512b824ffe4ae8b85ffe20e"
+    "previewHash": "d0142dcb9e196651624da91b27e4f0c6f15392abd30ff84ed60842324e9a1306"
   },
   "work-sans": {
     "source": "/assets/fonts/work-sans/WorkSans-Variable.woff2",
     "sourceHash": "0a03a78af805dfe820fa992e480de2a89b8ae77b1fd586e4a00aed3a8dee90b7",
-    "text": "Work Sans\nWei Huang",
+    "text": "Work Sans",
     "cssHash": "dd6e1bb1ad6365b91bfb88e40b68bb9057b748377155d81efe5984aa75c08263",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "4dbe64930b3945051865794bbf4c94fad8978d0fe19a4a7611ccb19e7a81f05a"
+    "previewHash": "15c0cd46f20517dd14f6f4abcd240d4df88fa8ed503ac38165e886d7341a79c9"
   },
   "zalando-sans": {
     "source": "/assets/fonts/zalando-sans/ZalandoSans.woff2",
     "sourceHash": "1fa18e9bd7c124ac643a9aeaea04afc9f39062e2542c055a547ca88fb947a974",
-    "text": "Zalando Sans\nJakob Ekelund · KH Type",
+    "text": "Zalando Sans",
     "cssHash": "cd69b2901fe4f6b7f0ae7b78e59b2f5008693460a51c1331705c6abe8ce3ded6",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "5077b0c1345235c0d3ba0eb787d82e6688f738c223cc113b19643e6f3744ad7f"
+    "previewHash": "e62d6544d5f86e93fdfbe376e0d869608b555cba162cb732c3c8f1f815f4d330"
   },
   "zilla-slab": {
     "source": "/assets/fonts/zilla-slab/ZillaSlab-Regular.woff2",
     "sourceHash": "d4c6ee7e08de94a78ace746beecd21427a0c569890f63beca946bd7fcca0960c",
-    "text": "Zilla Slab\nTypotheque",
+    "text": "Zilla Slab",
     "cssHash": "3e92fcdaf0e0fce773868437f7f70ba5e00507f26ae33d8041171967883bef90",
-    "generatorHash": "ac3d71d1bbc5975e6c022cc299991bcaa27d7969e1370a0d78476b10c0d0a15b",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
     "toolVersion": "4.60.2",
-    "previewHash": "c2353bfb230450a772325485ab21eb965e6cadd499933dfaa3108e31424caab9"
+    "previewHash": "78157ca2faebe20bfb0b8b561df55c54b5022c662077d936c50cbb0f292959d0"
   }
 }

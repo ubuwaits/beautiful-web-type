@@ -26,7 +26,7 @@ export function FittedSpecimenText({ typeface, showCreator = true, fontFamily, d
       if (entry.isIntersecting) {
         observer.disconnect();
         const loaded = fontFamily
-          ? document.fonts.load(`400 160px ${fontFamily}`, `${typeface.name} ${typeface.creator.name}`)
+          ? document.fonts.load(`400 160px ${fontFamily}`, typeface.name)
           : Promise.resolve([]);
         void loaded.catch(() => []).then(() => {
           if (!cancelled) setActivated(true);
@@ -39,7 +39,7 @@ export function FittedSpecimenText({ typeface, showCreator = true, fontFamily, d
       cancelled = true;
       observer.disconnect();
     };
-  }, [ready, fontFamily, typeface.name, typeface.creator.name]);
+  }, [ready, fontFamily, typeface.name]);
   const fit = useCallback((stage: HTMLDivElement) => {
     const text = textRef.current;
     if (!text || !text.offsetWidth || !text.offsetHeight) return;
