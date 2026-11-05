@@ -134,7 +134,7 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
               <div className="pt-0 pb-1 text-[1.375rem] leading-6 tabular-nums">24</div>
             </div>
             <div className="min-w-0">
-              <h3 tabIndex={-1} className="mb-0 text-[1.375rem] leading-tight tracking-tight outline-none">Design review</h3>
+              <h3 tabIndex={-1} className="mb-0 text-[1.375rem] leading-tight tracking-normal outline-none">Design review</h3>
               <p className={`${muted} text-sm leading-5 tabular-nums`}>10:30–11:15</p>
             </div>
           </div>
