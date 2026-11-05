@@ -1,3 +1,19 @@
+# Retired sections and typefaces, including their old glyph pages.
+/biorhyme / 301
+/biorhyme/* / 301
+/biorhyme-expanded / 301
+/biorhyme-expanded/* / 301
+/jost / 301
+/jost/* / 301
+/manrope / 301
+/manrope/* / 301
+/monospace /monospaced/ 301
+/monospace/ /monospaced/ 301
+/pairings / 301
+/pairings/* / 301
+/rakkas / 301
+/rakkas/* / 301
+
 # Glyph explorers now live on the typeface pages.
-/:typeface/glyphs/ /:typeface/#glyphs 301
 /:typeface/glyphs /:typeface/#glyphs 301
+/:typeface/glyphs/ /:typeface/#glyphs 301
