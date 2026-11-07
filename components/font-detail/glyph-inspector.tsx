@@ -15,7 +15,7 @@ function formatCssEscape(unicode: number): string {
   return `\\${unicode.toString(16).toUpperCase().padStart(4, "0")}`;
 }
 
-function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showGuides = false) {
+function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showGuides = false, outline = false) {
   const ratio = window.devicePixelRatio || 1;
   canvas.width = Math.round(width * ratio);
   canvas.height = Math.round(height * ratio);
@@ -55,8 +55,22 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
     context.restore();
   }
   const path = glyph.getPath(x, baseline, scale * font.unitsPerEm);
-  path.fill = ink;
+  path.fill = outline ? null : ink;
+  if (outline) {
+    path.stroke = ink;
+    path.strokeWidth = 1.25;
+  }
   path.draw(context);
+  if (outline) {
+    context.beginPath();
+    for (const command of path.commands) {
+      if (command.type !== "Z") {
+        context.rect(command.x - 2, command.y - 2, 4, 4);
+      }
+    }
+    context.lineWidth = 1;
+    context.stroke();
+  }
   return baseline;
 }
 
@@ -109,6 +123,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
   const [scriptReady, setScriptReady] = useState(false);
   const [font, setFont] = useState<Font | null>(null);
   const [selectedGlyph, setSelectedGlyph] = useState<Glyph | null>(null);
+  const [outline, setOutline] = useState(false);
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -151,7 +166,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     if (!font || !selectedGlyph || !canvas || !parent) return;
     const draw = () => {
       const width = parent.clientWidth;
-      const baseline = drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, getComputedStyle(canvas).color, true);
+      const baseline = drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, getComputedStyle(canvas).color, true, outline);
       const table = infoTableRef.current;
       const marker = infoBaselineRef.current;
       if (table && marker && baseline !== undefined) {
@@ -170,7 +185,7 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       observer.disconnect();
       themeObserver.disconnect();
     };
-  }, [font, selectedGlyph]);
+  }, [font, selectedGlyph, outline]);
 
   useEffect(() => {
     const grid = glyphGridRef.current;
@@ -297,9 +312,17 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
       {error ? <p role="alert">The font could not be loaded. Reload the page to try again.</p> : null}
       <div className="grid grid-cols-1 items-start gap-(--gutter) min-[721px]:grid-cols-12">
         <div className="sticky top-16 z-10 grid max-h-[calc(100dvh-6rem)] min-[721px]:top-20 min-[721px]:max-h-[calc(100dvh-7rem)] grid-cols-2 items-start gap-x-4 min-[721px]:gap-x-0 overflow-y-auto bg-white/95 backdrop-blur-[2px] dark:bg-neutral-950/95 min-[721px]:bg-white min-[721px]:backdrop-blur-none min-[721px]:dark:bg-neutral-950 min-[721px]:col-span-3 min-[721px]:block" id="glyph-detail">
-          <div className="min-w-0 pt-(--glyph-preview-offset) min-[721px]:pt-0">
+          <button
+            type="button"
+            className="block w-full min-w-0 cursor-pointer pt-(--glyph-preview-offset) focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-neutral-500 disabled:cursor-default min-[721px]:pt-0"
+            aria-label="Glyph outline"
+            aria-pressed={outline}
+            title={outline ? "Show filled glyph" : "Show glyph outline"}
+            disabled={!selectedGlyph}
+            onClick={() => setOutline((current) => !current)}
+          >
             <canvas className="block h-auto w-full" id="glyph-detail-canvas" ref={detailCanvasRef} aria-label={selectedGlyph ? `Preview of glyph ${selectedGlyph.index}` : "Selected glyph preview"} />
-          </div>
+          </button>
           <table className="w-full min-w-0 self-start translate-y-(--glyph-info-offset) min-[721px]:translate-y-0 table-fixed border-collapse [&_tr:first-child>*]:pt-0 [&_tr:last-child>*]:pb-0 text-xs leading-6 min-[721px]:text-sm" id="glyph-info" ref={infoTableRef}>
             <caption className="sr-only">Selected glyph details</caption>
             <tbody>

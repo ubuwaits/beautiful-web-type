@@ -8,7 +8,16 @@ export type Glyph = {
     x: number,
     y: number,
     fontSize: number
-  ) => { fill: string; draw: (context: CanvasRenderingContext2D) => void };
+  ) => {
+    commands: readonly (
+      | { type: "M" | "L" | "Q" | "C"; x: number; y: number }
+      | { type: "Z" }
+    )[];
+    fill: string | null;
+    stroke?: string;
+    strokeWidth?: number;
+    draw: (context: CanvasRenderingContext2D) => void;
+  };
 };
 
 export type Font = {
