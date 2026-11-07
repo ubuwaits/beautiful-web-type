@@ -136,6 +136,14 @@ test("uses preview subsets on indexes and full fonts for specimens", async ({ pa
   for (const route of ["/", "/sans-serif/", "/serif/", "/display/", "/monospaced/"]) {
     await page.goto(route);
     await expectWithinViewport(page);
+    const firstSix = await page.getByTestId("typeface-card").evaluateAll((cards) =>
+      cards.slice(0, 6).map((card) => {
+        const slug = card.querySelector("a")!.pathname.split("/")[1];
+        return `/assets/font-previews/${slug}.woff2`;
+      })
+    );
+    const preloads = page.locator('head link[rel="preload"][as="font"][href^="/assets/font-previews/"]');
+    expect(await preloads.evaluateAll((links) => links.map((link) => link.getAttribute("href")))).toEqual(firstSix);
     const loadedFamilies = await page.evaluate(() => Array.from(document.fonts)
       .filter((face) => face.status === "loaded").map((face) => face.family.replace(/["']/g, "")));
     expect(loadedFamilies.some((family) => family.startsWith("BWT Preview "))).toBe(true);
@@ -146,6 +154,31 @@ test("uses preview subsets on indexes and full fonts for specimens", async ({ pa
   await expect(page.locator("#overview h1")).toHaveCSS("font-family", /Inter/);
   expect(await page.evaluate(() => Array.from(document.fonts)
     .some((face) => face.status === "loaded" && face.family.includes("Inter")))).toBe(true);
+});
+
+test("reveals the first card title only after its preview font is loaded and fitted", async ({ page }) => {
+  let releaseFont!: () => void;
+  const blocked = new Promise<void>((resolve) => { releaseFont = resolve; });
+  await page.route("**/assets/font-previews/*.woff2", async (route) => {
+    await blocked;
+    await route.continue();
+  });
+
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  const card = page.getByTestId("typeface-card").first();
+  const title = card.locator("[data-font-preview]");
+  try {
+    await expect(title).toHaveCSS("opacity", "0");
+    await expect(card.locator("p")).toBeVisible();
+  } finally {
+    releaseFont();
+  }
+  await expect(title).toHaveCSS("opacity", "1");
+  expect(await title.evaluate((element) => {
+    const style = getComputedStyle(element);
+    return document.fonts.check(`400 160px ${style.fontFamily}`, element.textContent ?? "")
+      && Number.parseFloat(style.getPropertyValue("--specimen-scale")) > 0;
+  })).toBe(true);
 });
 
 test("activates a distant card's preview font when it receives keyboard focus", async ({ page }) => {
