@@ -15,7 +15,21 @@ function formatCssEscape(unicode: number): string {
   return `\\${unicode.toString(16).toUpperCase().padStart(4, "0")}`;
 }
 
-function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showGuides = false, outline = false) {
+const widestGlyphByFont = new WeakMap<Font, number>();
+
+function widestGlyph(font: Font) {
+  const cached = widestGlyphByFont.get(font);
+  if (cached !== undefined) return cached;
+  let widest = 0;
+  for (let index = 0; index < font.numGlyphs; index++) {
+    const { x1, x2 } = font.glyphs.get(index).getBoundingBox();
+    widest = Math.max(widest, x2 - x1);
+  }
+  widestGlyphByFont.set(font, widest);
+  return widest;
+}
+
+function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: number, height: number, ink: string, showGuides = false, outline = false, largerPreview = false) {
   const ratio = window.devicePixelRatio || 1;
   canvas.width = Math.round(width * ratio);
   canvas.height = Math.round(height * ratio);
@@ -26,9 +40,16 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
   const head = font.tables.head;
   const maxHeight = head.yMax - head.yMin;
   const maxWidth = head.xMax - head.xMin;
-  const scale = Math.min(width / maxWidth, height / maxHeight);
+  const baseScale = Math.min(width / maxWidth, height / maxHeight);
+  const scale = largerPreview && width > 16 && height > 28
+    ? Math.max(baseScale, Math.min(baseScale * 1.4, (width - 16) / widestGlyph(font), (height - 28) / maxHeight))
+    : baseScale;
   const baseline = (height - maxHeight * scale) / 2 + head.yMax * scale;
-  const x = (width - glyph.advanceWidth * scale) / 2;
+  let x = (width - glyph.advanceWidth * scale) / 2;
+  if (largerPreview) {
+    const { x1, x2 } = glyph.getBoundingBox();
+    if (x2 > x1) x = (width - (x1 + x2) * scale) / 2;
+  }
   if (showGuides) {
     const metrics = font.tables.os2;
     const guides = [
@@ -59,6 +80,38 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
   if (outline) {
     path.stroke = ink;
     path.strokeWidth = 1.25;
+
+    context.save();
+    context.strokeStyle = ink;
+    context.lineWidth = 1;
+    context.globalAlpha = 0.55;
+    context.beginPath();
+    let previous: { x: number; y: number } | undefined;
+    for (const command of path.commands) {
+      if (command.type === "Z") {
+        previous = undefined;
+        continue;
+      }
+      if (previous && (command.type === "Q" || command.type === "C")) {
+        const { x, y, x1, y1 } = command;
+        context.moveTo(previous.x, previous.y);
+        context.lineTo(x1, y1);
+        context.moveTo(x1 + 1.5, y1);
+        context.arc(x1, y1, 1.5, 0, Math.PI * 2);
+        if (command.type === "Q") {
+          context.moveTo(x, y);
+          context.lineTo(x1, y1);
+        } else {
+          context.moveTo(x, y);
+          context.lineTo(command.x2, command.y2);
+          context.moveTo(command.x2 + 1.5, command.y2);
+          context.arc(command.x2, command.y2, 1.5, 0, Math.PI * 2);
+        }
+      }
+      previous = command;
+    }
+    context.stroke();
+    context.restore();
   }
   path.draw(context);
   if (outline) {
@@ -166,7 +219,8 @@ export function GlyphInspector({ fontFile, typefaceName }: GlyphInspectorProps) 
     if (!font || !selectedGlyph || !canvas || !parent) return;
     const draw = () => {
       const width = parent.clientWidth;
-      const baseline = drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, getComputedStyle(canvas).color, true, outline);
+      const largerPreview = window.matchMedia("(min-width: 1105px)").matches;
+      const baseline = drawGlyph(canvas, font, selectedGlyph, width, width * 0.8, getComputedStyle(canvas).color, true, outline, largerPreview);
       const table = infoTableRef.current;
       const marker = infoBaselineRef.current;
       if (table && marker && baseline !== undefined) {

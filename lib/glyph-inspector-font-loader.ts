@@ -4,13 +4,16 @@ export type Glyph = {
   unicodes: number[];
   name?: string;
   advanceWidth: number;
+  getBoundingBox: () => { x1: number; y1: number; x2: number; y2: number };
   getPath: (
     x: number,
     y: number,
     fontSize: number
   ) => {
     commands: readonly (
-      | { type: "M" | "L" | "Q" | "C"; x: number; y: number }
+      | { type: "M" | "L"; x: number; y: number }
+      | { type: "Q"; x: number; y: number; x1: number; y1: number }
+      | { type: "C"; x: number; y: number; x1: number; y1: number; x2: number; y2: number }
       | { type: "Z" }
     )[];
     fill: string | null;
