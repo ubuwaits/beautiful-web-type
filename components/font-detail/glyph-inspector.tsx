@@ -59,19 +59,29 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
     ];
     context.save();
     context.fillStyle = ink;
+    context.strokeStyle = ink;
+    context.lineCap = "round";
+    context.setLineDash([0, 4]);
     context.font = `10px ${getComputedStyle(canvas).getPropertyValue("--ui-monospaced") || "monospace"}`;
-    context.textBaseline = "bottom";
     for (const { label, value } of guides) {
       if (value === undefined || !Number.isFinite(value) || (label !== "baseline" && value <= 0)) continue;
       const y = baseline - value * scale;
       context.globalAlpha = 0.18;
-      context.fillRect(0, y, width, 1);
+      context.beginPath();
+      context.moveTo(0, y);
+      context.lineTo(width, y);
+      context.stroke();
       context.globalAlpha = 0.5;
       const closeToCapHeight = label === "x-height" && metrics?.sCapHeight !== undefined
         && Math.abs(metrics.sCapHeight - value) * scale < 14;
-      context.textAlign = closeToCapHeight ? "right" : "left";
       context.textBaseline = closeToCapHeight ? "top" : "bottom";
-      context.fillText(label, closeToCapHeight ? width : 0, y + (closeToCapHeight ? 4 : -3));
+      const textY = y + (closeToCapHeight ? 4 : -3);
+      context.textAlign = "left";
+      context.fillText(label, 0, textY);
+      if (label !== "baseline") {
+        context.textAlign = "right";
+        context.fillText(String(value), width, textY);
+      }
     }
     context.restore();
   }
