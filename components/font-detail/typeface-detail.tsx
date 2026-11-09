@@ -94,7 +94,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
         <div className="layout-grid mb-(--section-gap) scroll-mt-20 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
           <section className="col-span-12 flex min-h-56 flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-112 min-[721px]:py-8">
             <div className="h-48 w-full [--sample-fit-width:0.75] min-[721px]:h-88 max-[720px]:[--sample-fit-height:0.9] max-[1104px]:[--sample-fit-width:0.9]">
-              <FittedSpecimenText typeface={{ slug: typeface.slug, name: typeface.name, creator: { name: typeface.creator.name } }} showCreator={false} />
+              <FittedSpecimenText typeface={{ slug: typeface.slug, name: typeface.name }} />
             </div>
           </section>
 

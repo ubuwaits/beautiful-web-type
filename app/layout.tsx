@@ -37,6 +37,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" className="font-[initial] leading-[1.15] scheme-light dark:scheme-dark [--gutter:1em] min-[1105px]:[--gutter:2em]" suppressHydrationWarning>
       <head>
         <FontPreloads />
+        <script src="/assets/font-preview-fit.js" defer />
         <script id="bwt-theme-init" dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <link
           href="/feed.xml"
