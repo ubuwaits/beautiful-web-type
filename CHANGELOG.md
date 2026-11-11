@@ -1,5 +1,9 @@
 # Changelog
 
+## 11 Nov 2026
+
+* **Added [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/)** by Daniel Benjamin Miller.
+
 ## 4 Nov 2026
 
 * Removed BioRhyme, BioRhyme Expanded, and Rakkas from the collection.
