@@ -49,6 +49,8 @@ def build_preview(source, target, slug, text):
         options = subset.Options()
         options.name_IDs = ["*"]  # Preserve copyright, license, and axis metadata.
         options.name_languages = ["*"]
+        if slug == "commit-mono":
+            options.layout_features.append("ss05")  # Smart Kerning on catalog cards.
         subsetter = subset.Subsetter(options=options)
         subsetter.populate(text=text)
         subsetter.subset(font)

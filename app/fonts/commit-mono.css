@@ -6,6 +6,21 @@
   font-family: var(--commit-mono) !important;
 }
 
+@font-feature-values "Commit Mono", "BWT Preview commit-mono" {
+  @styleset {
+    smart-kerning: 5;
+  }
+}
+
+.commit-mono,
+[data-font-preview="commit-mono"] {
+  font-variant-alternates: styleset(smart-kerning);
+}
+
+.commit-mono #tester {
+  font-variant-alternates: normal;
+}
+
 @font-face {
   font-family: "Commit Mono";
   font-style: normal;

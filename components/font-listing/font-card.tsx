@@ -26,7 +26,7 @@ export function FontCard({ typeface, eager = false }: FontCardProps) {
             <div className="absolute inset-x-0 bottom-[40%] flex h-0 items-end justify-center min-[721px]:bottom-[35%]">
               <div
                 className="w-max shrink-0 text-[10rem] font-normal not-italic leading-none [font-family:var(--specimen-font,inherit)] origin-bottom [transform:scale(var(--specimen-scale,1))] opacity-[var(--specimen-title-opacity,0)]"
-                data-font-preview
+                data-font-preview={typeface.slug}
               >
                 <h1 className="m-0 whitespace-nowrap text-[1em] font-normal not-italic leading-[1.1] [text-box-trim:trim-end] [text-box-edge:cap_alphabetic]">
                   {typeface.name}
