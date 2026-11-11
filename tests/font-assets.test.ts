@@ -85,9 +85,9 @@ describe("font asset references", () => {
     const hashFile = (file: string) => createHash("sha256").update(readFileSync(file)).digest("hex");
     const generatorHash = hashFile("scripts/prepare-font-previews.py");
     expect(Object.keys(manifest).sort()).toEqual(typefaceData.map((font) => font.slug).sort());
-    for (const { slug, name, creator } of typefaceData) {
+    for (const { slug, name } of typefaceData) {
       const preview = manifest[slug];
-      expect(preview.text, slug).toBe(`${name}\n${creator.name}`);
+      expect(preview.text, slug).toBe(name);
       expect(preview.generatorHash, slug).toBe(generatorHash);
       expect(preview.source, slug).toMatch(/^\/assets\/fonts\//);
       expect(preview.sourceHash, slug).toBe(hashFile(path.join("public", preview.source)));
