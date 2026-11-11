@@ -13,48 +13,11 @@ const TEXT_CLASSES = {
   tableValue: "font-medium text-[length:var(--website-size,14px)] leading-5 [font-feature-settings:'lnum'_1,'tnum'_1] min-[1105px]:text-[length:var(--website-desktop-size,var(--website-size,14px))]",
 } satisfies Record<keyof WebsiteTypography, string>;
 
-const CASE_STUDIES = [
-  {
-    place: "01 / Peckham, London",
-    title: "Almond Yard",
-    description: "A tiled shopfront becomes a neighbourhood kitchen, with a shared table where the counter used to be and a courtyard open for Sunday lunch.",
-    area: "128 m²",
-    added: "24 m²",
-    retained: "86%",
-    duration: "26 weeks"
-  },
-  {
-    place: "02 / Kelham Island, Sheffield",
-    title: "Rutland Works",
-    description: "A former cutlery workshop makes room for a ceramicist, a frame maker, and a bicycle repair shop. New partitions stop below the original roof trusses.",
-    area: "640 m²",
-    added: "48 m²",
-    retained: "94%",
-    duration: "38 weeks"
-  },
-  {
-    place: "03 / Stokes Croft, Bristol",
-    title: "Picton House",
-    description: "Two empty floors above a corner shop become six compact homes. A new stair brings daylight into the centre; the shop keeps trading throughout.",
-    area: "312 m²",
-    added: "0 m²",
-    retained: "91%",
-    duration: "32 weeks"
-  },
-  {
-    place: "04 / Cliftonville, Margate",
-    title: "The Westbury",
-    description: "An empty cinema finds its second act as a rehearsal room and evening venue. The curved balcony remains, along with the ticket window on the street.",
-    area: "875 m²",
-    added: "36 m²",
-    retained: "97%",
-    duration: "44 weeks"
-  }
-];
-
 export function WebsiteHeroSpecimen({ typography = {} }: { typography?: WebsiteTypography }) {
   const text = (role: keyof WebsiteTypography) => websiteTextStyle(typography[role]);
   const muted = "text-neutral-500 dark:text-neutral-400";
+  const prose = "flex min-w-0 flex-col gap-4 font-normal text-[length:var(--website-size,14px)] leading-6 min-[1105px]:justify-between min-[1105px]:text-[length:var(--website-desktop-size,14px)] min-[1280px]:text-[length:var(--website-desktop-size,16px)] min-[1280px]:leading-7";
+  const trimToBaseline = "min-[1105px]:[text-box-trim:trim-end] min-[1105px]:[text-box-edge:cap_alphabetic]";
 
   return (
     <section id="website-hero" aria-label="Website hero specimen" className="@container mb-(--section-gap) scroll-mt-20" style={{ fontSynthesis: "none", fontStyle: "normal", fontFeatureSettings: "normal", fontVariationSettings: "normal", fontOpticalSizing: "auto" }}>
@@ -80,26 +43,46 @@ export function WebsiteHeroSpecimen({ typography = {} }: { typography?: WebsiteT
           </div>
         </div>
 
-        <section aria-label="Case studies" className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 min-[721px]:mt-10 min-[721px]:grid-cols-2 min-[1105px]:grid-cols-4">
-          {CASE_STUDIES.map((study) => (
-            <article key={study.title} data-case-study="" className="row-span-4 grid min-w-0 grid-rows-subgrid border-t border-neutral-200 pt-4 dark:border-neutral-700">
-              <p className={`${muted} ${TEXT_CLASSES.caseLocation}`} data-web-text="caseLocation" style={text("caseLocation")}>{study.place}</p>
-              <h4 className={TEXT_CLASSES.caseTitle} data-web-text="caseTitle" style={text("caseTitle")}>{study.title}</h4>
-              <p className={TEXT_CLASSES.caseBody} data-web-text="caseBody" style={text("caseBody")}>{study.description}</p>
-              <table className="w-full border-collapse self-start">
-                <caption className="sr-only">{study.title} project data</caption>
-                <tbody>
-                  {[["Existing area", study.area], ["Added area", study.added], ["Structure kept", study.retained], ["On site", study.duration]].map(([label, value]) => (
-                    <tr key={label} className="border-b border-neutral-200 last:border-0 dark:border-neutral-800">
-                      <th scope="row" className={`${muted} ${TEXT_CLASSES.tableLabel} py-2 pr-3 text-left align-baseline`} data-web-text="tableLabel" style={text("tableLabel")}>{label}</th>
-                      <td className={`${TEXT_CLASSES.tableValue} py-2 text-right align-baseline whitespace-nowrap`} data-web-text="tableValue" style={text("tableValue")}>{value}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </article>
-          ))}
-        </section>
+        <article aria-labelledby="almond-yard-title" data-case-study="" className="mt-6 grid gap-x-8 gap-y-8 min-[721px]:mt-10 min-[721px]:grid-cols-12">
+          <div className="flex min-w-0 flex-col gap-4 border-t border-neutral-200 pt-4 dark:border-neutral-700 min-[721px]:col-span-4 min-[1105px]:col-span-3">
+            <p className={`${muted} ${TEXT_CLASSES.caseLocation}`} data-web-text="caseLocation" style={text("caseLocation")}>01 / Peckham, London</p>
+            <h4 id="almond-yard-title" className={TEXT_CLASSES.caseTitle} data-web-text="caseTitle" style={text("caseTitle")}>Almond Yard</h4>
+            <p className={TEXT_CLASSES.caseBody} data-web-text="caseBody" style={text("caseBody")}>A tiled shopfront becomes a neighbourhood kitchen, with a shared table where the counter used to be and a courtyard open for Sunday lunch.</p>
+            <table className="w-full border-collapse min-[1105px]:mt-auto">
+              <caption className="sr-only">Almond Yard project data</caption>
+              <tbody>
+                {[["Existing area", "128 m²"], ["Added area", "24 m²"], ["Structure kept", "86%"], ["On site", "26 weeks"]].map(([label, value]) => (
+                  <tr key={label} className="group border-b border-neutral-200 last:border-0 dark:border-neutral-800 min-[1105px]:last:[&>*]:pb-0">
+                    <th scope="row" className={`${muted} ${TEXT_CLASSES.tableLabel} py-2 pr-3 text-left align-baseline`} data-web-text="tableLabel" style={text("tableLabel")}>
+                      <span className="block min-[1105px]:group-last:[text-box-trim:trim-end] min-[1105px]:group-last:[text-box-edge:cap_alphabetic]">{label}</span>
+                    </th>
+                    <td className={`${TEXT_CLASSES.tableValue} py-2 text-right align-baseline whitespace-nowrap`} data-web-text="tableValue" style={text("tableValue")}>
+                      <span className="block min-[1105px]:group-last:[text-box-trim:trim-end] min-[1105px]:group-last:[text-box-edge:cap_alphabetic]">{value}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="grid min-w-0 gap-x-8 gap-y-5 border-t border-neutral-200 pt-4 dark:border-neutral-700 min-[721px]:col-span-8 min-[1105px]:col-span-9 min-[1105px]:grid-cols-2">
+            <div className={prose} style={text("caseBody")}>
+              <p>The bakery closed in 2019, leaving its tiled shopfront empty for three years. When a neighbourhood cooking group took on the lease, the display counter still ran across the full width of the shop. It was the first thing we took out.</p>
+              <p>Behind it, we kept the tiled walls and timber shelving. The counter’s timber was reworked into a long table, with room for a class to cook at one end while the other is laid for lunch.</p>
+              <p className={trimToBaseline}>We moved the ovens to the party wall and ran the new services behind the shelving. From the pavement, you can still see the full depth of the shop, right through to the doors at the back.</p>
+            </div>
+            <div className={prose} style={text("caseBody")}>
+              <p>At the back, a covered passage leads to the courtyard. On Sundays, the doors fold back and food goes straight from the kitchen to the tables outside. The old bread racks now hold plates and glasses within reach of the door.</p>
+              <p>We laid the courtyard with bricks salvaged from the rear wall. A shallow ramp takes out the step between the kitchen and the yard, so people can move freely between the two and wheel a trolley of dishes outside.</p>
+              <figure>
+                <blockquote className="text-[length:var(--website-size,20px)] leading-snug" style={text("caseTitle")}>
+                  <p>“We set out twelve places for Sunday lunch. By noon we’re usually looking for more chairs.”</p>
+                </blockquote>
+                <figcaption className={`${muted} ${trimToBaseline} mt-2`}>Nadia Lewis, kitchen coordinator</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   );

@@ -14,6 +14,12 @@ function ArrowUpRight({ className }: { className?: string }) {
 
 const muted = "text-neutral-500 dark:text-neutral-400";
 const panel = "min-w-0 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800 min-[721px]:p-6";
+const projectTasks = [
+  { title: "Gather references", detail: "Audit the current site and collect examples." },
+  { title: "Explore a direction", detail: "Sketch the homepage and navigation." },
+  { title: "Review the first draft", detail: "Check the mobile layout with the team." },
+  { title: "Share the final files", detail: "Package the design and handoff notes." },
+];
 
 /** Interface compositions inherit the specimen face, including its actual available weights. */
 export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
@@ -34,44 +40,40 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
       <h2 className="sr-only">Software interfaces</h2>
       <div className="grid grid-cols-12 gap-4 text-sm leading-6 [&_button]:cursor-pointer [&_button]:focus-visible:outline-2 [&_button]:focus-visible:outline-offset-4 [&_button]:focus-visible:outline-neutral-500 min-[1105px]:gap-6 [&_h3]:font-[number:var(--interface-bold)] [&_strong]:font-[number:var(--interface-bold)]">
         <article id="interface-project" className={`${panel} col-span-12 flex flex-col min-[721px]:col-span-6 min-[721px]:row-span-2 min-[1105px]:col-span-4`}>
-          <div className="mb-4 flex items-center justify-between gap-3">
-            <div className="flex -space-x-2" aria-label="Project team: Alex Lee, Morgan Kim, and Jamie Smith">
-              {["AL", "MK", "JS"].map((initials, index) => <span key={initials} className={`flex size-9 items-center justify-center rounded-full border-2 border-white text-[10px] dark:border-neutral-950 ${index === 1 ? "bg-neutral-800 text-neutral-100 dark:bg-neutral-200 dark:text-neutral-900" : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"}`}>{initials}</span>)}
+          <header>
+            <p className={`${muted} mb-2 text-xs tabular-nums`}>Due May 24</p>
+            <h3 tabIndex={-1} className="mb-2 text-[clamp(1.5rem,2.2vw,2rem)] leading-[1.15] outline-none">Website redesign</h3>
+            <p className={`${muted} text-sm leading-5 text-pretty`}>Refresh the studio website for our summer launch, starting with the homepage and mobile navigation.</p>
+          </header>
+          <div className="mt-5">
+            <div className="mb-2 flex flex-wrap justify-between gap-x-3 text-xs">
+              <strong>{completed === projectTasks.length ? "Complete" : "In progress"}</strong>
+              <span className={`${muted} tabular-nums`} aria-live="polite">{completed} of {projectTasks.length} tasks complete</span>
             </div>
-            <span className="rounded-full border border-neutral-200 px-2 text-[10px] tracking-wide dark:border-neutral-700">PRJ–024</span>
+            <div className="flex gap-1.5" role="progressbar" aria-label="Project completion" aria-valuemin={0} aria-valuemax={projectTasks.length} aria-valuenow={completed}>
+              {projectTasks.map(({ title }, index) => <span key={title} className={`h-1 flex-1 rounded-full ${index < completed ? "bg-neutral-800 dark:bg-neutral-200" : "bg-neutral-200 dark:bg-neutral-700"}`} />)}
+            </div>
           </div>
-          <h3 tabIndex={-1} className="mb-2 text-[clamp(1.5rem,2.2vw,2rem)] leading-[1.15] tracking-normal outline-none">Website redesign</h3>
-          <p className={`${muted} mb-5 text-sm leading-6 text-pretty`}>Refresh the studio website for our summer launch. Four tasks, one shared direction.</p>
-          <div className="mb-5 flex items-center justify-between gap-3 border-t border-neutral-200 py-3 dark:border-neutral-800">
-            <span className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-current" /> {completed === 4 ? "Complete" : "In progress"}</span>
-            <span className={muted}>Due May 24</span>
-          </div>
-          <div className="space-y-3">
-            {["Gather references", "Explore a direction", "Review the first draft", "Share the final files"].map((task, index) => (
-              <label className="flex cursor-pointer items-start gap-3" key={task}>
-                <input type="checkbox" checked={tasks[index]} onChange={(event) => setTasks((previous) => previous.map((value, i) => i === index ? event.target.checked : value))} className="peer mt-1 size-4 shrink-0 accent-neutral-900 dark:accent-neutral-100" />
-                <span className="peer-checked:text-neutral-500 peer-checked:line-through dark:peer-checked:text-neutral-400">{task}</span>
-              </label>
+          <ul className="my-4 flex flex-1 flex-col divide-y divide-neutral-200 dark:divide-neutral-800" aria-label="Project tasks">
+            {projectTasks.map(({ title, detail }, index) => (
+              <li key={title} className="flex flex-1 flex-col justify-center">
+                <label className="flex cursor-pointer items-start gap-3 py-2.5">
+                  <input type="checkbox" checked={tasks[index]} onChange={(event) => setTasks((previous) => previous.map((value, i) => i === index ? event.target.checked : value))} className="peer mt-0.5 size-4 shrink-0 accent-neutral-900 dark:accent-neutral-100" />
+                  <span className="min-w-0 peer-checked:[&_strong]:line-through">
+                    <strong className="block text-sm leading-5">{title}</strong>
+                    <span className={`${muted} block text-xs leading-5`}>{detail}</span>
+                  </span>
+                </label>
+              </li>
             ))}
-          </div>
-          <div className="flex flex-1 flex-col justify-center py-5">
-          <div className="rounded-xl border border-neutral-200 p-4 dark:border-neutral-800">
-            <div className="mb-2 flex items-center gap-2.5">
-              <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-neutral-200 text-[10px] dark:bg-neutral-700">MK</span>
-              <span className="text-sm">Morgan Kim</span>
-              <span className={`${muted} ml-auto text-xs`}>2h ago</span>
+          </ul>
+          <footer className="mt-auto border-t border-neutral-200 pt-4 dark:border-neutral-800">
+            <div className="mb-1.5 flex flex-wrap items-baseline justify-between gap-x-3">
+              <strong className="text-sm">Morgan Kim</strong>
+              <span className={`${muted} text-xs`}>2 hours ago</span>
             </div>
-            <p className="mb-3 text-sm leading-5">First concepts are ready for review. Let’s focus on navigation and the mobile layout.</p>
-            <div className="flex items-center gap-2.5 border-t border-neutral-200 pt-3 dark:border-neutral-700">
-              <Icon><path d="M13 3H5v18h14V9l-6-6ZM13 3v6h6M8 13h8M8 17h5" /></Icon>
-              <span className="min-w-0 text-sm leading-5">First concepts.pdf <span className={`${muted} text-xs`}>2.4 MB</span></span>
-            </div>
-          </div>
-          </div>
-          <div>
-            <div className="mb-3 flex justify-between gap-3 text-xs"><span className={muted}>Tasks completed</span><span aria-live="polite">{completed} / 4</span></div>
-            <div className="flex gap-1.5" role="progressbar" aria-label="Project completion" aria-valuemin={0} aria-valuemax={4} aria-valuenow={completed}>{[0, 1, 2, 3].map((i) => <span key={i} className={`h-1 flex-1 rounded-full ${i < completed ? "bg-neutral-800 dark:bg-neutral-200" : "bg-neutral-200 dark:bg-neutral-700"}`} />)}</div>
-          </div>
+            <p className="text-sm leading-5 text-pretty">First concepts are ready. I’d like feedback on whether the new navigation makes the work easier to find.</p>
+          </footer>
         </article>
 
         <article className={`${panel} col-span-12 flex flex-col min-[721px]:col-span-6 min-[1105px]:col-span-5`}>

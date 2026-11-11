@@ -26,7 +26,7 @@ test("combines shared typography defaults with per-font overrides", async ({ pag
       expect(actual.actionSize).toBe(slug === "le-murmure" ? 20 : 14);
       expect(actual.tableFeatures).toContain('"lnum"');
       expect(actual.tableFeatures).toContain('"tnum"');
-      await expect(page.locator("[data-case-study]")).toHaveCount(4);
+      await expect(page.getByRole("article", { name: "Almond Yard" })).toBeVisible();
     }
   }
 });
