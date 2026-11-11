@@ -40,6 +40,7 @@ import libreFranklin from "./libre-franklin/data";
 import lora from "./lora/data";
 import luperca from "./luperca/data";
 import messapia from "./messapia/data";
+import mfbOldstyle from "./mfb-oldstyle/data";
 import mioya from "./mioya/data";
 import monaSans from "./mona-sans/data";
 import newsreader from "./newsreader/data";
@@ -103,6 +104,7 @@ export const typefaceData: TypefaceData[] = [
   lora,
   luperca,
   messapia,
+  mfbOldstyle,
   mioya,
   monaSans,
   newsreader,

@@ -52,7 +52,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 **[Read full Changelog](./CHANGELOG.md)**
 
 ## Featured typefaces
-All typefaces are licensed under the [SIL Open Font License](https://scripts.sil.org/OFL).
+Typefaces use the [SIL Open Font License](https://scripts.sil.org/OFL) or a public domain dedication. MFB Oldstyle is released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 | | |
 | --- | --- |
@@ -76,6 +76,7 @@ All typefaces are licensed under the [SIL Open Font License](https://scripts.sil
 | [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/) | [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/) |
 | [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) | [Lora](https://beautifulwebtype.com/lora/) |
 | [Luperca](https://beautifulwebtype.com/luperca/) | [Messapia](https://beautifulwebtype.com/messapia/) |
+| [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/) | |
 | [Mioya](https://beautifulwebtype.com/mioya/) | [Mona Sans](https://beautifulwebtype.com/mona-sans/) |
 | [Newsreader](https://beautifulwebtype.com/newsreader/) | [Oswald](https://beautifulwebtype.com/oswald/) |
 | [Piazzolla](https://beautifulwebtype.com/piazzolla/) | [Playfair Display](https://beautifulwebtype.com/playfair-display/) |

@@ -286,6 +286,13 @@
 }
 
 @font-face {
+  font-family: "BWT Preview mfb-oldstyle";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font-previews/mfb-oldstyle.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview mioya";
   font-style: normal;
   font-weight: 400;

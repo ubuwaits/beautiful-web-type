@@ -1,0 +1,35 @@
+:root {
+  --mfb-oldstyle: 'MFB Oldstyle', serif;
+}
+
+.mfb-oldstyle {
+  font-family: var(--mfb-oldstyle) !important;
+}
+
+@font-face {
+  font-family: "MFB Oldstyle";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/mfb-oldstyle/MFBOldstyle-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MFB Oldstyle";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/fonts/mfb-oldstyle/MFBOldstyle-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MFB Oldstyle";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/mfb-oldstyle/MFBOldstyle-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MFB Oldstyle";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/assets/fonts/mfb-oldstyle/MFBOldstyle-BoldItalic.woff2") format("woff2");
+}

@@ -5525,6 +5525,71 @@
       }
     ]
   },
+  "mfb-oldstyle": {
+    "family": "MFB Oldstyle",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Greek capitals without accents"
+          },
+          {
+            "tag": "ss02",
+            "name": "Greek capitals with accents above"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Greek capitals without accents"
+          },
+          {
+            "tag": "ss02",
+            "name": "Greek capitals with accents above"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Greek capitals without accents"
+          },
+          {
+            "tag": "ss02",
+            "name": "Greek capitals with accents above"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Greek capitals without accents"
+          },
+          {
+            "tag": "ss02",
+            "name": "Greek capitals with accents above"
+          }
+        ]
+      }
+    ]
+  },
   "mioya": {
     "family": "Mioya Variable",
     "faces": [

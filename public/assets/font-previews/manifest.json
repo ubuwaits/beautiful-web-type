@@ -359,6 +359,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "60ab1c12fe3874c287e64390f0e397ddc2061a16edae85d12a71375e4641ca7d"
   },
+  "mfb-oldstyle": {
+    "source": "/assets/fonts/mfb-oldstyle/MFBOldstyle-Regular.woff2",
+    "sourceHash": "46279161ea3208909baad667192c1f953f91edf9628ded801eb17ad3cbb9de41",
+    "text": "MFB Oldstyle",
+    "cssHash": "04fa7a8105f5201b2cf021cd9a365b89be0c0843a1193ff84a681d8cadd110d5",
+    "generatorHash": "cc5f2d5a3eeb205942aea87a162f323d841b1cc73b067ba5cd1a62b52c435956",
+    "toolVersion": "4.60.2",
+    "previewHash": "055f710e0005d5e5500e19eb0ef1041699505edcf1f7b6bc8830588210d26a84"
+  },
   "mioya": {
     "source": "/assets/fonts/mioya/Mioya-Regular.woff2",
     "sourceHash": "6205b930b566917f388027b6b3c438bce2e5b331a324311736f9ae86a80e2ed1",
