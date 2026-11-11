@@ -40,7 +40,7 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
             </div>
             <span className="rounded-full border border-neutral-200 px-2 text-[10px] tracking-wide dark:border-neutral-700">PRJ–024</span>
           </div>
-          <h3 tabIndex={-1} className="mb-2 text-[clamp(1.5rem,2.2vw,2rem)] leading-[1.15] tracking-tight outline-none">Website redesign</h3>
+          <h3 tabIndex={-1} className="mb-2 text-[clamp(1.5rem,2.2vw,2rem)] leading-[1.15] tracking-normal outline-none">Website redesign</h3>
           <p className={`${muted} mb-5 text-sm leading-6 text-pretty`}>Refresh the studio website for our summer launch. Four tasks, one shared direction.</p>
           <div className="mb-5 flex items-center justify-between gap-3 border-t border-neutral-200 py-3 dark:border-neutral-800">
             <span className="flex items-center gap-2"><span className="size-1.5 rounded-full bg-current" /> {completed === 4 ? "Complete" : "In progress"}</span>
@@ -77,7 +77,7 @@ export function InterfaceSpecimens({ weights }: Pick<Typeface, "weights">) {
         <article className={`${panel} col-span-12 flex flex-col min-[721px]:col-span-6 min-[1105px]:col-span-5`}>
           <div className="mb-4 flex flex-wrap items-center justify-between gap-2"><div><h3 className="text-sm">Website traffic</h3><p className={`${muted} text-xs`}>studio.example</p></div><span className={`${muted} text-xs`}>Last 7 days</span></div>
           <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
-            <span className="text-[2.75rem] leading-none tracking-tight tabular-nums">24,608</span>
+            <span className="text-[2.75rem] leading-none tracking-normal tabular-nums">24,608</span>
             <span className="mb-0.5 inline-flex items-center gap-1 rounded-full bg-neutral-200 px-2 py-0.5 text-xs dark:bg-neutral-800"><ArrowUpRight className="size-3" /><span className="sr-only">Increase of </span>12.8%</span>
           </div>
           <p className={`${muted} mt-2 text-xs`}>Unique visitors · compared with the previous 7 days</p>

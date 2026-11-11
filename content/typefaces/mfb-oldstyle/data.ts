@@ -8,6 +8,7 @@ const typeface: TypefaceData = {
   styles: 4,
   glyphCount: 2615,
   italic: true,
+  smallcap: true,
   weights: [
     { weight: 400, name: "Regular" },
     { weight: 700, name: "Bold" }

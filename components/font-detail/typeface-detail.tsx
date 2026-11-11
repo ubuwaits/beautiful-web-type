@@ -189,10 +189,6 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
         </FittedLines>
 
-        <WebsiteHeroSpecimen typography={typeface.websiteHero} />
-
-        <InterfaceSpecimens weights={typeface.weights} />
-
         <div className="flex flex-col justify-center gap-6 examples-paragraphs mb-(--section-gap) scroll-mt-20" id="paragraphs">
           <h2 className="sr-only">Paragraphs</h2>
           <div className="grid grid-cols-1 gap-8 min-[1105px]:grid-cols-[3fr_2fr_1fr] min-[1105px]:gap-x-12">
@@ -212,6 +208,10 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
         <FontTester key={typeface.slug} data={getFontTesterData(typeface.slug)} name={typeface.name} weights={typeface.weights} />
 
         <FontFeatures features={typeface.features} />
+
+        <WebsiteHeroSpecimen typography={typeface.websiteHero} />
+
+        <InterfaceSpecimens weights={typeface.weights} />
 
         <GlyphInspector fontFile={glyphFontFile} typefaceName={typeface.name} />
       </div>
