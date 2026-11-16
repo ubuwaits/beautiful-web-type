@@ -66,6 +66,9 @@ type TypefaceDetailProps = {
   typeface: Typeface;
 };
 
+// The desktop paragraph grid starts its second column at the midpoint.
+const PAIRED_HEADLINE_COLUMNS = "min-[721px]:grid-cols-2 min-[1105px]:grid-cols-[calc(50%_-_var(--spacing)*12)_minmax(0,1fr)]";
+
 export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetailProps) {
   const paragraphText = text.paragraphs.join("\n\n");
   const actions = [
@@ -166,10 +169,10 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
           <div className="flex flex-col justify-center gap-6 examples-headlines scroll-mt-20" id="headlines">
             <h2 className="sr-only">Headlines</h2>
-            <div className={`grid grid-cols-1 gap-x-12 gap-y-10 min-[721px]:gap-y-16 ${!typeface.italic && !typeface.smallcap ? "min-[721px]:grid-cols-2" : ""}`}>
+            <div className={`grid grid-cols-1 gap-x-12 gap-y-10 min-[721px]:gap-y-16 ${!typeface.italic && !typeface.smallcap ? PAIRED_HEADLINE_COLUMNS : ""}`}>
               {typeface.weights.map((weight, index) => (
                 <div key={`${typeface.slug}-headline-${weight.weight}`}>
-                  <div className={`grid grid-cols-1 items-start gap-x-12 gap-y-6 ${typeface.italic && typeface.smallcap ? "min-[721px]:grid-cols-3" : typeface.italic || typeface.smallcap ? "min-[721px]:grid-cols-2" : ""}`}>
+                  <div className={`grid grid-cols-1 items-start gap-x-12 gap-y-6 ${typeface.italic && typeface.smallcap ? "min-[721px]:grid-cols-3" : typeface.italic || typeface.smallcap ? PAIRED_HEADLINE_COLUMNS : ""}`}>
                     {[
                       { style: "", className: "" },
                       ...(typeface.italic && weight.italic !== false ? [{ style: "Italic", className: "italic" }] : []),
