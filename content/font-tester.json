@@ -657,6 +657,223 @@
       }
     ]
   },
+  "allo": {
+    "family": "Allo",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 9,
+            "max": 32,
+            "default": 14
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "ROND",
+            "name": "Roundness",
+            "min": 0,
+            "max": 100,
+            "default": 50
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 600,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 800,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 900,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Disambiguation"
+          },
+          {
+            "tag": "ss03",
+            "name": "Open figures"
+          }
+        ]
+      }
+    ]
+  },
   "archivo": {
     "family": "Archivo",
     "faces": [

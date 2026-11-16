@@ -2,6 +2,7 @@ import type { TypefaceData } from "@/lib/content/types";
 
 import alegreya from "./alegreya/data";
 import alegreyaSans from "./alegreya-sans/data";
+import allo from "./allo/data";
 import archivo from "./archivo/data";
 import archivoBlack from "./archivo-black/data";
 import aujournuit from "./aujournuit/data";
@@ -66,6 +67,7 @@ import zillaSlab from "./zilla-slab/data";
 export const typefaceData: TypefaceData[] = [
   alegreya,
   alegreyaSans,
+  allo,
   archivo,
   archivoBlack,
   aujournuit,

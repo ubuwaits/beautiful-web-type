@@ -15,6 +15,13 @@
 }
 
 @font-face {
+  font-family: "BWT Preview allo";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/assets/font-previews/allo.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview archivo";
   font-style: normal;
   font-weight: 400;

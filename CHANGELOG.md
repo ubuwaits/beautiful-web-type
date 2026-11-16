@@ -1,5 +1,9 @@
 # Changelog
 
+## 16 Nov 2026
+
+* **Added [Allo](https://beautifulwebtype.com/allo/)** by Josh Puckett.
+
 ## 11 Nov 2026
 
 * **Added [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/)** by Daniel Benjamin Miller.

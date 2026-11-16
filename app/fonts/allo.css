@@ -1,0 +1,77 @@
+:root {
+  --allo: 'Allo', sans-serif;
+}
+
+.allo {
+  font-family: var(--allo) !important;
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/assets/fonts/allo/AlloVariable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 100;
+  src: url("/assets/fonts/allo/Allo-ThinOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 200;
+  src: url("/assets/fonts/allo/Allo-ExtraLightOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 300;
+  src: url("/assets/fonts/allo/Allo-LightOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/fonts/allo/Allo-Oblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/assets/fonts/allo/Allo-MediumOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/assets/fonts/allo/Allo-SemiBoldOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/assets/fonts/allo/Allo-BoldOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/assets/fonts/allo/Allo-ExtraBoldOblique.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Allo";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/assets/fonts/allo/Allo-BlackOblique.woff2") format("woff2");
+}

@@ -6,6 +6,10 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 16 Nov 2026
+
+* **Added [Allo](https://beautifulwebtype.com/allo/)** by Josh Puckett.
+
 ### 11 Nov 2026
 
 * **Added [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/)** by Daniel Benjamin Miller.
@@ -61,26 +65,26 @@ Typefaces use the [SIL Open Font License](https://scripts.sil.org/OFL) or a publ
 | | |
 | --- | --- |
 | [Alegreya](https://beautifulwebtype.com/alegreya/) | [Alegreya Sans](https://beautifulwebtype.com/alegreya-sans/) |
-| [Archivo](https://beautifulwebtype.com/archivo/) | [Archivo Black](https://beautifulwebtype.com/archivo-black/) |
-| [Aujournuit](https://beautifulwebtype.com/aujournuit/) | [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/) |
-| [Commissioner](https://beautifulwebtype.com/commissioner/) | [Commit Mono](https://beautifulwebtype.com/commit-mono/) |
-| [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) | [Crimson Pro](https://beautifulwebtype.com/crimson-pro/) |
-| [DM Sans](https://beautifulwebtype.com/dm-sans/) | [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/) |
-| [DM Serif Text](https://beautifulwebtype.com/dm-serif-text/) | [EB Garamond](https://beautifulwebtype.com/eb-garamond/) |
-| [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/) | [Fira Code](https://beautifulwebtype.com/fira-code/) |
-| [FiraGo](https://beautifulwebtype.com/firago/) | [Fivo Sans](https://beautifulwebtype.com/fivo-sans/) |
-| [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/) | [Fraunces](https://beautifulwebtype.com/fraunces/) |
-| [Geist Sans](https://beautifulwebtype.com/geist-sans/) | [Hubot Sans](https://beautifulwebtype.com/hubot-sans/) |
-| [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/) | [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/) |
-| [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/) | [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/) |
-| [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/) | [Inria Sans](https://beautifulwebtype.com/inria-sans/) |
-| [Inria Serif](https://beautifulwebtype.com/inria-serif/) | [Instrument Sans](https://beautifulwebtype.com/instrument-sans/) |
-| [Instrument Serif](https://beautifulwebtype.com/instrument-serif/) | [Inter](https://beautifulwebtype.com/inter/) |
-| [Le Murmure](https://beautifulwebtype.com/le-murmure/) | [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/) |
-| [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/) | [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/) |
-| [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) | [Lora](https://beautifulwebtype.com/lora/) |
-| [Luperca](https://beautifulwebtype.com/luperca/) | [Messapia](https://beautifulwebtype.com/messapia/) |
-| [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/) | |
+| [Allo](https://beautifulwebtype.com/allo/) | [Archivo](https://beautifulwebtype.com/archivo/) |
+| [Archivo Black](https://beautifulwebtype.com/archivo-black/) | [Aujournuit](https://beautifulwebtype.com/aujournuit/) |
+| [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/) | [Commissioner](https://beautifulwebtype.com/commissioner/) |
+| [Commit Mono](https://beautifulwebtype.com/commit-mono/) | [Cooper Hewitt](https://beautifulwebtype.com/cooper-hewitt/) |
+| [Crimson Pro](https://beautifulwebtype.com/crimson-pro/) | [DM Sans](https://beautifulwebtype.com/dm-sans/) |
+| [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/) | [DM Serif Text](https://beautifulwebtype.com/dm-serif-text/) |
+| [EB Garamond](https://beautifulwebtype.com/eb-garamond/) | [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/) |
+| [Fira Code](https://beautifulwebtype.com/fira-code/) | [FiraGo](https://beautifulwebtype.com/firago/) |
+| [Fivo Sans](https://beautifulwebtype.com/fivo-sans/) | [Fivo Sans Modern](https://beautifulwebtype.com/fivo-sans-modern/) |
+| [Fraunces](https://beautifulwebtype.com/fraunces/) | [Geist Sans](https://beautifulwebtype.com/geist-sans/) |
+| [Hubot Sans](https://beautifulwebtype.com/hubot-sans/) | [iA Writer Quattro](https://beautifulwebtype.com/ia-writer-quattro/) |
+| [IBM Plex Mono](https://beautifulwebtype.com/ibm-plex-mono/) | [IBM Plex Sans](https://beautifulwebtype.com/ibm-plex-sans/) |
+| [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/) | [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/) |
+| [Inria Sans](https://beautifulwebtype.com/inria-sans/) | [Inria Serif](https://beautifulwebtype.com/inria-serif/) |
+| [Instrument Sans](https://beautifulwebtype.com/instrument-sans/) | [Instrument Serif](https://beautifulwebtype.com/instrument-serif/) |
+| [Inter](https://beautifulwebtype.com/inter/) | [Le Murmure](https://beautifulwebtype.com/le-murmure/) |
+| [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/) | [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/) |
+| [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/) | [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) |
+| [Lora](https://beautifulwebtype.com/lora/) | [Luperca](https://beautifulwebtype.com/luperca/) |
+| [Messapia](https://beautifulwebtype.com/messapia/) | [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/) |
 | [Mioya](https://beautifulwebtype.com/mioya/) | [Mona Sans](https://beautifulwebtype.com/mona-sans/) |
 | [Newsreader](https://beautifulwebtype.com/newsreader/) | [Oswald](https://beautifulwebtype.com/oswald/) |
 | [Piazzolla](https://beautifulwebtype.com/piazzolla/) | [Playfair Display](https://beautifulwebtype.com/playfair-display/) |
