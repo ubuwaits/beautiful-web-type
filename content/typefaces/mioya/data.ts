@@ -13,12 +13,6 @@ const typeface: TypefaceData = {
     { weight: 700, name: "Bold" },
     { weight: 900, name: "Black" }
   ],
-  websiteHero: {
-    wordmark: { weight: 700 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 700 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: { version: "v1.000", date: "23 May 2026" },
   projectUrl: "https://dotcolon.net/fonts/mioya/",
   creator: { name: "Sora Sagano", url: "https://dotcolon.net/" },

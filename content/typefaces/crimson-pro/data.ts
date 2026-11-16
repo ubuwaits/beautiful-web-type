@@ -38,10 +38,6 @@ const typeface: TypefaceData = {
       name: "Black"
     }
   ],
-  websiteHero: {
-    wordmark: { weight: 500 },
-    caseTitle: { weight: 500 },
-  },
   latestRelease: {
     version: "v1.004",
     date: "8 Oct 2026"

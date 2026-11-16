@@ -9,12 +9,6 @@ const typeface: TypefaceData = {
   glyphCount: 355,
   italic: true,
   weights: [{ weight: 400, name: "Regular" }],
-  websiteHero: {
-    wordmark: { weight: 400 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 400 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: { version: "v5.200", date: "16 Oct 2019" },
   projectUrl: "https://github.com/googlefonts/dm-fonts",
   gFontsUrl: "https://fonts.google.com/specimen/DM+Serif+Display",

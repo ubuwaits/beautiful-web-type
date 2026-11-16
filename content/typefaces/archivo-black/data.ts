@@ -14,12 +14,6 @@ const typeface: TypefaceData = {
       name: "Regular"
     }
   ],
-  websiteHero: {
-    wordmark: { weight: 400 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 400 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: {
     version: "v1.101",
     date: "17 Sep 2018"

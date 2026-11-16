@@ -12,12 +12,6 @@ const typeface: TypefaceData = {
     { weight: 400, name: "Regular" },
     { weight: 700, name: "Bold", italic: false }
   ],
-  websiteHero: {
-    wordmark: { weight: 700 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 700 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: { version: "v1.002", date: "25 Jul 2016" },
   projectUrl: "https://github.com/impallari/Libre-Caslon-Text",
   gFontsUrl: "https://fonts.google.com/specimen/Libre+Caslon+Text",

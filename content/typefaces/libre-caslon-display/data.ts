@@ -8,12 +8,6 @@ const typeface: TypefaceData = {
   styles: 1,
   glyphCount: 551,
   weights: [{ weight: 400, name: "Regular" }],
-  websiteHero: {
-    wordmark: { weight: 400 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 400 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: { version: "v1.002", date: "25 Jul 2016" },
   projectUrl: "https://github.com/impallari/Libre-Caslon-Display",
   gFontsUrl: "https://fonts.google.com/specimen/Libre+Caslon+Display",

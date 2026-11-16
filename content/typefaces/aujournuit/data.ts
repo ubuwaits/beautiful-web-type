@@ -8,12 +8,6 @@ const typeface: TypefaceData = {
   styles: "Variable",
   glyphCount: 418,
   weights: [{ weight: 400, name: "Regular" }],
-  websiteHero: {
-    wordmark: { weight: 400 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 400 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: { version: "v1.006", date: "11 Mar 2026" },
   projectUrl: "https://github.com/collletttivo/aujournuit",
   creator: { name: "Teo Gaudet", url: "https://www.collletttivo.it/typefaces/aujournuit" },

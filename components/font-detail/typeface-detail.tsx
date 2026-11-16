@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import { FontFeatures } from "@/components/font-detail/font-features";
 import { InterfaceSpecimens } from "@/components/font-detail/interface-specimens";
-import { WebsiteHeroSpecimen } from "@/components/font-detail/website-hero-specimen";
 
 import { FittedLine, FittedLines } from "@/components/typography/fitted-lines";
 import { GlyphInspector } from "@/components/font-detail/glyph-inspector";
@@ -208,8 +207,6 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
         <FontTester key={typeface.slug} data={getFontTesterData(typeface.slug)} name={typeface.name} weights={typeface.weights} />
 
         <FontFeatures features={typeface.features} />
-
-        <WebsiteHeroSpecimen typography={typeface.websiteHero} />
 
         <InterfaceSpecimens weights={typeface.weights} />
 

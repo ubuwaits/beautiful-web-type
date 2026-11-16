@@ -30,10 +30,6 @@ const typeface: TypefaceData = {
       name: "Extra Black"
     }
   ],
-  websiteHero: {
-    wordmark: { weight: 500 },
-    caseTitle: { weight: 500 },
-  },
   latestRelease: {
     version: "v1.0",
     date: "5 Jul 2017"

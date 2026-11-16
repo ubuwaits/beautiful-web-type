@@ -13,17 +13,6 @@ const typeface: TypefaceData = {
       name: "Regular"
     }
   ],
-  websiteHero: {
-    wordmark: { weight: 400, size: 34, lineHeight: "38px" },
-    headline: { weight: 400, size: "clamp(3rem, 8.4cqw, 7.875rem)" },
-    description: { size: 22, desktopSize: 24, lineHeight: "34px" },
-    action: { size: 20, lineHeight: "28px" },
-    caseLocation: { size: 16, lineHeight: "24px" },
-    caseTitle: { weight: 400, size: 34 },
-    caseBody: { size: 20, lineHeight: "30px" },
-    tableLabel: { size: 20, lineHeight: "26px" },
-    tableValue: { weight: 400, size: 20, lineHeight: "26px" },
-  },
   latestRelease: {
     version: "v1.2",
     date: "23 Mar 2021"

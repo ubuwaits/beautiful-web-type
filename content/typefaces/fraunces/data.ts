@@ -46,10 +46,6 @@ const typeface: TypefaceData = {
       name: "Black"
     }
   ],
-  websiteHero: {
-    headline: { weight: 600, axes: { SOFT: 75 } },
-    description: { italic: true },
-  },
   latestRelease: {
     version: "v1.0",
     date: "29 Oct 2020"

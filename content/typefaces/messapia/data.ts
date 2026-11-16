@@ -17,12 +17,6 @@ const typeface: TypefaceData = {
       name: "Bold"
     }
   ],
-  websiteHero: {
-    wordmark: { weight: 700 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 700 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: {
     version: "v1.000",
     date: "1 Apr 2024"

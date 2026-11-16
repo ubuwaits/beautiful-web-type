@@ -23,12 +23,6 @@ const typeface: TypefaceData = {
       name: "Black"
     }
   ],
-  websiteHero: {
-    wordmark: { weight: 700 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 700 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: {
     version: "v2.203",
     date: "12 Nov 2024"

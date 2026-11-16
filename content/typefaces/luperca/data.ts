@@ -8,12 +8,6 @@ const typeface: TypefaceData = {
   styles: "Variable",
   glyphCount: 337,
   weights: [{ weight: 400, name: "Regular" }],
-  websiteHero: {
-    wordmark: { weight: 400 },
-    headline: { weight: 400 },
-    caseTitle: { weight: 400 },
-    tableValue: { weight: 400 },
-  },
   latestRelease: { version: "v1.000", date: "17 Dec 2025" },
   projectUrl: "https://www.tunera.xyz/fonts/luperca/",
   creator: { name: "Ariel Martín Pérez", url: "https://tainome.com/" },
