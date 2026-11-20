@@ -19,12 +19,12 @@
   },
   "allo": {
     "source": "/assets/fonts/allo/AlloVariable.woff2",
-    "sourceHash": "6737f19e67702c54a3c74ef2752f9c8967037bff026c9d2cc81f2d247eefd412",
+    "sourceHash": "482bec1444dabaf1a493b34aa926bb7751ef5edc3e5a9f90a4111c7bb1e0c0ec",
     "text": "Allo",
     "cssHash": "fd209995ff195d862522ee1b88954acaa25313f84b60e083efcb2f4e5d2e945d",
     "generatorHash": "789aee864fa33614f5d16e00a7b826ddab9254cac2122e182acbf56d3aa24f63",
     "toolVersion": "4.60.2",
-    "previewHash": "dfb5109433ec0e5eb322a9b050fd2ea2a1da5b2273fdba50f5536c619f1a90ce"
+    "previewHash": "415a866a9f0dc5c3a71e8aa33850e39eb2837d9bb5abb1402bfd1b8c3aca5663"
   },
   "archivo": {
     "source": "/assets/fonts/archivo/Archivo-Regular.woff2",

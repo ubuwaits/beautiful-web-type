@@ -6,7 +6,7 @@ const typeface: TypefaceData = {
   dateAdded: "2026-11-16T16:14:40+01:00",
   category: "Sans-Serif",
   styles: "Variable",
-  glyphCount: 606,
+  glyphCount: 734,
   italic: true,
   weights: [
     { weight: 100, name: "Thin" },
@@ -19,7 +19,7 @@ const typeface: TypefaceData = {
     { weight: 800, name: "Extra Bold" },
     { weight: 900, name: "Black" }
   ],
-  latestRelease: { version: "1.0", date: "15 Nov 2026" },
+  latestRelease: { version: "1.0.3", date: "18 Nov 2026" },
   projectUrl: "https://allo.joshpuckett.me/",
   creator: { name: "Josh Puckett", url: "https://joshpuckett.me/" },
   summary: "Allo is Josh Puckett’s rounded sans serif for screens, with adjustable roundness, optical sizing, and drawn obliques from Thin to Black.",
