@@ -3,6 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { promisify } from "node:util";
 
+import { compareReleaseVersions, type ReleaseComparison } from "./release-version";
 import { getAllTypefaces, type Typeface } from "../lib/content";
 
 const OUTPUT_PATH = path.join(process.cwd(), "reports", "typeface-audit.md");
@@ -41,16 +42,7 @@ type GitHubTagCandidate = {
 
 type UpstreamReleaseStatus =
   | {
-      status: "current";
-      source: "github-tag" | "discovered-github-tag";
-      repo: string;
-      version: string;
-      date?: string;
-      url: string;
-      note?: string;
-    }
-  | {
-      status: "newer";
+      status: ReleaseComparison;
       source: "github-tag" | "discovered-github-tag";
       repo: string;
       version: string;
@@ -100,82 +92,6 @@ function isSuccessStatus(status: number): boolean {
 
 function formatIsoDate(isoDate?: string): string {
   return isoDate ? isoDate.slice(0, 10) : "unknown";
-}
-
-function normalizeVersion(value?: string): string {
-  const normalized = (value ?? "")
-    .trim()
-    .toLowerCase()
-    .replace(/^v\.?/, "")
-    .replace(/\s+/g, "");
-
-  if (/^\d+(?:\.\d+)*$/.test(normalized)) {
-    const parts = normalized.split(".");
-
-    while (parts.length > 1 && /^0+$/.test(parts.at(-1) ?? "")) {
-      parts.pop();
-    }
-
-    return parts
-      .map((part, index) => {
-        if (index === 0) {
-          return String(Number(part));
-        }
-
-        return part;
-      })
-      .join(".");
-  }
-
-  return normalized;
-}
-
-function stripReleaseQualifier(value: string): string {
-  return value
-    .trim()
-    .toLowerCase()
-    .replace(/^v\.?/, "")
-    .replace(/\s+/g, "")
-    .replace(/-(?:vf|var|variable|upright|roman|italic|u|i)$/i, "")
-    .replace(/r$/i, "")
-    .replace(/[-_]+$/, "");
-}
-
-function extractVersionCandidates(value?: string): string[] {
-  const raw = (value ?? "").trim();
-
-  if (!raw) {
-    return [];
-  }
-
-  const candidates = new Set<string>();
-  const push = (candidate?: string) => {
-    const normalized = normalizeVersion(candidate);
-
-    if (normalized) {
-      candidates.add(normalized);
-    }
-  };
-
-  push(raw);
-
-  for (const part of raw.split(/[\/_]+/)) {
-    push(part);
-
-    const stripped = stripReleaseQualifier(part);
-    if (stripped !== part) {
-      push(stripped);
-    }
-  }
-
-  return Array.from(candidates);
-}
-
-function versionsMatch(recordedVersion?: string, upstreamVersion?: string): boolean {
-  const recordedCandidates = extractVersionCandidates(recordedVersion);
-  const upstreamCandidates = new Set(extractVersionCandidates(upstreamVersion));
-
-  return recordedCandidates.some((candidate) => upstreamCandidates.has(candidate));
 }
 
 function formatVersionLabel(value?: string): string {
@@ -655,18 +571,6 @@ async function getLatestGitHubCommit(
   return promise;
 }
 
-function compareVersions(typeface: Typeface, upstreamVersion: string): "current" | "newer" {
-  if (versionsMatch(typeface.latestRelease.version, upstreamVersion)) {
-    return "current";
-  }
-
-  if (!typeface.latestRelease.version.trim() && upstreamVersion.trim()) {
-    return "newer";
-  }
-
-  return "newer";
-}
-
 async function getReleaseStatus(typeface: Typeface, project: LinkStatus): Promise<UpstreamReleaseStatus> {
   if (!typeface.projectUrl) {
     return {
@@ -721,31 +625,20 @@ async function getReleaseStatus(typeface: Typeface, project: LinkStatus): Promis
 
   const repoSource: "github-tag" | "discovered-github-tag" =
     normalizeGitHubRepoUrl(typeface.projectUrl) === repoUrl ? "github-tag" : "discovered-github-tag";
-  const comparison = compareVersions(typeface, latestTag.name);
-
-  if (comparison === "current") {
-    const directMatch =
-      normalizeVersion(typeface.latestRelease.version) === normalizeVersion(latestTag.name);
-
-    return {
-      status: "current",
-      source: repoSource,
-      repo: repoUrl,
-      version: latestTag.name,
-      url: `${repoUrl}/tags`,
-      note: directMatch
-        ? "Recorded release matches the latest stable GitHub tag."
-        : "Recorded release matches a component of the latest stable GitHub tag."
-    };
-  }
-
+  const comparison = compareReleaseVersions(typeface.latestRelease.version, latestTag.name);
+  const notes: Record<ReleaseComparison, string> = {
+    current: "The recorded release matches the upstream tag or one of its version components.",
+    newer: "The upstream tag is newer than the recorded release.",
+    older: "The upstream tag is older than the recorded release.",
+    indeterminate: "The version labels could not be ordered reliably."
+  };
   return {
-    status: "newer",
+    status: comparison,
     source: repoSource,
     repo: repoUrl,
     version: latestTag.name,
     url: `${repoUrl}/tags`,
-    note: "A newer stable GitHub tag exists than the release recorded in metadata."
+    note: notes[comparison]
   };
 }
 
@@ -754,7 +647,7 @@ function formatNewerReleaseStatus(release: UpstreamReleaseStatus): string {
     return "yes";
   }
 
-  if (release.status === "current") {
+  if (release.status === "current" || release.status === "older") {
     return "no";
   }
 
@@ -871,8 +764,10 @@ function buildReport(rows: AuditRow[]): string {
   const projectBroken = rows.filter((row) => row.project.status === "broken").length;
   const projectError = rows.filter((row) => row.project.status === "error").length;
   const newerRelease = rows.filter((row) => row.release.status === "newer").length;
-  const currentRelease = rows.filter((row) => row.release.status === "current").length;
-  const unknownRelease = rows.filter((row) => row.release.status === "unknown").length;
+  const olderNames = rows.filter((row) => row.release.status === "older").map((row) => row.typeface.name);
+  const indeterminateNames = rows.filter((row) => row.release.status === "indeterminate").map((row) => row.typeface.name);
+  const noNewerRelease = rows.filter((row) => formatNewerReleaseStatus(row.release) === "no").length;
+  const unknownRelease = rows.filter((row) => formatNewerReleaseStatus(row.release) === "unknown").length;
   const generatedAt = new Date().toISOString();
   const brokenGoogleNames = rows
     .filter((row) => row.googleFonts.status === "broken" || row.googleFonts.status === "error")
@@ -913,12 +808,14 @@ function buildReport(rows: AuditRow[]): string {
     `- Total typefaces: ${rows.length}`,
     `- Google Fonts links: ${googleOk} ok, ${googleBroken} broken, ${googleError} error, ${googleMissing} n/a`,
     `- Project links: ${projectOk} ok, ${projectBroken} broken, ${projectError} error`,
-    `- Newer upstream release: ${newerRelease} yes, ${currentRelease} no, ${unknownRelease} unknown`,
+    `- Newer upstream release: ${newerRelease} yes, ${noNewerRelease} no, ${unknownRelease} unknown`,
     "",
     "Attention:",
     ...buildSummaryBlock("Broken Google Fonts links", brokenGoogleNames),
     ...buildSummaryBlock("Problem project links", projectProblemNames),
     ...buildSummaryBlock("Typefaces with newer upstream releases", newerReleaseNames),
+    ...buildSummaryBlock("Upstream tag older than recorded release", olderNames),
+    ...buildSummaryBlock("Unknown upstream ordering: incomparable versions", indeterminateNames),
     ...buildSummaryBlock(
       "Unknown upstream release: GitHub repo has no stable tags",
       unknownNoStableTagNames
