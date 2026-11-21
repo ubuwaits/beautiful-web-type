@@ -25,12 +25,14 @@ export type Glyph = {
 
 export type Font = {
   numGlyphs: number;
+  descender?: number;
   unitsPerEm: number;
   glyphs: {
     get: (glyphIndex: number) => Glyph;
   };
   tables: {
     os2?: {
+      sTypoDescender?: number;
       sxHeight?: number;
       sCapHeight?: number;
     };

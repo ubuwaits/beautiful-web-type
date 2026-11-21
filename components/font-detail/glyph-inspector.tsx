@@ -38,9 +38,14 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
   context.scale(ratio, ratio);
 
   const head = font.tables.head;
-  const maxHeight = head.yMax - head.yMin;
+  const metrics = font.tables.os2;
+  const descender = showGuides ? [metrics?.sTypoDescender, font.descender].find(
+    (value): value is number => value !== undefined && Number.isFinite(value) && value < 0
+  ) : undefined;
+  // A font's descender line can sit below its lowest glyph outline.
+  const maxHeight = head.yMax - Math.min(head.yMin, descender ?? head.yMin);
   const maxWidth = head.xMax - head.xMin;
-  const baseScale = Math.min(width / maxWidth, height / maxHeight);
+  const baseScale = Math.min(width / maxWidth, (descender !== undefined ? Math.max(1, height - 2) : height) / maxHeight);
   const scale = largerPreview && width > 16 && height > 28
     ? Math.max(baseScale, Math.min(baseScale * 1.4, (width - 16) / widestGlyph(font), (height - 28) / maxHeight))
     : baseScale;
@@ -51,11 +56,11 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
     if (x2 > x1) x = (width - (x1 + x2) * scale) / 2;
   }
   if (showGuides) {
-    const metrics = font.tables.os2;
     const guides = [
       { label: "baseline", value: 0 },
       { label: "x-height", value: metrics?.sxHeight },
-      { label: "cap height", value: metrics?.sCapHeight }
+      { label: "cap height", value: metrics?.sCapHeight },
+      { label: "descender", value: descender }
     ];
     context.save();
     context.fillStyle = ink;
@@ -64,7 +69,7 @@ function drawGlyph(canvas: HTMLCanvasElement, font: Font, glyph: Glyph, width: n
     context.setLineDash([0, 4]);
     context.font = `10px ${getComputedStyle(canvas).getPropertyValue("--ui-monospaced") || "monospace"}`;
     for (const { label, value } of guides) {
-      if (value === undefined || !Number.isFinite(value) || (label !== "baseline" && value <= 0)) continue;
+      if (value === undefined || !Number.isFinite(value) || ((label === "x-height" || label === "cap height") && value <= 0)) continue;
       const y = baseline - value * scale;
       context.globalAlpha = 0.18;
       context.beginPath();
