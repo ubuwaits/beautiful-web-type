@@ -10,3 +10,5 @@ playwright-report
 test-results
 
 .pnpm-store/
+
+/scripts/__pycache__/

@@ -9,6 +9,8 @@ from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
+from font_faces import FontFace, read_font_faces
+
 ROOT = Path(__file__).resolve().parent.parent
 AXIS_NAMES = {
     "wght": "Weight", "wdth": "Width", "opsz": "Optical size", "WONK": "Wonk",
@@ -20,12 +22,8 @@ def number(value):
     return int(value) if value == int(value) else round(value, 5)
 
 
-def read_face(block, family):
-    declarations = dict(re.findall(r"([\w-]+)\s*:\s*([^;]+);", block))
-    if declarations.get("font-family", "").strip("\"'").casefold() != family.casefold():
-        return None
-    url = re.search(r"url\([\"']?([^\"')]+)", declarations["src"]).group(1)
-    file_path = ROOT / "public" / url.split("?")[0].lstrip("/")
+def tester_controls(face: FontFace):
+    file_path = ROOT / "public" / face.url.lstrip("/")
     with TTFont(file_path, recalcTimestamp=False) as font:
         axes = []
         if "fvar" in font:
@@ -48,10 +46,9 @@ def read_face(block, family):
                 name_id = getattr(params, "UINameID", None)
                 name = font["name"].getDebugName(name_id) if name_id else None
                 sets[record.FeatureTag] = name or f"Stylistic set {record.FeatureTag[2:]}"
-        weight = int(declarations.get("font-weight", "400").split()[0])
         return {
-            "style": declarations.get("font-style", "normal"),
-            "weight": weight,
+            "style": face.style,
+            "weight": face.weight_range[0],
             "axes": axes,
             "stylisticSets": [{"tag": tag, "name": name} for tag, name in sorted(sets.items())],
         }
@@ -62,13 +59,8 @@ def main():
     for bundle in sorted((ROOT / "content/typefaces").iterdir()):
         if not bundle.is_dir():
             continue
-        css = (ROOT / "app/fonts" / f"{bundle.name}.css").read_text()
-        family = re.search(r"font-family:\s*[\"']([^\"']+)", css).group(1)
-        faces = [face for block in re.findall(r"@font-face\s*\{([^}]+)\}", css)
-                 if (face := read_face(block, family))]
-        if not faces:
-            raise ValueError(f"No font faces found for {bundle.name}")
-        result[bundle.name] = {"family": family, "faces": faces}
+        family, faces = read_font_faces(ROOT / "app/fonts" / f"{bundle.name}.css")
+        result[bundle.name] = {"family": family, "faces": [tester_controls(face) for face in faces]}
     output = ROOT / "content/font-tester.json"
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     print(f"Updated font tester controls for {len(result)} typefaces")
