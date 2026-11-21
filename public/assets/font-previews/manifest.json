@@ -422,14 +422,14 @@
     "toolVersion": "4.60.2",
     "previewHash": "d9630bf443723084ead370aa8ae23f077437c7ed47b71677690b55d89f158aad"
   },
-  "playfair-display": {
-    "source": "/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2",
-    "sourceHash": "447ef186d2e95471cf6f531ba2be784fbb725b10054e3a95447696f6cb3acb97",
-    "text": "Playfair Display",
-    "cssHash": "de3d0b8f979cea6f62d640f2d53cb280dc9bad74abb60c0a64a079ecd974d604",
+  "playfair": {
+    "source": "/assets/fonts/playfair/PlayfairRomanVF.woff2",
+    "sourceHash": "3641862de5d3b79b0313f1a7623875695c57829ad7587b478dbb803b5bc9121c",
+    "text": "Playfair",
+    "cssHash": "828add17794acb4f5b7183c866f489e717cf505fed9eb1b7f429a6b5c604b00f",
     "generatorHash": "789aee864fa33614f5d16e00a7b826ddab9254cac2122e182acbf56d3aa24f63",
     "toolVersion": "4.60.2",
-    "previewHash": "011cf867a682cb6699c3ba9258fd6a59be270a056b2c00be71f126d471cd5339"
+    "previewHash": "d4e9fa906565ef12f62d0754b9cc9de7cbf6933b42d4e8a17eed9826a985c8a9"
   },
   "poppins": {
     "source": "/assets/fonts/poppins/Poppins-Regular.woff2",

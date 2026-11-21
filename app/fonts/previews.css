@@ -336,10 +336,11 @@
 }
 
 @font-face {
-  font-family: "BWT Preview playfair-display";
+  font-family: "BWT Preview playfair";
   font-style: normal;
-  font-weight: 400;
-  src: url("/assets/font-previews/playfair-display.woff2") format("woff2");
+  font-weight: 360 900;
+  font-stretch: 88% 113%;
+  src: url("/assets/font-previews/playfair.woff2") format("woff2");
 }
 
 @font-face {

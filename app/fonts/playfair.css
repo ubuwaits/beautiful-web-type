@@ -1,0 +1,23 @@
+:root {
+  --playfair: 'Playfair', serif;
+}
+
+.playfair {
+  font-family: var(--playfair) !important;
+}
+
+@font-face {
+  font-family: "Playfair";
+  font-style: normal;
+  font-weight: 360 900;
+  font-stretch: 88% 113%;
+  src: url("/assets/fonts/playfair/PlayfairRomanVF.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair";
+  font-style: italic;
+  font-weight: 360 900;
+  font-stretch: 88% 113%;
+  src: url("/assets/fonts/playfair/PlayfairItalicVF.woff2") format("woff2");
+}

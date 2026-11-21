@@ -1,3 +1,10 @@
+# Playfair succeeds Playfair Display.
+/assets/images/playfair-display.png /assets/images/playfair.png 301
+/playfair-display /playfair/ 301
+/playfair-display/ /playfair/ 301
+/playfair-display/glyphs /playfair/#glyphs 301
+/playfair-display/glyphs/ /playfair/#glyphs 301
+
 # Retired sections and typefaces, including their old glyph pages.
 /biorhyme / 301
 /biorhyme/* / 301

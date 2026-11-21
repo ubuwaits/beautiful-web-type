@@ -1,47 +1,44 @@
 import type { TypefaceData } from "@/lib/content/types";
 
 const typeface: TypefaceData = {
-  slug: "playfair-display",
-  name: "Playfair Display",
+  slug: "playfair",
+  name: "Playfair",
   dateAdded: "2018-10-15",
+  updatedAt: "2026-11-21",
   category: "Display",
-  styles: 6,
+  styles: "Variable",
   glyphCount: 2304,
   italic: true,
   smallcap: true,
   weights: [
-    {
-      weight: 400,
-      name: "Regular"
-    },
-    {
-      weight: 700,
-      name: "Bold"
-    },
-    {
-      weight: 900,
-      name: "Black"
-    }
+    { weight: 360, name: "Semi Light" },
+    { weight: 400, name: "Regular" },
+    { weight: 500, name: "Medium" },
+    { weight: 600, name: "Semi Bold" },
+    { weight: 700, name: "Bold" },
+    { weight: 800, name: "Extra Bold" },
+    { weight: 900, name: "Black" }
   ],
   latestRelease: {
     version: "v2.203",
     date: "12 Nov 2024"
   },
-  projectUrl: "https://github.com/clauseggers/Playfair-Display",
-  gFontsUrl: "https://fonts.google.com/specimen/Playfair+Display",
+  projectUrl: "https://github.com/clauseggers/Playfair",
+  gFontsUrl: "https://fonts.google.com/specimen/Playfair",
   creator: {
     name: "Claus Eggers Sørensen",
     url: "https://forthehearts.net/"
   },
-  summary: "Playfair Display is a high-contrast transitional serif with ball terminals and expressive italics, suited to mastheads, book covers, and editorial headings.",
-  description: `Playfair Display was drafted to evoke that transitional moment in the late eighteenth century when European printing pivoted from the mellow, humanist cadence of the Old Style toward the stark, geometric drama of the Modern. Designed by Danish type designer Claus Eggers Sørensen and released through Google Fonts, the face draws inspiration from the innovations of John Baskerville—whose smooth wove papers and dense inks sharpened the printed impression—alongside the emergence of the pointed steel pen. Sørensen sought to capture this pivotal aesthetic shift, creating a libre face tailored specifically for the formal, high-contrast demands of contemporary titling.
+  summary: "Playfair is a transitional serif with variable weight, width, and optical size for body text and display typography.",
+  description: `Claus Eggers Sørensen first published Playfair Display in 2011. In 2023 he released Playfair, expanding the design to body text through an optical-size axis. The original display face was drafted to evoke that transitional moment in the late eighteenth century when European printing pivoted from the mellow, humanist cadence of the Old Style toward the stark, geometric drama of the Modern. Designed by Danish type designer Claus Eggers Sørensen and released through Google Fonts, the face draws inspiration from the innovations of John Baskerville—whose smooth wove papers and dense inks sharpened the printed impression—alongside the emergence of the pointed steel pen. Sørensen sought to capture this pivotal aesthetic shift, creating a libre face tailored specifically for the formal, high-contrast demands of contemporary titling.
 
-The anatomy of the design is governed by acute stroke contrast and strict vertical stress. Its heavy vertical stems stand in sharp opposition to gossamer-thin horizontal strokes and hairline serifs, while terminals on letters like <em>a</em>, <em>c</em>, <em>f</em>, and <em>r</em> resolve into distinct, circular ball forms. These rounded drops introduce an organic, calligraphic punctuation to an otherwise architectural framework. The proportions are stately and upright, featuring an ample x-height and compact descenders that allow lines of display type to sit comfortably close without colliding. Along a headline, Playfair Display sets a crisp, formal rhythm that immediately organizes the upper register of a layout.
+The anatomy of the design is governed by acute stroke contrast and strict vertical stress. Its heavy vertical stems stand in sharp opposition to gossamer-thin horizontal strokes and hairline serifs, while terminals on letters like <em>a</em>, <em>c</em>, <em>f</em>, and <em>r</em> resolve into distinct, circular ball forms. These rounded drops introduce an organic, calligraphic punctuation to an otherwise architectural framework. The proportions are stately and upright, featuring an ample x-height and compact descenders that allow lines of display type to sit comfortably close without colliding. Along a headline, Playfair sets a crisp, formal rhythm that immediately organizes the upper register of a layout.
 
 At display sizes, the contrast between fine hairlines and substantial stems becomes a central part of Playfair’s character. Generous scale lets these details register clearly in titles and short phrases. Its companion italic leans into its pointed-pen ancestry, raking forward with flowing, cursive ligatures and generous swashes that offer a lively, expressive foil to the sober posture of the roman.
 
-Expanded over time into a continuous variable weight axis and furnished with true small capitals, tabular and oldstyle figures, and broad support across Latin, Cyrillic, and Vietnamese, the family functions as a capable editorial tool. It remains most effective on book jackets, mastheads, invitations, and packaging—environments where its eighteenth-century European lineage can lend structure and occasion to isolated lines of text.`,
-  fontFile: "/assets/fonts/playfair-display/PlayfairDisplay-Regular.woff2",
+Playfair’s optical-size axis runs from 5 to 1200. Its weight and width can be adjusted independently in both Roman and Italic. Small capitals, tabular and oldstyle figures, and broad support for Latin, Cyrillic, and Vietnamese make the family useful across editorial layouts.`,
+  glyphSource: "/assets/fonts/playfair/PlayfairRomanVF.woff2",
+  fontFile: "/assets/fonts/playfair/glyphs-regular.woff2",
   features: [
     {
       type: "comparison",

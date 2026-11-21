@@ -150,3 +150,42 @@ test("uses Mioya’s named Regular across the catalog and specimen", async ({ pa
   await page.locator("#glyphs").scrollIntoViewIfNeeded();
   await expect(page.locator("#glyph-grid button")).toHaveCount(451);
 });
+
+test("offers Playfair’s full variable axes in Roman and Italic", async ({ page }) => {
+  await page.goto("/playfair/");
+  await expect(page.locator("#overview h1")).toHaveText("Playfair");
+  await expect(page.getByRole("link", { name: "Google Fonts", exact: true })).toHaveAttribute("href", "https://fonts.google.com/specimen/Playfair");
+  const tester = page.getByRole("textbox", { name: "Try Playfair" });
+  const opticalSize = page.getByRole("slider", { name: "Optical size", exact: true });
+  const size = page.getByRole("slider", { name: "Size", exact: true });
+  const width = page.getByRole("slider", { name: "Width", exact: true });
+  await expect(width).toHaveValue("100");
+  await expect(tester).toHaveCSS("font-optical-sizing", "auto");
+  await expect(tester).toHaveCSS("font-variation-settings", /"wdth" 100/);
+  await expect(tester).not.toHaveCSS("font-variation-settings", /"opsz"/);
+  await size.press("Home");
+  await expect(opticalSize).toHaveValue("16");
+  await opticalSize.press("Home");
+  await size.press("End");
+  await expect(opticalSize).toHaveValue("5");
+  await expect(tester).toHaveCSS("font-variation-settings", /"opsz" 5/);
+  await page.getByRole("button", { name: "Reset font tester" }).click();
+  await expect(tester).toHaveCSS("font-optical-sizing", "auto");
+  await expect(opticalSize).toHaveValue("128");
+  for (const style of ["Roman", "Italic"]) {
+    await page.locator("#tester").getByLabel(style, { exact: true }).click();
+    await expect(tester).toHaveCSS("font-style", style === "Italic" ? "italic" : "normal");
+    const loaded = await page.evaluate(async (style) => {
+      const faces = await document.fonts.load(`${style} 400 24px Playfair`, "Playfair");
+      return faces.map((face) => face.family);
+    }, style === "Italic" ? "italic" : "normal");
+    expect(loaded).toContain("Playfair");
+    for (const [name, min, max] of [["Weight", "360", "900"], ["Width", "88", "113"], ["Optical size", "5", "1200"]]) {
+      const slider = page.getByRole("slider", { name, exact: true });
+      await expect(slider).toHaveAttribute("min", min);
+      await expect(slider).toHaveAttribute("max", max);
+      await slider.press("End");
+      await expect(slider).toHaveValue(max);
+    }
+  }
+});

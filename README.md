@@ -6,6 +6,10 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 21 Nov 2026
+
+* Renamed Playfair Display to **[Playfair](https://beautifulwebtype.com/playfair/)** and added the full Roman and Italic variable fonts. The tester now supports continuous weight, width, and optical size. The old specimen URL redirects to Playfair.
+
 ### 16 Nov 2026
 
 * **Added [Allo](https://beautifulwebtype.com/allo/)** by Josh Puckett.
@@ -87,7 +91,7 @@ Typefaces use the [SIL Open Font License](https://scripts.sil.org/OFL) or a publ
 | [Messapia](https://beautifulwebtype.com/messapia/) | [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/) |
 | [Mioya](https://beautifulwebtype.com/mioya/) | [Mona Sans](https://beautifulwebtype.com/mona-sans/) |
 | [Newsreader](https://beautifulwebtype.com/newsreader/) | [Oswald](https://beautifulwebtype.com/oswald/) |
-| [Piazzolla](https://beautifulwebtype.com/piazzolla/) | [Playfair Display](https://beautifulwebtype.com/playfair-display/) |
+| [Piazzolla](https://beautifulwebtype.com/piazzolla/) | [Playfair](https://beautifulwebtype.com/playfair/) |
 | [Poppins](https://beautifulwebtype.com/poppins/) | [Roboto](https://beautifulwebtype.com/roboto/) |
 | [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/) | [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) |
 | [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) | [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) |

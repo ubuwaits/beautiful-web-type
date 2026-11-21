@@ -6138,12 +6138,12 @@
       }
     ]
   },
-  "playfair-display": {
-    "family": "Playfair Display",
+  "playfair": {
+    "family": "Playfair",
     "faces": [
       {
         "style": "normal",
-        "weight": 400,
+        "weight": 360,
         "axes": [
           {
             "tag": "opsz",
@@ -6158,6 +6158,13 @@
             "min": 88,
             "max": 113,
             "default": 88
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 360,
+            "max": 900,
+            "default": 360
           }
         ],
         "stylisticSets": [
@@ -6181,7 +6188,7 @@
       },
       {
         "style": "italic",
-        "weight": 400,
+        "weight": 360,
         "axes": [
           {
             "tag": "opsz",
@@ -6196,230 +6203,13 @@
             "min": 88,
             "max": 113,
             "default": 88
-          }
-        ],
-        "stylisticSets": [
-          {
-            "tag": "ss01",
-            "name": "Alternate p"
           },
           {
-            "tag": "ss02",
-            "name": "Alternate E"
-          },
-          {
-            "tag": "ss03",
-            "name": "Alternate Cyrillic ѫ"
-          },
-          {
-            "tag": "ss04",
-            "name": "Alternate Cyrillic м"
-          },
-          {
-            "tag": "ss05",
-            "name": "Alternate g"
-          },
-          {
-            "tag": "ss06",
-            "name": "Alternate y"
-          },
-          {
-            "tag": "ss07",
-            "name": "Alternate T"
-          },
-          {
-            "tag": "ss08",
-            "name": "Th ligature straight"
-          },
-          {
-            "tag": "ss09",
-            "name": "Th ligature swash"
-          },
-          {
-            "tag": "ss11",
-            "name": "Alternate Sterling symbol"
-          },
-          {
-            "tag": "ss12",
-            "name": "Alternate Z, Ʒ and z, ʒ"
-          },
-          {
-            "tag": "ss13",
-            "name": "Alternate X and x"
-          },
-          {
-            "tag": "ss14",
-            "name": "Tabular punctuation"
-          }
-        ]
-      },
-      {
-        "style": "normal",
-        "weight": 700,
-        "axes": [
-          {
-            "tag": "opsz",
-            "name": "Optical size",
-            "min": 5,
-            "max": 1200,
-            "default": 5
-          },
-          {
-            "tag": "wdth",
-            "name": "Width",
-            "min": 88,
-            "max": 113,
-            "default": 88
-          }
-        ],
-        "stylisticSets": [
-          {
-            "tag": "ss05",
-            "name": "Alternate g"
-          },
-          {
-            "tag": "ss10",
-            "name": "Th ligature"
-          },
-          {
-            "tag": "ss11",
-            "name": "Alternate Sterling symbol"
-          },
-          {
-            "tag": "ss14",
-            "name": "Tabular punctuation"
-          }
-        ]
-      },
-      {
-        "style": "italic",
-        "weight": 700,
-        "axes": [
-          {
-            "tag": "opsz",
-            "name": "Optical size",
-            "min": 5,
-            "max": 1200,
-            "default": 5
-          },
-          {
-            "tag": "wdth",
-            "name": "Width",
-            "min": 88,
-            "max": 113,
-            "default": 88
-          }
-        ],
-        "stylisticSets": [
-          {
-            "tag": "ss01",
-            "name": "Alternate p"
-          },
-          {
-            "tag": "ss02",
-            "name": "Alternate E"
-          },
-          {
-            "tag": "ss03",
-            "name": "Alternate Cyrillic ѫ"
-          },
-          {
-            "tag": "ss04",
-            "name": "Alternate Cyrillic м"
-          },
-          {
-            "tag": "ss05",
-            "name": "Alternate g"
-          },
-          {
-            "tag": "ss06",
-            "name": "Alternate y"
-          },
-          {
-            "tag": "ss07",
-            "name": "Alternate T"
-          },
-          {
-            "tag": "ss08",
-            "name": "Th ligature straight"
-          },
-          {
-            "tag": "ss09",
-            "name": "Th ligature swash"
-          },
-          {
-            "tag": "ss11",
-            "name": "Alternate Sterling symbol"
-          },
-          {
-            "tag": "ss12",
-            "name": "Alternate Z, Ʒ and z, ʒ"
-          },
-          {
-            "tag": "ss13",
-            "name": "Alternate X and x"
-          },
-          {
-            "tag": "ss14",
-            "name": "Tabular punctuation"
-          }
-        ]
-      },
-      {
-        "style": "normal",
-        "weight": 900,
-        "axes": [
-          {
-            "tag": "opsz",
-            "name": "Optical size",
-            "min": 5,
-            "max": 1200,
-            "default": 5
-          },
-          {
-            "tag": "wdth",
-            "name": "Width",
-            "min": 88,
-            "max": 113,
-            "default": 88
-          }
-        ],
-        "stylisticSets": [
-          {
-            "tag": "ss05",
-            "name": "Alternate g"
-          },
-          {
-            "tag": "ss10",
-            "name": "Th ligature"
-          },
-          {
-            "tag": "ss11",
-            "name": "Alternate Sterling symbol"
-          },
-          {
-            "tag": "ss14",
-            "name": "Tabular punctuation"
-          }
-        ]
-      },
-      {
-        "style": "italic",
-        "weight": 900,
-        "axes": [
-          {
-            "tag": "opsz",
-            "name": "Optical size",
-            "min": 5,
-            "max": 1200,
-            "default": 5
-          },
-          {
-            "tag": "wdth",
-            "name": "Width",
-            "min": 88,
-            "max": 113,
-            "default": 88
+            "tag": "wght",
+            "name": "Weight",
+            "min": 360,
+            "max": 900,
+            "default": 360
           }
         ],
         "stylisticSets": [

@@ -51,7 +51,10 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   const styles = [...new Set(data.faces.map((entry) => entry.style))];
   const weights = [...new Set(data.faces.filter((entry) => entry.style === style).map((entry) => entry.weight))];
   const hasWeightAxis = face.axes.some((axis) => axis.tag === "wght");
-  const axisValue = (axis: FontAxis) => clamp(axisValues[axis.tag] ?? (axis.tag === "wght" ? regularWeight : axis.default), axis.min, axis.max);
+  const startingAxes: Record<string, number> = { wght: regularWeight, wdth: 100, opsz: size };
+  const axisValue = (axis: FontAxis) => clamp(axisValues[axis.tag] ?? startingAxes[axis.tag] ?? axis.default, axis.min, axis.max);
+  // Let the browser optically size the sample until the reader adjusts that axis.
+  const explicitAxes = face.axes.filter((axis) => axis.tag !== "opsz" || axisValues.opsz !== undefined);
   const activeSets = selectedSets.filter((tag) => face.stylisticSets.some((set) => set.tag === tag));
   const previewStyle: CSSProperties = {
     fontFamily: JSON.stringify(data.family),
@@ -59,8 +62,8 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
     fontWeight: hasWeightAxis ? axisValue(face.axes.find((axis) => axis.tag === "wght")!) : face.weight,
     fontStyle: style,
     fontSynthesis: "none",
-    fontOpticalSizing: face.axes.some((axis) => axis.tag === "opsz") ? "none" : "auto",
-    fontVariationSettings: face.axes.map((axis) => `"${axis.tag}" ${axisValue(axis)}`).join(", ") || "normal",
+    fontOpticalSizing: axisValues.opsz === undefined ? "auto" : "none",
+    fontVariationSettings: explicitAxes.map((axis) => `"${axis.tag}" ${axisValue(axis)}`).join(", ") || "normal",
     fontFeatureSettings: activeSets.map((tag) => `"${tag}" 1`).join(", ") || "normal",
     lineHeight: 1.1,
     textAlign: alignment,

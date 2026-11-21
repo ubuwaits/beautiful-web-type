@@ -47,7 +47,7 @@ import monaSans from "./mona-sans/data";
 import newsreader from "./newsreader/data";
 import oswald from "./oswald/data";
 import piazzolla from "./piazzolla/data";
-import playfairDisplay from "./playfair-display/data";
+import playfair from "./playfair/data";
 import poppins from "./poppins/data";
 import roboto from "./roboto/data";
 import schibstedGrotesk from "./schibsted-grotesk/data";
@@ -112,7 +112,7 @@ export const typefaceData: TypefaceData[] = [
   newsreader,
   oswald,
   piazzolla,
-  playfairDisplay,
+  playfair,
   poppins,
   roboto,
   schibstedGrotesk,
