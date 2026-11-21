@@ -11,6 +11,7 @@ import { FontTester } from "@/components/font-detail/font-tester";
 import { getFontTesterData } from "@/lib/font-tester";
 import type { TextData, Typeface } from "@/lib/content";
 import { resolveTypefaceSlugByName } from "@/lib/content";
+import { getRegularWeight } from "@/lib/font-weights";
 import { getTypefacePath } from "@/lib/routes";
 
 const CHARACTER_EXAMPLES = [
@@ -70,6 +71,7 @@ type TypefaceDetailProps = {
 const PAIRED_HEADLINE_COLUMNS = "min-[721px]:grid-cols-2 min-[1105px]:grid-cols-[calc(50%_-_var(--spacing)*12)_minmax(0,1fr)]";
 
 export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetailProps) {
+  const regularWeight = getRegularWeight(typeface.weights);
   const paragraphText = text.paragraphs.join("\n\n");
   const actions = [
     { label: "Download", href: typeface.projectUrl, title: `Download ${typeface.latestRelease.version} (${typeface.latestRelease.date})` },
@@ -92,7 +94,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
 
   return (
     <div className="[--section-gap:4rem] min-[721px]:[--section-gap:8rem]">
-      <div className={`${typeface.slug} [&.space-mono_:is(.examples-words,.examples-headlines,.examples-paragraphs)]:[font-feature-settings:'liga'_off,'clig'_off,'dlig'_off]`}>
+      <div style={{ fontWeight: regularWeight }} className={`${typeface.slug} [&.space-mono_:is(.examples-words,.examples-headlines,.examples-paragraphs)]:[font-feature-settings:'liga'_off,'clig'_off,'dlig'_off]`}>
         <div className="layout-grid mb-(--section-gap) scroll-mt-20 gap-y-10 min-[721px]:gap-y-(--section-gap)" id="overview">
           <section className="col-span-12 flex min-h-56 flex-col items-center justify-center gap-5 py-4 min-[721px]:min-h-112 min-[721px]:py-8">
             <div className="h-48 w-full [--sample-fit-width:0.75] min-[721px]:h-88 max-[720px]:[--sample-fit-height:0.9] max-[1104px]:[--sample-fit-width:0.9]">
@@ -161,6 +163,7 @@ export function TypefaceDetail({ glyphFontFile, text, typeface }: TypefaceDetail
                 <FittedLine
                   key={`${typeface.slug}-${word}`}
                   text={word}
+                  weight={regularWeight}
                   className={index === 2 ? "uppercase" : ""}
                 />
               ))}

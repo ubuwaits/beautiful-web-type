@@ -27,11 +27,11 @@ export function FittedSpecimenText({ typeface }: { typeface: Pick<Typeface, "slu
       <div className="relative flex h-full w-full min-w-0 flex-col items-center justify-center">
         <div className="flex h-[calc(11rem*var(--specimen-scale,1))] w-full items-center justify-center">
           <div
-            className={`${typeface.slug} w-max shrink-0 text-[10rem] font-normal not-italic leading-none`}
+            className={`${typeface.slug} w-max shrink-0 text-[10rem] not-italic leading-none`}
             ref={textRef}
             style={{ transform: "scale(var(--specimen-scale, 1))" }}
           >
-            <h1 className="m-0 whitespace-nowrap text-[1em] font-normal not-italic leading-[1.1]">
+            <h1 className="m-0 whitespace-nowrap text-[1em] not-italic leading-[1.1]">
               {typeface.name}
             </h1>
           </div>

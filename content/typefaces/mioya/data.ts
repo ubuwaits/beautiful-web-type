@@ -8,10 +8,10 @@ const typeface: TypefaceData = {
   styles: "Variable",
   glyphCount: 451,
   weights: [
-    { weight: 300, name: "Light" },
-    { weight: 400, name: "Regular" },
+    { weight: 100, name: "Light" },
+    { weight: 340, name: "Regular" },
     { weight: 700, name: "Bold" },
-    { weight: 900, name: "Black" }
+    { weight: 1000, name: "Black" }
   ],
   latestRelease: { version: "v1.000", date: "23 May 2026" },
   projectUrl: "https://dotcolon.net/fonts/mioya/",
@@ -22,7 +22,8 @@ const typeface: TypefaceData = {
 Anatomically, the typeface is built on the deliberate tension between soft, rounded contours and sharp terminals. The letterforms carry an elevated x-height and generous interior counters, giving lowercase characters an approachable, slightly buoyant presence on the baseline. To counter this softness and maintain structural discipline, Sagano anchored the strokes with crisp, wedge-like serifs that preserve visual focus. Stroke modulation is calibrated dynamically across the family: in the Light cut, contrast remains low and restrained to protect delicate stems, whereas the Black weight accentuates contrast into a punchy, high-modulation display face. Distributed across four core weights—Light, Regular, Bold, and Black—alongside a continuous variable weight font, Mioya is equipped with OpenType features including standard ligatures, proportional figures, and case-sensitive forms.
 
 Mioya suits book jackets, packaging, cultural posters, and editorial headings that call for a blend of vintage warmth and crisp terminal definition. The Light and Regular weights also lend themselves to short-to-medium editorial excerpts, callouts, and subheads, while the heavier cuts bring stronger contrast and emphasis to titles.`,
-  fontFile: "/assets/fonts/mioya/Mioya-Regular.woff2",
+  glyphSource: "/assets/fonts/mioya/MioyaVF.woff2",
+  fontFile: "/assets/fonts/mioya/glyphs-regular.woff2",
   features: [
     {
       type: "comparison", title: "Standard Ligatures", code: "font-feature-settings: 'liga';",

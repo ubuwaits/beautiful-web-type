@@ -378,13 +378,13 @@
     "previewHash": "055f710e0005d5e5500e19eb0ef1041699505edcf1f7b6bc8830588210d26a84"
   },
   "mioya": {
-    "source": "/assets/fonts/mioya/Mioya-Regular.woff2",
-    "sourceHash": "6205b930b566917f388027b6b3c438bce2e5b331a324311736f9ae86a80e2ed1",
+    "source": "/assets/fonts/mioya/MioyaVF.woff2",
+    "sourceHash": "7a7f8ac52cb4d7bf1d5bf855e116a8a2de115d366af95bab2285452f15a62159",
     "text": "Mioya",
-    "cssHash": "2dd07dd2b00fbbe56026ad4d877f57096d986afec1992cdd278c3b10ff6b32dd",
+    "cssHash": "76f191add11877c4c3db2c044ccf6c53940fbfa9d17dcb8c0c1318175b7f756e",
     "generatorHash": "789aee864fa33614f5d16e00a7b826ddab9254cac2122e182acbf56d3aa24f63",
     "toolVersion": "4.60.2",
-    "previewHash": "32a8545798bcde9529b66b85e03e263a391985c3e64e51815c11c7f05e7a3919"
+    "previewHash": "66db366e11ae480b46e259beb000ac59ca6527fdc71850bb653d8fe780d9171f"
   },
   "mona-sans": {
     "source": "/assets/fonts/mona-sans/MonaSans.woff2",

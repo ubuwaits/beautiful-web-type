@@ -302,7 +302,7 @@
 @font-face {
   font-family: "BWT Preview mioya";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100 1000;
   src: url("/assets/font-previews/mioya.woff2") format("woff2");
 }
 

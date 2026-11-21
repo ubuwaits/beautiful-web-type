@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import type { CSSProperties } from "react";
 import type { Typeface } from "@/lib/content";
+import { getRegularWeight } from "@/lib/font-weights";
 import { getTypefacePath } from "@/lib/routes";
 
 type FontCardProps = {
@@ -25,10 +26,11 @@ export function FontCard({ typeface, eager = false }: FontCardProps) {
           <div className="relative flex h-full w-full min-w-0 flex-col items-center justify-center">
             <div className="absolute inset-x-0 bottom-[40%] flex h-0 items-end justify-center min-[721px]:bottom-[35%]">
               <div
-                className="w-max shrink-0 text-[10rem] font-normal not-italic leading-none [font-family:var(--specimen-font,inherit)] origin-bottom [transform:scale(var(--specimen-scale,1))] opacity-[var(--specimen-title-opacity,0)]"
+                className="w-max shrink-0 text-[10rem] not-italic leading-none [font-family:var(--specimen-font,inherit)] origin-bottom [transform:scale(var(--specimen-scale,1))] opacity-[var(--specimen-title-opacity,0)]"
+                style={{ fontWeight: getRegularWeight(typeface.weights) }}
                 data-font-preview={typeface.slug}
               >
-                <h1 className="m-0 whitespace-nowrap text-[1em] font-normal not-italic leading-[1.1] [text-box-trim:trim-end] [text-box-edge:cap_alphabetic]">
+                <h1 className="m-0 whitespace-nowrap text-[1em] not-italic leading-[1.1] [text-box-trim:trim-end] [text-box-edge:cap_alphabetic]">
                   {typeface.name}
                 </h1>
               </div>

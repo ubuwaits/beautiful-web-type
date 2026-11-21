@@ -127,3 +127,26 @@ test("releases off-screen glyph canvases and redraws them on return", async ({ p
   expect(await sample.locator("canvas").evaluate((canvas) => (canvas as HTMLCanvasElement).toDataURL())).toBe(originalImage);
   await expect(sample).toHaveAttribute("aria-pressed", "true");
 });
+
+test("uses Mioya’s named Regular across the catalog and specimen", async ({ page }) => {
+  await page.goto("/display/");
+  const card = page.locator('[data-font-preview="mioya"]');
+  await card.scrollIntoViewIfNeeded();
+  await expect(card).toHaveCSS("opacity", "1");
+  await expect(card.locator("h1")).toHaveCSS("font-weight", "340");
+
+  await card.click();
+  await expect(page.locator("#overview h1")).toHaveCSS("font-weight", "340");
+  const weights = await page.locator("#headlines [data-fit-line]").evaluateAll(
+    (lines) => lines.map((line) => getComputedStyle(line).fontWeight)
+  );
+  expect(weights).toEqual(["100", "340", "700", "1000"]);
+  const tester = page.getByRole("textbox", { name: "Try Mioya" });
+  await expect(tester).toHaveCSS("font-weight", "340");
+  await page.getByRole("slider", { name: "Weight" }).press("ArrowRight");
+  await expect(tester).toHaveCSS("font-weight", "341");
+  await page.getByRole("button", { name: "Reset font tester" }).click();
+  await expect(tester).toHaveCSS("font-weight", "340");
+  await page.locator("#glyphs").scrollIntoViewIfNeeded();
+  await expect(page.locator("#glyph-grid button")).toHaveCount(451);
+});

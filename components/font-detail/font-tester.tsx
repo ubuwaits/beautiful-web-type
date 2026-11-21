@@ -7,12 +7,12 @@ import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import type { FontAxis, FontTesterData, TesterFace } from "@/lib/font-tester";
+import { getRegularWeight } from "@/lib/font-weights";
 import type { Weight } from "@/lib/content";
 
 const DEFAULT_TEXT = "Sphinx of black quartz,\njudge my vow.";
 const defaultSize = () => window.matchMedia("(max-width: 720px)").matches ? 64 : 128;
 const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
-const initialAxisValue = (axis: FontAxis) => axis.tag === "wght" ? clamp(400, axis.min, axis.max) : axis.default;
 
 function findFace(faces: TesterFace[], style: string, weight: number) {
   const candidates = faces.filter((face) => face.style === style);
@@ -36,9 +36,11 @@ function RangeControl({ label, value, min, max, step = 1, unit = "", onChange }:
 export function FontTester({ data, name, weights: weightNames }: { data: FontTesterData; name: string; weights: Weight[] }) {
   const id = useId();
   const defaultStyle = data.faces.some((face) => face.style === "normal") ? "normal" : data.faces[0].style;
-  const defaultFace = findFace(data.faces, defaultStyle, 400);
+  const regularWeight = getRegularWeight(weightNames);
+  const defaultFace = findFace(data.faces, defaultStyle, regularWeight);
+  const defaultWeight = defaultFace.axes.some((axis) => axis.tag === "wght") ? regularWeight : defaultFace.weight;
   const [style, setStyle] = useState(defaultStyle);
-  const [weight, setWeight] = useState(defaultFace.axes.some((axis) => axis.tag === "wght") ? 400 : defaultFace.weight);
+  const [weight, setWeight] = useState(defaultWeight);
   const [text, setText] = useState(DEFAULT_TEXT);
   const [size, setSize] = useState(128);
   useLayoutEffect(() => setSize(defaultSize()), []);
@@ -49,7 +51,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   const styles = [...new Set(data.faces.map((entry) => entry.style))];
   const weights = [...new Set(data.faces.filter((entry) => entry.style === style).map((entry) => entry.weight))];
   const hasWeightAxis = face.axes.some((axis) => axis.tag === "wght");
-  const axisValue = (axis: FontAxis) => clamp(axisValues[axis.tag] ?? initialAxisValue(axis), axis.min, axis.max);
+  const axisValue = (axis: FontAxis) => clamp(axisValues[axis.tag] ?? (axis.tag === "wght" ? regularWeight : axis.default), axis.min, axis.max);
   const activeSets = selectedSets.filter((tag) => face.stylisticSets.some((set) => set.tag === tag));
   const previewStyle: CSSProperties = {
     fontFamily: JSON.stringify(data.family),
@@ -65,7 +67,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   };
   const reset = () => {
     setStyle(defaultStyle);
-    setWeight(defaultFace.weight);
+    setWeight(defaultWeight);
     setText(DEFAULT_TEXT);
     setSize(defaultSize());
     setAlignment("center");
