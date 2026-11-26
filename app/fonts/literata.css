@@ -1,0 +1,21 @@
+:root {
+  --literata: 'Literata', serif;
+}
+
+.literata {
+  font-family: var(--literata) !important;
+}
+
+@font-face {
+  font-family: "Literata";
+  font-style: normal;
+  font-weight: 200 900;
+  src: url("/assets/fonts/literata/Literata.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Literata";
+  font-style: italic;
+  font-weight: 200 900;
+  src: url("/assets/fonts/literata/Literata-Italic.woff2") format("woff2");
+}

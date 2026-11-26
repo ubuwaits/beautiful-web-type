@@ -40,6 +40,7 @@ import libreCaslonCondensed from "./libre-caslon-condensed/data";
 import libreCaslonDisplay from "./libre-caslon-display/data";
 import libreCaslonText from "./libre-caslon-text/data";
 import libreFranklin from "./libre-franklin/data";
+import literata from "./literata/data";
 import lora from "./lora/data";
 import luperca from "./luperca/data";
 import messapia from "./messapia/data";
@@ -107,6 +108,7 @@ export const typefaceData: TypefaceData[] = [
   libreCaslonDisplay,
   libreCaslonText,
   libreFranklin,
+  literata,
   lora,
   luperca,
   messapia,

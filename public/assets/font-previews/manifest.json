@@ -359,6 +359,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "e9f6e72cb38b690fcf405442f416622ef1a59c1b2a82019f660f964b9a58d762"
   },
+  "literata": {
+    "source": "/assets/fonts/literata/Literata.woff2",
+    "sourceHash": "5e50643479bee69e0204164602f830502b0db42bbc29da83edc9980df17e34df",
+    "text": "Literata",
+    "cssHash": "d354704e16026b8ce2422b7d228bf93dfe4f7fd9177dceb1429a59570a404ae0",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "a5528ced47f5da45db65dd4394900bf398f8472db014bc95081f288ebce75411"
+  },
   "lora": {
     "source": "/assets/fonts/lora/Lora-VF.woff2",
     "sourceHash": "e4359fb64060d178a1a2d14e56e6dcba97a79361328e0492b67891e7a454e1e3",

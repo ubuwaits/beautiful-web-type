@@ -6016,6 +6016,71 @@
       }
     ]
   },
+  "literata": {
+    "family": "Literata",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 7,
+            "max": 72,
+            "default": 12
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Adscript alternates"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows and Geometric"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 200,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 7,
+            "max": 72,
+            "default": 12
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 200,
+            "max": 900,
+            "default": 400
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Adscript alternates"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrows and Geometric"
+          }
+        ]
+      }
+    ]
+  },
   "lora": {
     "family": "Lora",
     "faces": [

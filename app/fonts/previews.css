@@ -286,6 +286,13 @@
 }
 
 @font-face {
+  font-family: "BWT Preview literata";
+  font-style: normal;
+  font-weight: 200 900;
+  src: url("/assets/font-previews/literata.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview lora";
   font-style: normal;
   font-weight: 100 900;

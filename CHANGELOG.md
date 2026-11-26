@@ -2,6 +2,7 @@
 
 ## 26 Nov 2026
 
+* **Added [Literata](https://beautifulwebtype.com/literata/)** by TypeTogether.
 * **Added [Google Sans Flex](https://beautifulwebtype.com/google-sans-flex/)** by Google.
 * **Added [Intel One Mono](https://beautifulwebtype.com/intel-one-mono/)** by Frere-Jones Type.
 
