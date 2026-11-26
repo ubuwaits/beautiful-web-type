@@ -22,6 +22,7 @@ import fivoSans from "./fivo-sans/data";
 import fivoSansModern from "./fivo-sans-modern/data";
 import fraunces from "./fraunces/data";
 import geistSans from "./geist-sans/data";
+import googleSansCode from "./google-sans-code/data";
 import googleSansFlex from "./google-sans-flex/data";
 import hubotSans from "./hubot-sans/data";
 import iaWriterQuattro from "./ia-writer-quattro/data";
@@ -92,6 +93,7 @@ export const typefaceData: TypefaceData[] = [
   fivoSansModern,
   fraunces,
   geistSans,
+  googleSansCode,
   googleSansFlex,
   hubotSans,
   iaWriterQuattro,

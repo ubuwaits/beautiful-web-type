@@ -197,6 +197,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "ce20639452dc61ca183aa1501de697f139ef2375e857ee391553145e2915fa63"
   },
+  "google-sans-code": {
+    "source": "/assets/fonts/google-sans-code/GoogleSansCode.woff2",
+    "sourceHash": "41199c30e6826d04dce647f8a89423f0cfd2d732dcf7f41757c4a06ebd44c608",
+    "text": "Google Sans Code",
+    "cssHash": "92ca60cecc9b25bf3eb9f041e85a1f96af94ae383247b01ec30139c295cd5ce7",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "2ba3c8becde6a5a9c1ae3a5d20a5cfd17a0b4f92d1b0ec8b65c1b7cbe1368bf3"
+  },
   "google-sans-flex": {
     "source": "/assets/fonts/google-sans-flex/GoogleSansFlex.woff2",
     "sourceHash": "6a173488069aa5ee033caabdb3beb9d95e1772f13c56c5a772cc5f78bc06881c",

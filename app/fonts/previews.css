@@ -158,6 +158,13 @@
 }
 
 @font-face {
+  font-family: "BWT Preview google-sans-code";
+  font-style: normal;
+  font-weight: 300 800;
+  src: url("/assets/font-previews/google-sans-code.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview google-sans-flex";
   font-style: normal;
   font-weight: 1 1000;

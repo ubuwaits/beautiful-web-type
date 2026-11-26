@@ -2592,6 +2592,63 @@
       }
     ]
   },
+  "google-sans-code": {
+    "family": "Google Sans Code",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 800,
+            "default": 400
+          },
+          {
+            "tag": "MONO",
+            "name": "Monospaced",
+            "min": 0,
+            "max": 1,
+            "default": 1
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternate Single-storey Lowercase G"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 800,
+            "default": 400
+          },
+          {
+            "tag": "MONO",
+            "name": "Monospaced",
+            "min": 0,
+            "max": 1,
+            "default": 1
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternate Single-storey Lowercase G"
+          }
+        ]
+      }
+    ]
+  },
   "google-sans-flex": {
     "family": "Google Sans Flex",
     "faces": [

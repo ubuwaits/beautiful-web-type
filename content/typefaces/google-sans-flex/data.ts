@@ -23,6 +23,7 @@ const typeface: TypefaceData = {
   projectUrl: "https://github.com/googlefonts/googlesans-flex",
   gFontsUrl: "https://fonts.google.com/specimen/Google+Sans+Flex",
   creator: { name: "Google", url: "https://design.google/library/google-sans-flex-font" },
+  familyFaces: ["Google Sans Code"],
   summary: "Google Sans Flex extends Google’s geometric brand typeface with variable width, optical size, and rounded terminals for interface text and display headings.",
   description: `Google Sans Flex traces its origins to <em>Product Sans</em>, the geometric lettering Google introduced with its 2015 identity. Google Sans carried those forms into the company’s interfaces. For Flex, Google worked with Font Bureau and Pathfinders to adapt the family to a wider range of settings, from small labels on a watch face to large titles on a phone. Google released the family as open source in 2025.
 

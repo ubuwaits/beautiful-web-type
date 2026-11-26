@@ -1,0 +1,21 @@
+:root {
+  --google-sans-code: 'Google Sans Code', monospace;
+}
+
+.google-sans-code {
+  font-family: var(--google-sans-code) !important;
+}
+
+@font-face {
+  font-family: "Google Sans Code";
+  font-style: normal;
+  font-weight: 300 800;
+  src: url("/assets/fonts/google-sans-code/GoogleSansCode.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Google Sans Code";
+  font-style: italic;
+  font-weight: 300 800;
+  src: url("/assets/fonts/google-sans-code/GoogleSansCode-Italic.woff2") format("woff2");
+}

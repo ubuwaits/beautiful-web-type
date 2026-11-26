@@ -2,6 +2,7 @@
 
 ## 26 Nov 2026
 
+* **Added [Google Sans Code](https://beautifulwebtype.com/google-sans-code/)** by Google and Universal Thirst.
 * **Added [Roboto Flex](https://beautifulwebtype.com/roboto-flex/)** by Font Bureau.
 * **Added [Roboto Serif](https://beautifulwebtype.com/roboto-serif/)** by Greg Gazdowicz of Commercial Type.
 * **Added [Literata](https://beautifulwebtype.com/literata/)** by TypeTogether.
