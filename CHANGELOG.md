@@ -2,6 +2,7 @@
 
 ## 26 Nov 2026
 
+* **Added [Roboto Serif](https://beautifulwebtype.com/roboto-serif/)** by Greg Gazdowicz of Commercial Type.
 * **Added [Literata](https://beautifulwebtype.com/literata/)** by TypeTogether.
 * **Added [Google Sans Flex](https://beautifulwebtype.com/google-sans-flex/)** by Google.
 * **Added [Intel One Mono](https://beautifulwebtype.com/intel-one-mono/)** by Frere-Jones Type.

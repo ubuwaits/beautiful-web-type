@@ -476,6 +476,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "86dd8e8d5b8d6893e10700c2351d79a1e410723802adeb1cd375961da7f3f3ea"
   },
+  "roboto-serif": {
+    "source": "/assets/fonts/roboto-serif/RobotoSerif.woff2",
+    "sourceHash": "6d700189a9859554553d7fe7ec00ead47e88a75c1fd4baee961df572a04761ce",
+    "text": "Roboto Serif",
+    "cssHash": "64ab41463a622769122a370bcc3b7a2b7e2604a2e1690362a7eab64e720f9145",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "bfc2a019e73fdee247a56a9eeb42678e3da8c71062a0bfa974e4013b100db3ba"
+  },
   "schibsted-grotesk": {
     "source": "/assets/fonts/schibsted-grotesk/SchibstedGrotesk.woff2",
     "sourceHash": "8b77a34cdd59455aa3434e949597e99346204d40357905fd918df20ed1139ac1",

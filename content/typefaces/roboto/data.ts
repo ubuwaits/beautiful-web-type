@@ -30,6 +30,7 @@ const typeface: TypefaceData = {
 The face retains Robertson’s combination of mechanical structure and rounded forms. Flattened outer curves give letters a firm vertical posture, while relatively open apertures and varied character widths keep the rhythm from becoming strictly geometric. The Thin, Regular, and Bold masters were adjusted for compatible interpolation, supporting a continuous weight range from 100 to 900 and widths from Condensed to Normal, with companion italic styles. Screen rendering was also a central concern: Mike Duggan developed TrueType hinting in Microsoft VTT, and the project supplies variants with hinting and vertical metrics adapted for Windows, Android, ChromeOS, and web use.
 
 Roboto suits software menus, mobile navigation, dashboards, technical documentation, and responsive layouts that need a broad hierarchy within a consistent family. Its width range helps accommodate compact headings and constrained columns, while the familiar letterforms give everyday controls an unobtrusive presence. Classic is particularly useful where continuity with the established Roboto design matters alongside the flexibility of a variable font.`,
+  familyFaces: ["Roboto Serif"],
   fontFile: "/assets/fonts/roboto/Roboto.woff2",
   features: [
     { type: "axis", title: "Width", axis: "wdth", text: "Width", values: [75, 87.5, 100] },

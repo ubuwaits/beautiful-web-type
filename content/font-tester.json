@@ -7226,6 +7226,123 @@
       }
     ]
   },
+  "roboto-serif": {
+    "family": "Roboto Serif",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 50,
+            "max": 150,
+            "default": 100
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 8,
+            "max": 144,
+            "default": 20
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "GRAD",
+            "name": "Grade",
+            "min": -50,
+            "max": 100,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "E F with serif on crossbar"
+          },
+          {
+            "tag": "ss02",
+            "name": "alternate g"
+          },
+          {
+            "tag": "ss04",
+            "name": "f with heavy terminal"
+          },
+          {
+            "tag": "ss05",
+            "name": "alternate sterling"
+          },
+          {
+            "tag": "ss06",
+            "name": "alternate a"
+          },
+          {
+            "tag": "ss07",
+            "name": "African Eng"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 100,
+        "axes": [
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 50,
+            "max": 150,
+            "default": 100
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 8,
+            "max": 144,
+            "default": 20
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "tag": "GRAD",
+            "name": "Grade",
+            "min": -50,
+            "max": 100,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          },
+          {
+            "tag": "ss05",
+            "name": "Stylistic set 05"
+          }
+        ]
+      }
+    ]
+  },
   "schibsted-grotesk": {
     "family": "Schibsted Grotesk",
     "faces": [
