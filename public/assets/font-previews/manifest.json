@@ -395,6 +395,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "5d79795f0ef39e2f7474bc60dc6e9632ed64ca36c6ec0c23c32ade1a52ceca07"
   },
+  "merriweather": {
+    "source": "/assets/fonts/merriweather/Merriweather.woff2",
+    "sourceHash": "5b80dedbd25e8e777b5a8819ad67c38a937ca121d7947da865d9a18e421c4cb6",
+    "text": "Merriweather",
+    "cssHash": "9747de687a8e9e4db4144d757a001b39e12b603693333f3b6fc0dce9efdc95ad",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "394415d09e56f14db4dac6c6638f20e7c19e79cd4bd5c5f09f38658f49375df5"
+  },
   "messapia": {
     "source": "/assets/fonts/messapia/Messapia-Regular.woff2",
     "sourceHash": "d4e15af043fb342908730f8c689492ee9a6ff4812e90a74441636daf90a8efef",

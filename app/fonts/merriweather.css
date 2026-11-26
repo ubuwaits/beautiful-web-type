@@ -1,0 +1,23 @@
+:root {
+  --merriweather: 'Merriweather', serif;
+}
+
+.merriweather {
+  font-family: var(--merriweather) !important;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300 900;
+  font-stretch: 87% 112%;
+  src: url("/assets/fonts/merriweather/Merriweather.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300 900;
+  font-stretch: 87% 112%;
+  src: url("/assets/fonts/merriweather/Merriweather-Italic.woff2") format("woff2");
+}

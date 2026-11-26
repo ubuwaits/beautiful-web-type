@@ -44,6 +44,7 @@ import libreFranklin from "./libre-franklin/data";
 import literata from "./literata/data";
 import lora from "./lora/data";
 import luperca from "./luperca/data";
+import merriweather from "./merriweather/data";
 import messapia from "./messapia/data";
 import mfbOldstyle from "./mfb-oldstyle/data";
 import mioya from "./mioya/data";
@@ -116,6 +117,7 @@ export const typefaceData: TypefaceData[] = [
   literata,
   lora,
   luperca,
+  merriweather,
   messapia,
   mfbOldstyle,
   mioya,

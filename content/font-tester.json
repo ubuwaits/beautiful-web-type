@@ -6215,6 +6215,101 @@
       }
     ]
   },
+  "merriweather": {
+    "family": "Merriweather",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 900,
+            "default": 300
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 87,
+            "max": 112,
+            "default": 100
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 18,
+            "max": 144,
+            "default": 18
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Alternative comma shaped punctuation"
+          },
+          {
+            "tag": "ss02",
+            "name": "Alternative dollar and cent"
+          },
+          {
+            "tag": "ss03",
+            "name": "Alternative question mark"
+          },
+          {
+            "tag": "ss04",
+            "name": "Localized letter vhook"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 900,
+            "default": 300
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 87,
+            "max": 112,
+            "default": 100
+          },
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 18,
+            "max": 144,
+            "default": 18
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Stylistic set 01"
+          },
+          {
+            "tag": "ss02",
+            "name": "Stylistic set 02"
+          },
+          {
+            "tag": "ss03",
+            "name": "Stylistic set 03"
+          },
+          {
+            "tag": "ss04",
+            "name": "Stylistic set 04"
+          }
+        ]
+      }
+    ]
+  },
   "messapia": {
     "family": "Messapia",
     "faces": [

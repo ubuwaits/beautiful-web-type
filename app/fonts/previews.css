@@ -315,6 +315,14 @@
 }
 
 @font-face {
+  font-family: "BWT Preview merriweather";
+  font-style: normal;
+  font-weight: 300 900;
+  font-stretch: 87% 112%;
+  src: url("/assets/font-previews/merriweather.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview messapia";
   font-style: normal;
   font-weight: 400;
