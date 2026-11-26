@@ -23,7 +23,7 @@ const typeface: TypefaceData = {
   projectUrl: "https://github.com/googlefonts/roboto-serif",
   gFontsUrl: "https://fonts.google.com/specimen/Roboto+Serif",
   creator: { name: "Greg Gazdowicz of Commercial Type", url: "https://vault.commercialtype.com/custom/roboto_serif_for_google_fonts" },
-  familyFaces: ["Roboto"],
+  familyFaces: ["Roboto", "Roboto Flex"],
   summary: "Greg Gazdowicz designed Roboto Serif for reading on screen. Its grade axis lightens or darkens a paragraph while keeping every line break in place.",
   description: `Google’s Material Design team commissioned Roboto Serif for long stretches of reading on screen. Greg Gazdowicz of Commercial Type matched the cap height and x-height by eye to those of the original sans, then experimented with the widths of the letters. He tried the relatively even proportions of a newspaper face and the more varied ones of a book face. The finished design, released in 2022, comes closer to the latter. In a word like <em>from</em>, the narrow <em>f</em> and <em>r</em> give way to a broad <em>o</em> and a still wider <em>m</em>.
 

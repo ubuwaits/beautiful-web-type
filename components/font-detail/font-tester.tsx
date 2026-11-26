@@ -23,10 +23,10 @@ function RangeControl({ label, value, min, max, step = 1, unit = "", onChange }:
   label: string; value: number; min: number; max: number; step?: number; unit?: string; onChange: (value: number) => void;
 }) {
   return (
-    <div className="w-32 shrink-0">
-      <div className="mb-2 flex h-4 items-baseline justify-between gap-2 font-(family-name:--ui-face) text-xs whitespace-nowrap">
-        <span>{label}</span>
-        <span className="text-neutral-500 tabular-nums dark:text-neutral-400">{Number(value.toFixed(2))}{unit}</span>
+    <div className="w-max max-w-full min-w-[min(8rem,100%)] shrink-0">
+      <div className="mb-2 flex items-baseline justify-between gap-2 font-(family-name:--ui-face) text-xs">
+        <span className="wrap-anywhere">{label}</span>
+        <span className="min-w-[6ch] shrink-0 text-right text-neutral-500 tabular-nums dark:text-neutral-400">{Number(value.toFixed(2))}{unit}</span>
       </div>
       <Slider label={label} min={min} max={max} step={step} value={[value]} onValueChange={([next]) => onChange(next)} />
     </div>
@@ -53,8 +53,9 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   const hasWeightAxis = face.axes.some((axis) => axis.tag === "wght");
   const startingAxes: Record<string, number> = { wght: regularWeight, wdth: 100, opsz: size };
   const axisValue = (axis: FontAxis) => clamp(axisValues[axis.tag] ?? startingAxes[axis.tag] ?? axis.default, axis.min, axis.max);
-  // Let the browser optically size the sample until the reader adjusts that axis.
-  const explicitAxes = face.axes.filter((axis) => axis.tag !== "opsz" || axisValues.opsz !== undefined);
+  // WebKit needs an explicit optical size to render intermediate Roboto Flex weights.
+  const explicitOpticalSize = data.family === "Roboto Flex" || axisValues.opsz !== undefined;
+  const explicitAxes = face.axes.filter((axis) => axis.tag !== "opsz" || explicitOpticalSize);
   const activeSets = selectedSets.filter((tag) => face.stylisticSets.some((set) => set.tag === tag));
   function selectStyle(next: string) {
     setStyle(next);
@@ -69,7 +70,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
     fontWeight: hasWeightAxis ? axisValue(face.axes.find((axis) => axis.tag === "wght")!) : face.weight,
     fontStyle: style,
     fontSynthesis: "none",
-    fontOpticalSizing: axisValues.opsz === undefined ? "auto" : "none",
+    fontOpticalSizing: explicitOpticalSize ? "none" : "auto",
     fontVariationSettings: explicitAxes.map((axis) => `"${axis.tag}" ${axisValue(axis)}`).join(", ") || "normal",
     fontFeatureSettings: activeSets.map((tag) => `"${tag}" 1`).join(", ") || "normal",
     lineHeight: 1.1,
@@ -87,7 +88,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
 
   return (
     <section id="tester" aria-label="Font tester" className="mb-(--section-gap) min-w-0 scroll-mt-20 py-8 min-[721px]:py-12 [--ui-face:var(--ui-monospaced)] font-(family-name:--ui-face)">
-        <div className="relative mb-12 flex min-w-0 items-center gap-6 overflow-x-auto py-3 scrollbar-thin *:first:ml-auto *:last:mr-auto" aria-label="Font tester controls">
+        <div className="relative mb-12 flex min-w-0 items-center justify-center-safe gap-x-4 gap-y-6 overflow-x-auto py-3 scrollbar-thin min-[1105px]:flex-wrap min-[1105px]:overflow-visible" aria-label="Font tester controls">
             {!hasWeightAxis && weights.length > 1 && (
               <div className="w-36 shrink-0">
                 <label className="sr-only" htmlFor={`${id}-weight`}>Weight</label>
@@ -107,9 +108,9 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
             </ToggleGroupItem>)}
           </ToggleGroup>
           {face.stylisticSets.length > 0 && (
-            <div className="shrink-0">
+            <div className="shrink-0 min-[1105px]:max-w-full">
               <span id={`${id}-sets`} className="sr-only">Stylistic sets</span>
-              <ToggleGroup multiple aria-labelledby={`${id}-sets`} value={activeSets} onValueChange={setSelectedSets}>
+              <ToggleGroup multiple className="min-[1105px]:max-w-full min-[1105px]:flex-wrap" aria-labelledby={`${id}-sets`} value={activeSets} onValueChange={setSelectedSets}>
                 {face.stylisticSets.map((set) => <ToggleGroupItem value={set.tag} key={set.tag} title={set.name} aria-label={`${set.tag}: ${set.name}`}>{set.tag}</ToggleGroupItem>)}
               </ToggleGroup>
             </div>
@@ -117,7 +118,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
           <RangeControl label="Size" value={size} min={16} max={160} onChange={setSize} />
           {face.axes.filter((axis) => axis.tag === "wght").map((axis) => <RangeControl key={axis.tag} label={axis.name} value={axisValue(axis)} min={axis.min} max={axis.max} onChange={(value) => setAxisValues((current) => ({ ...current, [axis.tag]: value }))} />)}
           {face.axes.some((axis) => axis.tag !== "wght") && (
-            <div className="flex shrink-0 items-center gap-6" role="group" aria-label="Variable font axes">
+            <div className="contents" role="group" aria-label="Variable font axes">
               {face.axes.filter((axis) => axis.tag !== "wght").map((axis) => <RangeControl key={axis.tag} label={axis.tag === "SPCG" ? "Font spacing" : axis.name} value={axisValue(axis)} min={axis.min} max={axis.max} step={Math.min(1, (axis.max - axis.min) / 100)} unit={axis.tag === "wdth" ? "%" : ""} onChange={(value) => setAxisValues((current) => ({ ...current, [axis.tag]: value }))} />)}
             </div>
           )}

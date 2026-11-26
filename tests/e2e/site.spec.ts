@@ -151,6 +151,49 @@ test("uses Mioya’s named Regular across the catalog and specimen", async ({ pa
   await expect(page.locator("#glyph-grid button")).toHaveCount(451);
 });
 
+test("renders intermediate Roboto Flex weights in roman and italic", async ({ page }) => {
+  await page.goto("/roboto-flex/");
+  const tester = page.getByRole("textbox", { name: "Try Roboto Flex" });
+  const weight = page.getByRole("slider", { name: "Weight", exact: true });
+  for (const style of ["Roman", "Italic"]) {
+    await page.getByRole("button", { name: "Reset font tester" }).click();
+    await tester.fill("HHHH");
+    await page.locator("#tester").getByLabel(style, { exact: true }).click();
+    await page.evaluate(() => document.fonts.ready.then(() => undefined));
+    await weight.press("ArrowRight");
+    await expect(weight).toHaveValue("401");
+    await expect(tester).toHaveCSS("font-variation-settings", /"opsz" 128/);
+    const first = await tester.screenshot();
+    for (let step = 0; step < 10; step++) await weight.press("ArrowRight");
+    await expect(weight).toHaveValue("411");
+    expect((await tester.screenshot()).equals(first)).toBe(false);
+  }
+});
+
+test("aligns Roboto Flex axis samples while varying their outlines", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/roboto-flex/#features");
+  const rows = page.locator('#features [data-font-feature="axis"]');
+  for (const title of ["Lowercase Height", "Descender Depth", "Figure Height", "Grade"]) {
+    const samples = rows.filter({ has: page.getByText(title, { exact: true }) }).locator("span");
+    await samples.first().scrollIntoViewIfNeeded();
+    await page.evaluate(() => document.fonts.ready.then(() => undefined));
+    const positions = await samples.evaluateAll((samples) => samples.map((el) => {
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      const { top, height } = range.getBoundingClientRect();
+      return { top, height, labelTop: el.nextElementSibling!.getBoundingClientRect().top };
+    }));
+    expect(positions[0].height).toBeGreaterThan(0);
+    expect(positions).toEqual(Array(3).fill(positions[0]));
+    const outlines = new Set<string>();
+    for (const sample of await samples.all()) {
+      outlines.add((await sample.screenshot()).toString("base64"));
+    }
+    expect(outlines.size).toBe(3);
+  }
+});
+
 test("offers Playfair’s full variable axes in Roman and Italic", async ({ page }) => {
   await page.goto("/playfair/");
   await expect(page.locator("#overview h1")).toHaveText("Playfair");

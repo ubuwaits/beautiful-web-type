@@ -8,6 +8,7 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ### 26 Nov 2026
 
+* **Added [Roboto Flex](https://beautifulwebtype.com/roboto-flex/)** by Font Bureau.
 * **Added [Roboto Serif](https://beautifulwebtype.com/roboto-serif/)** by Greg Gazdowicz of Commercial Type.
 * **Added [Literata](https://beautifulwebtype.com/literata/)** by TypeTogether.
 * **Added [Google Sans Flex](https://beautifulwebtype.com/google-sans-flex/)** by Google.
@@ -65,14 +66,14 @@ Typefaces use the [SIL Open Font License](https://scripts.sil.org/OFL) or a publ
 | [Mona Sans](https://beautifulwebtype.com/mona-sans/) | [Newsreader](https://beautifulwebtype.com/newsreader/) |
 | [Oswald](https://beautifulwebtype.com/oswald/) | [Piazzolla](https://beautifulwebtype.com/piazzolla/) |
 | [Playfair](https://beautifulwebtype.com/playfair/) | [Poppins](https://beautifulwebtype.com/poppins/) |
-| [Roboto](https://beautifulwebtype.com/roboto/) | [Roboto Serif](https://beautifulwebtype.com/roboto-serif/) |
-| [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/) | [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) |
-| [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) | [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) |
-| [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) | [Space Mono](https://beautifulwebtype.com/space-mono/) |
-| [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/) | [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/) |
-| [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/) | [Vollkorn](https://beautifulwebtype.com/vollkorn/) |
-| [Work Sans](https://beautifulwebtype.com/work-sans/) | [Zalando Sans](https://beautifulwebtype.com/zalando-sans/) |
-| [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) |  |
+| [Roboto](https://beautifulwebtype.com/roboto/) | [Roboto Flex](https://beautifulwebtype.com/roboto-flex/) |
+| [Roboto Serif](https://beautifulwebtype.com/roboto-serif/) | [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/) |
+| [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) | [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) |
+| [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) | [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) |
+| [Space Mono](https://beautifulwebtype.com/space-mono/) | [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/) |
+| [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/) | [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/) |
+| [Vollkorn](https://beautifulwebtype.com/vollkorn/) | [Work Sans](https://beautifulwebtype.com/work-sans/) |
+| [Zalando Sans](https://beautifulwebtype.com/zalando-sans/) | [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) |
 
 ## Suggesting Typefaces
 

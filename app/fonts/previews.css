@@ -381,6 +381,14 @@
 }
 
 @font-face {
+  font-family: "BWT Preview roboto-flex";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  src: url("/assets/font-previews/roboto-flex.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview roboto-serif";
   font-style: normal;
   font-weight: 100 900;

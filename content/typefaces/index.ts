@@ -53,6 +53,7 @@ import piazzolla from "./piazzolla/data";
 import playfair from "./playfair/data";
 import poppins from "./poppins/data";
 import roboto from "./roboto/data";
+import robotoFlex from "./roboto-flex/data";
 import robotoSerif from "./roboto-serif/data";
 import schibstedGrotesk from "./schibsted-grotesk/data";
 import sourceCodePro from "./source-code-pro/data";
@@ -122,6 +123,7 @@ export const typefaceData: TypefaceData[] = [
   playfair,
   poppins,
   roboto,
+  robotoFlex,
   robotoSerif,
   schibstedGrotesk,
   sourceCodePro,

@@ -476,6 +476,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "86dd8e8d5b8d6893e10700c2351d79a1e410723802adeb1cd375961da7f3f3ea"
   },
+  "roboto-flex": {
+    "source": "/assets/fonts/roboto-flex/RobotoFlex.woff2",
+    "sourceHash": "0b75943534dc43c6d41d78e57261aa37f2c2432ccffeb05f613e6b609bbb151a",
+    "text": "Roboto Flex",
+    "cssHash": "6d6b7374620c93b86492f14c0d1bab5c6d604e26ee684bb4098e88c3e74cd021",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "3ffd37b5fff12b26e682b514e547571c3b19ef10830e89fe3963a2f216dad825"
+  },
   "roboto-serif": {
     "source": "/assets/fonts/roboto-serif/RobotoSerif.woff2",
     "sourceHash": "6d700189a9859554553d7fe7ec00ead47e88a75c1fd4baee961df572a04761ce",

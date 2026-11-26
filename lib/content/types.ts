@@ -92,6 +92,7 @@ export type FontFeature = {
   type: "axis";
   title: string;
   axis: string;
+  axes?: Record<string, number>;
   text: string;
   values: number[];
 };

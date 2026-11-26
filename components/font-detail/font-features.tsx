@@ -56,7 +56,7 @@ function FeatureExamples({ feature }: { feature: FontFeature }) {
   if (feature.type === "axis") {
     return feature.values.map((value) => (
       <div className={pairClass} key={value}>
-        <Sample text={feature.text} options={{ axes: { [feature.axis]: value } }} />
+        <Sample text={feature.text} options={{ axes: { ...feature.axes, [feature.axis]: value } }} />
         <FeatureLabel text={`'${feature.axis}' ${value}`} />
       </div>
     ));

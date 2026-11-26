@@ -1,0 +1,32 @@
+:root {
+  --roboto-flex: 'Roboto Flex', sans-serif;
+}
+
+.roboto-flex {
+  font-family: var(--roboto-flex) !important;
+}
+
+/* WebKit can return zero-height text metrics when varying this face without
+   an explicit optical size. Resolve it at the size of each specimen. */
+:where(.roboto-flex, .roboto-flex *) {
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 14;
+  font-variation-settings: "opsz" calc(1em / 1px);
+}
+
+@font-face {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  src: url("/assets/fonts/roboto-flex/RobotoFlex.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto Flex";
+  font-style: italic;
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+  font-variation-settings: "slnt" -10;
+  src: url("/assets/fonts/roboto-flex/RobotoFlex.woff2") format("woff2");
+}
