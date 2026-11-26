@@ -56,6 +56,13 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
   // Let the browser optically size the sample until the reader adjusts that axis.
   const explicitAxes = face.axes.filter((axis) => axis.tag !== "opsz" || axisValues.opsz !== undefined);
   const activeSets = selectedSets.filter((tag) => face.stylisticSets.some((set) => set.tag === tag));
+  function selectStyle(next: string) {
+    setStyle(next);
+    const slant = findFace(data.faces, next, weight).axes.find((axis) => axis.tag === "slnt");
+    if (slant) {
+      setAxisValues((current) => ({ ...current, slnt: next === "italic" ? slant.min : slant.default }));
+    }
+  }
   const previewStyle: CSSProperties = {
     fontFamily: JSON.stringify(data.family),
     fontSize: size,
@@ -90,7 +97,7 @@ export function FontTester({ data, name, weights: weightNames }: { data: FontTes
               </div>
             )}
           {styles.length > 1 && (
-            <ToggleGroup aria-label="Style" value={[style]} onValueChange={([next]) => { if (next) setStyle(next); }}>
+            <ToggleGroup aria-label="Style" value={[style]} onValueChange={([next]) => { if (next) selectStyle(next); }}>
               {styles.map((value) => <ToggleGroupItem value={value} key={value} aria-label={value === "normal" ? "Roman" : "Italic"} title={value === "normal" ? "Roman" : "Italic"}><span className="font-(family-name:--ui-face) text-lg normal-case" style={{ fontStyle: value }}>I</span></ToggleGroupItem>)}
             </ToggleGroup>
           )}

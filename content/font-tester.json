@@ -2592,6 +2592,121 @@
       }
     ]
   },
+  "google-sans-flex": {
+    "family": "Google Sans Flex",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 1,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 1,
+            "max": 144,
+            "default": 18
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 25,
+            "max": 151,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 1,
+            "max": 1000,
+            "default": 400
+          },
+          {
+            "tag": "ROND",
+            "name": "Roundness",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          },
+          {
+            "tag": "slnt",
+            "name": "Slant",
+            "min": -10,
+            "max": 0,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-story g"
+          },
+          {
+            "tag": "ss09",
+            "name": "Alternate Symbols"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 1,
+        "axes": [
+          {
+            "tag": "opsz",
+            "name": "Optical size",
+            "min": 1,
+            "max": 144,
+            "default": 18
+          },
+          {
+            "tag": "wdth",
+            "name": "Width",
+            "min": 25,
+            "max": 151,
+            "default": 100
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 1,
+            "max": 1000,
+            "default": 400
+          },
+          {
+            "tag": "ROND",
+            "name": "Roundness",
+            "min": 0,
+            "max": 100,
+            "default": 0
+          },
+          {
+            "tag": "slnt",
+            "name": "Slant",
+            "min": -10,
+            "max": 0,
+            "default": 0
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story a"
+          },
+          {
+            "tag": "ss02",
+            "name": "Double-story g"
+          },
+          {
+            "tag": "ss09",
+            "name": "Alternate Symbols"
+          }
+        ]
+      }
+    ]
+  },
   "hubot-sans": {
     "family": "Hubot Sans",
     "faces": [

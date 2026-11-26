@@ -197,6 +197,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "ce20639452dc61ca183aa1501de697f139ef2375e857ee391553145e2915fa63"
   },
+  "google-sans-flex": {
+    "source": "/assets/fonts/google-sans-flex/GoogleSansFlex.woff2",
+    "sourceHash": "6a173488069aa5ee033caabdb3beb9d95e1772f13c56c5a772cc5f78bc06881c",
+    "text": "Google Sans Flex",
+    "cssHash": "b48dced188feb831e6ccf5091ee5badde32b5ba7fb1529b0415c60db41c099ce",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "e964c5ce74d35d3dd23fc8dd64c0db7d5bd79b011244af8d55b68a453c2df472"
+  },
   "hubot-sans": {
     "source": "/assets/fonts/hubot-sans/HubotSans.woff2",
     "sourceHash": "a3ab09069f6de2e4a82b9894c83d57d9b6704e8ed0b35fc9ac82f10361ea2525",

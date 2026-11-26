@@ -1,0 +1,24 @@
+:root {
+  --google-sans-flex: 'Google Sans Flex', sans-serif;
+}
+
+.google-sans-flex {
+  font-family: var(--google-sans-flex) !important;
+}
+
+@font-face {
+  font-family: "Google Sans Flex";
+  font-style: normal;
+  font-weight: 1 1000;
+  font-stretch: 25% 151%;
+  src: url("/assets/fonts/google-sans-flex/GoogleSansFlex.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Google Sans Flex";
+  font-style: italic;
+  font-weight: 1 1000;
+  font-stretch: 25% 151%;
+  font-variation-settings: "slnt" -10;
+  src: url("/assets/fonts/google-sans-flex/GoogleSansFlex.woff2") format("woff2");
+}
