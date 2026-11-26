@@ -6,6 +6,10 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 
 ## Changelog
 
+### 26 Nov 2026
+
+* **Added [Intel One Mono](https://beautifulwebtype.com/intel-one-mono/)** by Frere-Jones Type.
+
 ### 21 Nov 2026
 
 * Renamed Playfair Display to **[Playfair](https://beautifulwebtype.com/playfair/)** and added the full Roman and Italic variable fonts. The tester now supports continuous weight, width, and optical size. The old specimen URL redirects to Playfair.
@@ -24,42 +28,6 @@ The original version of the site is archived here: https://beautifulwebtype.com/
 * **Improved the feed:** publication timestamps, images before descriptions, and preserved paragraphs.
 * **Added font search** with live filtering and keyboard navigation.
 * **Added [Commit Mono](https://beautifulwebtype.com/commit-mono/)** by Eigil Nikolajsen.
-
-### 3 Nov 2026
-
-* **Added [Geist Sans](https://beautifulwebtype.com/geist-sans/)** by Vercel and Basement Studio.
-* **Added [DM Sans](https://beautifulwebtype.com/dm-sans/), [DM Serif Display](https://beautifulwebtype.com/dm-serif-display/), and [DM Serif Text](https://beautifulwebtype.com/dm-serif-text/)** by Colophon Foundry.
-* **Added [Roboto](https://beautifulwebtype.com/roboto/)** by Christian Robertson.
-
-### 2 Nov 2026
-
-* **Added [Mioya](https://beautifulwebtype.com/mioya/)** by Sora Sagano.
-* **Added [Aujournuit](https://beautifulwebtype.com/aujournuit/)** by Teo Gaudet.
-* **Added [Piazzolla](https://beautifulwebtype.com/piazzolla/)** by Juan Pablo del Peral.
-* **Added [Luperca](https://beautifulwebtype.com/luperca/)** by Ariel Martín Pérez.
-* **Added [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/)** by Pablo Impallari and Rodrigo Fuenzalida.
-* **Added [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/)** by Pablo Impallari and Rodrigo Fuenzalida.
-* **Added [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/)** by Ertekin Erdin.
-* **Added [Mona Sans](https://beautifulwebtype.com/mona-sans/) and [Hubot Sans](https://beautifulwebtype.com/hubot-sans/)** by GitHub and Degarism.
-* **Added [EB Garamond](https://beautifulwebtype.com/eb-garamond/)** by Georg Duffner and Octavio Pardo.
-* **Added [Bricolage Grotesque](https://beautifulwebtype.com/bricolage-grotesque/)** by Mathieu Triay.
-
-### 31 Oct 2026
-
-* **Added [Newsreader](https://beautifulwebtype.com/newsreader/)** by Production Type.
-* **Added [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/)** by Bakken & Bæck.
-* **Added [Zalando Sans](https://beautifulwebtype.com/zalando-sans/)** by Jakob Ekelund of KH Type.
-* **Added [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/)** by Grilli Type, Contrast Foundry, and Type Network.
-* **Added [Familjen Grotesk](https://beautifulwebtype.com/familjen-grotesk/)** by Familjen STHLM.
-* **Added [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/)** by René Bieder.
-* **Refreshed the design:** improved font cards, specimen layouts, mobile navigation, and light and dark themes.
-* **Expanded typeface descriptions** with background, design details, and suggested uses.
-* **Improved the glyph viewer** with a complete inline grid and a persistent selected-glyph preview.
-* **Simplified font pages:** clearer metadata and OpenType examples; removed pairings and comparisons.
-
-### 30 Oct 2026
-
-* **Refreshed font files and glyph sets for 20 typefaces:** Alegreya, Archivo, BioRhyme, BioRhyme Expanded, Crimson Pro, IBM Plex Mono, IBM Plex Sans, IBM Plex Sans Condensed, IBM Plex Serif, Inria Sans, Le Murmure, Libre Franklin, Messapia, Oswald, Poppins, Rakkas, Space Mono, TASA Orbiter, Vollkorn, and Work Sans. Updated release metadata and retired unsupported examples.
 
 **[Read full Changelog](./CHANGELOG.md)**
 
@@ -84,22 +52,22 @@ Typefaces use the [SIL Open Font License](https://scripts.sil.org/OFL) or a publ
 | [IBM Plex Sans Condensed](https://beautifulwebtype.com/ibm-plex-sans-condensed/) | [IBM Plex Serif](https://beautifulwebtype.com/ibm-plex-serif/) |
 | [Inria Sans](https://beautifulwebtype.com/inria-sans/) | [Inria Serif](https://beautifulwebtype.com/inria-serif/) |
 | [Instrument Sans](https://beautifulwebtype.com/instrument-sans/) | [Instrument Serif](https://beautifulwebtype.com/instrument-serif/) |
-| [Inter](https://beautifulwebtype.com/inter/) | [Le Murmure](https://beautifulwebtype.com/le-murmure/) |
-| [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/) | [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/) |
-| [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/) | [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) |
-| [Lora](https://beautifulwebtype.com/lora/) | [Luperca](https://beautifulwebtype.com/luperca/) |
-| [Messapia](https://beautifulwebtype.com/messapia/) | [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/) |
-| [Mioya](https://beautifulwebtype.com/mioya/) | [Mona Sans](https://beautifulwebtype.com/mona-sans/) |
-| [Newsreader](https://beautifulwebtype.com/newsreader/) | [Oswald](https://beautifulwebtype.com/oswald/) |
-| [Piazzolla](https://beautifulwebtype.com/piazzolla/) | [Playfair](https://beautifulwebtype.com/playfair/) |
-| [Poppins](https://beautifulwebtype.com/poppins/) | [Roboto](https://beautifulwebtype.com/roboto/) |
-| [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/) | [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) |
-| [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) | [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) |
-| [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) | [Space Mono](https://beautifulwebtype.com/space-mono/) |
-| [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/) | [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/) |
-| [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/) | [Vollkorn](https://beautifulwebtype.com/vollkorn/) |
-| [Work Sans](https://beautifulwebtype.com/work-sans/) | [Zalando Sans](https://beautifulwebtype.com/zalando-sans/) |
-| [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) |  |
+| [Intel One Mono](https://beautifulwebtype.com/intel-one-mono/) | [Inter](https://beautifulwebtype.com/inter/) |
+| [Le Murmure](https://beautifulwebtype.com/le-murmure/) | [Libre Caslon Condensed](https://beautifulwebtype.com/libre-caslon-condensed/) |
+| [Libre Caslon Display](https://beautifulwebtype.com/libre-caslon-display/) | [Libre Caslon Text](https://beautifulwebtype.com/libre-caslon-text/) |
+| [Libre Franklin](https://beautifulwebtype.com/libre-franklin/) | [Lora](https://beautifulwebtype.com/lora/) |
+| [Luperca](https://beautifulwebtype.com/luperca/) | [Messapia](https://beautifulwebtype.com/messapia/) |
+| [MFB Oldstyle](https://beautifulwebtype.com/mfb-oldstyle/) | [Mioya](https://beautifulwebtype.com/mioya/) |
+| [Mona Sans](https://beautifulwebtype.com/mona-sans/) | [Newsreader](https://beautifulwebtype.com/newsreader/) |
+| [Oswald](https://beautifulwebtype.com/oswald/) | [Piazzolla](https://beautifulwebtype.com/piazzolla/) |
+| [Playfair](https://beautifulwebtype.com/playfair/) | [Poppins](https://beautifulwebtype.com/poppins/) |
+| [Roboto](https://beautifulwebtype.com/roboto/) | [Schibsted Grotesk](https://beautifulwebtype.com/schibsted-grotesk/) |
+| [Source Code Pro](https://beautifulwebtype.com/source-code-pro/) | [Source Sans Pro](https://beautifulwebtype.com/source-sans-pro/) |
+| [Source Serif Pro](https://beautifulwebtype.com/source-serif-pro/) | [Space Grotesk](https://beautifulwebtype.com/space-grotesk/) |
+| [Space Mono](https://beautifulwebtype.com/space-mono/) | [Strichpunkt Sans](https://beautifulwebtype.com/strichpunkt-sans/) |
+| [TASA Orbiter](https://beautifulwebtype.com/tasa-orbiter/) | [TikTok Sans](https://beautifulwebtype.com/tiktok-sans/) |
+| [Vollkorn](https://beautifulwebtype.com/vollkorn/) | [Work Sans](https://beautifulwebtype.com/work-sans/) |
+| [Zalando Sans](https://beautifulwebtype.com/zalando-sans/) | [Zilla Slab](https://beautifulwebtype.com/zilla-slab/) |
 
 ## Suggesting Typefaces
 

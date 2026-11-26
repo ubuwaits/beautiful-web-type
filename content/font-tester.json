@@ -5288,6 +5288,259 @@
       }
     ]
   },
+  "intel-one-mono": {
+    "family": "Intel One Mono",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 400,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 500,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      },
+      {
+        "style": "normal",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 700,
+        "axes": [],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Programming ligatures"
+          },
+          {
+            "tag": "ss02",
+            "name": "Arrow forms for less-equal and greater-equal"
+          },
+          {
+            "tag": "ss03",
+            "name": "www ligature"
+          },
+          {
+            "tag": "ss04",
+            "name": "Round-top 3"
+          },
+          {
+            "tag": "ss11",
+            "name": "Raised Colon (Figures Only)"
+          },
+          {
+            "tag": "ss12",
+            "name": "Raised Colon (Global)"
+          }
+        ]
+      }
+    ]
+  },
   "inter": {
     "family": "Inter var",
     "faces": [

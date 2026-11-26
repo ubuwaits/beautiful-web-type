@@ -1,5 +1,9 @@
 # Changelog
 
+## 26 Nov 2026
+
+* **Added [Intel One Mono](https://beautifulwebtype.com/intel-one-mono/)** by Frere-Jones Type.
+
 ## 21 Nov 2026
 
 * Renamed Playfair Display to **[Playfair](https://beautifulwebtype.com/playfair/)** and added the full Roman and Italic variable fonts. The tester now supports continuous weight, width, and optical size. The old specimen URL redirects to Playfair.

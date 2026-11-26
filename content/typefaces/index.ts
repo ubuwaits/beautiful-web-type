@@ -32,6 +32,7 @@ import inriaSans from "./inria-sans/data";
 import inriaSerif from "./inria-serif/data";
 import instrumentSans from "./instrument-sans/data";
 import instrumentSerif from "./instrument-serif/data";
+import intelOneMono from "./intel-one-mono/data";
 import inter from "./inter/data";
 import leMurmure from "./le-murmure/data";
 import libreCaslonCondensed from "./libre-caslon-condensed/data";
@@ -97,6 +98,7 @@ export const typefaceData: TypefaceData[] = [
   inriaSerif,
   instrumentSans,
   instrumentSerif,
+  intelOneMono,
   inter,
   leMurmure,
   libreCaslonCondensed,

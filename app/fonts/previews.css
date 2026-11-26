@@ -229,6 +229,13 @@
 }
 
 @font-face {
+  font-family: "BWT Preview intel-one-mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/font-previews/intel-one-mono.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview inter";
   font-style: normal;
   font-weight: 100 900;

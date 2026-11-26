@@ -287,6 +287,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "1453dd8ef40ab043b835e5bcf3749e7ec2412e511ed5f977efec34f304252e20"
   },
+  "intel-one-mono": {
+    "source": "/assets/fonts/intel-one-mono/IntelOneMono-Regular.woff2",
+    "sourceHash": "e79690bc3b711d34cebc6a967d9bf9db9e6ad1c4b9a9627323d5130a3d927b64",
+    "text": "Intel One Mono",
+    "cssHash": "9692e21a7f05cfafec386910991fb703db6f46474e6d3e33167883e1e086537b",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "fe2c2a631dc0ba5d3ed026586067aba69f2435dcc74430884d5f43ddaafcd8d3"
+  },
   "inter": {
     "source": "/assets/fonts/inter/Inter-roman.var.woff2",
     "sourceHash": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
