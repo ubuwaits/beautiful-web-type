@@ -380,6 +380,13 @@
 }
 
 @font-face {
+  font-family: "BWT Preview recursive";
+  font-style: normal;
+  font-weight: 300 1000;
+  src: url("/assets/font-previews/recursive.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "BWT Preview roboto";
   font-style: normal;
   font-weight: 100 900;

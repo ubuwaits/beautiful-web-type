@@ -476,6 +476,15 @@
     "toolVersion": "4.60.2",
     "previewHash": "41db96191d09d210eb8828c51bc0ce33371188804f04923f151418013a191882"
   },
+  "recursive": {
+    "source": "/assets/fonts/recursive/Recursive.woff2",
+    "sourceHash": "145e9fc086d13403528384bdace7f2a4d5ecef72a2b10a749e99382dbecfce79",
+    "text": "Recursive",
+    "cssHash": "602e2945dd40ac29bdbd7965b911a84f1f0e7549fa9223f28e681cacfe9a173d",
+    "generatorHash": "6fa34e756dc76a09203a8a859130740f5ec3d5658a1227c573ecd0ef0869d171",
+    "toolVersion": "4.60.2",
+    "previewHash": "5afdfe4e1d87e2fb88a44168ad0bb08b43a518ae0b65f07e0e117162a6c9fd48"
+  },
   "roboto": {
     "source": "/assets/fonts/roboto/Roboto.woff2",
     "sourceHash": "3ca486650a56fb8a74f9bc591a6b830b507789f0d7389df1d382a1346450504c",

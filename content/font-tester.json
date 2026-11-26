@@ -7178,6 +7178,201 @@
       }
     ]
   },
+  "recursive": {
+    "family": "Recursive",
+    "faces": [
+      {
+        "style": "normal",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "MONO",
+            "name": "Monospace",
+            "min": 0,
+            "max": 1,
+            "default": 0
+          },
+          {
+            "tag": "CASL",
+            "name": "Casual",
+            "min": 0,
+            "max": 1,
+            "default": 0
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 1000,
+            "default": 300
+          },
+          {
+            "tag": "slnt",
+            "name": "Slant",
+            "min": -15,
+            "max": 0,
+            "default": 0
+          },
+          {
+            "tag": "CRSV",
+            "name": "Cursive",
+            "min": 0,
+            "max": 1,
+            "default": 0.5
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story ‘a’"
+          },
+          {
+            "tag": "ss02",
+            "name": "Single-story ‘g’"
+          },
+          {
+            "tag": "ss03",
+            "name": "Simplified Mono ‘f’"
+          },
+          {
+            "tag": "ss04",
+            "name": "Simplified Mono ‘i’"
+          },
+          {
+            "tag": "ss05",
+            "name": "Simplified Mono ‘l’"
+          },
+          {
+            "tag": "ss06",
+            "name": "Simplified Mono ‘r’"
+          },
+          {
+            "tag": "ss07",
+            "name": "Simplified italic diagonals"
+          },
+          {
+            "tag": "ss08",
+            "name": "No-serif  18L 19 & ‘Z’"
+          },
+          {
+            "tag": "ss09",
+            "name": "Simplified Six & Nine"
+          },
+          {
+            "tag": "ss10",
+            "name": "Dotted Zero"
+          },
+          {
+            "tag": "ss11",
+            "name": "Simplified One"
+          },
+          {
+            "tag": "ss12",
+            "name": "Simplified Mono ‘at’"
+          },
+          {
+            "tag": "ss20",
+            "name": "Slashed Zero"
+          }
+        ]
+      },
+      {
+        "style": "italic",
+        "weight": 300,
+        "axes": [
+          {
+            "tag": "MONO",
+            "name": "Monospace",
+            "min": 0,
+            "max": 1,
+            "default": 0
+          },
+          {
+            "tag": "CASL",
+            "name": "Casual",
+            "min": 0,
+            "max": 1,
+            "default": 0
+          },
+          {
+            "tag": "wght",
+            "name": "Weight",
+            "min": 300,
+            "max": 1000,
+            "default": 300
+          },
+          {
+            "tag": "slnt",
+            "name": "Slant",
+            "min": -15,
+            "max": 0,
+            "default": 0
+          },
+          {
+            "tag": "CRSV",
+            "name": "Cursive",
+            "min": 0,
+            "max": 1,
+            "default": 0.5
+          }
+        ],
+        "stylisticSets": [
+          {
+            "tag": "ss01",
+            "name": "Single-story ‘a’"
+          },
+          {
+            "tag": "ss02",
+            "name": "Single-story ‘g’"
+          },
+          {
+            "tag": "ss03",
+            "name": "Simplified Mono ‘f’"
+          },
+          {
+            "tag": "ss04",
+            "name": "Simplified Mono ‘i’"
+          },
+          {
+            "tag": "ss05",
+            "name": "Simplified Mono ‘l’"
+          },
+          {
+            "tag": "ss06",
+            "name": "Simplified Mono ‘r’"
+          },
+          {
+            "tag": "ss07",
+            "name": "Simplified italic diagonals"
+          },
+          {
+            "tag": "ss08",
+            "name": "No-serif  18L 19 & ‘Z’"
+          },
+          {
+            "tag": "ss09",
+            "name": "Simplified Six & Nine"
+          },
+          {
+            "tag": "ss10",
+            "name": "Dotted Zero"
+          },
+          {
+            "tag": "ss11",
+            "name": "Simplified One"
+          },
+          {
+            "tag": "ss12",
+            "name": "Simplified Mono ‘at’"
+          },
+          {
+            "tag": "ss20",
+            "name": "Slashed Zero"
+          }
+        ]
+      }
+    ]
+  },
   "roboto": {
     "family": "Roboto",
     "faces": [

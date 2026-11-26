@@ -1,0 +1,22 @@
+:root {
+  --recursive: 'Recursive', sans-serif;
+}
+
+.recursive {
+  font-family: var(--recursive) !important;
+}
+
+@font-face {
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 300 1000;
+  src: url("/assets/fonts/recursive/Recursive.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Recursive";
+  font-style: italic;
+  font-weight: 300 1000;
+  font-variation-settings: "slnt" -15;
+  src: url("/assets/fonts/recursive/Recursive.woff2") format("woff2");
+}

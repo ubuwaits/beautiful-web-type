@@ -53,6 +53,7 @@ import oswald from "./oswald/data";
 import piazzolla from "./piazzolla/data";
 import playfair from "./playfair/data";
 import poppins from "./poppins/data";
+import recursive from "./recursive/data";
 import roboto from "./roboto/data";
 import robotoFlex from "./roboto-flex/data";
 import robotoSerif from "./roboto-serif/data";
@@ -124,6 +125,7 @@ export const typefaceData: TypefaceData[] = [
   piazzolla,
   playfair,
   poppins,
+  recursive,
   roboto,
   robotoFlex,
   robotoSerif,
